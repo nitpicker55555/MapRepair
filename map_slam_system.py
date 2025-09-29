@@ -10,7 +10,7 @@ import os
 from mango_dataset import MANGODataset, WalkthroughStep
 from navigation_graph import NavigationGraph
 from conflict_detector import ConflictDetector
-from temporal_dependency_graph import TemporalDependencyGraph
+from version_control import VersionControl
 from conflict_localizer import ConflictLocalizer
 from edge_impact_scorer import EdgeImpactScorer
 
@@ -23,7 +23,7 @@ class MapSLAMSystem:
         self.dataset = MANGODataset(data_dir)
         self.nav_graph = NavigationGraph(model)  # Keep as is for now, update in process_game
         self.conflict_detector = ConflictDetector()
-        self.tdg = TemporalDependencyGraph()
+        self.tdg = VersionControl()
         self.conflict_localizer = ConflictLocalizer()
         self.edge_scorer = EdgeImpactScorer()
         
@@ -125,7 +125,7 @@ class MapSLAMSystem:
             self.nav_graph.graph, current_step.step_num
         )
         
-        # 3. Create TDG version
+        # 3. Create version control snapshot
         changes = {
             'added_nodes': nav_result['added_nodes'],
             'added_edges': nav_result['added_edges']

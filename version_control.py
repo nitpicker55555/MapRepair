@@ -1,6 +1,6 @@
 """
-Temporal Dependency Graph
-Tracks the evolution history of navigation graphs
+Version Control System
+Tracks the evolution history of navigation graphs for conflict resolution
 """
 
 import networkx as nx
@@ -22,8 +22,8 @@ class GraphVersion:
     conflicts: List[Dict] = field(default_factory=list)
 
 
-class TemporalDependencyGraph:
-    """Temporal dependency graph: tracks the evolution history of navigation graphs"""
+class VersionControl:
+    """Version control system: tracks the evolution history of navigation graphs for backtracking and conflict analysis"""
     
     def __init__(self):
         self.versions: Dict[str, GraphVersion] = {}
@@ -156,7 +156,7 @@ class TemporalDependencyGraph:
     
     def visualize_version_tree(self) -> str:
         """Generate text visualization of version tree"""
-        lines = ["Temporal Dependency Graph:"]
+        lines = ["Version Control System:"]
         lines.append(f"Total versions: {len(self.versions)}")
         lines.append("\nVersion Timeline:")
         

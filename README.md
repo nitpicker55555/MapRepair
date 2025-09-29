@@ -39,7 +39,7 @@ This dual approach allows for both temporal analysis (when errors were introduce
 
 ### Analysis and Repair Components
 
-- **`temporal_dependency_graph.py`**: Tracks the evolution history of navigation graphs. Maintains version snapshots at each step, enabling analysis of when and how conflicts were introduced.
+- **`version_control.py`**: Implements the version control system that tracks the evolution history of navigation graphs. Maintains version snapshots at each step, enabling backtracking and analysis of when conflicts were introduced.
 
 - **`edge_impact_scorer.py`**: Evaluates the importance and impact of edges based on:
   - Structural importance (bridge edges, connectivity)
