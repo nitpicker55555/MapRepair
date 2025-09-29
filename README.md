@@ -1,10 +1,27 @@
-# MapRepair: Navigation Graph Construction and Conflict Resolution
+# Constructing Coherent Spatial Memory in LLM Agents through Graph Rectification
 
-This repository contains the implementation of MapRepair, a system for constructing navigation graphs from text-based game walkthroughs and automatically detecting/repairing conflicts using version control and edge impact ranking techniques.
+This repository contains the implementation of a framework for constructing coherent spatial memory in LLM agents through incremental graph building and conflict rectification.
 
-## Overview
+## Problem Statement
 
-MapRepair processes walkthrough data from the MANGO dataset to incrementally build navigation graphs, detect various types of conflicts (direction conflicts, topology conflicts, spatial inconsistencies), and apply repair strategies to improve graph quality.
+Current LLM approaches to spatial reasoning face significant limitations:
+- **Lack of interpretability**: LLMs using context windows for text reading and spatial reasoning operate as black boxes
+- **Context limitations**: Small context windows cannot handle long texts effectively
+- **Need for external memory**: These limitations necessitate incremental graph construction to build spatial memory externally
+
+However, incremental graph construction introduces new challenges:
+- **Construction errors**: The graph building process may introduce errors
+- **Delayed conflict manifestation**: Detectable structural conflicts in graphs may not indicate the root cause of errors
+- **Error masking**: Errors can mask each other, causing conflicts to trigger with delays
+
+## Our Solution
+
+We propose a framework that enables LLMs to resolve conflicts and potential errors more efficiently through:
+
+1. **Version Control System**: Tracks the evolution of the navigation graph, enabling backtracking to previous states when conflicts are detected
+2. **Edge Dependency Detection**: Evaluates the structural importance and impact of edges, helping LLMs prioritize which edges to examine when resolving conflicts
+
+This dual approach allows for both temporal analysis (when errors were introduced) and structural analysis (which edges are most critical to graph coherence).
 
 ## File Descriptions
 
@@ -73,10 +90,10 @@ MapRepair processes walkthrough data from the MANGO dataset to incrementally bui
 
 ### Key Findings
 
-1. **Edge-Impact Ranking** achieves the highest repair rate (75.21%) and fastest convergence (6.39 loops)
-2. **Version Control + Edge-Impact Ranking** achieves the best accuracy (54.88%) while maintaining good repair rate
-3. All repair methods significantly outperform the baseline across all metrics
-4. Model performance varies, with GPT-4o showing the best results overall
+1. **Edge-Impact Ranking** achieves the highest repair rate (75.21%) and fastest convergence (6.39 loops), demonstrating the effectiveness of structural analysis in identifying problematic edges
+2. **Version Control + Edge-Impact Ranking** achieves the best accuracy (54.88%) while maintaining good repair rate, showing that combining temporal and structural analysis provides the most reliable corrections
+3. All repair methods significantly outperform the baseline across all metrics, validating our approach to external spatial memory construction
+4. The framework generalizes across different LLM models, with GPT-4o showing the best overall performance
 
 ## Usage
 
@@ -99,6 +116,7 @@ slam.save_results("./output")
 - networkx
 - openai
 - tenacity
+- numpy
 - Other dependencies in requirements.txt
 
 ## Citation
@@ -106,9 +124,11 @@ slam.save_results("./output")
 If you use this code in your research, please cite our paper:
 
 ```bibtex
-@article{maprepair2024,
-  title={MapRepair: Navigation Graph Construction and Conflict Resolution in Text-Based Games},
+@article{spatialmemoryllm2024,
+  title={Constructing Coherent Spatial Memory in LLM Agents through Graph Rectification},
   author={[Authors]},
-  year={2024}
+  year={2024},
+  journal={[Journal/Conference]}
 }
 ```
+
