@@ -28,6 +28,9 @@ This dual approach allows for both temporal analysis (when errors were introduce
 
 https://nitpicker55555.github.io/text_maze.github.io/
 
+## Refined mango dataset without structural conflicts
+https://huggingface.co/datasets/boboIloveyou/spatial_refined_mango/tree/main
+
 ## File Descriptions
 
 ### Core System Components
