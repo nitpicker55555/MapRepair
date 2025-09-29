@@ -22,7 +22,9 @@ We propose a framework that enables LLMs to resolve conflicts and potential erro
 
 This dual approach allows for both temporal analysis (when errors were introduced) and structural analysis (which edges are most critical to graph coherence).
 
-## Interactive map building
+## Interactive map construction process
+
+<img width="1240" height="687" alt="image" src="https://github.com/user-attachments/assets/817bd230-ad4d-4a90-a65b-34b892257d32" />
 
 https://nitpicker55555.github.io/text_maze.github.io/
 
