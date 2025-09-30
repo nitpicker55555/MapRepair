@@ -73,10 +73,10 @@ https://huggingface.co/datasets/boboIloveyou/spatial_refined_mango/tree/main
 
 | Method | Avg. Loops | Repair Rate (%) | Accuracy (%) |
 |--------|------------|-----------------|--------------|
-| Edge-Impact Ranking Only | **6.39** | **75.21** | 44.69 |
-| Version Control Only | 7.44 | 63.03 | 54.00 |
-| **Version Control + Edge-Impact Ranking** | 8.20 | 68.91 | **54.88** |
-| Baseline (GPT-4o) | 9.52 | 21.85 | 5.77 |
+| Edge-Impact Ranking Only | 6.39 | 69.85 | 30.53 |
+| Version Control Only | 7.44 | 60.69 | 31.68 |
+| Version Control+Edge-Impact Ranking | 8.20 | 63.74 | 36.64 |
+| Baseline(GPT-4o) | 9.52 | 20.23 | 1.15 |
 
 ### Performance Across Different Models
 
@@ -84,7 +84,7 @@ https://huggingface.co/datasets/boboIloveyou/spatial_refined_mango/tree/main
 
 | Model        | Avg. Loops | Repair Rate (%) | Accuracy (%) |
 | ------------ | ---------- | --------------- | ------------ |
-| GPT-4o       | 8.38       | 63.48           | 36.52        |
+| GPT-4o       | 8.20       | 63.74           | 36.64        |
 | GPT-4.1      | 8.29       | 64.35           | 36.52        |
 | GPT-4o-mini  | 9.05       | 57.83           | 31.74        |
 | Claude-Haiku | 6.98       | 44.31           | 24.76        |
@@ -114,4 +114,3 @@ results = slam.process_game("game_name", max_steps=100)
 # Save results
 slam.save_results("./output")
 ```
-
