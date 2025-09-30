@@ -69,7 +69,7 @@ https://huggingface.co/datasets/boboIloveyou/spatial_refined_mango/tree/main
 
 ## Experimental Results
 
-### Main Results (GPT-4o as Navigation Model)
+### Main Results (GPT-4o as Model)
 
 | Method | Avg. Loops | Repair Rate (%) | Accuracy (%) |
 |--------|------------|-----------------|--------------|
@@ -82,12 +82,13 @@ https://huggingface.co/datasets/boboIloveyou/spatial_refined_mango/tree/main
 
 #### Our Method (Version Control + Edge-Impact Ranking)
 
-| Model | Avg. Loops | Repair Rate (%) | Accuracy (%) |
-|-------|------------|-----------------|--------------|
-| GPT-4.1 | 7.88 | 64.89 | 36.64 |
-| GPT-4o | 8.20 | 68.91 | 54.88 |
-| GPT-4o-mini | 9.02 | 58.40 | 32.82 |
-| Claude-Haiku | 6.98 | 44.31 | 24.76 |
+| Model        | Avg. Loops | Repair Rate (%) | Accuracy (%) |
+| ------------ | ---------- | --------------- | ------------ |
+| GPT-4o       | 8.38       | 63.48           | 36.52        |
+| GPT-4.1      | 8.29       | 64.35           | 36.52        |
+| GPT-4o-mini  | 9.05       | 57.83           | 31.74        |
+| Claude-Haiku | 6.98       | 44.31           | 24.76        |
+
 
 #### Baseline (No Repair)
 
