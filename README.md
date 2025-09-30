@@ -12,6 +12,7 @@ However, incremental graph construction introduces new challenges:
 - **Construction errors**: The graph building process may introduce errors
 - **Delayed conflict manifestation**: Detectable structural conflicts in graphs may not indicate the root cause of errors
 - **Error masking**: Errors can mask each other, causing conflicts to trigger with delays
+<img width="1156" height="421" alt="image" src="https://github.com/user-attachments/assets/2f5e55fb-21c6-412e-ade9-ac2726a8aa67" />
 
 ## Our Solution
 
@@ -21,6 +22,7 @@ We propose a framework that enables LLMs to resolve conflicts and potential erro
 2. **Edge Dependency Detection**: Evaluates the structural importance and impact of edges, helping LLMs prioritize which edges to examine when resolving conflicts
 
 This dual approach allows for both temporal analysis (when errors were introduced) and structural analysis (which edges are most critical to graph coherence).
+<img width="1165" height="717" alt="image" src="https://github.com/user-attachments/assets/f1a036c2-b88a-4a80-9ad1-16ac626fbc7e" />
 
 ## Interactive map construction process
 
