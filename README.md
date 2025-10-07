@@ -102,3 +102,12 @@ results = slam.process_game("game_name", max_steps=100)
 # Save results
 slam.save_results("./output")
 ```
+@misc{zhang2025constructingcoherentspatialmemory,
+      title={Constructing coherent spatial memory in LLM agents through graph rectification}, 
+      author={Puzhen Zhang and Xuyang Chen and Yu Feng and Yuhan Jiang and Liqiu Meng},
+      year={2025},
+      eprint={2510.04195},
+      archivePrefix={arXiv},
+      primaryClass={cs.AI},
+      url={https://arxiv.org/abs/2510.04195}, 
+}
