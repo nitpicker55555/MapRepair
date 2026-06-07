@@ -1,0 +1,16 @@
+{
+  "game": "night",
+  "num_conflicts": 45,
+  "iterations": 11,
+  "success": false,
+  "remaining_conflicts": 18,
+  "pre_edge_recall": 0.4375,
+  "pre_strict_direction_match": 0.40625,
+  "pre_edge_direction_accuracy": 0.9285714285714286,
+  "post_edge_recall": 0.4375,
+  "post_strict_direction_match": 0.21875,
+  "post_permissive_direction_match": 0.46875,
+  "post_edge_direction_accuracy": 0.5,
+  "edge_recall_delta": 0.0,
+  "strict_direction_delta": -0.1875
+}

@@ -1,0 +1,4888 @@
+{
+  "game": "detective",
+  "num_llm_edges": 30,
+  "num_gt_edges": 39,
+  "num_conflicts": 72,
+  "type_distribution": {
+    "direction": 7,
+    "topology": 37,
+    "naming": 28
+  },
+  "root_cause_distribution": {
+    "name_hallucination": 2,
+    "all_hallucinated_edges": 2,
+    "real_vs_hallucinated": 3,
+    "src_dst_swap": 1,
+    "false_positive_overlap": 8,
+    "overlap_mixed": 22,
+    "name_hallucination_caused_overlap": 7,
+    "naming_collision_on_correct_subgraph": 15,
+    "real_name_corrupted_by_neighbour_error": 6,
+    "naming_mixed": 6
+  },
+  "conflicts": [
+    {
+      "type": "direction",
+      "description": "node 'outside (restaurant to north, mayer home to east)' has multiple outgoing edges labelled 'west'",
+      "involved_edges": [
+        [
+          "outside (restaurant to north, mayer home to east)",
+          "outside (dead end to east)"
+        ],
+        [
+          "outside (restaurant to north, mayer home to east)",
+          "mayor's house (scene of crime)"
+        ]
+      ],
+      "involved_nodes": [
+        "outside (restaurant to north, mayer home to east)",
+        "outside (dead end to east)",
+        "mayor's house (scene of crime)"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "outside (restaurant to north, mayer home to east)",
+            "outside (dead end to east)"
+          ],
+          "llm_dir": "west",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "src_hallucinated",
+          "source_in_gt": false,
+          "target_in_gt": true,
+          "step": null
+        },
+        {
+          "edge": [
+            "outside (restaurant to north, mayer home to east)",
+            "mayor's house (scene of crime)"
+          ],
+          "llm_dir": "west",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "src_hallucinated",
+          "source_in_gt": false,
+          "target_in_gt": true,
+          "step": 11
+        }
+      ],
+      "case_counts": {
+        "src_hallucinated": 2
+      },
+      "root_cause": "name_hallucination"
+    },
+    {
+      "type": "direction",
+      "description": "node 'bedroom' has multiple outgoing edges labelled 'east'",
+      "involved_edges": [
+        [
+          "bedroom",
+          "hallway (mayer's house, \"guests\" door to east)"
+        ],
+        [
+          "bedroom",
+          "hallway (15th floor, room 19-22)"
+        ]
+      ],
+      "involved_nodes": [
+        "bedroom",
+        "hallway (mayer's house, \"guests\" door to east)",
+        "hallway (15th floor, room 19-22)"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "bedroom",
+            "hallway (mayer's house, \"guests\" door to east)"
+          ],
+          "llm_dir": "east",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": null
+        },
+        {
+          "edge": [
+            "bedroom",
+            "hallway (15th floor, room 19-22)"
+          ],
+          "llm_dir": "east",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 22
+        }
+      ],
+      "case_counts": {
+        "hallucinated_edge": 2
+      },
+      "root_cause": "all_hallucinated_edges"
+    },
+    {
+      "type": "direction",
+      "description": "node 'hallway (15th floor, room 19-22)' has multiple outgoing edges labelled 'north'",
+      "involved_edges": [
+        [
+          "hallway (15th floor, room 19-22)",
+          "outside (holiday inn to north, doughnut king to east, the wall to west)"
+        ],
+        [
+          "hallway (15th floor, room 19-22)",
+          "hallway (sauna to west, pool a to east)"
+        ]
+      ],
+      "involved_nodes": [
+        "hallway (15th floor, room 19-22)",
+        "outside (holiday inn to north, doughnut king to east, the wall to west)",
+        "hallway (sauna to west, pool a to east)"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "hallway (15th floor, room 19-22)",
+            "outside (holiday inn to north, doughnut king to east, the wall to west)"
+          ],
+          "llm_dir": "north",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 23
+        },
+        {
+          "edge": [
+            "hallway (15th floor, room 19-22)",
+            "hallway (sauna to west, pool a to east)"
+          ],
+          "llm_dir": "north",
+          "in_gt": true,
+          "gt_dir": "north",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 47
+        }
+      ],
+      "case_counts": {
+        "hallucinated_edge": 1,
+        "correct": 1
+      },
+      "root_cause": "real_vs_hallucinated"
+    },
+    {
+      "type": "direction",
+      "description": "node 'outside (holiday inn to north, doughnut king to east, the wall to west)' has multiple outgoing edges labelled 'south'",
+      "involved_edges": [
+        [
+          "outside (holiday inn to north, doughnut king to east, the wall to west)",
+          "hallway (15th floor, room 19-22)"
+        ],
+        [
+          "outside (holiday inn to north, doughnut king to east, the wall to west)",
+          "mcdonalds"
+        ],
+        [
+          "outside (holiday inn to north, doughnut king to east, the wall to west)",
+          "police station"
+        ]
+      ],
+      "involved_nodes": [
+        "outside (holiday inn to north, doughnut king to east, the wall to west)",
+        "hallway (15th floor, room 19-22)",
+        "mcdonalds",
+        "police station"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "outside (holiday inn to north, doughnut king to east, the wall to west)",
+            "hallway (15th floor, room 19-22)"
+          ],
+          "llm_dir": "south",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": null
+        },
+        {
+          "edge": [
+            "outside (holiday inn to north, doughnut king to east, the wall to west)",
+            "mcdonalds"
+          ],
+          "llm_dir": "south",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": null
+        },
+        {
+          "edge": [
+            "outside (holiday inn to north, doughnut king to east, the wall to west)",
+            "police station"
+          ],
+          "llm_dir": "south",
+          "in_gt": false,
+          "gt_dir": "north",
+          "case": "swapped_src_dst",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": null
+        }
+      ],
+      "case_counts": {
+        "hallucinated_edge": 2,
+        "swapped_src_dst": 1
+      },
+      "root_cause": "src_dst_swap"
+    },
+    {
+      "type": "direction",
+      "description": "node 'outside (holiday inn to north, doughnut king to east, the wall to west)' has multiple outgoing edges labelled 'east'",
+      "involved_edges": [
+        [
+          "outside (holiday inn to north, doughnut king to east, the wall to west)",
+          "video store"
+        ],
+        [
+          "outside (holiday inn to north, doughnut king to east, the wall to west)",
+          "doughnut king"
+        ]
+      ],
+      "involved_nodes": [
+        "outside (holiday inn to north, doughnut king to east, the wall to west)",
+        "video store",
+        "doughnut king"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "outside (holiday inn to north, doughnut king to east, the wall to west)",
+            "video store"
+          ],
+          "llm_dir": "east",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 24
+        },
+        {
+          "edge": [
+            "outside (holiday inn to north, doughnut king to east, the wall to west)",
+            "doughnut king"
+          ],
+          "llm_dir": "east",
+          "in_gt": true,
+          "gt_dir": "east",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 36
+        }
+      ],
+      "case_counts": {
+        "hallucinated_edge": 1,
+        "correct": 1
+      },
+      "root_cause": "real_vs_hallucinated"
+    },
+    {
+      "type": "direction",
+      "description": "node 'outside (holiday inn to north, doughnut king to east, the wall to west)' has multiple outgoing edges labelled 'north'",
+      "involved_edges": [
+        [
+          "outside (holiday inn to north, doughnut king to east, the wall to west)",
+          "outside (north end, east only available)"
+        ],
+        [
+          "outside (holiday inn to north, doughnut king to east, the wall to west)",
+          "holiday inn"
+        ]
+      ],
+      "involved_nodes": [
+        "outside (holiday inn to north, doughnut king to east, the wall to west)",
+        "outside (north end, east only available)",
+        "holiday inn"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "outside (holiday inn to north, doughnut king to east, the wall to west)",
+            "outside (north end, east only available)"
+          ],
+          "llm_dir": "north",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 30
+        },
+        {
+          "edge": [
+            "outside (holiday inn to north, doughnut king to east, the wall to west)",
+            "holiday inn"
+          ],
+          "llm_dir": "north",
+          "in_gt": true,
+          "gt_dir": "north",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 40
+        }
+      ],
+      "case_counts": {
+        "hallucinated_edge": 1,
+        "correct": 1
+      },
+      "root_cause": "real_vs_hallucinated"
+    },
+    {
+      "type": "direction",
+      "description": "node 'mcdonalds' has multiple outgoing edges labelled 'north'",
+      "involved_edges": [
+        [
+          "mcdonalds",
+          "outside (video store to east)"
+        ],
+        [
+          "mcdonalds",
+          "outside (holiday inn to north, doughnut king to east, the wall to west)"
+        ]
+      ],
+      "involved_nodes": [
+        "mcdonalds",
+        "outside (video store to east)",
+        "outside (holiday inn to north, doughnut king to east, the wall to west)"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "mcdonalds",
+            "outside (video store to east)"
+          ],
+          "llm_dir": "north",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": null
+        },
+        {
+          "edge": [
+            "mcdonalds",
+            "outside (holiday inn to north, doughnut king to east, the wall to west)"
+          ],
+          "llm_dir": "north",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 29
+        }
+      ],
+      "case_counts": {
+        "hallucinated_edge": 2
+      },
+      "root_cause": "all_hallucinated_edges"
+    },
+    {
+      "type": "topology",
+      "description": "position (-4, 7, 0) occupied by multiple rooms ['back of music store', 'dining room']",
+      "involved_edges": [],
+      "involved_nodes": [
+        "back of music store",
+        "dining room"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "music store",
+            "back of music store"
+          ],
+          "llm_dir": "north",
+          "in_gt": true,
+          "gt_dir": "north",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 32
+        },
+        {
+          "edge": [
+            "back of music store",
+            "alley"
+          ],
+          "llm_dir": "north",
+          "in_gt": true,
+          "gt_dir": "north",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 33
+        },
+        {
+          "edge": [
+            "mayor's house (scene of crime)",
+            "dining room"
+          ],
+          "llm_dir": "west",
+          "in_gt": true,
+          "gt_dir": "west",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 12
+        }
+      ],
+      "case_counts": {
+        "correct": 3
+      },
+      "root_cause": "false_positive_overlap"
+    },
+    {
+      "type": "topology",
+      "description": "position (-6, 11, 0) occupied by multiple rooms ['back of music store', 'dining room']",
+      "involved_edges": [],
+      "involved_nodes": [
+        "back of music store",
+        "dining room"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "music store",
+            "back of music store"
+          ],
+          "llm_dir": "north",
+          "in_gt": true,
+          "gt_dir": "north",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 32
+        },
+        {
+          "edge": [
+            "back of music store",
+            "alley"
+          ],
+          "llm_dir": "north",
+          "in_gt": true,
+          "gt_dir": "north",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 33
+        },
+        {
+          "edge": [
+            "mayor's house (scene of crime)",
+            "dining room"
+          ],
+          "llm_dir": "west",
+          "in_gt": true,
+          "gt_dir": "west",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 12
+        }
+      ],
+      "case_counts": {
+        "correct": 3
+      },
+      "root_cause": "false_positive_overlap"
+    },
+    {
+      "type": "topology",
+      "description": "position (0, -1, 0) occupied by multiple rooms ['back of music store', 'dining room']",
+      "involved_edges": [],
+      "involved_nodes": [
+        "back of music store",
+        "dining room"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "music store",
+            "back of music store"
+          ],
+          "llm_dir": "north",
+          "in_gt": true,
+          "gt_dir": "north",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 32
+        },
+        {
+          "edge": [
+            "back of music store",
+            "alley"
+          ],
+          "llm_dir": "north",
+          "in_gt": true,
+          "gt_dir": "north",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 33
+        },
+        {
+          "edge": [
+            "mayor's house (scene of crime)",
+            "dining room"
+          ],
+          "llm_dir": "west",
+          "in_gt": true,
+          "gt_dir": "west",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 12
+        }
+      ],
+      "case_counts": {
+        "correct": 3
+      },
+      "root_cause": "false_positive_overlap"
+    },
+    {
+      "type": "topology",
+      "description": "position (-2, 5, 0) occupied by multiple rooms ['hallway (15th floor, room 19-22)', 'hallway (mayer\\'s house, \"guests\" door to east)', 'mcdonalds', 'police station']",
+      "involved_edges": [],
+      "involved_nodes": [
+        "hallway (15th floor, room 19-22)",
+        "hallway (mayer's house, \"guests\" door to east)",
+        "mcdonalds",
+        "police station"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "bedroom",
+            "hallway (15th floor, room 19-22)"
+          ],
+          "llm_dir": "east",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 22
+        },
+        {
+          "edge": [
+            "hallway (15th floor, east/west intersection)",
+            "hallway (15th floor, room 19-22)"
+          ],
+          "llm_dir": "west",
+          "in_gt": true,
+          "gt_dir": "west",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 46
+        },
+        {
+          "edge": [
+            "hallway (15th floor, room 19-22)",
+            "outside (holiday inn to north, doughnut king to east, the wall to west)"
+          ],
+          "llm_dir": "north",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 23
+        },
+        {
+          "edge": [
+            "hallway (15th floor, room 19-22)",
+            "hallway (sauna to west, pool a to east)"
+          ],
+          "llm_dir": "north",
+          "in_gt": true,
+          "gt_dir": "north",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 47
+        },
+        {
+          "edge": [
+            "hallway (mayer's house, east/west intersect, exit to north)",
+            "hallway (mayer's house, \"guests\" door to east)"
+          ],
+          "llm_dir": "west",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 18
+        },
+        {
+          "edge": [
+            "hallway (mayer's house, \"guests\" door to east)",
+            "bedroom"
+          ],
+          "llm_dir": "west",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 21
+        },
+        {
+          "edge": [
+            "outside (video store to east)",
+            "mcdonalds"
+          ],
+          "llm_dir": "south",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 27
+        },
+        {
+          "edge": [
+            "mcdonalds",
+            "outside (holiday inn to north, doughnut king to east, the wall to west)"
+          ],
+          "llm_dir": "north",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 29
+        },
+        {
+          "edge": [
+            "alley",
+            "police station"
+          ],
+          "llm_dir": "north",
+          "in_gt": true,
+          "gt_dir": "north",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 34
+        },
+        {
+          "edge": [
+            "police station",
+            "outside (holiday inn to north, doughnut king to east, the wall to west)"
+          ],
+          "llm_dir": "north",
+          "in_gt": true,
+          "gt_dir": "north",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 35
+        }
+      ],
+      "case_counts": {
+        "hallucinated_edge": 6,
+        "correct": 4
+      },
+      "root_cause": "overlap_mixed"
+    },
+    {
+      "type": "topology",
+      "description": "position (0, 1, 0) occupied by multiple rooms ['hallway (15th floor, room 19-22)', 'hallway (mayer\\'s house, \"guests\" door to east)', 'mcdonalds', 'police station']",
+      "involved_edges": [],
+      "involved_nodes": [
+        "hallway (15th floor, room 19-22)",
+        "hallway (mayer's house, \"guests\" door to east)",
+        "mcdonalds",
+        "police station"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "bedroom",
+            "hallway (15th floor, room 19-22)"
+          ],
+          "llm_dir": "east",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 22
+        },
+        {
+          "edge": [
+            "hallway (15th floor, east/west intersection)",
+            "hallway (15th floor, room 19-22)"
+          ],
+          "llm_dir": "west",
+          "in_gt": true,
+          "gt_dir": "west",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 46
+        },
+        {
+          "edge": [
+            "hallway (15th floor, room 19-22)",
+            "outside (holiday inn to north, doughnut king to east, the wall to west)"
+          ],
+          "llm_dir": "north",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 23
+        },
+        {
+          "edge": [
+            "hallway (15th floor, room 19-22)",
+            "hallway (sauna to west, pool a to east)"
+          ],
+          "llm_dir": "north",
+          "in_gt": true,
+          "gt_dir": "north",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 47
+        },
+        {
+          "edge": [
+            "hallway (mayer's house, east/west intersect, exit to north)",
+            "hallway (mayer's house, \"guests\" door to east)"
+          ],
+          "llm_dir": "west",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 18
+        },
+        {
+          "edge": [
+            "hallway (mayer's house, \"guests\" door to east)",
+            "bedroom"
+          ],
+          "llm_dir": "west",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 21
+        },
+        {
+          "edge": [
+            "outside (video store to east)",
+            "mcdonalds"
+          ],
+          "llm_dir": "south",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 27
+        },
+        {
+          "edge": [
+            "mcdonalds",
+            "outside (holiday inn to north, doughnut king to east, the wall to west)"
+          ],
+          "llm_dir": "north",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 29
+        },
+        {
+          "edge": [
+            "alley",
+            "police station"
+          ],
+          "llm_dir": "north",
+          "in_gt": true,
+          "gt_dir": "north",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 34
+        },
+        {
+          "edge": [
+            "police station",
+            "outside (holiday inn to north, doughnut king to east, the wall to west)"
+          ],
+          "llm_dir": "north",
+          "in_gt": true,
+          "gt_dir": "north",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 35
+        }
+      ],
+      "case_counts": {
+        "hallucinated_edge": 6,
+        "correct": 4
+      },
+      "root_cause": "overlap_mixed"
+    },
+    {
+      "type": "topology",
+      "description": "position (-4, 9, 0) occupied by multiple rooms ['hallway (15th floor, room 19-22)', 'hallway (mayer\\'s house, \"guests\" door to east)', 'mcdonalds', 'police station']",
+      "involved_edges": [],
+      "involved_nodes": [
+        "hallway (15th floor, room 19-22)",
+        "hallway (mayer's house, \"guests\" door to east)",
+        "mcdonalds",
+        "police station"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "bedroom",
+            "hallway (15th floor, room 19-22)"
+          ],
+          "llm_dir": "east",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 22
+        },
+        {
+          "edge": [
+            "hallway (15th floor, east/west intersection)",
+            "hallway (15th floor, room 19-22)"
+          ],
+          "llm_dir": "west",
+          "in_gt": true,
+          "gt_dir": "west",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 46
+        },
+        {
+          "edge": [
+            "hallway (15th floor, room 19-22)",
+            "outside (holiday inn to north, doughnut king to east, the wall to west)"
+          ],
+          "llm_dir": "north",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 23
+        },
+        {
+          "edge": [
+            "hallway (15th floor, room 19-22)",
+            "hallway (sauna to west, pool a to east)"
+          ],
+          "llm_dir": "north",
+          "in_gt": true,
+          "gt_dir": "north",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 47
+        },
+        {
+          "edge": [
+            "hallway (mayer's house, east/west intersect, exit to north)",
+            "hallway (mayer's house, \"guests\" door to east)"
+          ],
+          "llm_dir": "west",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 18
+        },
+        {
+          "edge": [
+            "hallway (mayer's house, \"guests\" door to east)",
+            "bedroom"
+          ],
+          "llm_dir": "west",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 21
+        },
+        {
+          "edge": [
+            "outside (video store to east)",
+            "mcdonalds"
+          ],
+          "llm_dir": "south",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 27
+        },
+        {
+          "edge": [
+            "mcdonalds",
+            "outside (holiday inn to north, doughnut king to east, the wall to west)"
+          ],
+          "llm_dir": "north",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 29
+        },
+        {
+          "edge": [
+            "alley",
+            "police station"
+          ],
+          "llm_dir": "north",
+          "in_gt": true,
+          "gt_dir": "north",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 34
+        },
+        {
+          "edge": [
+            "police station",
+            "outside (holiday inn to north, doughnut king to east, the wall to west)"
+          ],
+          "llm_dir": "north",
+          "in_gt": true,
+          "gt_dir": "north",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 35
+        }
+      ],
+      "case_counts": {
+        "hallucinated_edge": 6,
+        "correct": 4
+      },
+      "root_cause": "overlap_mixed"
+    },
+    {
+      "type": "topology",
+      "description": "position (-6, 13, 0) occupied by multiple rooms ['hallway (15th floor, room 19-22)', 'hallway (mayer\\'s house, \"guests\" door to east)', 'mcdonalds', 'police station']",
+      "involved_edges": [],
+      "involved_nodes": [
+        "hallway (15th floor, room 19-22)",
+        "hallway (mayer's house, \"guests\" door to east)",
+        "mcdonalds",
+        "police station"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "bedroom",
+            "hallway (15th floor, room 19-22)"
+          ],
+          "llm_dir": "east",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 22
+        },
+        {
+          "edge": [
+            "hallway (15th floor, east/west intersection)",
+            "hallway (15th floor, room 19-22)"
+          ],
+          "llm_dir": "west",
+          "in_gt": true,
+          "gt_dir": "west",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 46
+        },
+        {
+          "edge": [
+            "hallway (15th floor, room 19-22)",
+            "outside (holiday inn to north, doughnut king to east, the wall to west)"
+          ],
+          "llm_dir": "north",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 23
+        },
+        {
+          "edge": [
+            "hallway (15th floor, room 19-22)",
+            "hallway (sauna to west, pool a to east)"
+          ],
+          "llm_dir": "north",
+          "in_gt": true,
+          "gt_dir": "north",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 47
+        },
+        {
+          "edge": [
+            "hallway (mayer's house, east/west intersect, exit to north)",
+            "hallway (mayer's house, \"guests\" door to east)"
+          ],
+          "llm_dir": "west",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 18
+        },
+        {
+          "edge": [
+            "hallway (mayer's house, \"guests\" door to east)",
+            "bedroom"
+          ],
+          "llm_dir": "west",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 21
+        },
+        {
+          "edge": [
+            "outside (video store to east)",
+            "mcdonalds"
+          ],
+          "llm_dir": "south",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 27
+        },
+        {
+          "edge": [
+            "mcdonalds",
+            "outside (holiday inn to north, doughnut king to east, the wall to west)"
+          ],
+          "llm_dir": "north",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 29
+        },
+        {
+          "edge": [
+            "alley",
+            "police station"
+          ],
+          "llm_dir": "north",
+          "in_gt": true,
+          "gt_dir": "north",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 34
+        },
+        {
+          "edge": [
+            "police station",
+            "outside (holiday inn to north, doughnut king to east, the wall to west)"
+          ],
+          "llm_dir": "north",
+          "in_gt": true,
+          "gt_dir": "north",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 35
+        }
+      ],
+      "case_counts": {
+        "hallucinated_edge": 6,
+        "correct": 4
+      },
+      "root_cause": "overlap_mixed"
+    },
+    {
+      "type": "topology",
+      "description": "position (0, 2, 0) occupied by multiple rooms ['hallway (sauna to west, pool a to east)', 'outside (holiday inn to north, doughnut king to east, the wall to west)', 'outside (video store to east)']",
+      "involved_edges": [],
+      "involved_nodes": [
+        "hallway (sauna to west, pool a to east)",
+        "outside (holiday inn to north, doughnut king to east, the wall to west)",
+        "outside (video store to east)"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "hallway (15th floor, room 19-22)",
+            "hallway (sauna to west, pool a to east)"
+          ],
+          "llm_dir": "north",
+          "in_gt": true,
+          "gt_dir": "north",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 47
+        },
+        {
+          "edge": [
+            "hallway (sauna to west, pool a to east)",
+            "room # 30"
+          ],
+          "llm_dir": "north",
+          "in_gt": true,
+          "gt_dir": "north",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 48
+        },
+        {
+          "edge": [
+            "hallway (15th floor, room 19-22)",
+            "outside (holiday inn to north, doughnut king to east, the wall to west)"
+          ],
+          "llm_dir": "north",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 23
+        },
+        {
+          "edge": [
+            "mcdonalds",
+            "outside (holiday inn to north, doughnut king to east, the wall to west)"
+          ],
+          "llm_dir": "north",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 29
+        },
+        {
+          "edge": [
+            "police station",
+            "outside (holiday inn to north, doughnut king to east, the wall to west)"
+          ],
+          "llm_dir": "north",
+          "in_gt": true,
+          "gt_dir": "north",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 35
+        },
+        {
+          "edge": [
+            "outside (holiday inn to north, doughnut king to east, the wall to west)",
+            "video store"
+          ],
+          "llm_dir": "east",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 24
+        },
+        {
+          "edge": [
+            "outside (holiday inn to north, doughnut king to east, the wall to west)",
+            "outside (north end, east only available)"
+          ],
+          "llm_dir": "north",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 30
+        },
+        {
+          "edge": [
+            "outside (holiday inn to north, doughnut king to east, the wall to west)",
+            "doughnut king"
+          ],
+          "llm_dir": "east",
+          "in_gt": true,
+          "gt_dir": "east",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 36
+        },
+        {
+          "edge": [
+            "outside (holiday inn to north, doughnut king to east, the wall to west)",
+            "the wall"
+          ],
+          "llm_dir": "west",
+          "in_gt": true,
+          "gt_dir": "west",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 38
+        },
+        {
+          "edge": [
+            "outside (holiday inn to north, doughnut king to east, the wall to west)",
+            "holiday inn"
+          ],
+          "llm_dir": "north",
+          "in_gt": true,
+          "gt_dir": "north",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 40
+        },
+        {
+          "edge": [
+            "video store",
+            "outside (video store to east)"
+          ],
+          "llm_dir": "east",
+          "in_gt": false,
+          "gt_dir": "east",
+          "case": "swapped_src_dst",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 26
+        },
+        {
+          "edge": [
+            "outside (video store to east)",
+            "mcdonalds"
+          ],
+          "llm_dir": "south",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 27
+        }
+      ],
+      "case_counts": {
+        "correct": 6,
+        "hallucinated_edge": 5,
+        "swapped_src_dst": 1
+      },
+      "root_cause": "overlap_mixed"
+    },
+    {
+      "type": "topology",
+      "description": "position (-2, 6, 0) occupied by multiple rooms ['hallway (sauna to west, pool a to east)', 'outside (holiday inn to north, doughnut king to east, the wall to west)', 'outside (video store to east)']",
+      "involved_edges": [],
+      "involved_nodes": [
+        "hallway (sauna to west, pool a to east)",
+        "outside (holiday inn to north, doughnut king to east, the wall to west)",
+        "outside (video store to east)"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "hallway (15th floor, room 19-22)",
+            "hallway (sauna to west, pool a to east)"
+          ],
+          "llm_dir": "north",
+          "in_gt": true,
+          "gt_dir": "north",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 47
+        },
+        {
+          "edge": [
+            "hallway (sauna to west, pool a to east)",
+            "room # 30"
+          ],
+          "llm_dir": "north",
+          "in_gt": true,
+          "gt_dir": "north",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 48
+        },
+        {
+          "edge": [
+            "hallway (15th floor, room 19-22)",
+            "outside (holiday inn to north, doughnut king to east, the wall to west)"
+          ],
+          "llm_dir": "north",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 23
+        },
+        {
+          "edge": [
+            "mcdonalds",
+            "outside (holiday inn to north, doughnut king to east, the wall to west)"
+          ],
+          "llm_dir": "north",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 29
+        },
+        {
+          "edge": [
+            "police station",
+            "outside (holiday inn to north, doughnut king to east, the wall to west)"
+          ],
+          "llm_dir": "north",
+          "in_gt": true,
+          "gt_dir": "north",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 35
+        },
+        {
+          "edge": [
+            "outside (holiday inn to north, doughnut king to east, the wall to west)",
+            "video store"
+          ],
+          "llm_dir": "east",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 24
+        },
+        {
+          "edge": [
+            "outside (holiday inn to north, doughnut king to east, the wall to west)",
+            "outside (north end, east only available)"
+          ],
+          "llm_dir": "north",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 30
+        },
+        {
+          "edge": [
+            "outside (holiday inn to north, doughnut king to east, the wall to west)",
+            "doughnut king"
+          ],
+          "llm_dir": "east",
+          "in_gt": true,
+          "gt_dir": "east",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 36
+        },
+        {
+          "edge": [
+            "outside (holiday inn to north, doughnut king to east, the wall to west)",
+            "the wall"
+          ],
+          "llm_dir": "west",
+          "in_gt": true,
+          "gt_dir": "west",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 38
+        },
+        {
+          "edge": [
+            "outside (holiday inn to north, doughnut king to east, the wall to west)",
+            "holiday inn"
+          ],
+          "llm_dir": "north",
+          "in_gt": true,
+          "gt_dir": "north",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 40
+        },
+        {
+          "edge": [
+            "video store",
+            "outside (video store to east)"
+          ],
+          "llm_dir": "east",
+          "in_gt": false,
+          "gt_dir": "east",
+          "case": "swapped_src_dst",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 26
+        },
+        {
+          "edge": [
+            "outside (video store to east)",
+            "mcdonalds"
+          ],
+          "llm_dir": "south",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 27
+        }
+      ],
+      "case_counts": {
+        "correct": 6,
+        "hallucinated_edge": 5,
+        "swapped_src_dst": 1
+      },
+      "root_cause": "overlap_mixed"
+    },
+    {
+      "type": "topology",
+      "description": "position (-4, 10, 0) occupied by multiple rooms ['hallway (sauna to west, pool a to east)', 'outside (holiday inn to north, doughnut king to east, the wall to west)', 'outside (video store to east)']",
+      "involved_edges": [],
+      "involved_nodes": [
+        "hallway (sauna to west, pool a to east)",
+        "outside (holiday inn to north, doughnut king to east, the wall to west)",
+        "outside (video store to east)"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "hallway (15th floor, room 19-22)",
+            "hallway (sauna to west, pool a to east)"
+          ],
+          "llm_dir": "north",
+          "in_gt": true,
+          "gt_dir": "north",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 47
+        },
+        {
+          "edge": [
+            "hallway (sauna to west, pool a to east)",
+            "room # 30"
+          ],
+          "llm_dir": "north",
+          "in_gt": true,
+          "gt_dir": "north",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 48
+        },
+        {
+          "edge": [
+            "hallway (15th floor, room 19-22)",
+            "outside (holiday inn to north, doughnut king to east, the wall to west)"
+          ],
+          "llm_dir": "north",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 23
+        },
+        {
+          "edge": [
+            "mcdonalds",
+            "outside (holiday inn to north, doughnut king to east, the wall to west)"
+          ],
+          "llm_dir": "north",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 29
+        },
+        {
+          "edge": [
+            "police station",
+            "outside (holiday inn to north, doughnut king to east, the wall to west)"
+          ],
+          "llm_dir": "north",
+          "in_gt": true,
+          "gt_dir": "north",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 35
+        },
+        {
+          "edge": [
+            "outside (holiday inn to north, doughnut king to east, the wall to west)",
+            "video store"
+          ],
+          "llm_dir": "east",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 24
+        },
+        {
+          "edge": [
+            "outside (holiday inn to north, doughnut king to east, the wall to west)",
+            "outside (north end, east only available)"
+          ],
+          "llm_dir": "north",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 30
+        },
+        {
+          "edge": [
+            "outside (holiday inn to north, doughnut king to east, the wall to west)",
+            "doughnut king"
+          ],
+          "llm_dir": "east",
+          "in_gt": true,
+          "gt_dir": "east",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 36
+        },
+        {
+          "edge": [
+            "outside (holiday inn to north, doughnut king to east, the wall to west)",
+            "the wall"
+          ],
+          "llm_dir": "west",
+          "in_gt": true,
+          "gt_dir": "west",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 38
+        },
+        {
+          "edge": [
+            "outside (holiday inn to north, doughnut king to east, the wall to west)",
+            "holiday inn"
+          ],
+          "llm_dir": "north",
+          "in_gt": true,
+          "gt_dir": "north",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 40
+        },
+        {
+          "edge": [
+            "video store",
+            "outside (video store to east)"
+          ],
+          "llm_dir": "east",
+          "in_gt": false,
+          "gt_dir": "east",
+          "case": "swapped_src_dst",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 26
+        },
+        {
+          "edge": [
+            "outside (video store to east)",
+            "mcdonalds"
+          ],
+          "llm_dir": "south",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 27
+        }
+      ],
+      "case_counts": {
+        "correct": 6,
+        "hallucinated_edge": 5,
+        "swapped_src_dst": 1
+      },
+      "root_cause": "overlap_mixed"
+    },
+    {
+      "type": "topology",
+      "description": "position (-6, 14, 0) occupied by multiple rooms ['hallway (sauna to west, pool a to east)', 'outside (holiday inn to north, doughnut king to east, the wall to west)', 'outside (video store to east)']",
+      "involved_edges": [],
+      "involved_nodes": [
+        "hallway (sauna to west, pool a to east)",
+        "outside (holiday inn to north, doughnut king to east, the wall to west)",
+        "outside (video store to east)"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "hallway (15th floor, room 19-22)",
+            "hallway (sauna to west, pool a to east)"
+          ],
+          "llm_dir": "north",
+          "in_gt": true,
+          "gt_dir": "north",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 47
+        },
+        {
+          "edge": [
+            "hallway (sauna to west, pool a to east)",
+            "room # 30"
+          ],
+          "llm_dir": "north",
+          "in_gt": true,
+          "gt_dir": "north",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 48
+        },
+        {
+          "edge": [
+            "hallway (15th floor, room 19-22)",
+            "outside (holiday inn to north, doughnut king to east, the wall to west)"
+          ],
+          "llm_dir": "north",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 23
+        },
+        {
+          "edge": [
+            "mcdonalds",
+            "outside (holiday inn to north, doughnut king to east, the wall to west)"
+          ],
+          "llm_dir": "north",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 29
+        },
+        {
+          "edge": [
+            "police station",
+            "outside (holiday inn to north, doughnut king to east, the wall to west)"
+          ],
+          "llm_dir": "north",
+          "in_gt": true,
+          "gt_dir": "north",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 35
+        },
+        {
+          "edge": [
+            "outside (holiday inn to north, doughnut king to east, the wall to west)",
+            "video store"
+          ],
+          "llm_dir": "east",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 24
+        },
+        {
+          "edge": [
+            "outside (holiday inn to north, doughnut king to east, the wall to west)",
+            "outside (north end, east only available)"
+          ],
+          "llm_dir": "north",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 30
+        },
+        {
+          "edge": [
+            "outside (holiday inn to north, doughnut king to east, the wall to west)",
+            "doughnut king"
+          ],
+          "llm_dir": "east",
+          "in_gt": true,
+          "gt_dir": "east",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 36
+        },
+        {
+          "edge": [
+            "outside (holiday inn to north, doughnut king to east, the wall to west)",
+            "the wall"
+          ],
+          "llm_dir": "west",
+          "in_gt": true,
+          "gt_dir": "west",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 38
+        },
+        {
+          "edge": [
+            "outside (holiday inn to north, doughnut king to east, the wall to west)",
+            "holiday inn"
+          ],
+          "llm_dir": "north",
+          "in_gt": true,
+          "gt_dir": "north",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 40
+        },
+        {
+          "edge": [
+            "video store",
+            "outside (video store to east)"
+          ],
+          "llm_dir": "east",
+          "in_gt": false,
+          "gt_dir": "east",
+          "case": "swapped_src_dst",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 26
+        },
+        {
+          "edge": [
+            "outside (video store to east)",
+            "mcdonalds"
+          ],
+          "llm_dir": "south",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 27
+        }
+      ],
+      "case_counts": {
+        "correct": 6,
+        "hallucinated_edge": 5,
+        "swapped_src_dst": 1
+      },
+      "root_cause": "overlap_mixed"
+    },
+    {
+      "type": "topology",
+      "description": "position (-7, 14, 0) occupied by multiple rooms ['the wall', 'video store']",
+      "involved_edges": [],
+      "involved_nodes": [
+        "the wall",
+        "video store"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "outside (holiday inn to north, doughnut king to east, the wall to west)",
+            "the wall"
+          ],
+          "llm_dir": "west",
+          "in_gt": true,
+          "gt_dir": "west",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 38
+        },
+        {
+          "edge": [
+            "outside (holiday inn to north, doughnut king to east, the wall to west)",
+            "video store"
+          ],
+          "llm_dir": "east",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 24
+        },
+        {
+          "edge": [
+            "video store",
+            "outside (video store to east)"
+          ],
+          "llm_dir": "east",
+          "in_gt": false,
+          "gt_dir": "east",
+          "case": "swapped_src_dst",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 26
+        }
+      ],
+      "case_counts": {
+        "correct": 1,
+        "hallucinated_edge": 1,
+        "swapped_src_dst": 1
+      },
+      "root_cause": "overlap_mixed"
+    },
+    {
+      "type": "topology",
+      "description": "position (-5, 14, 0) occupied by multiple rooms ['doughnut king', 'video store']",
+      "involved_edges": [],
+      "involved_nodes": [
+        "doughnut king",
+        "video store"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "outside (holiday inn to north, doughnut king to east, the wall to west)",
+            "doughnut king"
+          ],
+          "llm_dir": "east",
+          "in_gt": true,
+          "gt_dir": "east",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 36
+        },
+        {
+          "edge": [
+            "outside (holiday inn to north, doughnut king to east, the wall to west)",
+            "video store"
+          ],
+          "llm_dir": "east",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 24
+        },
+        {
+          "edge": [
+            "video store",
+            "outside (video store to east)"
+          ],
+          "llm_dir": "east",
+          "in_gt": false,
+          "gt_dir": "east",
+          "case": "swapped_src_dst",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 26
+        }
+      ],
+      "case_counts": {
+        "correct": 1,
+        "hallucinated_edge": 1,
+        "swapped_src_dst": 1
+      },
+      "root_cause": "overlap_mixed"
+    },
+    {
+      "type": "topology",
+      "description": "position (1, 2, 0) occupied by multiple rooms ['doughnut king', 'video store']",
+      "involved_edges": [],
+      "involved_nodes": [
+        "doughnut king",
+        "video store"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "outside (holiday inn to north, doughnut king to east, the wall to west)",
+            "doughnut king"
+          ],
+          "llm_dir": "east",
+          "in_gt": true,
+          "gt_dir": "east",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 36
+        },
+        {
+          "edge": [
+            "outside (holiday inn to north, doughnut king to east, the wall to west)",
+            "video store"
+          ],
+          "llm_dir": "east",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 24
+        },
+        {
+          "edge": [
+            "video store",
+            "outside (video store to east)"
+          ],
+          "llm_dir": "east",
+          "in_gt": false,
+          "gt_dir": "east",
+          "case": "swapped_src_dst",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 26
+        }
+      ],
+      "case_counts": {
+        "correct": 1,
+        "hallucinated_edge": 1,
+        "swapped_src_dst": 1
+      },
+      "root_cause": "overlap_mixed"
+    },
+    {
+      "type": "topology",
+      "description": "position (-5, 10, 0) occupied by multiple rooms [\"chief's office\", 'the wall', 'video store']",
+      "involved_edges": [],
+      "involved_nodes": [
+        "chief's office",
+        "the wall",
+        "video store"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "chief's office",
+            "closet"
+          ],
+          "llm_dir": "west",
+          "in_gt": true,
+          "gt_dir": "west",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 5
+        },
+        {
+          "edge": [
+            "chief's office",
+            "outside (dead end to east)"
+          ],
+          "llm_dir": "north",
+          "in_gt": true,
+          "gt_dir": "north",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 8
+        },
+        {
+          "edge": [
+            "outside (holiday inn to north, doughnut king to east, the wall to west)",
+            "the wall"
+          ],
+          "llm_dir": "west",
+          "in_gt": true,
+          "gt_dir": "west",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 38
+        },
+        {
+          "edge": [
+            "outside (holiday inn to north, doughnut king to east, the wall to west)",
+            "video store"
+          ],
+          "llm_dir": "east",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 24
+        },
+        {
+          "edge": [
+            "video store",
+            "outside (video store to east)"
+          ],
+          "llm_dir": "east",
+          "in_gt": false,
+          "gt_dir": "east",
+          "case": "swapped_src_dst",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 26
+        }
+      ],
+      "case_counts": {
+        "correct": 3,
+        "hallucinated_edge": 1,
+        "swapped_src_dst": 1
+      },
+      "root_cause": "overlap_mixed"
+    },
+    {
+      "type": "topology",
+      "description": "position (-1, 6, 0) occupied by multiple rooms ['doughnut king', 'video store']",
+      "involved_edges": [],
+      "involved_nodes": [
+        "doughnut king",
+        "video store"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "outside (holiday inn to north, doughnut king to east, the wall to west)",
+            "doughnut king"
+          ],
+          "llm_dir": "east",
+          "in_gt": true,
+          "gt_dir": "east",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 36
+        },
+        {
+          "edge": [
+            "outside (holiday inn to north, doughnut king to east, the wall to west)",
+            "video store"
+          ],
+          "llm_dir": "east",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 24
+        },
+        {
+          "edge": [
+            "video store",
+            "outside (video store to east)"
+          ],
+          "llm_dir": "east",
+          "in_gt": false,
+          "gt_dir": "east",
+          "case": "swapped_src_dst",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 26
+        }
+      ],
+      "case_counts": {
+        "correct": 1,
+        "hallucinated_edge": 1,
+        "swapped_src_dst": 1
+      },
+      "root_cause": "overlap_mixed"
+    },
+    {
+      "type": "topology",
+      "description": "position (-3, 10, 0) occupied by multiple rooms ['doughnut king', 'video store']",
+      "involved_edges": [],
+      "involved_nodes": [
+        "doughnut king",
+        "video store"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "outside (holiday inn to north, doughnut king to east, the wall to west)",
+            "doughnut king"
+          ],
+          "llm_dir": "east",
+          "in_gt": true,
+          "gt_dir": "east",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 36
+        },
+        {
+          "edge": [
+            "outside (holiday inn to north, doughnut king to east, the wall to west)",
+            "video store"
+          ],
+          "llm_dir": "east",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 24
+        },
+        {
+          "edge": [
+            "video store",
+            "outside (video store to east)"
+          ],
+          "llm_dir": "east",
+          "in_gt": false,
+          "gt_dir": "east",
+          "case": "swapped_src_dst",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 26
+        }
+      ],
+      "case_counts": {
+        "correct": 1,
+        "hallucinated_edge": 1,
+        "swapped_src_dst": 1
+      },
+      "root_cause": "overlap_mixed"
+    },
+    {
+      "type": "topology",
+      "description": "position (-6, 15, 0) occupied by multiple rooms ['holiday inn', 'outside (north end, east only available)', 'room # 30']",
+      "involved_edges": [],
+      "involved_nodes": [
+        "holiday inn",
+        "outside (north end, east only available)",
+        "room # 30"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "outside (holiday inn to north, doughnut king to east, the wall to west)",
+            "holiday inn"
+          ],
+          "llm_dir": "north",
+          "in_gt": true,
+          "gt_dir": "north",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 40
+        },
+        {
+          "edge": [
+            "holiday inn",
+            "holiday inn 15th floor"
+          ],
+          "llm_dir": "north",
+          "in_gt": true,
+          "gt_dir": "north",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 42
+        },
+        {
+          "edge": [
+            "outside (holiday inn to north, doughnut king to east, the wall to west)",
+            "outside (north end, east only available)"
+          ],
+          "llm_dir": "north",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 30
+        },
+        {
+          "edge": [
+            "outside (north end, east only available)",
+            "music store"
+          ],
+          "llm_dir": "east",
+          "in_gt": true,
+          "gt_dir": "east",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 31
+        },
+        {
+          "edge": [
+            "hallway (sauna to west, pool a to east)",
+            "room # 30"
+          ],
+          "llm_dir": "north",
+          "in_gt": true,
+          "gt_dir": "north",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 48
+        }
+      ],
+      "case_counts": {
+        "correct": 4,
+        "hallucinated_edge": 1
+      },
+      "root_cause": "overlap_mixed"
+    },
+    {
+      "type": "topology",
+      "description": "position (-2, 7, 0) occupied by multiple rooms ['holiday inn', 'outside (north end, east only available)', 'outside (restaurant to north, mayer home to east)', 'room # 30']",
+      "involved_edges": [],
+      "involved_nodes": [
+        "holiday inn",
+        "outside (north end, east only available)",
+        "outside (restaurant to north, mayer home to east)",
+        "room # 30"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "outside (holiday inn to north, doughnut king to east, the wall to west)",
+            "holiday inn"
+          ],
+          "llm_dir": "north",
+          "in_gt": true,
+          "gt_dir": "north",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 40
+        },
+        {
+          "edge": [
+            "holiday inn",
+            "holiday inn 15th floor"
+          ],
+          "llm_dir": "north",
+          "in_gt": true,
+          "gt_dir": "north",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 42
+        },
+        {
+          "edge": [
+            "outside (holiday inn to north, doughnut king to east, the wall to west)",
+            "outside (north end, east only available)"
+          ],
+          "llm_dir": "north",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 30
+        },
+        {
+          "edge": [
+            "outside (north end, east only available)",
+            "music store"
+          ],
+          "llm_dir": "east",
+          "in_gt": true,
+          "gt_dir": "east",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 31
+        },
+        {
+          "edge": [
+            "outside (dead end to east)",
+            "outside (restaurant to north, mayer home to east)"
+          ],
+          "llm_dir": "east",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "dst_hallucinated",
+          "source_in_gt": true,
+          "target_in_gt": false,
+          "step": 9
+        },
+        {
+          "edge": [
+            "outside (restaurant to north, mayer home to east)",
+            "mayor's house (scene of crime)"
+          ],
+          "llm_dir": "west",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "src_hallucinated",
+          "source_in_gt": false,
+          "target_in_gt": true,
+          "step": 11
+        },
+        {
+          "edge": [
+            "hallway (sauna to west, pool a to east)",
+            "room # 30"
+          ],
+          "llm_dir": "north",
+          "in_gt": true,
+          "gt_dir": "north",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 48
+        }
+      ],
+      "case_counts": {
+        "correct": 4,
+        "hallucinated_edge": 1,
+        "dst_hallucinated": 1,
+        "src_hallucinated": 1
+      },
+      "root_cause": "name_hallucination_caused_overlap"
+    },
+    {
+      "type": "topology",
+      "description": "position (0, 3, 0) occupied by multiple rooms ['holiday inn', 'outside (north end, east only available)', 'outside (restaurant to north, mayer home to east)', 'room # 30']",
+      "involved_edges": [],
+      "involved_nodes": [
+        "holiday inn",
+        "outside (north end, east only available)",
+        "outside (restaurant to north, mayer home to east)",
+        "room # 30"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "outside (holiday inn to north, doughnut king to east, the wall to west)",
+            "holiday inn"
+          ],
+          "llm_dir": "north",
+          "in_gt": true,
+          "gt_dir": "north",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 40
+        },
+        {
+          "edge": [
+            "holiday inn",
+            "holiday inn 15th floor"
+          ],
+          "llm_dir": "north",
+          "in_gt": true,
+          "gt_dir": "north",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 42
+        },
+        {
+          "edge": [
+            "outside (holiday inn to north, doughnut king to east, the wall to west)",
+            "outside (north end, east only available)"
+          ],
+          "llm_dir": "north",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 30
+        },
+        {
+          "edge": [
+            "outside (north end, east only available)",
+            "music store"
+          ],
+          "llm_dir": "east",
+          "in_gt": true,
+          "gt_dir": "east",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 31
+        },
+        {
+          "edge": [
+            "outside (dead end to east)",
+            "outside (restaurant to north, mayer home to east)"
+          ],
+          "llm_dir": "east",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "dst_hallucinated",
+          "source_in_gt": true,
+          "target_in_gt": false,
+          "step": 9
+        },
+        {
+          "edge": [
+            "outside (restaurant to north, mayer home to east)",
+            "mayor's house (scene of crime)"
+          ],
+          "llm_dir": "west",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "src_hallucinated",
+          "source_in_gt": false,
+          "target_in_gt": true,
+          "step": 11
+        },
+        {
+          "edge": [
+            "hallway (sauna to west, pool a to east)",
+            "room # 30"
+          ],
+          "llm_dir": "north",
+          "in_gt": true,
+          "gt_dir": "north",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 48
+        }
+      ],
+      "case_counts": {
+        "correct": 4,
+        "hallucinated_edge": 1,
+        "dst_hallucinated": 1,
+        "src_hallucinated": 1
+      },
+      "root_cause": "name_hallucination_caused_overlap"
+    },
+    {
+      "type": "topology",
+      "description": "position (-4, 11, 0) occupied by multiple rooms ['holiday inn', 'outside (north end, east only available)', 'outside (restaurant to north, mayer home to east)', 'room # 30']",
+      "involved_edges": [],
+      "involved_nodes": [
+        "holiday inn",
+        "outside (north end, east only available)",
+        "outside (restaurant to north, mayer home to east)",
+        "room # 30"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "outside (holiday inn to north, doughnut king to east, the wall to west)",
+            "holiday inn"
+          ],
+          "llm_dir": "north",
+          "in_gt": true,
+          "gt_dir": "north",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 40
+        },
+        {
+          "edge": [
+            "holiday inn",
+            "holiday inn 15th floor"
+          ],
+          "llm_dir": "north",
+          "in_gt": true,
+          "gt_dir": "north",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 42
+        },
+        {
+          "edge": [
+            "outside (holiday inn to north, doughnut king to east, the wall to west)",
+            "outside (north end, east only available)"
+          ],
+          "llm_dir": "north",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 30
+        },
+        {
+          "edge": [
+            "outside (north end, east only available)",
+            "music store"
+          ],
+          "llm_dir": "east",
+          "in_gt": true,
+          "gt_dir": "east",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 31
+        },
+        {
+          "edge": [
+            "outside (dead end to east)",
+            "outside (restaurant to north, mayer home to east)"
+          ],
+          "llm_dir": "east",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "dst_hallucinated",
+          "source_in_gt": true,
+          "target_in_gt": false,
+          "step": 9
+        },
+        {
+          "edge": [
+            "outside (restaurant to north, mayer home to east)",
+            "mayor's house (scene of crime)"
+          ],
+          "llm_dir": "west",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "src_hallucinated",
+          "source_in_gt": false,
+          "target_in_gt": true,
+          "step": 11
+        },
+        {
+          "edge": [
+            "hallway (sauna to west, pool a to east)",
+            "room # 30"
+          ],
+          "llm_dir": "north",
+          "in_gt": true,
+          "gt_dir": "north",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 48
+        }
+      ],
+      "case_counts": {
+        "correct": 4,
+        "hallucinated_edge": 1,
+        "dst_hallucinated": 1,
+        "src_hallucinated": 1
+      },
+      "root_cause": "name_hallucination_caused_overlap"
+    },
+    {
+      "type": "topology",
+      "description": "position (-3, 6, 0) occupied by multiple rooms [\"chief's office\", 'the wall']",
+      "involved_edges": [],
+      "involved_nodes": [
+        "chief's office",
+        "the wall"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "chief's office",
+            "closet"
+          ],
+          "llm_dir": "west",
+          "in_gt": true,
+          "gt_dir": "west",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 5
+        },
+        {
+          "edge": [
+            "chief's office",
+            "outside (dead end to east)"
+          ],
+          "llm_dir": "north",
+          "in_gt": true,
+          "gt_dir": "north",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 8
+        },
+        {
+          "edge": [
+            "outside (holiday inn to north, doughnut king to east, the wall to west)",
+            "the wall"
+          ],
+          "llm_dir": "west",
+          "in_gt": true,
+          "gt_dir": "west",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 38
+        }
+      ],
+      "case_counts": {
+        "correct": 3
+      },
+      "root_cause": "false_positive_overlap"
+    },
+    {
+      "type": "topology",
+      "description": "position (-1, 2, 0) occupied by multiple rooms [\"chief's office\", 'the wall']",
+      "involved_edges": [],
+      "involved_nodes": [
+        "chief's office",
+        "the wall"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "chief's office",
+            "closet"
+          ],
+          "llm_dir": "west",
+          "in_gt": true,
+          "gt_dir": "west",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 5
+        },
+        {
+          "edge": [
+            "chief's office",
+            "outside (dead end to east)"
+          ],
+          "llm_dir": "north",
+          "in_gt": true,
+          "gt_dir": "north",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 8
+        },
+        {
+          "edge": [
+            "outside (holiday inn to north, doughnut king to east, the wall to west)",
+            "the wall"
+          ],
+          "llm_dir": "west",
+          "in_gt": true,
+          "gt_dir": "west",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 38
+        }
+      ],
+      "case_counts": {
+        "correct": 3
+      },
+      "root_cause": "false_positive_overlap"
+    },
+    {
+      "type": "topology",
+      "description": "position (-3, 8, 0) occupied by multiple rooms ['hallway (15th floor, room 1-7)', \"upstairs hallway (mayer's house)\"]",
+      "involved_edges": [],
+      "involved_nodes": [
+        "hallway (15th floor, room 1-7)",
+        "upstairs hallway (mayer's house)"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "holiday inn 15th floor",
+            "hallway (15th floor, room 1-7)"
+          ],
+          "llm_dir": "west",
+          "in_gt": true,
+          "gt_dir": "west",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 43
+        },
+        {
+          "edge": [
+            "hallway (15th floor, room 1-7)",
+            "hallway (15th floor, east/west intersection)"
+          ],
+          "llm_dir": "north",
+          "in_gt": true,
+          "gt_dir": "north",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 44
+        },
+        {
+          "edge": [
+            "mayor's house (scene of crime)",
+            "upstairs hallway (mayer's house)"
+          ],
+          "llm_dir": "north",
+          "in_gt": true,
+          "gt_dir": "north",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 16
+        },
+        {
+          "edge": [
+            "upstairs hallway (mayer's house)",
+            "hallway (mayer's house, east/west intersect, exit to north)"
+          ],
+          "llm_dir": "north",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 17
+        }
+      ],
+      "case_counts": {
+        "correct": 3,
+        "hallucinated_edge": 1
+      },
+      "root_cause": "overlap_mixed"
+    },
+    {
+      "type": "topology",
+      "description": "position (-5, 12, 0) occupied by multiple rooms ['hallway (15th floor, room 1-7)', \"upstairs hallway (mayer's house)\"]",
+      "involved_edges": [],
+      "involved_nodes": [
+        "hallway (15th floor, room 1-7)",
+        "upstairs hallway (mayer's house)"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "holiday inn 15th floor",
+            "hallway (15th floor, room 1-7)"
+          ],
+          "llm_dir": "west",
+          "in_gt": true,
+          "gt_dir": "west",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 43
+        },
+        {
+          "edge": [
+            "hallway (15th floor, room 1-7)",
+            "hallway (15th floor, east/west intersection)"
+          ],
+          "llm_dir": "north",
+          "in_gt": true,
+          "gt_dir": "north",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 44
+        },
+        {
+          "edge": [
+            "mayor's house (scene of crime)",
+            "upstairs hallway (mayer's house)"
+          ],
+          "llm_dir": "north",
+          "in_gt": true,
+          "gt_dir": "north",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 16
+        },
+        {
+          "edge": [
+            "upstairs hallway (mayer's house)",
+            "hallway (mayer's house, east/west intersect, exit to north)"
+          ],
+          "llm_dir": "north",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 17
+        }
+      ],
+      "case_counts": {
+        "correct": 3,
+        "hallucinated_edge": 1
+      },
+      "root_cause": "overlap_mixed"
+    },
+    {
+      "type": "topology",
+      "description": "position (-1, 4, 0) occupied by multiple rooms ['hallway (15th floor, room 1-7)', \"upstairs hallway (mayer's house)\"]",
+      "involved_edges": [],
+      "involved_nodes": [
+        "hallway (15th floor, room 1-7)",
+        "upstairs hallway (mayer's house)"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "holiday inn 15th floor",
+            "hallway (15th floor, room 1-7)"
+          ],
+          "llm_dir": "west",
+          "in_gt": true,
+          "gt_dir": "west",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 43
+        },
+        {
+          "edge": [
+            "hallway (15th floor, room 1-7)",
+            "hallway (15th floor, east/west intersection)"
+          ],
+          "llm_dir": "north",
+          "in_gt": true,
+          "gt_dir": "north",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 44
+        },
+        {
+          "edge": [
+            "mayor's house (scene of crime)",
+            "upstairs hallway (mayer's house)"
+          ],
+          "llm_dir": "north",
+          "in_gt": true,
+          "gt_dir": "north",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 16
+        },
+        {
+          "edge": [
+            "upstairs hallway (mayer's house)",
+            "hallway (mayer's house, east/west intersect, exit to north)"
+          ],
+          "llm_dir": "north",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 17
+        }
+      ],
+      "case_counts": {
+        "correct": 3,
+        "hallucinated_edge": 1
+      },
+      "root_cause": "overlap_mixed"
+    },
+    {
+      "type": "topology",
+      "description": "position (-5, 13, 0) occupied by multiple rooms ['hallway (15th floor, east/west intersection)', \"hallway (mayer's house, east/west intersect, exit to north)\"]",
+      "involved_edges": [],
+      "involved_nodes": [
+        "hallway (15th floor, east/west intersection)",
+        "hallway (mayer's house, east/west intersect, exit to north)"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "hallway (15th floor, room 1-7)",
+            "hallway (15th floor, east/west intersection)"
+          ],
+          "llm_dir": "north",
+          "in_gt": true,
+          "gt_dir": "north",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 44
+        },
+        {
+          "edge": [
+            "hallway (15th floor, east/west intersection)",
+            "hallway (15th floor, room 19-22)"
+          ],
+          "llm_dir": "west",
+          "in_gt": true,
+          "gt_dir": "west",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 46
+        },
+        {
+          "edge": [
+            "upstairs hallway (mayer's house)",
+            "hallway (mayer's house, east/west intersect, exit to north)"
+          ],
+          "llm_dir": "north",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 17
+        },
+        {
+          "edge": [
+            "hallway (mayer's house, east/west intersect, exit to north)",
+            "hallway (mayer's house, \"guests\" door to east)"
+          ],
+          "llm_dir": "west",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 18
+        }
+      ],
+      "case_counts": {
+        "correct": 2,
+        "hallucinated_edge": 2
+      },
+      "root_cause": "overlap_mixed"
+    },
+    {
+      "type": "topology",
+      "description": "position (-1, 5, 0) occupied by multiple rooms ['hallway (15th floor, east/west intersection)', \"hallway (mayer's house, east/west intersect, exit to north)\"]",
+      "involved_edges": [],
+      "involved_nodes": [
+        "hallway (15th floor, east/west intersection)",
+        "hallway (mayer's house, east/west intersect, exit to north)"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "hallway (15th floor, room 1-7)",
+            "hallway (15th floor, east/west intersection)"
+          ],
+          "llm_dir": "north",
+          "in_gt": true,
+          "gt_dir": "north",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 44
+        },
+        {
+          "edge": [
+            "hallway (15th floor, east/west intersection)",
+            "hallway (15th floor, room 19-22)"
+          ],
+          "llm_dir": "west",
+          "in_gt": true,
+          "gt_dir": "west",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 46
+        },
+        {
+          "edge": [
+            "upstairs hallway (mayer's house)",
+            "hallway (mayer's house, east/west intersect, exit to north)"
+          ],
+          "llm_dir": "north",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 17
+        },
+        {
+          "edge": [
+            "hallway (mayer's house, east/west intersect, exit to north)",
+            "hallway (mayer's house, \"guests\" door to east)"
+          ],
+          "llm_dir": "west",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 18
+        }
+      ],
+      "case_counts": {
+        "correct": 2,
+        "hallucinated_edge": 2
+      },
+      "root_cause": "overlap_mixed"
+    },
+    {
+      "type": "topology",
+      "description": "position (1, 1, 0) occupied by multiple rooms ['hallway (15th floor, east/west intersection)', \"hallway (mayer's house, east/west intersect, exit to north)\"]",
+      "involved_edges": [],
+      "involved_nodes": [
+        "hallway (15th floor, east/west intersection)",
+        "hallway (mayer's house, east/west intersect, exit to north)"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "hallway (15th floor, room 1-7)",
+            "hallway (15th floor, east/west intersection)"
+          ],
+          "llm_dir": "north",
+          "in_gt": true,
+          "gt_dir": "north",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 44
+        },
+        {
+          "edge": [
+            "hallway (15th floor, east/west intersection)",
+            "hallway (15th floor, room 19-22)"
+          ],
+          "llm_dir": "west",
+          "in_gt": true,
+          "gt_dir": "west",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 46
+        },
+        {
+          "edge": [
+            "upstairs hallway (mayer's house)",
+            "hallway (mayer's house, east/west intersect, exit to north)"
+          ],
+          "llm_dir": "north",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 17
+        },
+        {
+          "edge": [
+            "hallway (mayer's house, east/west intersect, exit to north)",
+            "hallway (mayer's house, \"guests\" door to east)"
+          ],
+          "llm_dir": "west",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 18
+        }
+      ],
+      "case_counts": {
+        "correct": 2,
+        "hallucinated_edge": 2
+      },
+      "root_cause": "overlap_mixed"
+    },
+    {
+      "type": "topology",
+      "description": "position (-3, 9, 0) occupied by multiple rooms ['hallway (15th floor, east/west intersection)', \"hallway (mayer's house, east/west intersect, exit to north)\"]",
+      "involved_edges": [],
+      "involved_nodes": [
+        "hallway (15th floor, east/west intersection)",
+        "hallway (mayer's house, east/west intersect, exit to north)"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "hallway (15th floor, room 1-7)",
+            "hallway (15th floor, east/west intersection)"
+          ],
+          "llm_dir": "north",
+          "in_gt": true,
+          "gt_dir": "north",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 44
+        },
+        {
+          "edge": [
+            "hallway (15th floor, east/west intersection)",
+            "hallway (15th floor, room 19-22)"
+          ],
+          "llm_dir": "west",
+          "in_gt": true,
+          "gt_dir": "west",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 46
+        },
+        {
+          "edge": [
+            "upstairs hallway (mayer's house)",
+            "hallway (mayer's house, east/west intersect, exit to north)"
+          ],
+          "llm_dir": "north",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 17
+        },
+        {
+          "edge": [
+            "hallway (mayer's house, east/west intersect, exit to north)",
+            "hallway (mayer's house, \"guests\" door to east)"
+          ],
+          "llm_dir": "west",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 18
+        }
+      ],
+      "case_counts": {
+        "correct": 2,
+        "hallucinated_edge": 2
+      },
+      "root_cause": "overlap_mixed"
+    },
+    {
+      "type": "topology",
+      "description": "position (-6, 10, 0) occupied by multiple rooms ['closet', 'music store']",
+      "involved_edges": [],
+      "involved_nodes": [
+        "closet",
+        "music store"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "chief's office",
+            "closet"
+          ],
+          "llm_dir": "west",
+          "in_gt": true,
+          "gt_dir": "west",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 5
+        },
+        {
+          "edge": [
+            "outside (north end, east only available)",
+            "music store"
+          ],
+          "llm_dir": "east",
+          "in_gt": true,
+          "gt_dir": "east",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 31
+        },
+        {
+          "edge": [
+            "music store",
+            "back of music store"
+          ],
+          "llm_dir": "north",
+          "in_gt": true,
+          "gt_dir": "north",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 32
+        }
+      ],
+      "case_counts": {
+        "correct": 3
+      },
+      "root_cause": "false_positive_overlap"
+    },
+    {
+      "type": "topology",
+      "description": "position (0, -2, 0) occupied by multiple rooms ['closet', 'music store']",
+      "involved_edges": [],
+      "involved_nodes": [
+        "closet",
+        "music store"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "chief's office",
+            "closet"
+          ],
+          "llm_dir": "west",
+          "in_gt": true,
+          "gt_dir": "west",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 5
+        },
+        {
+          "edge": [
+            "outside (north end, east only available)",
+            "music store"
+          ],
+          "llm_dir": "east",
+          "in_gt": true,
+          "gt_dir": "east",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 31
+        },
+        {
+          "edge": [
+            "music store",
+            "back of music store"
+          ],
+          "llm_dir": "north",
+          "in_gt": true,
+          "gt_dir": "north",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 32
+        }
+      ],
+      "case_counts": {
+        "correct": 3
+      },
+      "root_cause": "false_positive_overlap"
+    },
+    {
+      "type": "topology",
+      "description": "position (-4, 6, 0) occupied by multiple rooms ['closet', 'music store']",
+      "involved_edges": [],
+      "involved_nodes": [
+        "closet",
+        "music store"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "chief's office",
+            "closet"
+          ],
+          "llm_dir": "west",
+          "in_gt": true,
+          "gt_dir": "west",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 5
+        },
+        {
+          "edge": [
+            "outside (north end, east only available)",
+            "music store"
+          ],
+          "llm_dir": "east",
+          "in_gt": true,
+          "gt_dir": "east",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 31
+        },
+        {
+          "edge": [
+            "music store",
+            "back of music store"
+          ],
+          "llm_dir": "north",
+          "in_gt": true,
+          "gt_dir": "north",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 32
+        }
+      ],
+      "case_counts": {
+        "correct": 3
+      },
+      "root_cause": "false_positive_overlap"
+    },
+    {
+      "type": "topology",
+      "description": "position (1, -1, 0) occupied by multiple rooms [\"mayor's house (scene of crime)\", 'outside (dead end to east)']",
+      "involved_edges": [],
+      "involved_nodes": [
+        "mayor's house (scene of crime)",
+        "outside (dead end to east)"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "outside (restaurant to north, mayer home to east)",
+            "mayor's house (scene of crime)"
+          ],
+          "llm_dir": "west",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "src_hallucinated",
+          "source_in_gt": false,
+          "target_in_gt": true,
+          "step": 11
+        },
+        {
+          "edge": [
+            "mayor's house (scene of crime)",
+            "dining room"
+          ],
+          "llm_dir": "west",
+          "in_gt": true,
+          "gt_dir": "west",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 12
+        },
+        {
+          "edge": [
+            "mayor's house (scene of crime)",
+            "upstairs hallway (mayer's house)"
+          ],
+          "llm_dir": "north",
+          "in_gt": true,
+          "gt_dir": "north",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 16
+        },
+        {
+          "edge": [
+            "chief's office",
+            "outside (dead end to east)"
+          ],
+          "llm_dir": "north",
+          "in_gt": true,
+          "gt_dir": "north",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 8
+        },
+        {
+          "edge": [
+            "outside (dead end to east)",
+            "outside (restaurant to north, mayer home to east)"
+          ],
+          "llm_dir": "east",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "dst_hallucinated",
+          "source_in_gt": true,
+          "target_in_gt": false,
+          "step": 9
+        }
+      ],
+      "case_counts": {
+        "src_hallucinated": 1,
+        "correct": 3,
+        "dst_hallucinated": 1
+      },
+      "root_cause": "name_hallucination_caused_overlap"
+    },
+    {
+      "type": "topology",
+      "description": "position (-1, 3, 0) occupied by multiple rooms [\"mayor's house (scene of crime)\", 'outside (dead end to east)']",
+      "involved_edges": [],
+      "involved_nodes": [
+        "mayor's house (scene of crime)",
+        "outside (dead end to east)"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "outside (restaurant to north, mayer home to east)",
+            "mayor's house (scene of crime)"
+          ],
+          "llm_dir": "west",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "src_hallucinated",
+          "source_in_gt": false,
+          "target_in_gt": true,
+          "step": 11
+        },
+        {
+          "edge": [
+            "mayor's house (scene of crime)",
+            "dining room"
+          ],
+          "llm_dir": "west",
+          "in_gt": true,
+          "gt_dir": "west",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 12
+        },
+        {
+          "edge": [
+            "mayor's house (scene of crime)",
+            "upstairs hallway (mayer's house)"
+          ],
+          "llm_dir": "north",
+          "in_gt": true,
+          "gt_dir": "north",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 16
+        },
+        {
+          "edge": [
+            "chief's office",
+            "outside (dead end to east)"
+          ],
+          "llm_dir": "north",
+          "in_gt": true,
+          "gt_dir": "north",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 8
+        },
+        {
+          "edge": [
+            "outside (dead end to east)",
+            "outside (restaurant to north, mayer home to east)"
+          ],
+          "llm_dir": "east",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "dst_hallucinated",
+          "source_in_gt": true,
+          "target_in_gt": false,
+          "step": 9
+        }
+      ],
+      "case_counts": {
+        "src_hallucinated": 1,
+        "correct": 3,
+        "dst_hallucinated": 1
+      },
+      "root_cause": "name_hallucination_caused_overlap"
+    },
+    {
+      "type": "topology",
+      "description": "position (-5, 11, 0) occupied by multiple rooms [\"mayor's house (scene of crime)\", 'outside (dead end to east)']",
+      "involved_edges": [],
+      "involved_nodes": [
+        "mayor's house (scene of crime)",
+        "outside (dead end to east)"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "outside (restaurant to north, mayer home to east)",
+            "mayor's house (scene of crime)"
+          ],
+          "llm_dir": "west",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "src_hallucinated",
+          "source_in_gt": false,
+          "target_in_gt": true,
+          "step": 11
+        },
+        {
+          "edge": [
+            "mayor's house (scene of crime)",
+            "dining room"
+          ],
+          "llm_dir": "west",
+          "in_gt": true,
+          "gt_dir": "west",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 12
+        },
+        {
+          "edge": [
+            "mayor's house (scene of crime)",
+            "upstairs hallway (mayer's house)"
+          ],
+          "llm_dir": "north",
+          "in_gt": true,
+          "gt_dir": "north",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 16
+        },
+        {
+          "edge": [
+            "chief's office",
+            "outside (dead end to east)"
+          ],
+          "llm_dir": "north",
+          "in_gt": true,
+          "gt_dir": "north",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 8
+        },
+        {
+          "edge": [
+            "outside (dead end to east)",
+            "outside (restaurant to north, mayer home to east)"
+          ],
+          "llm_dir": "east",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "dst_hallucinated",
+          "source_in_gt": true,
+          "target_in_gt": false,
+          "step": 9
+        }
+      ],
+      "case_counts": {
+        "src_hallucinated": 1,
+        "correct": 3,
+        "dst_hallucinated": 1
+      },
+      "root_cause": "name_hallucination_caused_overlap"
+    },
+    {
+      "type": "topology",
+      "description": "position (-3, 7, 0) occupied by multiple rooms [\"mayor's house (scene of crime)\", 'outside (dead end to east)']",
+      "involved_edges": [],
+      "involved_nodes": [
+        "mayor's house (scene of crime)",
+        "outside (dead end to east)"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "outside (restaurant to north, mayer home to east)",
+            "mayor's house (scene of crime)"
+          ],
+          "llm_dir": "west",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "src_hallucinated",
+          "source_in_gt": false,
+          "target_in_gt": true,
+          "step": 11
+        },
+        {
+          "edge": [
+            "mayor's house (scene of crime)",
+            "dining room"
+          ],
+          "llm_dir": "west",
+          "in_gt": true,
+          "gt_dir": "west",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 12
+        },
+        {
+          "edge": [
+            "mayor's house (scene of crime)",
+            "upstairs hallway (mayer's house)"
+          ],
+          "llm_dir": "north",
+          "in_gt": true,
+          "gt_dir": "north",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 16
+        },
+        {
+          "edge": [
+            "chief's office",
+            "outside (dead end to east)"
+          ],
+          "llm_dir": "north",
+          "in_gt": true,
+          "gt_dir": "north",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 8
+        },
+        {
+          "edge": [
+            "outside (dead end to east)",
+            "outside (restaurant to north, mayer home to east)"
+          ],
+          "llm_dir": "east",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "dst_hallucinated",
+          "source_in_gt": true,
+          "target_in_gt": false,
+          "step": 9
+        }
+      ],
+      "case_counts": {
+        "src_hallucinated": 1,
+        "correct": 3,
+        "dst_hallucinated": 1
+      },
+      "root_cause": "name_hallucination_caused_overlap"
+    },
+    {
+      "type": "naming",
+      "description": "node 'alley' reachable at conflicting positions [(-6, 12, 0), (-5, 17, 0), (-4, 8, 0), (-2, 4, 0), (0, 0, 0)]",
+      "involved_edges": [],
+      "involved_nodes": [
+        "alley"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "back of music store",
+            "alley"
+          ],
+          "llm_dir": "north",
+          "in_gt": true,
+          "gt_dir": "north",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 33
+        },
+        {
+          "edge": [
+            "alley",
+            "police station"
+          ],
+          "llm_dir": "north",
+          "in_gt": true,
+          "gt_dir": "north",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 34
+        }
+      ],
+      "case_counts": {
+        "correct": 2
+      },
+      "root_cause": "naming_collision_on_correct_subgraph"
+    },
+    {
+      "type": "naming",
+      "description": "node 'back of music store' reachable at conflicting positions [(-6, 11, 0), (-5, 16, 0), (-4, 7, 0), (-3, 12, 0), (0, -1, 0)]",
+      "involved_edges": [],
+      "involved_nodes": [
+        "back of music store"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "music store",
+            "back of music store"
+          ],
+          "llm_dir": "north",
+          "in_gt": true,
+          "gt_dir": "north",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 32
+        },
+        {
+          "edge": [
+            "back of music store",
+            "alley"
+          ],
+          "llm_dir": "north",
+          "in_gt": true,
+          "gt_dir": "north",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 33
+        }
+      ],
+      "case_counts": {
+        "correct": 2
+      },
+      "root_cause": "naming_collision_on_correct_subgraph"
+    },
+    {
+      "type": "naming",
+      "description": "node 'police station' reachable at conflicting positions [(-6, 13, 0), (-5, 18, 0), (-4, 9, 0), (-2, 5, 0), (0, 1, 0)]",
+      "involved_edges": [],
+      "involved_nodes": [
+        "police station"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "alley",
+            "police station"
+          ],
+          "llm_dir": "north",
+          "in_gt": true,
+          "gt_dir": "north",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 34
+        },
+        {
+          "edge": [
+            "police station",
+            "outside (holiday inn to north, doughnut king to east, the wall to west)"
+          ],
+          "llm_dir": "north",
+          "in_gt": true,
+          "gt_dir": "north",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 35
+        }
+      ],
+      "case_counts": {
+        "correct": 2
+      },
+      "root_cause": "naming_collision_on_correct_subgraph"
+    },
+    {
+      "type": "naming",
+      "description": "node 'outside (holiday inn to north, doughnut king to east, the wall to west)' reachable at conflicting positions [(-6, 14, 0), (-4, 10, 0), (-2, 6, 0), (0, 2, 0)]",
+      "involved_edges": [],
+      "involved_nodes": [
+        "outside (holiday inn to north, doughnut king to east, the wall to west)"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "hallway (15th floor, room 19-22)",
+            "outside (holiday inn to north, doughnut king to east, the wall to west)"
+          ],
+          "llm_dir": "north",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 23
+        },
+        {
+          "edge": [
+            "mcdonalds",
+            "outside (holiday inn to north, doughnut king to east, the wall to west)"
+          ],
+          "llm_dir": "north",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 29
+        },
+        {
+          "edge": [
+            "police station",
+            "outside (holiday inn to north, doughnut king to east, the wall to west)"
+          ],
+          "llm_dir": "north",
+          "in_gt": true,
+          "gt_dir": "north",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 35
+        },
+        {
+          "edge": [
+            "outside (holiday inn to north, doughnut king to east, the wall to west)",
+            "video store"
+          ],
+          "llm_dir": "east",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 24
+        },
+        {
+          "edge": [
+            "outside (holiday inn to north, doughnut king to east, the wall to west)",
+            "outside (north end, east only available)"
+          ],
+          "llm_dir": "north",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 30
+        },
+        {
+          "edge": [
+            "outside (holiday inn to north, doughnut king to east, the wall to west)",
+            "doughnut king"
+          ],
+          "llm_dir": "east",
+          "in_gt": true,
+          "gt_dir": "east",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 36
+        },
+        {
+          "edge": [
+            "outside (holiday inn to north, doughnut king to east, the wall to west)",
+            "the wall"
+          ],
+          "llm_dir": "west",
+          "in_gt": true,
+          "gt_dir": "west",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 38
+        },
+        {
+          "edge": [
+            "outside (holiday inn to north, doughnut king to east, the wall to west)",
+            "holiday inn"
+          ],
+          "llm_dir": "north",
+          "in_gt": true,
+          "gt_dir": "north",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 40
+        }
+      ],
+      "case_counts": {
+        "hallucinated_edge": 4,
+        "correct": 4
+      },
+      "root_cause": "real_name_corrupted_by_neighbour_error"
+    },
+    {
+      "type": "naming",
+      "description": "node 'hallway (15th floor, room 19-22)' reachable at conflicting positions [(-8, 17, 0), (-6, 13, 0), (-4, 9, 0), (-2, 5, 0), (0, 1, 0)]",
+      "involved_edges": [],
+      "involved_nodes": [
+        "hallway (15th floor, room 19-22)"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "bedroom",
+            "hallway (15th floor, room 19-22)"
+          ],
+          "llm_dir": "east",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 22
+        },
+        {
+          "edge": [
+            "hallway (15th floor, east/west intersection)",
+            "hallway (15th floor, room 19-22)"
+          ],
+          "llm_dir": "west",
+          "in_gt": true,
+          "gt_dir": "west",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 46
+        },
+        {
+          "edge": [
+            "hallway (15th floor, room 19-22)",
+            "outside (holiday inn to north, doughnut king to east, the wall to west)"
+          ],
+          "llm_dir": "north",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 23
+        },
+        {
+          "edge": [
+            "hallway (15th floor, room 19-22)",
+            "hallway (sauna to west, pool a to east)"
+          ],
+          "llm_dir": "north",
+          "in_gt": true,
+          "gt_dir": "north",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 47
+        }
+      ],
+      "case_counts": {
+        "hallucinated_edge": 2,
+        "correct": 2
+      },
+      "root_cause": "real_name_corrupted_by_neighbour_error"
+    },
+    {
+      "type": "naming",
+      "description": "node 'video store' reachable at conflicting positions [(-7, 14, 0), (-5, 10, 0), (-5, 14, 0), (-3, 10, 0), (-1, 6, 0), (1, 2, 0)]",
+      "involved_edges": [],
+      "involved_nodes": [
+        "video store"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "outside (holiday inn to north, doughnut king to east, the wall to west)",
+            "video store"
+          ],
+          "llm_dir": "east",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 24
+        },
+        {
+          "edge": [
+            "video store",
+            "outside (video store to east)"
+          ],
+          "llm_dir": "east",
+          "in_gt": false,
+          "gt_dir": "east",
+          "case": "swapped_src_dst",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 26
+        }
+      ],
+      "case_counts": {
+        "hallucinated_edge": 1,
+        "swapped_src_dst": 1
+      },
+      "root_cause": "naming_mixed"
+    },
+    {
+      "type": "naming",
+      "description": "node 'mcdonalds' reachable at conflicting positions [(-6, 13, 0), (-4, 9, 0), (-4, 13, 0), (-2, 5, 0), (-2, 9, 0), (0, 1, 0)]",
+      "involved_edges": [],
+      "involved_nodes": [
+        "mcdonalds"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "outside (video store to east)",
+            "mcdonalds"
+          ],
+          "llm_dir": "south",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 27
+        },
+        {
+          "edge": [
+            "mcdonalds",
+            "outside (holiday inn to north, doughnut king to east, the wall to west)"
+          ],
+          "llm_dir": "north",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 29
+        }
+      ],
+      "case_counts": {
+        "hallucinated_edge": 2
+      },
+      "root_cause": "naming_mixed"
+    },
+    {
+      "type": "naming",
+      "description": "node 'outside (north end, east only available)' reachable at conflicting positions [(-7, 10, 0), (-6, 15, 0), (-5, 6, 0), (-4, 11, 0), (-2, 7, 0), (0, 3, 0)]",
+      "involved_edges": [],
+      "involved_nodes": [
+        "outside (north end, east only available)"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "outside (holiday inn to north, doughnut king to east, the wall to west)",
+            "outside (north end, east only available)"
+          ],
+          "llm_dir": "north",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 30
+        },
+        {
+          "edge": [
+            "outside (north end, east only available)",
+            "music store"
+          ],
+          "llm_dir": "east",
+          "in_gt": true,
+          "gt_dir": "east",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 31
+        }
+      ],
+      "case_counts": {
+        "hallucinated_edge": 1,
+        "correct": 1
+      },
+      "root_cause": "real_name_corrupted_by_neighbour_error"
+    },
+    {
+      "type": "naming",
+      "description": "node 'doughnut king' reachable at conflicting positions [(-5, 14, 0), (-3, 10, 0), (-1, 6, 0), (1, 2, 0)]",
+      "involved_edges": [],
+      "involved_nodes": [
+        "doughnut king"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "outside (holiday inn to north, doughnut king to east, the wall to west)",
+            "doughnut king"
+          ],
+          "llm_dir": "east",
+          "in_gt": true,
+          "gt_dir": "east",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 36
+        }
+      ],
+      "case_counts": {
+        "correct": 1
+      },
+      "root_cause": "naming_collision_on_correct_subgraph"
+    },
+    {
+      "type": "naming",
+      "description": "node 'the wall' reachable at conflicting positions [(-7, 14, 0), (-5, 10, 0), (-3, 6, 0), (-1, 2, 0)]",
+      "involved_edges": [],
+      "involved_nodes": [
+        "the wall"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "outside (holiday inn to north, doughnut king to east, the wall to west)",
+            "the wall"
+          ],
+          "llm_dir": "west",
+          "in_gt": true,
+          "gt_dir": "west",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 38
+        }
+      ],
+      "case_counts": {
+        "correct": 1
+      },
+      "root_cause": "naming_collision_on_correct_subgraph"
+    },
+    {
+      "type": "naming",
+      "description": "node 'holiday inn' reachable at conflicting positions [(-6, 15, 0), (-4, 11, 0), (-2, 7, 0), (0, 3, 0)]",
+      "involved_edges": [],
+      "involved_nodes": [
+        "holiday inn"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "outside (holiday inn to north, doughnut king to east, the wall to west)",
+            "holiday inn"
+          ],
+          "llm_dir": "north",
+          "in_gt": true,
+          "gt_dir": "north",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 40
+        },
+        {
+          "edge": [
+            "holiday inn",
+            "holiday inn 15th floor"
+          ],
+          "llm_dir": "north",
+          "in_gt": true,
+          "gt_dir": "north",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 42
+        }
+      ],
+      "case_counts": {
+        "correct": 2
+      },
+      "root_cause": "naming_collision_on_correct_subgraph"
+    },
+    {
+      "type": "naming",
+      "description": "node 'holiday inn 15th floor' reachable at conflicting positions [(-6, 16, 0), (-4, 12, 0), (-2, 8, 0), (0, 4, 0)]",
+      "involved_edges": [],
+      "involved_nodes": [
+        "holiday inn 15th floor"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "holiday inn",
+            "holiday inn 15th floor"
+          ],
+          "llm_dir": "north",
+          "in_gt": true,
+          "gt_dir": "north",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 42
+        },
+        {
+          "edge": [
+            "holiday inn 15th floor",
+            "hallway (15th floor, room 1-7)"
+          ],
+          "llm_dir": "west",
+          "in_gt": true,
+          "gt_dir": "west",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 43
+        }
+      ],
+      "case_counts": {
+        "correct": 2
+      },
+      "root_cause": "naming_collision_on_correct_subgraph"
+    },
+    {
+      "type": "naming",
+      "description": "node 'hallway (15th floor, room 1-7)' reachable at conflicting positions [(-7, 16, 0), (-5, 12, 0), (-3, 8, 0), (-1, 4, 0)]",
+      "involved_edges": [],
+      "involved_nodes": [
+        "hallway (15th floor, room 1-7)"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "holiday inn 15th floor",
+            "hallway (15th floor, room 1-7)"
+          ],
+          "llm_dir": "west",
+          "in_gt": true,
+          "gt_dir": "west",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 43
+        },
+        {
+          "edge": [
+            "hallway (15th floor, room 1-7)",
+            "hallway (15th floor, east/west intersection)"
+          ],
+          "llm_dir": "north",
+          "in_gt": true,
+          "gt_dir": "north",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 44
+        }
+      ],
+      "case_counts": {
+        "correct": 2
+      },
+      "root_cause": "naming_collision_on_correct_subgraph"
+    },
+    {
+      "type": "naming",
+      "description": "node 'hallway (15th floor, east/west intersection)' reachable at conflicting positions [(-7, 17, 0), (-5, 13, 0), (-3, 9, 0), (-1, 5, 0), (1, 1, 0)]",
+      "involved_edges": [],
+      "involved_nodes": [
+        "hallway (15th floor, east/west intersection)"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "hallway (15th floor, room 1-7)",
+            "hallway (15th floor, east/west intersection)"
+          ],
+          "llm_dir": "north",
+          "in_gt": true,
+          "gt_dir": "north",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 44
+        },
+        {
+          "edge": [
+            "hallway (15th floor, east/west intersection)",
+            "hallway (15th floor, room 19-22)"
+          ],
+          "llm_dir": "west",
+          "in_gt": true,
+          "gt_dir": "west",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 46
+        }
+      ],
+      "case_counts": {
+        "correct": 2
+      },
+      "root_cause": "naming_collision_on_correct_subgraph"
+    },
+    {
+      "type": "naming",
+      "description": "node 'bedroom' reachable at conflicting positions [(-7, 13, 0), (-5, 9, 0), (-3, 5, 0), (-1, 1, 0)]",
+      "involved_edges": [],
+      "involved_nodes": [
+        "bedroom"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "hallway (mayer's house, \"guests\" door to east)",
+            "bedroom"
+          ],
+          "llm_dir": "west",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 21
+        },
+        {
+          "edge": [
+            "bedroom",
+            "hallway (15th floor, room 19-22)"
+          ],
+          "llm_dir": "east",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 22
+        }
+      ],
+      "case_counts": {
+        "hallucinated_edge": 2
+      },
+      "root_cause": "naming_mixed"
+    },
+    {
+      "type": "naming",
+      "description": "node 'hallway (sauna to west, pool a to east)' reachable at conflicting positions [(-6, 14, 0), (-4, 10, 0), (-2, 6, 0), (0, 2, 0)]",
+      "involved_edges": [],
+      "involved_nodes": [
+        "hallway (sauna to west, pool a to east)"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "hallway (15th floor, room 19-22)",
+            "hallway (sauna to west, pool a to east)"
+          ],
+          "llm_dir": "north",
+          "in_gt": true,
+          "gt_dir": "north",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 47
+        },
+        {
+          "edge": [
+            "hallway (sauna to west, pool a to east)",
+            "room # 30"
+          ],
+          "llm_dir": "north",
+          "in_gt": true,
+          "gt_dir": "north",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 48
+        }
+      ],
+      "case_counts": {
+        "correct": 2
+      },
+      "root_cause": "naming_collision_on_correct_subgraph"
+    },
+    {
+      "type": "naming",
+      "description": "node 'room # 30' reachable at conflicting positions [(-6, 15, 0), (-4, 11, 0), (-2, 7, 0), (0, 3, 0)]",
+      "involved_edges": [],
+      "involved_nodes": [
+        "room # 30"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "hallway (sauna to west, pool a to east)",
+            "room # 30"
+          ],
+          "llm_dir": "north",
+          "in_gt": true,
+          "gt_dir": "north",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 48
+        }
+      ],
+      "case_counts": {
+        "correct": 1
+      },
+      "root_cause": "naming_collision_on_correct_subgraph"
+    },
+    {
+      "type": "naming",
+      "description": "node 'music store' reachable at conflicting positions [(-6, 10, 0), (-5, 15, 0), (-4, 6, 0), (-3, 11, 0), (-1, 7, 0), (0, -2, 0), (1, 3, 0)]",
+      "involved_edges": [],
+      "involved_nodes": [
+        "music store"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "outside (north end, east only available)",
+            "music store"
+          ],
+          "llm_dir": "east",
+          "in_gt": true,
+          "gt_dir": "east",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 31
+        },
+        {
+          "edge": [
+            "music store",
+            "back of music store"
+          ],
+          "llm_dir": "north",
+          "in_gt": true,
+          "gt_dir": "north",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 32
+        }
+      ],
+      "case_counts": {
+        "correct": 2
+      },
+      "root_cause": "naming_collision_on_correct_subgraph"
+    },
+    {
+      "type": "naming",
+      "description": "node 'outside (video store to east)' reachable at conflicting positions [(-6, 14, 0), (-4, 10, 0), (-4, 14, 0), (-2, 6, 0), (-2, 10, 0), (0, 2, 0), (0, 6, 0), (2, 2, 0)]",
+      "involved_edges": [],
+      "involved_nodes": [
+        "outside (video store to east)"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "video store",
+            "outside (video store to east)"
+          ],
+          "llm_dir": "east",
+          "in_gt": false,
+          "gt_dir": "east",
+          "case": "swapped_src_dst",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 26
+        },
+        {
+          "edge": [
+            "outside (video store to east)",
+            "mcdonalds"
+          ],
+          "llm_dir": "south",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 27
+        }
+      ],
+      "case_counts": {
+        "swapped_src_dst": 1,
+        "hallucinated_edge": 1
+      },
+      "root_cause": "naming_mixed"
+    },
+    {
+      "type": "naming",
+      "description": "node 'hallway (mayer\\'s house, \"guests\" door to east)' reachable at conflicting positions [(-6, 13, 0), (-4, 9, 0), (-2, 5, 0), (0, 1, 0)]",
+      "involved_edges": [],
+      "involved_nodes": [
+        "hallway (mayer's house, \"guests\" door to east)"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "hallway (mayer's house, east/west intersect, exit to north)",
+            "hallway (mayer's house, \"guests\" door to east)"
+          ],
+          "llm_dir": "west",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 18
+        },
+        {
+          "edge": [
+            "hallway (mayer's house, \"guests\" door to east)",
+            "bedroom"
+          ],
+          "llm_dir": "west",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 21
+        }
+      ],
+      "case_counts": {
+        "hallucinated_edge": 2
+      },
+      "root_cause": "naming_mixed"
+    },
+    {
+      "type": "naming",
+      "description": "node \"hallway (mayer's house, east/west intersect, exit to north)\" reachable at conflicting positions [(-5, 13, 0), (-3, 9, 0), (-1, 5, 0), (1, 1, 0)]",
+      "involved_edges": [],
+      "involved_nodes": [
+        "hallway (mayer's house, east/west intersect, exit to north)"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "upstairs hallway (mayer's house)",
+            "hallway (mayer's house, east/west intersect, exit to north)"
+          ],
+          "llm_dir": "north",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 17
+        },
+        {
+          "edge": [
+            "hallway (mayer's house, east/west intersect, exit to north)",
+            "hallway (mayer's house, \"guests\" door to east)"
+          ],
+          "llm_dir": "west",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 18
+        }
+      ],
+      "case_counts": {
+        "hallucinated_edge": 2
+      },
+      "root_cause": "naming_mixed"
+    },
+    {
+      "type": "naming",
+      "description": "node \"upstairs hallway (mayer's house)\" reachable at conflicting positions [(-5, 12, 0), (-3, 8, 0), (-1, 4, 0), (1, 0, 0)]",
+      "involved_edges": [],
+      "involved_nodes": [
+        "upstairs hallway (mayer's house)"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "mayor's house (scene of crime)",
+            "upstairs hallway (mayer's house)"
+          ],
+          "llm_dir": "north",
+          "in_gt": true,
+          "gt_dir": "north",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 16
+        },
+        {
+          "edge": [
+            "upstairs hallway (mayer's house)",
+            "hallway (mayer's house, east/west intersect, exit to north)"
+          ],
+          "llm_dir": "north",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 17
+        }
+      ],
+      "case_counts": {
+        "correct": 1,
+        "hallucinated_edge": 1
+      },
+      "root_cause": "real_name_corrupted_by_neighbour_error"
+    },
+    {
+      "type": "naming",
+      "description": "node \"mayor's house (scene of crime)\" reachable at conflicting positions [(-5, 11, 0), (-3, 7, 0), (-1, 3, 0), (1, -1, 0)]",
+      "involved_edges": [],
+      "involved_nodes": [
+        "mayor's house (scene of crime)"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "outside (restaurant to north, mayer home to east)",
+            "mayor's house (scene of crime)"
+          ],
+          "llm_dir": "west",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "src_hallucinated",
+          "source_in_gt": false,
+          "target_in_gt": true,
+          "step": 11
+        },
+        {
+          "edge": [
+            "mayor's house (scene of crime)",
+            "dining room"
+          ],
+          "llm_dir": "west",
+          "in_gt": true,
+          "gt_dir": "west",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 12
+        },
+        {
+          "edge": [
+            "mayor's house (scene of crime)",
+            "upstairs hallway (mayer's house)"
+          ],
+          "llm_dir": "north",
+          "in_gt": true,
+          "gt_dir": "north",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 16
+        }
+      ],
+      "case_counts": {
+        "src_hallucinated": 1,
+        "correct": 2
+      },
+      "root_cause": "real_name_corrupted_by_neighbour_error"
+    },
+    {
+      "type": "naming",
+      "description": "node 'outside (restaurant to north, mayer home to east)' reachable at conflicting positions [(-4, 11, 0), (-2, 7, 0), (0, 3, 0), (2, -1, 0)]",
+      "involved_edges": [],
+      "involved_nodes": [
+        "outside (restaurant to north, mayer home to east)"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "outside (dead end to east)",
+            "outside (restaurant to north, mayer home to east)"
+          ],
+          "llm_dir": "east",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "dst_hallucinated",
+          "source_in_gt": true,
+          "target_in_gt": false,
+          "step": 9
+        },
+        {
+          "edge": [
+            "outside (restaurant to north, mayer home to east)",
+            "mayor's house (scene of crime)"
+          ],
+          "llm_dir": "west",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "src_hallucinated",
+          "source_in_gt": false,
+          "target_in_gt": true,
+          "step": 11
+        }
+      ],
+      "case_counts": {
+        "dst_hallucinated": 1,
+        "src_hallucinated": 1
+      },
+      "root_cause": "name_hallucination"
+    },
+    {
+      "type": "naming",
+      "description": "node 'dining room' reachable at conflicting positions [(-6, 11, 0), (-4, 7, 0), (-2, 3, 0), (0, -1, 0)]",
+      "involved_edges": [],
+      "involved_nodes": [
+        "dining room"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "mayor's house (scene of crime)",
+            "dining room"
+          ],
+          "llm_dir": "west",
+          "in_gt": true,
+          "gt_dir": "west",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 12
+        }
+      ],
+      "case_counts": {
+        "correct": 1
+      },
+      "root_cause": "naming_collision_on_correct_subgraph"
+    },
+    {
+      "type": "naming",
+      "description": "node 'outside (dead end to east)' reachable at conflicting positions [(-5, 11, 0), (-3, 7, 0), (-1, 3, 0), (1, -1, 0)]",
+      "involved_edges": [],
+      "involved_nodes": [
+        "outside (dead end to east)"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "chief's office",
+            "outside (dead end to east)"
+          ],
+          "llm_dir": "north",
+          "in_gt": true,
+          "gt_dir": "north",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 8
+        },
+        {
+          "edge": [
+            "outside (dead end to east)",
+            "outside (restaurant to north, mayer home to east)"
+          ],
+          "llm_dir": "east",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "dst_hallucinated",
+          "source_in_gt": true,
+          "target_in_gt": false,
+          "step": 9
+        }
+      ],
+      "case_counts": {
+        "correct": 1,
+        "dst_hallucinated": 1
+      },
+      "root_cause": "real_name_corrupted_by_neighbour_error"
+    },
+    {
+      "type": "naming",
+      "description": "node \"chief's office\" reachable at conflicting positions [(-5, 10, 0), (-3, 6, 0), (-1, 2, 0), (1, -2, 0)]",
+      "involved_edges": [],
+      "involved_nodes": [
+        "chief's office"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "chief's office",
+            "closet"
+          ],
+          "llm_dir": "west",
+          "in_gt": true,
+          "gt_dir": "west",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 5
+        },
+        {
+          "edge": [
+            "chief's office",
+            "outside (dead end to east)"
+          ],
+          "llm_dir": "north",
+          "in_gt": true,
+          "gt_dir": "north",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 8
+        }
+      ],
+      "case_counts": {
+        "correct": 2
+      },
+      "root_cause": "naming_collision_on_correct_subgraph"
+    },
+    {
+      "type": "naming",
+      "description": "node 'closet' reachable at conflicting positions [(-6, 10, 0), (-4, 6, 0), (-2, 2, 0), (0, -2, 0)]",
+      "involved_edges": [],
+      "involved_nodes": [
+        "closet"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "chief's office",
+            "closet"
+          ],
+          "llm_dir": "west",
+          "in_gt": true,
+          "gt_dir": "west",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 5
+        }
+      ],
+      "case_counts": {
+        "correct": 1
+      },
+      "root_cause": "naming_collision_on_correct_subgraph"
+    }
+  ],
+  "walkthrough_steps_available": 50
+}

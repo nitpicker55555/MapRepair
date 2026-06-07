@@ -1,0 +1,98 @@
+[
+  {
+    "step_num": 0,
+    "action": "west",
+    "command": "go west",
+    "observation": "-= Cookhouse =-\nYou are in a cookhouse. A normal one.\n\nYou make out a closed freezer.\n\nThere is an unblocked exit to the east. You need an unguarded exit? You should try going south.\n\n\n-= Cookhouse =-0/3",
+    "gt_src": "sauna",
+    "gt_dst": "basement"
+  },
+  {
+    "step_num": 1,
+    "action": "south",
+    "command": "go south",
+    "observation": "-= Sauna =-\nYou're now in the sauna. You try to gain information on your surroundings by using a technique you call \"looking.\"\n\nYou can see a shelf. Now why would someone leave that there? You see a broom on the shelf. Now that's what I call TextWorld!\n\nThere is a closed hatch leading west. You need an unguarded exit? You should try going east. You need an unguarded exit? You should try going north.\n\n\n-= Sauna =-0/4",
+    "gt_src": "basement",
+    "gt_dst": "workshop"
+  },
+  {
+    "step_num": 2,
+    "action": "north",
+    "command": "go north",
+    "observation": "-= Cookhouse =-\nYou are in a cookhouse. A normal one.\n\nYou make out a closed freezer.\n\nThere is an unblocked exit to the east. You need an unguarded exit? You should try going south.\n\n\n-= Cookhouse =-0/5",
+    "gt_src": "workshop",
+    "gt_dst": "basement"
+  },
+  {
+    "step_num": 3,
+    "action": "north",
+    "command": "go north",
+    "observation": "You can't go that way.\n\n\n-= Cookhouse =-0/6",
+    "gt_src": "basement",
+    "gt_dst": "recreation zone"
+  },
+  {
+    "step_num": 4,
+    "action": "south",
+    "command": "go south",
+    "observation": "-= Sauna =-\nYou're now in the sauna. You try to gain information on your surroundings by using a technique you call \"looking.\"\n\nYou can see a shelf. Now why would someone leave that there? You see a broom on the shelf. Now that's what I call TextWorld!\n\nThere is a closed hatch leading west. You need an unguarded exit? You should try going east. You need an unguarded exit? You should try going north.\n\n\n-= Sauna =-0/7",
+    "gt_src": "recreation zone",
+    "gt_dst": "basement"
+  },
+  {
+    "step_num": 5,
+    "action": "east",
+    "command": "go east",
+    "observation": "-= Kitchenette =-\nAh, the kitchenette. This is some kind of kitchenette, really great usual vibes in this place, a wonderful usual atmosphere. And now, well, you're in it.\n\n\n\nThere is an unguarded exit to the north. There is an unguarded exit to the west.\n\n\n-= Kitchenette =-0/8",
+    "gt_src": "basement",
+    "gt_dst": "sauna"
+  },
+  {
+    "step_num": 6,
+    "action": "north",
+    "command": "go north",
+    "observation": "-= Lounge =-\nYou've just walked into a lounge.\n\n\n\nYou need an unguarded exit? You should try going south. There is an exit to the west. Don't worry, it is unguarded.\n\n\n-= Lounge =-0/9",
+    "gt_src": "sauna",
+    "gt_dst": "cookhouse"
+  },
+  {
+    "step_num": 7,
+    "action": "east",
+    "command": "go east",
+    "observation": "You can't go that way.\n\n\n-= Lounge =-0/10",
+    "gt_src": "cookhouse",
+    "gt_dst": "lounge"
+  },
+  {
+    "step_num": 8,
+    "action": "south",
+    "command": "go south",
+    "observation": "-= Kitchenette =-\nAh, the kitchenette. This is some kind of kitchenette, really great usual vibes in this place, a wonderful usual atmosphere. And now, well, you're in it.\n\n\n\nThere is an unguarded exit to the north. There is an unguarded exit to the west.\n\n\n-= Kitchenette =-0/11",
+    "gt_src": "lounge",
+    "gt_dst": "kitchenette"
+  },
+  {
+    "step_num": 9,
+    "action": "north",
+    "command": "go north",
+    "observation": "-= Lounge =-\nYou've just walked into a lounge.\n\n\n\nYou need an unguarded exit? You should try going south. There is an exit to the west. Don't worry, it is unguarded.\n\n\n-= Lounge =-0/12",
+    "gt_src": "kitchenette",
+    "gt_dst": "lounge"
+  },
+  {
+    "step_num": 10,
+    "action": "west",
+    "command": "go west",
+    "observation": "-= Cookhouse =-\nYou are in a cookhouse. A normal one.\n\nYou make out a closed freezer.\n\nThere is an unblocked exit to the east. You need an unguarded exit? You should try going south.\n\n\n-= Cookhouse =-0/13",
+    "gt_src": "lounge",
+    "gt_dst": "cookhouse"
+  },
+  {
+    "step_num": 11,
+    "action": "south",
+    "command": "go south",
+    "observation": "-= Sauna =-\nYou're now in the sauna. You try to gain information on your surroundings by using a technique you call \"looking.\"\n\nYou can see a shelf. Now why would someone leave that there? You see a broom on the shelf. Now that's what I call TextWorld!\n\nThere is a closed hatch leading west. You need an unguarded exit? You should try going east. You need an unguarded exit? You should try going north.\n\n\n-= Sauna =-0/14",
+    "gt_src": "cookhouse",
+    "gt_dst": "sauna"
+  }
+]

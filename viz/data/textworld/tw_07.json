@@ -1,0 +1,859 @@
+{
+  "id": "tw_07",
+  "dataset": "textworld",
+  "n_rooms": 11,
+  "n_edges": 24,
+  "rooms": [
+    {
+      "id": "attic",
+      "label": "attic",
+      "description": "You've entered an attic. There is an opena closed hatch leading west. There is an unblocked exit to the north. You don't like doors? Why not try going south, that entranceway is unblocked."
+    },
+    {
+      "id": "basement",
+      "label": "basement",
+      "description": "You are in a basement. An usual one. There is an unguarded exit to the north."
+    },
+    {
+      "id": "bedroom",
+      "label": "bedroom",
+      "description": "Ah, the bedroom. This is some kind of bedroom, really great standard vibes in this place, a wonderful standard atmosphere. And now, well, you're in it. You need an unblocked exit? You should try going east."
+    },
+    {
+      "id": "cookhouse",
+      "label": "cookhouse",
+      "description": "Well, here we are in the cookhouse. You don't like doors? Why not try going north, that entranceway is unblocked."
+    },
+    {
+      "id": "cubicle",
+      "label": "cubicle",
+      "description": "Well, here we are in the cubicle. I guess you better just go and list everything you see here. You make out a lockedan openeda closed bureau. The bureau contains . The bureau is empty! This is the worst thing that could possibly happen, ever! There is an opena closed hatch leading east. There is an "
+    },
+    {
+      "id": "dish-pit",
+      "label": "dish-pit",
+      "description": "You've stumbled into an usual room. Your mind races to think of what kind of room would be usual. And then it hits you. Of course. You're in the dish-pit. There is an unguarded exit to the north."
+    },
+    {
+      "id": "laundry place",
+      "label": "laundry place",
+      "description": "You find yourself in a laundry place. An usual kind of place. Hey, want to see a box? Look over there, a box. The box contains . You can't wait to tell the folks at home about this! The box is empty! This is the worst thing that could possibly happen, ever! There is an unblocked exit to the east."
+    },
+    {
+      "id": "office",
+      "label": "office",
+      "description": "You've just walked into an office. You try to gain information on your surroundings by using a technique you call 'looking.' There is an unguarded exit to the south. There is an unguarded exit to the west."
+    },
+    {
+      "id": "playroom",
+      "label": "playroom",
+      "description": "You find yourself in a playroom. An usual one. I guess you better just go and list everything you see here. There is an opena closed passageway leading south. There is an unguarded exit to the east. There is an exit to the west. Don't worry, it is unguarded."
+    },
+    {
+      "id": "recreation zone",
+      "label": "recreation zone",
+      "description": "You are in a recreation zone. A standard one. The room is well lit. You don't like doors? Why not try going east, that entranceway is unblocked. There is an exit to the south. Don't worry, it is unblocked. You don't like doors? Why not try going west, that entranceway is unguarded."
+    },
+    {
+      "id": "study",
+      "label": "study",
+      "description": "You find yourself in a study. An usual one. There is an opena closed gate leading east. There is an opena closed passageway leading north. There is an unguarded exit to the south. There is an exit to the west. Don't worry, it is unblocked."
+    }
+  ],
+  "walkthrough": [],
+  "states": {
+    "gt": {
+      "edges": [
+        {
+          "src": "cubicle",
+          "dst": "study",
+          "dir": "west"
+        },
+        {
+          "src": "cubicle",
+          "dst": "cookhouse",
+          "dir": "south"
+        },
+        {
+          "src": "cubicle",
+          "dst": "recreation zone",
+          "dir": "north"
+        },
+        {
+          "src": "cubicle",
+          "dst": "attic",
+          "dir": "east"
+        },
+        {
+          "src": "study",
+          "dst": "bedroom",
+          "dir": "west"
+        },
+        {
+          "src": "study",
+          "dst": "dish-pit",
+          "dir": "south"
+        },
+        {
+          "src": "study",
+          "dst": "playroom",
+          "dir": "north"
+        },
+        {
+          "src": "study",
+          "dst": "cubicle",
+          "dir": "east"
+        },
+        {
+          "src": "cookhouse",
+          "dst": "cubicle",
+          "dir": "north"
+        },
+        {
+          "src": "recreation zone",
+          "dst": "playroom",
+          "dir": "west"
+        },
+        {
+          "src": "recreation zone",
+          "dst": "cubicle",
+          "dir": "south"
+        },
+        {
+          "src": "recreation zone",
+          "dst": "office",
+          "dir": "east"
+        },
+        {
+          "src": "attic",
+          "dst": "cubicle",
+          "dir": "west"
+        },
+        {
+          "src": "attic",
+          "dst": "basement",
+          "dir": "south"
+        },
+        {
+          "src": "attic",
+          "dst": "office",
+          "dir": "north"
+        },
+        {
+          "src": "bedroom",
+          "dst": "study",
+          "dir": "east"
+        },
+        {
+          "src": "dish-pit",
+          "dst": "study",
+          "dir": "north"
+        },
+        {
+          "src": "playroom",
+          "dst": "laundry place",
+          "dir": "west"
+        },
+        {
+          "src": "playroom",
+          "dst": "study",
+          "dir": "south"
+        },
+        {
+          "src": "playroom",
+          "dst": "recreation zone",
+          "dir": "east"
+        },
+        {
+          "src": "basement",
+          "dst": "attic",
+          "dir": "north"
+        },
+        {
+          "src": "office",
+          "dst": "recreation zone",
+          "dir": "west"
+        },
+        {
+          "src": "office",
+          "dst": "attic",
+          "dir": "south"
+        },
+        {
+          "src": "laundry place",
+          "dst": "playroom",
+          "dir": "east"
+        }
+      ]
+    },
+    "noised": {
+      "edges": [
+        {
+          "src": "cubicle",
+          "dst": "cookhouse",
+          "dir": "west"
+        },
+        {
+          "src": "cubicle",
+          "dst": "recreation zone",
+          "dir": "north"
+        },
+        {
+          "src": "cubicle",
+          "dst": "basement",
+          "dir": "east"
+        },
+        {
+          "src": "cookhouse",
+          "dst": "cubicle",
+          "dir": "east"
+        },
+        {
+          "src": "cookhouse",
+          "dst": "bedroom",
+          "dir": "west"
+        },
+        {
+          "src": "cookhouse",
+          "dst": "dish-pit",
+          "dir": "south"
+        },
+        {
+          "src": "cookhouse",
+          "dst": "playroom",
+          "dir": "north"
+        },
+        {
+          "src": "recreation zone",
+          "dst": "playroom",
+          "dir": "west"
+        },
+        {
+          "src": "recreation zone",
+          "dst": "cubicle",
+          "dir": "east"
+        },
+        {
+          "src": "recreation zone",
+          "dst": "office",
+          "dir": "east"
+        },
+        {
+          "src": "bedroom",
+          "dst": "cookhouse",
+          "dir": "east"
+        },
+        {
+          "src": "bedroom",
+          "dst": "basement",
+          "dir": "east"
+        },
+        {
+          "src": "dish-pit",
+          "dst": "playroom",
+          "dir": "east"
+        },
+        {
+          "src": "dish-pit",
+          "dst": "cookhouse",
+          "dir": "north"
+        },
+        {
+          "src": "dish-pit",
+          "dst": "basement",
+          "dir": "east"
+        },
+        {
+          "src": "playroom",
+          "dst": "recreation zone",
+          "dir": "east"
+        },
+        {
+          "src": "playroom",
+          "dst": "dish-pit",
+          "dir": "west"
+        },
+        {
+          "src": "playroom",
+          "dst": "cookhouse",
+          "dir": "south"
+        },
+        {
+          "src": "playroom",
+          "dst": "bedroom",
+          "dir": "west"
+        },
+        {
+          "src": "basement",
+          "dst": "cubicle",
+          "dir": "north"
+        },
+        {
+          "src": "basement",
+          "dst": "office",
+          "dir": "up"
+        },
+        {
+          "src": "office",
+          "dst": "recreation zone",
+          "dir": "west"
+        },
+        {
+          "src": "office",
+          "dst": "dish-pit",
+          "dir": "south"
+        }
+      ],
+      "noise_records": [
+        {
+          "type": "N5_collapse_fallback",
+          "src": "laundry place",
+          "dst": "dish-pit",
+          "direction": null,
+          "note": "no prefix match available"
+        },
+        {
+          "type": "N5_collapse_fallback",
+          "src": "attic",
+          "dst": "cubicle",
+          "direction": null,
+          "note": "no prefix match available"
+        },
+        {
+          "type": "N6_duplicate",
+          "src": "cookhouse",
+          "dst": "bedroom",
+          "direction": "west",
+          "note": ""
+        },
+        {
+          "type": "N6_duplicate",
+          "src": "cookhouse",
+          "dst": "dish-pit",
+          "direction": "south",
+          "note": ""
+        },
+        {
+          "type": "N6_duplicate",
+          "src": "cookhouse",
+          "dst": "playroom",
+          "direction": "north",
+          "note": ""
+        },
+        {
+          "type": "N6_duplicate",
+          "src": "cookhouse",
+          "dst": "cubicle",
+          "direction": "east",
+          "note": ""
+        },
+        {
+          "type": "N6_duplicate",
+          "src": "cubicle",
+          "dst": "cookhouse",
+          "direction": "west",
+          "note": ""
+        },
+        {
+          "type": "N6_duplicate",
+          "src": "bedroom",
+          "dst": "cookhouse",
+          "direction": "east",
+          "note": ""
+        },
+        {
+          "type": "N6_duplicate",
+          "src": "playroom",
+          "dst": "cookhouse",
+          "direction": "south",
+          "note": ""
+        },
+        {
+          "type": "N6_duplicate",
+          "src": "dish-pit",
+          "dst": "cookhouse",
+          "direction": "north",
+          "note": ""
+        },
+        {
+          "type": "N1_direction",
+          "src": "playroom",
+          "dst": "bedroom",
+          "direction": "west",
+          "note": ""
+        },
+        {
+          "type": "N1_direction",
+          "src": "bedroom",
+          "dst": "basement",
+          "direction": "east",
+          "note": ""
+        },
+        {
+          "type": "N1_direction",
+          "src": "dish-pit",
+          "dst": "basement",
+          "direction": "east",
+          "note": ""
+        },
+        {
+          "type": "N2_topology",
+          "src": "recreation zone",
+          "dst": "cubicle",
+          "direction": "east",
+          "note": ""
+        },
+        {
+          "type": "N2_topology",
+          "src": "cubicle",
+          "dst": "basement",
+          "direction": "east",
+          "note": ""
+        },
+        {
+          "type": "N3_endpoint_swap",
+          "src": "office",
+          "dst": "dish-pit",
+          "direction": "south",
+          "note": "orig dst='cubicle'"
+        },
+        {
+          "type": "N4_spurious_pair",
+          "src": "basement",
+          "dst": "office",
+          "direction": "up",
+          "note": ""
+        }
+      ],
+      "noise_summary": {
+        "N5_collapse_fallback": 2,
+        "N6_duplicate": 8,
+        "N1_direction": 3,
+        "N2_topology": 2,
+        "N3_endpoint_swap": 1,
+        "N4_spurious_pair": 1
+      },
+      "conflicts": [
+        {
+          "type": "direction",
+          "severity": "high",
+          "description": "node 'recreation zone' has multiple outgoing edges labelled 'east'",
+          "edges": [
+            [
+              "recreation zone",
+              "cubicle"
+            ],
+            [
+              "recreation zone",
+              "office"
+            ]
+          ]
+        },
+        {
+          "type": "direction",
+          "severity": "high",
+          "description": "node 'bedroom' has multiple outgoing edges labelled 'east'",
+          "edges": [
+            [
+              "bedroom",
+              "cookhouse"
+            ],
+            [
+              "bedroom",
+              "basement"
+            ]
+          ]
+        },
+        {
+          "type": "direction",
+          "severity": "high",
+          "description": "node 'dish-pit' has multiple outgoing edges labelled 'east'",
+          "edges": [
+            [
+              "dish-pit",
+              "playroom"
+            ],
+            [
+              "dish-pit",
+              "basement"
+            ]
+          ]
+        },
+        {
+          "type": "direction",
+          "severity": "high",
+          "description": "node 'dish-pit' has multiple outgoing edges labelled 'north'",
+          "edges": [
+            [
+              "dish-pit",
+              "cookhouse"
+            ],
+            [
+              "dish-pit",
+              "office"
+            ]
+          ]
+        },
+        {
+          "type": "direction",
+          "severity": "high",
+          "description": "node 'playroom' has multiple outgoing edges labelled 'west'",
+          "edges": [
+            [
+              "playroom",
+              "dish-pit"
+            ],
+            [
+              "playroom",
+              "bedroom"
+            ]
+          ]
+        },
+        {
+          "type": "topology",
+          "severity": "high",
+          "description": "reverse direction mismatch: cubicle--[north]-->recreation zone but recreation zone--[east]-->cubicle (expected south)",
+          "edges": [
+            [
+              "cubicle",
+              "recreation zone"
+            ],
+            [
+              "recreation zone",
+              "cubicle"
+            ]
+          ]
+        },
+        {
+          "type": "topology",
+          "severity": "high",
+          "description": "reverse direction mismatch: cubicle--[east]-->basement but basement--[north]-->cubicle (expected west)",
+          "edges": [
+            [
+              "cubicle",
+              "basement"
+            ],
+            [
+              "basement",
+              "cubicle"
+            ]
+          ]
+        },
+        {
+          "type": "topology",
+          "severity": "high",
+          "description": "position (3, -3, 3) occupied by multiple rooms ['basement', 'cookhouse', 'playroom']",
+          "edges": []
+        },
+        {
+          "type": "topology",
+          "severity": "high",
+          "description": "position (2, -2, 3) occupied by multiple rooms ['basement', 'cookhouse', 'cubicle', 'office']",
+          "edges": []
+        },
+        {
+          "type": "topology",
+          "severity": "high",
+          "description": "position (4, -4, 4) occupied by multiple rooms ['basement', 'cookhouse', 'playroom']",
+          "edges": []
+        },
+        {
+          "type": "topology",
+          "severity": "high",
+          "description": "position (1, -1, 1) occupied by multiple rooms ['basement', 'playroom']",
+          "edges": []
+        },
+        {
+          "type": "topology",
+          "severity": "high",
+          "description": "position (2, -2, 2) occupied by multiple rooms ['basement', 'playroom']",
+          "edges": []
+        },
+        {
+          "type": "topology",
+          "severity": "high",
+          "description": "position (3, -3, 4) occupied by multiple rooms ['basement', 'cookhouse', 'cubicle', 'office']",
+          "edges": []
+        },
+        {
+          "type": "topology",
+          "severity": "high",
+          "description": "position (1, -1, 2) occupied by multiple rooms ['cookhouse', 'cubicle', 'office']",
+          "edges": []
+        },
+        {
+          "type": "topology",
+          "severity": "high",
+          "description": "position (0, 0, 1) occupied by multiple rooms ['cookhouse', 'cubicle', 'office']",
+          "edges": []
+        },
+        {
+          "type": "topology",
+          "severity": "high",
+          "description": "position (-1, 0, 1) occupied by multiple rooms ['bedroom', 'recreation zone']",
+          "edges": []
+        },
+        {
+          "type": "topology",
+          "severity": "high",
+          "description": "position (2, -3, 4) occupied by multiple rooms ['bedroom', 'recreation zone']",
+          "edges": []
+        },
+        {
+          "type": "topology",
+          "severity": "high",
+          "description": "position (1, -2, 3) occupied by multiple rooms ['bedroom', 'recreation zone']",
+          "edges": []
+        },
+        {
+          "type": "topology",
+          "severity": "high",
+          "description": "position (0, -1, 2) occupied by multiple rooms ['bedroom', 'recreation zone']",
+          "edges": []
+        },
+        {
+          "type": "topology",
+          "severity": "high",
+          "description": "position (2, -3, 3) occupied by multiple rooms ['bedroom', 'dish-pit']",
+          "edges": []
+        },
+        {
+          "type": "topology",
+          "severity": "high",
+          "description": "position (3, -4, 4) occupied by multiple rooms ['bedroom', 'dish-pit']",
+          "edges": []
+        },
+        {
+          "type": "topology",
+          "severity": "high",
+          "description": "position (1, -2, 2) occupied by multiple rooms ['bedroom', 'dish-pit']",
+          "edges": []
+        },
+        {
+          "type": "topology",
+          "severity": "high",
+          "description": "position (0, -1, 1) occupied by multiple rooms ['bedroom', 'dish-pit']",
+          "edges": []
+        },
+        {
+          "type": "naming",
+          "severity": "high",
+          "description": "node 'basement' reachable at conflicting positions [(0, 0, 0), (1, -1, 1), (1, 1, 0), (2, -2, 2), (2, -2, 3), (2, 0, 1), (3, -3, 3), (3, -3, 4), (3, -1, 2), (4, -4, 4), (4, -2, 3)]",
+          "edges": []
+        },
+        {
+          "type": "naming",
+          "severity": "high",
+          "description": "node 'cubicle' reachable at conflicting positions [(0, 0, 1), (0, 1, 0), (1, -1, 2), (1, 0, 1), (2, -2, 3), (2, -1, 2), (3, -3, 4), (3, -2, 3), (4, -3, 4)]",
+          "edges": []
+        },
+        {
+          "type": "naming",
+          "severity": "high",
+          "description": "node 'office' reachable at conflicting positions [(0, 0, 1), (1, -1, 2), (2, -2, 3), (3, -3, 4)]",
+          "edges": []
+        },
+        {
+          "type": "naming",
+          "severity": "high",
+          "description": "node 'recreation zone' reachable at conflicting positions [(-1, 0, 1), (0, -1, 2), (0, 2, 0), (1, -2, 3), (1, 1, 1), (2, -3, 4), (2, -1, 1), (2, 0, 2), (3, -2, 2), (3, -1, 3), (4, -3, 3), (5, -4, 4)]",
+          "edges": []
+        },
+        {
+          "type": "naming",
+          "severity": "high",
+          "description": "node 'dish-pit' reachable at conflicting positions [(0, -1, 1), (1, -2, 2), (2, -3, 3), (3, -4, 4)]",
+          "edges": []
+        },
+        {
+          "type": "naming",
+          "severity": "high",
+          "description": "node 'playroom' reachable at conflicting positions [(-2, 0, 1), (-1, -1, 2), (0, -2, 3), (0, 1, 1), (1, -3, 4), (1, -1, 1), (1, 0, 2), (2, -2, 2), (2, -1, 3), (3, -3, 3), (3, -2, 4), (4, -4, 4)]",
+          "edges": []
+        },
+        {
+          "type": "naming",
+          "severity": "high",
+          "description": "node 'cookhouse' reachable at conflicting positions [(-1, 1, 0), (0, 0, 1), (1, -2, 1), (1, -1, 2), (2, -3, 2), (2, -2, 3), (3, -4, 3), (3, -3, 3), (3, -3, 4), (4, -5, 4), (4, -4, 4)]",
+          "edges": []
+        },
+        {
+          "type": "naming",
+          "severity": "high",
+          "description": "node 'bedroom' reachable at conflicting positions [(-1, 0, 1), (0, -1, 1), (0, -1, 2), (1, -2, 2), (1, -2, 3), (2, -3, 3), (2, -3, 4), (3, -4, 4)]",
+          "edges": []
+        }
+      ]
+    },
+    "repaired": {
+      "edges": [
+        {
+          "src": "cubicle",
+          "dst": "cookhouse",
+          "dir": "west"
+        },
+        {
+          "src": "cookhouse",
+          "dst": "cubicle",
+          "dir": "east"
+        },
+        {
+          "src": "cookhouse",
+          "dst": "bedroom",
+          "dir": "west"
+        },
+        {
+          "src": "cookhouse",
+          "dst": "dish-pit",
+          "dir": "south"
+        },
+        {
+          "src": "cookhouse",
+          "dst": "playroom",
+          "dir": "southeast"
+        },
+        {
+          "src": "recreation zone",
+          "dst": "playroom",
+          "dir": "west"
+        },
+        {
+          "src": "recreation zone",
+          "dst": "cubicle",
+          "dir": "east"
+        },
+        {
+          "src": "bedroom",
+          "dst": "cookhouse",
+          "dir": "east"
+        },
+        {
+          "src": "dish-pit",
+          "dst": "basement",
+          "dir": "east"
+        },
+        {
+          "src": "playroom",
+          "dst": "recreation zone",
+          "dir": "east"
+        },
+        {
+          "src": "playroom",
+          "dst": "cookhouse",
+          "dir": "south"
+        },
+        {
+          "src": "basement",
+          "dst": "cubicle",
+          "dir": "north"
+        },
+        {
+          "src": "basement",
+          "dst": "office",
+          "dir": "up"
+        },
+        {
+          "src": "office",
+          "dst": "recreation zone",
+          "dir": "west"
+        },
+        {
+          "src": "office",
+          "dst": "dish-pit",
+          "dir": "south"
+        }
+      ],
+      "actions": [
+        {
+          "kind": "remove_edge",
+          "target": [
+            "bedroom",
+            "basement"
+          ],
+          "new_dir": null,
+          "reason": "remove fallback"
+        },
+        {
+          "kind": "remove_edge",
+          "target": [
+            "dish-pit",
+            "playroom"
+          ],
+          "new_dir": null,
+          "reason": "remove fallback"
+        },
+        {
+          "kind": "remove_edge",
+          "target": [
+            "playroom",
+            "dish-pit"
+          ],
+          "new_dir": null,
+          "reason": "remove fallback"
+        },
+        {
+          "kind": "remove_edge",
+          "target": [
+            "recreation zone",
+            "office"
+          ],
+          "new_dir": null,
+          "reason": "remove fallback"
+        },
+        {
+          "kind": "remove_edge",
+          "target": [
+            "cubicle",
+            "basement"
+          ],
+          "new_dir": null,
+          "reason": "remove fallback"
+        },
+        {
+          "kind": "remove_edge",
+          "target": [
+            "cubicle",
+            "recreation zone"
+          ],
+          "new_dir": null,
+          "reason": "remove fallback"
+        },
+        {
+          "kind": "remove_edge",
+          "target": [
+            "playroom",
+            "bedroom"
+          ],
+          "new_dir": null,
+          "reason": "remove fallback"
+        },
+        {
+          "kind": "remove_edge",
+          "target": [
+            "dish-pit",
+            "cookhouse"
+          ],
+          "new_dir": null,
+          "reason": "remove fallback"
+        },
+        {
+          "kind": "modify_edge",
+          "target": [
+            "cookhouse",
+            "playroom"
+          ],
+          "new_dir": "southeast",
+          "reason": "rotate to free direction southeast"
+        },
+        {
+          "kind": "skip",
+          "target": null,
+          "new_dir": null,
+          "reason": "exhausted candidates"
+        }
+      ],
+      "n_conflicts_before": 31,
+      "n_conflicts_after": 13
+    }
+  }
+}

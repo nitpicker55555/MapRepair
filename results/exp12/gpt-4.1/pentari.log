@@ -1,0 +1,23 @@
+# pentari  model=gpt-4.1  n_steps=22
+step   0 bad movement output: {'is_movement': True, 'src_node': None, 'dst_node': 'charlie company compound', 'action': 'north', 'seen_in_forward': 0, 'current_location': 'charlie company compound', 'reasoning': "The observation begins with 'Charlie Company Compound', which matches a canonical location, indicating arrival after moving north."}
+step   1 bad movement output: {'is_movement': True, 'src_node': None, 'dst_node': 'charlie company barracks', 'action': 'north', 'seen_in_forward': 1, 'current_location': 'charlie company barracks', 'reasoning': "The observation explicitly names 'Charlie Company Barracks', which matches the canonical list; action 'north' indicates movement."}
+step   2 bad movement output: {'is_movement': True, 'src_node': None, 'dst_node': 'the charlie company barracks (in the pentarian transporter)', 'action': 'in', 'seen_in_forward': 2, 'current_location': 'the charlie company barracks (in the pentarian transporter)', 'reasoning': "The observation explicitly names 'The Charlie Company Barracks (in the Pentarian Transporter)', which matches a canonical location."}
+step   3 MOVE 'the charlie company barracks (in the pentarian transporter)' --[east]--> 'library'
+step   4 MOVE 'library' --[south]--> 'castle entrance'
+step   5 MOVE 'castle entrance' --[north]--> 'castle'
+step   6 MOVE 'castle' --[north]--> 'main hall'
+step   7 MOVE 'main hall' --[north]--> 'by the fireplace'
+step   8 MOVE 'by the fireplace' --[south]--> 'main hall'
+step   9 MOVE 'main hall' --[east]--> 'spiral stairway'
+step  10 MOVE 'spiral stairway' --[up]--> 'spiral stairway'
+step  11 MOVE 'spiral stairway' --[north]--> 'dining room'
+step  12 MOVE 'dining room' --[north]--> 'kitchen'
+step  13 MOVE 'kitchen' --[south]--> 'dining room'
+step  14 MOVE 'dining room' --[south]--> 'spiral stairway'
+step  15 MOVE 'spiral stairway' --[west]--> 'main hall'
+step  16 MOVE 'main hall' --[west]--> 'armory'
+step  17 MOVE 'armory' --[north]--> 'treasury'
+step  18 MOVE 'treasury' --[south]--> 'armory'
+step  19 MOVE 'armory' --[east]--> 'main hall'
+step  20 MOVE 'main hall' --[south]--> 'castle'
+step  21 MOVE 'castle' --[enter]--> 'the main hall, by the fireplace (in the large fireplace)'

@@ -1,0 +1,33 @@
+# sorcerer  model=gpt-4.1  n_steps=29
+step   0 bad movement output: {'is_movement': True, 'src_node': None, 'dst_node': 'hallway (wooden door leading north)', 'action': 'west', 'seen_in_forward': 0, 'current_location': 'hallway (wooden door leading north)', 'reasoning': "The observation describes a hallway with a wooden door to the north, matching the canonical 'hallway (wooden door leading north)'."}
+step   1 bad movement output: {'is_movement': True, 'src_node': None, 'dst_node': "belboz's quarters", 'action': 'west', 'seen_in_forward': 1, 'current_location': "belboz's quarters", 'reasoning': "Observation begins with 'Belboz's Quarters', which matches the canonical location name."}
+step   2 MOVE "belboz's quarters" --[east]--> 'hallway (wooden door leading north)'
+step   3 MOVE 'hallway (wooden door leading north)' --[south]--> 'hallway (marble archway leading south)'
+step   4 MOVE 'hallway (marble archway leading south)' --[south]--> 'lobby'
+step   5 MOVE 'lobby' --[west]--> 'store room'
+step   6 MOVE 'store room' --[east]--> 'lobby'
+step   7 MOVE 'lobby' --[east]--> 'library'
+step   8 MOVE 'library' --[west]--> 'lobby'
+step   9 MOVE 'lobby' --[down]--> 'cellar'
+step  10 MOVE 'cellar' --[up]--> 'lobby'
+step  11 MOVE 'lobby' --[north]--> 'hallway (marble archway leading south)'
+step  12 MOVE 'hallway (marble archway leading south)' --[west]--> "helistar's quarters"
+step  13 MOVE "helistar's quarters" --[northeast]--> 'forest edge'
+step  14 MOVE 'forest edge' --[east]--> 'meadow'
+step  15 MOVE 'meadow' --[northeast]--> 'river bank'
+step  16 MOVE 'river bank' --[down]--> 'river bed'
+step  17 MOVE 'river bed' --[northeast]--> 'hidden cave'
+step  18 MOVE 'hidden cave' --[down]--> 'pit of bones'
+step  19 MOVE 'pit of bones' --[south]--> 'torture chamber'
+step  20 non-movement (loc='torture chamber') action='west'
+  WARN: RetryError[<Future at 0x108abb0d0 state=finished raised BadRequestError>]
+step  21 non-movement (loc='torture chamber') action='down'
+  WARN: RetryError[<Future at 0x108a58670 state=finished raised BadRequestError>]
+step  22 non-movement (loc='torture chamber') action='west'
+  WARN: RetryError[<Future at 0x108addb80 state=finished raised BadRequestError>]
+step  23 MOVE 'bend' --[southwest]--> 'edge of crater'
+step  24 MOVE 'edge of crater' --[southwest]--> 'crater'
+step  25 MOVE 'crater' --[west]--> 'edge of chasm'
+step  26 MOVE 'edge of chasm' --[west]--> 'bare passage'
+step  27 MOVE 'bare passage' --[west]--> 'elbow room'
+step  28 MOVE 'elbow room' --[north]--> 'tree room'

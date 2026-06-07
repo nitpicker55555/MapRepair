@@ -1,0 +1,183 @@
+===========
+==>STEP NUM: 0
+==>ACT: east
+==>OBSERVATION: 19th Street East
+A street-front window looks into Nikolai's bar.  If you want into the bar, you'll have to go back to the restaurant entrance, which is west of here.  There are no cars on this end of 19th Street.  The sidewalk is uneven.  A curb-side storm gutter empties here into a grated storm drain.
+===========
+==>STEP NUM: 1
+==>ACT: west
+==>OBSERVATION: 19th Street
+An aluminum placard is fixed to the front door.
+
+Angela arrives from the bar and unlocks the door.
+===========
+==>STEP NUM: 2
+==>ACT: north
+==>OBSERVATION: (first opening the front door)
+
+Dining Room
+The restaurant area of Nikolai's is relatively small:  no more than a dozen four top tables, many still littered with yesterday's crumbs.  A larger bar area--the primary source of revenue here--lies to the east.  A rickety staircase leads to small balcony outside Nikolai's office loft.  A wide mirror is mounted on the wall high above, right near his office entrance.
+
+On the south end of the room, a long window provides an unattractive view of the street.  The galley kitchen is north of here.
+
+An aluminum placard is fixed to the front door.
+
+Angela is gaunt and anemic.  She struggles to remain alert.
+
+An obese man (Nikolai, the owner?) watches you from the balcony.
+
+"Who's there?  Tell him we're closed" Nikolai growls in disgust.
+
+Angela cowers, "I think he's the man from the health department."  She looks at you "We're not open right now."
+
+Nikolai growls again, "We were just inspected six months ago.  Tell him to go away."  Without waiting for an answer from either you or Angela, Nikolai turns back into his office and closes the door.
+
+Angela shrugs helplessly, and begins cleaning the dining room.
+
+[Nikolai's sanitation rating has dropped three points.]
+===========
+==>STEP NUM: 3
+==>ACT: east
+==>OBSERVATION: Bar
+Sunlight from the 19th Street window (south) casts an bright trapezoid across the cork dance floor.  In every other corner, the brick walls of this unpretentious watering hole are marked by shadows.  If you don't mind risking ptomaine poisoning, Nikolai's dining room is to the west.  Otherwise, the unisex lavatory is north through a low ceiling tunnel.
+
+A set of Naugahyde stools are pushed against the linoleum bar.
+
+Behind the bar is a dinky two basin sink with an attached faucet.  In the rinse basin is some ice.
+
+Beside the sink is a personal stereo (held together largely with duct tape).
+===========
+==>STEP NUM: 4
+==>ACT: north
+==>OBSERVATION: Lavatory
+The low ceiling restroom is painted yellow, the color of urine and bile.  Its only fixtures are a porcelain toilet, hand sink, soap dispenser and automatic hand dryer, all mounted low to the floor as if they were reclaimed from an abandoned grade school, or this lavatory was designed for alcoholic ten-year-olds.
+
+A Jackson Pollack pattern of vomit is splashed across the back wall of the bathroom, certainly nowhere near the toilet where it was presumably aimed.
+===========
+==>STEP NUM: 5
+==>ACT: south
+==>OBSERVATION: Bar
+Behind the bar is a dinky two basin sink with an attached faucet.  In the rinse basin is some ice.
+
+Beside the sink is a personal stereo (held together largely with duct tape).
+===========
+==>STEP NUM: 6
+==>ACT: west
+==>OBSERVATION: Dining Room
+An aluminum placard is fixed to the front door.
+
+Angela is gaunt and anemic.  She struggles to remain alert.
+===========
+==>STEP NUM: 7
+==>ACT: north
+==>OBSERVATION: Galley Kitchen
+You are in a galley kitchen about eight feet long, and just wide enough for one person to turn around.  On the south side facing the dining room is a wooden prep table.  On the left end of the prep table is a mini fridge, and on the right end is a steam table.
+
+Opposite the prep table is a flat grill.  Dried rivulets of grease ooze down the wall from the overhead vents.  A narrow aisle winds north into darkness.
+===========
+==>STEP NUM: 8
+==>ACT: north
+==>OBSERVATION: Darkness
+It is pitch dark, and you can't see a thing.
+===========
+==>STEP NUM: 9
+==>ACT: west
+==>OBSERVATION: Refrigerator
+Nikolai's walk-in refrigerator is kept at a few degrees above zero Celsius.  The tight dimensions of this poorly lit unit induce a sense of claustrophobia.  The textured metal walls are splashed with now dry remnants of long ago dinner specials.  The exit back to the winding hall is east.
+
+A five gallon soup cauldron is pushed carelessly into one corner.
+
+A four tier wire shelf supports an assortment of hotel pans in varied sizes and depths.
+===========
+==>STEP NUM: 10
+==>ACT: east
+==>OBSERVATION: Darkness
+===========
+==>STEP NUM: 11
+==>ACT: north
+==>OBSERVATION: Dish Room
+On entering the dish room you are overwhelmed by the astringent smell of fresh bleach.  You would welcome this as evidence of sanitation, except that in such high concentrations bleach is actually toxic.  Already you're feeling a little nauseous.  A hall winds south into the darkness.
+
+A manhole-size drain cover is set in the floor.
+
+A warped wooden door is set into the cement north wall. The door is sealed tight.
+
+The largest fixture in this location is a straight unit dish machine, with a stainless steel dish table on either side.
+
+On the dish table is a dish rack (in which are some servingware).
+
+You note a rat out of the corner of your eye.
+===========
+==>STEP NUM: 12
+==>ACT: south
+==>OBSERVATION: Darkness
+===========
+==>STEP NUM: 13
+==>ACT: south
+==>OBSERVATION: Galley Kitchen
+===========
+==>STEP NUM: 14
+==>ACT: south
+==>OBSERVATION: Dining Room
+An aluminum placard is fixed to the front door.
+
+Angela is gaunt and anemic.  She struggles to remain alert.
+
+Nikolai pokes his head out from the top office, "Angela, be a peach and pick up some bread from the food pantry." 
+
+Angela looks puzzled "You mean the 5th Avenue Mission?" 
+
+"Of course that's where I mean.  Our regular bread company won't deliver here anymore.  Just go to the food pantry and fill up your car." 
+
+"I can't take food from a homeless shelter." 
+
+Nikolai's face turns red, "We need bread, and you can get it free from the mission.  Tell them you're a homeless wench.  Tell them you've got twelve screaming brats to feed.  I don't care.  If you won't go there, then go to the store and pay for the bread with your own money, but don't come back without it!" 
+
+Angela lowers her head.  She looks like she's about to cry. 
+
+As Angela leaves the restaurant, you notice a small flashlight fall off of her key chain.
+
+A cockroach scuttles up the wall.
+===========
+==>STEP NUM: 15
+==>ACT: down
+==>OBSERVATION: (first opening the drain cover)
+
+Crypt
+The edges and corners of this brown room are rounded by accumulated cobweb nets, making it look more like a small cave than an urban underground.  Moldy pylons and concrete extrusions resemble stalagmites.  Wet cardboard boxes stacked along the wall contain empty unrecycled liquor bottles.  The humid air smells of death.
+
+You could escape through the drain pipe in the ceiling.
+
+At the center of the room is a three foot by six foot sealed crate, composed mostly of particle board.
+===========
+==>STEP NUM: 16
+==>ACT: up
+==>OBSERVATION: Dish Room
+You step cautiously around the open drain cover.
+
+A warped wooden door is set into the cement north wall. The door is sealed tight.
+
+The largest fixture in this location is a straight unit dish machine, with a stainless steel dish table on either side.
+
+On the dish table is a dish rack (in which are some servingware).
+
+From somewhere below your feet, you hear a muffled thump.
+===========
+==>STEP NUM: 17
+==>ACT: south
+==>OBSERVATION: 19th Street
+An aluminum placard is fixed to the front door.
+===========
+==>STEP NUM: 18
+==>ACT: up
+==>OBSERVATION: Nikolai pursues you up the stairs, huffing and wheezing from the effort.  You double your speed just in time to escape his reach.  Nikolai is left stranded and out of breath back on the fifth step.
+
+Nikolai's Office
+Nikolai's office is an ill-maintained balcony sky box above his restaurant.  A window looks out over the restaurant. But as you could see earlier, the dining room side is mirrored such that employees and guests can't see in.  A rickety set of steps leads back to the main floor.  The plaster walls are water stained and cracked.  A single unfrosted bulb hangs from the ceiling by a loose wire.  Mounds of unpaid invoices litter Nikolai's wooden desk.
+
+On Nikolai's desk are a brass key and a book.
+
+A plastic pitcher sits on the floor in the corner of the office, filled with some foamy amber liquid.
+
+Your heart is racing.
+===========

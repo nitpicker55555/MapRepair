@@ -1,0 +1,110 @@
+[
+  {
+    "src_node": "<unknown>",
+    "dst_node": "19th street",
+    "action": "west",
+    "seen_in_forward": 1
+  },
+  {
+    "src_node": "19th street",
+    "dst_node": "dining room",
+    "action": "north",
+    "seen_in_forward": 2
+  },
+  {
+    "src_node": "dining room",
+    "dst_node": "bar",
+    "action": "east",
+    "seen_in_forward": 3
+  },
+  {
+    "src_node": "bar",
+    "dst_node": "lavatory",
+    "action": "north",
+    "seen_in_forward": 4
+  },
+  {
+    "src_node": "lavatory",
+    "dst_node": "bar",
+    "action": "south",
+    "seen_in_forward": 5
+  },
+  {
+    "src_node": "bar",
+    "dst_node": "dining room",
+    "action": "west",
+    "seen_in_forward": 6
+  },
+  {
+    "src_node": "dining room",
+    "dst_node": "galley kitchen",
+    "action": "north",
+    "seen_in_forward": 7
+  },
+  {
+    "src_node": "galley kitchen",
+    "dst_node": "refrigerator",
+    "action": "north",
+    "seen_in_forward": 8
+  },
+  {
+    "src_node": "refrigerator",
+    "dst_node": "refrigerator",
+    "action": "west",
+    "seen_in_forward": 9
+  },
+  {
+    "src_node": "refrigerator",
+    "dst_node": "darkness",
+    "action": "east",
+    "seen_in_forward": 10
+  },
+  {
+    "src_node": "darkness",
+    "dst_node": "dish room",
+    "action": "north",
+    "seen_in_forward": 11
+  },
+  {
+    "src_node": "dish room",
+    "dst_node": "darkness",
+    "action": "south",
+    "seen_in_forward": 12
+  },
+  {
+    "src_node": "darkness",
+    "dst_node": "galley kitchen",
+    "action": "south",
+    "seen_in_forward": 13
+  },
+  {
+    "src_node": "galley kitchen",
+    "dst_node": "dining room",
+    "action": "south",
+    "seen_in_forward": 14
+  },
+  {
+    "src_node": "dining room",
+    "dst_node": "crypt",
+    "action": "down",
+    "seen_in_forward": 15
+  },
+  {
+    "src_node": "crypt",
+    "dst_node": "dish room",
+    "action": "up",
+    "seen_in_forward": 16
+  },
+  {
+    "src_node": "dish room",
+    "dst_node": "19th street",
+    "action": "south",
+    "seen_in_forward": 17
+  },
+  {
+    "src_node": "19th street",
+    "dst_node": "nikolai's office",
+    "action": "up",
+    "seen_in_forward": 18
+  }
+]

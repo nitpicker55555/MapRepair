@@ -1,0 +1,435 @@
+===========
+==>STEP NUM: 0
+==>ACT: west
+==>OBSERVATION: Escape Pod
+This is one of the Feinstein's primary escape pods, for use in extreme emergencies. A mass of safety webbing, large enough to hold several dozen people, fills half the pod. The controls are entirely automated. The bulkhead leading out is open.
+The ship shakes again. You hear, from close by, the sounds of emergency bulkheads closing.
+===========
+==>STEP NUM: 1
+==>ACT: out
+==>OBSERVATION: Underwater
+You are momentarily disoriented as you enter the turbulent waters. Currents buffet you against the sharp rocks of an underwater cliff. A dim light filters down from above.
+===========
+==>STEP NUM: 2
+==>ACT: up
+==>OBSERVATION: Crag
+You have reached a cleft in the cliff wall where the island rises from the water. The edge of the cleft displays recently exposed rock where it collapsed under the weight of the escape pod. About two meters below, turbulent waters swirl against sharp rocks. A small structure clings to the face of the cliff about eight meters above you. Even an out-of-shape Ensign Seventh Class could probably climb up to it.
+===========
+==>STEP NUM: 3
+==>ACT: up
+==>OBSERVATION: Balcony
+This is an octagonal room, half carved into and half built out from the cliff wall. Through the shattered windows which ring the outer wall you can see ocean to the horizon. A weathered metal plaque with barely readable lettering rests below the windows. The language seems to be a corrupt form of Galalingua. A steep stairway, roughly cut into the face of the cliff, leads upward. A rocky crag can be seen about eight meters below.
+===========
+==>STEP NUM: 4
+==>ACT: up
+==>OBSERVATION: Winding Stair
+The middle of a long, steep stairway carved into the face of a cliff.
+===========
+==>STEP NUM: 5
+==>ACT: up
+==>OBSERVATION: Courtyard
+You are in the courtyard of an ancient stone edifice, vaguely reminiscent of the castles you saw during your leave on Ramos Two. It has decayed to the point where it can probably be termed a ruin. Openings lead north and west, and a stairway downward is visible to the south.
+===========
+==>STEP NUM: 6
+==>ACT: north
+==>OBSERVATION: Plain Hall
+This is a featureless hall leading north and south. Although the hallway is old and dusty, the construction is of a much more modern style than the castle to the south. A similar hall branches off to the northeast.
+===========
+==>STEP NUM: 7
+==>ACT: northeast
+==>OBSERVATION: Rec Corridor
+This is a wide, east-west hallway. Portals lead north and south, and another corridor branches southwest.
+===========
+==>STEP NUM: 8
+==>ACT: east
+==>OBSERVATION: Mess Corridor
+This is a wide, east-west hallway with a large portal to the south. A small door to the north is closed and hooked with a simple steel padlock which is also closed.
+===========
+==>STEP NUM: 9
+==>ACT: east
+==>OBSERVATION: Dorm Corridor
+This is a wide, east-west hallway with openings to the north and south. To the east, the corridor stretches off into the distance. That section of the hallway is lined with a motorized walkway (no longer running) that was probably intended to transport people or cargo down that tremendously long hall.
+===========
+==>STEP NUM: 10
+==>ACT: south
+==>OBSERVATION: Mech Corridor North
+Entrances to rooms lie to the east and west from this north-south hall.
+===========
+==>STEP NUM: 11
+==>ACT: south
+==>OBSERVATION: Mech Corridor
+Entrances to rooms lie to the east and west from this north-south hall.
+===========
+==>STEP NUM: 12
+==>ACT: south
+==>OBSERVATION: Mech Corridor South
+The corridor ends here with doorways to the southwest, south, and southeast.
+===========
+==>STEP NUM: 13
+==>ACT: southwest
+==>OBSERVATION: Tool Room
+This is apparently a storage room for tools. Exits lead northeast and east.
+Sitting on the floor below the lowest shelf is a large glass flask.
+A small device, labelled "Akmee Portabul Laazur", is resting on one of the lower shelves.
+The laser contains:
+  An old battery
+On an upper shelf is a metal bar, curved into a U-shape.
+There is a pair of wide-nosed pliers here.
+===========
+==>STEP NUM: 14
+==>ACT: northeast
+==>OBSERVATION: Mech Corridor South
+===========
+==>STEP NUM: 15
+==>ACT: north
+==>OBSERVATION: Mech Corridor
+===========
+==>STEP NUM: 16
+==>ACT: north
+==>OBSERVATION: Mech Corridor North
+===========
+==>STEP NUM: 17
+==>ACT: north
+==>OBSERVATION: Corridor Junction
+===========
+==>STEP NUM: 18
+==>ACT: north
+==>OBSERVATION: Admin Corridor South
+This section of hallway seems to have suffered some minor structural damage. The walls are cracked, and a jagged crevice crosses the floor. An opening leads east and the corridor heads north and south.
+===========
+==>STEP NUM: 19
+==>ACT: south
+==>OBSERVATION: Corridor Junction
+===========
+==>STEP NUM: 20
+==>ACT: west
+==>OBSERVATION: Mess Corridor
+===========
+==>STEP NUM: 21
+==>ACT: north
+==>OBSERVATION: Storage West
+This is a small room obviously intended as a storage area.
+On a small shelf is a large, unopened tin can. It has a plain white label which reads "Spam and Egz."
+A heavy-duty extendable ladder is leaning against the rear wall.
+===========
+==>STEP NUM: 22
+==>ACT: south
+==>OBSERVATION: Mess Corridor
+There is a survival kit here.
+There is a padlock here.
+===========
+==>STEP NUM: 23
+==>ACT: east
+==>OBSERVATION: Dorm Corridor
+===========
+==>STEP NUM: 24
+==>ACT: north
+==>OBSERVATION: Admin Corridor South
+There is a curved metal bar here.
+===========
+==>STEP NUM: 25
+==>ACT: north
+==>OBSERVATION: Admin Corridor
+The hallway, in fact the entire building, has been rent apart here, presumably by seismic upheaval. You can see the sky through the severed roof above, and the ground is thick with rubble. To the north is a gaping rift, at least eight meters across and thirty meters deep. A wide doorway, labelled "Sistumz Moniturz," leads west.
+===========
+==>STEP NUM: 26
+==>ACT: west
+==>OBSERVATION: Small Office
+You have entered a small office of some sort. A small desk faces the main doorway which lies to the east. Another exit leads west.
+===========
+==>STEP NUM: 27
+==>ACT: west
+==>OBSERVATION: Large Office
+This is a large, plush office. The far wall is one large picture window, scratched but unbroken, offering a view of this installation and the ocean beyond. In front of the window is a wide wooden desk. The only exit is east.
+===========
+==>STEP NUM: 28
+==>ACT: east
+==>OBSERVATION: Small Office
+===========
+==>STEP NUM: 29
+==>ACT: east
+==>OBSERVATION: Admin Corridor North
+===========
+==>STEP NUM: 30
+==>ACT: south
+==>OBSERVATION: Admin Corridor South
+There is a curved metal bar here.
+===========
+==>STEP NUM: 31
+==>ACT: south
+==>OBSERVATION: Corridor Junction
+===========
+==>STEP NUM: 32
+==>ACT: west
+==>OBSERVATION: Mess Corridor
+There is a survival kit here.
+There is a padlock here.
+===========
+==>STEP NUM: 33
+==>ACT: north
+==>OBSERVATION: Mess Corridor
+There is a survival kit here.
+The survival kit contains:
+  A blob of green goo
+  A blob of brown goo
+There is a padlock here.
+===========
+==>STEP NUM: 34
+==>ACT: east
+==>OBSERVATION: Dorm Corridor
+===========
+==>STEP NUM: 35
+==>ACT: west
+==>OBSERVATION: Corridor Junction
+===========
+==>STEP NUM: 36
+==>ACT: south
+==>OBSERVATION: Mech Corridor North
+===========
+==>STEP NUM: 37
+==>ACT: south
+==>OBSERVATION: Mech Corridor
+===========
+==>STEP NUM: 38
+==>ACT: south
+==>OBSERVATION: Mech Corridor South
+===========
+==>STEP NUM: 39
+==>ACT: southwest
+==>OBSERVATION: Tool Room
+Sitting on the floor below the lowest shelf is a large glass flask.
+A small device, labelled "Akmee Portabul Laazur", is resting on one of the lower shelves.
+The laser contains:
+  An old battery
+There is a pair of wide-nosed pliers here.
+===========
+==>STEP NUM: 40
+==>ACT: northwest
+==>OBSERVATION: Mech Corridor South
+===========
+==>STEP NUM: 41
+==>ACT: north
+==>OBSERVATION: Mech Corridor
+===========
+==>STEP NUM: 42
+==>ACT: north
+==>OBSERVATION: Mech Corridor North
+===========
+==>STEP NUM: 43
+==>ACT: north
+==>OBSERVATION: Corridor Junction
+===========
+==>STEP NUM: 44
+==>ACT: west
+==>OBSERVATION: Corridor Junction
+Floyd follows you.
+===========
+==>STEP NUM: 45
+==>ACT: north
+==>OBSERVATION: Dorm Corridor
+Floyd follows you.
+===========
+==>STEP NUM: 46
+==>ACT: west
+==>OBSERVATION: Mess Corridor
+There is a survival kit here.
+The survival kit contains:
+  A blob of green goo
+  A blob of brown goo
+There is a padlock here.
+Floyd follows you.
+===========
+==>STEP NUM: 47
+==>ACT: east
+==>OBSERVATION: Dorm Corridor
+Floyd follows you.
+===========
+==>STEP NUM: 48
+==>ACT: south
+==>OBSERVATION: Mech Corridor North
+Floyd bounds into the room. "Floyd here now!" he cries.
+===========
+==>STEP NUM: 49
+==>ACT: south
+==>OBSERVATION: Mech Corridor
+===========
+==>STEP NUM: 50
+==>ACT: south
+==>OBSERVATION: Mech Corridor South
+===========
+==>STEP NUM: 51
+==>ACT: north
+==>OBSERVATION: Mech Corridor South
+===========
+==>STEP NUM: 52
+==>ACT: north
+==>OBSERVATION: Mech Corridor
+Floyd bounds into the room. "Floyd here now!" he cries.
+===========
+==>STEP NUM: 53
+==>ACT: north
+==>OBSERVATION: Mech Corridor North
+===========
+==>STEP NUM: 54
+==>ACT: north
+==>OBSERVATION: Corridor Junction
+There is a survival kit here.
+The survival kit contains:
+  A blob of brown goo
+===========
+==>STEP NUM: 55
+==>ACT: west
+==>OBSERVATION: Corridor Junction
+There is a survival kit here.
+The survival kit contains:
+  A blob of brown goo
+Floyd bounds into the room. "Floyd here now!" he cries.
+===========
+==>STEP NUM: 56
+==>ACT: south
+==>OBSERVATION: Mech Corridor North
+===========
+==>STEP NUM: 57
+==>ACT: south
+==>OBSERVATION: Mech Corridor
+===========
+==>STEP NUM: 58
+==>ACT: south
+==>OBSERVATION: Mech Corridor South
+===========
+==>STEP NUM: 59
+==>ACT: north
+==>OBSERVATION: Mech Corridor South
+Floyd follows you.
+===========
+==>STEP NUM: 60
+==>ACT: north
+==>OBSERVATION: Mech Corridor
+Floyd follows you.
+===========
+==>STEP NUM: 61
+==>ACT: north
+==>OBSERVATION: Mech Corridor North
+===========
+==>STEP NUM: 62
+==>ACT: north
+==>OBSERVATION: Corridor Junction
+There is a survival kit here.
+The survival kit contains:
+  A blob of brown goo
+Floyd bounds into the room. "Floyd here now!" he cries.
+===========
+==>STEP NUM: 63
+==>ACT: west
+==>OBSERVATION: Corridor Junction
+There is a survival kit here.
+The survival kit contains:
+  A blob of brown goo
+Floyd follows you.
+===========
+==>STEP NUM: 64
+==>ACT: south
+==>OBSERVATION: Mech Corridor North
+===========
+==>STEP NUM: 65
+==>ACT: west
+==>OBSERVATION: Mech Corridor North
+Floyd follows you.
+===========
+==>STEP NUM: 66
+==>ACT: south
+==>OBSERVATION: Mech Corridor
+Floyd follows you.
+===========
+==>STEP NUM: 67
+==>ACT: south
+==>OBSERVATION: Mech Corridor South
+Floyd follows you.
+===========
+==>STEP NUM: 68
+==>ACT: southwest
+==>OBSERVATION: Tool Room
+A small device, labelled "Akmee Portabul Laazur", is resting on one of the lower shelves.
+The laser contains:
+  An old battery
+There is a pair of wide-nosed pliers here.
+Floyd follows you.
+===========
+==>STEP NUM: 69
+==>ACT: northeast
+==>OBSERVATION: Mech Corridor South
+Floyd follows you.
+===========
+==>STEP NUM: 70
+==>ACT: north
+==>OBSERVATION: Mech Corridor
+Floyd follows you.
+===========
+==>STEP NUM: 71
+==>ACT: north
+==>OBSERVATION: Mech Corridor North
+Floyd follows you.
+A growl from your stomach warns that you're getting pretty hungry and thirsty.
+===========
+==>STEP NUM: 72
+==>ACT: north
+==>OBSERVATION: Corridor Junction
+There is a survival kit here.
+The survival kit contains:
+  A blob of brown goo
+There is a glass flask here.
+Floyd follows you.
+===========
+==>STEP NUM: 73
+==>ACT: west
+==>OBSERVATION: Corridor Junction
+There is a survival kit here.
+The survival kit contains:
+  A blob of brown goo
+There is a glass flask here.
+Floyd follows you.
+===========
+==>STEP NUM: 74
+==>ACT: south
+==>OBSERVATION: Mech Corridor North
+Floyd follows you.
+===========
+==>STEP NUM: 75
+==>ACT: south
+==>OBSERVATION: Mech Corridor
+Floyd rushes into the room and barrels into you. "Oops, sorry," he says. "Floyd not looking at where he was going to."
+===========
+==>STEP NUM: 76
+==>ACT: south
+==>OBSERVATION: Mech Corridor South
+Floyd bounds into the room. "Floyd here now!" he cries.
+===========
+==>STEP NUM: 77
+==>ACT: southwest
+==>OBSERVATION: Tool Room
+A small device, labelled "Akmee Portabul Laazur", is resting on one of the lower shelves.
+The laser contains:
+  An old battery
+===========
+==>STEP NUM: 78
+==>ACT: northeast
+==>OBSERVATION: Mech Corridor South
+Floyd follows you.
+===========
+==>STEP NUM: 79
+==>ACT: north
+==>OBSERVATION: Mech Corridor
+Floyd follows you.
+===========
+==>STEP NUM: 80
+==>ACT: north
+==>OBSERVATION: Mech Corridor North
+===========
+==>STEP NUM: 81
+==>ACT: north
+==>OBSERVATION: Corridor Junction
+There is a survival kit here.
+The survival kit contains:
+  A blob of brown goo
+There is a glass flask here.
+===========

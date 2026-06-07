@@ -1,0 +1,86 @@
+[
+  {
+    "src_node": "belwit square",
+    "dst_node": "midair",
+    "action": "down",
+    "seen_in_forward": 2
+  },
+  {
+    "src_node": "midair",
+    "dst_node": "hall of stone",
+    "action": "east",
+    "seen_in_forward": 3
+  },
+  {
+    "src_node": "hall of stone",
+    "dst_node": "ruins room",
+    "action": "south",
+    "seen_in_forward": 4
+  },
+  {
+    "src_node": "ruins room",
+    "dst_node": "cliff middle",
+    "action": "south",
+    "seen_in_forward": 5
+  },
+  {
+    "src_node": "cliff middle",
+    "dst_node": "cliff top",
+    "action": "up",
+    "seen_in_forward": 6
+  },
+  {
+    "src_node": "cliff top",
+    "dst_node": "boulder(a long oblong boulder below you)",
+    "action": "up",
+    "seen_in_forward": 7
+  },
+  {
+    "src_node": "boulder(a long oblong boulder below you)",
+    "dst_node": "boulder(a nice oblong boulder above you and another large one below you)",
+    "action": "up",
+    "seen_in_forward": 8
+  },
+  {
+    "src_node": "boulder(a nice oblong boulder above you and another large one below you)",
+    "dst_node": "boulder(a long oblong boulder below you)",
+    "action": "up",
+    "seen_in_forward": 9
+  },
+  {
+    "src_node": "boulder(a long oblong boulder below you)",
+    "dst_node": "mountain top",
+    "action": "up",
+    "seen_in_forward": 10
+  },
+  {
+    "src_node": "mountain top",
+    "dst_node": "stone hut",
+    "action": "west",
+    "seen_in_forward": 11
+  },
+  {
+    "src_node": "stone hut",
+    "dst_node": "mountain top",
+    "action": "east",
+    "seen_in_forward": 12
+  },
+  {
+    "src_node": "mountain top",
+    "dst_node": "meadow",
+    "action": "south",
+    "seen_in_forward": 13
+  },
+  {
+    "src_node": "meadow",
+    "dst_node": "cave entrance",
+    "action": "west",
+    "seen_in_forward": 14
+  },
+  {
+    "src_node": "cave entrance",
+    "dst_node": "cave",
+    "action": "north",
+    "seen_in_forward": 15
+  }
+]

@@ -1,0 +1,1551 @@
+{
+  "game": "balances",
+  "num_llm_edges": 11,
+  "num_gt_edges": 13,
+  "num_conflicts": 25,
+  "type_distribution": {
+    "direction": 3,
+    "topology": 12,
+    "naming": 10
+  },
+  "root_cause_distribution": {
+    "real_vs_hallucinated": 1,
+    "name_hallucination": 5,
+    "name_hallucination_caused_overlap": 11,
+    "overlap_mixed": 1,
+    "real_name_corrupted_by_neighbour_error": 4,
+    "naming_collision_on_correct_subgraph": 3
+  },
+  "conflicts": [
+    {
+      "type": "direction",
+      "description": "node 'cave mouth' has multiple outgoing edges labelled 'southeast'",
+      "involved_edges": [
+        [
+          "cave mouth",
+          "edge of chasm"
+        ],
+        [
+          "cave mouth",
+          "crest of hill"
+        ]
+      ],
+      "involved_nodes": [
+        "cave mouth",
+        "edge of chasm",
+        "crest of hill"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "cave mouth",
+            "edge of chasm"
+          ],
+          "llm_dir": "southeast",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": null
+        },
+        {
+          "edge": [
+            "cave mouth",
+            "crest of hill"
+          ],
+          "llm_dir": "southeast",
+          "in_gt": true,
+          "gt_dir": "southeast",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 42
+        }
+      ],
+      "case_counts": {
+        "hallucinated_edge": 1,
+        "correct": 1
+      },
+      "root_cause": "real_vs_hallucinated"
+    },
+    {
+      "type": "direction",
+      "description": "node 'cave mouth' has multiple outgoing edges labelled 'west'",
+      "involved_edges": [
+        [
+          "cave mouth",
+          "darkness"
+        ],
+        [
+          "cave mouth",
+          "inside cave"
+        ]
+      ],
+      "involved_nodes": [
+        "cave mouth",
+        "darkness",
+        "inside cave"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "cave mouth",
+            "darkness"
+          ],
+          "llm_dir": "west",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "dst_hallucinated",
+          "source_in_gt": true,
+          "target_in_gt": false,
+          "step": 30
+        },
+        {
+          "edge": [
+            "cave mouth",
+            "inside cave"
+          ],
+          "llm_dir": "west",
+          "in_gt": true,
+          "gt_dir": "west",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": null
+        }
+      ],
+      "case_counts": {
+        "dst_hallucinated": 1,
+        "correct": 1
+      },
+      "root_cause": "name_hallucination"
+    },
+    {
+      "type": "direction",
+      "description": "node 'outside temple' has multiple outgoing edges labelled 'west'",
+      "involved_edges": [
+        [
+          "outside temple",
+          "on the beautiful red carpet"
+        ],
+        [
+          "outside temple",
+          "crest of hill"
+        ]
+      ],
+      "involved_nodes": [
+        "outside temple",
+        "on the beautiful red carpet",
+        "crest of hill"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "outside temple",
+            "on the beautiful red carpet"
+          ],
+          "llm_dir": "west",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "both_names_hallucinated",
+          "source_in_gt": false,
+          "target_in_gt": false,
+          "step": null
+        },
+        {
+          "edge": [
+            "outside temple",
+            "crest of hill"
+          ],
+          "llm_dir": "west",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "src_hallucinated",
+          "source_in_gt": false,
+          "target_in_gt": true,
+          "step": 69
+        }
+      ],
+      "case_counts": {
+        "both_names_hallucinated": 1,
+        "src_hallucinated": 1
+      },
+      "root_cause": "name_hallucination"
+    },
+    {
+      "type": "topology",
+      "description": "position (0, -2, 0) occupied by multiple rooms ['cave mouth', 'gorse bushes']",
+      "involved_edges": [],
+      "involved_nodes": [
+        "cave mouth",
+        "gorse bushes"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "edge of chasm",
+            "cave mouth"
+          ],
+          "llm_dir": "northwest",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 19
+        },
+        {
+          "edge": [
+            "inside cave",
+            "cave mouth"
+          ],
+          "llm_dir": "east",
+          "in_gt": true,
+          "gt_dir": "east",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 41
+        },
+        {
+          "edge": [
+            "cave mouth",
+            "gorse bushes"
+          ],
+          "llm_dir": "north",
+          "in_gt": true,
+          "gt_dir": "north",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 25
+        },
+        {
+          "edge": [
+            "cave mouth",
+            "darkness"
+          ],
+          "llm_dir": "west",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "dst_hallucinated",
+          "source_in_gt": true,
+          "target_in_gt": false,
+          "step": 30
+        },
+        {
+          "edge": [
+            "cave mouth",
+            "crest of hill"
+          ],
+          "llm_dir": "southeast",
+          "in_gt": true,
+          "gt_dir": "southeast",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 42
+        }
+      ],
+      "case_counts": {
+        "hallucinated_edge": 1,
+        "correct": 3,
+        "dst_hallucinated": 1
+      },
+      "root_cause": "name_hallucination_caused_overlap"
+    },
+    {
+      "type": "topology",
+      "description": "position (0, 0, 0) occupied by multiple rooms ['cave mouth', 'gorse bushes']",
+      "involved_edges": [],
+      "involved_nodes": [
+        "cave mouth",
+        "gorse bushes"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "edge of chasm",
+            "cave mouth"
+          ],
+          "llm_dir": "northwest",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 19
+        },
+        {
+          "edge": [
+            "inside cave",
+            "cave mouth"
+          ],
+          "llm_dir": "east",
+          "in_gt": true,
+          "gt_dir": "east",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 41
+        },
+        {
+          "edge": [
+            "cave mouth",
+            "gorse bushes"
+          ],
+          "llm_dir": "north",
+          "in_gt": true,
+          "gt_dir": "north",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 25
+        },
+        {
+          "edge": [
+            "cave mouth",
+            "darkness"
+          ],
+          "llm_dir": "west",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "dst_hallucinated",
+          "source_in_gt": true,
+          "target_in_gt": false,
+          "step": 30
+        },
+        {
+          "edge": [
+            "cave mouth",
+            "crest of hill"
+          ],
+          "llm_dir": "southeast",
+          "in_gt": true,
+          "gt_dir": "southeast",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 42
+        }
+      ],
+      "case_counts": {
+        "hallucinated_edge": 1,
+        "correct": 3,
+        "dst_hallucinated": 1
+      },
+      "root_cause": "name_hallucination_caused_overlap"
+    },
+    {
+      "type": "topology",
+      "description": "position (0, -1, 0) occupied by multiple rooms ['cave mouth', 'gorse bushes']",
+      "involved_edges": [],
+      "involved_nodes": [
+        "cave mouth",
+        "gorse bushes"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "edge of chasm",
+            "cave mouth"
+          ],
+          "llm_dir": "northwest",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 19
+        },
+        {
+          "edge": [
+            "inside cave",
+            "cave mouth"
+          ],
+          "llm_dir": "east",
+          "in_gt": true,
+          "gt_dir": "east",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 41
+        },
+        {
+          "edge": [
+            "cave mouth",
+            "gorse bushes"
+          ],
+          "llm_dir": "north",
+          "in_gt": true,
+          "gt_dir": "north",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 25
+        },
+        {
+          "edge": [
+            "cave mouth",
+            "darkness"
+          ],
+          "llm_dir": "west",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "dst_hallucinated",
+          "source_in_gt": true,
+          "target_in_gt": false,
+          "step": 30
+        },
+        {
+          "edge": [
+            "cave mouth",
+            "crest of hill"
+          ],
+          "llm_dir": "southeast",
+          "in_gt": true,
+          "gt_dir": "southeast",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 42
+        }
+      ],
+      "case_counts": {
+        "hallucinated_edge": 1,
+        "correct": 3,
+        "dst_hallucinated": 1
+      },
+      "root_cause": "name_hallucination_caused_overlap"
+    },
+    {
+      "type": "topology",
+      "description": "position (1, -5, 0) occupied by multiple rooms ['edge of chasm', 'grasslands, near hut', 'pocket valley']",
+      "involved_edges": [],
+      "involved_nodes": [
+        "edge of chasm",
+        "grasslands, near hut",
+        "pocket valley"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "pocket valley",
+            "edge of chasm"
+          ],
+          "llm_dir": "north",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 13
+        },
+        {
+          "edge": [
+            "crest of hill",
+            "edge of chasm"
+          ],
+          "llm_dir": "south",
+          "in_gt": true,
+          "gt_dir": "south",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 43
+        },
+        {
+          "edge": [
+            "edge of chasm",
+            "cave mouth"
+          ],
+          "llm_dir": "northwest",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 19
+        },
+        {
+          "edge": [
+            "ramshackle hut",
+            "grasslands, near hut"
+          ],
+          "llm_dir": "out",
+          "in_gt": true,
+          "gt_dir": "out",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 6
+        },
+        {
+          "edge": [
+            "grasslands, near hut",
+            "pocket valley"
+          ],
+          "llm_dir": "north",
+          "in_gt": true,
+          "gt_dir": "north",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 7
+        }
+      ],
+      "case_counts": {
+        "hallucinated_edge": 2,
+        "correct": 3
+      },
+      "root_cause": "overlap_mixed"
+    },
+    {
+      "type": "topology",
+      "description": "position (1, -4, 0) occupied by multiple rooms ['crest of hill', 'edge of chasm', 'grasslands, near hut', 'on the beautiful red carpet', 'pocket valley']",
+      "involved_edges": [],
+      "involved_nodes": [
+        "crest of hill",
+        "edge of chasm",
+        "grasslands, near hut",
+        "on the beautiful red carpet",
+        "pocket valley"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "cave mouth",
+            "crest of hill"
+          ],
+          "llm_dir": "southeast",
+          "in_gt": true,
+          "gt_dir": "southeast",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 42
+        },
+        {
+          "edge": [
+            "outside temple",
+            "crest of hill"
+          ],
+          "llm_dir": "west",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "src_hallucinated",
+          "source_in_gt": false,
+          "target_in_gt": true,
+          "step": 69
+        },
+        {
+          "edge": [
+            "crest of hill",
+            "edge of chasm"
+          ],
+          "llm_dir": "south",
+          "in_gt": true,
+          "gt_dir": "south",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 43
+        },
+        {
+          "edge": [
+            "pocket valley",
+            "edge of chasm"
+          ],
+          "llm_dir": "north",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 13
+        },
+        {
+          "edge": [
+            "edge of chasm",
+            "cave mouth"
+          ],
+          "llm_dir": "northwest",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 19
+        },
+        {
+          "edge": [
+            "ramshackle hut",
+            "grasslands, near hut"
+          ],
+          "llm_dir": "out",
+          "in_gt": true,
+          "gt_dir": "out",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 6
+        },
+        {
+          "edge": [
+            "grasslands, near hut",
+            "pocket valley"
+          ],
+          "llm_dir": "north",
+          "in_gt": true,
+          "gt_dir": "north",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 7
+        },
+        {
+          "edge": [
+            "on the beautiful red carpet",
+            "outside temple"
+          ],
+          "llm_dir": "east",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "both_names_hallucinated",
+          "source_in_gt": false,
+          "target_in_gt": false,
+          "step": 50
+        }
+      ],
+      "case_counts": {
+        "correct": 4,
+        "src_hallucinated": 1,
+        "hallucinated_edge": 2,
+        "both_names_hallucinated": 1
+      },
+      "root_cause": "name_hallucination_caused_overlap"
+    },
+    {
+      "type": "topology",
+      "description": "position (1, -1, 0) occupied by multiple rooms ['crest of hill', 'edge of chasm', 'on the beautiful red carpet']",
+      "involved_edges": [],
+      "involved_nodes": [
+        "crest of hill",
+        "edge of chasm",
+        "on the beautiful red carpet"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "cave mouth",
+            "crest of hill"
+          ],
+          "llm_dir": "southeast",
+          "in_gt": true,
+          "gt_dir": "southeast",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 42
+        },
+        {
+          "edge": [
+            "outside temple",
+            "crest of hill"
+          ],
+          "llm_dir": "west",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "src_hallucinated",
+          "source_in_gt": false,
+          "target_in_gt": true,
+          "step": 69
+        },
+        {
+          "edge": [
+            "crest of hill",
+            "edge of chasm"
+          ],
+          "llm_dir": "south",
+          "in_gt": true,
+          "gt_dir": "south",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 43
+        },
+        {
+          "edge": [
+            "pocket valley",
+            "edge of chasm"
+          ],
+          "llm_dir": "north",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 13
+        },
+        {
+          "edge": [
+            "edge of chasm",
+            "cave mouth"
+          ],
+          "llm_dir": "northwest",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 19
+        },
+        {
+          "edge": [
+            "on the beautiful red carpet",
+            "outside temple"
+          ],
+          "llm_dir": "east",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "both_names_hallucinated",
+          "source_in_gt": false,
+          "target_in_gt": false,
+          "step": 50
+        }
+      ],
+      "case_counts": {
+        "correct": 2,
+        "src_hallucinated": 1,
+        "hallucinated_edge": 2,
+        "both_names_hallucinated": 1
+      },
+      "root_cause": "name_hallucination_caused_overlap"
+    },
+    {
+      "type": "topology",
+      "description": "position (1, -3, 0) occupied by multiple rooms ['crest of hill', 'edge of chasm', 'grasslands, near hut', 'on the beautiful red carpet', 'pocket valley']",
+      "involved_edges": [],
+      "involved_nodes": [
+        "crest of hill",
+        "edge of chasm",
+        "grasslands, near hut",
+        "on the beautiful red carpet",
+        "pocket valley"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "cave mouth",
+            "crest of hill"
+          ],
+          "llm_dir": "southeast",
+          "in_gt": true,
+          "gt_dir": "southeast",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 42
+        },
+        {
+          "edge": [
+            "outside temple",
+            "crest of hill"
+          ],
+          "llm_dir": "west",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "src_hallucinated",
+          "source_in_gt": false,
+          "target_in_gt": true,
+          "step": 69
+        },
+        {
+          "edge": [
+            "crest of hill",
+            "edge of chasm"
+          ],
+          "llm_dir": "south",
+          "in_gt": true,
+          "gt_dir": "south",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 43
+        },
+        {
+          "edge": [
+            "pocket valley",
+            "edge of chasm"
+          ],
+          "llm_dir": "north",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 13
+        },
+        {
+          "edge": [
+            "edge of chasm",
+            "cave mouth"
+          ],
+          "llm_dir": "northwest",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 19
+        },
+        {
+          "edge": [
+            "ramshackle hut",
+            "grasslands, near hut"
+          ],
+          "llm_dir": "out",
+          "in_gt": true,
+          "gt_dir": "out",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 6
+        },
+        {
+          "edge": [
+            "grasslands, near hut",
+            "pocket valley"
+          ],
+          "llm_dir": "north",
+          "in_gt": true,
+          "gt_dir": "north",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 7
+        },
+        {
+          "edge": [
+            "on the beautiful red carpet",
+            "outside temple"
+          ],
+          "llm_dir": "east",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "both_names_hallucinated",
+          "source_in_gt": false,
+          "target_in_gt": false,
+          "step": 50
+        }
+      ],
+      "case_counts": {
+        "correct": 4,
+        "src_hallucinated": 1,
+        "hallucinated_edge": 2,
+        "both_names_hallucinated": 1
+      },
+      "root_cause": "name_hallucination_caused_overlap"
+    },
+    {
+      "type": "topology",
+      "description": "position (1, -2, 0) occupied by multiple rooms ['crest of hill', 'edge of chasm', 'on the beautiful red carpet', 'pocket valley']",
+      "involved_edges": [],
+      "involved_nodes": [
+        "crest of hill",
+        "edge of chasm",
+        "on the beautiful red carpet",
+        "pocket valley"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "cave mouth",
+            "crest of hill"
+          ],
+          "llm_dir": "southeast",
+          "in_gt": true,
+          "gt_dir": "southeast",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 42
+        },
+        {
+          "edge": [
+            "outside temple",
+            "crest of hill"
+          ],
+          "llm_dir": "west",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "src_hallucinated",
+          "source_in_gt": false,
+          "target_in_gt": true,
+          "step": 69
+        },
+        {
+          "edge": [
+            "crest of hill",
+            "edge of chasm"
+          ],
+          "llm_dir": "south",
+          "in_gt": true,
+          "gt_dir": "south",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 43
+        },
+        {
+          "edge": [
+            "pocket valley",
+            "edge of chasm"
+          ],
+          "llm_dir": "north",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 13
+        },
+        {
+          "edge": [
+            "edge of chasm",
+            "cave mouth"
+          ],
+          "llm_dir": "northwest",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 19
+        },
+        {
+          "edge": [
+            "on the beautiful red carpet",
+            "outside temple"
+          ],
+          "llm_dir": "east",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "both_names_hallucinated",
+          "source_in_gt": false,
+          "target_in_gt": false,
+          "step": 50
+        },
+        {
+          "edge": [
+            "grasslands, near hut",
+            "pocket valley"
+          ],
+          "llm_dir": "north",
+          "in_gt": true,
+          "gt_dir": "north",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 7
+        }
+      ],
+      "case_counts": {
+        "correct": 3,
+        "src_hallucinated": 1,
+        "hallucinated_edge": 2,
+        "both_names_hallucinated": 1
+      },
+      "root_cause": "name_hallucination_caused_overlap"
+    },
+    {
+      "type": "topology",
+      "description": "position (-1, -2, 0) occupied by multiple rooms ['darkness', 'inside cave']",
+      "involved_edges": [],
+      "involved_nodes": [
+        "darkness",
+        "inside cave"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "cave mouth",
+            "darkness"
+          ],
+          "llm_dir": "west",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "dst_hallucinated",
+          "source_in_gt": true,
+          "target_in_gt": false,
+          "step": 30
+        },
+        {
+          "edge": [
+            "inside cave",
+            "cave mouth"
+          ],
+          "llm_dir": "east",
+          "in_gt": true,
+          "gt_dir": "east",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 41
+        }
+      ],
+      "case_counts": {
+        "dst_hallucinated": 1,
+        "correct": 1
+      },
+      "root_cause": "name_hallucination_caused_overlap"
+    },
+    {
+      "type": "topology",
+      "description": "position (-1, 0, 0) occupied by multiple rooms ['darkness', 'inside cave']",
+      "involved_edges": [],
+      "involved_nodes": [
+        "darkness",
+        "inside cave"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "cave mouth",
+            "darkness"
+          ],
+          "llm_dir": "west",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "dst_hallucinated",
+          "source_in_gt": true,
+          "target_in_gt": false,
+          "step": 30
+        },
+        {
+          "edge": [
+            "inside cave",
+            "cave mouth"
+          ],
+          "llm_dir": "east",
+          "in_gt": true,
+          "gt_dir": "east",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 41
+        }
+      ],
+      "case_counts": {
+        "dst_hallucinated": 1,
+        "correct": 1
+      },
+      "root_cause": "name_hallucination_caused_overlap"
+    },
+    {
+      "type": "topology",
+      "description": "position (-1, -1, 0) occupied by multiple rooms ['darkness', 'inside cave']",
+      "involved_edges": [],
+      "involved_nodes": [
+        "darkness",
+        "inside cave"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "cave mouth",
+            "darkness"
+          ],
+          "llm_dir": "west",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "dst_hallucinated",
+          "source_in_gt": true,
+          "target_in_gt": false,
+          "step": 30
+        },
+        {
+          "edge": [
+            "inside cave",
+            "cave mouth"
+          ],
+          "llm_dir": "east",
+          "in_gt": true,
+          "gt_dir": "east",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 41
+        }
+      ],
+      "case_counts": {
+        "dst_hallucinated": 1,
+        "correct": 1
+      },
+      "root_cause": "name_hallucination_caused_overlap"
+    },
+    {
+      "type": "topology",
+      "description": "position (-1, -3, 0) occupied by multiple rooms ['darkness', 'inside cave']",
+      "involved_edges": [],
+      "involved_nodes": [
+        "darkness",
+        "inside cave"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "cave mouth",
+            "darkness"
+          ],
+          "llm_dir": "west",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "dst_hallucinated",
+          "source_in_gt": true,
+          "target_in_gt": false,
+          "step": 30
+        },
+        {
+          "edge": [
+            "inside cave",
+            "cave mouth"
+          ],
+          "llm_dir": "east",
+          "in_gt": true,
+          "gt_dir": "east",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 41
+        }
+      ],
+      "case_counts": {
+        "dst_hallucinated": 1,
+        "correct": 1
+      },
+      "root_cause": "name_hallucination_caused_overlap"
+    },
+    {
+      "type": "naming",
+      "description": "node 'cave mouth' reachable at conflicting positions [(0, -3, 0), (0, -2, 0), (0, -1, 0), (0, 0, 0)]",
+      "involved_edges": [],
+      "involved_nodes": [
+        "cave mouth"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "edge of chasm",
+            "cave mouth"
+          ],
+          "llm_dir": "northwest",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 19
+        },
+        {
+          "edge": [
+            "inside cave",
+            "cave mouth"
+          ],
+          "llm_dir": "east",
+          "in_gt": true,
+          "gt_dir": "east",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 41
+        },
+        {
+          "edge": [
+            "cave mouth",
+            "gorse bushes"
+          ],
+          "llm_dir": "north",
+          "in_gt": true,
+          "gt_dir": "north",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 25
+        },
+        {
+          "edge": [
+            "cave mouth",
+            "darkness"
+          ],
+          "llm_dir": "west",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "dst_hallucinated",
+          "source_in_gt": true,
+          "target_in_gt": false,
+          "step": 30
+        },
+        {
+          "edge": [
+            "cave mouth",
+            "crest of hill"
+          ],
+          "llm_dir": "southeast",
+          "in_gt": true,
+          "gt_dir": "southeast",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 42
+        }
+      ],
+      "case_counts": {
+        "hallucinated_edge": 1,
+        "correct": 3,
+        "dst_hallucinated": 1
+      },
+      "root_cause": "real_name_corrupted_by_neighbour_error"
+    },
+    {
+      "type": "naming",
+      "description": "node 'edge of chasm' reachable at conflicting positions [(1, -5, 0), (1, -4, 0), (1, -3, 0), (1, -2, 0), (1, -1, 0)]",
+      "involved_edges": [],
+      "involved_nodes": [
+        "edge of chasm"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "pocket valley",
+            "edge of chasm"
+          ],
+          "llm_dir": "north",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 13
+        },
+        {
+          "edge": [
+            "crest of hill",
+            "edge of chasm"
+          ],
+          "llm_dir": "south",
+          "in_gt": true,
+          "gt_dir": "south",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 43
+        },
+        {
+          "edge": [
+            "edge of chasm",
+            "cave mouth"
+          ],
+          "llm_dir": "northwest",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 19
+        }
+      ],
+      "case_counts": {
+        "hallucinated_edge": 2,
+        "correct": 1
+      },
+      "root_cause": "real_name_corrupted_by_neighbour_error"
+    },
+    {
+      "type": "naming",
+      "description": "node 'gorse bushes' reachable at conflicting positions [(0, -2, 0), (0, -1, 0), (0, 0, 0), (0, 1, 0)]",
+      "involved_edges": [],
+      "involved_nodes": [
+        "gorse bushes"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "cave mouth",
+            "gorse bushes"
+          ],
+          "llm_dir": "north",
+          "in_gt": true,
+          "gt_dir": "north",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 25
+        }
+      ],
+      "case_counts": {
+        "correct": 1
+      },
+      "root_cause": "naming_collision_on_correct_subgraph"
+    },
+    {
+      "type": "naming",
+      "description": "node 'darkness' reachable at conflicting positions [(-1, -3, 0), (-1, -2, 0), (-1, -1, 0), (-1, 0, 0)]",
+      "involved_edges": [],
+      "involved_nodes": [
+        "darkness"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "cave mouth",
+            "darkness"
+          ],
+          "llm_dir": "west",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "dst_hallucinated",
+          "source_in_gt": true,
+          "target_in_gt": false,
+          "step": 30
+        }
+      ],
+      "case_counts": {
+        "dst_hallucinated": 1
+      },
+      "root_cause": "name_hallucination"
+    },
+    {
+      "type": "naming",
+      "description": "node 'inside cave' reachable at conflicting positions [(-1, -3, 0), (-1, -2, 0), (-1, -1, 0), (-1, 0, 0)]",
+      "involved_edges": [],
+      "involved_nodes": [
+        "inside cave"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "inside cave",
+            "cave mouth"
+          ],
+          "llm_dir": "east",
+          "in_gt": true,
+          "gt_dir": "east",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 41
+        }
+      ],
+      "case_counts": {
+        "correct": 1
+      },
+      "root_cause": "naming_collision_on_correct_subgraph"
+    },
+    {
+      "type": "naming",
+      "description": "node 'crest of hill' reachable at conflicting positions [(1, -4, 0), (1, -3, 0), (1, -2, 0), (1, -1, 0), (1, 0, 0)]",
+      "involved_edges": [],
+      "involved_nodes": [
+        "crest of hill"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "cave mouth",
+            "crest of hill"
+          ],
+          "llm_dir": "southeast",
+          "in_gt": true,
+          "gt_dir": "southeast",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 42
+        },
+        {
+          "edge": [
+            "outside temple",
+            "crest of hill"
+          ],
+          "llm_dir": "west",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "src_hallucinated",
+          "source_in_gt": false,
+          "target_in_gt": true,
+          "step": 69
+        },
+        {
+          "edge": [
+            "crest of hill",
+            "edge of chasm"
+          ],
+          "llm_dir": "south",
+          "in_gt": true,
+          "gt_dir": "south",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 43
+        }
+      ],
+      "case_counts": {
+        "correct": 2,
+        "src_hallucinated": 1
+      },
+      "root_cause": "real_name_corrupted_by_neighbour_error"
+    },
+    {
+      "type": "naming",
+      "description": "node 'outside temple' reachable at conflicting positions [(2, -4, 0), (2, -3, 0), (2, -2, 0), (2, -1, 0)]",
+      "involved_edges": [],
+      "involved_nodes": [
+        "outside temple"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "on the beautiful red carpet",
+            "outside temple"
+          ],
+          "llm_dir": "east",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "both_names_hallucinated",
+          "source_in_gt": false,
+          "target_in_gt": false,
+          "step": 50
+        },
+        {
+          "edge": [
+            "outside temple",
+            "crest of hill"
+          ],
+          "llm_dir": "west",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "src_hallucinated",
+          "source_in_gt": false,
+          "target_in_gt": true,
+          "step": 69
+        }
+      ],
+      "case_counts": {
+        "both_names_hallucinated": 1,
+        "src_hallucinated": 1
+      },
+      "root_cause": "name_hallucination"
+    },
+    {
+      "type": "naming",
+      "description": "node 'on the beautiful red carpet' reachable at conflicting positions [(1, -4, 0), (1, -3, 0), (1, -2, 0), (1, -1, 0)]",
+      "involved_edges": [],
+      "involved_nodes": [
+        "on the beautiful red carpet"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "on the beautiful red carpet",
+            "outside temple"
+          ],
+          "llm_dir": "east",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "both_names_hallucinated",
+          "source_in_gt": false,
+          "target_in_gt": false,
+          "step": 50
+        }
+      ],
+      "case_counts": {
+        "both_names_hallucinated": 1
+      },
+      "root_cause": "name_hallucination"
+    },
+    {
+      "type": "naming",
+      "description": "node 'pocket valley' reachable at conflicting positions [(1, -5, 0), (1, -4, 0), (1, -3, 0), (1, -2, 0)]",
+      "involved_edges": [],
+      "involved_nodes": [
+        "pocket valley"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "grasslands, near hut",
+            "pocket valley"
+          ],
+          "llm_dir": "north",
+          "in_gt": true,
+          "gt_dir": "north",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 7
+        },
+        {
+          "edge": [
+            "pocket valley",
+            "edge of chasm"
+          ],
+          "llm_dir": "north",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 13
+        }
+      ],
+      "case_counts": {
+        "correct": 1,
+        "hallucinated_edge": 1
+      },
+      "root_cause": "real_name_corrupted_by_neighbour_error"
+    },
+    {
+      "type": "naming",
+      "description": "node 'grasslands, near hut' reachable at conflicting positions [(1, -6, 0), (1, -5, 0), (1, -4, 0), (1, -3, 0)]",
+      "involved_edges": [],
+      "involved_nodes": [
+        "grasslands, near hut"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "ramshackle hut",
+            "grasslands, near hut"
+          ],
+          "llm_dir": "out",
+          "in_gt": true,
+          "gt_dir": "out",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 6
+        },
+        {
+          "edge": [
+            "grasslands, near hut",
+            "pocket valley"
+          ],
+          "llm_dir": "north",
+          "in_gt": true,
+          "gt_dir": "north",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 7
+        }
+      ],
+      "case_counts": {
+        "correct": 2
+      },
+      "root_cause": "naming_collision_on_correct_subgraph"
+    }
+  ],
+  "walkthrough_steps_available": 71
+}

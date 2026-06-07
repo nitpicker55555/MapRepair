@@ -1,0 +1,1859 @@
+{
+  "game": "anchor",
+  "num_llm_edges": 24,
+  "num_gt_edges": 42,
+  "num_conflicts": 38,
+  "type_distribution": {
+    "direction": 1,
+    "topology": 13,
+    "naming": 24
+  },
+  "root_cause_distribution": {
+    "real_vs_hallucinated": 1,
+    "overlap_mixed": 4,
+    "false_positive_overlap": 9,
+    "real_name_corrupted_by_neighbour_error": 2,
+    "naming_collision_on_correct_subgraph": 21,
+    "naming_mixed": 1
+  },
+  "conflicts": [
+    {
+      "type": "direction",
+      "description": "node 'office' has multiple outgoing edges labelled 'east'",
+      "involved_edges": [
+        [
+          "office",
+          "the lower edge of the window"
+        ],
+        [
+          "office",
+          "file room"
+        ]
+      ],
+      "involved_nodes": [
+        "office",
+        "the lower edge of the window",
+        "file room"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "office",
+            "the lower edge of the window"
+          ],
+          "llm_dir": "east",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": null
+        },
+        {
+          "edge": [
+            "office",
+            "file room"
+          ],
+          "llm_dir": "east",
+          "in_gt": true,
+          "gt_dir": "east",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 6
+        }
+      ],
+      "case_counts": {
+        "hallucinated_edge": 1,
+        "correct": 1
+      },
+      "root_cause": "real_vs_hallucinated"
+    },
+    {
+      "type": "topology",
+      "description": "position (-2, -2, 3) occupied by multiple rooms ['file room', 'the lower edge of the window']",
+      "involved_edges": [],
+      "involved_nodes": [
+        "file room",
+        "the lower edge of the window"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "office",
+            "file room"
+          ],
+          "llm_dir": "east",
+          "in_gt": true,
+          "gt_dir": "east",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 6
+        },
+        {
+          "edge": [
+            "alley",
+            "the lower edge of the window"
+          ],
+          "llm_dir": "up",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 3
+        },
+        {
+          "edge": [
+            "the lower edge of the window",
+            "office"
+          ],
+          "llm_dir": "west",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 4
+        }
+      ],
+      "case_counts": {
+        "correct": 1,
+        "hallucinated_edge": 2
+      },
+      "root_cause": "overlap_mixed"
+    },
+    {
+      "type": "topology",
+      "description": "position (0, 0, 1) occupied by multiple rooms ['file room', 'the lower edge of the window']",
+      "involved_edges": [],
+      "involved_nodes": [
+        "file room",
+        "the lower edge of the window"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "office",
+            "file room"
+          ],
+          "llm_dir": "east",
+          "in_gt": true,
+          "gt_dir": "east",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 6
+        },
+        {
+          "edge": [
+            "alley",
+            "the lower edge of the window"
+          ],
+          "llm_dir": "up",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 3
+        },
+        {
+          "edge": [
+            "the lower edge of the window",
+            "office"
+          ],
+          "llm_dir": "west",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 4
+        }
+      ],
+      "case_counts": {
+        "correct": 1,
+        "hallucinated_edge": 2
+      },
+      "root_cause": "overlap_mixed"
+    },
+    {
+      "type": "topology",
+      "description": "position (-3, -3, 4) occupied by multiple rooms ['file room', 'the lower edge of the window']",
+      "involved_edges": [],
+      "involved_nodes": [
+        "file room",
+        "the lower edge of the window"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "office",
+            "file room"
+          ],
+          "llm_dir": "east",
+          "in_gt": true,
+          "gt_dir": "east",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 6
+        },
+        {
+          "edge": [
+            "alley",
+            "the lower edge of the window"
+          ],
+          "llm_dir": "up",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 3
+        },
+        {
+          "edge": [
+            "the lower edge of the window",
+            "office"
+          ],
+          "llm_dir": "west",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 4
+        }
+      ],
+      "case_counts": {
+        "correct": 1,
+        "hallucinated_edge": 2
+      },
+      "root_cause": "overlap_mixed"
+    },
+    {
+      "type": "topology",
+      "description": "position (-1, -1, 2) occupied by multiple rooms ['file room', 'the lower edge of the window']",
+      "involved_edges": [],
+      "involved_nodes": [
+        "file room",
+        "the lower edge of the window"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "office",
+            "file room"
+          ],
+          "llm_dir": "east",
+          "in_gt": true,
+          "gt_dir": "east",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 6
+        },
+        {
+          "edge": [
+            "alley",
+            "the lower edge of the window"
+          ],
+          "llm_dir": "up",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 3
+        },
+        {
+          "edge": [
+            "the lower edge of the window",
+            "office"
+          ],
+          "llm_dir": "west",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 4
+        }
+      ],
+      "case_counts": {
+        "correct": 1,
+        "hallucinated_edge": 2
+      },
+      "root_cause": "overlap_mixed"
+    },
+    {
+      "type": "topology",
+      "description": "position (-3, 0, 1) occupied by multiple rooms ['master bedroom', 'narrow street']",
+      "involved_edges": [],
+      "involved_nodes": [
+        "master bedroom",
+        "narrow street"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "upstairs landing",
+            "master bedroom"
+          ],
+          "llm_dir": "north",
+          "in_gt": true,
+          "gt_dir": "north",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 31
+        },
+        {
+          "edge": [
+            "master bedroom",
+            "bathroom"
+          ],
+          "llm_dir": "west",
+          "in_gt": true,
+          "gt_dir": "west",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 34
+        },
+        {
+          "edge": [
+            "outside the real estate office",
+            "narrow street"
+          ],
+          "llm_dir": "west",
+          "in_gt": true,
+          "gt_dir": "west",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 11
+        },
+        {
+          "edge": [
+            "narrow street",
+            "junction"
+          ],
+          "llm_dir": "west",
+          "in_gt": true,
+          "gt_dir": "west",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 12
+        },
+        {
+          "edge": [
+            "narrow street",
+            "whateley bridge"
+          ],
+          "llm_dir": "south",
+          "in_gt": true,
+          "gt_dir": "south",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 20
+        }
+      ],
+      "case_counts": {
+        "correct": 5
+      },
+      "root_cause": "false_positive_overlap"
+    },
+    {
+      "type": "topology",
+      "description": "position (-4, -1, 2) occupied by multiple rooms ['master bedroom', 'narrow street']",
+      "involved_edges": [],
+      "involved_nodes": [
+        "master bedroom",
+        "narrow street"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "upstairs landing",
+            "master bedroom"
+          ],
+          "llm_dir": "north",
+          "in_gt": true,
+          "gt_dir": "north",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 31
+        },
+        {
+          "edge": [
+            "master bedroom",
+            "bathroom"
+          ],
+          "llm_dir": "west",
+          "in_gt": true,
+          "gt_dir": "west",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 34
+        },
+        {
+          "edge": [
+            "outside the real estate office",
+            "narrow street"
+          ],
+          "llm_dir": "west",
+          "in_gt": true,
+          "gt_dir": "west",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 11
+        },
+        {
+          "edge": [
+            "narrow street",
+            "junction"
+          ],
+          "llm_dir": "west",
+          "in_gt": true,
+          "gt_dir": "west",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 12
+        },
+        {
+          "edge": [
+            "narrow street",
+            "whateley bridge"
+          ],
+          "llm_dir": "south",
+          "in_gt": true,
+          "gt_dir": "south",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 20
+        }
+      ],
+      "case_counts": {
+        "correct": 5
+      },
+      "root_cause": "false_positive_overlap"
+    },
+    {
+      "type": "topology",
+      "description": "position (-5, -2, 3) occupied by multiple rooms ['master bedroom', 'narrow street']",
+      "involved_edges": [],
+      "involved_nodes": [
+        "master bedroom",
+        "narrow street"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "upstairs landing",
+            "master bedroom"
+          ],
+          "llm_dir": "north",
+          "in_gt": true,
+          "gt_dir": "north",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 31
+        },
+        {
+          "edge": [
+            "master bedroom",
+            "bathroom"
+          ],
+          "llm_dir": "west",
+          "in_gt": true,
+          "gt_dir": "west",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 34
+        },
+        {
+          "edge": [
+            "outside the real estate office",
+            "narrow street"
+          ],
+          "llm_dir": "west",
+          "in_gt": true,
+          "gt_dir": "west",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 11
+        },
+        {
+          "edge": [
+            "narrow street",
+            "junction"
+          ],
+          "llm_dir": "west",
+          "in_gt": true,
+          "gt_dir": "west",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 12
+        },
+        {
+          "edge": [
+            "narrow street",
+            "whateley bridge"
+          ],
+          "llm_dir": "south",
+          "in_gt": true,
+          "gt_dir": "south",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 20
+        }
+      ],
+      "case_counts": {
+        "correct": 5
+      },
+      "root_cause": "false_positive_overlap"
+    },
+    {
+      "type": "topology",
+      "description": "position (-5, -1, 2) occupied by multiple rooms ['bathroom', 'junction']",
+      "involved_edges": [],
+      "involved_nodes": [
+        "bathroom",
+        "junction"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "master bedroom",
+            "bathroom"
+          ],
+          "llm_dir": "west",
+          "in_gt": true,
+          "gt_dir": "west",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 34
+        },
+        {
+          "edge": [
+            "narrow street",
+            "junction"
+          ],
+          "llm_dir": "west",
+          "in_gt": true,
+          "gt_dir": "west",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 12
+        },
+        {
+          "edge": [
+            "junction",
+            "university court"
+          ],
+          "llm_dir": "northwest",
+          "in_gt": true,
+          "gt_dir": "northwest",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 13
+        }
+      ],
+      "case_counts": {
+        "correct": 3
+      },
+      "root_cause": "false_positive_overlap"
+    },
+    {
+      "type": "topology",
+      "description": "position (-6, -2, 3) occupied by multiple rooms ['bathroom', 'junction']",
+      "involved_edges": [],
+      "involved_nodes": [
+        "bathroom",
+        "junction"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "master bedroom",
+            "bathroom"
+          ],
+          "llm_dir": "west",
+          "in_gt": true,
+          "gt_dir": "west",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 34
+        },
+        {
+          "edge": [
+            "narrow street",
+            "junction"
+          ],
+          "llm_dir": "west",
+          "in_gt": true,
+          "gt_dir": "west",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 12
+        },
+        {
+          "edge": [
+            "junction",
+            "university court"
+          ],
+          "llm_dir": "northwest",
+          "in_gt": true,
+          "gt_dir": "northwest",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 13
+        }
+      ],
+      "case_counts": {
+        "correct": 3
+      },
+      "root_cause": "false_positive_overlap"
+    },
+    {
+      "type": "topology",
+      "description": "position (-4, 0, 1) occupied by multiple rooms ['bathroom', 'junction']",
+      "involved_edges": [],
+      "involved_nodes": [
+        "bathroom",
+        "junction"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "master bedroom",
+            "bathroom"
+          ],
+          "llm_dir": "west",
+          "in_gt": true,
+          "gt_dir": "west",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 34
+        },
+        {
+          "edge": [
+            "narrow street",
+            "junction"
+          ],
+          "llm_dir": "west",
+          "in_gt": true,
+          "gt_dir": "west",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 12
+        },
+        {
+          "edge": [
+            "junction",
+            "university court"
+          ],
+          "llm_dir": "northwest",
+          "in_gt": true,
+          "gt_dir": "northwest",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 13
+        }
+      ],
+      "case_counts": {
+        "correct": 3
+      },
+      "root_cause": "false_positive_overlap"
+    },
+    {
+      "type": "topology",
+      "description": "position (-4, -2, 2) occupied by multiple rooms ['upstairs landing', 'whateley bridge']",
+      "involved_edges": [],
+      "involved_nodes": [
+        "upstairs landing",
+        "whateley bridge"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "foyer",
+            "upstairs landing"
+          ],
+          "llm_dir": "up",
+          "in_gt": true,
+          "gt_dir": "up",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 30
+        },
+        {
+          "edge": [
+            "upstairs landing",
+            "master bedroom"
+          ],
+          "llm_dir": "north",
+          "in_gt": true,
+          "gt_dir": "north",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 31
+        },
+        {
+          "edge": [
+            "narrow street",
+            "whateley bridge"
+          ],
+          "llm_dir": "south",
+          "in_gt": true,
+          "gt_dir": "south",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 20
+        },
+        {
+          "edge": [
+            "whateley bridge",
+            "town square"
+          ],
+          "llm_dir": "south",
+          "in_gt": true,
+          "gt_dir": "south",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 21
+        }
+      ],
+      "case_counts": {
+        "correct": 4
+      },
+      "root_cause": "false_positive_overlap"
+    },
+    {
+      "type": "topology",
+      "description": "position (-3, -1, 1) occupied by multiple rooms ['upstairs landing', 'whateley bridge']",
+      "involved_edges": [],
+      "involved_nodes": [
+        "upstairs landing",
+        "whateley bridge"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "foyer",
+            "upstairs landing"
+          ],
+          "llm_dir": "up",
+          "in_gt": true,
+          "gt_dir": "up",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 30
+        },
+        {
+          "edge": [
+            "upstairs landing",
+            "master bedroom"
+          ],
+          "llm_dir": "north",
+          "in_gt": true,
+          "gt_dir": "north",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 31
+        },
+        {
+          "edge": [
+            "narrow street",
+            "whateley bridge"
+          ],
+          "llm_dir": "south",
+          "in_gt": true,
+          "gt_dir": "south",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 20
+        },
+        {
+          "edge": [
+            "whateley bridge",
+            "town square"
+          ],
+          "llm_dir": "south",
+          "in_gt": true,
+          "gt_dir": "south",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 21
+        }
+      ],
+      "case_counts": {
+        "correct": 4
+      },
+      "root_cause": "false_positive_overlap"
+    },
+    {
+      "type": "topology",
+      "description": "position (-5, -3, 3) occupied by multiple rooms ['upstairs landing', 'whateley bridge']",
+      "involved_edges": [],
+      "involved_nodes": [
+        "upstairs landing",
+        "whateley bridge"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "foyer",
+            "upstairs landing"
+          ],
+          "llm_dir": "up",
+          "in_gt": true,
+          "gt_dir": "up",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 30
+        },
+        {
+          "edge": [
+            "upstairs landing",
+            "master bedroom"
+          ],
+          "llm_dir": "north",
+          "in_gt": true,
+          "gt_dir": "north",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 31
+        },
+        {
+          "edge": [
+            "narrow street",
+            "whateley bridge"
+          ],
+          "llm_dir": "south",
+          "in_gt": true,
+          "gt_dir": "south",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 20
+        },
+        {
+          "edge": [
+            "whateley bridge",
+            "town square"
+          ],
+          "llm_dir": "south",
+          "in_gt": true,
+          "gt_dir": "south",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 21
+        }
+      ],
+      "case_counts": {
+        "correct": 4
+      },
+      "root_cause": "false_positive_overlap"
+    },
+    {
+      "type": "naming",
+      "description": "node 'alley' reachable at conflicting positions [(-3, -3, 3), (-2, -2, 2), (-1, -1, 1), (0, 0, 0)]",
+      "involved_edges": [],
+      "involved_nodes": [
+        "alley"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "outside the real estate office",
+            "alley"
+          ],
+          "llm_dir": "southeast",
+          "in_gt": true,
+          "gt_dir": "southeast",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 1
+        },
+        {
+          "edge": [
+            "alley",
+            "the lower edge of the window"
+          ],
+          "llm_dir": "up",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 3
+        }
+      ],
+      "case_counts": {
+        "correct": 1,
+        "hallucinated_edge": 1
+      },
+      "root_cause": "real_name_corrupted_by_neighbour_error"
+    },
+    {
+      "type": "naming",
+      "description": "node 'outside the real estate office' reachable at conflicting positions [(-5, -3, 4), (-4, -2, 3), (-3, -1, 2), (-2, 0, 1), (-1, 1, 0)]",
+      "involved_edges": [],
+      "involved_nodes": [
+        "outside the real estate office"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "office",
+            "outside the real estate office"
+          ],
+          "llm_dir": "west",
+          "in_gt": true,
+          "gt_dir": "west",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 10
+        },
+        {
+          "edge": [
+            "outside the real estate office",
+            "alley"
+          ],
+          "llm_dir": "southeast",
+          "in_gt": true,
+          "gt_dir": "southeast",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 1
+        },
+        {
+          "edge": [
+            "outside the real estate office",
+            "narrow street"
+          ],
+          "llm_dir": "west",
+          "in_gt": true,
+          "gt_dir": "west",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 11
+        }
+      ],
+      "case_counts": {
+        "correct": 3
+      },
+      "root_cause": "naming_collision_on_correct_subgraph"
+    },
+    {
+      "type": "naming",
+      "description": "node 'the lower edge of the window' reachable at conflicting positions [(-3, -3, 4), (-2, -2, 3), (-1, -1, 2), (0, 0, 1)]",
+      "involved_edges": [],
+      "involved_nodes": [
+        "the lower edge of the window"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "alley",
+            "the lower edge of the window"
+          ],
+          "llm_dir": "up",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 3
+        },
+        {
+          "edge": [
+            "the lower edge of the window",
+            "office"
+          ],
+          "llm_dir": "west",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 4
+        }
+      ],
+      "case_counts": {
+        "hallucinated_edge": 2
+      },
+      "root_cause": "naming_mixed"
+    },
+    {
+      "type": "naming",
+      "description": "node 'office' reachable at conflicting positions [(-4, -3, 4), (-3, -2, 3), (-2, -1, 2), (-1, 0, 1), (0, 1, 0)]",
+      "involved_edges": [],
+      "involved_nodes": [
+        "office"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "the lower edge of the window",
+            "office"
+          ],
+          "llm_dir": "west",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 4
+        },
+        {
+          "edge": [
+            "office",
+            "file room"
+          ],
+          "llm_dir": "east",
+          "in_gt": true,
+          "gt_dir": "east",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 6
+        },
+        {
+          "edge": [
+            "office",
+            "outside the real estate office"
+          ],
+          "llm_dir": "west",
+          "in_gt": true,
+          "gt_dir": "west",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 10
+        }
+      ],
+      "case_counts": {
+        "hallucinated_edge": 1,
+        "correct": 2
+      },
+      "root_cause": "real_name_corrupted_by_neighbour_error"
+    },
+    {
+      "type": "naming",
+      "description": "node 'file room' reachable at conflicting positions [(-3, -3, 4), (-2, -2, 3), (-1, -1, 2), (0, 0, 1)]",
+      "involved_edges": [],
+      "involved_nodes": [
+        "file room"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "office",
+            "file room"
+          ],
+          "llm_dir": "east",
+          "in_gt": true,
+          "gt_dir": "east",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 6
+        }
+      ],
+      "case_counts": {
+        "correct": 1
+      },
+      "root_cause": "naming_collision_on_correct_subgraph"
+    },
+    {
+      "type": "naming",
+      "description": "node 'narrow street' reachable at conflicting positions [(-5, -2, 3), (-4, -1, 2), (-3, 0, 1), (-2, 1, 0)]",
+      "involved_edges": [],
+      "involved_nodes": [
+        "narrow street"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "outside the real estate office",
+            "narrow street"
+          ],
+          "llm_dir": "west",
+          "in_gt": true,
+          "gt_dir": "west",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 11
+        },
+        {
+          "edge": [
+            "narrow street",
+            "junction"
+          ],
+          "llm_dir": "west",
+          "in_gt": true,
+          "gt_dir": "west",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 12
+        },
+        {
+          "edge": [
+            "narrow street",
+            "whateley bridge"
+          ],
+          "llm_dir": "south",
+          "in_gt": true,
+          "gt_dir": "south",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 20
+        }
+      ],
+      "case_counts": {
+        "correct": 3
+      },
+      "root_cause": "naming_collision_on_correct_subgraph"
+    },
+    {
+      "type": "naming",
+      "description": "node 'junction' reachable at conflicting positions [(-6, -2, 3), (-5, -1, 2), (-4, 0, 1), (-3, 1, 0)]",
+      "involved_edges": [],
+      "involved_nodes": [
+        "junction"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "narrow street",
+            "junction"
+          ],
+          "llm_dir": "west",
+          "in_gt": true,
+          "gt_dir": "west",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 12
+        },
+        {
+          "edge": [
+            "junction",
+            "university court"
+          ],
+          "llm_dir": "northwest",
+          "in_gt": true,
+          "gt_dir": "northwest",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 13
+        }
+      ],
+      "case_counts": {
+        "correct": 2
+      },
+      "root_cause": "naming_collision_on_correct_subgraph"
+    },
+    {
+      "type": "naming",
+      "description": "node 'whateley bridge' reachable at conflicting positions [(-5, -3, 3), (-4, -2, 2), (-3, -1, 1), (-2, 0, 0)]",
+      "involved_edges": [],
+      "involved_nodes": [
+        "whateley bridge"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "narrow street",
+            "whateley bridge"
+          ],
+          "llm_dir": "south",
+          "in_gt": true,
+          "gt_dir": "south",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 20
+        },
+        {
+          "edge": [
+            "whateley bridge",
+            "town square"
+          ],
+          "llm_dir": "south",
+          "in_gt": true,
+          "gt_dir": "south",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 21
+        }
+      ],
+      "case_counts": {
+        "correct": 2
+      },
+      "root_cause": "naming_collision_on_correct_subgraph"
+    },
+    {
+      "type": "naming",
+      "description": "node 'town square' reachable at conflicting positions [(-5, -4, 3), (-4, -3, 2), (-3, -2, 1), (-2, -1, 0)]",
+      "involved_edges": [],
+      "involved_nodes": [
+        "town square"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "whateley bridge",
+            "town square"
+          ],
+          "llm_dir": "south",
+          "in_gt": true,
+          "gt_dir": "south",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 21
+        },
+        {
+          "edge": [
+            "town square",
+            "riverwalk"
+          ],
+          "llm_dir": "east",
+          "in_gt": true,
+          "gt_dir": "east",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 22
+        }
+      ],
+      "case_counts": {
+        "correct": 2
+      },
+      "root_cause": "naming_collision_on_correct_subgraph"
+    },
+    {
+      "type": "naming",
+      "description": "node 'riverwalk' reachable at conflicting positions [(-4, -4, 3), (-3, -3, 2), (-2, -2, 1), (-1, -1, 0)]",
+      "involved_edges": [],
+      "involved_nodes": [
+        "riverwalk"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "town square",
+            "riverwalk"
+          ],
+          "llm_dir": "east",
+          "in_gt": true,
+          "gt_dir": "east",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 22
+        },
+        {
+          "edge": [
+            "riverwalk",
+            "chilly avenue"
+          ],
+          "llm_dir": "south",
+          "in_gt": true,
+          "gt_dir": "south",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 23
+        }
+      ],
+      "case_counts": {
+        "correct": 2
+      },
+      "root_cause": "naming_collision_on_correct_subgraph"
+    },
+    {
+      "type": "naming",
+      "description": "node 'chilly avenue' reachable at conflicting positions [(-4, -5, 3), (-3, -4, 2), (-2, -3, 1), (-1, -2, 0)]",
+      "involved_edges": [],
+      "involved_nodes": [
+        "chilly avenue"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "riverwalk",
+            "chilly avenue"
+          ],
+          "llm_dir": "south",
+          "in_gt": true,
+          "gt_dir": "south",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 23
+        },
+        {
+          "edge": [
+            "chilly avenue",
+            "scenic view"
+          ],
+          "llm_dir": "southwest",
+          "in_gt": true,
+          "gt_dir": "southwest",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 24
+        }
+      ],
+      "case_counts": {
+        "correct": 2
+      },
+      "root_cause": "naming_collision_on_correct_subgraph"
+    },
+    {
+      "type": "naming",
+      "description": "node 'scenic view' reachable at conflicting positions [(-5, -6, 3), (-4, -5, 2), (-3, -4, 1), (-2, -3, 0)]",
+      "involved_edges": [],
+      "involved_nodes": [
+        "scenic view"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "chilly avenue",
+            "scenic view"
+          ],
+          "llm_dir": "southwest",
+          "in_gt": true,
+          "gt_dir": "southwest",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 24
+        },
+        {
+          "edge": [
+            "scenic view",
+            "outside the house"
+          ],
+          "llm_dir": "northwest",
+          "in_gt": true,
+          "gt_dir": "northwest",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 25
+        }
+      ],
+      "case_counts": {
+        "correct": 2
+      },
+      "root_cause": "naming_collision_on_correct_subgraph"
+    },
+    {
+      "type": "naming",
+      "description": "node 'outside the house' reachable at conflicting positions [(-6, -5, 3), (-5, -4, 2), (-4, -3, 1), (-3, -2, 0)]",
+      "involved_edges": [],
+      "involved_nodes": [
+        "outside the house"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "scenic view",
+            "outside the house"
+          ],
+          "llm_dir": "northwest",
+          "in_gt": true,
+          "gt_dir": "northwest",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 25
+        },
+        {
+          "edge": [
+            "outside the house",
+            "foyer"
+          ],
+          "llm_dir": "north",
+          "in_gt": true,
+          "gt_dir": "north",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 27
+        }
+      ],
+      "case_counts": {
+        "correct": 2
+      },
+      "root_cause": "naming_collision_on_correct_subgraph"
+    },
+    {
+      "type": "naming",
+      "description": "node 'foyer' reachable at conflicting positions [(-6, -4, 3), (-5, -3, 2), (-4, -2, 1), (-3, -1, 0)]",
+      "involved_edges": [],
+      "involved_nodes": [
+        "foyer"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "outside the house",
+            "foyer"
+          ],
+          "llm_dir": "north",
+          "in_gt": true,
+          "gt_dir": "north",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 27
+        },
+        {
+          "edge": [
+            "foyer",
+            "upstairs landing"
+          ],
+          "llm_dir": "up",
+          "in_gt": true,
+          "gt_dir": "up",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 30
+        },
+        {
+          "edge": [
+            "foyer",
+            "dining room"
+          ],
+          "llm_dir": "west",
+          "in_gt": true,
+          "gt_dir": "west",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 49
+        }
+      ],
+      "case_counts": {
+        "correct": 3
+      },
+      "root_cause": "naming_collision_on_correct_subgraph"
+    },
+    {
+      "type": "naming",
+      "description": "node 'upstairs landing' reachable at conflicting positions [(-6, -4, 4), (-5, -3, 3), (-4, -2, 2), (-3, -1, 1)]",
+      "involved_edges": [],
+      "involved_nodes": [
+        "upstairs landing"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "foyer",
+            "upstairs landing"
+          ],
+          "llm_dir": "up",
+          "in_gt": true,
+          "gt_dir": "up",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 30
+        },
+        {
+          "edge": [
+            "upstairs landing",
+            "master bedroom"
+          ],
+          "llm_dir": "north",
+          "in_gt": true,
+          "gt_dir": "north",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 31
+        }
+      ],
+      "case_counts": {
+        "correct": 2
+      },
+      "root_cause": "naming_collision_on_correct_subgraph"
+    },
+    {
+      "type": "naming",
+      "description": "node 'dining room' reachable at conflicting positions [(-7, -4, 3), (-6, -3, 2), (-5, -2, 1), (-4, -1, 0)]",
+      "involved_edges": [],
+      "involved_nodes": [
+        "dining room"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "foyer",
+            "dining room"
+          ],
+          "llm_dir": "west",
+          "in_gt": true,
+          "gt_dir": "west",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 49
+        },
+        {
+          "edge": [
+            "dining room",
+            "kitchen"
+          ],
+          "llm_dir": "north",
+          "in_gt": true,
+          "gt_dir": "north",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 53
+        }
+      ],
+      "case_counts": {
+        "correct": 2
+      },
+      "root_cause": "naming_collision_on_correct_subgraph"
+    },
+    {
+      "type": "naming",
+      "description": "node 'kitchen' reachable at conflicting positions [(-7, -3, 3), (-6, -2, 2), (-5, -1, 1), (-4, 0, 0)]",
+      "involved_edges": [],
+      "involved_nodes": [
+        "kitchen"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "dining room",
+            "kitchen"
+          ],
+          "llm_dir": "north",
+          "in_gt": true,
+          "gt_dir": "north",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 53
+        },
+        {
+          "edge": [
+            "kitchen",
+            "pantry"
+          ],
+          "llm_dir": "northwest",
+          "in_gt": true,
+          "gt_dir": "northwest",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 58
+        }
+      ],
+      "case_counts": {
+        "correct": 2
+      },
+      "root_cause": "naming_collision_on_correct_subgraph"
+    },
+    {
+      "type": "naming",
+      "description": "node 'pantry' reachable at conflicting positions [(-8, -2, 3), (-7, -1, 2), (-6, 0, 1), (-5, 1, 0)]",
+      "involved_edges": [],
+      "involved_nodes": [
+        "pantry"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "kitchen",
+            "pantry"
+          ],
+          "llm_dir": "northwest",
+          "in_gt": true,
+          "gt_dir": "northwest",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 58
+        },
+        {
+          "edge": [
+            "pantry",
+            "cellar"
+          ],
+          "llm_dir": "down",
+          "in_gt": true,
+          "gt_dir": "down",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 61
+        }
+      ],
+      "case_counts": {
+        "correct": 2
+      },
+      "root_cause": "naming_collision_on_correct_subgraph"
+    },
+    {
+      "type": "naming",
+      "description": "node 'cellar' reachable at conflicting positions [(-8, -2, 2), (-7, -1, 1), (-6, 0, 0), (-5, 1, -1)]",
+      "involved_edges": [],
+      "involved_nodes": [
+        "cellar"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "pantry",
+            "cellar"
+          ],
+          "llm_dir": "down",
+          "in_gt": true,
+          "gt_dir": "down",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 61
+        },
+        {
+          "edge": [
+            "cellar",
+            "storage"
+          ],
+          "llm_dir": "south",
+          "in_gt": true,
+          "gt_dir": "south",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 62
+        }
+      ],
+      "case_counts": {
+        "correct": 2
+      },
+      "root_cause": "naming_collision_on_correct_subgraph"
+    },
+    {
+      "type": "naming",
+      "description": "node 'storage' reachable at conflicting positions [(-8, -3, 2), (-7, -2, 1), (-6, -1, 0), (-5, 0, -1)]",
+      "involved_edges": [],
+      "involved_nodes": [
+        "storage"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "cellar",
+            "storage"
+          ],
+          "llm_dir": "south",
+          "in_gt": true,
+          "gt_dir": "south",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 62
+        }
+      ],
+      "case_counts": {
+        "correct": 1
+      },
+      "root_cause": "naming_collision_on_correct_subgraph"
+    },
+    {
+      "type": "naming",
+      "description": "node 'master bedroom' reachable at conflicting positions [(-6, -3, 4), (-5, -2, 3), (-4, -1, 2), (-3, 0, 1)]",
+      "involved_edges": [],
+      "involved_nodes": [
+        "master bedroom"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "upstairs landing",
+            "master bedroom"
+          ],
+          "llm_dir": "north",
+          "in_gt": true,
+          "gt_dir": "north",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 31
+        },
+        {
+          "edge": [
+            "master bedroom",
+            "bathroom"
+          ],
+          "llm_dir": "west",
+          "in_gt": true,
+          "gt_dir": "west",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 34
+        }
+      ],
+      "case_counts": {
+        "correct": 2
+      },
+      "root_cause": "naming_collision_on_correct_subgraph"
+    },
+    {
+      "type": "naming",
+      "description": "node 'bathroom' reachable at conflicting positions [(-7, -3, 4), (-6, -2, 3), (-5, -1, 2), (-4, 0, 1)]",
+      "involved_edges": [],
+      "involved_nodes": [
+        "bathroom"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "master bedroom",
+            "bathroom"
+          ],
+          "llm_dir": "west",
+          "in_gt": true,
+          "gt_dir": "west",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 34
+        }
+      ],
+      "case_counts": {
+        "correct": 1
+      },
+      "root_cause": "naming_collision_on_correct_subgraph"
+    },
+    {
+      "type": "naming",
+      "description": "node 'university court' reachable at conflicting positions [(-7, -1, 3), (-6, 0, 2), (-5, 1, 1), (-4, 2, 0)]",
+      "involved_edges": [],
+      "involved_nodes": [
+        "university court"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "junction",
+            "university court"
+          ],
+          "llm_dir": "northwest",
+          "in_gt": true,
+          "gt_dir": "northwest",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 13
+        },
+        {
+          "edge": [
+            "university court",
+            "library"
+          ],
+          "llm_dir": "west",
+          "in_gt": true,
+          "gt_dir": "west",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 14
+        }
+      ],
+      "case_counts": {
+        "correct": 2
+      },
+      "root_cause": "naming_collision_on_correct_subgraph"
+    },
+    {
+      "type": "naming",
+      "description": "node 'library' reachable at conflicting positions [(-8, -1, 3), (-7, 0, 2), (-6, 1, 1), (-5, 2, 0)]",
+      "involved_edges": [],
+      "involved_nodes": [
+        "library"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "university court",
+            "library"
+          ],
+          "llm_dir": "west",
+          "in_gt": true,
+          "gt_dir": "west",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 14
+        }
+      ],
+      "case_counts": {
+        "correct": 1
+      },
+      "root_cause": "naming_collision_on_correct_subgraph"
+    }
+  ],
+  "walkthrough_steps_available": 71
+}

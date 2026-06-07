@@ -1,0 +1,98 @@
+[
+  {
+    "step_num": 0,
+    "action": "west",
+    "command": "go west",
+    "observation": "-= Spare Room =-\nYou've just sauntered into a spare room.\n\n\n\nYou need an unguarded exit? You should try going east. There is an unblocked exit to the north. You don't like doors? Why not try going west, that entranceway is unblocked.\n\n\n-= Spare Room =-0/3",
+    "gt_src": "bedchamber",
+    "gt_dst": "kitchen"
+  },
+  {
+    "step_num": 1,
+    "action": "south",
+    "command": "go south",
+    "observation": "You can't go that way.\n\n\n-= Spare Room =-0/4",
+    "gt_src": "kitchen",
+    "gt_dst": "workshop"
+  },
+  {
+    "step_num": 2,
+    "action": "south",
+    "command": "go south",
+    "observation": "You can't go that way.\n\n\n-= Spare Room =-0/5",
+    "gt_src": "workshop",
+    "gt_dst": "steam room"
+  },
+  {
+    "step_num": 3,
+    "action": "north",
+    "command": "go north",
+    "observation": "-= Bedchamber =-\nYou have entered the most normal of all possible bedchambers.\n\nYou see a locked spherical chest.\n\nThere is an unblocked exit to the east. You need an unguarded exit? You should try going south. You don't like doors? Why not try going west, that entranceway is unguarded.\n\n\n-= Bedchamber =-0/6",
+    "gt_src": "steam room",
+    "gt_dst": "workshop"
+  },
+  {
+    "step_num": 4,
+    "action": "east",
+    "command": "go east",
+    "observation": "-= Laundry Place =-\nYou've entered a laundry place.\n\n\n\nThere is an unguarded exit to the south. There is an unblocked exit to the west.\n\n\n-= Laundry Place =-0/7",
+    "gt_src": "workshop",
+    "gt_dst": "spare room"
+  },
+  {
+    "step_num": 5,
+    "action": "east",
+    "command": "go east",
+    "observation": "You can't go that way.\n\n\n-= Laundry Place =-0/8",
+    "gt_src": "spare room",
+    "gt_dst": "bar"
+  },
+  {
+    "step_num": 6,
+    "action": "north",
+    "command": "go north",
+    "observation": "You can't go that way.\n\n\n-= Laundry Place =-0/9",
+    "gt_src": "bar",
+    "gt_dst": "laundry place"
+  },
+  {
+    "step_num": 7,
+    "action": "south",
+    "command": "go south",
+    "observation": "-= Bar =-\nYou arrive in a bar. An ordinary kind of place.\n\n\n\nYou need an unblocked exit? You should try going north. You don't like doors? Why not try going west, that entranceway is unguarded.\n\n\n-= Bar =-0/10",
+    "gt_src": "laundry place",
+    "gt_dst": "bar"
+  },
+  {
+    "step_num": 8,
+    "action": "west",
+    "command": "go west",
+    "observation": "-= Spare Room =-\nYou've just sauntered into a spare room.\n\n\n\nYou need an unguarded exit? You should try going east. There is an unblocked exit to the north. You don't like doors? Why not try going west, that entranceway is unblocked.\n\n\n-= Spare Room =-0/11",
+    "gt_src": "bar",
+    "gt_dst": "spare room"
+  },
+  {
+    "step_num": 9,
+    "action": "west",
+    "command": "go west",
+    "observation": "-= Workshop =-\nYou are in a workshop. A typical one.\n\n\n\nThere is an unblocked exit to the east. There is an exit to the north. Don't worry, it is unblocked. There is an exit to the south. Don't worry, it is unblocked.\n\n\n-= Workshop =-0/12",
+    "gt_src": "spare room",
+    "gt_dst": "workshop"
+  },
+  {
+    "step_num": 10,
+    "action": "north",
+    "command": "go north",
+    "observation": "-= Kitchen =-\nYou are in a kitchen. An usual kind of place.\n\n\n\nYou need an unblocked exit? You should try going east. There is an unguarded exit to the south.\n\nThere is a mug on the floor.\n\n\n-= Kitchen =-0/13",
+    "gt_src": "workshop",
+    "gt_dst": "kitchen"
+  },
+  {
+    "step_num": 11,
+    "action": "east",
+    "command": "go east",
+    "observation": "-= Bedchamber =-\nYou have entered the most normal of all possible bedchambers.\n\nYou see a locked spherical chest.\n\nThere is an unblocked exit to the east. You need an unguarded exit? You should try going south. You don't like doors? Why not try going west, that entranceway is unguarded.\n\n\n-= Bedchamber =-0/14",
+    "gt_src": "kitchen",
+    "gt_dst": "bedchamber"
+  }
+]

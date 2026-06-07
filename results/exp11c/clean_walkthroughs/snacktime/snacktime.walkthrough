@@ -1,0 +1,35 @@
+===========
+==>STEP NUM: 0
+==>ACT: west
+==>OBSERVATION: Food Room
+Food room, glorious food room!
+
+Your bowl for food and water is here, but that's only the beginning. There's also a lot of secret places where your pet keeps food and things that go with food and things that make food better. There's a thing that gets hot and a box that stays cold, and that is your favorite because you know there is always food inside there. A cloth hangs down from the door of the cold box.
+===========
+==>STEP NUM: 1
+==>ACT: east
+==>OBSERVATION: Sitting Room
+Your pet is here, all stretched out on the long soft thing and snoring.
+===========
+==>STEP NUM: 2
+==>ACT: down
+==>OBSERVATION: You get off the long soft thing.
+
+Sitting Room
+===========
+==>STEP NUM: 3
+==>ACT: north
+==>OBSERVATION: Sleeping Room
+Most of the time when you are in here it is dark and quiet because that is the best way to sleep and this is the room made for sleeping. There is a high bed here that is not your bed although it is where you sleep usually to keep your pet company. The sitting room is south of here and the room with the water is to the west.
+
+Your low bed is here, looking all soft and cushy.
+
+Dino is here!
+
+From the other room you can hear the happy sound of the cold box being opened.
+===========
+==>STEP NUM: 4
+==>ACT: south
+==>OBSERVATION: Sitting Room
+You don't hear anything from the food room. But then, making a sandwich is not a very noisy job.
+===========

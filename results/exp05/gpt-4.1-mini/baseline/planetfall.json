@@ -1,0 +1,18 @@
+{
+  "game": "planetfall",
+  "mode": "baseline",
+  "model": "gpt-4.1-mini",
+  "num_conflicts": 1,
+  "iterations": 1,
+  "success": true,
+  "remaining_conflicts": 0,
+  "pre_edge_recall": 0.525,
+  "pre_strict_direction_match": 0.525,
+  "pre_edge_direction_accuracy": 1.0,
+  "post_edge_recall": 0.525,
+  "post_strict_direction_match": 0.5,
+  "post_permissive_direction_match": 0.975,
+  "post_edge_direction_accuracy": 0.9523809523809523,
+  "edge_recall_delta": 0.0,
+  "strict_direction_delta": -0.025000000000000022
+}

@@ -1,0 +1,27 @@
+# ztuu  model=gpt-4.1  n_steps=26
+step   0 bad movement output: {'is_movement': True, 'src_node': None, 'dst_node': 'tunnel', 'action': 'northeast', 'seen_in_forward': 0, 'current_location': 'tunnel', 'reasoning': "The observation states 'Tunnel' as the room name after moving northeast, matching the canonical list."}
+step   1 bad movement output: {'is_movement': True, 'src_node': None, 'dst_node': 'cultural complex', 'action': 'northeast', 'seen_in_forward': 1, 'current_location': 'cultural complex', 'reasoning': "Observation begins with 'Cultural Complex', which matches the canonical location 'cultural complex'."}
+step   2 bad movement output: {'is_movement': True, 'src_node': None, 'dst_node': 'convention center lobby', 'action': 'north', 'seen_in_forward': 2, 'current_location': 'convention center lobby', 'reasoning': "Observation explicitly names 'Convention Center Lobby', which matches the canonical list; action is a compass direction."}
+step   3 bad movement output: {'is_movement': True, 'src_node': None, 'dst_node': 'souvenir stand', 'action': 'northwest', 'seen_in_forward': 3, 'current_location': 'souvenir stand', 'reasoning': "Observation begins with 'Souvenir Stand', which matches a canonical location; action is a compass direction."}
+step   4 bad movement output: {'is_movement': True, 'src_node': None, 'dst_node': 'changing room', 'action': 'north', 'seen_in_forward': 4, 'current_location': 'changing room', 'reasoning': "The observation begins with 'Changing Room', which matches the canonical location 'changing room'. The action is a canonical compass direction ('north'), so this is a movement to a new room."}
+step   5 MOVE 'changing room' --[south]--> 'souvenir stand'
+step   6 MOVE 'souvenir stand' --[southeast]--> 'convention center lobby'
+step   7 MOVE 'convention center lobby' --[north]--> 'convention hall'
+step   8 MOVE 'convention hall' --[south]--> 'convention center lobby'
+step   9 MOVE 'convention center lobby' --[south]--> 'cultural complex'
+step  10 MOVE 'cultural complex' --[east]--> 'theater'
+step  11 MOVE 'theater' --[east]--> 'stage'
+step  12 MOVE 'stage' --[east]--> 'backstage'
+step  13 MOVE 'backstage' --[west]--> 'stage'
+step  14 MOVE 'stage' --[west]--> 'theater'
+step  15 MOVE 'theater' --[west]--> 'cultural complex'
+step  16 MOVE 'cultural complex' --[south]--> 'hall of science lobby'
+step  17 MOVE 'hall of science lobby' --[north]--> 'cultural complex'
+step  18 MOVE 'cultural complex' --[south]--> 'the mud forum'
+step  19 MOVE 'the mud forum' --[north]--> 'hall of science lobby'
+step  20 MOVE 'hall of science lobby' --[east]--> 'museum of illusion'
+step  21 MOVE 'museum of illusion' --[west]--> 'hall of science lobby'
+step  22 MOVE 'hall of science lobby' --[west]--> 'museum of adventure'
+step  23 MOVE 'museum of adventure' --[southwest]--> "janitor's closet"
+step  24 MOVE "janitor's closet" --[northeast]--> 'museum of adventure'
+step  25 MOVE 'museum of adventure' --[east]--> 'hall of science lobby'

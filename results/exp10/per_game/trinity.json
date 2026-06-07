@@ -1,0 +1,83 @@
+{
+  "game": "trinity",
+  "num_llm_edges": 11,
+  "num_gt_edges": 20,
+  "num_conflicts": 1,
+  "type_distribution": {
+    "topology": 1
+  },
+  "root_cause_distribution": {
+    "false_positive_overlap": 1
+  },
+  "conflicts": [
+    {
+      "type": "topology",
+      "description": "position (0, 0, 0) occupied by multiple rooms ['black lion gate', 'bottom of stairs', 'long water']",
+      "involved_edges": [],
+      "involved_nodes": [
+        "black lion gate",
+        "bottom of stairs",
+        "long water"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "round pond",
+            "black lion gate"
+          ],
+          "llm_dir": "northwest",
+          "in_gt": true,
+          "gt_dir": "northwest",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 30
+        },
+        {
+          "edge": [
+            "south bog",
+            "bottom of stairs"
+          ],
+          "llm_dir": "east",
+          "in_gt": true,
+          "gt_dir": "east",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 61
+        },
+        {
+          "edge": [
+            "bottom of stairs",
+            "halfway up"
+          ],
+          "llm_dir": "up",
+          "in_gt": true,
+          "gt_dir": "up",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 64
+        },
+        {
+          "edge": [
+            "long water",
+            "wading"
+          ],
+          "llm_dir": "east",
+          "in_gt": true,
+          "gt_dir": "east",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 44
+        }
+      ],
+      "case_counts": {
+        "correct": 4
+      },
+      "root_cause": "false_positive_overlap"
+    }
+  ],
+  "walkthrough_steps_available": 71
+}

@@ -1,0 +1,522 @@
+[
+  {
+    "idx": 0,
+    "predicted_bucket": "CORRECT",
+    "game": "lostpig",
+    "src": "fountain room",
+    "dst": "table room",
+    "action": "southwest"
+  },
+  {
+    "idx": 1,
+    "predicted_bucket": "CORRECT",
+    "game": "night",
+    "src": "stairwell (third floor)",
+    "dst": "stairwell (second floor)",
+    "action": "down"
+  },
+  {
+    "idx": 2,
+    "predicted_bucket": "CORRECT",
+    "game": "ballyhoo",
+    "src": "connection",
+    "dst": "in the wings",
+    "action": "north"
+  },
+  {
+    "idx": 3,
+    "predicted_bucket": "CORRECT",
+    "game": "awaken",
+    "src": "west side of the church",
+    "dst": "front of the church",
+    "action": "southeast"
+  },
+  {
+    "idx": 4,
+    "predicted_bucket": "CORRECT",
+    "game": "zork2",
+    "src": "path near stream",
+    "dst": "carousel room",
+    "action": "southwest"
+  },
+  {
+    "idx": 5,
+    "predicted_bucket": "CORRECT",
+    "game": "cutthroat",
+    "src": "vacant lot",
+    "dst": "back alley (south to vacant lot)",
+    "action": "south"
+  },
+  {
+    "idx": 6,
+    "predicted_bucket": "CORRECT",
+    "game": "night",
+    "src": "hall (1st floor, north end of north/south hall)",
+    "dst": "hall (1st floor, middle of north/south hall)",
+    "action": "south"
+  },
+  {
+    "idx": 7,
+    "predicted_bucket": "CORRECT",
+    "game": "reverb",
+    "src": "street, near courthouse",
+    "dst": "street, by pizza parlor",
+    "action": "east"
+  },
+  {
+    "idx": 8,
+    "predicted_bucket": "CORRECT",
+    "game": "plundered",
+    "src": "crew's quarters",
+    "dst": "hold",
+    "action": "south"
+  },
+  {
+    "idx": 9,
+    "predicted_bucket": "CORRECT",
+    "game": "planetfall",
+    "src": "rec corridor",
+    "dst": "mess corridor",
+    "action": "east"
+  },
+  {
+    "idx": 10,
+    "predicted_bucket": "CORRECT",
+    "game": "dragon",
+    "src": "inn cellar",
+    "dst": "inside the inn",
+    "action": "up"
+  },
+  {
+    "idx": 11,
+    "predicted_bucket": "CORRECT",
+    "game": "yomomma",
+    "src": "entrance (southern side)",
+    "dst": "arcade corner (sw corner)",
+    "action": "west"
+  },
+  {
+    "idx": 12,
+    "predicted_bucket": "WRONG_DIRECTION",
+    "game": "lurking",
+    "src": "basement",
+    "dst": "temporary basement",
+    "action": "down"
+  },
+  {
+    "idx": 13,
+    "predicted_bucket": "WRONG_DIRECTION",
+    "game": "night",
+    "src": "hall (2nd floor, middle of north/south hall)",
+    "dst": "maze of twisty passages (stop 1)",
+    "action": "east"
+  },
+  {
+    "idx": 14,
+    "predicted_bucket": "WRONG_DIRECTION",
+    "game": "inhumane",
+    "src": "round room",
+    "dst": "t-intersection (east/west/south, east to round room)",
+    "action": "west"
+  },
+  {
+    "idx": 15,
+    "predicted_bucket": "WRONG_DIRECTION",
+    "game": "yomomma",
+    "src": "dance floor (center of the club)",
+    "dst": "vip lounge (nw corner)",
+    "action": "north"
+  },
+  {
+    "idx": 16,
+    "predicted_bucket": "WRONG_DIRECTION",
+    "game": "temple",
+    "src": "road (north/south)",
+    "dst": "crossroads",
+    "action": "west"
+  },
+  {
+    "idx": 17,
+    "predicted_bucket": "WRONG_DIRECTION",
+    "game": "cutthroat",
+    "src": "back alley (east end of east/west alley)",
+    "dst": "back alley (behind outfitters international)",
+    "action": "east"
+  },
+  {
+    "idx": 18,
+    "predicted_bucket": "WRONG_DIRECTION",
+    "game": "karn",
+    "src": "mountain trail (carved steps to the south)",
+    "dst": "mountain trail (cleft to northwest, down southwest, down east)",
+    "action": "southwest"
+  },
+  {
+    "idx": 19,
+    "predicted_bucket": "WRONG_DIRECTION",
+    "game": "night",
+    "src": "hall (1st floor, north end of north/south hall)",
+    "dst": "hall (1st floor, middle of north/south hall)",
+    "action": "north"
+  },
+  {
+    "idx": 20,
+    "predicted_bucket": "WRONG_DIRECTION",
+    "game": "yomomma",
+    "src": "bar (western side)",
+    "dst": "dance floor (center of the club)",
+    "action": "southeast"
+  },
+  {
+    "idx": 21,
+    "predicted_bucket": "WRONG_DIRECTION",
+    "game": "wishbringer",
+    "src": "open grave",
+    "dst": "spooky copse",
+    "action": "north"
+  },
+  {
+    "idx": 22,
+    "predicted_bucket": "WRONG_DIRECTION",
+    "game": "lurking",
+    "src": "temporary basement",
+    "dst": "basement",
+    "action": "up"
+  },
+  {
+    "idx": 23,
+    "predicted_bucket": "WRONG_DIRECTION",
+    "game": "karn",
+    "src": "mountain trail (cleft to northwest, down southwest, down east)",
+    "dst": "mountain trail (up west, down east)",
+    "action": "west"
+  },
+  {
+    "idx": 24,
+    "predicted_bucket": "WRONG_DST",
+    "game": "zenon",
+    "src": "corridor(east old cell and stretches further west)",
+    "dst": "corridor(south into a room and west to old cell)",
+    "action": "west"
+  },
+  {
+    "idx": 25,
+    "predicted_bucket": "WRONG_DST",
+    "game": "cutthroat",
+    "src": "vacant lot",
+    "dst": "wharf road (north to mcginty salvage)",
+    "action": "north"
+  },
+  {
+    "idx": 26,
+    "predicted_bucket": "WRONG_DST",
+    "game": "lostpig",
+    "src": "table room",
+    "dst": "shelf room",
+    "action": "east"
+  },
+  {
+    "idx": 27,
+    "predicted_bucket": "WRONG_DST",
+    "game": "murdac",
+    "src": "high tunnel (east/west, path to west)",
+    "dst": "wooden plank in east/west tunnel",
+    "action": "east"
+  },
+  {
+    "idx": 28,
+    "predicted_bucket": "WRONG_DST",
+    "game": "gold",
+    "src": "in the garden",
+    "dst": "in the pantry",
+    "action": "north"
+  },
+  {
+    "idx": 29,
+    "predicted_bucket": "WRONG_DST",
+    "game": "detective",
+    "src": "hallway (15th floor, room 19-22)",
+    "dst": "outside (holiday inn to north, doughnut king to east, the wall to west)",
+    "action": "north"
+  },
+  {
+    "idx": 30,
+    "predicted_bucket": "WRONG_DST",
+    "game": "yomomma",
+    "src": "dance floor (center of the club)",
+    "dst": "hall of fame (eastern side)",
+    "action": "south"
+  },
+  {
+    "idx": 31,
+    "predicted_bucket": "WRONG_DST",
+    "game": "anchor",
+    "src": "file room",
+    "dst": "outside the real estate office",
+    "action": "west"
+  },
+  {
+    "idx": 32,
+    "predicted_bucket": "WRONG_DST",
+    "game": "detective",
+    "src": "bedroom",
+    "dst": "hallway (15th floor, room 19-22)",
+    "action": "east"
+  },
+  {
+    "idx": 33,
+    "predicted_bucket": "WRONG_DST",
+    "game": "sherlock",
+    "src": "marylebone road",
+    "dst": "parliament square",
+    "action": "east"
+  },
+  {
+    "idx": 34,
+    "predicted_bucket": "WRONG_DST",
+    "game": "dragon",
+    "src": "wasteland by a castle",
+    "dst": "forbidding castle",
+    "action": "north"
+  },
+  {
+    "idx": 35,
+    "predicted_bucket": "WRONG_DST",
+    "game": "cutthroat",
+    "src": "back alley (behind outfitters international)",
+    "dst": "back alley (west end of east/west alley)",
+    "action": "west"
+  },
+  {
+    "idx": 36,
+    "predicted_bucket": "SPURIOUS_PAIR",
+    "game": "sherlock",
+    "src": "parliament square",
+    "dst": "scotland yard",
+    "action": "east"
+  },
+  {
+    "idx": 37,
+    "predicted_bucket": "SPURIOUS_PAIR",
+    "game": "night",
+    "src": "maze of twisty passages (stop 1)",
+    "dst": "maze of twisty passages (stop 5)",
+    "action": "west"
+  },
+  {
+    "idx": 38,
+    "predicted_bucket": "SPURIOUS_PAIR",
+    "game": "spellbrkr",
+    "src": "ruins room",
+    "dst": "cliff middle",
+    "action": "south"
+  },
+  {
+    "idx": 39,
+    "predicted_bucket": "SPURIOUS_PAIR",
+    "game": "zork1",
+    "src": "temple",
+    "dst": "forest path",
+    "action": "east"
+  },
+  {
+    "idx": 40,
+    "predicted_bucket": "SPURIOUS_PAIR",
+    "game": "advent",
+    "src": "misty cavern",
+    "dst": "plover room",
+    "action": "east"
+  },
+  {
+    "idx": 41,
+    "predicted_bucket": "SPURIOUS_PAIR",
+    "game": "awaken",
+    "src": "east side of the church",
+    "dst": "church porch",
+    "action": "north"
+  },
+  {
+    "idx": 42,
+    "predicted_bucket": "SPURIOUS_PAIR",
+    "game": "huntdark",
+    "src": "cramped cavern",
+    "dst": "small cave",
+    "action": "up"
+  },
+  {
+    "idx": 43,
+    "predicted_bucket": "SPURIOUS_PAIR",
+    "game": "trinity",
+    "src": "black lion gate",
+    "dst": "wading",
+    "action": "east"
+  },
+  {
+    "idx": 44,
+    "predicted_bucket": "SPURIOUS_PAIR",
+    "game": "inhumane",
+    "src": "end of glass hall",
+    "dst": "landing",
+    "action": "north"
+  },
+  {
+    "idx": 45,
+    "predicted_bucket": "SPURIOUS_PAIR",
+    "game": "huntdark",
+    "src": "tight crawl",
+    "dst": "cramped cavern",
+    "action": "up"
+  },
+  {
+    "idx": 46,
+    "predicted_bucket": "SPURIOUS_PAIR",
+    "game": "awaken",
+    "src": "vestibule",
+    "dst": "steeple chamber",
+    "action": "down"
+  },
+  {
+    "idx": 47,
+    "predicted_bucket": "SPURIOUS_PAIR",
+    "game": "curses",
+    "src": "airing cupboard",
+    "dst": "potting room",
+    "action": "west"
+  },
+  {
+    "idx": 48,
+    "predicted_bucket": "HALLUCINATED_DST",
+    "game": "spirit",
+    "src": "main hall",
+    "dst": "monastery chapel",
+    "action": "north"
+  },
+  {
+    "idx": 49,
+    "predicted_bucket": "HALLUCINATED_DST",
+    "game": "cutthroat",
+    "src": "mariners' trust",
+    "dst": "shore road",
+    "action": "south"
+  },
+  {
+    "idx": 50,
+    "predicted_bucket": "HALLUCINATED_DST",
+    "game": "afflicted",
+    "src": "refrigerator",
+    "dst": "darkness",
+    "action": "east"
+  },
+  {
+    "idx": 51,
+    "predicted_bucket": "HALLUCINATED_DST",
+    "game": "balances",
+    "src": "edge of chasm",
+    "dst": "outside temple",
+    "action": "east"
+  },
+  {
+    "idx": 52,
+    "predicted_bucket": "HALLUCINATED_DST",
+    "game": "pentari",
+    "src": "main hall",
+    "dst": "by the fireplace",
+    "action": "north"
+  },
+  {
+    "idx": 53,
+    "predicted_bucket": "HALLUCINATED_DST",
+    "game": "ludicorp",
+    "src": "storeroom",
+    "dst": "west end",
+    "action": "north"
+  },
+  {
+    "idx": 54,
+    "predicted_bucket": "HALLUCINATED_DST",
+    "game": "reverb",
+    "src": "law office",
+    "dst": "second floor",
+    "action": "west"
+  },
+  {
+    "idx": 55,
+    "predicted_bucket": "HALLUCINATED_DST",
+    "game": "detective",
+    "src": "hallway (mayer's house, east/west intersect, exit to north)",
+    "dst": "outside (restaurant to north, mayer home to east)",
+    "action": "north"
+  },
+  {
+    "idx": 56,
+    "predicted_bucket": "HALLUCINATED_DST",
+    "game": "afflicted",
+    "src": "dish room",
+    "dst": "darkness",
+    "action": "south"
+  },
+  {
+    "idx": 57,
+    "predicted_bucket": "HALLUCINATED_SRC",
+    "game": "spirit",
+    "src": "monastery chapel",
+    "dst": "main hall",
+    "action": "south"
+  },
+  {
+    "idx": 58,
+    "predicted_bucket": "HALLUCINATED_SRC",
+    "game": "cutthroat",
+    "src": "shore road",
+    "dst": "ocean road (halfway of north/south road)",
+    "action": "northeast"
+  },
+  {
+    "idx": 59,
+    "predicted_bucket": "HALLUCINATED_SRC",
+    "game": "detective",
+    "src": "outside (restaurant to north, mayer home to east)",
+    "dst": "bedroom",
+    "action": "west"
+  },
+  {
+    "idx": 60,
+    "predicted_bucket": "HALLUCINATED_SRC",
+    "game": "afflicted",
+    "src": "darkness",
+    "dst": "dish room",
+    "action": "north"
+  },
+  {
+    "idx": 61,
+    "predicted_bucket": "HALLUCINATED_SRC",
+    "game": "pentari",
+    "src": "by the fireplace",
+    "dst": "main hall",
+    "action": "south"
+  },
+  {
+    "idx": 62,
+    "predicted_bucket": "HALLUCINATED_SRC",
+    "game": "reverb",
+    "src": "second floor",
+    "dst": "mayor's office",
+    "action": "east"
+  },
+  {
+    "idx": 63,
+    "predicted_bucket": "HALLUCINATED_SRC",
+    "game": "afflicted",
+    "src": "darkness",
+    "dst": "galley kitchen",
+    "action": "south"
+  },
+  {
+    "idx": 64,
+    "predicted_bucket": "HALLUCINATED_SRC",
+    "game": "ludicorp",
+    "src": "west end",
+    "dst": "north-south corridoor",
+    "action": "north"
+  }
+]

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>LLM-MapRepair — interactive graph viewer</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <!-- cytoscape + layouts via CDN -->
+  <script src="https://unpkg.com/cytoscape@3.30.2/dist/cytoscape.min.js"></script>
+  <script src="https://unpkg.com/webcola@3.4.0/WebCola/cola.min.js"></script>
+  <script src="https://unpkg.com/cytoscape-cola@2.5.1/cytoscape-cola.js"></script>
+  <script src="https://unpkg.com/dagre@0.8.5/dist/dagre.min.js"></script>
+  <script src="https://unpkg.com/cytoscape-dagre@2.5.0/cytoscape-dagre.js"></script>
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <strong>LLM-MapRepair</strong>
+      <span class="sub">interactive graph viewer · TextWorld + MANGO</span>
+    </div>
+    <div class="game-picker">
+      <label>Dataset
+        <select id="datasetSelect">
+          <option value="all">All</option>
+          <option value="textworld">TextWorld</option>
+          <option value="mango">MANGO</option>
+        </select>
+      </label>
+      <label>Game
+        <select id="gameSelect"></select>
+      </label>
+      <label>View
+        <select id="stateSelect">
+          <option value="gt">① Ground truth</option>
+          <option value="noised">② With noise / conflicts</option>
+          <option value="repaired" selected>③ After MapRepair</option>
+        </select>
+      </label>
+      <label>Layout
+        <select id="layoutSelect">
+          <option value="cola" selected>Cola (force-directed)</option>
+          <option value="dagre">Dagre (hierarchical)</option>
+          <option value="grid">Grid</option>
+        </select>
+      </label>
+    </div>
+  </header>
+
+  <main class="layout">
+    <aside class="side">
+      <section class="card" id="gameInfo">
+        <h2>Game</h2>
+        <div id="gameStats" class="muted">Loading…</div>
+      </section>
+
+      <section class="card" id="legendCard">
+        <h2>Edge legend</h2>
+        <ul class="legend" id="legendList"></ul>
+      </section>
+
+      <section class="card" id="detailsCard">
+        <h2 id="detailsTitle">Details</h2>
+        <div id="detailsBody" class="scroll"></div>
+      </section>
+
+      <section class="card collapsible" id="walkthroughCard">
+        <h2>Walkthrough</h2>
+        <div id="walkthroughBody" class="scroll"></div>
+      </section>
+    </aside>
+
+    <section class="main">
+      <div class="canvas-head">
+        <div class="state-banner" id="stateBanner">Ground truth</div>
+        <div class="actions">
+          <button id="fitBtn" title="Fit graph to viewport">Fit</button>
+          <button id="resetBtn" title="Re-run layout">Re-layout</button>
+        </div>
+      </div>
+      <div id="cy"></div>
+      <div class="canvas-foot" id="canvasFoot"></div>
+    </section>
+  </main>
+
+  <script src="viewer.js"></script>
+</body>
+</html>

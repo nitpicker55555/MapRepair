@@ -1,0 +1,183 @@
+===========
+==>STEP NUM: 0
+==>ACT: south
+==>OBSERVATION: Second Floor
+This is the second floor of the Computer Center. An elevator and call buttons are on the south side of the hallway. A large, noisy room is to the north. Stairs also lead up and down, for the energetic. To the west a corridor leads into a smaller room.
+===========
+==>STEP NUM: 1
+==>ACT: west
+==>OBSERVATION: Kitchen
+This is a filthy kitchen. The exit is to the east. On the wall near a counter are a refrigerator and a microwave.
+
+Sitting on the kitchen counter is a package of Funny Bones.
+===========
+==>STEP NUM: 2
+==>ACT: east
+==>OBSERVATION: Second Floor
+===========
+==>STEP NUM: 3
+==>ACT: north
+==>OBSERVATION: Terminal Room
+
+A really whiz-bang pc is right inside the door.
+
+Nearby is one of those ugly molded plastic chairs.
+
+Sitting at a terminal is a hacker whom you recognize.
+===========
+==>STEP NUM: 4
+==>ACT: down
+==>OBSERVATION: Basalt Bowl
+You are at the bottom of a deeply cut, smooth basalt bowl. Dimly seen shapes crowd you on all sides. Ahead, in the focus of the movement, is a rock platform.
+===========
+==>STEP NUM: 5
+==>ACT: south
+==>OBSERVATION: Second Floor
+===========
+==>STEP NUM: 6
+==>ACT: south
+==>OBSERVATION: Elevator
+This is a battered, rather dirty elevator. The fake wood walls are scratched and marred with graffiti. The elevator doors are open. To the right of the doors is an area with floor buttons (B and 1 through 3), an open button, a close button, a stop switch, and an alarm button. Below these is an access panel which is closed.
+===========
+==>STEP NUM: 7
+==>ACT: north
+==>OBSERVATION: Second Floor
+
+The elevator doors are open.
+
+The elevator doors slide closed.
+===========
+==>STEP NUM: 8
+==>ACT: down
+==>OBSERVATION: Computer Center
+This is the lobby of the Computer Center. An elevator and call buttons are to the south. Stairs also lead up and down, for the energetic. To the north is Smith Street.
+===========
+==>STEP NUM: 9
+==>ACT: down
+==>OBSERVATION: Basement
+Bare concrete walls line a wide corridor leading east and west. An elevator and call button are to the south. Stairs also lead up, for the energetic. From floor to ceiling run wire channels and steam pipes.
+===========
+==>STEP NUM: 10
+==>ACT: east
+==>OBSERVATION: Temporary Basement
+During the Second World War, some temporary buildings were built to house war-related research. Naturally, these buildings, though flimsy and ugly, are still around. This is the basement of one of them. The basement extends west, a stairway leads up, and a large passage is to the east.
+
+There is a pair of electrician's gloves and a crowbar here.
+===========
+==>STEP NUM: 11
+==>ACT: down
+==>OBSERVATION: Temporary Basement
+===========
+==>STEP NUM: 12
+==>ACT: west
+==>OBSERVATION: Basement
+===========
+==>STEP NUM: 13
+==>ACT: west
+==>OBSERVATION: Aero Basement
+This basement level room is made of smooth, damp-seeming concrete. Fluorescent lights cast harsh shadows. To the west is a stairway, and to the east the basement area continues.
+
+There is a forklift here.
+===========
+==>STEP NUM: 14
+==>ACT: west
+==>OBSERVATION: Stairway
+A dimly lit stairway leads up and down from here. A corridor continues east.
+===========
+==>STEP NUM: 15
+==>ACT: up
+==>OBSERVATION: Aero Lobby
+This is the lobby of the Aeronautical Engineering Building. Stairs lead down and a corridor heads south towards the main building.
+
+Slouching nearby is an urchin. He's a youngish teenager wearing a ski hat, running shoes, and a bulky, suspiciously bumpy, threadbare parka. He's jumpy, and looks suspiciously at you.
+===========
+==>STEP NUM: 16
+==>ACT: north
+==>OBSERVATION: Aero Lobby
+===========
+==>STEP NUM: 17
+==>ACT: down
+==>OBSERVATION: Stairway
+===========
+==>STEP NUM: 18
+==>ACT: east
+==>OBSERVATION: Aero Basement
+
+There is a forklift here.
+===========
+==>STEP NUM: 19
+==>ACT: west
+==>OBSERVATION: Temporary Basement
+===========
+==>STEP NUM: 20
+==>ACT: west
+==>OBSERVATION: Basement
+===========
+==>STEP NUM: 21
+==>ACT: west
+==>OBSERVATION: Aero Basement
+===========
+==>STEP NUM: 22
+==>ACT: west
+==>OBSERVATION: Stairway
+===========
+==>STEP NUM: 23
+==>ACT: up
+==>OBSERVATION: Aero Lobby
+
+Slouching nearby is an urchin.
+===========
+==>STEP NUM: 24
+==>ACT: north
+==>OBSERVATION: Aero Lobby
+===========
+==>STEP NUM: 25
+==>ACT: north
+==>OBSERVATION: Aero Lobby
+===========
+==>STEP NUM: 26
+==>ACT: down
+==>OBSERVATION: Stairway
+
+Slouching nearby is an urchin.
+===========
+==>STEP NUM: 27
+==>ACT: up
+==>OBSERVATION: Stairway
+===========
+==>STEP NUM: 28
+==>ACT: east
+==>OBSERVATION: Aero Basement
+===========
+==>STEP NUM: 29
+==>ACT: east
+==>OBSERVATION: Basement
+===========
+==>STEP NUM: 30
+==>ACT: up
+==>OBSERVATION: Computer Center
+===========
+==>STEP NUM: 31
+==>ACT: down
+==>OBSERVATION: Basement
+===========
+==>STEP NUM: 32
+==>ACT: up
+==>OBSERVATION: Computer Center
+===========
+==>STEP NUM: 33
+==>ACT: up
+==>OBSERVATION: Second Floor
+===========
+==>STEP NUM: 34
+==>ACT: down
+==>OBSERVATION: Computer Center
+
+From below, you hear a tearing, rending sound, then a rumbling crash.
+
+You no longer hear the elevator moving.
+===========
+==>STEP NUM: 35
+==>ACT: down
+==>OBSERVATION: Basement
+===========

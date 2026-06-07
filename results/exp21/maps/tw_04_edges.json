@@ -1,0 +1,58 @@
+[
+  {
+    "src_node": "kitchenette",
+    "dst_node": "bedroom",
+    "action": "south",
+    "step_num": 1,
+    "gt_src": "kitchenette",
+    "gt_dst": "bedroom"
+  },
+  {
+    "src_node": "bedroom",
+    "dst_node": "kitchenette",
+    "action": "north",
+    "step_num": 2,
+    "gt_src": "bedroom",
+    "gt_dst": "kitchenette"
+  },
+  {
+    "src_node": "kitchenette",
+    "dst_node": "study",
+    "action": "east",
+    "step_num": 3,
+    "gt_src": "kitchenette",
+    "gt_dst": "study"
+  },
+  {
+    "src_node": "study",
+    "dst_node": "chamber",
+    "action": "south",
+    "step_num": 4,
+    "gt_src": "study",
+    "gt_dst": "chamber"
+  },
+  {
+    "src_node": "chamber",
+    "dst_node": "cookhouse",
+    "action": "east",
+    "step_num": 5,
+    "gt_src": "chamber",
+    "gt_dst": "cookhouse"
+  },
+  {
+    "src_node": "cookhouse",
+    "dst_node": "chamber",
+    "action": "west",
+    "step_num": 6,
+    "gt_src": "cookhouse",
+    "gt_dst": "chamber"
+  },
+  {
+    "src_node": "chamber",
+    "dst_node": "study",
+    "action": "north",
+    "step_num": 7,
+    "gt_src": "chamber",
+    "gt_dst": "study"
+  }
+]

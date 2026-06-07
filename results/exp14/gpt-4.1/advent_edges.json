@@ -1,0 +1,242 @@
+[
+  {
+    "src_node": "inside building",
+    "dst_node": "end of road",
+    "action": "west",
+    "seen_in_forward": 1
+  },
+  {
+    "src_node": "end of road",
+    "dst_node": "in a valley",
+    "action": "south",
+    "seen_in_forward": 2
+  },
+  {
+    "src_node": "in a valley",
+    "dst_node": "at slit in streambed",
+    "action": "south",
+    "seen_in_forward": 3
+  },
+  {
+    "src_node": "at slit in streambed",
+    "dst_node": "outside grate",
+    "action": "south",
+    "seen_in_forward": 4
+  },
+  {
+    "src_node": "outside grate",
+    "dst_node": "below the grate",
+    "action": "down",
+    "seen_in_forward": 5
+  },
+  {
+    "src_node": "below the grate",
+    "dst_node": "in cobble",
+    "action": "west",
+    "seen_in_forward": 6
+  },
+  {
+    "src_node": "in cobble",
+    "dst_node": "in debris room",
+    "action": "west",
+    "seen_in_forward": 7
+  },
+  {
+    "src_node": "in debris room",
+    "dst_node": "sloping e/w canyon",
+    "action": "west",
+    "seen_in_forward": 8
+  },
+  {
+    "src_node": "sloping e/w canyon",
+    "dst_node": "orange river chamber",
+    "action": "west",
+    "seen_in_forward": 9
+  },
+  {
+    "src_node": "orange river chamber",
+    "dst_node": "at top of small pit",
+    "action": "west",
+    "seen_in_forward": 10
+  },
+  {
+    "src_node": "at top of small pit",
+    "dst_node": "in hall of mists",
+    "action": "down",
+    "seen_in_forward": 11
+  },
+  {
+    "src_node": "in hall of mists",
+    "dst_node": "low room",
+    "action": "south",
+    "seen_in_forward": 12
+  },
+  {
+    "src_node": "low room",
+    "dst_node": "in hall of mists",
+    "action": "north",
+    "seen_in_forward": 13
+  },
+  {
+    "src_node": "in hall of mists",
+    "dst_node": "hall of the mountain king",
+    "action": "north",
+    "seen_in_forward": 14
+  },
+  {
+    "src_node": "hall of the mountain king",
+    "dst_node": "low n/s passage",
+    "action": "north",
+    "seen_in_forward": 15
+  },
+  {
+    "src_node": "low n/s passage",
+    "dst_node": "at \"y2\"",
+    "action": "north",
+    "seen_in_forward": 16
+  },
+  {
+    "src_node": "at \"y2\"",
+    "dst_node": "low n/s passage",
+    "action": "south",
+    "seen_in_forward": 17
+  },
+  {
+    "src_node": "low n/s passage",
+    "dst_node": "hall of the mountain king",
+    "action": "south",
+    "seen_in_forward": 18
+  },
+  {
+    "src_node": "hall of the mountain king",
+    "dst_node": "secret e/w canyon above tight canyon",
+    "action": "southwest",
+    "seen_in_forward": 19
+  },
+  {
+    "src_node": "secret e/w canyon above tight canyon",
+    "dst_node": "secret canyon",
+    "action": "west",
+    "seen_in_forward": 20
+  },
+  {
+    "src_node": "secret canyon",
+    "dst_node": "secret e/w canyon above tight canyon",
+    "action": "east",
+    "seen_in_forward": 21
+  },
+  {
+    "src_node": "secret e/w canyon above tight canyon",
+    "dst_node": "n/s canyon",
+    "action": "down",
+    "seen_in_forward": 22
+  },
+  {
+    "src_node": "n/s canyon",
+    "dst_node": "in tall e/w canyon",
+    "action": "north",
+    "seen_in_forward": 23
+  },
+  {
+    "src_node": "in tall e/w canyon",
+    "dst_node": "in swiss cheese room",
+    "action": "north",
+    "seen_in_forward": 24
+  },
+  {
+    "src_node": "in swiss cheese room",
+    "dst_node": "at east end of twopit room",
+    "action": "west",
+    "seen_in_forward": 25
+  },
+  {
+    "src_node": "at east end of twopit room",
+    "dst_node": "at west end of twopit room",
+    "action": "west",
+    "seen_in_forward": 26
+  },
+  {
+    "src_node": "at west end of twopit room",
+    "dst_node": "in west pit",
+    "action": "down",
+    "seen_in_forward": 27
+  },
+  {
+    "src_node": "in west pit",
+    "dst_node": "at west end of twopit room",
+    "action": "up",
+    "seen_in_forward": 28
+  },
+  {
+    "src_node": "at west end of twopit room",
+    "dst_node": "at east end of twopit room",
+    "action": "east",
+    "seen_in_forward": 29
+  },
+  {
+    "src_node": "at east end of twopit room",
+    "dst_node": "in swiss cheese room",
+    "action": "east",
+    "seen_in_forward": 30
+  },
+  {
+    "src_node": "in swiss cheese room",
+    "dst_node": "oriental room",
+    "action": "northwest",
+    "seen_in_forward": 31
+  },
+  {
+    "src_node": "oriental room",
+    "dst_node": "misty cavern",
+    "action": "north",
+    "seen_in_forward": 32
+  },
+  {
+    "src_node": "misty cavern",
+    "dst_node": "plover room",
+    "action": "east",
+    "seen_in_forward": 33
+  },
+  {
+    "src_node": "plover room",
+    "dst_node": "alcove",
+    "action": "west",
+    "seen_in_forward": 34
+  },
+  {
+    "src_node": "alcove",
+    "dst_node": "oriental room",
+    "action": "south",
+    "seen_in_forward": 35
+  },
+  {
+    "src_node": "oriental room",
+    "dst_node": "in swiss cheese room",
+    "action": "southeast",
+    "seen_in_forward": 36
+  },
+  {
+    "src_node": "in swiss cheese room",
+    "dst_node": "in soft room",
+    "action": "east",
+    "seen_in_forward": 37
+  },
+  {
+    "src_node": "in soft room",
+    "dst_node": "in swiss cheese room",
+    "action": "west",
+    "seen_in_forward": 38
+  },
+  {
+    "src_node": "in swiss cheese room",
+    "dst_node": "bedquilt",
+    "action": "northeast",
+    "seen_in_forward": 39
+  },
+  {
+    "src_node": "bedquilt",
+    "dst_node": "at complex junction",
+    "action": "east",
+    "seen_in_forward": 40
+  }
+]

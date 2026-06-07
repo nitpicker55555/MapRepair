@@ -1,0 +1,164 @@
+{
+  "id": "tw_08",
+  "dataset": "textworld",
+  "n_rooms": 5,
+  "n_edges": 8,
+  "rooms": [
+    {
+      "id": "basement",
+      "label": "basement",
+      "description": "If you're wondering why everything seems so ordinary all of a sudden, it's because you've just walked into the basement. Oh wow! Is that what I think it is? It is! It's a box. The box contains . The box is empty! This is the worst thing that could possibly happen, ever! There is an opena closed gate"
+    },
+    {
+      "id": "bedchamber",
+      "label": "bedchamber",
+      "description": "You've just sauntered into a bedchamber. Let's see what's in here. You need an unguarded exit? You should try going east."
+    },
+    {
+      "id": "canteen",
+      "label": "canteen",
+      "description": "You have fallen into the most typical of all possible canteens. You decide to just list off a complete list of everything you see in the room, because hey, why not? There is an unblocked exit to the south."
+    },
+    {
+      "id": "sauna",
+      "label": "sauna",
+      "description": "You arrive in a sauna. An ordinary kind of place. There is an opena closed gateway leading west. There is an exit to the north. Don't worry, it is unguarded."
+    },
+    {
+      "id": "spare room",
+      "label": "spare room",
+      "description": "You have come into the most normal of all possible spare rooms. You bend down to tie your shoe. When you stand up, you notice a workbench. You see on the workbench.The workbench appears to be empty. There is an exit to the north. Don't worry, it is unguarded."
+    }
+  ],
+  "walkthrough": [],
+  "states": {
+    "gt": {
+      "edges": [
+        {
+          "src": "basement",
+          "dst": "bedchamber",
+          "dir": "west"
+        },
+        {
+          "src": "basement",
+          "dst": "spare room",
+          "dir": "south"
+        },
+        {
+          "src": "basement",
+          "dst": "sauna",
+          "dir": "east"
+        },
+        {
+          "src": "bedchamber",
+          "dst": "basement",
+          "dir": "east"
+        },
+        {
+          "src": "spare room",
+          "dst": "basement",
+          "dir": "north"
+        },
+        {
+          "src": "sauna",
+          "dst": "basement",
+          "dir": "west"
+        },
+        {
+          "src": "sauna",
+          "dst": "canteen",
+          "dir": "north"
+        },
+        {
+          "src": "canteen",
+          "dst": "sauna",
+          "dir": "south"
+        }
+      ]
+    },
+    "noised": {
+      "edges": [
+        {
+          "src": "basement",
+          "dst": "bedchamber",
+          "dir": "west"
+        },
+        {
+          "src": "basement",
+          "dst": "spare room",
+          "dir": "south"
+        },
+        {
+          "src": "basement",
+          "dst": "sauna",
+          "dir": "east"
+        },
+        {
+          "src": "bedchamber",
+          "dst": "basement",
+          "dir": "east"
+        },
+        {
+          "src": "spare room",
+          "dst": "basement",
+          "dir": "north"
+        },
+        {
+          "src": "sauna",
+          "dst": "basement",
+          "dir": "west"
+        }
+      ],
+      "noise_records": [
+        {
+          "type": "N5_collapse_fallback",
+          "src": "canteen",
+          "dst": "sauna",
+          "direction": null,
+          "note": "no prefix match available"
+        }
+      ],
+      "noise_summary": {
+        "N5_collapse_fallback": 1
+      },
+      "conflicts": []
+    },
+    "repaired": {
+      "edges": [
+        {
+          "src": "basement",
+          "dst": "bedchamber",
+          "dir": "west"
+        },
+        {
+          "src": "basement",
+          "dst": "spare room",
+          "dir": "south"
+        },
+        {
+          "src": "basement",
+          "dst": "sauna",
+          "dir": "east"
+        },
+        {
+          "src": "bedchamber",
+          "dst": "basement",
+          "dir": "east"
+        },
+        {
+          "src": "spare room",
+          "dst": "basement",
+          "dir": "north"
+        },
+        {
+          "src": "sauna",
+          "dst": "basement",
+          "dir": "west"
+        }
+      ],
+      "actions": [],
+      "n_conflicts_before": 0,
+      "n_conflicts_after": 0
+    }
+  }
+}

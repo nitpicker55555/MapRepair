@@ -1,0 +1,16 @@
+{
+  "game": "zork1",
+  "num_conflicts": 2,
+  "iterations": 1,
+  "success": true,
+  "remaining_conflicts": 0,
+  "pre_edge_recall": 0.5517241379310345,
+  "pre_strict_direction_match": 0.5517241379310345,
+  "pre_edge_direction_accuracy": 1.0,
+  "post_edge_recall": 0.5517241379310345,
+  "post_strict_direction_match": 0.5172413793103449,
+  "post_permissive_direction_match": 0.9310344827586207,
+  "post_edge_direction_accuracy": 0.9375,
+  "edge_recall_delta": 0.0,
+  "strict_direction_delta": -0.03448275862068961
+}

@@ -1,0 +1,16 @@
+{
+  "game": "pentari",
+  "num_conflicts": 5,
+  "iterations": 4,
+  "success": true,
+  "remaining_conflicts": 0,
+  "pre_edge_recall": 0.38461538461538464,
+  "pre_strict_direction_match": 0.38461538461538464,
+  "pre_edge_direction_accuracy": 1.0,
+  "post_edge_recall": 0.38461538461538464,
+  "post_strict_direction_match": 0.23076923076923078,
+  "post_permissive_direction_match": 0.4230769230769231,
+  "post_edge_direction_accuracy": 0.6,
+  "edge_recall_delta": 0.0,
+  "strict_direction_delta": -0.15384615384615385
+}

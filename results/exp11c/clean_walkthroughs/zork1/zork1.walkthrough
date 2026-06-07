@@ -1,0 +1,137 @@
+===========
+==>STEP NUM: 0
+==>ACT: north
+==>OBSERVATION: North of House
+You are facing the north side of a white house. There is no door here, and all the windows are boarded up. To the north a narrow path winds through the trees.
+===========
+==>STEP NUM: 1
+==>ACT: north
+==>OBSERVATION: Forest Path
+This is a path winding through a dimly lit forest. The path heads north-south here. One particularly large tree with some low branches stands at the edge of the path.
+===========
+==>STEP NUM: 2
+==>ACT: up
+==>OBSERVATION: Up a Tree
+You are about 10 feet above the ground nestled among some large branches. The nearest branch above you is above your reach.
+Beside you on the branch is a small bird's nest.
+In the bird's nest is a large egg encrusted with precious jewels, apparently scavenged by a childless songbird. The egg is covered with fine gold inlay, and ornamented in lapis lazuli and mother-of-pearl. Unlike most eggs, this one is hinged and closed with a delicate looking clasp. The egg appears extremely fragile.
+===========
+==>STEP NUM: 3
+==>ACT: down
+==>OBSERVATION: Forest Path
+===========
+==>STEP NUM: 4
+==>ACT: south
+==>OBSERVATION: North of House
+===========
+==>STEP NUM: 5
+==>ACT: west
+==>OBSERVATION: Kitchen
+You are in the kitchen of the white house. A table seems to have been used recently for the preparation of food. A passage leads to the west and a dark staircase can be seen leading upward. A dark chimney leads down and to the east is a small window which is open.
+On the table is an elongated brown sack, smelling of hot peppers.
+A bottle is sitting on the table.
+The glass bottle contains:
+  A quantity of water
+===========
+==>STEP NUM: 6
+==>ACT: west
+==>OBSERVATION: Living Room
+You are in the living room. There is a doorway to the east, a wooden door with strange gothic lettering to the west, which appears to be nailed shut, a trophy case, and a large oriental rug in the center of the room.
+Above the trophy case hangs an elvish sword of great antiquity.
+A battery-powered brass lantern is on the trophy case.
+===========
+==>STEP NUM: 7
+==>ACT: east
+==>OBSERVATION: Kitchen
+A bottle is sitting on the table.
+The glass bottle contains:
+  A quantity of water
+There is a brown sack here.
+The brown sack contains:
+  A lunch
+===========
+==>STEP NUM: 8
+==>ACT: up
+==>OBSERVATION: You have moved into a dark place.
+It is pitch black. You are likely to be eaten by a grue.
+===========
+==>STEP NUM: 9
+==>ACT: down
+==>OBSERVATION: Kitchen
+A bottle is sitting on the table.
+The glass bottle contains:
+  A quantity of water
+There is a brown sack here.
+The brown sack contains:
+  A lunch
+===========
+==>STEP NUM: 10
+==>ACT: down
+==>OBSERVATION: You have moved into a dark place.
+The trap door crashes shut, and you hear someone barring it.
+
+It is pitch black. You are likely to be eaten by a grue.
+Your sword is glowing with a faint blue glow.
+===========
+==>STEP NUM: 11
+==>ACT: north
+==>OBSERVATION: The Troll Room
+This is a small room with passages to the east and south and a forbidding hole leading west. Bloodstains and deep scratches (perhaps made by an axe) mar the walls.
+A nasty-looking troll, brandishing a bloody axe, blocks all passages out of the room.
+Your sword has begun to glow very brightly.
+===========
+==>STEP NUM: 12
+==>ACT: east
+==>OBSERVATION: East-West Passage
+This is a narrow east-west passageway. There is a narrow stairway leading down at the north end of the room.
+===========
+==>STEP NUM: 13
+==>ACT: east
+==>OBSERVATION: Round Room
+This is a circular stone room with passages in all directions. Several of them have unfortunately been blocked by cave-ins.
+===========
+==>STEP NUM: 14
+==>ACT: southeast
+==>OBSERVATION: Engravings Cave
+You have entered a low cave with passages leading northwest and east.
+There are old engravings on the walls here.
+===========
+==>STEP NUM: 15
+==>ACT: east
+==>OBSERVATION: Dome Room
+You are at the periphery of a large dome, which forms the ceiling of another room below. Protecting you from a precipitous drop is a wooden railing which circles the dome.
+===========
+==>STEP NUM: 16
+==>ACT: down
+==>OBSERVATION: Torch Room
+This is a large room with a prominent doorway leading to a down staircase. Above you is a large dome. Up around the edge of the dome (20 feet up) is a wooden railing. In the center of the room sits a white marble pedestal.
+A piece of rope descends from the railing above, ending some five feet above your head.
+Sitting on the pedestal is a flaming torch, made of ivory.
+===========
+==>STEP NUM: 17
+==>ACT: down
+==>OBSERVATION: Temple
+This is the north end of a large temple. On the east wall is an ancient inscription, probably a prayer in a long-forgotten language. Below the prayer is a staircase leading down. The west wall is solid granite. The exit to the north end of the room is through huge marble pillars.
+There is a brass bell here.
+===========
+==>STEP NUM: 18
+==>ACT: south
+==>OBSERVATION: Altar
+This is the south end of a large temple. In front of you is what appears to be an altar. In one corner is a small hole in the floor which leads into darkness. You probably could not get back up it.
+On the two ends of the altar are burning candles.
+On the altar is a large black book, open to page 569.
+===========
+==>STEP NUM: 19
+==>ACT: north
+==>OBSERVATION: Temple
+There is a brass bell here.
+===========
+==>STEP NUM: 20
+==>ACT: east
+==>OBSERVATION: Forest Path
+===========
+==>STEP NUM: 21
+==>ACT: down
+==>OBSERVATION: Cellar
+There is a bloody axe here.
+===========

@@ -1,0 +1,50 @@
+[
+  {
+    "src_node": "dish-pit",
+    "dst_node": "cookhouse",
+    "action": "east",
+    "step_num": 2,
+    "gt_src": "dish-pit",
+    "gt_dst": "cookhouse"
+  },
+  {
+    "src_node": "cookhouse",
+    "dst_node": "dish-pit",
+    "action": "west",
+    "step_num": 3,
+    "gt_src": "cookhouse",
+    "gt_dst": "dish-pit"
+  },
+  {
+    "src_node": "dish-pit",
+    "dst_node": "spare room",
+    "action": "north",
+    "step_num": 4,
+    "gt_src": "dish-pit",
+    "gt_dst": "spare room"
+  },
+  {
+    "src_node": "spare room",
+    "dst_node": "studio",
+    "action": "east",
+    "step_num": 5,
+    "gt_src": "spare room",
+    "gt_dst": "studio"
+  },
+  {
+    "src_node": "studio",
+    "dst_node": "cookery",
+    "action": "north",
+    "step_num": 6,
+    "gt_src": "studio",
+    "gt_dst": "cookery"
+  },
+  {
+    "src_node": "cookery",
+    "dst_node": "studio",
+    "action": "south",
+    "step_num": 7,
+    "gt_src": "cookery",
+    "gt_dst": "studio"
+  }
+]

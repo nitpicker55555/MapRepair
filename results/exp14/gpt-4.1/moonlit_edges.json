@@ -1,0 +1,32 @@
+[
+  {
+    "src_node": "shadow armory",
+    "dst_node": "undying garden",
+    "action": "north",
+    "seen_in_forward": 1
+  },
+  {
+    "src_node": "undying garden",
+    "dst_node": "shadow armory",
+    "action": "south",
+    "seen_in_forward": 2
+  },
+  {
+    "src_node": "shadow armory",
+    "dst_node": "moonlit chamber",
+    "action": "up",
+    "seen_in_forward": 3
+  },
+  {
+    "src_node": "moonlit chamber",
+    "dst_node": "skeletal banquet",
+    "action": "west",
+    "seen_in_forward": 4
+  },
+  {
+    "src_node": "skeletal banquet",
+    "dst_node": "hall of hawks",
+    "action": "down",
+    "seen_in_forward": 5
+  }
+]

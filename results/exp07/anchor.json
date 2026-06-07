@@ -1,0 +1,16 @@
+{
+  "game": "anchor",
+  "num_conflicts": 38,
+  "iterations": 2,
+  "success": false,
+  "remaining_conflicts": 30,
+  "pre_edge_recall": 0.5238095238095238,
+  "pre_strict_direction_match": 0.5238095238095238,
+  "pre_edge_direction_accuracy": 1.0,
+  "post_edge_recall": 0.5238095238095238,
+  "post_strict_direction_match": 0.47619047619047616,
+  "post_permissive_direction_match": 0.8809523809523809,
+  "post_edge_direction_accuracy": 0.9090909090909091,
+  "edge_recall_delta": 0.0,
+  "strict_direction_delta": -0.04761904761904767
+}

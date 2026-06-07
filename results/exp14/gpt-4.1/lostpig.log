@@ -1,0 +1,8 @@
+# lostpig  model=gpt-4.1  n_steps=7  (exp14 bootstrap-fixed)
+step   0 BOOTSTRAP seed current_loc='hole' (src missing, dst valid)
+step   1 MOVE 'hole' --[east]--> 'fountain room'
+step   2 MOVE 'fountain room' --[north]--> 'statue room'
+step   3 MOVE 'statue room' --[south]--> 'fountain room'
+step   4 MOVE 'fountain room' --[southwest]--> 'table room'
+step   5 bad movement output: {'is_movement': True, 'src_node': 'table room', 'dst_node': None, 'action': 'east', 'seen_in_forward': 5, 'current_location': None, 'reasoning': "The observation gives the room name as 'Closet', which is not in the canonical list. Therefore, the destination is unknown in canonical terms."}
+step   6 MOVE 'table room' --[east]--> 'shelf room'

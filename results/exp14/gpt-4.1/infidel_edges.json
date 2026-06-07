@@ -1,0 +1,170 @@
+[
+  {
+    "src_node": "outside your tent",
+    "dst_node": "outside supply tent",
+    "action": "southwest",
+    "seen_in_forward": 1
+  },
+  {
+    "src_node": "outside supply tent",
+    "dst_node": "supply tent",
+    "action": "west",
+    "seen_in_forward": 2
+  },
+  {
+    "src_node": "supply tent",
+    "dst_node": "outside supply tent",
+    "action": "east",
+    "seen_in_forward": 3
+  },
+  {
+    "src_node": "outside supply tent",
+    "dst_node": "outside work tent",
+    "action": "southeast",
+    "seen_in_forward": 4
+  },
+  {
+    "src_node": "outside work tent",
+    "dst_node": "work tent",
+    "action": "south",
+    "seen_in_forward": 5
+  },
+  {
+    "src_node": "work tent",
+    "dst_node": "outside work tent",
+    "action": "north",
+    "seen_in_forward": 6
+  },
+  {
+    "src_node": "outside work tent",
+    "dst_node": "fire pit",
+    "action": "north",
+    "seen_in_forward": 7
+  },
+  {
+    "src_node": "fire pit",
+    "dst_node": "outside your tent",
+    "action": "north",
+    "seen_in_forward": 8
+  },
+  {
+    "src_node": "outside your tent",
+    "dst_node": "your tent",
+    "action": "north",
+    "seen_in_forward": 9
+  },
+  {
+    "src_node": "your tent",
+    "dst_node": "near the nile",
+    "action": "west",
+    "seen_in_forward": 10
+  },
+  {
+    "src_node": "near the nile",
+    "dst_node": "river bank",
+    "action": "west",
+    "seen_in_forward": 11
+  },
+  {
+    "src_node": "river bank",
+    "dst_node": "near the nile",
+    "action": "east",
+    "seen_in_forward": 12
+  },
+  {
+    "src_node": "near the nile",
+    "dst_node": "outside your tent",
+    "action": "east",
+    "seen_in_forward": 13
+  },
+  {
+    "src_node": "outside your tent",
+    "dst_node": "northern path",
+    "action": "east",
+    "seen_in_forward": 14
+  },
+  {
+    "src_node": "northern path",
+    "dst_node": "desert (within sight of encampment)",
+    "action": "southeast",
+    "seen_in_forward": 15
+  },
+  {
+    "src_node": "desert (within sight of encampment)",
+    "dst_node": "desert (out of sight of encampment)",
+    "action": "southeast",
+    "seen_in_forward": 16
+  },
+  {
+    "src_node": "desert (out of sight of encampment)",
+    "dst_node": "chamber of ra",
+    "action": "down",
+    "seen_in_forward": 17
+  },
+  {
+    "src_node": "chamber of ra",
+    "dst_node": "south landing",
+    "action": "south",
+    "seen_in_forward": 18
+  },
+  {
+    "src_node": "south landing",
+    "dst_node": "the entrance of a narrow hallway",
+    "action": "south",
+    "seen_in_forward": 19
+  },
+  {
+    "src_node": "the entrance of a narrow hallway",
+    "dst_node": "at a bend in the narrow hallway",
+    "action": "northeast",
+    "seen_in_forward": 20
+  },
+  {
+    "src_node": "at a bend in the narrow hallway",
+    "dst_node": "barge chamber (southern section)",
+    "action": "northwest",
+    "seen_in_forward": 21
+  },
+  {
+    "src_node": "barge chamber (southern section)",
+    "dst_node": "barge chamber (southwest corner)",
+    "action": "west",
+    "seen_in_forward": 22
+  },
+  {
+    "src_node": "barge chamber (southwest corner)",
+    "dst_node": "barge chamber (northwest corner)",
+    "action": "north",
+    "seen_in_forward": 23
+  },
+  {
+    "src_node": "barge chamber (northwest corner)",
+    "dst_node": "barge chamber (north to back side of barge)",
+    "action": "east",
+    "seen_in_forward": 24
+  },
+  {
+    "src_node": "barge chamber (north to back side of barge)",
+    "dst_node": "steep passageway（the top of a steep)",
+    "action": "north",
+    "seen_in_forward": 25
+  },
+  {
+    "src_node": "steep passageway（the top of a steep)",
+    "dst_node": "steep passageway(midway down)",
+    "action": "north",
+    "seen_in_forward": 26
+  },
+  {
+    "src_node": "steep passageway(midway down)",
+    "dst_node": "steep passageway(the north end of a descending passageway)",
+    "action": "north",
+    "seen_in_forward": 27
+  },
+  {
+    "src_node": "steep passageway(the north end of a descending passageway)",
+    "dst_node": "temple chamber",
+    "action": "north",
+    "seen_in_forward": 28
+  }
+]

@@ -1,0 +1,1347 @@
+{
+  "id": "cutthroat",
+  "dataset": "mango",
+  "n_rooms": 25,
+  "n_gt_edges": 49,
+  "n_llm_edges": 35,
+  "rooms": [
+    {
+      "id": "back alley (back door of mcginty salvage)",
+      "label": "back alley (back door of mcginty salvage)",
+      "description": ""
+    },
+    {
+      "id": "back alley (behind outfitters international)",
+      "label": "back alley (behind outfitters international)",
+      "description": ""
+    },
+    {
+      "id": "back alley (east end of east/west alley)",
+      "label": "back alley (east end of east/west alley)",
+      "description": ""
+    },
+    {
+      "id": "back alley (south to vacant lot)",
+      "label": "back alley (south to vacant lot)",
+      "description": ""
+    },
+    {
+      "id": "back alley (west end of east/west alley)",
+      "label": "back alley (west end of east/west alley)",
+      "description": ""
+    },
+    {
+      "id": "ferry landing",
+      "label": "ferry landing",
+      "description": ""
+    },
+    {
+      "id": "mariners' trust",
+      "label": "mariners' trust",
+      "description": ""
+    },
+    {
+      "id": "ocean road (halfway of north/south road)",
+      "label": "ocean road (halfway of north/south road)",
+      "description": ""
+    },
+    {
+      "id": "ocean road (north end of north/south road)",
+      "label": "ocean road (north end of north/south road)",
+      "description": ""
+    },
+    {
+      "id": "ocean road (south end of north/south road)",
+      "label": "ocean road (south end of north/south road)",
+      "description": ""
+    },
+    {
+      "id": "red boar inn",
+      "label": "red boar inn",
+      "description": ""
+    },
+    {
+      "id": "shore road",
+      "label": "shore road",
+      "description": ""
+    },
+    {
+      "id": "shore road (east end of east/west road)",
+      "label": "shore road (east end of east/west road)",
+      "description": ""
+    },
+    {
+      "id": "shore road (west end of east/west road)",
+      "label": "shore road (west end of east/west road)",
+      "description": ""
+    },
+    {
+      "id": "the shanty",
+      "label": "the shanty",
+      "description": ""
+    },
+    {
+      "id": "upstairs hallway",
+      "label": "upstairs hallway",
+      "description": ""
+    },
+    {
+      "id": "vacant lot",
+      "label": "vacant lot",
+      "description": ""
+    },
+    {
+      "id": "wharf road (east end of east/west road)",
+      "label": "wharf road (east end of east/west road)",
+      "description": ""
+    },
+    {
+      "id": "wharf road (end of east/west road)",
+      "label": "wharf road (end of east/west road)",
+      "description": ""
+    },
+    {
+      "id": "wharf road (north to mcginty salvage)",
+      "label": "wharf road (north to mcginty salvage)",
+      "description": ""
+    },
+    {
+      "id": "wharf road (north to outfitters international former warehouse)",
+      "label": "wharf road (north to outfitters international former warehouse)",
+      "description": ""
+    },
+    {
+      "id": "wharf road (north to outfitters international)",
+      "label": "wharf road (north to outfitters international)",
+      "description": ""
+    },
+    {
+      "id": "winding road (end at lighthouse)",
+      "label": "winding road (end at lighthouse)",
+      "description": ""
+    },
+    {
+      "id": "winding road (north to swamp)",
+      "label": "winding road (north to swamp)",
+      "description": ""
+    },
+    {
+      "id": "winding road (start of southwest-ward road)",
+      "label": "winding road (start of southwest-ward road)",
+      "description": ""
+    },
+    {
+      "id": "your room, on the bed",
+      "label": "your room, on the bed",
+      "description": ""
+    }
+  ],
+  "walkthrough": [],
+  "states": {
+    "gt": {
+      "edges": [
+        {
+          "src": "your room, on the bed",
+          "dst": "upstairs hallway",
+          "dir": "north"
+        },
+        {
+          "src": "upstairs hallway",
+          "dst": "red boar inn",
+          "dir": "north"
+        },
+        {
+          "src": "upstairs hallway",
+          "dst": "your room, on the bed",
+          "dir": "south"
+        },
+        {
+          "src": "red boar inn",
+          "dst": "wharf road (end of east/west road)",
+          "dir": "north"
+        },
+        {
+          "src": "red boar inn",
+          "dst": "upstairs hallway",
+          "dir": "south"
+        },
+        {
+          "src": "wharf road (end of east/west road)",
+          "dst": "wharf road (north to mcginty salvage)",
+          "dir": "east"
+        },
+        {
+          "src": "wharf road (end of east/west road)",
+          "dst": "winding road (start of southwest-ward road)",
+          "dir": "southwest"
+        },
+        {
+          "src": "wharf road (end of east/west road)",
+          "dst": "red boar inn",
+          "dir": "south"
+        },
+        {
+          "src": "wharf road (north to mcginty salvage)",
+          "dst": "wharf road (north to outfitters international former warehouse)",
+          "dir": "east"
+        },
+        {
+          "src": "wharf road (north to mcginty salvage)",
+          "dst": "wharf road (end of east/west road)",
+          "dir": "west"
+        },
+        {
+          "src": "winding road (start of southwest-ward road)",
+          "dst": "winding road (north to swamp)",
+          "dir": "southwest"
+        },
+        {
+          "src": "winding road (start of southwest-ward road)",
+          "dst": "wharf road (end of east/west road)",
+          "dir": "northeast"
+        },
+        {
+          "src": "wharf road (north to outfitters international former warehouse)",
+          "dst": "wharf road (north to outfitters international)",
+          "dir": "east"
+        },
+        {
+          "src": "wharf road (north to outfitters international former warehouse)",
+          "dst": "vacant lot",
+          "dir": "south"
+        },
+        {
+          "src": "wharf road (north to outfitters international former warehouse)",
+          "dst": "wharf road (north to mcginty salvage)",
+          "dir": "west"
+        },
+        {
+          "src": "wharf road (north to outfitters international)",
+          "dst": "wharf road (east end of east/west road)",
+          "dir": "east"
+        },
+        {
+          "src": "wharf road (north to outfitters international)",
+          "dst": "wharf road (north to outfitters international former warehouse)",
+          "dir": "west"
+        },
+        {
+          "src": "vacant lot",
+          "dst": "back alley (south to vacant lot)",
+          "dir": "south"
+        },
+        {
+          "src": "vacant lot",
+          "dst": "wharf road (north to outfitters international former warehouse)",
+          "dir": "north"
+        },
+        {
+          "src": "wharf road (east end of east/west road)",
+          "dst": "the shanty",
+          "dir": "south"
+        },
+        {
+          "src": "wharf road (east end of east/west road)",
+          "dst": "wharf road (north to outfitters international)",
+          "dir": "west"
+        },
+        {
+          "src": "the shanty",
+          "dst": "wharf road (east end of east/west road)",
+          "dir": "north"
+        },
+        {
+          "src": "back alley (south to vacant lot)",
+          "dst": "back alley (back door of mcginty salvage)",
+          "dir": "west"
+        },
+        {
+          "src": "back alley (south to vacant lot)",
+          "dst": "back alley (behind outfitters international)",
+          "dir": "east"
+        },
+        {
+          "src": "back alley (south to vacant lot)",
+          "dst": "vacant lot",
+          "dir": "north"
+        },
+        {
+          "src": "back alley (back door of mcginty salvage)",
+          "dst": "back alley (west end of east/west alley)",
+          "dir": "west"
+        },
+        {
+          "src": "back alley (back door of mcginty salvage)",
+          "dst": "back alley (south to vacant lot)",
+          "dir": "east"
+        },
+        {
+          "src": "back alley (behind outfitters international)",
+          "dst": "back alley (east end of east/west alley)",
+          "dir": "east"
+        },
+        {
+          "src": "back alley (behind outfitters international)",
+          "dst": "back alley (south to vacant lot)",
+          "dir": "west"
+        },
+        {
+          "src": "back alley (west end of east/west alley)",
+          "dst": "back alley (back door of mcginty salvage)",
+          "dir": "east"
+        },
+        {
+          "src": "back alley (east end of east/west alley)",
+          "dst": "ocean road (north end of north/south road)",
+          "dir": "northeast"
+        },
+        {
+          "src": "back alley (east end of east/west alley)",
+          "dst": "back alley (behind outfitters international)",
+          "dir": "west"
+        },
+        {
+          "src": "back alley (east end of east/west alley)",
+          "dst": "ocean road (halfway of north/south road)",
+          "dir": "southeast"
+        },
+        {
+          "src": "ocean road (north end of north/south road)",
+          "dst": "ocean road (halfway of north/south road)",
+          "dir": "south"
+        },
+        {
+          "src": "ocean road (north end of north/south road)",
+          "dst": "back alley (east end of east/west alley)",
+          "dir": "southwest"
+        },
+        {
+          "src": "ocean road (halfway of north/south road)",
+          "dst": "ocean road (south end of north/south road)",
+          "dir": "south"
+        },
+        {
+          "src": "ocean road (halfway of north/south road)",
+          "dst": "back alley (east end of east/west alley)",
+          "dir": "northwest"
+        },
+        {
+          "src": "ocean road (halfway of north/south road)",
+          "dst": "ocean road (north end of north/south road)",
+          "dir": "north"
+        },
+        {
+          "src": "ocean road (south end of north/south road)",
+          "dst": "shore road (east end of east/west road)",
+          "dir": "southwest"
+        },
+        {
+          "src": "ocean road (south end of north/south road)",
+          "dst": "ocean road (halfway of north/south road)",
+          "dir": "north"
+        },
+        {
+          "src": "shore road (east end of east/west road)",
+          "dst": "shore road (west end of east/west road)",
+          "dir": "west"
+        },
+        {
+          "src": "shore road (east end of east/west road)",
+          "dst": "mariners' trust",
+          "dir": "north"
+        },
+        {
+          "src": "shore road (east end of east/west road)",
+          "dst": "ocean road (south end of north/south road)",
+          "dir": "northeast"
+        },
+        {
+          "src": "shore road (west end of east/west road)",
+          "dst": "ferry landing",
+          "dir": "west"
+        },
+        {
+          "src": "shore road (west end of east/west road)",
+          "dst": "shore road (east end of east/west road)",
+          "dir": "east"
+        },
+        {
+          "src": "mariners' trust",
+          "dst": "shore road (east end of east/west road)",
+          "dir": "south"
+        },
+        {
+          "src": "ferry landing",
+          "dst": "shore road (west end of east/west road)",
+          "dir": "east"
+        },
+        {
+          "src": "winding road (north to swamp)",
+          "dst": "winding road (end at lighthouse)",
+          "dir": "northwest"
+        },
+        {
+          "src": "winding road (north to swamp)",
+          "dst": "winding road (start of southwest-ward road)",
+          "dir": "northeast"
+        }
+      ]
+    },
+    "llm_built": {
+      "edges": [
+        {
+          "src": "upstairs hallway",
+          "dst": "red boar inn",
+          "dir": "north",
+          "kind": "correct"
+        },
+        {
+          "src": "red boar inn",
+          "dst": "wharf road (east end of east/west road)",
+          "dir": "north",
+          "kind": "wrong_dst"
+        },
+        {
+          "src": "wharf road (east end of east/west road)",
+          "dst": "wharf road (north to mcginty salvage)",
+          "dir": "east",
+          "kind": "spurious"
+        },
+        {
+          "src": "wharf road (east end of east/west road)",
+          "dst": "wharf road (end of east/west road)",
+          "dir": "east",
+          "kind": "spurious"
+        },
+        {
+          "src": "wharf road (east end of east/west road)",
+          "dst": "vacant lot",
+          "dir": "south",
+          "kind": "wrong_dst"
+        },
+        {
+          "src": "wharf road (east end of east/west road)",
+          "dst": "winding road (start of southwest-ward road)",
+          "dir": "southwest",
+          "kind": "spurious"
+        },
+        {
+          "src": "wharf road (north to mcginty salvage)",
+          "dst": "wharf road (north to outfitters international former warehouse)",
+          "dir": "east",
+          "kind": "correct"
+        },
+        {
+          "src": "wharf road (north to outfitters international former warehouse)",
+          "dst": "wharf road (east end of east/west road)",
+          "dir": "east",
+          "kind": "wrong_dst"
+        },
+        {
+          "src": "wharf road (north to outfitters international former warehouse)",
+          "dst": "wharf road (end of east/west road)",
+          "dir": "west",
+          "kind": "wrong_dst"
+        },
+        {
+          "src": "wharf road (end of east/west road)",
+          "dst": "wharf road (east end of east/west road)",
+          "dir": "west",
+          "kind": "spurious"
+        },
+        {
+          "src": "wharf road (end of east/west road)",
+          "dst": "the shanty",
+          "dir": "south",
+          "kind": "wrong_dst"
+        },
+        {
+          "src": "the shanty",
+          "dst": "wharf road (east end of east/west road)",
+          "dir": "north",
+          "kind": "correct"
+        },
+        {
+          "src": "vacant lot",
+          "dst": "back alley (south to vacant lot)",
+          "dir": "south",
+          "kind": "correct"
+        },
+        {
+          "src": "vacant lot",
+          "dst": "wharf road (north to outfitters international former warehouse)",
+          "dir": "north",
+          "kind": "correct"
+        },
+        {
+          "src": "back alley (south to vacant lot)",
+          "dst": "back alley (west end of east/west alley)",
+          "dir": "west",
+          "kind": "wrong_dst"
+        },
+        {
+          "src": "back alley (west end of east/west alley)",
+          "dst": "back alley (south to vacant lot)",
+          "dir": "west",
+          "kind": "spurious"
+        },
+        {
+          "src": "back alley (west end of east/west alley)",
+          "dst": "back alley (east end of east/west alley)",
+          "dir": "east",
+          "kind": "wrong_dst"
+        },
+        {
+          "src": "back alley (west end of east/west alley)",
+          "dst": "vacant lot",
+          "dir": "north",
+          "kind": "spurious"
+        },
+        {
+          "src": "back alley (east end of east/west alley)",
+          "dst": "back alley (behind outfitters international)",
+          "dir": "east",
+          "kind": "wrong_direction"
+        },
+        {
+          "src": "back alley (east end of east/west alley)",
+          "dst": "ocean road (north end of north/south road)",
+          "dir": "northeast",
+          "kind": "correct"
+        },
+        {
+          "src": "back alley (behind outfitters international)",
+          "dst": "back alley (east end of east/west alley)",
+          "dir": "east",
+          "kind": "correct"
+        },
+        {
+          "src": "ocean road (north end of north/south road)",
+          "dst": "ocean road (halfway of north/south road)",
+          "dir": "south",
+          "kind": "correct"
+        },
+        {
+          "src": "ocean road (north end of north/south road)",
+          "dst": "back alley (west end of east/west alley)",
+          "dir": "northwest",
+          "kind": "spurious"
+        },
+        {
+          "src": "ocean road (halfway of north/south road)",
+          "dst": "ocean road (north end of north/south road)",
+          "dir": "north",
+          "kind": "correct"
+        },
+        {
+          "src": "ocean road (halfway of north/south road)",
+          "dst": "ocean road (south end of north/south road)",
+          "dir": "south",
+          "kind": "correct"
+        },
+        {
+          "src": "ocean road (south end of north/south road)",
+          "dst": "shore road (east end of east/west road)",
+          "dir": "southwest",
+          "kind": "correct"
+        },
+        {
+          "src": "shore road (east end of east/west road)",
+          "dst": "shore road (west end of east/west road)",
+          "dir": "west",
+          "kind": "correct"
+        },
+        {
+          "src": "shore road (east end of east/west road)",
+          "dst": "mariners' trust",
+          "dir": "north",
+          "kind": "correct"
+        },
+        {
+          "src": "shore road (west end of east/west road)",
+          "dst": "shore road (east end of east/west road)",
+          "dir": "east",
+          "kind": "correct"
+        },
+        {
+          "src": "shore road (west end of east/west road)",
+          "dst": "ferry landing",
+          "dir": "west",
+          "kind": "correct"
+        },
+        {
+          "src": "ferry landing",
+          "dst": "shore road (west end of east/west road)",
+          "dir": "east",
+          "kind": "correct"
+        },
+        {
+          "src": "mariners' trust",
+          "dst": "shore road",
+          "dir": "south",
+          "kind": "hallucinated_dst"
+        },
+        {
+          "src": "shore road",
+          "dst": "ocean road (halfway of north/south road)",
+          "dir": "northeast",
+          "kind": "hallucinated_src"
+        },
+        {
+          "src": "winding road (start of southwest-ward road)",
+          "dst": "winding road (north to swamp)",
+          "dir": "southwest",
+          "kind": "correct"
+        },
+        {
+          "src": "winding road (north to swamp)",
+          "dst": "winding road (end at lighthouse)",
+          "dir": "northwest",
+          "kind": "correct"
+        }
+      ],
+      "n_correct": 18,
+      "n_wrong_direction": 1,
+      "n_wrong_dst": 7,
+      "n_spurious": 7,
+      "n_hallucinated_dst": 1,
+      "n_hallucinated_src": 1,
+      "conflicts": [
+        {
+          "type": "direction",
+          "severity": "high",
+          "description": "node 'wharf road (east end of east/west road)' has multiple outgoing edges labelled 'south'",
+          "edges": [
+            [
+              "wharf road (east end of east/west road)",
+              "red boar inn"
+            ],
+            [
+              "wharf road (east end of east/west road)",
+              "the shanty"
+            ],
+            [
+              "wharf road (east end of east/west road)",
+              "vacant lot"
+            ]
+          ]
+        },
+        {
+          "type": "direction",
+          "severity": "high",
+          "description": "node 'wharf road (east end of east/west road)' has multiple outgoing edges labelled 'east'",
+          "edges": [
+            [
+              "wharf road (east end of east/west road)",
+              "wharf road (north to mcginty salvage)"
+            ],
+            [
+              "wharf road (east end of east/west road)",
+              "wharf road (end of east/west road)"
+            ]
+          ]
+        },
+        {
+          "type": "direction",
+          "severity": "high",
+          "description": "node 'wharf road (north to outfitters international former warehouse)' has multiple outgoing edges labelled 'west'",
+          "edges": [
+            [
+              "wharf road (north to outfitters international former warehouse)",
+              "wharf road (north to mcginty salvage)"
+            ],
+            [
+              "wharf road (north to outfitters international former warehouse)",
+              "wharf road (end of east/west road)"
+            ]
+          ]
+        },
+        {
+          "type": "direction",
+          "severity": "high",
+          "description": "node 'the shanty' has multiple outgoing edges labelled 'north'",
+          "edges": [
+            [
+              "the shanty",
+              "wharf road (end of east/west road)"
+            ],
+            [
+              "the shanty",
+              "wharf road (east end of east/west road)"
+            ]
+          ]
+        },
+        {
+          "type": "direction",
+          "severity": "high",
+          "description": "node 'vacant lot' has multiple outgoing edges labelled 'north'",
+          "edges": [
+            [
+              "vacant lot",
+              "wharf road (east end of east/west road)"
+            ],
+            [
+              "vacant lot",
+              "wharf road (north to outfitters international former warehouse)"
+            ]
+          ]
+        },
+        {
+          "type": "direction",
+          "severity": "high",
+          "description": "node 'vacant lot' has multiple outgoing edges labelled 'south'",
+          "edges": [
+            [
+              "vacant lot",
+              "back alley (south to vacant lot)"
+            ],
+            [
+              "vacant lot",
+              "back alley (west end of east/west alley)"
+            ]
+          ]
+        },
+        {
+          "type": "direction",
+          "severity": "high",
+          "description": "node \"mariners' trust\" has multiple outgoing edges labelled 'south'",
+          "edges": [
+            [
+              "mariners' trust",
+              "shore road (east end of east/west road)"
+            ],
+            [
+              "mariners' trust",
+              "shore road"
+            ]
+          ]
+        },
+        {
+          "type": "topology",
+          "severity": "high",
+          "description": "reverse direction mismatch: back alley (south to vacant lot)--[west]-->back alley (west end of east/west alley) but back alley (west end of east/west alley)--[west]-->back alley (south to vacant lot) (expected east)",
+          "edges": [
+            [
+              "back alley (south to vacant lot)",
+              "back alley (west end of east/west alley)"
+            ],
+            [
+              "back alley (west end of east/west alley)",
+              "back alley (south to vacant lot)"
+            ]
+          ]
+        },
+        {
+          "type": "topology",
+          "severity": "high",
+          "description": "reverse direction mismatch: back alley (east end of east/west alley)--[east]-->back alley (behind outfitters international) but back alley (behind outfitters international)--[east]-->back alley (east end of east/west alley) (expected west)",
+          "edges": [
+            [
+              "back alley (east end of east/west alley)",
+              "back alley (behind outfitters international)"
+            ],
+            [
+              "back alley (behind outfitters international)",
+              "back alley (east end of east/west alley)"
+            ]
+          ]
+        },
+        {
+          "type": "topology",
+          "severity": "high",
+          "description": "position (1, 0, 0) occupied by multiple rooms ['back alley (behind outfitters international)', 'back alley (east end of east/west alley)', 'ocean road (halfway of north/south road)', 'ocean road (south end of north/south road)']",
+          "edges": []
+        },
+        {
+          "type": "topology",
+          "severity": "high",
+          "description": "position (2, 0, 0) occupied by multiple rooms ['back alley (behind outfitters international)', 'back alley (east end of east/west alley)', 'ocean road (halfway of north/south road)']",
+          "edges": []
+        },
+        {
+          "type": "topology",
+          "severity": "high",
+          "description": "position (0, 0, 0) occupied by multiple rooms ['back alley (behind outfitters international)', 'back alley (east end of east/west alley)', 'back alley (west end of east/west alley)', \"mariners' trust\", 'shore road', 'shore road (east end of east/west road)']",
+          "edges": []
+        },
+        {
+          "type": "topology",
+          "severity": "high",
+          "description": "position (2, 2, 0) occupied by multiple rooms ['back alley (behind outfitters international)', 'back alley (east end of east/west alley)', 'upstairs hallway']",
+          "edges": []
+        },
+        {
+          "type": "topology",
+          "severity": "high",
+          "description": "position (3, 2, 0) occupied by multiple rooms ['back alley (behind outfitters international)', 'back alley (east end of east/west alley)']",
+          "edges": []
+        },
+        {
+          "type": "topology",
+          "severity": "high",
+          "description": "position (0, 1, 0) occupied by multiple rooms ['back alley (east end of east/west alley)', \"mariners' trust\", 'shore road', 'shore road (east end of east/west road)', 'vacant lot']",
+          "edges": []
+        },
+        {
+          "type": "topology",
+          "severity": "high",
+          "description": "position (1, 2, 0) occupied by multiple rooms ['back alley (east end of east/west alley)', 'back alley (south to vacant lot)', 'back alley (west end of east/west alley)', 'ocean road (halfway of north/south road)', 'ocean road (north end of north/south road)', 'ocean road (south end of north/south road)', 'upstairs hallway']",
+          "edges": []
+        },
+        {
+          "type": "topology",
+          "severity": "high",
+          "description": "position (0, 2, 0) occupied by multiple rooms ['back alley (east end of east/west alley)', 'back alley (south to vacant lot)', 'back alley (west end of east/west alley)', \"mariners' trust\", 'upstairs hallway', 'winding road (north to swamp)']",
+          "edges": []
+        },
+        {
+          "type": "topology",
+          "severity": "high",
+          "description": "position (1, 4, 0) occupied by multiple rooms ['back alley (east end of east/west alley)', 'wharf road (east end of east/west road)', 'wharf road (end of east/west road)', 'wharf road (north to mcginty salvage)', 'wharf road (north to outfitters international former warehouse)']",
+          "edges": []
+        },
+        {
+          "type": "topology",
+          "severity": "high",
+          "description": "position (0, 3, 0) occupied by multiple rooms ['back alley (west end of east/west alley)', 'red boar inn', 'the shanty', 'vacant lot', 'winding road (start of southwest-ward road)']",
+          "edges": []
+        },
+        {
+          "type": "topology",
+          "severity": "high",
+          "description": "position (-2, 4, 0) occupied by multiple rooms ['back alley (west end of east/west alley)', 'wharf road (east end of east/west road)', 'wharf road (end of east/west road)', 'wharf road (north to mcginty salvage)', 'wharf road (north to outfitters international former warehouse)']",
+          "edges": []
+        },
+        {
+          "type": "topology",
+          "severity": "high",
+          "description": "position (0, 4, 0) occupied by multiple rooms ['back alley (south to vacant lot)', 'back alley (west end of east/west alley)', 'wharf road (east end of east/west road)', 'wharf road (end of east/west road)', 'wharf road (north to mcginty salvage)', 'wharf road (north to outfitters international former warehouse)']",
+          "edges": []
+        },
+        {
+          "type": "topology",
+          "severity": "high",
+          "description": "position (-1, 4, 0) occupied by multiple rooms ['back alley (south to vacant lot)', 'back alley (west end of east/west alley)', 'wharf road (east end of east/west road)', 'wharf road (end of east/west road)', 'wharf road (north to mcginty salvage)', 'wharf road (north to outfitters international former warehouse)']",
+          "edges": []
+        },
+        {
+          "type": "topology",
+          "severity": "high",
+          "description": "position (-1, 0, 0) occupied by multiple rooms ['back alley (south to vacant lot)', 'back alley (west end of east/west alley)', 'shore road (west end of east/west road)']",
+          "edges": []
+        },
+        {
+          "type": "topology",
+          "severity": "high",
+          "description": "position (-1, 2, 0) occupied by multiple rooms ['back alley (south to vacant lot)', 'back alley (west end of east/west alley)', 'upstairs hallway', 'winding road (north to swamp)']",
+          "edges": []
+        },
+        {
+          "type": "topology",
+          "severity": "high",
+          "description": "position (-2, 2, 0) occupied by multiple rooms ['back alley (west end of east/west alley)', 'winding road (north to swamp)']",
+          "edges": []
+        },
+        {
+          "type": "topology",
+          "severity": "high",
+          "description": "position (1, -1, 0) occupied by multiple rooms ['ocean road (halfway of north/south road)', 'ocean road (north end of north/south road)', 'ocean road (south end of north/south road)', 'shore road']",
+          "edges": []
+        },
+        {
+          "type": "topology",
+          "severity": "high",
+          "description": "position (1, 1, 0) occupied by multiple rooms ['ocean road (halfway of north/south road)', 'ocean road (north end of north/south road)', 'ocean road (south end of north/south road)']",
+          "edges": []
+        },
+        {
+          "type": "topology",
+          "severity": "high",
+          "description": "position (1, 3, 0) occupied by multiple rooms ['ocean road (halfway of north/south road)', 'ocean road (north end of north/south road)', 'red boar inn', 'the shanty', 'vacant lot', 'winding road (start of southwest-ward road)']",
+          "edges": []
+        },
+        {
+          "type": "topology",
+          "severity": "high",
+          "description": "position (2, 3, 0) occupied by multiple rooms ['ocean road (north end of north/south road)', 'red boar inn', 'the shanty', 'vacant lot']",
+          "edges": []
+        },
+        {
+          "type": "topology",
+          "severity": "high",
+          "description": "position (-1, 5, 0) occupied by multiple rooms ['the shanty', 'vacant lot']",
+          "edges": []
+        },
+        {
+          "type": "topology",
+          "severity": "high",
+          "description": "position (-1, 3, 0) occupied by multiple rooms ['red boar inn', 'the shanty', 'vacant lot', 'winding road (end at lighthouse)', 'winding road (start of southwest-ward road)']",
+          "edges": []
+        },
+        {
+          "type": "topology",
+          "severity": "high",
+          "description": "position (2, 4, 0) occupied by multiple rooms ['wharf road (east end of east/west road)', 'wharf road (end of east/west road)', 'wharf road (north to mcginty salvage)', 'wharf road (north to outfitters international former warehouse)']",
+          "edges": []
+        },
+        {
+          "type": "topology",
+          "severity": "high",
+          "description": "position (0, 6, 0) occupied by multiple rooms ['wharf road (east end of east/west road)', 'wharf road (north to outfitters international former warehouse)']",
+          "edges": []
+        },
+        {
+          "type": "topology",
+          "severity": "high",
+          "description": "position (-1, 6, 0) occupied by multiple rooms ['wharf road (east end of east/west road)', 'wharf road (end of east/west road)', 'wharf road (north to mcginty salvage)', 'wharf road (north to outfitters international former warehouse)']",
+          "edges": []
+        },
+        {
+          "type": "topology",
+          "severity": "high",
+          "description": "position (3, 4, 0) occupied by multiple rooms ['wharf road (end of east/west road)', 'wharf road (north to mcginty salvage)']",
+          "edges": []
+        },
+        {
+          "type": "topology",
+          "severity": "high",
+          "description": "position (-2, 3, 0) occupied by multiple rooms ['winding road (end at lighthouse)', 'winding road (start of southwest-ward road)']",
+          "edges": []
+        },
+        {
+          "type": "topology",
+          "severity": "high",
+          "description": "position (0, -1, 0) occupied by multiple rooms [\"mariners' trust\", 'shore road', 'shore road (east end of east/west road)']",
+          "edges": []
+        },
+        {
+          "type": "topology",
+          "severity": "high",
+          "description": "position (0, -2, 0) occupied by multiple rooms ['shore road', 'shore road (east end of east/west road)']",
+          "edges": []
+        },
+        {
+          "type": "naming",
+          "severity": "high",
+          "description": "node 'back alley (behind outfitters international)' reachable at conflicting positions [(0, 0, 0), (1, 0, 0), (2, 0, 0), (2, 2, 0), (3, 2, 0)]",
+          "edges": []
+        },
+        {
+          "type": "naming",
+          "severity": "high",
+          "description": "node 'back alley (east end of east/west alley)' reachable at conflicting positions [(0, 0, 0), (0, 1, 0), (0, 2, 0), (1, 0, 0), (1, 2, 0), (1, 4, 0), (2, 0, 0), (2, 2, 0), (3, 0, 0), (3, 2, 0)]",
+          "edges": []
+        },
+        {
+          "type": "naming",
+          "severity": "high",
+          "description": "node 'back alley (west end of east/west alley)' reachable at conflicting positions [(-2, 2, 0), (-2, 4, 0), (-1, 0, 0), (-1, 2, 0), (-1, 4, 0), (0, 0, 0), (0, 2, 0), (0, 3, 0), (0, 4, 0), (1, 2, 0)]",
+          "edges": []
+        },
+        {
+          "type": "naming",
+          "severity": "high",
+          "description": "node 'ocean road (north end of north/south road)' reachable at conflicting positions [(1, -1, 0), (1, 1, 0), (1, 2, 0), (1, 3, 0), (2, 1, 0), (2, 3, 0), (3, 3, 0)]",
+          "edges": []
+        },
+        {
+          "type": "naming",
+          "severity": "high",
+          "description": "node 'ocean road (halfway of north/south road)' reachable at conflicting positions [(1, -1, 0), (1, 0, 0), (1, 1, 0), (1, 2, 0), (1, 3, 0), (2, 0, 0)]",
+          "edges": []
+        },
+        {
+          "type": "naming",
+          "severity": "high",
+          "description": "node 'back alley (south to vacant lot)' reachable at conflicting positions [(-1, 0, 0), (-1, 2, 0), (-1, 4, 0), (0, 2, 0), (0, 4, 0), (1, 2, 0)]",
+          "edges": []
+        },
+        {
+          "type": "naming",
+          "severity": "high",
+          "description": "node 'vacant lot' reachable at conflicting positions [(-1, 3, 0), (-1, 5, 0), (0, 1, 0), (0, 3, 0), (0, 5, 0), (1, 3, 0), (2, 3, 0)]",
+          "edges": []
+        },
+        {
+          "type": "naming",
+          "severity": "high",
+          "description": "node 'wharf road (east end of east/west road)' reachable at conflicting positions [(-2, 4, 0), (-2, 6, 0), (-1, 4, 0), (-1, 6, 0), (0, 4, 0), (0, 6, 0), (1, 4, 0), (1, 6, 0), (2, 4, 0)]",
+          "edges": []
+        },
+        {
+          "type": "naming",
+          "severity": "high",
+          "description": "node 'wharf road (north to outfitters international former warehouse)' reachable at conflicting positions [(-2, 4, 0), (-1, 4, 0), (-1, 6, 0), (0, 4, 0), (0, 6, 0), (1, 4, 0), (2, 4, 0)]",
+          "edges": []
+        },
+        {
+          "type": "naming",
+          "severity": "high",
+          "description": "node 'wharf road (north to mcginty salvage)' reachable at conflicting positions [(-2, 4, 0), (-1, 4, 0), (-1, 6, 0), (0, 4, 0), (1, 4, 0), (2, 4, 0), (3, 4, 0)]",
+          "edges": []
+        },
+        {
+          "type": "naming",
+          "severity": "high",
+          "description": "node 'wharf road (end of east/west road)' reachable at conflicting positions [(-2, 4, 0), (-1, 4, 0), (-1, 6, 0), (0, 4, 0), (1, 4, 0), (2, 4, 0), (3, 4, 0)]",
+          "edges": []
+        },
+        {
+          "type": "naming",
+          "severity": "high",
+          "description": "node 'the shanty' reachable at conflicting positions [(-1, 3, 0), (-1, 5, 0), (0, 3, 0), (1, 3, 0), (2, 3, 0)]",
+          "edges": []
+        },
+        {
+          "type": "naming",
+          "severity": "high",
+          "description": "node 'red boar inn' reachable at conflicting positions [(-1, 3, 0), (0, 3, 0), (1, 3, 0), (2, 3, 0)]",
+          "edges": []
+        },
+        {
+          "type": "naming",
+          "severity": "high",
+          "description": "node 'winding road (start of southwest-ward road)' reachable at conflicting positions [(-2, 3, 0), (-1, 3, 0), (0, 3, 0), (1, 3, 0)]",
+          "edges": []
+        },
+        {
+          "type": "naming",
+          "severity": "high",
+          "description": "node 'winding road (north to swamp)' reachable at conflicting positions [(-3, 2, 0), (-2, 2, 0), (-1, 2, 0), (0, 2, 0)]",
+          "edges": []
+        },
+        {
+          "type": "naming",
+          "severity": "high",
+          "description": "node 'winding road (end at lighthouse)' reachable at conflicting positions [(-4, 3, 0), (-3, 3, 0), (-2, 3, 0), (-1, 3, 0)]",
+          "edges": []
+        },
+        {
+          "type": "naming",
+          "severity": "high",
+          "description": "node 'ocean road (south end of north/south road)' reachable at conflicting positions [(1, -1, 0), (1, 0, 0), (1, 1, 0), (1, 2, 0), (2, -1, 0)]",
+          "edges": []
+        },
+        {
+          "type": "naming",
+          "severity": "high",
+          "description": "node 'shore road' reachable at conflicting positions [(0, -2, 0), (0, -1, 0), (0, 0, 0), (0, 1, 0), (1, -1, 0)]",
+          "edges": []
+        },
+        {
+          "type": "naming",
+          "severity": "high",
+          "description": "node \"mariners' trust\" reachable at conflicting positions [(0, -1, 0), (0, 0, 0), (0, 1, 0), (0, 2, 0)]",
+          "edges": []
+        },
+        {
+          "type": "naming",
+          "severity": "high",
+          "description": "node 'shore road (east end of east/west road)' reachable at conflicting positions [(0, -2, 0), (0, -1, 0), (0, 0, 0), (0, 1, 0)]",
+          "edges": []
+        },
+        {
+          "type": "naming",
+          "severity": "high",
+          "description": "node 'shore road (west end of east/west road)' reachable at conflicting positions [(-1, -2, 0), (-1, -1, 0), (-1, 0, 0), (-1, 1, 0)]",
+          "edges": []
+        },
+        {
+          "type": "naming",
+          "severity": "high",
+          "description": "node 'ferry landing' reachable at conflicting positions [(-2, -2, 0), (-2, -1, 0), (-2, 0, 0), (-2, 1, 0)]",
+          "edges": []
+        },
+        {
+          "type": "naming",
+          "severity": "high",
+          "description": "node 'upstairs hallway' reachable at conflicting positions [(-1, 2, 0), (0, 2, 0), (1, 2, 0), (2, 2, 0)]",
+          "edges": []
+        }
+      ]
+    },
+    "repaired": {
+      "edges": [
+        {
+          "src": "upstairs hallway",
+          "dst": "red boar inn",
+          "dir": "north"
+        },
+        {
+          "src": "red boar inn",
+          "dst": "wharf road (east end of east/west road)",
+          "dir": "north"
+        },
+        {
+          "src": "wharf road (east end of east/west road)",
+          "dst": "wharf road (north to mcginty salvage)",
+          "dir": "east"
+        },
+        {
+          "src": "wharf road (east end of east/west road)",
+          "dst": "vacant lot",
+          "dir": "southeast"
+        },
+        {
+          "src": "wharf road (north to mcginty salvage)",
+          "dst": "wharf road (north to outfitters international former warehouse)",
+          "dir": "east"
+        },
+        {
+          "src": "wharf road (north to outfitters international former warehouse)",
+          "dst": "wharf road (east end of east/west road)",
+          "dir": "east"
+        },
+        {
+          "src": "wharf road (end of east/west road)",
+          "dst": "wharf road (east end of east/west road)",
+          "dir": "west"
+        },
+        {
+          "src": "wharf road (end of east/west road)",
+          "dst": "the shanty",
+          "dir": "south"
+        },
+        {
+          "src": "back alley (west end of east/west alley)",
+          "dst": "back alley (south to vacant lot)",
+          "dir": "west"
+        },
+        {
+          "src": "back alley (west end of east/west alley)",
+          "dst": "back alley (east end of east/west alley)",
+          "dir": "east"
+        },
+        {
+          "src": "back alley (east end of east/west alley)",
+          "dst": "ocean road (north end of north/south road)",
+          "dir": "northeast"
+        },
+        {
+          "src": "back alley (behind outfitters international)",
+          "dst": "back alley (east end of east/west alley)",
+          "dir": "up"
+        },
+        {
+          "src": "ocean road (north end of north/south road)",
+          "dst": "back alley (west end of east/west alley)",
+          "dir": "northeast"
+        },
+        {
+          "src": "ocean road (halfway of north/south road)",
+          "dst": "ocean road (north end of north/south road)",
+          "dir": "north"
+        },
+        {
+          "src": "ocean road (halfway of north/south road)",
+          "dst": "ocean road (south end of north/south road)",
+          "dir": "south"
+        },
+        {
+          "src": "ocean road (south end of north/south road)",
+          "dst": "shore road (east end of east/west road)",
+          "dir": "southwest"
+        },
+        {
+          "src": "shore road (east end of east/west road)",
+          "dst": "shore road (west end of east/west road)",
+          "dir": "west"
+        },
+        {
+          "src": "shore road (east end of east/west road)",
+          "dst": "mariners' trust",
+          "dir": "north"
+        },
+        {
+          "src": "shore road (west end of east/west road)",
+          "dst": "shore road (east end of east/west road)",
+          "dir": "east"
+        },
+        {
+          "src": "shore road (west end of east/west road)",
+          "dst": "ferry landing",
+          "dir": "west"
+        },
+        {
+          "src": "ferry landing",
+          "dst": "shore road (west end of east/west road)",
+          "dir": "east"
+        },
+        {
+          "src": "mariners' trust",
+          "dst": "shore road",
+          "dir": "up"
+        },
+        {
+          "src": "shore road",
+          "dst": "ocean road (halfway of north/south road)",
+          "dir": "northeast"
+        },
+        {
+          "src": "winding road (start of southwest-ward road)",
+          "dst": "winding road (north to swamp)",
+          "dir": "southwest"
+        },
+        {
+          "src": "winding road (north to swamp)",
+          "dst": "winding road (end at lighthouse)",
+          "dir": "northwest"
+        }
+      ],
+      "actions": [
+        {
+          "kind": "modify_edge",
+          "target": [
+            "vacant lot",
+            "wharf road (north to outfitters international former warehouse)"
+          ],
+          "new_dir": "northwest",
+          "reason": "rotate to free direction northwest"
+        },
+        {
+          "kind": "remove_edge",
+          "target": [
+            "back alley (east end of east/west alley)",
+            "back alley (behind outfitters international)"
+          ],
+          "new_dir": null,
+          "reason": "remove fallback"
+        },
+        {
+          "kind": "modify_edge",
+          "target": [
+            "wharf road (east end of east/west road)",
+            "vacant lot"
+          ],
+          "new_dir": "southeast",
+          "reason": "rotate to free direction southeast"
+        },
+        {
+          "kind": "remove_edge",
+          "target": [
+            "the shanty",
+            "wharf road (east end of east/west road)"
+          ],
+          "new_dir": null,
+          "reason": "remove fallback"
+        },
+        {
+          "kind": "remove_edge",
+          "target": [
+            "wharf road (east end of east/west road)",
+            "wharf road (end of east/west road)"
+          ],
+          "new_dir": null,
+          "reason": "remove fallback"
+        },
+        {
+          "kind": "modify_edge",
+          "target": [
+            "mariners' trust",
+            "shore road"
+          ],
+          "new_dir": "up",
+          "reason": "rotate to free direction up"
+        },
+        {
+          "kind": "remove_edge",
+          "target": [
+            "vacant lot",
+            "wharf road (north to outfitters international former warehouse)"
+          ],
+          "new_dir": null,
+          "reason": "remove fallback"
+        },
+        {
+          "kind": "remove_edge",
+          "target": [
+            "vacant lot",
+            "back alley (south to vacant lot)"
+          ],
+          "new_dir": null,
+          "reason": "remove fallback"
+        },
+        {
+          "kind": "remove_edge",
+          "target": [
+            "back alley (south to vacant lot)",
+            "back alley (west end of east/west alley)"
+          ],
+          "new_dir": null,
+          "reason": "remove fallback"
+        },
+        {
+          "kind": "remove_edge",
+          "target": [
+            "wharf road (north to outfitters international former warehouse)",
+            "wharf road (end of east/west road)"
+          ],
+          "new_dir": null,
+          "reason": "remove fallback"
+        },
+        {
+          "kind": "modify_edge",
+          "target": [
+            "back alley (west end of east/west alley)",
+            "vacant lot"
+          ],
+          "new_dir": "northwest",
+          "reason": "rotate to free direction northwest"
+        },
+        {
+          "kind": "remove_edge",
+          "target": [
+            "ocean road (north end of north/south road)",
+            "ocean road (halfway of north/south road)"
+          ],
+          "new_dir": null,
+          "reason": "remove fallback"
+        },
+        {
+          "kind": "modify_edge",
+          "target": [
+            "ocean road (north end of north/south road)",
+            "back alley (west end of east/west alley)"
+          ],
+          "new_dir": "northeast",
+          "reason": "rotate to free direction northeast"
+        },
+        {
+          "kind": "remove_edge",
+          "target": [
+            "wharf road (east end of east/west road)",
+            "winding road (start of southwest-ward road)"
+          ],
+          "new_dir": null,
+          "reason": "remove fallback"
+        },
+        {
+          "kind": "remove_edge",
+          "target": [
+            "back alley (west end of east/west alley)",
+            "vacant lot"
+          ],
+          "new_dir": null,
+          "reason": "remove fallback"
+        },
+        {
+          "kind": "modify_edge",
+          "target": [
+            "back alley (behind outfitters international)",
+            "back alley (east end of east/west alley)"
+          ],
+          "new_dir": "up",
+          "reason": "rotate to free direction up"
+        },
+        {
+          "kind": "skip",
+          "target": null,
+          "new_dir": null,
+          "reason": "no candidates"
+        }
+      ],
+      "n_conflicts_before": 61,
+      "n_conflicts_after": 11
+    }
+  }
+}

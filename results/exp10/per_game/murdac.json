@@ -1,0 +1,6256 @@
+{
+  "game": "murdac",
+  "num_llm_edges": 34,
+  "num_gt_edges": 48,
+  "num_conflicts": 76,
+  "type_distribution": {
+    "direction": 13,
+    "topology": 34,
+    "naming": 29
+  },
+  "root_cause_distribution": {
+    "real_vs_hallucinated": 7,
+    "all_hallucinated_edges": 2,
+    "name_hallucination": 11,
+    "name_hallucination_caused_overlap": 24,
+    "overlap_mixed": 9,
+    "false_positive_overlap": 1,
+    "real_name_corrupted_by_neighbour_error": 11,
+    "naming_collision_on_correct_subgraph": 11
+  },
+  "conflicts": [
+    {
+      "type": "direction",
+      "description": "node 'outside the house' has multiple outgoing edges labelled 'north'",
+      "involved_edges": [
+        [
+          "outside the house",
+          "flower garden"
+        ],
+        [
+          "outside the house",
+          "sandpit"
+        ],
+        [
+          "outside the house",
+          "inside the hut"
+        ]
+      ],
+      "involved_nodes": [
+        "outside the house",
+        "flower garden",
+        "sandpit",
+        "inside the hut"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "outside the house",
+            "flower garden"
+          ],
+          "llm_dir": "north",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 1
+        },
+        {
+          "edge": [
+            "outside the house",
+            "sandpit"
+          ],
+          "llm_dir": "north",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 16
+        },
+        {
+          "edge": [
+            "outside the house",
+            "inside the hut"
+          ],
+          "llm_dir": "north",
+          "in_gt": true,
+          "gt_dir": "north",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 28
+        }
+      ],
+      "case_counts": {
+        "hallucinated_edge": 2,
+        "correct": 1
+      },
+      "root_cause": "real_vs_hallucinated"
+    },
+    {
+      "type": "direction",
+      "description": "node 'flower garden' has multiple outgoing edges labelled 'south'",
+      "involved_edges": [
+        [
+          "flower garden",
+          "outside the house"
+        ],
+        [
+          "flower garden",
+          "remnants of a bonfire"
+        ]
+      ],
+      "involved_nodes": [
+        "flower garden",
+        "outside the house",
+        "remnants of a bonfire"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "flower garden",
+            "outside the house"
+          ],
+          "llm_dir": "south",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": null
+        },
+        {
+          "edge": [
+            "flower garden",
+            "remnants of a bonfire"
+          ],
+          "llm_dir": "south",
+          "in_gt": true,
+          "gt_dir": "south",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": null
+        }
+      ],
+      "case_counts": {
+        "hallucinated_edge": 1,
+        "correct": 1
+      },
+      "root_cause": "real_vs_hallucinated"
+    },
+    {
+      "type": "direction",
+      "description": "node 'alley (north/south)' has multiple outgoing edges labelled 'south'",
+      "involved_edges": [
+        [
+          "alley (north/south)",
+          "flower garden"
+        ],
+        [
+          "alley (north/south)",
+          "vegetable garden"
+        ]
+      ],
+      "involved_nodes": [
+        "alley (north/south)",
+        "flower garden",
+        "vegetable garden"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "alley (north/south)",
+            "flower garden"
+          ],
+          "llm_dir": "south",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": null
+        },
+        {
+          "edge": [
+            "alley (north/south)",
+            "vegetable garden"
+          ],
+          "llm_dir": "south",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 7
+        }
+      ],
+      "case_counts": {
+        "hallucinated_edge": 2
+      },
+      "root_cause": "all_hallucinated_edges"
+    },
+    {
+      "type": "direction",
+      "description": "node 'sandpit' has multiple outgoing edges labelled 'south'",
+      "involved_edges": [
+        [
+          "sandpit",
+          "outside the house"
+        ],
+        [
+          "sandpit",
+          "old untended grave"
+        ]
+      ],
+      "involved_nodes": [
+        "sandpit",
+        "outside the house",
+        "old untended grave"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "sandpit",
+            "outside the house"
+          ],
+          "llm_dir": "south",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": null
+        },
+        {
+          "edge": [
+            "sandpit",
+            "old untended grave"
+          ],
+          "llm_dir": "south",
+          "in_gt": true,
+          "gt_dir": "south",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 19
+        }
+      ],
+      "case_counts": {
+        "hallucinated_edge": 1,
+        "correct": 1
+      },
+      "root_cause": "real_vs_hallucinated"
+    },
+    {
+      "type": "direction",
+      "description": "node \"mad scientist's laboratory\" has multiple outgoing edges labelled 'west'",
+      "involved_edges": [
+        [
+          "mad scientist's laboratory",
+          "high tunnel (to the west of lab)"
+        ],
+        [
+          "mad scientist's laboratory",
+          "tunnel between the laboratory and the wiring"
+        ]
+      ],
+      "involved_nodes": [
+        "mad scientist's laboratory",
+        "high tunnel (to the west of lab)",
+        "tunnel between the laboratory and the wiring"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "mad scientist's laboratory",
+            "high tunnel (to the west of lab)"
+          ],
+          "llm_dir": "west",
+          "in_gt": true,
+          "gt_dir": "west",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 34
+        },
+        {
+          "edge": [
+            "mad scientist's laboratory",
+            "tunnel between the laboratory and the wiring"
+          ],
+          "llm_dir": "west",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "dst_hallucinated",
+          "source_in_gt": true,
+          "target_in_gt": false,
+          "step": null
+        }
+      ],
+      "case_counts": {
+        "correct": 1,
+        "dst_hallucinated": 1
+      },
+      "root_cause": "name_hallucination"
+    },
+    {
+      "type": "direction",
+      "description": "node 'wooden plank in east/west tunnel' has multiple outgoing edges labelled 'east'",
+      "involved_edges": [
+        [
+          "wooden plank in east/west tunnel",
+          "high tunnel (to the west of lab)"
+        ],
+        [
+          "wooden plank in east/west tunnel",
+          "tunnel between the laboratory and the wiring"
+        ]
+      ],
+      "involved_nodes": [
+        "wooden plank in east/west tunnel",
+        "high tunnel (to the west of lab)",
+        "tunnel between the laboratory and the wiring"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "wooden plank in east/west tunnel",
+            "high tunnel (to the west of lab)"
+          ],
+          "llm_dir": "east",
+          "in_gt": true,
+          "gt_dir": "east",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": null
+        },
+        {
+          "edge": [
+            "wooden plank in east/west tunnel",
+            "tunnel between the laboratory and the wiring"
+          ],
+          "llm_dir": "east",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "dst_hallucinated",
+          "source_in_gt": true,
+          "target_in_gt": false,
+          "step": 54
+        }
+      ],
+      "case_counts": {
+        "correct": 1,
+        "dst_hallucinated": 1
+      },
+      "root_cause": "name_hallucination"
+    },
+    {
+      "type": "direction",
+      "description": "node 'wooden plank in east/west tunnel' has multiple outgoing edges labelled 'west'",
+      "involved_edges": [
+        [
+          "wooden plank in east/west tunnel",
+          "high tunnel (east/west, alcove off to north)"
+        ],
+        [
+          "wooden plank in east/west tunnel",
+          "high tunnel (east/west, path to west)"
+        ]
+      ],
+      "involved_nodes": [
+        "wooden plank in east/west tunnel",
+        "high tunnel (east/west, alcove off to north)",
+        "high tunnel (east/west, path to west)"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "wooden plank in east/west tunnel",
+            "high tunnel (east/west, alcove off to north)"
+          ],
+          "llm_dir": "west",
+          "in_gt": true,
+          "gt_dir": "west",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 37
+        },
+        {
+          "edge": [
+            "wooden plank in east/west tunnel",
+            "high tunnel (east/west, path to west)"
+          ],
+          "llm_dir": "west",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 43
+        }
+      ],
+      "case_counts": {
+        "correct": 1,
+        "hallucinated_edge": 1
+      },
+      "root_cause": "real_vs_hallucinated"
+    },
+    {
+      "type": "direction",
+      "description": "node 'alcove' has multiple outgoing edges labelled 'south'",
+      "involved_edges": [
+        [
+          "alcove",
+          "high tunnel (east/west, alcove off to north)"
+        ],
+        [
+          "alcove",
+          "wooden plank in east/west tunnel"
+        ]
+      ],
+      "involved_nodes": [
+        "alcove",
+        "high tunnel (east/west, alcove off to north)",
+        "wooden plank in east/west tunnel"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "alcove",
+            "high tunnel (east/west, alcove off to north)"
+          ],
+          "llm_dir": "south",
+          "in_gt": true,
+          "gt_dir": "south",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": null
+        },
+        {
+          "edge": [
+            "alcove",
+            "wooden plank in east/west tunnel"
+          ],
+          "llm_dir": "south",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 42
+        }
+      ],
+      "case_counts": {
+        "correct": 1,
+        "hallucinated_edge": 1
+      },
+      "root_cause": "real_vs_hallucinated"
+    },
+    {
+      "type": "direction",
+      "description": "node 'high tunnel (east/west, path to west)' has multiple outgoing edges labelled 'east'",
+      "involved_edges": [
+        [
+          "high tunnel (east/west, path to west)",
+          "wooden plank in east/west tunnel"
+        ],
+        [
+          "high tunnel (east/west, path to west)",
+          "complicated junction of passages"
+        ]
+      ],
+      "involved_nodes": [
+        "high tunnel (east/west, path to west)",
+        "wooden plank in east/west tunnel",
+        "complicated junction of passages"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "high tunnel (east/west, path to west)",
+            "wooden plank in east/west tunnel"
+          ],
+          "llm_dir": "east",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": null
+        },
+        {
+          "edge": [
+            "high tunnel (east/west, path to west)",
+            "complicated junction of passages"
+          ],
+          "llm_dir": "east",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 69
+        }
+      ],
+      "case_counts": {
+        "hallucinated_edge": 2
+      },
+      "root_cause": "all_hallucinated_edges"
+    },
+    {
+      "type": "direction",
+      "description": "node 'complicated junction of passages' has multiple outgoing edges labelled 'west'",
+      "involved_edges": [
+        [
+          "complicated junction of passages",
+          "large quadrangular cellar"
+        ],
+        [
+          "complicated junction of passages",
+          "high tunnel (east/west, path to west)"
+        ]
+      ],
+      "involved_nodes": [
+        "complicated junction of passages",
+        "large quadrangular cellar",
+        "high tunnel (east/west, path to west)"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "complicated junction of passages",
+            "large quadrangular cellar"
+          ],
+          "llm_dir": "west",
+          "in_gt": true,
+          "gt_dir": "west",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": null
+        },
+        {
+          "edge": [
+            "complicated junction of passages",
+            "high tunnel (east/west, path to west)"
+          ],
+          "llm_dir": "west",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": null
+        }
+      ],
+      "case_counts": {
+        "correct": 1,
+        "hallucinated_edge": 1
+      },
+      "root_cause": "real_vs_hallucinated"
+    },
+    {
+      "type": "direction",
+      "description": "node 'entrance hall to haunted house' has multiple outgoing edges labelled 'west'",
+      "involved_edges": [
+        [
+          "entrance hall to haunted house",
+          "complicated junction of passages"
+        ],
+        [
+          "entrance hall to haunted house",
+          "large bedroom in haunted house"
+        ]
+      ],
+      "involved_nodes": [
+        "entrance hall to haunted house",
+        "complicated junction of passages",
+        "large bedroom in haunted house"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "entrance hall to haunted house",
+            "complicated junction of passages"
+          ],
+          "llm_dir": "west",
+          "in_gt": true,
+          "gt_dir": "west",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": null
+        },
+        {
+          "edge": [
+            "entrance hall to haunted house",
+            "large bedroom in haunted house"
+          ],
+          "llm_dir": "west",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 60
+        }
+      ],
+      "case_counts": {
+        "correct": 1,
+        "hallucinated_edge": 1
+      },
+      "root_cause": "real_vs_hallucinated"
+    },
+    {
+      "type": "direction",
+      "description": "node 'large bedroom in haunted house' has multiple outgoing edges labelled 'east'",
+      "involved_edges": [
+        [
+          "large bedroom in haunted house",
+          "entrance hall to haunted house"
+        ],
+        [
+          "large bedroom in haunted house",
+          "billiard room of the haunted house"
+        ]
+      ],
+      "involved_nodes": [
+        "large bedroom in haunted house",
+        "entrance hall to haunted house",
+        "billiard room of the haunted house"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "large bedroom in haunted house",
+            "entrance hall to haunted house"
+          ],
+          "llm_dir": "east",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": null
+        },
+        {
+          "edge": [
+            "large bedroom in haunted house",
+            "billiard room of the haunted house"
+          ],
+          "llm_dir": "east",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "dst_hallucinated",
+          "source_in_gt": true,
+          "target_in_gt": false,
+          "step": 61
+        }
+      ],
+      "case_counts": {
+        "hallucinated_edge": 1,
+        "dst_hallucinated": 1
+      },
+      "root_cause": "name_hallucination"
+    },
+    {
+      "type": "direction",
+      "description": "node 'pantry of haunted house' has multiple outgoing edges labelled 'south'",
+      "involved_edges": [
+        [
+          "pantry of haunted house",
+          "billiard room of the haunted house"
+        ],
+        [
+          "pantry of haunted house",
+          "living room of haunted house"
+        ]
+      ],
+      "involved_nodes": [
+        "pantry of haunted house",
+        "billiard room of the haunted house",
+        "living room of haunted house"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "pantry of haunted house",
+            "billiard room of the haunted house"
+          ],
+          "llm_dir": "south",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "both_names_hallucinated",
+          "source_in_gt": false,
+          "target_in_gt": false,
+          "step": null
+        },
+        {
+          "edge": [
+            "pantry of haunted house",
+            "living room of haunted house"
+          ],
+          "llm_dir": "south",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "src_hallucinated",
+          "source_in_gt": false,
+          "target_in_gt": true,
+          "step": 63
+        }
+      ],
+      "case_counts": {
+        "both_names_hallucinated": 1,
+        "src_hallucinated": 1
+      },
+      "root_cause": "name_hallucination"
+    },
+    {
+      "type": "topology",
+      "description": "position (1, -1, 0) occupied by multiple rooms ['alcove', 'high tunnel (to the west of lab)', 'sentry-post', 'tunnel between the laboratory and the wiring', 'wooden plank in east/west tunnel']",
+      "involved_edges": [],
+      "involved_nodes": [
+        "alcove",
+        "high tunnel (to the west of lab)",
+        "sentry-post",
+        "tunnel between the laboratory and the wiring",
+        "wooden plank in east/west tunnel"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "high tunnel (east/west, alcove off to north)",
+            "alcove"
+          ],
+          "llm_dir": "north",
+          "in_gt": true,
+          "gt_dir": "north",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 41
+        },
+        {
+          "edge": [
+            "alcove",
+            "wooden plank in east/west tunnel"
+          ],
+          "llm_dir": "south",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 42
+        },
+        {
+          "edge": [
+            "mad scientist's laboratory",
+            "high tunnel (to the west of lab)"
+          ],
+          "llm_dir": "west",
+          "in_gt": true,
+          "gt_dir": "west",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 34
+        },
+        {
+          "edge": [
+            "high tunnel (to the west of lab)",
+            "wooden plank in east/west tunnel"
+          ],
+          "llm_dir": "west",
+          "in_gt": true,
+          "gt_dir": "west",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 36
+        },
+        {
+          "edge": [
+            "complicated junction of passages",
+            "sentry-post"
+          ],
+          "llm_dir": "north",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "dst_hallucinated",
+          "source_in_gt": true,
+          "target_in_gt": false,
+          "step": 70
+        },
+        {
+          "edge": [
+            "wooden plank in east/west tunnel",
+            "tunnel between the laboratory and the wiring"
+          ],
+          "llm_dir": "east",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "dst_hallucinated",
+          "source_in_gt": true,
+          "target_in_gt": false,
+          "step": 54
+        },
+        {
+          "edge": [
+            "tunnel between the laboratory and the wiring",
+            "mad scientist's laboratory"
+          ],
+          "llm_dir": "east",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "src_hallucinated",
+          "source_in_gt": false,
+          "target_in_gt": true,
+          "step": 55
+        },
+        {
+          "edge": [
+            "wooden plank in east/west tunnel",
+            "high tunnel (east/west, alcove off to north)"
+          ],
+          "llm_dir": "west",
+          "in_gt": true,
+          "gt_dir": "west",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 37
+        },
+        {
+          "edge": [
+            "wooden plank in east/west tunnel",
+            "high tunnel (east/west, path to west)"
+          ],
+          "llm_dir": "west",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 43
+        }
+      ],
+      "case_counts": {
+        "correct": 4,
+        "hallucinated_edge": 2,
+        "dst_hallucinated": 2,
+        "src_hallucinated": 1
+      },
+      "root_cause": "name_hallucination_caused_overlap"
+    },
+    {
+      "type": "topology",
+      "description": "position (-2, -2, 0) occupied by multiple rooms ['alcove', 'low damp chamber', 'sentry-post']",
+      "involved_edges": [],
+      "involved_nodes": [
+        "alcove",
+        "low damp chamber",
+        "sentry-post"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "high tunnel (east/west, alcove off to north)",
+            "alcove"
+          ],
+          "llm_dir": "north",
+          "in_gt": true,
+          "gt_dir": "north",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 41
+        },
+        {
+          "edge": [
+            "alcove",
+            "wooden plank in east/west tunnel"
+          ],
+          "llm_dir": "south",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 42
+        },
+        {
+          "edge": [
+            "secret cavern",
+            "low damp chamber"
+          ],
+          "llm_dir": "south",
+          "in_gt": true,
+          "gt_dir": "south",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 46
+        },
+        {
+          "edge": [
+            "complicated junction of passages",
+            "sentry-post"
+          ],
+          "llm_dir": "north",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "dst_hallucinated",
+          "source_in_gt": true,
+          "target_in_gt": false,
+          "step": 70
+        }
+      ],
+      "case_counts": {
+        "correct": 2,
+        "hallucinated_edge": 1,
+        "dst_hallucinated": 1
+      },
+      "root_cause": "name_hallucination_caused_overlap"
+    },
+    {
+      "type": "topology",
+      "description": "position (4, 0, 0) occupied by multiple rooms ['alcove', 'sentry-post']",
+      "involved_edges": [],
+      "involved_nodes": [
+        "alcove",
+        "sentry-post"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "high tunnel (east/west, alcove off to north)",
+            "alcove"
+          ],
+          "llm_dir": "north",
+          "in_gt": true,
+          "gt_dir": "north",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 41
+        },
+        {
+          "edge": [
+            "alcove",
+            "wooden plank in east/west tunnel"
+          ],
+          "llm_dir": "south",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 42
+        },
+        {
+          "edge": [
+            "complicated junction of passages",
+            "sentry-post"
+          ],
+          "llm_dir": "north",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "dst_hallucinated",
+          "source_in_gt": true,
+          "target_in_gt": false,
+          "step": 70
+        }
+      ],
+      "case_counts": {
+        "correct": 1,
+        "hallucinated_edge": 1,
+        "dst_hallucinated": 1
+      },
+      "root_cause": "name_hallucination_caused_overlap"
+    },
+    {
+      "type": "topology",
+      "description": "position (3, -1, 0) occupied by multiple rooms ['high tunnel (east/west, alcove off to north)', 'high tunnel (east/west, path to west)', 'large quadrangular cellar']",
+      "involved_edges": [],
+      "involved_nodes": [
+        "high tunnel (east/west, alcove off to north)",
+        "high tunnel (east/west, path to west)",
+        "large quadrangular cellar"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "wooden plank in east/west tunnel",
+            "high tunnel (east/west, alcove off to north)"
+          ],
+          "llm_dir": "west",
+          "in_gt": true,
+          "gt_dir": "west",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 37
+        },
+        {
+          "edge": [
+            "high tunnel (east/west, alcove off to north)",
+            "alcove"
+          ],
+          "llm_dir": "north",
+          "in_gt": true,
+          "gt_dir": "north",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 41
+        },
+        {
+          "edge": [
+            "wooden plank in east/west tunnel",
+            "high tunnel (east/west, path to west)"
+          ],
+          "llm_dir": "west",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 43
+        },
+        {
+          "edge": [
+            "deserted railway platform",
+            "high tunnel (east/west, path to west)"
+          ],
+          "llm_dir": "north",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "src_hallucinated",
+          "source_in_gt": false,
+          "target_in_gt": true,
+          "step": 68
+        },
+        {
+          "edge": [
+            "high tunnel (east/west, path to west)",
+            "secret cavern"
+          ],
+          "llm_dir": "west",
+          "in_gt": true,
+          "gt_dir": "west",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 44
+        },
+        {
+          "edge": [
+            "high tunnel (east/west, path to west)",
+            "complicated junction of passages"
+          ],
+          "llm_dir": "east",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 69
+        },
+        {
+          "edge": [
+            "inside the hut",
+            "large quadrangular cellar"
+          ],
+          "llm_dir": "down",
+          "in_gt": true,
+          "gt_dir": "down",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 32
+        },
+        {
+          "edge": [
+            "large quadrangular cellar",
+            "mad scientist's laboratory"
+          ],
+          "llm_dir": "west",
+          "in_gt": true,
+          "gt_dir": "west",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 33
+        },
+        {
+          "edge": [
+            "large quadrangular cellar",
+            "complicated junction of passages"
+          ],
+          "llm_dir": "east",
+          "in_gt": true,
+          "gt_dir": "east",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 58
+        }
+      ],
+      "case_counts": {
+        "correct": 6,
+        "hallucinated_edge": 2,
+        "src_hallucinated": 1
+      },
+      "root_cause": "name_hallucination_caused_overlap"
+    },
+    {
+      "type": "topology",
+      "description": "position (-3, -3, 0) occupied by multiple rooms ['high tunnel (east/west, alcove off to north)', 'high tunnel (east/west, path to west)', 'large quadrangular cellar', 'wooden plank in east/west tunnel']",
+      "involved_edges": [],
+      "involved_nodes": [
+        "high tunnel (east/west, alcove off to north)",
+        "high tunnel (east/west, path to west)",
+        "large quadrangular cellar",
+        "wooden plank in east/west tunnel"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "wooden plank in east/west tunnel",
+            "high tunnel (east/west, alcove off to north)"
+          ],
+          "llm_dir": "west",
+          "in_gt": true,
+          "gt_dir": "west",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 37
+        },
+        {
+          "edge": [
+            "high tunnel (east/west, alcove off to north)",
+            "alcove"
+          ],
+          "llm_dir": "north",
+          "in_gt": true,
+          "gt_dir": "north",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 41
+        },
+        {
+          "edge": [
+            "wooden plank in east/west tunnel",
+            "high tunnel (east/west, path to west)"
+          ],
+          "llm_dir": "west",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 43
+        },
+        {
+          "edge": [
+            "deserted railway platform",
+            "high tunnel (east/west, path to west)"
+          ],
+          "llm_dir": "north",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "src_hallucinated",
+          "source_in_gt": false,
+          "target_in_gt": true,
+          "step": 68
+        },
+        {
+          "edge": [
+            "high tunnel (east/west, path to west)",
+            "secret cavern"
+          ],
+          "llm_dir": "west",
+          "in_gt": true,
+          "gt_dir": "west",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 44
+        },
+        {
+          "edge": [
+            "high tunnel (east/west, path to west)",
+            "complicated junction of passages"
+          ],
+          "llm_dir": "east",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 69
+        },
+        {
+          "edge": [
+            "inside the hut",
+            "large quadrangular cellar"
+          ],
+          "llm_dir": "down",
+          "in_gt": true,
+          "gt_dir": "down",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 32
+        },
+        {
+          "edge": [
+            "large quadrangular cellar",
+            "mad scientist's laboratory"
+          ],
+          "llm_dir": "west",
+          "in_gt": true,
+          "gt_dir": "west",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 33
+        },
+        {
+          "edge": [
+            "large quadrangular cellar",
+            "complicated junction of passages"
+          ],
+          "llm_dir": "east",
+          "in_gt": true,
+          "gt_dir": "east",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 58
+        },
+        {
+          "edge": [
+            "high tunnel (to the west of lab)",
+            "wooden plank in east/west tunnel"
+          ],
+          "llm_dir": "west",
+          "in_gt": true,
+          "gt_dir": "west",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 36
+        },
+        {
+          "edge": [
+            "alcove",
+            "wooden plank in east/west tunnel"
+          ],
+          "llm_dir": "south",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 42
+        },
+        {
+          "edge": [
+            "wooden plank in east/west tunnel",
+            "tunnel between the laboratory and the wiring"
+          ],
+          "llm_dir": "east",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "dst_hallucinated",
+          "source_in_gt": true,
+          "target_in_gt": false,
+          "step": 54
+        }
+      ],
+      "case_counts": {
+        "correct": 7,
+        "hallucinated_edge": 3,
+        "src_hallucinated": 1,
+        "dst_hallucinated": 1
+      },
+      "root_cause": "name_hallucination_caused_overlap"
+    },
+    {
+      "type": "topology",
+      "description": "position (0, -1, 0) occupied by multiple rooms ['complicated junction of passages', 'high tunnel (east/west, alcove off to north)', 'wooden plank in east/west tunnel']",
+      "involved_edges": [],
+      "involved_nodes": [
+        "complicated junction of passages",
+        "high tunnel (east/west, alcove off to north)",
+        "wooden plank in east/west tunnel"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "large quadrangular cellar",
+            "complicated junction of passages"
+          ],
+          "llm_dir": "east",
+          "in_gt": true,
+          "gt_dir": "east",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 58
+        },
+        {
+          "edge": [
+            "high tunnel (east/west, path to west)",
+            "complicated junction of passages"
+          ],
+          "llm_dir": "east",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 69
+        },
+        {
+          "edge": [
+            "complicated junction of passages",
+            "entrance hall to haunted house"
+          ],
+          "llm_dir": "east",
+          "in_gt": true,
+          "gt_dir": "east",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 59
+        },
+        {
+          "edge": [
+            "complicated junction of passages",
+            "sentry-post"
+          ],
+          "llm_dir": "north",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "dst_hallucinated",
+          "source_in_gt": true,
+          "target_in_gt": false,
+          "step": 70
+        },
+        {
+          "edge": [
+            "wooden plank in east/west tunnel",
+            "high tunnel (east/west, alcove off to north)"
+          ],
+          "llm_dir": "west",
+          "in_gt": true,
+          "gt_dir": "west",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 37
+        },
+        {
+          "edge": [
+            "high tunnel (east/west, alcove off to north)",
+            "alcove"
+          ],
+          "llm_dir": "north",
+          "in_gt": true,
+          "gt_dir": "north",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 41
+        },
+        {
+          "edge": [
+            "high tunnel (to the west of lab)",
+            "wooden plank in east/west tunnel"
+          ],
+          "llm_dir": "west",
+          "in_gt": true,
+          "gt_dir": "west",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 36
+        },
+        {
+          "edge": [
+            "alcove",
+            "wooden plank in east/west tunnel"
+          ],
+          "llm_dir": "south",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 42
+        },
+        {
+          "edge": [
+            "wooden plank in east/west tunnel",
+            "high tunnel (east/west, path to west)"
+          ],
+          "llm_dir": "west",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 43
+        },
+        {
+          "edge": [
+            "wooden plank in east/west tunnel",
+            "tunnel between the laboratory and the wiring"
+          ],
+          "llm_dir": "east",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "dst_hallucinated",
+          "source_in_gt": true,
+          "target_in_gt": false,
+          "step": 54
+        }
+      ],
+      "case_counts": {
+        "correct": 5,
+        "hallucinated_edge": 3,
+        "dst_hallucinated": 2
+      },
+      "root_cause": "name_hallucination_caused_overlap"
+    },
+    {
+      "type": "topology",
+      "description": "position (1, -2, 0) occupied by multiple rooms ['complicated junction of passages', 'high tunnel (east/west, alcove off to north)', 'large bedroom in haunted house', 'wooden plank in east/west tunnel']",
+      "involved_edges": [],
+      "involved_nodes": [
+        "complicated junction of passages",
+        "high tunnel (east/west, alcove off to north)",
+        "large bedroom in haunted house",
+        "wooden plank in east/west tunnel"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "large quadrangular cellar",
+            "complicated junction of passages"
+          ],
+          "llm_dir": "east",
+          "in_gt": true,
+          "gt_dir": "east",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 58
+        },
+        {
+          "edge": [
+            "high tunnel (east/west, path to west)",
+            "complicated junction of passages"
+          ],
+          "llm_dir": "east",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 69
+        },
+        {
+          "edge": [
+            "complicated junction of passages",
+            "entrance hall to haunted house"
+          ],
+          "llm_dir": "east",
+          "in_gt": true,
+          "gt_dir": "east",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 59
+        },
+        {
+          "edge": [
+            "complicated junction of passages",
+            "sentry-post"
+          ],
+          "llm_dir": "north",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "dst_hallucinated",
+          "source_in_gt": true,
+          "target_in_gt": false,
+          "step": 70
+        },
+        {
+          "edge": [
+            "wooden plank in east/west tunnel",
+            "high tunnel (east/west, alcove off to north)"
+          ],
+          "llm_dir": "west",
+          "in_gt": true,
+          "gt_dir": "west",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 37
+        },
+        {
+          "edge": [
+            "high tunnel (east/west, alcove off to north)",
+            "alcove"
+          ],
+          "llm_dir": "north",
+          "in_gt": true,
+          "gt_dir": "north",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 41
+        },
+        {
+          "edge": [
+            "entrance hall to haunted house",
+            "large bedroom in haunted house"
+          ],
+          "llm_dir": "west",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 60
+        },
+        {
+          "edge": [
+            "large bedroom in haunted house",
+            "billiard room of the haunted house"
+          ],
+          "llm_dir": "east",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "dst_hallucinated",
+          "source_in_gt": true,
+          "target_in_gt": false,
+          "step": 61
+        },
+        {
+          "edge": [
+            "high tunnel (to the west of lab)",
+            "wooden plank in east/west tunnel"
+          ],
+          "llm_dir": "west",
+          "in_gt": true,
+          "gt_dir": "west",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 36
+        },
+        {
+          "edge": [
+            "alcove",
+            "wooden plank in east/west tunnel"
+          ],
+          "llm_dir": "south",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 42
+        },
+        {
+          "edge": [
+            "wooden plank in east/west tunnel",
+            "high tunnel (east/west, path to west)"
+          ],
+          "llm_dir": "west",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 43
+        },
+        {
+          "edge": [
+            "wooden plank in east/west tunnel",
+            "tunnel between the laboratory and the wiring"
+          ],
+          "llm_dir": "east",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "dst_hallucinated",
+          "source_in_gt": true,
+          "target_in_gt": false,
+          "step": 54
+        }
+      ],
+      "case_counts": {
+        "correct": 5,
+        "hallucinated_edge": 4,
+        "dst_hallucinated": 3
+      },
+      "root_cause": "name_hallucination_caused_overlap"
+    },
+    {
+      "type": "topology",
+      "description": "position (-2, -3, 0) occupied by multiple rooms ['complicated junction of passages', 'high tunnel (east/west, alcove off to north)', 'large bedroom in haunted house', 'wooden plank in east/west tunnel']",
+      "involved_edges": [],
+      "involved_nodes": [
+        "complicated junction of passages",
+        "high tunnel (east/west, alcove off to north)",
+        "large bedroom in haunted house",
+        "wooden plank in east/west tunnel"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "large quadrangular cellar",
+            "complicated junction of passages"
+          ],
+          "llm_dir": "east",
+          "in_gt": true,
+          "gt_dir": "east",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 58
+        },
+        {
+          "edge": [
+            "high tunnel (east/west, path to west)",
+            "complicated junction of passages"
+          ],
+          "llm_dir": "east",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 69
+        },
+        {
+          "edge": [
+            "complicated junction of passages",
+            "entrance hall to haunted house"
+          ],
+          "llm_dir": "east",
+          "in_gt": true,
+          "gt_dir": "east",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 59
+        },
+        {
+          "edge": [
+            "complicated junction of passages",
+            "sentry-post"
+          ],
+          "llm_dir": "north",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "dst_hallucinated",
+          "source_in_gt": true,
+          "target_in_gt": false,
+          "step": 70
+        },
+        {
+          "edge": [
+            "wooden plank in east/west tunnel",
+            "high tunnel (east/west, alcove off to north)"
+          ],
+          "llm_dir": "west",
+          "in_gt": true,
+          "gt_dir": "west",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 37
+        },
+        {
+          "edge": [
+            "high tunnel (east/west, alcove off to north)",
+            "alcove"
+          ],
+          "llm_dir": "north",
+          "in_gt": true,
+          "gt_dir": "north",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 41
+        },
+        {
+          "edge": [
+            "entrance hall to haunted house",
+            "large bedroom in haunted house"
+          ],
+          "llm_dir": "west",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 60
+        },
+        {
+          "edge": [
+            "large bedroom in haunted house",
+            "billiard room of the haunted house"
+          ],
+          "llm_dir": "east",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "dst_hallucinated",
+          "source_in_gt": true,
+          "target_in_gt": false,
+          "step": 61
+        },
+        {
+          "edge": [
+            "high tunnel (to the west of lab)",
+            "wooden plank in east/west tunnel"
+          ],
+          "llm_dir": "west",
+          "in_gt": true,
+          "gt_dir": "west",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 36
+        },
+        {
+          "edge": [
+            "alcove",
+            "wooden plank in east/west tunnel"
+          ],
+          "llm_dir": "south",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 42
+        },
+        {
+          "edge": [
+            "wooden plank in east/west tunnel",
+            "high tunnel (east/west, path to west)"
+          ],
+          "llm_dir": "west",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 43
+        },
+        {
+          "edge": [
+            "wooden plank in east/west tunnel",
+            "tunnel between the laboratory and the wiring"
+          ],
+          "llm_dir": "east",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "dst_hallucinated",
+          "source_in_gt": true,
+          "target_in_gt": false,
+          "step": 54
+        }
+      ],
+      "case_counts": {
+        "correct": 5,
+        "hallucinated_edge": 4,
+        "dst_hallucinated": 3
+      },
+      "root_cause": "name_hallucination_caused_overlap"
+    },
+    {
+      "type": "topology",
+      "description": "position (-1, -1, 0) occupied by multiple rooms ['high tunnel (east/west, alcove off to north)', 'high tunnel (east/west, path to west)']",
+      "involved_edges": [],
+      "involved_nodes": [
+        "high tunnel (east/west, alcove off to north)",
+        "high tunnel (east/west, path to west)"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "wooden plank in east/west tunnel",
+            "high tunnel (east/west, alcove off to north)"
+          ],
+          "llm_dir": "west",
+          "in_gt": true,
+          "gt_dir": "west",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 37
+        },
+        {
+          "edge": [
+            "high tunnel (east/west, alcove off to north)",
+            "alcove"
+          ],
+          "llm_dir": "north",
+          "in_gt": true,
+          "gt_dir": "north",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 41
+        },
+        {
+          "edge": [
+            "wooden plank in east/west tunnel",
+            "high tunnel (east/west, path to west)"
+          ],
+          "llm_dir": "west",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 43
+        },
+        {
+          "edge": [
+            "deserted railway platform",
+            "high tunnel (east/west, path to west)"
+          ],
+          "llm_dir": "north",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "src_hallucinated",
+          "source_in_gt": false,
+          "target_in_gt": true,
+          "step": 68
+        },
+        {
+          "edge": [
+            "high tunnel (east/west, path to west)",
+            "secret cavern"
+          ],
+          "llm_dir": "west",
+          "in_gt": true,
+          "gt_dir": "west",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 44
+        },
+        {
+          "edge": [
+            "high tunnel (east/west, path to west)",
+            "complicated junction of passages"
+          ],
+          "llm_dir": "east",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 69
+        }
+      ],
+      "case_counts": {
+        "correct": 3,
+        "hallucinated_edge": 2,
+        "src_hallucinated": 1
+      },
+      "root_cause": "name_hallucination_caused_overlap"
+    },
+    {
+      "type": "topology",
+      "description": "position (0, -2, 0) occupied by multiple rooms ['high tunnel (east/west, alcove off to north)', 'high tunnel (east/west, path to west)', 'large quadrangular cellar']",
+      "involved_edges": [],
+      "involved_nodes": [
+        "high tunnel (east/west, alcove off to north)",
+        "high tunnel (east/west, path to west)",
+        "large quadrangular cellar"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "wooden plank in east/west tunnel",
+            "high tunnel (east/west, alcove off to north)"
+          ],
+          "llm_dir": "west",
+          "in_gt": true,
+          "gt_dir": "west",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 37
+        },
+        {
+          "edge": [
+            "high tunnel (east/west, alcove off to north)",
+            "alcove"
+          ],
+          "llm_dir": "north",
+          "in_gt": true,
+          "gt_dir": "north",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 41
+        },
+        {
+          "edge": [
+            "wooden plank in east/west tunnel",
+            "high tunnel (east/west, path to west)"
+          ],
+          "llm_dir": "west",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 43
+        },
+        {
+          "edge": [
+            "deserted railway platform",
+            "high tunnel (east/west, path to west)"
+          ],
+          "llm_dir": "north",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "src_hallucinated",
+          "source_in_gt": false,
+          "target_in_gt": true,
+          "step": 68
+        },
+        {
+          "edge": [
+            "high tunnel (east/west, path to west)",
+            "secret cavern"
+          ],
+          "llm_dir": "west",
+          "in_gt": true,
+          "gt_dir": "west",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 44
+        },
+        {
+          "edge": [
+            "high tunnel (east/west, path to west)",
+            "complicated junction of passages"
+          ],
+          "llm_dir": "east",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 69
+        },
+        {
+          "edge": [
+            "inside the hut",
+            "large quadrangular cellar"
+          ],
+          "llm_dir": "down",
+          "in_gt": true,
+          "gt_dir": "down",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 32
+        },
+        {
+          "edge": [
+            "large quadrangular cellar",
+            "mad scientist's laboratory"
+          ],
+          "llm_dir": "west",
+          "in_gt": true,
+          "gt_dir": "west",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 33
+        },
+        {
+          "edge": [
+            "large quadrangular cellar",
+            "complicated junction of passages"
+          ],
+          "llm_dir": "east",
+          "in_gt": true,
+          "gt_dir": "east",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 58
+        }
+      ],
+      "case_counts": {
+        "correct": 6,
+        "hallucinated_edge": 2,
+        "src_hallucinated": 1
+      },
+      "root_cause": "name_hallucination_caused_overlap"
+    },
+    {
+      "type": "topology",
+      "description": "position (-1, -3, 0) occupied by multiple rooms ['billiard room of the haunted house', 'entrance hall to haunted house', 'high tunnel (to the west of lab)', 'living room of haunted house', 'low damp chamber', 'tunnel between the laboratory and the wiring', 'wooden plank in east/west tunnel']",
+      "involved_edges": [],
+      "involved_nodes": [
+        "billiard room of the haunted house",
+        "entrance hall to haunted house",
+        "high tunnel (to the west of lab)",
+        "living room of haunted house",
+        "low damp chamber",
+        "tunnel between the laboratory and the wiring",
+        "wooden plank in east/west tunnel"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "large bedroom in haunted house",
+            "billiard room of the haunted house"
+          ],
+          "llm_dir": "east",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "dst_hallucinated",
+          "source_in_gt": true,
+          "target_in_gt": false,
+          "step": 61
+        },
+        {
+          "edge": [
+            "billiard room of the haunted house",
+            "pantry of haunted house"
+          ],
+          "llm_dir": "north",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "both_names_hallucinated",
+          "source_in_gt": false,
+          "target_in_gt": false,
+          "step": 62
+        },
+        {
+          "edge": [
+            "complicated junction of passages",
+            "entrance hall to haunted house"
+          ],
+          "llm_dir": "east",
+          "in_gt": true,
+          "gt_dir": "east",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 59
+        },
+        {
+          "edge": [
+            "entrance hall to haunted house",
+            "large bedroom in haunted house"
+          ],
+          "llm_dir": "west",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 60
+        },
+        {
+          "edge": [
+            "mad scientist's laboratory",
+            "high tunnel (to the west of lab)"
+          ],
+          "llm_dir": "west",
+          "in_gt": true,
+          "gt_dir": "west",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 34
+        },
+        {
+          "edge": [
+            "high tunnel (to the west of lab)",
+            "wooden plank in east/west tunnel"
+          ],
+          "llm_dir": "west",
+          "in_gt": true,
+          "gt_dir": "west",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 36
+        },
+        {
+          "edge": [
+            "pantry of haunted house",
+            "living room of haunted house"
+          ],
+          "llm_dir": "south",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "src_hallucinated",
+          "source_in_gt": false,
+          "target_in_gt": true,
+          "step": 63
+        },
+        {
+          "edge": [
+            "living room of haunted house",
+            "deserted railway platform"
+          ],
+          "llm_dir": "east",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "dst_hallucinated",
+          "source_in_gt": true,
+          "target_in_gt": false,
+          "step": 65
+        },
+        {
+          "edge": [
+            "secret cavern",
+            "low damp chamber"
+          ],
+          "llm_dir": "south",
+          "in_gt": true,
+          "gt_dir": "south",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 46
+        },
+        {
+          "edge": [
+            "wooden plank in east/west tunnel",
+            "tunnel between the laboratory and the wiring"
+          ],
+          "llm_dir": "east",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "dst_hallucinated",
+          "source_in_gt": true,
+          "target_in_gt": false,
+          "step": 54
+        },
+        {
+          "edge": [
+            "tunnel between the laboratory and the wiring",
+            "mad scientist's laboratory"
+          ],
+          "llm_dir": "east",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "src_hallucinated",
+          "source_in_gt": false,
+          "target_in_gt": true,
+          "step": 55
+        },
+        {
+          "edge": [
+            "alcove",
+            "wooden plank in east/west tunnel"
+          ],
+          "llm_dir": "south",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 42
+        },
+        {
+          "edge": [
+            "wooden plank in east/west tunnel",
+            "high tunnel (east/west, alcove off to north)"
+          ],
+          "llm_dir": "west",
+          "in_gt": true,
+          "gt_dir": "west",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 37
+        },
+        {
+          "edge": [
+            "wooden plank in east/west tunnel",
+            "high tunnel (east/west, path to west)"
+          ],
+          "llm_dir": "west",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 43
+        }
+      ],
+      "case_counts": {
+        "dst_hallucinated": 3,
+        "both_names_hallucinated": 1,
+        "correct": 5,
+        "hallucinated_edge": 3,
+        "src_hallucinated": 2
+      },
+      "root_cause": "name_hallucination_caused_overlap"
+    },
+    {
+      "type": "topology",
+      "description": "position (4, -1, 0) occupied by multiple rooms ['complicated junction of passages', 'large bedroom in haunted house', 'wooden plank in east/west tunnel']",
+      "involved_edges": [],
+      "involved_nodes": [
+        "complicated junction of passages",
+        "large bedroom in haunted house",
+        "wooden plank in east/west tunnel"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "large quadrangular cellar",
+            "complicated junction of passages"
+          ],
+          "llm_dir": "east",
+          "in_gt": true,
+          "gt_dir": "east",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 58
+        },
+        {
+          "edge": [
+            "high tunnel (east/west, path to west)",
+            "complicated junction of passages"
+          ],
+          "llm_dir": "east",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 69
+        },
+        {
+          "edge": [
+            "complicated junction of passages",
+            "entrance hall to haunted house"
+          ],
+          "llm_dir": "east",
+          "in_gt": true,
+          "gt_dir": "east",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 59
+        },
+        {
+          "edge": [
+            "complicated junction of passages",
+            "sentry-post"
+          ],
+          "llm_dir": "north",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "dst_hallucinated",
+          "source_in_gt": true,
+          "target_in_gt": false,
+          "step": 70
+        },
+        {
+          "edge": [
+            "entrance hall to haunted house",
+            "large bedroom in haunted house"
+          ],
+          "llm_dir": "west",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 60
+        },
+        {
+          "edge": [
+            "large bedroom in haunted house",
+            "billiard room of the haunted house"
+          ],
+          "llm_dir": "east",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "dst_hallucinated",
+          "source_in_gt": true,
+          "target_in_gt": false,
+          "step": 61
+        },
+        {
+          "edge": [
+            "high tunnel (to the west of lab)",
+            "wooden plank in east/west tunnel"
+          ],
+          "llm_dir": "west",
+          "in_gt": true,
+          "gt_dir": "west",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 36
+        },
+        {
+          "edge": [
+            "alcove",
+            "wooden plank in east/west tunnel"
+          ],
+          "llm_dir": "south",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 42
+        },
+        {
+          "edge": [
+            "wooden plank in east/west tunnel",
+            "high tunnel (east/west, alcove off to north)"
+          ],
+          "llm_dir": "west",
+          "in_gt": true,
+          "gt_dir": "west",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 37
+        },
+        {
+          "edge": [
+            "wooden plank in east/west tunnel",
+            "high tunnel (east/west, path to west)"
+          ],
+          "llm_dir": "west",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 43
+        },
+        {
+          "edge": [
+            "wooden plank in east/west tunnel",
+            "tunnel between the laboratory and the wiring"
+          ],
+          "llm_dir": "east",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "dst_hallucinated",
+          "source_in_gt": true,
+          "target_in_gt": false,
+          "step": 54
+        }
+      ],
+      "case_counts": {
+        "correct": 4,
+        "hallucinated_edge": 4,
+        "dst_hallucinated": 3
+      },
+      "root_cause": "name_hallucination_caused_overlap"
+    },
+    {
+      "type": "topology",
+      "description": "position (2, -2, 0) occupied by multiple rooms ['billiard room of the haunted house', 'entrance hall to haunted house', 'high tunnel (to the west of lab)', 'living room of haunted house', 'low damp chamber', 'tunnel between the laboratory and the wiring']",
+      "involved_edges": [],
+      "involved_nodes": [
+        "billiard room of the haunted house",
+        "entrance hall to haunted house",
+        "high tunnel (to the west of lab)",
+        "living room of haunted house",
+        "low damp chamber",
+        "tunnel between the laboratory and the wiring"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "large bedroom in haunted house",
+            "billiard room of the haunted house"
+          ],
+          "llm_dir": "east",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "dst_hallucinated",
+          "source_in_gt": true,
+          "target_in_gt": false,
+          "step": 61
+        },
+        {
+          "edge": [
+            "billiard room of the haunted house",
+            "pantry of haunted house"
+          ],
+          "llm_dir": "north",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "both_names_hallucinated",
+          "source_in_gt": false,
+          "target_in_gt": false,
+          "step": 62
+        },
+        {
+          "edge": [
+            "complicated junction of passages",
+            "entrance hall to haunted house"
+          ],
+          "llm_dir": "east",
+          "in_gt": true,
+          "gt_dir": "east",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 59
+        },
+        {
+          "edge": [
+            "entrance hall to haunted house",
+            "large bedroom in haunted house"
+          ],
+          "llm_dir": "west",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 60
+        },
+        {
+          "edge": [
+            "mad scientist's laboratory",
+            "high tunnel (to the west of lab)"
+          ],
+          "llm_dir": "west",
+          "in_gt": true,
+          "gt_dir": "west",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 34
+        },
+        {
+          "edge": [
+            "high tunnel (to the west of lab)",
+            "wooden plank in east/west tunnel"
+          ],
+          "llm_dir": "west",
+          "in_gt": true,
+          "gt_dir": "west",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 36
+        },
+        {
+          "edge": [
+            "pantry of haunted house",
+            "living room of haunted house"
+          ],
+          "llm_dir": "south",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "src_hallucinated",
+          "source_in_gt": false,
+          "target_in_gt": true,
+          "step": 63
+        },
+        {
+          "edge": [
+            "living room of haunted house",
+            "deserted railway platform"
+          ],
+          "llm_dir": "east",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "dst_hallucinated",
+          "source_in_gt": true,
+          "target_in_gt": false,
+          "step": 65
+        },
+        {
+          "edge": [
+            "secret cavern",
+            "low damp chamber"
+          ],
+          "llm_dir": "south",
+          "in_gt": true,
+          "gt_dir": "south",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 46
+        },
+        {
+          "edge": [
+            "wooden plank in east/west tunnel",
+            "tunnel between the laboratory and the wiring"
+          ],
+          "llm_dir": "east",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "dst_hallucinated",
+          "source_in_gt": true,
+          "target_in_gt": false,
+          "step": 54
+        },
+        {
+          "edge": [
+            "tunnel between the laboratory and the wiring",
+            "mad scientist's laboratory"
+          ],
+          "llm_dir": "east",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "src_hallucinated",
+          "source_in_gt": false,
+          "target_in_gt": true,
+          "step": 55
+        }
+      ],
+      "case_counts": {
+        "dst_hallucinated": 3,
+        "both_names_hallucinated": 1,
+        "correct": 4,
+        "hallucinated_edge": 1,
+        "src_hallucinated": 2
+      },
+      "root_cause": "name_hallucination_caused_overlap"
+    },
+    {
+      "type": "topology",
+      "description": "position (-8, -4, 0) occupied by multiple rooms ['high tunnel (to the west of lab)', 'large quadrangular cellar', 'tunnel between the laboratory and the wiring']",
+      "involved_edges": [],
+      "involved_nodes": [
+        "high tunnel (to the west of lab)",
+        "large quadrangular cellar",
+        "tunnel between the laboratory and the wiring"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "mad scientist's laboratory",
+            "high tunnel (to the west of lab)"
+          ],
+          "llm_dir": "west",
+          "in_gt": true,
+          "gt_dir": "west",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 34
+        },
+        {
+          "edge": [
+            "high tunnel (to the west of lab)",
+            "wooden plank in east/west tunnel"
+          ],
+          "llm_dir": "west",
+          "in_gt": true,
+          "gt_dir": "west",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 36
+        },
+        {
+          "edge": [
+            "inside the hut",
+            "large quadrangular cellar"
+          ],
+          "llm_dir": "down",
+          "in_gt": true,
+          "gt_dir": "down",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 32
+        },
+        {
+          "edge": [
+            "large quadrangular cellar",
+            "mad scientist's laboratory"
+          ],
+          "llm_dir": "west",
+          "in_gt": true,
+          "gt_dir": "west",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 33
+        },
+        {
+          "edge": [
+            "large quadrangular cellar",
+            "complicated junction of passages"
+          ],
+          "llm_dir": "east",
+          "in_gt": true,
+          "gt_dir": "east",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 58
+        },
+        {
+          "edge": [
+            "wooden plank in east/west tunnel",
+            "tunnel between the laboratory and the wiring"
+          ],
+          "llm_dir": "east",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "dst_hallucinated",
+          "source_in_gt": true,
+          "target_in_gt": false,
+          "step": 54
+        },
+        {
+          "edge": [
+            "tunnel between the laboratory and the wiring",
+            "mad scientist's laboratory"
+          ],
+          "llm_dir": "east",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "src_hallucinated",
+          "source_in_gt": false,
+          "target_in_gt": true,
+          "step": 55
+        }
+      ],
+      "case_counts": {
+        "correct": 5,
+        "dst_hallucinated": 1,
+        "src_hallucinated": 1
+      },
+      "root_cause": "name_hallucination_caused_overlap"
+    },
+    {
+      "type": "topology",
+      "description": "position (-5, -3, 0) occupied by multiple rooms ['high tunnel (to the west of lab)', 'sentry-post', 'tunnel between the laboratory and the wiring']",
+      "involved_edges": [],
+      "involved_nodes": [
+        "high tunnel (to the west of lab)",
+        "sentry-post",
+        "tunnel between the laboratory and the wiring"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "mad scientist's laboratory",
+            "high tunnel (to the west of lab)"
+          ],
+          "llm_dir": "west",
+          "in_gt": true,
+          "gt_dir": "west",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 34
+        },
+        {
+          "edge": [
+            "high tunnel (to the west of lab)",
+            "wooden plank in east/west tunnel"
+          ],
+          "llm_dir": "west",
+          "in_gt": true,
+          "gt_dir": "west",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 36
+        },
+        {
+          "edge": [
+            "complicated junction of passages",
+            "sentry-post"
+          ],
+          "llm_dir": "north",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "dst_hallucinated",
+          "source_in_gt": true,
+          "target_in_gt": false,
+          "step": 70
+        },
+        {
+          "edge": [
+            "wooden plank in east/west tunnel",
+            "tunnel between the laboratory and the wiring"
+          ],
+          "llm_dir": "east",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "dst_hallucinated",
+          "source_in_gt": true,
+          "target_in_gt": false,
+          "step": 54
+        },
+        {
+          "edge": [
+            "tunnel between the laboratory and the wiring",
+            "mad scientist's laboratory"
+          ],
+          "llm_dir": "east",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "src_hallucinated",
+          "source_in_gt": false,
+          "target_in_gt": true,
+          "step": 55
+        }
+      ],
+      "case_counts": {
+        "correct": 2,
+        "dst_hallucinated": 2,
+        "src_hallucinated": 1
+      },
+      "root_cause": "name_hallucination_caused_overlap"
+    },
+    {
+      "type": "topology",
+      "description": "position (5, -1, 0) occupied by multiple rooms ['billiard room of the haunted house', 'entrance hall to haunted house', 'high tunnel (to the west of lab)', 'living room of haunted house', 'tunnel between the laboratory and the wiring']",
+      "involved_edges": [],
+      "involved_nodes": [
+        "billiard room of the haunted house",
+        "entrance hall to haunted house",
+        "high tunnel (to the west of lab)",
+        "living room of haunted house",
+        "tunnel between the laboratory and the wiring"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "large bedroom in haunted house",
+            "billiard room of the haunted house"
+          ],
+          "llm_dir": "east",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "dst_hallucinated",
+          "source_in_gt": true,
+          "target_in_gt": false,
+          "step": 61
+        },
+        {
+          "edge": [
+            "billiard room of the haunted house",
+            "pantry of haunted house"
+          ],
+          "llm_dir": "north",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "both_names_hallucinated",
+          "source_in_gt": false,
+          "target_in_gt": false,
+          "step": 62
+        },
+        {
+          "edge": [
+            "complicated junction of passages",
+            "entrance hall to haunted house"
+          ],
+          "llm_dir": "east",
+          "in_gt": true,
+          "gt_dir": "east",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 59
+        },
+        {
+          "edge": [
+            "entrance hall to haunted house",
+            "large bedroom in haunted house"
+          ],
+          "llm_dir": "west",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 60
+        },
+        {
+          "edge": [
+            "mad scientist's laboratory",
+            "high tunnel (to the west of lab)"
+          ],
+          "llm_dir": "west",
+          "in_gt": true,
+          "gt_dir": "west",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 34
+        },
+        {
+          "edge": [
+            "high tunnel (to the west of lab)",
+            "wooden plank in east/west tunnel"
+          ],
+          "llm_dir": "west",
+          "in_gt": true,
+          "gt_dir": "west",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 36
+        },
+        {
+          "edge": [
+            "pantry of haunted house",
+            "living room of haunted house"
+          ],
+          "llm_dir": "south",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "src_hallucinated",
+          "source_in_gt": false,
+          "target_in_gt": true,
+          "step": 63
+        },
+        {
+          "edge": [
+            "living room of haunted house",
+            "deserted railway platform"
+          ],
+          "llm_dir": "east",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "dst_hallucinated",
+          "source_in_gt": true,
+          "target_in_gt": false,
+          "step": 65
+        },
+        {
+          "edge": [
+            "wooden plank in east/west tunnel",
+            "tunnel between the laboratory and the wiring"
+          ],
+          "llm_dir": "east",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "dst_hallucinated",
+          "source_in_gt": true,
+          "target_in_gt": false,
+          "step": 54
+        },
+        {
+          "edge": [
+            "tunnel between the laboratory and the wiring",
+            "mad scientist's laboratory"
+          ],
+          "llm_dir": "east",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "src_hallucinated",
+          "source_in_gt": false,
+          "target_in_gt": true,
+          "step": 55
+        }
+      ],
+      "case_counts": {
+        "dst_hallucinated": 3,
+        "both_names_hallucinated": 1,
+        "correct": 3,
+        "hallucinated_edge": 1,
+        "src_hallucinated": 2
+      },
+      "root_cause": "name_hallucination_caused_overlap"
+    },
+    {
+      "type": "topology",
+      "description": "position (-6, -4, 0) occupied by multiple rooms ['high tunnel (east/west, path to west)', 'large quadrangular cellar']",
+      "involved_edges": [],
+      "involved_nodes": [
+        "high tunnel (east/west, path to west)",
+        "large quadrangular cellar"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "wooden plank in east/west tunnel",
+            "high tunnel (east/west, path to west)"
+          ],
+          "llm_dir": "west",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 43
+        },
+        {
+          "edge": [
+            "deserted railway platform",
+            "high tunnel (east/west, path to west)"
+          ],
+          "llm_dir": "north",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "src_hallucinated",
+          "source_in_gt": false,
+          "target_in_gt": true,
+          "step": 68
+        },
+        {
+          "edge": [
+            "high tunnel (east/west, path to west)",
+            "secret cavern"
+          ],
+          "llm_dir": "west",
+          "in_gt": true,
+          "gt_dir": "west",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 44
+        },
+        {
+          "edge": [
+            "high tunnel (east/west, path to west)",
+            "complicated junction of passages"
+          ],
+          "llm_dir": "east",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 69
+        },
+        {
+          "edge": [
+            "inside the hut",
+            "large quadrangular cellar"
+          ],
+          "llm_dir": "down",
+          "in_gt": true,
+          "gt_dir": "down",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 32
+        },
+        {
+          "edge": [
+            "large quadrangular cellar",
+            "mad scientist's laboratory"
+          ],
+          "llm_dir": "west",
+          "in_gt": true,
+          "gt_dir": "west",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 33
+        },
+        {
+          "edge": [
+            "large quadrangular cellar",
+            "complicated junction of passages"
+          ],
+          "llm_dir": "east",
+          "in_gt": true,
+          "gt_dir": "east",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 58
+        }
+      ],
+      "case_counts": {
+        "hallucinated_edge": 2,
+        "src_hallucinated": 1,
+        "correct": 4
+      },
+      "root_cause": "name_hallucination_caused_overlap"
+    },
+    {
+      "type": "topology",
+      "description": "position (2, -1, 0) occupied by multiple rooms [\"mad scientist's laboratory\", 'pantry of haunted house', 'secret cavern']",
+      "involved_edges": [],
+      "involved_nodes": [
+        "mad scientist's laboratory",
+        "pantry of haunted house",
+        "secret cavern"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "large quadrangular cellar",
+            "mad scientist's laboratory"
+          ],
+          "llm_dir": "west",
+          "in_gt": true,
+          "gt_dir": "west",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 33
+        },
+        {
+          "edge": [
+            "tunnel between the laboratory and the wiring",
+            "mad scientist's laboratory"
+          ],
+          "llm_dir": "east",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "src_hallucinated",
+          "source_in_gt": false,
+          "target_in_gt": true,
+          "step": 55
+        },
+        {
+          "edge": [
+            "mad scientist's laboratory",
+            "high tunnel (to the west of lab)"
+          ],
+          "llm_dir": "west",
+          "in_gt": true,
+          "gt_dir": "west",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 34
+        },
+        {
+          "edge": [
+            "billiard room of the haunted house",
+            "pantry of haunted house"
+          ],
+          "llm_dir": "north",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "both_names_hallucinated",
+          "source_in_gt": false,
+          "target_in_gt": false,
+          "step": 62
+        },
+        {
+          "edge": [
+            "pantry of haunted house",
+            "living room of haunted house"
+          ],
+          "llm_dir": "south",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "src_hallucinated",
+          "source_in_gt": false,
+          "target_in_gt": true,
+          "step": 63
+        },
+        {
+          "edge": [
+            "high tunnel (east/west, path to west)",
+            "secret cavern"
+          ],
+          "llm_dir": "west",
+          "in_gt": true,
+          "gt_dir": "west",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 44
+        },
+        {
+          "edge": [
+            "secret cavern",
+            "low damp chamber"
+          ],
+          "llm_dir": "south",
+          "in_gt": true,
+          "gt_dir": "south",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 46
+        }
+      ],
+      "case_counts": {
+        "correct": 4,
+        "src_hallucinated": 2,
+        "both_names_hallucinated": 1
+      },
+      "root_cause": "name_hallucination_caused_overlap"
+    },
+    {
+      "type": "topology",
+      "description": "position (0, -3, 0) occupied by multiple rooms ['deserted railway platform', \"mad scientist's laboratory\"]",
+      "involved_edges": [],
+      "involved_nodes": [
+        "deserted railway platform",
+        "mad scientist's laboratory"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "living room of haunted house",
+            "deserted railway platform"
+          ],
+          "llm_dir": "east",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "dst_hallucinated",
+          "source_in_gt": true,
+          "target_in_gt": false,
+          "step": 65
+        },
+        {
+          "edge": [
+            "deserted railway platform",
+            "high tunnel (east/west, path to west)"
+          ],
+          "llm_dir": "north",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "src_hallucinated",
+          "source_in_gt": false,
+          "target_in_gt": true,
+          "step": 68
+        },
+        {
+          "edge": [
+            "large quadrangular cellar",
+            "mad scientist's laboratory"
+          ],
+          "llm_dir": "west",
+          "in_gt": true,
+          "gt_dir": "west",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 33
+        },
+        {
+          "edge": [
+            "tunnel between the laboratory and the wiring",
+            "mad scientist's laboratory"
+          ],
+          "llm_dir": "east",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "src_hallucinated",
+          "source_in_gt": false,
+          "target_in_gt": true,
+          "step": 55
+        },
+        {
+          "edge": [
+            "mad scientist's laboratory",
+            "high tunnel (to the west of lab)"
+          ],
+          "llm_dir": "west",
+          "in_gt": true,
+          "gt_dir": "west",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 34
+        }
+      ],
+      "case_counts": {
+        "dst_hallucinated": 1,
+        "src_hallucinated": 2,
+        "correct": 2
+      },
+      "root_cause": "name_hallucination_caused_overlap"
+    },
+    {
+      "type": "topology",
+      "description": "position (-4, -3, 0) occupied by multiple rooms [\"mad scientist's laboratory\", 'pantry of haunted house', 'secret cavern']",
+      "involved_edges": [],
+      "involved_nodes": [
+        "mad scientist's laboratory",
+        "pantry of haunted house",
+        "secret cavern"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "large quadrangular cellar",
+            "mad scientist's laboratory"
+          ],
+          "llm_dir": "west",
+          "in_gt": true,
+          "gt_dir": "west",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 33
+        },
+        {
+          "edge": [
+            "tunnel between the laboratory and the wiring",
+            "mad scientist's laboratory"
+          ],
+          "llm_dir": "east",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "src_hallucinated",
+          "source_in_gt": false,
+          "target_in_gt": true,
+          "step": 55
+        },
+        {
+          "edge": [
+            "mad scientist's laboratory",
+            "high tunnel (to the west of lab)"
+          ],
+          "llm_dir": "west",
+          "in_gt": true,
+          "gt_dir": "west",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 34
+        },
+        {
+          "edge": [
+            "billiard room of the haunted house",
+            "pantry of haunted house"
+          ],
+          "llm_dir": "north",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "both_names_hallucinated",
+          "source_in_gt": false,
+          "target_in_gt": false,
+          "step": 62
+        },
+        {
+          "edge": [
+            "pantry of haunted house",
+            "living room of haunted house"
+          ],
+          "llm_dir": "south",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "src_hallucinated",
+          "source_in_gt": false,
+          "target_in_gt": true,
+          "step": 63
+        },
+        {
+          "edge": [
+            "high tunnel (east/west, path to west)",
+            "secret cavern"
+          ],
+          "llm_dir": "west",
+          "in_gt": true,
+          "gt_dir": "west",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 44
+        },
+        {
+          "edge": [
+            "secret cavern",
+            "low damp chamber"
+          ],
+          "llm_dir": "south",
+          "in_gt": true,
+          "gt_dir": "south",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 46
+        }
+      ],
+      "case_counts": {
+        "correct": 4,
+        "src_hallucinated": 2,
+        "both_names_hallucinated": 1
+      },
+      "root_cause": "name_hallucination_caused_overlap"
+    },
+    {
+      "type": "topology",
+      "description": "position (-7, -4, 0) occupied by multiple rooms ['large quadrangular cellar', \"mad scientist's laboratory\"]",
+      "involved_edges": [],
+      "involved_nodes": [
+        "large quadrangular cellar",
+        "mad scientist's laboratory"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "inside the hut",
+            "large quadrangular cellar"
+          ],
+          "llm_dir": "down",
+          "in_gt": true,
+          "gt_dir": "down",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 32
+        },
+        {
+          "edge": [
+            "large quadrangular cellar",
+            "mad scientist's laboratory"
+          ],
+          "llm_dir": "west",
+          "in_gt": true,
+          "gt_dir": "west",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 33
+        },
+        {
+          "edge": [
+            "large quadrangular cellar",
+            "complicated junction of passages"
+          ],
+          "llm_dir": "east",
+          "in_gt": true,
+          "gt_dir": "east",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 58
+        },
+        {
+          "edge": [
+            "tunnel between the laboratory and the wiring",
+            "mad scientist's laboratory"
+          ],
+          "llm_dir": "east",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "src_hallucinated",
+          "source_in_gt": false,
+          "target_in_gt": true,
+          "step": 55
+        },
+        {
+          "edge": [
+            "mad scientist's laboratory",
+            "high tunnel (to the west of lab)"
+          ],
+          "llm_dir": "west",
+          "in_gt": true,
+          "gt_dir": "west",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 34
+        }
+      ],
+      "case_counts": {
+        "correct": 4,
+        "src_hallucinated": 1
+      },
+      "root_cause": "name_hallucination_caused_overlap"
+    },
+    {
+      "type": "topology",
+      "description": "position (-1, -2, 0) occupied by multiple rooms ['deserted railway platform', \"mad scientist's laboratory\", 'pantry of haunted house', 'secret cavern']",
+      "involved_edges": [],
+      "involved_nodes": [
+        "deserted railway platform",
+        "mad scientist's laboratory",
+        "pantry of haunted house",
+        "secret cavern"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "living room of haunted house",
+            "deserted railway platform"
+          ],
+          "llm_dir": "east",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "dst_hallucinated",
+          "source_in_gt": true,
+          "target_in_gt": false,
+          "step": 65
+        },
+        {
+          "edge": [
+            "deserted railway platform",
+            "high tunnel (east/west, path to west)"
+          ],
+          "llm_dir": "north",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "src_hallucinated",
+          "source_in_gt": false,
+          "target_in_gt": true,
+          "step": 68
+        },
+        {
+          "edge": [
+            "large quadrangular cellar",
+            "mad scientist's laboratory"
+          ],
+          "llm_dir": "west",
+          "in_gt": true,
+          "gt_dir": "west",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 33
+        },
+        {
+          "edge": [
+            "tunnel between the laboratory and the wiring",
+            "mad scientist's laboratory"
+          ],
+          "llm_dir": "east",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "src_hallucinated",
+          "source_in_gt": false,
+          "target_in_gt": true,
+          "step": 55
+        },
+        {
+          "edge": [
+            "mad scientist's laboratory",
+            "high tunnel (to the west of lab)"
+          ],
+          "llm_dir": "west",
+          "in_gt": true,
+          "gt_dir": "west",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 34
+        },
+        {
+          "edge": [
+            "billiard room of the haunted house",
+            "pantry of haunted house"
+          ],
+          "llm_dir": "north",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "both_names_hallucinated",
+          "source_in_gt": false,
+          "target_in_gt": false,
+          "step": 62
+        },
+        {
+          "edge": [
+            "pantry of haunted house",
+            "living room of haunted house"
+          ],
+          "llm_dir": "south",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "src_hallucinated",
+          "source_in_gt": false,
+          "target_in_gt": true,
+          "step": 63
+        },
+        {
+          "edge": [
+            "high tunnel (east/west, path to west)",
+            "secret cavern"
+          ],
+          "llm_dir": "west",
+          "in_gt": true,
+          "gt_dir": "west",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 44
+        },
+        {
+          "edge": [
+            "secret cavern",
+            "low damp chamber"
+          ],
+          "llm_dir": "south",
+          "in_gt": true,
+          "gt_dir": "south",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 46
+        }
+      ],
+      "case_counts": {
+        "dst_hallucinated": 1,
+        "src_hallucinated": 3,
+        "correct": 4,
+        "both_names_hallucinated": 1
+      },
+      "root_cause": "name_hallucination_caused_overlap"
+    },
+    {
+      "type": "topology",
+      "description": "position (-7, -4, 1) occupied by multiple rooms ['flower garden', 'inside the hut', 'sandpit', 'vegetable garden']",
+      "involved_edges": [],
+      "involved_nodes": [
+        "flower garden",
+        "inside the hut",
+        "sandpit",
+        "vegetable garden"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "outside the house",
+            "flower garden"
+          ],
+          "llm_dir": "north",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 1
+        },
+        {
+          "edge": [
+            "remnants of a bonfire",
+            "flower garden"
+          ],
+          "llm_dir": "north",
+          "in_gt": true,
+          "gt_dir": "north",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 14
+        },
+        {
+          "edge": [
+            "flower garden",
+            "alley (north/south)"
+          ],
+          "llm_dir": "north",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 2
+        },
+        {
+          "edge": [
+            "outside the house",
+            "inside the hut"
+          ],
+          "llm_dir": "north",
+          "in_gt": true,
+          "gt_dir": "north",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 28
+        },
+        {
+          "edge": [
+            "inside the hut",
+            "large quadrangular cellar"
+          ],
+          "llm_dir": "down",
+          "in_gt": true,
+          "gt_dir": "down",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 32
+        },
+        {
+          "edge": [
+            "outside the house",
+            "sandpit"
+          ],
+          "llm_dir": "north",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 16
+        },
+        {
+          "edge": [
+            "sandpit",
+            "old untended grave"
+          ],
+          "llm_dir": "south",
+          "in_gt": true,
+          "gt_dir": "south",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 19
+        },
+        {
+          "edge": [
+            "alley (north/south)",
+            "vegetable garden"
+          ],
+          "llm_dir": "south",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 7
+        },
+        {
+          "edge": [
+            "vegetable garden",
+            "shrubbery"
+          ],
+          "llm_dir": "south",
+          "in_gt": true,
+          "gt_dir": "south",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 9
+        }
+      ],
+      "case_counts": {
+        "hallucinated_edge": 4,
+        "correct": 5
+      },
+      "root_cause": "overlap_mixed"
+    },
+    {
+      "type": "topology",
+      "description": "position (-6, -4, 1) occupied by multiple rooms ['flower garden', 'inside the hut', 'sandpit']",
+      "involved_edges": [],
+      "involved_nodes": [
+        "flower garden",
+        "inside the hut",
+        "sandpit"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "outside the house",
+            "flower garden"
+          ],
+          "llm_dir": "north",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 1
+        },
+        {
+          "edge": [
+            "remnants of a bonfire",
+            "flower garden"
+          ],
+          "llm_dir": "north",
+          "in_gt": true,
+          "gt_dir": "north",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 14
+        },
+        {
+          "edge": [
+            "flower garden",
+            "alley (north/south)"
+          ],
+          "llm_dir": "north",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 2
+        },
+        {
+          "edge": [
+            "outside the house",
+            "inside the hut"
+          ],
+          "llm_dir": "north",
+          "in_gt": true,
+          "gt_dir": "north",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 28
+        },
+        {
+          "edge": [
+            "inside the hut",
+            "large quadrangular cellar"
+          ],
+          "llm_dir": "down",
+          "in_gt": true,
+          "gt_dir": "down",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 32
+        },
+        {
+          "edge": [
+            "outside the house",
+            "sandpit"
+          ],
+          "llm_dir": "north",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 16
+        },
+        {
+          "edge": [
+            "sandpit",
+            "old untended grave"
+          ],
+          "llm_dir": "south",
+          "in_gt": true,
+          "gt_dir": "south",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 19
+        }
+      ],
+      "case_counts": {
+        "hallucinated_edge": 3,
+        "correct": 4
+      },
+      "root_cause": "overlap_mixed"
+    },
+    {
+      "type": "topology",
+      "description": "position (-8, -4, 1) occupied by multiple rooms ['flower garden', 'inside the hut', 'sandpit', 'vegetable garden']",
+      "involved_edges": [],
+      "involved_nodes": [
+        "flower garden",
+        "inside the hut",
+        "sandpit",
+        "vegetable garden"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "outside the house",
+            "flower garden"
+          ],
+          "llm_dir": "north",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 1
+        },
+        {
+          "edge": [
+            "remnants of a bonfire",
+            "flower garden"
+          ],
+          "llm_dir": "north",
+          "in_gt": true,
+          "gt_dir": "north",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 14
+        },
+        {
+          "edge": [
+            "flower garden",
+            "alley (north/south)"
+          ],
+          "llm_dir": "north",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 2
+        },
+        {
+          "edge": [
+            "outside the house",
+            "inside the hut"
+          ],
+          "llm_dir": "north",
+          "in_gt": true,
+          "gt_dir": "north",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 28
+        },
+        {
+          "edge": [
+            "inside the hut",
+            "large quadrangular cellar"
+          ],
+          "llm_dir": "down",
+          "in_gt": true,
+          "gt_dir": "down",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 32
+        },
+        {
+          "edge": [
+            "outside the house",
+            "sandpit"
+          ],
+          "llm_dir": "north",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 16
+        },
+        {
+          "edge": [
+            "sandpit",
+            "old untended grave"
+          ],
+          "llm_dir": "south",
+          "in_gt": true,
+          "gt_dir": "south",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 19
+        },
+        {
+          "edge": [
+            "alley (north/south)",
+            "vegetable garden"
+          ],
+          "llm_dir": "south",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 7
+        },
+        {
+          "edge": [
+            "vegetable garden",
+            "shrubbery"
+          ],
+          "llm_dir": "south",
+          "in_gt": true,
+          "gt_dir": "south",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 9
+        }
+      ],
+      "case_counts": {
+        "hallucinated_edge": 4,
+        "correct": 5
+      },
+      "root_cause": "overlap_mixed"
+    },
+    {
+      "type": "topology",
+      "description": "position (-9, -4, 1) occupied by multiple rooms ['flower garden', 'inside the hut', 'sandpit', 'vegetable garden']",
+      "involved_edges": [],
+      "involved_nodes": [
+        "flower garden",
+        "inside the hut",
+        "sandpit",
+        "vegetable garden"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "outside the house",
+            "flower garden"
+          ],
+          "llm_dir": "north",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 1
+        },
+        {
+          "edge": [
+            "remnants of a bonfire",
+            "flower garden"
+          ],
+          "llm_dir": "north",
+          "in_gt": true,
+          "gt_dir": "north",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 14
+        },
+        {
+          "edge": [
+            "flower garden",
+            "alley (north/south)"
+          ],
+          "llm_dir": "north",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 2
+        },
+        {
+          "edge": [
+            "outside the house",
+            "inside the hut"
+          ],
+          "llm_dir": "north",
+          "in_gt": true,
+          "gt_dir": "north",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 28
+        },
+        {
+          "edge": [
+            "inside the hut",
+            "large quadrangular cellar"
+          ],
+          "llm_dir": "down",
+          "in_gt": true,
+          "gt_dir": "down",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 32
+        },
+        {
+          "edge": [
+            "outside the house",
+            "sandpit"
+          ],
+          "llm_dir": "north",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 16
+        },
+        {
+          "edge": [
+            "sandpit",
+            "old untended grave"
+          ],
+          "llm_dir": "south",
+          "in_gt": true,
+          "gt_dir": "south",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 19
+        },
+        {
+          "edge": [
+            "alley (north/south)",
+            "vegetable garden"
+          ],
+          "llm_dir": "south",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 7
+        },
+        {
+          "edge": [
+            "vegetable garden",
+            "shrubbery"
+          ],
+          "llm_dir": "south",
+          "in_gt": true,
+          "gt_dir": "south",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 9
+        }
+      ],
+      "case_counts": {
+        "hallucinated_edge": 4,
+        "correct": 5
+      },
+      "root_cause": "overlap_mixed"
+    },
+    {
+      "type": "topology",
+      "description": "position (-5, -4, 0) occupied by multiple rooms ['complicated junction of passages', 'large bedroom in haunted house']",
+      "involved_edges": [],
+      "involved_nodes": [
+        "complicated junction of passages",
+        "large bedroom in haunted house"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "large quadrangular cellar",
+            "complicated junction of passages"
+          ],
+          "llm_dir": "east",
+          "in_gt": true,
+          "gt_dir": "east",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 58
+        },
+        {
+          "edge": [
+            "high tunnel (east/west, path to west)",
+            "complicated junction of passages"
+          ],
+          "llm_dir": "east",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 69
+        },
+        {
+          "edge": [
+            "complicated junction of passages",
+            "entrance hall to haunted house"
+          ],
+          "llm_dir": "east",
+          "in_gt": true,
+          "gt_dir": "east",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 59
+        },
+        {
+          "edge": [
+            "complicated junction of passages",
+            "sentry-post"
+          ],
+          "llm_dir": "north",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "dst_hallucinated",
+          "source_in_gt": true,
+          "target_in_gt": false,
+          "step": 70
+        },
+        {
+          "edge": [
+            "entrance hall to haunted house",
+            "large bedroom in haunted house"
+          ],
+          "llm_dir": "west",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 60
+        },
+        {
+          "edge": [
+            "large bedroom in haunted house",
+            "billiard room of the haunted house"
+          ],
+          "llm_dir": "east",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "dst_hallucinated",
+          "source_in_gt": true,
+          "target_in_gt": false,
+          "step": 61
+        }
+      ],
+      "case_counts": {
+        "correct": 2,
+        "hallucinated_edge": 2,
+        "dst_hallucinated": 2
+      },
+      "root_cause": "name_hallucination_caused_overlap"
+    },
+    {
+      "type": "topology",
+      "description": "position (-4, -4, 0) occupied by multiple rooms ['billiard room of the haunted house', 'entrance hall to haunted house', 'living room of haunted house', 'low damp chamber']",
+      "involved_edges": [],
+      "involved_nodes": [
+        "billiard room of the haunted house",
+        "entrance hall to haunted house",
+        "living room of haunted house",
+        "low damp chamber"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "large bedroom in haunted house",
+            "billiard room of the haunted house"
+          ],
+          "llm_dir": "east",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "dst_hallucinated",
+          "source_in_gt": true,
+          "target_in_gt": false,
+          "step": 61
+        },
+        {
+          "edge": [
+            "billiard room of the haunted house",
+            "pantry of haunted house"
+          ],
+          "llm_dir": "north",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "both_names_hallucinated",
+          "source_in_gt": false,
+          "target_in_gt": false,
+          "step": 62
+        },
+        {
+          "edge": [
+            "complicated junction of passages",
+            "entrance hall to haunted house"
+          ],
+          "llm_dir": "east",
+          "in_gt": true,
+          "gt_dir": "east",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 59
+        },
+        {
+          "edge": [
+            "entrance hall to haunted house",
+            "large bedroom in haunted house"
+          ],
+          "llm_dir": "west",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 60
+        },
+        {
+          "edge": [
+            "pantry of haunted house",
+            "living room of haunted house"
+          ],
+          "llm_dir": "south",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "src_hallucinated",
+          "source_in_gt": false,
+          "target_in_gt": true,
+          "step": 63
+        },
+        {
+          "edge": [
+            "living room of haunted house",
+            "deserted railway platform"
+          ],
+          "llm_dir": "east",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "dst_hallucinated",
+          "source_in_gt": true,
+          "target_in_gt": false,
+          "step": 65
+        },
+        {
+          "edge": [
+            "secret cavern",
+            "low damp chamber"
+          ],
+          "llm_dir": "south",
+          "in_gt": true,
+          "gt_dir": "south",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 46
+        }
+      ],
+      "case_counts": {
+        "dst_hallucinated": 2,
+        "both_names_hallucinated": 1,
+        "correct": 2,
+        "hallucinated_edge": 1,
+        "src_hallucinated": 1
+      },
+      "root_cause": "name_hallucination_caused_overlap"
+    },
+    {
+      "type": "topology",
+      "description": "position (-6, -5, 1) occupied by multiple rooms ['edge of a large calm lake', 'old untended grave', 'outside the house', 'remnants of a bonfire']",
+      "involved_edges": [],
+      "involved_nodes": [
+        "edge of a large calm lake",
+        "old untended grave",
+        "outside the house",
+        "remnants of a bonfire"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "outside the house",
+            "edge of a large calm lake"
+          ],
+          "llm_dir": "east",
+          "in_gt": true,
+          "gt_dir": "east",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 22
+        },
+        {
+          "edge": [
+            "sandpit",
+            "old untended grave"
+          ],
+          "llm_dir": "south",
+          "in_gt": true,
+          "gt_dir": "south",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 19
+        },
+        {
+          "edge": [
+            "old untended grave",
+            "outside the house"
+          ],
+          "llm_dir": "east",
+          "in_gt": true,
+          "gt_dir": "east",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 21
+        },
+        {
+          "edge": [
+            "outside the house",
+            "flower garden"
+          ],
+          "llm_dir": "north",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 1
+        },
+        {
+          "edge": [
+            "outside the house",
+            "sandpit"
+          ],
+          "llm_dir": "north",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 16
+        },
+        {
+          "edge": [
+            "outside the house",
+            "inside the hut"
+          ],
+          "llm_dir": "north",
+          "in_gt": true,
+          "gt_dir": "north",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 28
+        },
+        {
+          "edge": [
+            "shrubbery",
+            "remnants of a bonfire"
+          ],
+          "llm_dir": "east",
+          "in_gt": true,
+          "gt_dir": "east",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 12
+        },
+        {
+          "edge": [
+            "remnants of a bonfire",
+            "flower garden"
+          ],
+          "llm_dir": "north",
+          "in_gt": true,
+          "gt_dir": "north",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 14
+        }
+      ],
+      "case_counts": {
+        "correct": 6,
+        "hallucinated_edge": 2
+      },
+      "root_cause": "overlap_mixed"
+    },
+    {
+      "type": "topology",
+      "description": "position (-9, -5, 1) occupied by multiple rooms ['old untended grave', 'outside the house', 'remnants of a bonfire', 'shrubbery']",
+      "involved_edges": [],
+      "involved_nodes": [
+        "old untended grave",
+        "outside the house",
+        "remnants of a bonfire",
+        "shrubbery"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "sandpit",
+            "old untended grave"
+          ],
+          "llm_dir": "south",
+          "in_gt": true,
+          "gt_dir": "south",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 19
+        },
+        {
+          "edge": [
+            "old untended grave",
+            "outside the house"
+          ],
+          "llm_dir": "east",
+          "in_gt": true,
+          "gt_dir": "east",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 21
+        },
+        {
+          "edge": [
+            "outside the house",
+            "flower garden"
+          ],
+          "llm_dir": "north",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 1
+        },
+        {
+          "edge": [
+            "outside the house",
+            "sandpit"
+          ],
+          "llm_dir": "north",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 16
+        },
+        {
+          "edge": [
+            "outside the house",
+            "edge of a large calm lake"
+          ],
+          "llm_dir": "east",
+          "in_gt": true,
+          "gt_dir": "east",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 22
+        },
+        {
+          "edge": [
+            "outside the house",
+            "inside the hut"
+          ],
+          "llm_dir": "north",
+          "in_gt": true,
+          "gt_dir": "north",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 28
+        },
+        {
+          "edge": [
+            "shrubbery",
+            "remnants of a bonfire"
+          ],
+          "llm_dir": "east",
+          "in_gt": true,
+          "gt_dir": "east",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 12
+        },
+        {
+          "edge": [
+            "remnants of a bonfire",
+            "flower garden"
+          ],
+          "llm_dir": "north",
+          "in_gt": true,
+          "gt_dir": "north",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 14
+        },
+        {
+          "edge": [
+            "vegetable garden",
+            "shrubbery"
+          ],
+          "llm_dir": "south",
+          "in_gt": true,
+          "gt_dir": "south",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 9
+        }
+      ],
+      "case_counts": {
+        "correct": 7,
+        "hallucinated_edge": 2
+      },
+      "root_cause": "overlap_mixed"
+    },
+    {
+      "type": "topology",
+      "description": "position (-8, -5, 1) occupied by multiple rooms ['edge of a large calm lake', 'old untended grave', 'outside the house', 'remnants of a bonfire', 'shrubbery']",
+      "involved_edges": [],
+      "involved_nodes": [
+        "edge of a large calm lake",
+        "old untended grave",
+        "outside the house",
+        "remnants of a bonfire",
+        "shrubbery"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "outside the house",
+            "edge of a large calm lake"
+          ],
+          "llm_dir": "east",
+          "in_gt": true,
+          "gt_dir": "east",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 22
+        },
+        {
+          "edge": [
+            "sandpit",
+            "old untended grave"
+          ],
+          "llm_dir": "south",
+          "in_gt": true,
+          "gt_dir": "south",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 19
+        },
+        {
+          "edge": [
+            "old untended grave",
+            "outside the house"
+          ],
+          "llm_dir": "east",
+          "in_gt": true,
+          "gt_dir": "east",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 21
+        },
+        {
+          "edge": [
+            "outside the house",
+            "flower garden"
+          ],
+          "llm_dir": "north",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 1
+        },
+        {
+          "edge": [
+            "outside the house",
+            "sandpit"
+          ],
+          "llm_dir": "north",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 16
+        },
+        {
+          "edge": [
+            "outside the house",
+            "inside the hut"
+          ],
+          "llm_dir": "north",
+          "in_gt": true,
+          "gt_dir": "north",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 28
+        },
+        {
+          "edge": [
+            "shrubbery",
+            "remnants of a bonfire"
+          ],
+          "llm_dir": "east",
+          "in_gt": true,
+          "gt_dir": "east",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 12
+        },
+        {
+          "edge": [
+            "remnants of a bonfire",
+            "flower garden"
+          ],
+          "llm_dir": "north",
+          "in_gt": true,
+          "gt_dir": "north",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 14
+        },
+        {
+          "edge": [
+            "vegetable garden",
+            "shrubbery"
+          ],
+          "llm_dir": "south",
+          "in_gt": true,
+          "gt_dir": "south",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 9
+        }
+      ],
+      "case_counts": {
+        "correct": 7,
+        "hallucinated_edge": 2
+      },
+      "root_cause": "overlap_mixed"
+    },
+    {
+      "type": "topology",
+      "description": "position (-7, -5, 1) occupied by multiple rooms ['edge of a large calm lake', 'old untended grave', 'outside the house', 'remnants of a bonfire', 'shrubbery']",
+      "involved_edges": [],
+      "involved_nodes": [
+        "edge of a large calm lake",
+        "old untended grave",
+        "outside the house",
+        "remnants of a bonfire",
+        "shrubbery"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "outside the house",
+            "edge of a large calm lake"
+          ],
+          "llm_dir": "east",
+          "in_gt": true,
+          "gt_dir": "east",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 22
+        },
+        {
+          "edge": [
+            "sandpit",
+            "old untended grave"
+          ],
+          "llm_dir": "south",
+          "in_gt": true,
+          "gt_dir": "south",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 19
+        },
+        {
+          "edge": [
+            "old untended grave",
+            "outside the house"
+          ],
+          "llm_dir": "east",
+          "in_gt": true,
+          "gt_dir": "east",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 21
+        },
+        {
+          "edge": [
+            "outside the house",
+            "flower garden"
+          ],
+          "llm_dir": "north",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 1
+        },
+        {
+          "edge": [
+            "outside the house",
+            "sandpit"
+          ],
+          "llm_dir": "north",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 16
+        },
+        {
+          "edge": [
+            "outside the house",
+            "inside the hut"
+          ],
+          "llm_dir": "north",
+          "in_gt": true,
+          "gt_dir": "north",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 28
+        },
+        {
+          "edge": [
+            "shrubbery",
+            "remnants of a bonfire"
+          ],
+          "llm_dir": "east",
+          "in_gt": true,
+          "gt_dir": "east",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 12
+        },
+        {
+          "edge": [
+            "remnants of a bonfire",
+            "flower garden"
+          ],
+          "llm_dir": "north",
+          "in_gt": true,
+          "gt_dir": "north",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 14
+        },
+        {
+          "edge": [
+            "vegetable garden",
+            "shrubbery"
+          ],
+          "llm_dir": "south",
+          "in_gt": true,
+          "gt_dir": "south",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 9
+        }
+      ],
+      "case_counts": {
+        "correct": 7,
+        "hallucinated_edge": 2
+      },
+      "root_cause": "overlap_mixed"
+    },
+    {
+      "type": "topology",
+      "description": "position (-10, -4, 1) occupied by multiple rooms ['flower garden', 'sandpit', 'vegetable garden']",
+      "involved_edges": [],
+      "involved_nodes": [
+        "flower garden",
+        "sandpit",
+        "vegetable garden"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "outside the house",
+            "flower garden"
+          ],
+          "llm_dir": "north",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 1
+        },
+        {
+          "edge": [
+            "remnants of a bonfire",
+            "flower garden"
+          ],
+          "llm_dir": "north",
+          "in_gt": true,
+          "gt_dir": "north",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 14
+        },
+        {
+          "edge": [
+            "flower garden",
+            "alley (north/south)"
+          ],
+          "llm_dir": "north",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 2
+        },
+        {
+          "edge": [
+            "outside the house",
+            "sandpit"
+          ],
+          "llm_dir": "north",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 16
+        },
+        {
+          "edge": [
+            "sandpit",
+            "old untended grave"
+          ],
+          "llm_dir": "south",
+          "in_gt": true,
+          "gt_dir": "south",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 19
+        },
+        {
+          "edge": [
+            "alley (north/south)",
+            "vegetable garden"
+          ],
+          "llm_dir": "south",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 7
+        },
+        {
+          "edge": [
+            "vegetable garden",
+            "shrubbery"
+          ],
+          "llm_dir": "south",
+          "in_gt": true,
+          "gt_dir": "south",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 9
+        }
+      ],
+      "case_counts": {
+        "hallucinated_edge": 4,
+        "correct": 3
+      },
+      "root_cause": "overlap_mixed"
+    },
+    {
+      "type": "topology",
+      "description": "position (-10, -5, 1) occupied by multiple rooms ['old untended grave', 'shrubbery']",
+      "involved_edges": [],
+      "involved_nodes": [
+        "old untended grave",
+        "shrubbery"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "sandpit",
+            "old untended grave"
+          ],
+          "llm_dir": "south",
+          "in_gt": true,
+          "gt_dir": "south",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 19
+        },
+        {
+          "edge": [
+            "old untended grave",
+            "outside the house"
+          ],
+          "llm_dir": "east",
+          "in_gt": true,
+          "gt_dir": "east",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 21
+        },
+        {
+          "edge": [
+            "vegetable garden",
+            "shrubbery"
+          ],
+          "llm_dir": "south",
+          "in_gt": true,
+          "gt_dir": "south",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 9
+        },
+        {
+          "edge": [
+            "shrubbery",
+            "remnants of a bonfire"
+          ],
+          "llm_dir": "east",
+          "in_gt": true,
+          "gt_dir": "east",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 12
+        }
+      ],
+      "case_counts": {
+        "correct": 4
+      },
+      "root_cause": "false_positive_overlap"
+    },
+    {
+      "type": "naming",
+      "description": "node 'alcove' reachable at conflicting positions [(-3, -2, 0), (-2, -2, 0), (-1, 0, 0), (0, 0, 0), (1, -1, 0), (4, 0, 0)]",
+      "involved_edges": [],
+      "involved_nodes": [
+        "alcove"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "high tunnel (east/west, alcove off to north)",
+            "alcove"
+          ],
+          "llm_dir": "north",
+          "in_gt": true,
+          "gt_dir": "north",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 41
+        },
+        {
+          "edge": [
+            "alcove",
+            "wooden plank in east/west tunnel"
+          ],
+          "llm_dir": "south",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 42
+        }
+      ],
+      "case_counts": {
+        "correct": 1,
+        "hallucinated_edge": 1
+      },
+      "root_cause": "real_name_corrupted_by_neighbour_error"
+    },
+    {
+      "type": "naming",
+      "description": "node 'high tunnel (east/west, alcove off to north)' reachable at conflicting positions [(-3, -3, 0), (-2, -3, 0), (-1, -1, 0), (0, -2, 0), (0, -1, 0), (1, -2, 0), (3, -1, 0)]",
+      "involved_edges": [],
+      "involved_nodes": [
+        "high tunnel (east/west, alcove off to north)"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "wooden plank in east/west tunnel",
+            "high tunnel (east/west, alcove off to north)"
+          ],
+          "llm_dir": "west",
+          "in_gt": true,
+          "gt_dir": "west",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 37
+        },
+        {
+          "edge": [
+            "high tunnel (east/west, alcove off to north)",
+            "alcove"
+          ],
+          "llm_dir": "north",
+          "in_gt": true,
+          "gt_dir": "north",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 41
+        }
+      ],
+      "case_counts": {
+        "correct": 2
+      },
+      "root_cause": "naming_collision_on_correct_subgraph"
+    },
+    {
+      "type": "naming",
+      "description": "node 'wooden plank in east/west tunnel' reachable at conflicting positions [(-9, -4, 0), (-6, -3, 0), (-3, -3, 0), (-2, -3, 0), (-1, -3, 0), (0, -1, 0), (1, -2, 0), (1, -1, 0), (4, -1, 0)]",
+      "involved_edges": [],
+      "involved_nodes": [
+        "wooden plank in east/west tunnel"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "high tunnel (to the west of lab)",
+            "wooden plank in east/west tunnel"
+          ],
+          "llm_dir": "west",
+          "in_gt": true,
+          "gt_dir": "west",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 36
+        },
+        {
+          "edge": [
+            "alcove",
+            "wooden plank in east/west tunnel"
+          ],
+          "llm_dir": "south",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 42
+        },
+        {
+          "edge": [
+            "wooden plank in east/west tunnel",
+            "high tunnel (east/west, alcove off to north)"
+          ],
+          "llm_dir": "west",
+          "in_gt": true,
+          "gt_dir": "west",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 37
+        },
+        {
+          "edge": [
+            "wooden plank in east/west tunnel",
+            "high tunnel (east/west, path to west)"
+          ],
+          "llm_dir": "west",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 43
+        },
+        {
+          "edge": [
+            "wooden plank in east/west tunnel",
+            "tunnel between the laboratory and the wiring"
+          ],
+          "llm_dir": "east",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "dst_hallucinated",
+          "source_in_gt": true,
+          "target_in_gt": false,
+          "step": 54
+        }
+      ],
+      "case_counts": {
+        "correct": 2,
+        "hallucinated_edge": 2,
+        "dst_hallucinated": 1
+      },
+      "root_cause": "real_name_corrupted_by_neighbour_error"
+    },
+    {
+      "type": "naming",
+      "description": "node 'high tunnel (to the west of lab)' reachable at conflicting positions [(-8, -4, 0), (-5, -3, 0), (-1, -3, 0), (1, -1, 0), (2, -2, 0), (5, -1, 0)]",
+      "involved_edges": [],
+      "involved_nodes": [
+        "high tunnel (to the west of lab)"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "mad scientist's laboratory",
+            "high tunnel (to the west of lab)"
+          ],
+          "llm_dir": "west",
+          "in_gt": true,
+          "gt_dir": "west",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 34
+        },
+        {
+          "edge": [
+            "high tunnel (to the west of lab)",
+            "wooden plank in east/west tunnel"
+          ],
+          "llm_dir": "west",
+          "in_gt": true,
+          "gt_dir": "west",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 36
+        }
+      ],
+      "case_counts": {
+        "correct": 2
+      },
+      "root_cause": "naming_collision_on_correct_subgraph"
+    },
+    {
+      "type": "naming",
+      "description": "node 'high tunnel (east/west, path to west)' reachable at conflicting positions [(-6, -4, 0), (-3, -3, 0), (-1, -1, 0), (0, -2, 0), (3, -1, 0), (6, 0, 0)]",
+      "involved_edges": [],
+      "involved_nodes": [
+        "high tunnel (east/west, path to west)"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "wooden plank in east/west tunnel",
+            "high tunnel (east/west, path to west)"
+          ],
+          "llm_dir": "west",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 43
+        },
+        {
+          "edge": [
+            "deserted railway platform",
+            "high tunnel (east/west, path to west)"
+          ],
+          "llm_dir": "north",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "src_hallucinated",
+          "source_in_gt": false,
+          "target_in_gt": true,
+          "step": 68
+        },
+        {
+          "edge": [
+            "high tunnel (east/west, path to west)",
+            "secret cavern"
+          ],
+          "llm_dir": "west",
+          "in_gt": true,
+          "gt_dir": "west",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 44
+        },
+        {
+          "edge": [
+            "high tunnel (east/west, path to west)",
+            "complicated junction of passages"
+          ],
+          "llm_dir": "east",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 69
+        }
+      ],
+      "case_counts": {
+        "hallucinated_edge": 2,
+        "src_hallucinated": 1,
+        "correct": 1
+      },
+      "root_cause": "real_name_corrupted_by_neighbour_error"
+    },
+    {
+      "type": "naming",
+      "description": "node 'tunnel between the laboratory and the wiring' reachable at conflicting positions [(-8, -4, 0), (-5, -3, 0), (-1, -3, 0), (1, -1, 0), (2, -2, 0), (5, -1, 0)]",
+      "involved_edges": [],
+      "involved_nodes": [
+        "tunnel between the laboratory and the wiring"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "wooden plank in east/west tunnel",
+            "tunnel between the laboratory and the wiring"
+          ],
+          "llm_dir": "east",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "dst_hallucinated",
+          "source_in_gt": true,
+          "target_in_gt": false,
+          "step": 54
+        },
+        {
+          "edge": [
+            "tunnel between the laboratory and the wiring",
+            "mad scientist's laboratory"
+          ],
+          "llm_dir": "east",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "src_hallucinated",
+          "source_in_gt": false,
+          "target_in_gt": true,
+          "step": 55
+        }
+      ],
+      "case_counts": {
+        "dst_hallucinated": 1,
+        "src_hallucinated": 1
+      },
+      "root_cause": "name_hallucination"
+    },
+    {
+      "type": "naming",
+      "description": "node \"mad scientist's laboratory\" reachable at conflicting positions [(-7, -4, 0), (-4, -3, 0), (-1, -2, 0), (0, -3, 0), (2, -1, 0)]",
+      "involved_edges": [],
+      "involved_nodes": [
+        "mad scientist's laboratory"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "large quadrangular cellar",
+            "mad scientist's laboratory"
+          ],
+          "llm_dir": "west",
+          "in_gt": true,
+          "gt_dir": "west",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 33
+        },
+        {
+          "edge": [
+            "tunnel between the laboratory and the wiring",
+            "mad scientist's laboratory"
+          ],
+          "llm_dir": "east",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "src_hallucinated",
+          "source_in_gt": false,
+          "target_in_gt": true,
+          "step": 55
+        },
+        {
+          "edge": [
+            "mad scientist's laboratory",
+            "high tunnel (to the west of lab)"
+          ],
+          "llm_dir": "west",
+          "in_gt": true,
+          "gt_dir": "west",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 34
+        }
+      ],
+      "case_counts": {
+        "correct": 2,
+        "src_hallucinated": 1
+      },
+      "root_cause": "real_name_corrupted_by_neighbour_error"
+    },
+    {
+      "type": "naming",
+      "description": "node 'large quadrangular cellar' reachable at conflicting positions [(-8, -4, 0), (-7, -4, 0), (-6, -4, 0), (-3, -3, 0), (0, -2, 0), (1, -3, 0), (3, -1, 0)]",
+      "involved_edges": [],
+      "involved_nodes": [
+        "large quadrangular cellar"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "inside the hut",
+            "large quadrangular cellar"
+          ],
+          "llm_dir": "down",
+          "in_gt": true,
+          "gt_dir": "down",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 32
+        },
+        {
+          "edge": [
+            "large quadrangular cellar",
+            "mad scientist's laboratory"
+          ],
+          "llm_dir": "west",
+          "in_gt": true,
+          "gt_dir": "west",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 33
+        },
+        {
+          "edge": [
+            "large quadrangular cellar",
+            "complicated junction of passages"
+          ],
+          "llm_dir": "east",
+          "in_gt": true,
+          "gt_dir": "east",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 58
+        }
+      ],
+      "case_counts": {
+        "correct": 3
+      },
+      "root_cause": "naming_collision_on_correct_subgraph"
+    },
+    {
+      "type": "naming",
+      "description": "node 'inside the hut' reachable at conflicting positions [(-9, -4, 1), (-8, -4, 1), (-7, -4, 1), (-6, -4, 1), (-3, -3, 1), (0, -2, 1), (3, -1, 1)]",
+      "involved_edges": [],
+      "involved_nodes": [
+        "inside the hut"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "outside the house",
+            "inside the hut"
+          ],
+          "llm_dir": "north",
+          "in_gt": true,
+          "gt_dir": "north",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 28
+        },
+        {
+          "edge": [
+            "inside the hut",
+            "large quadrangular cellar"
+          ],
+          "llm_dir": "down",
+          "in_gt": true,
+          "gt_dir": "down",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 32
+        }
+      ],
+      "case_counts": {
+        "correct": 2
+      },
+      "root_cause": "naming_collision_on_correct_subgraph"
+    },
+    {
+      "type": "naming",
+      "description": "node 'complicated junction of passages' reachable at conflicting positions [(-5, -4, 0), (-2, -3, 0), (0, -1, 0), (1, -2, 0), (4, -1, 0)]",
+      "involved_edges": [],
+      "involved_nodes": [
+        "complicated junction of passages"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "large quadrangular cellar",
+            "complicated junction of passages"
+          ],
+          "llm_dir": "east",
+          "in_gt": true,
+          "gt_dir": "east",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 58
+        },
+        {
+          "edge": [
+            "high tunnel (east/west, path to west)",
+            "complicated junction of passages"
+          ],
+          "llm_dir": "east",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 69
+        },
+        {
+          "edge": [
+            "complicated junction of passages",
+            "entrance hall to haunted house"
+          ],
+          "llm_dir": "east",
+          "in_gt": true,
+          "gt_dir": "east",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 59
+        },
+        {
+          "edge": [
+            "complicated junction of passages",
+            "sentry-post"
+          ],
+          "llm_dir": "north",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "dst_hallucinated",
+          "source_in_gt": true,
+          "target_in_gt": false,
+          "step": 70
+        }
+      ],
+      "case_counts": {
+        "correct": 2,
+        "hallucinated_edge": 1,
+        "dst_hallucinated": 1
+      },
+      "root_cause": "real_name_corrupted_by_neighbour_error"
+    },
+    {
+      "type": "naming",
+      "description": "node 'entrance hall to haunted house' reachable at conflicting positions [(-4, -4, 0), (-1, -3, 0), (2, -2, 0), (5, -1, 0)]",
+      "involved_edges": [],
+      "involved_nodes": [
+        "entrance hall to haunted house"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "complicated junction of passages",
+            "entrance hall to haunted house"
+          ],
+          "llm_dir": "east",
+          "in_gt": true,
+          "gt_dir": "east",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 59
+        },
+        {
+          "edge": [
+            "entrance hall to haunted house",
+            "large bedroom in haunted house"
+          ],
+          "llm_dir": "west",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 60
+        }
+      ],
+      "case_counts": {
+        "correct": 1,
+        "hallucinated_edge": 1
+      },
+      "root_cause": "real_name_corrupted_by_neighbour_error"
+    },
+    {
+      "type": "naming",
+      "description": "node 'sentry-post' reachable at conflicting positions [(-5, -3, 0), (-2, -2, 0), (1, -1, 0), (4, 0, 0)]",
+      "involved_edges": [],
+      "involved_nodes": [
+        "sentry-post"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "complicated junction of passages",
+            "sentry-post"
+          ],
+          "llm_dir": "north",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "dst_hallucinated",
+          "source_in_gt": true,
+          "target_in_gt": false,
+          "step": 70
+        }
+      ],
+      "case_counts": {
+        "dst_hallucinated": 1
+      },
+      "root_cause": "name_hallucination"
+    },
+    {
+      "type": "naming",
+      "description": "node 'secret cavern' reachable at conflicting positions [(-4, -3, 0), (-2, -1, 0), (-1, -2, 0), (2, -1, 0)]",
+      "involved_edges": [],
+      "involved_nodes": [
+        "secret cavern"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "high tunnel (east/west, path to west)",
+            "secret cavern"
+          ],
+          "llm_dir": "west",
+          "in_gt": true,
+          "gt_dir": "west",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 44
+        },
+        {
+          "edge": [
+            "secret cavern",
+            "low damp chamber"
+          ],
+          "llm_dir": "south",
+          "in_gt": true,
+          "gt_dir": "south",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 46
+        }
+      ],
+      "case_counts": {
+        "correct": 2
+      },
+      "root_cause": "naming_collision_on_correct_subgraph"
+    },
+    {
+      "type": "naming",
+      "description": "node 'deserted railway platform' reachable at conflicting positions [(-3, -4, 0), (-1, -2, 0), (0, -3, 0), (3, -2, 0), (6, -1, 0)]",
+      "involved_edges": [],
+      "involved_nodes": [
+        "deserted railway platform"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "living room of haunted house",
+            "deserted railway platform"
+          ],
+          "llm_dir": "east",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "dst_hallucinated",
+          "source_in_gt": true,
+          "target_in_gt": false,
+          "step": 65
+        },
+        {
+          "edge": [
+            "deserted railway platform",
+            "high tunnel (east/west, path to west)"
+          ],
+          "llm_dir": "north",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "src_hallucinated",
+          "source_in_gt": false,
+          "target_in_gt": true,
+          "step": 68
+        }
+      ],
+      "case_counts": {
+        "dst_hallucinated": 1,
+        "src_hallucinated": 1
+      },
+      "root_cause": "name_hallucination"
+    },
+    {
+      "type": "naming",
+      "description": "node 'living room of haunted house' reachable at conflicting positions [(-4, -4, 0), (-1, -3, 0), (2, -2, 0), (5, -1, 0)]",
+      "involved_edges": [],
+      "involved_nodes": [
+        "living room of haunted house"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "pantry of haunted house",
+            "living room of haunted house"
+          ],
+          "llm_dir": "south",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "src_hallucinated",
+          "source_in_gt": false,
+          "target_in_gt": true,
+          "step": 63
+        },
+        {
+          "edge": [
+            "living room of haunted house",
+            "deserted railway platform"
+          ],
+          "llm_dir": "east",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "dst_hallucinated",
+          "source_in_gt": true,
+          "target_in_gt": false,
+          "step": 65
+        }
+      ],
+      "case_counts": {
+        "src_hallucinated": 1,
+        "dst_hallucinated": 1
+      },
+      "root_cause": "name_hallucination"
+    },
+    {
+      "type": "naming",
+      "description": "node 'pantry of haunted house' reachable at conflicting positions [(-4, -3, 0), (-1, -2, 0), (2, -1, 0), (5, 0, 0)]",
+      "involved_edges": [],
+      "involved_nodes": [
+        "pantry of haunted house"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "billiard room of the haunted house",
+            "pantry of haunted house"
+          ],
+          "llm_dir": "north",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "both_names_hallucinated",
+          "source_in_gt": false,
+          "target_in_gt": false,
+          "step": 62
+        },
+        {
+          "edge": [
+            "pantry of haunted house",
+            "living room of haunted house"
+          ],
+          "llm_dir": "south",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "src_hallucinated",
+          "source_in_gt": false,
+          "target_in_gt": true,
+          "step": 63
+        }
+      ],
+      "case_counts": {
+        "both_names_hallucinated": 1,
+        "src_hallucinated": 1
+      },
+      "root_cause": "name_hallucination"
+    },
+    {
+      "type": "naming",
+      "description": "node 'billiard room of the haunted house' reachable at conflicting positions [(-4, -4, 0), (-1, -3, 0), (2, -2, 0), (5, -1, 0)]",
+      "involved_edges": [],
+      "involved_nodes": [
+        "billiard room of the haunted house"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "large bedroom in haunted house",
+            "billiard room of the haunted house"
+          ],
+          "llm_dir": "east",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "dst_hallucinated",
+          "source_in_gt": true,
+          "target_in_gt": false,
+          "step": 61
+        },
+        {
+          "edge": [
+            "billiard room of the haunted house",
+            "pantry of haunted house"
+          ],
+          "llm_dir": "north",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "both_names_hallucinated",
+          "source_in_gt": false,
+          "target_in_gt": false,
+          "step": 62
+        }
+      ],
+      "case_counts": {
+        "dst_hallucinated": 1,
+        "both_names_hallucinated": 1
+      },
+      "root_cause": "name_hallucination"
+    },
+    {
+      "type": "naming",
+      "description": "node 'large bedroom in haunted house' reachable at conflicting positions [(-5, -4, 0), (-2, -3, 0), (1, -2, 0), (4, -1, 0)]",
+      "involved_edges": [],
+      "involved_nodes": [
+        "large bedroom in haunted house"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "entrance hall to haunted house",
+            "large bedroom in haunted house"
+          ],
+          "llm_dir": "west",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 60
+        },
+        {
+          "edge": [
+            "large bedroom in haunted house",
+            "billiard room of the haunted house"
+          ],
+          "llm_dir": "east",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "dst_hallucinated",
+          "source_in_gt": true,
+          "target_in_gt": false,
+          "step": 61
+        }
+      ],
+      "case_counts": {
+        "hallucinated_edge": 1,
+        "dst_hallucinated": 1
+      },
+      "root_cause": "name_hallucination"
+    },
+    {
+      "type": "naming",
+      "description": "node 'outside the house' reachable at conflicting positions [(-9, -5, 1), (-8, -5, 1), (-7, -5, 1), (-6, -5, 1), (3, -2, 1)]",
+      "involved_edges": [],
+      "involved_nodes": [
+        "outside the house"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "old untended grave",
+            "outside the house"
+          ],
+          "llm_dir": "east",
+          "in_gt": true,
+          "gt_dir": "east",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 21
+        },
+        {
+          "edge": [
+            "outside the house",
+            "flower garden"
+          ],
+          "llm_dir": "north",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 1
+        },
+        {
+          "edge": [
+            "outside the house",
+            "sandpit"
+          ],
+          "llm_dir": "north",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 16
+        },
+        {
+          "edge": [
+            "outside the house",
+            "edge of a large calm lake"
+          ],
+          "llm_dir": "east",
+          "in_gt": true,
+          "gt_dir": "east",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 22
+        },
+        {
+          "edge": [
+            "outside the house",
+            "inside the hut"
+          ],
+          "llm_dir": "north",
+          "in_gt": true,
+          "gt_dir": "north",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 28
+        }
+      ],
+      "case_counts": {
+        "correct": 3,
+        "hallucinated_edge": 2
+      },
+      "root_cause": "real_name_corrupted_by_neighbour_error"
+    },
+    {
+      "type": "naming",
+      "description": "node 'flower garden' reachable at conflicting positions [(-10, -4, 1), (-9, -4, 1), (-8, -4, 1), (-7, -4, 1), (-6, -4, 1)]",
+      "involved_edges": [],
+      "involved_nodes": [
+        "flower garden"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "outside the house",
+            "flower garden"
+          ],
+          "llm_dir": "north",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 1
+        },
+        {
+          "edge": [
+            "remnants of a bonfire",
+            "flower garden"
+          ],
+          "llm_dir": "north",
+          "in_gt": true,
+          "gt_dir": "north",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 14
+        },
+        {
+          "edge": [
+            "flower garden",
+            "alley (north/south)"
+          ],
+          "llm_dir": "north",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 2
+        }
+      ],
+      "case_counts": {
+        "hallucinated_edge": 2,
+        "correct": 1
+      },
+      "root_cause": "real_name_corrupted_by_neighbour_error"
+    },
+    {
+      "type": "naming",
+      "description": "node 'sandpit' reachable at conflicting positions [(-10, -4, 1), (-9, -4, 1), (-8, -4, 1), (-7, -4, 1), (-6, -4, 1)]",
+      "involved_edges": [],
+      "involved_nodes": [
+        "sandpit"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "outside the house",
+            "sandpit"
+          ],
+          "llm_dir": "north",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 16
+        },
+        {
+          "edge": [
+            "sandpit",
+            "old untended grave"
+          ],
+          "llm_dir": "south",
+          "in_gt": true,
+          "gt_dir": "south",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 19
+        }
+      ],
+      "case_counts": {
+        "hallucinated_edge": 1,
+        "correct": 1
+      },
+      "root_cause": "real_name_corrupted_by_neighbour_error"
+    },
+    {
+      "type": "naming",
+      "description": "node 'old untended grave' reachable at conflicting positions [(-10, -5, 1), (-9, -5, 1), (-8, -5, 1), (-7, -5, 1), (-6, -5, 1)]",
+      "involved_edges": [],
+      "involved_nodes": [
+        "old untended grave"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "sandpit",
+            "old untended grave"
+          ],
+          "llm_dir": "south",
+          "in_gt": true,
+          "gt_dir": "south",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 19
+        },
+        {
+          "edge": [
+            "old untended grave",
+            "outside the house"
+          ],
+          "llm_dir": "east",
+          "in_gt": true,
+          "gt_dir": "east",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 21
+        }
+      ],
+      "case_counts": {
+        "correct": 2
+      },
+      "root_cause": "naming_collision_on_correct_subgraph"
+    },
+    {
+      "type": "naming",
+      "description": "node 'edge of a large calm lake' reachable at conflicting positions [(-8, -5, 1), (-7, -5, 1), (-6, -5, 1), (-5, -5, 1)]",
+      "involved_edges": [],
+      "involved_nodes": [
+        "edge of a large calm lake"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "outside the house",
+            "edge of a large calm lake"
+          ],
+          "llm_dir": "east",
+          "in_gt": true,
+          "gt_dir": "east",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 22
+        }
+      ],
+      "case_counts": {
+        "correct": 1
+      },
+      "root_cause": "naming_collision_on_correct_subgraph"
+    },
+    {
+      "type": "naming",
+      "description": "node 'alley (north/south)' reachable at conflicting positions [(-10, -3, 1), (-9, -3, 1), (-8, -3, 1), (-7, -3, 1), (-6, -3, 1)]",
+      "involved_edges": [],
+      "involved_nodes": [
+        "alley (north/south)"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "flower garden",
+            "alley (north/south)"
+          ],
+          "llm_dir": "north",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 2
+        },
+        {
+          "edge": [
+            "alley (north/south)",
+            "alley (north end)"
+          ],
+          "llm_dir": "north",
+          "in_gt": true,
+          "gt_dir": "north",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 3
+        },
+        {
+          "edge": [
+            "alley (north/south)",
+            "vegetable garden"
+          ],
+          "llm_dir": "south",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 7
+        }
+      ],
+      "case_counts": {
+        "hallucinated_edge": 2,
+        "correct": 1
+      },
+      "root_cause": "real_name_corrupted_by_neighbour_error"
+    },
+    {
+      "type": "naming",
+      "description": "node 'remnants of a bonfire' reachable at conflicting positions [(-9, -5, 1), (-8, -5, 1), (-7, -5, 1), (-6, -5, 1)]",
+      "involved_edges": [],
+      "involved_nodes": [
+        "remnants of a bonfire"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "shrubbery",
+            "remnants of a bonfire"
+          ],
+          "llm_dir": "east",
+          "in_gt": true,
+          "gt_dir": "east",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 12
+        },
+        {
+          "edge": [
+            "remnants of a bonfire",
+            "flower garden"
+          ],
+          "llm_dir": "north",
+          "in_gt": true,
+          "gt_dir": "north",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 14
+        }
+      ],
+      "case_counts": {
+        "correct": 2
+      },
+      "root_cause": "naming_collision_on_correct_subgraph"
+    },
+    {
+      "type": "naming",
+      "description": "node 'shrubbery' reachable at conflicting positions [(-10, -5, 1), (-9, -5, 1), (-8, -5, 1), (-7, -5, 1)]",
+      "involved_edges": [],
+      "involved_nodes": [
+        "shrubbery"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "vegetable garden",
+            "shrubbery"
+          ],
+          "llm_dir": "south",
+          "in_gt": true,
+          "gt_dir": "south",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 9
+        },
+        {
+          "edge": [
+            "shrubbery",
+            "remnants of a bonfire"
+          ],
+          "llm_dir": "east",
+          "in_gt": true,
+          "gt_dir": "east",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 12
+        }
+      ],
+      "case_counts": {
+        "correct": 2
+      },
+      "root_cause": "naming_collision_on_correct_subgraph"
+    },
+    {
+      "type": "naming",
+      "description": "node 'vegetable garden' reachable at conflicting positions [(-10, -4, 1), (-9, -4, 1), (-8, -4, 1), (-7, -4, 1)]",
+      "involved_edges": [],
+      "involved_nodes": [
+        "vegetable garden"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "alley (north/south)",
+            "vegetable garden"
+          ],
+          "llm_dir": "south",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 7
+        },
+        {
+          "edge": [
+            "vegetable garden",
+            "shrubbery"
+          ],
+          "llm_dir": "south",
+          "in_gt": true,
+          "gt_dir": "south",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 9
+        }
+      ],
+      "case_counts": {
+        "hallucinated_edge": 1,
+        "correct": 1
+      },
+      "root_cause": "real_name_corrupted_by_neighbour_error"
+    },
+    {
+      "type": "naming",
+      "description": "node 'alley (north end)' reachable at conflicting positions [(-10, -2, 1), (-9, -2, 1), (-8, -2, 1), (-7, -2, 1)]",
+      "involved_edges": [],
+      "involved_nodes": [
+        "alley (north end)"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "alley (north/south)",
+            "alley (north end)"
+          ],
+          "llm_dir": "north",
+          "in_gt": true,
+          "gt_dir": "north",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 3
+        }
+      ],
+      "case_counts": {
+        "correct": 1
+      },
+      "root_cause": "naming_collision_on_correct_subgraph"
+    },
+    {
+      "type": "naming",
+      "description": "node 'low damp chamber' reachable at conflicting positions [(-4, -4, 0), (-2, -2, 0), (-1, -3, 0), (2, -2, 0)]",
+      "involved_edges": [],
+      "involved_nodes": [
+        "low damp chamber"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "secret cavern",
+            "low damp chamber"
+          ],
+          "llm_dir": "south",
+          "in_gt": true,
+          "gt_dir": "south",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 46
+        }
+      ],
+      "case_counts": {
+        "correct": 1
+      },
+      "root_cause": "naming_collision_on_correct_subgraph"
+    }
+  ],
+  "walkthrough_steps_available": 71
+}

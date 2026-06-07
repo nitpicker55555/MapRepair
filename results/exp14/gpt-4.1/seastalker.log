@@ -1,0 +1,11 @@
+# seastalker  model=gpt-4.1  n_steps=10  (exp14 bootstrap-fixed)
+step   0 BOOTSTRAP seed current_loc='north part' (src missing, dst valid)
+step   1 MOVE 'north part' --[east]--> 'east part'
+step   2 MOVE 'east part' --[east]--> 'corridor'
+step   3 MOVE 'corridor' --[east]--> "kemp's office"
+step   4 MOVE "kemp's office" --[west]--> 'corridor'
+step   5 MOVE 'corridor' --[west]--> 'east part'
+step   6 MOVE 'east part' --[south]--> 'south part'
+step   7 MOVE 'south part' --[south]--> 'north walkway'
+step   8 MOVE 'north walkway' --[south]--> 'scimitar'
+step   9 MOVE 'scimitar' --[exit]--> 'north walkway'

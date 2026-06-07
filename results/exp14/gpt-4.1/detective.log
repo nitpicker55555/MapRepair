@@ -1,0 +1,37 @@
+# detective  model=gpt-4.1  n_steps=36  (exp14 bootstrap-fixed)
+step   0 BOOTSTRAP seed current_loc='closet' (src missing, dst valid)
+step   1 MOVE 'closet' --[east]--> "chief's office"
+step   2 MOVE "chief's office" --[north]--> 'outside (dead end to east)'
+step   3 MOVE 'outside (dead end to east)' --[east]--> 'living room'
+step   4 MOVE 'living room' --[west]--> "mayor's house (scene of crime)"
+step   5 MOVE "mayor's house (scene of crime)" --[west]--> 'dining room'
+step   6 MOVE 'dining room' --[east]--> "mayor's house (scene of crime)"
+step   7 MOVE "mayor's house (scene of crime)" --[north]--> "upstairs hallway (mayer's house)"
+step   8 MOVE "upstairs hallway (mayer's house)" --[north]--> "hallway (mayer's house, east/west intersect, exit to north)"
+step   9 MOVE "hallway (mayer's house, east/west intersect, exit to north)" --[west]--> 'hallway (mayer\'s house, "guests" door to east)'
+step  10 MOVE 'hallway (mayer\'s house, "guests" door to east)' --[north]--> "hallway (mayer's house, east/west intersect, exit to north)"
+step  11 MOVE "hallway (mayer's house, east/west intersect, exit to north)" --[north]--> "hallway (mayer's house, east end, room to north)"
+step  12 MOVE "hallway (mayer's house, east end, room to north)" --[west]--> 'bedroom'
+step  13 MOVE 'bedroom' --[east]--> 'hallway (15th floor, room 19-22)'
+step  14 MOVE 'hallway (15th floor, room 19-22)' --[north]--> 'outside (holiday inn to north, doughnut king to east, the wall to west)'
+step  15 MOVE 'outside (holiday inn to north, doughnut king to east, the wall to west)' --[east]--> 'video store'
+step  16 MOVE 'video store' --[east]--> 'outside (video store to east)'
+step  17 MOVE 'outside (video store to east)' --[south]--> 'mcdonalds'
+step  18 MOVE 'mcdonalds' --[north]--> 'outside (holiday inn to north, doughnut king to east, the wall to west)'
+step  19 MOVE 'outside (holiday inn to north, doughnut king to east, the wall to west)' --[north]--> 'outside (north end, east only available)'
+step  20 MOVE 'outside (north end, east only available)' --[east]--> 'music store'
+step  21 MOVE 'music store' --[north]--> 'back of music store'
+step  22 MOVE 'back of music store' --[north]--> 'alley'
+step  23 MOVE 'alley' --[north]--> 'police station'
+step  24 MOVE 'police station' --[north]--> 'outside (holiday inn to north, doughnut king to east, the wall to west)'
+step  25 MOVE 'outside (holiday inn to north, doughnut king to east, the wall to west)' --[east]--> 'doughnut king'
+step  26 MOVE 'doughnut king' --[west]--> 'outside (holiday inn to north, doughnut king to east, the wall to west)'
+step  27 MOVE 'outside (holiday inn to north, doughnut king to east, the wall to west)' --[west]--> 'the wall'
+step  28 MOVE 'the wall' --[east]--> 'outside (holiday inn to north, doughnut king to east, the wall to west)'
+step  29 MOVE 'outside (holiday inn to north, doughnut king to east, the wall to west)' --[north]--> 'holiday inn'
+step  30 MOVE 'holiday inn' --[north]--> 'holiday inn 15th floor'
+step  31 MOVE 'holiday inn 15th floor' --[west]--> 'hallway (15th floor, room 1-7)'
+step  32 MOVE 'hallway (15th floor, room 1-7)' --[north]--> 'hallway (15th floor, room 19-22)'
+step  33 bad movement output (kept loc): {'is_movement': True, 'src_node': 'hallway (15th floor, room 19-22)', 'dst_node': 'hallway (15th floor, room 19-22)', 'action': 'west', 'seen_in_forward': 33, 'current_location': 'hallway (15th floor, room 19-22)', 'reasoning': 'Observation describes the same numbered hallway (rooms 19-22), matching the canonical location; action is west, but the destination remains within the same hallway segment.'}
+step  34 MOVE 'hallway (15th floor, room 19-22)' --[north]--> 'hallway (sauna to west, pool a to east)'
+step  35 MOVE 'hallway (sauna to west, pool a to east)' --[north]--> 'room # 30'

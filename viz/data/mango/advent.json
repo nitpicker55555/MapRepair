@@ -1,0 +1,936 @@
+{
+  "id": "advent",
+  "dataset": "mango",
+  "n_rooms": 31,
+  "n_gt_edges": 51,
+  "n_llm_edges": 40,
+  "rooms": [
+    {
+      "id": "alcove",
+      "label": "alcove",
+      "description": ""
+    },
+    {
+      "id": "at \"y2\"",
+      "label": "at \"y2\"",
+      "description": ""
+    },
+    {
+      "id": "at complex junction",
+      "label": "at complex junction",
+      "description": ""
+    },
+    {
+      "id": "at east end of twopit room",
+      "label": "at east end of twopit room",
+      "description": ""
+    },
+    {
+      "id": "at slit in streambed",
+      "label": "at slit in streambed",
+      "description": ""
+    },
+    {
+      "id": "at top of small pit",
+      "label": "at top of small pit",
+      "description": ""
+    },
+    {
+      "id": "at west end of twopit room",
+      "label": "at west end of twopit room",
+      "description": ""
+    },
+    {
+      "id": "bedquilt",
+      "label": "bedquilt",
+      "description": ""
+    },
+    {
+      "id": "below the grate",
+      "label": "below the grate",
+      "description": ""
+    },
+    {
+      "id": "end of road",
+      "label": "end of road",
+      "description": ""
+    },
+    {
+      "id": "hall of the mountain king",
+      "label": "hall of the mountain king",
+      "description": ""
+    },
+    {
+      "id": "in a valley",
+      "label": "in a valley",
+      "description": ""
+    },
+    {
+      "id": "in cobble",
+      "label": "in cobble",
+      "description": ""
+    },
+    {
+      "id": "in debris room",
+      "label": "in debris room",
+      "description": ""
+    },
+    {
+      "id": "in hall of mists",
+      "label": "in hall of mists",
+      "description": ""
+    },
+    {
+      "id": "in soft room",
+      "label": "in soft room",
+      "description": ""
+    },
+    {
+      "id": "in swiss cheese room",
+      "label": "in swiss cheese room",
+      "description": ""
+    },
+    {
+      "id": "in tall e/w canyon",
+      "label": "in tall e/w canyon",
+      "description": ""
+    },
+    {
+      "id": "in west pit",
+      "label": "in west pit",
+      "description": ""
+    },
+    {
+      "id": "inside building",
+      "label": "inside building",
+      "description": ""
+    },
+    {
+      "id": "low n/s passage",
+      "label": "low n/s passage",
+      "description": ""
+    },
+    {
+      "id": "low room",
+      "label": "low room",
+      "description": ""
+    },
+    {
+      "id": "misty cavern",
+      "label": "misty cavern",
+      "description": ""
+    },
+    {
+      "id": "n/s canyon",
+      "label": "n/s canyon",
+      "description": ""
+    },
+    {
+      "id": "orange river chamber",
+      "label": "orange river chamber",
+      "description": ""
+    },
+    {
+      "id": "oriental room",
+      "label": "oriental room",
+      "description": ""
+    },
+    {
+      "id": "outside grate",
+      "label": "outside grate",
+      "description": ""
+    },
+    {
+      "id": "plover room",
+      "label": "plover room",
+      "description": ""
+    },
+    {
+      "id": "secret canyon",
+      "label": "secret canyon",
+      "description": ""
+    },
+    {
+      "id": "secret e/w canyon above tight canyon",
+      "label": "secret e/w canyon above tight canyon",
+      "description": ""
+    },
+    {
+      "id": "sloping e/w canyon",
+      "label": "sloping e/w canyon",
+      "description": ""
+    }
+  ],
+  "walkthrough": [],
+  "states": {
+    "gt": {
+      "edges": [
+        {
+          "src": "end of road",
+          "dst": "inside building",
+          "dir": "east"
+        },
+        {
+          "src": "end of road",
+          "dst": "in a valley",
+          "dir": "south"
+        },
+        {
+          "src": "inside building",
+          "dst": "end of road",
+          "dir": "west"
+        },
+        {
+          "src": "in a valley",
+          "dst": "at slit in streambed",
+          "dir": "south"
+        },
+        {
+          "src": "in a valley",
+          "dst": "end of road",
+          "dir": "north"
+        },
+        {
+          "src": "at slit in streambed",
+          "dst": "outside grate",
+          "dir": "south"
+        },
+        {
+          "src": "at slit in streambed",
+          "dst": "in a valley",
+          "dir": "north"
+        },
+        {
+          "src": "outside grate",
+          "dst": "below the grate",
+          "dir": "down"
+        },
+        {
+          "src": "outside grate",
+          "dst": "at slit in streambed",
+          "dir": "north"
+        },
+        {
+          "src": "below the grate",
+          "dst": "in cobble",
+          "dir": "west"
+        },
+        {
+          "src": "in cobble",
+          "dst": "in debris room",
+          "dir": "west"
+        },
+        {
+          "src": "in cobble",
+          "dst": "below the grate",
+          "dir": "east"
+        },
+        {
+          "src": "in debris room",
+          "dst": "sloping e/w canyon",
+          "dir": "west"
+        },
+        {
+          "src": "in debris room",
+          "dst": "in cobble",
+          "dir": "east"
+        },
+        {
+          "src": "sloping e/w canyon",
+          "dst": "orange river chamber",
+          "dir": "west"
+        },
+        {
+          "src": "sloping e/w canyon",
+          "dst": "in debris room",
+          "dir": "east"
+        },
+        {
+          "src": "orange river chamber",
+          "dst": "at top of small pit",
+          "dir": "west"
+        },
+        {
+          "src": "orange river chamber",
+          "dst": "sloping e/w canyon",
+          "dir": "east"
+        },
+        {
+          "src": "at top of small pit",
+          "dst": "in hall of mists",
+          "dir": "down"
+        },
+        {
+          "src": "at top of small pit",
+          "dst": "orange river chamber",
+          "dir": "east"
+        },
+        {
+          "src": "in hall of mists",
+          "dst": "low room",
+          "dir": "south"
+        },
+        {
+          "src": "in hall of mists",
+          "dst": "hall of the mountain king",
+          "dir": "north"
+        },
+        {
+          "src": "in hall of mists",
+          "dst": "at top of small pit",
+          "dir": "up"
+        },
+        {
+          "src": "low room",
+          "dst": "in hall of mists",
+          "dir": "north"
+        },
+        {
+          "src": "hall of the mountain king",
+          "dst": "low n/s passage",
+          "dir": "north"
+        },
+        {
+          "src": "hall of the mountain king",
+          "dst": "secret e/w canyon above tight canyon",
+          "dir": "southwest"
+        },
+        {
+          "src": "low n/s passage",
+          "dst": "at \"y2\"",
+          "dir": "north"
+        },
+        {
+          "src": "low n/s passage",
+          "dst": "hall of the mountain king",
+          "dir": "south"
+        },
+        {
+          "src": "secret e/w canyon above tight canyon",
+          "dst": "secret canyon",
+          "dir": "west"
+        },
+        {
+          "src": "secret e/w canyon above tight canyon",
+          "dst": "n/s canyon",
+          "dir": "down"
+        },
+        {
+          "src": "at \"y2\"",
+          "dst": "low n/s passage",
+          "dir": "south"
+        },
+        {
+          "src": "secret canyon",
+          "dst": "secret e/w canyon above tight canyon",
+          "dir": "east"
+        },
+        {
+          "src": "n/s canyon",
+          "dst": "in tall e/w canyon",
+          "dir": "north"
+        },
+        {
+          "src": "in tall e/w canyon",
+          "dst": "in swiss cheese room",
+          "dir": "north"
+        },
+        {
+          "src": "in swiss cheese room",
+          "dst": "at east end of twopit room",
+          "dir": "west"
+        },
+        {
+          "src": "in swiss cheese room",
+          "dst": "in soft room",
+          "dir": "east"
+        },
+        {
+          "src": "in swiss cheese room",
+          "dst": "bedquilt",
+          "dir": "northeast"
+        },
+        {
+          "src": "in swiss cheese room",
+          "dst": "in tall e/w canyon",
+          "dir": "south"
+        },
+        {
+          "src": "at east end of twopit room",
+          "dst": "at west end of twopit room",
+          "dir": "west"
+        },
+        {
+          "src": "at east end of twopit room",
+          "dst": "in swiss cheese room",
+          "dir": "east"
+        },
+        {
+          "src": "in soft room",
+          "dst": "in swiss cheese room",
+          "dir": "west"
+        },
+        {
+          "src": "bedquilt",
+          "dst": "at complex junction",
+          "dir": "east"
+        },
+        {
+          "src": "at west end of twopit room",
+          "dst": "in west pit",
+          "dir": "down"
+        },
+        {
+          "src": "at west end of twopit room",
+          "dst": "at east end of twopit room",
+          "dir": "east"
+        },
+        {
+          "src": "in west pit",
+          "dst": "at west end of twopit room",
+          "dir": "up"
+        },
+        {
+          "src": "oriental room",
+          "dst": "misty cavern",
+          "dir": "north"
+        },
+        {
+          "src": "oriental room",
+          "dst": "in swiss cheese room",
+          "dir": "southeast"
+        },
+        {
+          "src": "misty cavern",
+          "dst": "oriental room",
+          "dir": "south"
+        },
+        {
+          "src": "alcove",
+          "dst": "plover room",
+          "dir": "east"
+        },
+        {
+          "src": "plover room",
+          "dst": "alcove",
+          "dir": "west"
+        },
+        {
+          "src": "at complex junction",
+          "dst": "bedquilt",
+          "dir": "west"
+        }
+      ]
+    },
+    "llm_built": {
+      "edges": [
+        {
+          "src": "inside building",
+          "dst": "end of road",
+          "dir": "west",
+          "kind": "correct"
+        },
+        {
+          "src": "end of road",
+          "dst": "in a valley",
+          "dir": "south",
+          "kind": "correct"
+        },
+        {
+          "src": "in a valley",
+          "dst": "at slit in streambed",
+          "dir": "south",
+          "kind": "correct"
+        },
+        {
+          "src": "at slit in streambed",
+          "dst": "outside grate",
+          "dir": "south",
+          "kind": "correct"
+        },
+        {
+          "src": "outside grate",
+          "dst": "below the grate",
+          "dir": "down",
+          "kind": "correct"
+        },
+        {
+          "src": "below the grate",
+          "dst": "in cobble",
+          "dir": "west",
+          "kind": "correct"
+        },
+        {
+          "src": "in cobble",
+          "dst": "in debris room",
+          "dir": "west",
+          "kind": "correct"
+        },
+        {
+          "src": "in debris room",
+          "dst": "sloping e/w canyon",
+          "dir": "west",
+          "kind": "correct"
+        },
+        {
+          "src": "sloping e/w canyon",
+          "dst": "orange river chamber",
+          "dir": "west",
+          "kind": "correct"
+        },
+        {
+          "src": "orange river chamber",
+          "dst": "at top of small pit",
+          "dir": "west",
+          "kind": "correct"
+        },
+        {
+          "src": "at top of small pit",
+          "dst": "in hall of mists",
+          "dir": "down",
+          "kind": "correct"
+        },
+        {
+          "src": "in hall of mists",
+          "dst": "low room",
+          "dir": "south",
+          "kind": "correct"
+        },
+        {
+          "src": "in hall of mists",
+          "dst": "hall of the mountain king",
+          "dir": "north",
+          "kind": "correct"
+        },
+        {
+          "src": "low room",
+          "dst": "in hall of mists",
+          "dir": "north",
+          "kind": "correct"
+        },
+        {
+          "src": "hall of the mountain king",
+          "dst": "low n/s passage",
+          "dir": "north",
+          "kind": "correct"
+        },
+        {
+          "src": "hall of the mountain king",
+          "dst": "secret e/w canyon above tight canyon",
+          "dir": "southwest",
+          "kind": "correct"
+        },
+        {
+          "src": "low n/s passage",
+          "dst": "hall of the mountain king",
+          "dir": "south",
+          "kind": "correct"
+        },
+        {
+          "src": "low n/s passage",
+          "dst": "at \"y2\"",
+          "dir": "north",
+          "kind": "correct"
+        },
+        {
+          "src": "at \"y2\"",
+          "dst": "low n/s passage",
+          "dir": "south",
+          "kind": "correct"
+        },
+        {
+          "src": "secret e/w canyon above tight canyon",
+          "dst": "secret canyon",
+          "dir": "west",
+          "kind": "correct"
+        },
+        {
+          "src": "secret e/w canyon above tight canyon",
+          "dst": "n/s canyon",
+          "dir": "down",
+          "kind": "correct"
+        },
+        {
+          "src": "secret canyon",
+          "dst": "secret e/w canyon above tight canyon",
+          "dir": "east",
+          "kind": "correct"
+        },
+        {
+          "src": "n/s canyon",
+          "dst": "in tall e/w canyon",
+          "dir": "north",
+          "kind": "correct"
+        },
+        {
+          "src": "in tall e/w canyon",
+          "dst": "in swiss cheese room",
+          "dir": "north",
+          "kind": "correct"
+        },
+        {
+          "src": "in swiss cheese room",
+          "dst": "at east end of twopit room",
+          "dir": "west",
+          "kind": "correct"
+        },
+        {
+          "src": "in swiss cheese room",
+          "dst": "oriental room",
+          "dir": "northwest",
+          "kind": "spurious"
+        },
+        {
+          "src": "in swiss cheese room",
+          "dst": "in soft room",
+          "dir": "east",
+          "kind": "correct"
+        },
+        {
+          "src": "in swiss cheese room",
+          "dst": "bedquilt",
+          "dir": "northeast",
+          "kind": "correct"
+        },
+        {
+          "src": "at east end of twopit room",
+          "dst": "in swiss cheese room",
+          "dir": "east",
+          "kind": "correct"
+        },
+        {
+          "src": "at east end of twopit room",
+          "dst": "at west end of twopit room",
+          "dir": "west",
+          "kind": "correct"
+        },
+        {
+          "src": "at west end of twopit room",
+          "dst": "at east end of twopit room",
+          "dir": "east",
+          "kind": "correct"
+        },
+        {
+          "src": "at west end of twopit room",
+          "dst": "in west pit",
+          "dir": "down",
+          "kind": "correct"
+        },
+        {
+          "src": "in west pit",
+          "dst": "at west end of twopit room",
+          "dir": "up",
+          "kind": "correct"
+        },
+        {
+          "src": "oriental room",
+          "dst": "in swiss cheese room",
+          "dir": "southeast",
+          "kind": "correct"
+        },
+        {
+          "src": "oriental room",
+          "dst": "misty cavern",
+          "dir": "north",
+          "kind": "correct"
+        },
+        {
+          "src": "misty cavern",
+          "dst": "plover room",
+          "dir": "east",
+          "kind": "spurious"
+        },
+        {
+          "src": "plover room",
+          "dst": "alcove",
+          "dir": "west",
+          "kind": "correct"
+        },
+        {
+          "src": "alcove",
+          "dst": "oriental room",
+          "dir": "south",
+          "kind": "spurious"
+        },
+        {
+          "src": "in soft room",
+          "dst": "in swiss cheese room",
+          "dir": "west",
+          "kind": "correct"
+        },
+        {
+          "src": "bedquilt",
+          "dst": "at complex junction",
+          "dir": "east",
+          "kind": "correct"
+        }
+      ],
+      "n_correct": 37,
+      "n_wrong_direction": 0,
+      "n_wrong_dst": 0,
+      "n_spurious": 3,
+      "n_hallucinated_dst": 0,
+      "n_hallucinated_src": 0,
+      "conflicts": [
+        {
+          "type": "direction",
+          "severity": "high",
+          "description": "node 'oriental room' has multiple outgoing edges labelled 'north'",
+          "edges": [
+            [
+              "oriental room",
+              "misty cavern"
+            ],
+            [
+              "oriental room",
+              "alcove"
+            ]
+          ]
+        },
+        {
+          "type": "direction",
+          "severity": "high",
+          "description": "node 'plover room' has multiple outgoing edges labelled 'west'",
+          "edges": [
+            [
+              "plover room",
+              "misty cavern"
+            ],
+            [
+              "plover room",
+              "alcove"
+            ]
+          ]
+        },
+        {
+          "type": "topology",
+          "severity": "high",
+          "description": "position (0, 0, 0) occupied by multiple rooms ['alcove', 'misty cavern']",
+          "edges": []
+        }
+      ]
+    },
+    "repaired": {
+      "edges": [
+        {
+          "src": "inside building",
+          "dst": "end of road",
+          "dir": "west"
+        },
+        {
+          "src": "end of road",
+          "dst": "in a valley",
+          "dir": "south"
+        },
+        {
+          "src": "in a valley",
+          "dst": "at slit in streambed",
+          "dir": "south"
+        },
+        {
+          "src": "at slit in streambed",
+          "dst": "outside grate",
+          "dir": "south"
+        },
+        {
+          "src": "outside grate",
+          "dst": "below the grate",
+          "dir": "down"
+        },
+        {
+          "src": "below the grate",
+          "dst": "in cobble",
+          "dir": "west"
+        },
+        {
+          "src": "in cobble",
+          "dst": "in debris room",
+          "dir": "west"
+        },
+        {
+          "src": "in debris room",
+          "dst": "sloping e/w canyon",
+          "dir": "west"
+        },
+        {
+          "src": "sloping e/w canyon",
+          "dst": "orange river chamber",
+          "dir": "west"
+        },
+        {
+          "src": "orange river chamber",
+          "dst": "at top of small pit",
+          "dir": "west"
+        },
+        {
+          "src": "at top of small pit",
+          "dst": "in hall of mists",
+          "dir": "down"
+        },
+        {
+          "src": "in hall of mists",
+          "dst": "low room",
+          "dir": "south"
+        },
+        {
+          "src": "in hall of mists",
+          "dst": "hall of the mountain king",
+          "dir": "north"
+        },
+        {
+          "src": "low room",
+          "dst": "in hall of mists",
+          "dir": "north"
+        },
+        {
+          "src": "hall of the mountain king",
+          "dst": "low n/s passage",
+          "dir": "north"
+        },
+        {
+          "src": "hall of the mountain king",
+          "dst": "secret e/w canyon above tight canyon",
+          "dir": "southwest"
+        },
+        {
+          "src": "low n/s passage",
+          "dst": "hall of the mountain king",
+          "dir": "south"
+        },
+        {
+          "src": "low n/s passage",
+          "dst": "at \"y2\"",
+          "dir": "north"
+        },
+        {
+          "src": "at \"y2\"",
+          "dst": "low n/s passage",
+          "dir": "south"
+        },
+        {
+          "src": "secret e/w canyon above tight canyon",
+          "dst": "secret canyon",
+          "dir": "west"
+        },
+        {
+          "src": "secret e/w canyon above tight canyon",
+          "dst": "n/s canyon",
+          "dir": "down"
+        },
+        {
+          "src": "secret canyon",
+          "dst": "secret e/w canyon above tight canyon",
+          "dir": "east"
+        },
+        {
+          "src": "n/s canyon",
+          "dst": "in tall e/w canyon",
+          "dir": "north"
+        },
+        {
+          "src": "in tall e/w canyon",
+          "dst": "in swiss cheese room",
+          "dir": "north"
+        },
+        {
+          "src": "in swiss cheese room",
+          "dst": "at east end of twopit room",
+          "dir": "west"
+        },
+        {
+          "src": "in swiss cheese room",
+          "dst": "oriental room",
+          "dir": "northwest"
+        },
+        {
+          "src": "in swiss cheese room",
+          "dst": "in soft room",
+          "dir": "east"
+        },
+        {
+          "src": "in swiss cheese room",
+          "dst": "bedquilt",
+          "dir": "northeast"
+        },
+        {
+          "src": "at east end of twopit room",
+          "dst": "in swiss cheese room",
+          "dir": "east"
+        },
+        {
+          "src": "at east end of twopit room",
+          "dst": "at west end of twopit room",
+          "dir": "west"
+        },
+        {
+          "src": "at west end of twopit room",
+          "dst": "at east end of twopit room",
+          "dir": "east"
+        },
+        {
+          "src": "at west end of twopit room",
+          "dst": "in west pit",
+          "dir": "down"
+        },
+        {
+          "src": "in west pit",
+          "dst": "at west end of twopit room",
+          "dir": "up"
+        },
+        {
+          "src": "oriental room",
+          "dst": "in swiss cheese room",
+          "dir": "southeast"
+        },
+        {
+          "src": "misty cavern",
+          "dst": "plover room",
+          "dir": "east"
+        },
+        {
+          "src": "alcove",
+          "dst": "oriental room",
+          "dir": "south"
+        },
+        {
+          "src": "in soft room",
+          "dst": "in swiss cheese room",
+          "dir": "west"
+        },
+        {
+          "src": "bedquilt",
+          "dst": "at complex junction",
+          "dir": "east"
+        }
+      ],
+      "actions": [
+        {
+          "kind": "remove_edge",
+          "target": [
+            "oriental room",
+            "misty cavern"
+          ],
+          "new_dir": null,
+          "reason": "remove fallback"
+        },
+        {
+          "kind": "remove_edge",
+          "target": [
+            "plover room",
+            "alcove"
+          ],
+          "new_dir": null,
+          "reason": "remove fallback"
+        },
+        {
+          "kind": "skip",
+          "target": null,
+          "new_dir": null,
+          "reason": "no candidates"
+        }
+      ],
+      "n_conflicts_before": 3,
+      "n_conflicts_after": 1
+    }
+  }
+}

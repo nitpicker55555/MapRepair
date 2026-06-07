@@ -1,0 +1,225 @@
+{
+  "rooms": {
+    "r_1": {
+      "id": "r_1",
+      "name": "cubicle"
+    },
+    "r_4": {
+      "id": "r_4",
+      "name": "study"
+    },
+    "r_2": {
+      "id": "r_2",
+      "name": "attic"
+    },
+    "r_3": {
+      "id": "r_3",
+      "name": "office"
+    },
+    "r_6": {
+      "id": "r_6",
+      "name": "recreation zone"
+    },
+    "r_10": {
+      "id": "r_10",
+      "name": "bedroom"
+    },
+    "r_7": {
+      "id": "r_7",
+      "name": "playroom"
+    },
+    "r_8": {
+      "id": "r_8",
+      "name": "laundry place"
+    },
+    "r_0": {
+      "id": "r_0",
+      "name": "cookhouse"
+    },
+    "r_5": {
+      "id": "r_5",
+      "name": "dish-pit"
+    },
+    "r_9": {
+      "id": "r_9",
+      "name": "basement"
+    }
+  },
+  "edges": [
+    {
+      "src_name": "cubicle",
+      "dst_name": "study",
+      "src_id": "r_1",
+      "dst_id": "r_4",
+      "direction": "west"
+    },
+    {
+      "src_name": "cubicle",
+      "dst_name": "cookhouse",
+      "src_id": "r_1",
+      "dst_id": "r_0",
+      "direction": "south"
+    },
+    {
+      "src_name": "cubicle",
+      "dst_name": "recreation zone",
+      "src_id": "r_1",
+      "dst_id": "r_6",
+      "direction": "north"
+    },
+    {
+      "src_name": "cubicle",
+      "dst_name": "attic",
+      "src_id": "r_1",
+      "dst_id": "r_2",
+      "direction": "east"
+    },
+    {
+      "src_name": "study",
+      "dst_name": "bedroom",
+      "src_id": "r_4",
+      "dst_id": "r_10",
+      "direction": "west"
+    },
+    {
+      "src_name": "study",
+      "dst_name": "dish-pit",
+      "src_id": "r_4",
+      "dst_id": "r_5",
+      "direction": "south"
+    },
+    {
+      "src_name": "study",
+      "dst_name": "playroom",
+      "src_id": "r_4",
+      "dst_id": "r_7",
+      "direction": "north"
+    },
+    {
+      "src_name": "study",
+      "dst_name": "cubicle",
+      "src_id": "r_4",
+      "dst_id": "r_1",
+      "direction": "east"
+    },
+    {
+      "src_name": "attic",
+      "dst_name": "cubicle",
+      "src_id": "r_2",
+      "dst_id": "r_1",
+      "direction": "west"
+    },
+    {
+      "src_name": "attic",
+      "dst_name": "basement",
+      "src_id": "r_2",
+      "dst_id": "r_9",
+      "direction": "south"
+    },
+    {
+      "src_name": "attic",
+      "dst_name": "office",
+      "src_id": "r_2",
+      "dst_id": "r_3",
+      "direction": "north"
+    },
+    {
+      "src_name": "office",
+      "dst_name": "recreation zone",
+      "src_id": "r_3",
+      "dst_id": "r_6",
+      "direction": "west"
+    },
+    {
+      "src_name": "office",
+      "dst_name": "attic",
+      "src_id": "r_3",
+      "dst_id": "r_2",
+      "direction": "south"
+    },
+    {
+      "src_name": "recreation zone",
+      "dst_name": "playroom",
+      "src_id": "r_6",
+      "dst_id": "r_7",
+      "direction": "west"
+    },
+    {
+      "src_name": "recreation zone",
+      "dst_name": "cubicle",
+      "src_id": "r_6",
+      "dst_id": "r_1",
+      "direction": "south"
+    },
+    {
+      "src_name": "recreation zone",
+      "dst_name": "office",
+      "src_id": "r_6",
+      "dst_id": "r_3",
+      "direction": "east"
+    },
+    {
+      "src_name": "bedroom",
+      "dst_name": "study",
+      "src_id": "r_10",
+      "dst_id": "r_4",
+      "direction": "east"
+    },
+    {
+      "src_name": "playroom",
+      "dst_name": "laundry place",
+      "src_id": "r_7",
+      "dst_id": "r_8",
+      "direction": "west"
+    },
+    {
+      "src_name": "playroom",
+      "dst_name": "study",
+      "src_id": "r_7",
+      "dst_id": "r_4",
+      "direction": "south"
+    },
+    {
+      "src_name": "playroom",
+      "dst_name": "recreation zone",
+      "src_id": "r_7",
+      "dst_id": "r_6",
+      "direction": "east"
+    },
+    {
+      "src_name": "laundry place",
+      "dst_name": "playroom",
+      "src_id": "r_8",
+      "dst_id": "r_7",
+      "direction": "east"
+    },
+    {
+      "src_name": "cookhouse",
+      "dst_name": "cubicle",
+      "src_id": "r_0",
+      "dst_id": "r_1",
+      "direction": "north"
+    },
+    {
+      "src_name": "dish-pit",
+      "dst_name": "study",
+      "src_id": "r_5",
+      "dst_id": "r_4",
+      "direction": "north"
+    },
+    {
+      "src_name": "basement",
+      "dst_name": "attic",
+      "src_id": "r_9",
+      "dst_id": "r_2",
+      "direction": "north"
+    }
+  ],
+  "n_rooms": 11,
+  "n_edges": 24,
+  "walkthrough": [
+    "go west",
+    "go south",
+    "take desktop computer from bureau"
+  ]
+}

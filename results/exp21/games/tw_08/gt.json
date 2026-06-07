@@ -1,0 +1,89 @@
+{
+  "rooms": {
+    "r_1": {
+      "id": "r_1",
+      "name": "basement"
+    },
+    "r_4": {
+      "id": "r_4",
+      "name": "bedchamber"
+    },
+    "r_2": {
+      "id": "r_2",
+      "name": "sauna"
+    },
+    "r_0": {
+      "id": "r_0",
+      "name": "spare room"
+    },
+    "r_3": {
+      "id": "r_3",
+      "name": "canteen"
+    }
+  },
+  "edges": [
+    {
+      "src_name": "basement",
+      "dst_name": "bedchamber",
+      "src_id": "r_1",
+      "dst_id": "r_4",
+      "direction": "west"
+    },
+    {
+      "src_name": "basement",
+      "dst_name": "spare room",
+      "src_id": "r_1",
+      "dst_id": "r_0",
+      "direction": "south"
+    },
+    {
+      "src_name": "basement",
+      "dst_name": "sauna",
+      "src_id": "r_1",
+      "dst_id": "r_2",
+      "direction": "east"
+    },
+    {
+      "src_name": "bedchamber",
+      "dst_name": "basement",
+      "src_id": "r_4",
+      "dst_id": "r_1",
+      "direction": "east"
+    },
+    {
+      "src_name": "sauna",
+      "dst_name": "basement",
+      "src_id": "r_2",
+      "dst_id": "r_1",
+      "direction": "west"
+    },
+    {
+      "src_name": "sauna",
+      "dst_name": "canteen",
+      "src_id": "r_2",
+      "dst_id": "r_3",
+      "direction": "north"
+    },
+    {
+      "src_name": "spare room",
+      "dst_name": "basement",
+      "src_id": "r_0",
+      "dst_id": "r_1",
+      "direction": "north"
+    },
+    {
+      "src_name": "canteen",
+      "dst_name": "sauna",
+      "src_id": "r_3",
+      "dst_id": "r_2",
+      "direction": "south"
+    }
+  ],
+  "n_rooms": 5,
+  "n_edges": 8,
+  "walkthrough": [
+    "open box",
+    "take insect from box",
+    "drop insect"
+  ]
+}

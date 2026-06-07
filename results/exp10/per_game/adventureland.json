@@ -1,0 +1,2237 @@
+{
+  "game": "adventureland",
+  "num_llm_edges": 20,
+  "num_gt_edges": 27,
+  "num_conflicts": 36,
+  "type_distribution": {
+    "direction": 3,
+    "topology": 14,
+    "naming": 19
+  },
+  "root_cause_distribution": {
+    "name_hallucination": 3,
+    "src_dst_swap": 1,
+    "real_vs_hallucinated": 1,
+    "name_hallucination_caused_overlap": 8,
+    "overlap_mixed": 5,
+    "false_positive_overlap": 1,
+    "real_name_corrupted_by_neighbour_error": 6,
+    "naming_collision_on_correct_subgraph": 11
+  },
+  "conflicts": [
+    {
+      "type": "direction",
+      "description": "node 'hole' has multiple outgoing edges labelled 'down'",
+      "involved_edges": [
+        [
+          "hole",
+          "maze (exit north, south, east, down)"
+        ],
+        [
+          "hole",
+          "darkness"
+        ]
+      ],
+      "involved_nodes": [
+        "hole",
+        "maze (exit north, south, east, down)",
+        "darkness"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "hole",
+            "maze (exit north, south, east, down)"
+          ],
+          "llm_dir": "down",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 30
+        },
+        {
+          "edge": [
+            "hole",
+            "darkness"
+          ],
+          "llm_dir": "down",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "dst_hallucinated",
+          "source_in_gt": true,
+          "target_in_gt": false,
+          "step": 64
+        }
+      ],
+      "case_counts": {
+        "hallucinated_edge": 1,
+        "dst_hallucinated": 1
+      },
+      "root_cause": "name_hallucination"
+    },
+    {
+      "type": "direction",
+      "description": "node 'maze (exit north, south, east, down)' has multiple outgoing edges labelled 'up'",
+      "involved_edges": [
+        [
+          "maze (exit north, south, east, down)",
+          "hole"
+        ],
+        [
+          "maze (exit north, south, east, down)",
+          "cavern"
+        ]
+      ],
+      "involved_nodes": [
+        "maze (exit north, south, east, down)",
+        "hole",
+        "cavern"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "maze (exit north, south, east, down)",
+            "hole"
+          ],
+          "llm_dir": "up",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": null
+        },
+        {
+          "edge": [
+            "maze (exit north, south, east, down)",
+            "cavern"
+          ],
+          "llm_dir": "up",
+          "in_gt": false,
+          "gt_dir": "down",
+          "case": "swapped_src_dst",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": null
+        }
+      ],
+      "case_counts": {
+        "hallucinated_edge": 1,
+        "swapped_src_dst": 1
+      },
+      "root_cause": "src_dst_swap"
+    },
+    {
+      "type": "direction",
+      "description": "node 'maze (exit north, south, east, down)' has multiple outgoing edges labelled 'down'",
+      "involved_edges": [
+        [
+          "maze (exit north, south, east, down)",
+          "hall"
+        ],
+        [
+          "maze (exit north, south, east, down)",
+          "maze (exit west, up)"
+        ]
+      ],
+      "involved_nodes": [
+        "maze (exit north, south, east, down)",
+        "hall",
+        "maze (exit west, up)"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "maze (exit north, south, east, down)",
+            "hall"
+          ],
+          "llm_dir": "down",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 31
+        },
+        {
+          "edge": [
+            "maze (exit north, south, east, down)",
+            "maze (exit west, up)"
+          ],
+          "llm_dir": "down",
+          "in_gt": true,
+          "gt_dir": "down",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 37
+        }
+      ],
+      "case_counts": {
+        "hallucinated_edge": 1,
+        "correct": 1
+      },
+      "root_cause": "real_vs_hallucinated"
+    },
+    {
+      "type": "topology",
+      "description": "position (0, 1, -9) occupied by multiple rooms ['cavern', 'hole']",
+      "involved_edges": [],
+      "involved_nodes": [
+        "cavern",
+        "hole"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "hall",
+            "cavern"
+          ],
+          "llm_dir": "down",
+          "in_gt": true,
+          "gt_dir": "down",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 32
+        },
+        {
+          "edge": [
+            "cavern",
+            "anteroom"
+          ],
+          "llm_dir": "south",
+          "in_gt": true,
+          "gt_dir": "south",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 33
+        },
+        {
+          "edge": [
+            "cavern",
+            "maze (exit north, south, east, down)"
+          ],
+          "llm_dir": "down",
+          "in_gt": true,
+          "gt_dir": "down",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 36
+        },
+        {
+          "edge": [
+            "root chamber",
+            "hole"
+          ],
+          "llm_dir": "down",
+          "in_gt": true,
+          "gt_dir": "down",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 26
+        },
+        {
+          "edge": [
+            "hole",
+            "maze (exit north, south, east, down)"
+          ],
+          "llm_dir": "down",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 30
+        },
+        {
+          "edge": [
+            "hole",
+            "darkness"
+          ],
+          "llm_dir": "down",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "dst_hallucinated",
+          "source_in_gt": true,
+          "target_in_gt": false,
+          "step": 64
+        }
+      ],
+      "case_counts": {
+        "correct": 4,
+        "hallucinated_edge": 1,
+        "dst_hallucinated": 1
+      },
+      "root_cause": "name_hallucination_caused_overlap"
+    },
+    {
+      "type": "topology",
+      "description": "position (0, 1, -3) occupied by multiple rooms ['cavern', 'hole']",
+      "involved_edges": [],
+      "involved_nodes": [
+        "cavern",
+        "hole"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "hall",
+            "cavern"
+          ],
+          "llm_dir": "down",
+          "in_gt": true,
+          "gt_dir": "down",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 32
+        },
+        {
+          "edge": [
+            "cavern",
+            "anteroom"
+          ],
+          "llm_dir": "south",
+          "in_gt": true,
+          "gt_dir": "south",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 33
+        },
+        {
+          "edge": [
+            "cavern",
+            "maze (exit north, south, east, down)"
+          ],
+          "llm_dir": "down",
+          "in_gt": true,
+          "gt_dir": "down",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 36
+        },
+        {
+          "edge": [
+            "root chamber",
+            "hole"
+          ],
+          "llm_dir": "down",
+          "in_gt": true,
+          "gt_dir": "down",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 26
+        },
+        {
+          "edge": [
+            "hole",
+            "maze (exit north, south, east, down)"
+          ],
+          "llm_dir": "down",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 30
+        },
+        {
+          "edge": [
+            "hole",
+            "darkness"
+          ],
+          "llm_dir": "down",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "dst_hallucinated",
+          "source_in_gt": true,
+          "target_in_gt": false,
+          "step": 64
+        }
+      ],
+      "case_counts": {
+        "correct": 4,
+        "hallucinated_edge": 1,
+        "dst_hallucinated": 1
+      },
+      "root_cause": "name_hallucination_caused_overlap"
+    },
+    {
+      "type": "topology",
+      "description": "position (0, 1, -6) occupied by multiple rooms ['cavern', 'dismal swamp', 'hole']",
+      "involved_edges": [],
+      "involved_nodes": [
+        "cavern",
+        "dismal swamp",
+        "hole"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "hall",
+            "cavern"
+          ],
+          "llm_dir": "down",
+          "in_gt": true,
+          "gt_dir": "down",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 32
+        },
+        {
+          "edge": [
+            "cavern",
+            "anteroom"
+          ],
+          "llm_dir": "south",
+          "in_gt": true,
+          "gt_dir": "south",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 33
+        },
+        {
+          "edge": [
+            "cavern",
+            "maze (exit north, south, east, down)"
+          ],
+          "llm_dir": "down",
+          "in_gt": true,
+          "gt_dir": "down",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 36
+        },
+        {
+          "edge": [
+            "lakeside",
+            "dismal swamp"
+          ],
+          "llm_dir": "west",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 8
+        },
+        {
+          "edge": [
+            "tree top",
+            "dismal swamp"
+          ],
+          "llm_dir": "down",
+          "in_gt": true,
+          "gt_dir": "down",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 14
+        },
+        {
+          "edge": [
+            "inside stump",
+            "dismal swamp"
+          ],
+          "llm_dir": "up",
+          "in_gt": true,
+          "gt_dir": "up",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 56
+        },
+        {
+          "edge": [
+            "dismal swamp",
+            "meadow"
+          ],
+          "llm_dir": "north",
+          "in_gt": true,
+          "gt_dir": "north",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 49
+        },
+        {
+          "edge": [
+            "root chamber",
+            "hole"
+          ],
+          "llm_dir": "down",
+          "in_gt": true,
+          "gt_dir": "down",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 26
+        },
+        {
+          "edge": [
+            "hole",
+            "maze (exit north, south, east, down)"
+          ],
+          "llm_dir": "down",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 30
+        },
+        {
+          "edge": [
+            "hole",
+            "darkness"
+          ],
+          "llm_dir": "down",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "dst_hallucinated",
+          "source_in_gt": true,
+          "target_in_gt": false,
+          "step": 64
+        }
+      ],
+      "case_counts": {
+        "correct": 7,
+        "hallucinated_edge": 2,
+        "dst_hallucinated": 1
+      },
+      "root_cause": "name_hallucination_caused_overlap"
+    },
+    {
+      "type": "topology",
+      "description": "position (0, 1, 0) occupied by multiple rooms ['cavern', 'hole']",
+      "involved_edges": [],
+      "involved_nodes": [
+        "cavern",
+        "hole"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "hall",
+            "cavern"
+          ],
+          "llm_dir": "down",
+          "in_gt": true,
+          "gt_dir": "down",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 32
+        },
+        {
+          "edge": [
+            "cavern",
+            "anteroom"
+          ],
+          "llm_dir": "south",
+          "in_gt": true,
+          "gt_dir": "south",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 33
+        },
+        {
+          "edge": [
+            "cavern",
+            "maze (exit north, south, east, down)"
+          ],
+          "llm_dir": "down",
+          "in_gt": true,
+          "gt_dir": "down",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 36
+        },
+        {
+          "edge": [
+            "root chamber",
+            "hole"
+          ],
+          "llm_dir": "down",
+          "in_gt": true,
+          "gt_dir": "down",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 26
+        },
+        {
+          "edge": [
+            "hole",
+            "maze (exit north, south, east, down)"
+          ],
+          "llm_dir": "down",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 30
+        },
+        {
+          "edge": [
+            "hole",
+            "darkness"
+          ],
+          "llm_dir": "down",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "dst_hallucinated",
+          "source_in_gt": true,
+          "target_in_gt": false,
+          "step": 64
+        }
+      ],
+      "case_counts": {
+        "correct": 4,
+        "hallucinated_edge": 1,
+        "dst_hallucinated": 1
+      },
+      "root_cause": "name_hallucination_caused_overlap"
+    },
+    {
+      "type": "topology",
+      "description": "position (0, 1, -11) occupied by multiple rooms ['hall', 'maze (exit west, up)']",
+      "involved_edges": [],
+      "involved_nodes": [
+        "hall",
+        "maze (exit west, up)"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "maze (exit north, south, east, down)",
+            "hall"
+          ],
+          "llm_dir": "down",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 31
+        },
+        {
+          "edge": [
+            "hall",
+            "cavern"
+          ],
+          "llm_dir": "down",
+          "in_gt": true,
+          "gt_dir": "down",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 32
+        },
+        {
+          "edge": [
+            "maze (exit north, south, east, down)",
+            "maze (exit west, up)"
+          ],
+          "llm_dir": "down",
+          "in_gt": true,
+          "gt_dir": "down",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 37
+        },
+        {
+          "edge": [
+            "maze (exit west, up)",
+            "maze (exit north, south, east, west, up, down; rock aladdin)"
+          ],
+          "llm_dir": "west",
+          "in_gt": true,
+          "gt_dir": "west",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 39
+        }
+      ],
+      "case_counts": {
+        "hallucinated_edge": 1,
+        "correct": 3
+      },
+      "root_cause": "overlap_mixed"
+    },
+    {
+      "type": "topology",
+      "description": "position (0, 1, -8) occupied by multiple rooms ['hall', 'maze (exit west, up)', 'root chamber']",
+      "involved_edges": [],
+      "involved_nodes": [
+        "hall",
+        "maze (exit west, up)",
+        "root chamber"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "maze (exit north, south, east, down)",
+            "hall"
+          ],
+          "llm_dir": "down",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 31
+        },
+        {
+          "edge": [
+            "hall",
+            "cavern"
+          ],
+          "llm_dir": "down",
+          "in_gt": true,
+          "gt_dir": "down",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 32
+        },
+        {
+          "edge": [
+            "maze (exit north, south, east, down)",
+            "maze (exit west, up)"
+          ],
+          "llm_dir": "down",
+          "in_gt": true,
+          "gt_dir": "down",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 37
+        },
+        {
+          "edge": [
+            "maze (exit west, up)",
+            "maze (exit north, south, east, west, up, down; rock aladdin)"
+          ],
+          "llm_dir": "west",
+          "in_gt": true,
+          "gt_dir": "west",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 39
+        },
+        {
+          "edge": [
+            "inside stump",
+            "root chamber"
+          ],
+          "llm_dir": "down",
+          "in_gt": true,
+          "gt_dir": "down",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 21
+        },
+        {
+          "edge": [
+            "root chamber",
+            "hole"
+          ],
+          "llm_dir": "down",
+          "in_gt": true,
+          "gt_dir": "down",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 26
+        }
+      ],
+      "case_counts": {
+        "hallucinated_edge": 1,
+        "correct": 5
+      },
+      "root_cause": "overlap_mixed"
+    },
+    {
+      "type": "topology",
+      "description": "position (0, 1, -2) occupied by multiple rooms ['hall', 'maze (exit west, up)', 'root chamber']",
+      "involved_edges": [],
+      "involved_nodes": [
+        "hall",
+        "maze (exit west, up)",
+        "root chamber"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "maze (exit north, south, east, down)",
+            "hall"
+          ],
+          "llm_dir": "down",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 31
+        },
+        {
+          "edge": [
+            "hall",
+            "cavern"
+          ],
+          "llm_dir": "down",
+          "in_gt": true,
+          "gt_dir": "down",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 32
+        },
+        {
+          "edge": [
+            "maze (exit north, south, east, down)",
+            "maze (exit west, up)"
+          ],
+          "llm_dir": "down",
+          "in_gt": true,
+          "gt_dir": "down",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 37
+        },
+        {
+          "edge": [
+            "maze (exit west, up)",
+            "maze (exit north, south, east, west, up, down; rock aladdin)"
+          ],
+          "llm_dir": "west",
+          "in_gt": true,
+          "gt_dir": "west",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 39
+        },
+        {
+          "edge": [
+            "inside stump",
+            "root chamber"
+          ],
+          "llm_dir": "down",
+          "in_gt": true,
+          "gt_dir": "down",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 21
+        },
+        {
+          "edge": [
+            "root chamber",
+            "hole"
+          ],
+          "llm_dir": "down",
+          "in_gt": true,
+          "gt_dir": "down",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 26
+        }
+      ],
+      "case_counts": {
+        "hallucinated_edge": 1,
+        "correct": 5
+      },
+      "root_cause": "overlap_mixed"
+    },
+    {
+      "type": "topology",
+      "description": "position (0, 1, -5) occupied by multiple rooms ['hall', 'maze (exit west, up)', 'root chamber', 'tree top']",
+      "involved_edges": [],
+      "involved_nodes": [
+        "hall",
+        "maze (exit west, up)",
+        "root chamber",
+        "tree top"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "maze (exit north, south, east, down)",
+            "hall"
+          ],
+          "llm_dir": "down",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 31
+        },
+        {
+          "edge": [
+            "hall",
+            "cavern"
+          ],
+          "llm_dir": "down",
+          "in_gt": true,
+          "gt_dir": "down",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 32
+        },
+        {
+          "edge": [
+            "maze (exit north, south, east, down)",
+            "maze (exit west, up)"
+          ],
+          "llm_dir": "down",
+          "in_gt": true,
+          "gt_dir": "down",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 37
+        },
+        {
+          "edge": [
+            "maze (exit west, up)",
+            "maze (exit north, south, east, west, up, down; rock aladdin)"
+          ],
+          "llm_dir": "west",
+          "in_gt": true,
+          "gt_dir": "west",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 39
+        },
+        {
+          "edge": [
+            "inside stump",
+            "root chamber"
+          ],
+          "llm_dir": "down",
+          "in_gt": true,
+          "gt_dir": "down",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 21
+        },
+        {
+          "edge": [
+            "root chamber",
+            "hole"
+          ],
+          "llm_dir": "down",
+          "in_gt": true,
+          "gt_dir": "down",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 26
+        },
+        {
+          "edge": [
+            "tree top",
+            "dismal swamp"
+          ],
+          "llm_dir": "down",
+          "in_gt": true,
+          "gt_dir": "down",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 14
+        }
+      ],
+      "case_counts": {
+        "hallucinated_edge": 1,
+        "correct": 6
+      },
+      "root_cause": "overlap_mixed"
+    },
+    {
+      "type": "topology",
+      "description": "position (0, 1, 1) occupied by multiple rooms ['hall', 'root chamber']",
+      "involved_edges": [],
+      "involved_nodes": [
+        "hall",
+        "root chamber"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "maze (exit north, south, east, down)",
+            "hall"
+          ],
+          "llm_dir": "down",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 31
+        },
+        {
+          "edge": [
+            "hall",
+            "cavern"
+          ],
+          "llm_dir": "down",
+          "in_gt": true,
+          "gt_dir": "down",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 32
+        },
+        {
+          "edge": [
+            "inside stump",
+            "root chamber"
+          ],
+          "llm_dir": "down",
+          "in_gt": true,
+          "gt_dir": "down",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 21
+        },
+        {
+          "edge": [
+            "root chamber",
+            "hole"
+          ],
+          "llm_dir": "down",
+          "in_gt": true,
+          "gt_dir": "down",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 26
+        }
+      ],
+      "case_counts": {
+        "hallucinated_edge": 1,
+        "correct": 3
+      },
+      "root_cause": "overlap_mixed"
+    },
+    {
+      "type": "topology",
+      "description": "position (0, 1, -4) occupied by multiple rooms ['darkness', 'maze (exit north, south, east, down)']",
+      "involved_edges": [],
+      "involved_nodes": [
+        "darkness",
+        "maze (exit north, south, east, down)"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "hole",
+            "darkness"
+          ],
+          "llm_dir": "down",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "dst_hallucinated",
+          "source_in_gt": true,
+          "target_in_gt": false,
+          "step": 64
+        },
+        {
+          "edge": [
+            "hole",
+            "maze (exit north, south, east, down)"
+          ],
+          "llm_dir": "down",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 30
+        },
+        {
+          "edge": [
+            "cavern",
+            "maze (exit north, south, east, down)"
+          ],
+          "llm_dir": "down",
+          "in_gt": true,
+          "gt_dir": "down",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 36
+        },
+        {
+          "edge": [
+            "maze (exit north, south, east, down)",
+            "hall"
+          ],
+          "llm_dir": "down",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 31
+        },
+        {
+          "edge": [
+            "maze (exit north, south, east, down)",
+            "maze (exit west, up)"
+          ],
+          "llm_dir": "down",
+          "in_gt": true,
+          "gt_dir": "down",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 37
+        }
+      ],
+      "case_counts": {
+        "dst_hallucinated": 1,
+        "hallucinated_edge": 2,
+        "correct": 2
+      },
+      "root_cause": "name_hallucination_caused_overlap"
+    },
+    {
+      "type": "topology",
+      "description": "position (0, 1, -1) occupied by multiple rooms ['darkness', 'maze (exit north, south, east, down)']",
+      "involved_edges": [],
+      "involved_nodes": [
+        "darkness",
+        "maze (exit north, south, east, down)"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "hole",
+            "darkness"
+          ],
+          "llm_dir": "down",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "dst_hallucinated",
+          "source_in_gt": true,
+          "target_in_gt": false,
+          "step": 64
+        },
+        {
+          "edge": [
+            "hole",
+            "maze (exit north, south, east, down)"
+          ],
+          "llm_dir": "down",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 30
+        },
+        {
+          "edge": [
+            "cavern",
+            "maze (exit north, south, east, down)"
+          ],
+          "llm_dir": "down",
+          "in_gt": true,
+          "gt_dir": "down",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 36
+        },
+        {
+          "edge": [
+            "maze (exit north, south, east, down)",
+            "hall"
+          ],
+          "llm_dir": "down",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 31
+        },
+        {
+          "edge": [
+            "maze (exit north, south, east, down)",
+            "maze (exit west, up)"
+          ],
+          "llm_dir": "down",
+          "in_gt": true,
+          "gt_dir": "down",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 37
+        }
+      ],
+      "case_counts": {
+        "dst_hallucinated": 1,
+        "hallucinated_edge": 2,
+        "correct": 2
+      },
+      "root_cause": "name_hallucination_caused_overlap"
+    },
+    {
+      "type": "topology",
+      "description": "position (0, 1, -7) occupied by multiple rooms ['darkness', 'inside stump', 'maze (exit north, south, east, down)']",
+      "involved_edges": [],
+      "involved_nodes": [
+        "darkness",
+        "inside stump",
+        "maze (exit north, south, east, down)"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "hole",
+            "darkness"
+          ],
+          "llm_dir": "down",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "dst_hallucinated",
+          "source_in_gt": true,
+          "target_in_gt": false,
+          "step": 64
+        },
+        {
+          "edge": [
+            "inside stump",
+            "root chamber"
+          ],
+          "llm_dir": "down",
+          "in_gt": true,
+          "gt_dir": "down",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 21
+        },
+        {
+          "edge": [
+            "inside stump",
+            "dismal swamp"
+          ],
+          "llm_dir": "up",
+          "in_gt": true,
+          "gt_dir": "up",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 56
+        },
+        {
+          "edge": [
+            "hole",
+            "maze (exit north, south, east, down)"
+          ],
+          "llm_dir": "down",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 30
+        },
+        {
+          "edge": [
+            "cavern",
+            "maze (exit north, south, east, down)"
+          ],
+          "llm_dir": "down",
+          "in_gt": true,
+          "gt_dir": "down",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 36
+        },
+        {
+          "edge": [
+            "maze (exit north, south, east, down)",
+            "hall"
+          ],
+          "llm_dir": "down",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 31
+        },
+        {
+          "edge": [
+            "maze (exit north, south, east, down)",
+            "maze (exit west, up)"
+          ],
+          "llm_dir": "down",
+          "in_gt": true,
+          "gt_dir": "down",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 37
+        }
+      ],
+      "case_counts": {
+        "dst_hallucinated": 1,
+        "correct": 4,
+        "hallucinated_edge": 2
+      },
+      "root_cause": "name_hallucination_caused_overlap"
+    },
+    {
+      "type": "topology",
+      "description": "position (0, 1, -10) occupied by multiple rooms ['darkness', 'maze (exit north, south, east, down)']",
+      "involved_edges": [],
+      "involved_nodes": [
+        "darkness",
+        "maze (exit north, south, east, down)"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "hole",
+            "darkness"
+          ],
+          "llm_dir": "down",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "dst_hallucinated",
+          "source_in_gt": true,
+          "target_in_gt": false,
+          "step": 64
+        },
+        {
+          "edge": [
+            "hole",
+            "maze (exit north, south, east, down)"
+          ],
+          "llm_dir": "down",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 30
+        },
+        {
+          "edge": [
+            "cavern",
+            "maze (exit north, south, east, down)"
+          ],
+          "llm_dir": "down",
+          "in_gt": true,
+          "gt_dir": "down",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 36
+        },
+        {
+          "edge": [
+            "maze (exit north, south, east, down)",
+            "hall"
+          ],
+          "llm_dir": "down",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 31
+        },
+        {
+          "edge": [
+            "maze (exit north, south, east, down)",
+            "maze (exit west, up)"
+          ],
+          "llm_dir": "down",
+          "in_gt": true,
+          "gt_dir": "down",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 37
+        }
+      ],
+      "case_counts": {
+        "dst_hallucinated": 1,
+        "hallucinated_edge": 2,
+        "correct": 2
+      },
+      "root_cause": "name_hallucination_caused_overlap"
+    },
+    {
+      "type": "topology",
+      "description": "position (-1, 2, -6) occupied by multiple rooms ['chasm', 'forest']",
+      "involved_edges": [],
+      "involved_nodes": [
+        "chasm",
+        "forest"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "maze (exit north, south, east, west, up, down; arrow down)",
+            "chasm"
+          ],
+          "llm_dir": "down",
+          "in_gt": true,
+          "gt_dir": "down",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 42
+        },
+        {
+          "edge": [
+            "forest",
+            "meadow"
+          ],
+          "llm_dir": "east",
+          "in_gt": true,
+          "gt_dir": "east",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 1
+        }
+      ],
+      "case_counts": {
+        "correct": 2
+      },
+      "root_cause": "false_positive_overlap"
+    },
+    {
+      "type": "naming",
+      "description": "node 'anteroom' reachable at conflicting positions [(0, 0, -9), (0, 0, -6), (0, 0, -3), (0, 0, 0)]",
+      "involved_edges": [],
+      "involved_nodes": [
+        "anteroom"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "cavern",
+            "anteroom"
+          ],
+          "llm_dir": "south",
+          "in_gt": true,
+          "gt_dir": "south",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 33
+        },
+        {
+          "edge": [
+            "anteroom",
+            "royal chamber"
+          ],
+          "llm_dir": "up",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "dst_hallucinated",
+          "source_in_gt": true,
+          "target_in_gt": false,
+          "step": 68
+        }
+      ],
+      "case_counts": {
+        "correct": 1,
+        "dst_hallucinated": 1
+      },
+      "root_cause": "real_name_corrupted_by_neighbour_error"
+    },
+    {
+      "type": "naming",
+      "description": "node 'cavern' reachable at conflicting positions [(0, 1, -9), (0, 1, -6), (0, 1, -3), (0, 1, 0)]",
+      "involved_edges": [],
+      "involved_nodes": [
+        "cavern"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "hall",
+            "cavern"
+          ],
+          "llm_dir": "down",
+          "in_gt": true,
+          "gt_dir": "down",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 32
+        },
+        {
+          "edge": [
+            "cavern",
+            "anteroom"
+          ],
+          "llm_dir": "south",
+          "in_gt": true,
+          "gt_dir": "south",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 33
+        },
+        {
+          "edge": [
+            "cavern",
+            "maze (exit north, south, east, down)"
+          ],
+          "llm_dir": "down",
+          "in_gt": true,
+          "gt_dir": "down",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 36
+        }
+      ],
+      "case_counts": {
+        "correct": 3
+      },
+      "root_cause": "naming_collision_on_correct_subgraph"
+    },
+    {
+      "type": "naming",
+      "description": "node 'royal chamber' reachable at conflicting positions [(0, 0, -8), (0, 0, -5), (0, 0, -2), (0, 0, 1)]",
+      "involved_edges": [],
+      "involved_nodes": [
+        "royal chamber"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "anteroom",
+            "royal chamber"
+          ],
+          "llm_dir": "up",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "dst_hallucinated",
+          "source_in_gt": true,
+          "target_in_gt": false,
+          "step": 68
+        }
+      ],
+      "case_counts": {
+        "dst_hallucinated": 1
+      },
+      "root_cause": "name_hallucination"
+    },
+    {
+      "type": "naming",
+      "description": "node 'hall' reachable at conflicting positions [(0, 1, -11), (0, 1, -8), (0, 1, -5), (0, 1, -2), (0, 1, 1)]",
+      "involved_edges": [],
+      "involved_nodes": [
+        "hall"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "maze (exit north, south, east, down)",
+            "hall"
+          ],
+          "llm_dir": "down",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 31
+        },
+        {
+          "edge": [
+            "hall",
+            "cavern"
+          ],
+          "llm_dir": "down",
+          "in_gt": true,
+          "gt_dir": "down",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 32
+        }
+      ],
+      "case_counts": {
+        "hallucinated_edge": 1,
+        "correct": 1
+      },
+      "root_cause": "real_name_corrupted_by_neighbour_error"
+    },
+    {
+      "type": "naming",
+      "description": "node 'maze (exit north, south, east, down)' reachable at conflicting positions [(0, 1, -10), (0, 1, -7), (0, 1, -4), (0, 1, -1), (0, 1, 2)]",
+      "involved_edges": [],
+      "involved_nodes": [
+        "maze (exit north, south, east, down)"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "hole",
+            "maze (exit north, south, east, down)"
+          ],
+          "llm_dir": "down",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 30
+        },
+        {
+          "edge": [
+            "cavern",
+            "maze (exit north, south, east, down)"
+          ],
+          "llm_dir": "down",
+          "in_gt": true,
+          "gt_dir": "down",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 36
+        },
+        {
+          "edge": [
+            "maze (exit north, south, east, down)",
+            "hall"
+          ],
+          "llm_dir": "down",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 31
+        },
+        {
+          "edge": [
+            "maze (exit north, south, east, down)",
+            "maze (exit west, up)"
+          ],
+          "llm_dir": "down",
+          "in_gt": true,
+          "gt_dir": "down",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 37
+        }
+      ],
+      "case_counts": {
+        "hallucinated_edge": 2,
+        "correct": 2
+      },
+      "root_cause": "real_name_corrupted_by_neighbour_error"
+    },
+    {
+      "type": "naming",
+      "description": "node 'hole' reachable at conflicting positions [(-3, 7, -9), (-2, 5, -9), (-1, 3, -9), (0, 1, -9), (0, 1, -6), (0, 1, -3), (0, 1, 0)]",
+      "involved_edges": [],
+      "involved_nodes": [
+        "hole"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "root chamber",
+            "hole"
+          ],
+          "llm_dir": "down",
+          "in_gt": true,
+          "gt_dir": "down",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 26
+        },
+        {
+          "edge": [
+            "hole",
+            "maze (exit north, south, east, down)"
+          ],
+          "llm_dir": "down",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 30
+        },
+        {
+          "edge": [
+            "hole",
+            "darkness"
+          ],
+          "llm_dir": "down",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "dst_hallucinated",
+          "source_in_gt": true,
+          "target_in_gt": false,
+          "step": 64
+        }
+      ],
+      "case_counts": {
+        "correct": 1,
+        "hallucinated_edge": 1,
+        "dst_hallucinated": 1
+      },
+      "root_cause": "real_name_corrupted_by_neighbour_error"
+    },
+    {
+      "type": "naming",
+      "description": "node 'maze (exit west, up)' reachable at conflicting positions [(0, 1, -11), (0, 1, -8), (0, 1, -5), (0, 1, -2)]",
+      "involved_edges": [],
+      "involved_nodes": [
+        "maze (exit west, up)"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "maze (exit north, south, east, down)",
+            "maze (exit west, up)"
+          ],
+          "llm_dir": "down",
+          "in_gt": true,
+          "gt_dir": "down",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 37
+        },
+        {
+          "edge": [
+            "maze (exit west, up)",
+            "maze (exit north, south, east, west, up, down; rock aladdin)"
+          ],
+          "llm_dir": "west",
+          "in_gt": true,
+          "gt_dir": "west",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 39
+        }
+      ],
+      "case_counts": {
+        "correct": 2
+      },
+      "root_cause": "naming_collision_on_correct_subgraph"
+    },
+    {
+      "type": "naming",
+      "description": "node 'maze (exit north, south, east, west, up, down; rock aladdin)' reachable at conflicting positions [(-1, 1, -11), (-1, 1, -8), (-1, 1, -5), (-1, 1, -2)]",
+      "involved_edges": [],
+      "involved_nodes": [
+        "maze (exit north, south, east, west, up, down; rock aladdin)"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "maze (exit west, up)",
+            "maze (exit north, south, east, west, up, down; rock aladdin)"
+          ],
+          "llm_dir": "west",
+          "in_gt": true,
+          "gt_dir": "west",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 39
+        },
+        {
+          "edge": [
+            "maze (exit north, south, east, west, up, down; rock aladdin)",
+            "maze (exit north, south, east, west, up, down; arrow down)"
+          ],
+          "llm_dir": "north",
+          "in_gt": true,
+          "gt_dir": "north",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 40
+        }
+      ],
+      "case_counts": {
+        "correct": 2
+      },
+      "root_cause": "naming_collision_on_correct_subgraph"
+    },
+    {
+      "type": "naming",
+      "description": "node 'maze (exit north, south, east, west, up, down; arrow down)' reachable at conflicting positions [(-1, 2, -11), (-1, 2, -8), (-1, 2, -5), (-1, 2, -2)]",
+      "involved_edges": [],
+      "involved_nodes": [
+        "maze (exit north, south, east, west, up, down; arrow down)"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "maze (exit north, south, east, west, up, down; rock aladdin)",
+            "maze (exit north, south, east, west, up, down; arrow down)"
+          ],
+          "llm_dir": "north",
+          "in_gt": true,
+          "gt_dir": "north",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 40
+        },
+        {
+          "edge": [
+            "maze (exit north, south, east, west, up, down; arrow down)",
+            "chasm"
+          ],
+          "llm_dir": "down",
+          "in_gt": true,
+          "gt_dir": "down",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 42
+        }
+      ],
+      "case_counts": {
+        "correct": 2
+      },
+      "root_cause": "naming_collision_on_correct_subgraph"
+    },
+    {
+      "type": "naming",
+      "description": "node 'chasm' reachable at conflicting positions [(-1, 2, -12), (-1, 2, -9), (-1, 2, -6), (-1, 2, -3)]",
+      "involved_edges": [],
+      "involved_nodes": [
+        "chasm"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "maze (exit north, south, east, west, up, down; arrow down)",
+            "chasm"
+          ],
+          "llm_dir": "down",
+          "in_gt": true,
+          "gt_dir": "down",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 42
+        }
+      ],
+      "case_counts": {
+        "correct": 1
+      },
+      "root_cause": "naming_collision_on_correct_subgraph"
+    },
+    {
+      "type": "naming",
+      "description": "node 'root chamber' reachable at conflicting positions [(-3, 7, -8), (-2, 5, -8), (-1, 3, -8), (0, 1, -8), (0, 1, -5), (0, 1, -2), (0, 1, 1)]",
+      "involved_edges": [],
+      "involved_nodes": [
+        "root chamber"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "inside stump",
+            "root chamber"
+          ],
+          "llm_dir": "down",
+          "in_gt": true,
+          "gt_dir": "down",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 21
+        },
+        {
+          "edge": [
+            "root chamber",
+            "hole"
+          ],
+          "llm_dir": "down",
+          "in_gt": true,
+          "gt_dir": "down",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 26
+        }
+      ],
+      "case_counts": {
+        "correct": 2
+      },
+      "root_cause": "naming_collision_on_correct_subgraph"
+    },
+    {
+      "type": "naming",
+      "description": "node 'darkness' reachable at conflicting positions [(0, 1, -10), (0, 1, -7), (0, 1, -4), (0, 1, -1)]",
+      "involved_edges": [],
+      "involved_nodes": [
+        "darkness"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "hole",
+            "darkness"
+          ],
+          "llm_dir": "down",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "dst_hallucinated",
+          "source_in_gt": true,
+          "target_in_gt": false,
+          "step": 64
+        }
+      ],
+      "case_counts": {
+        "dst_hallucinated": 1
+      },
+      "root_cause": "name_hallucination"
+    },
+    {
+      "type": "naming",
+      "description": "node 'inside stump' reachable at conflicting positions [(-3, 7, -7), (-2, 5, -7), (-1, 3, -7), (0, 1, -7)]",
+      "involved_edges": [],
+      "involved_nodes": [
+        "inside stump"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "inside stump",
+            "root chamber"
+          ],
+          "llm_dir": "down",
+          "in_gt": true,
+          "gt_dir": "down",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 21
+        },
+        {
+          "edge": [
+            "inside stump",
+            "dismal swamp"
+          ],
+          "llm_dir": "up",
+          "in_gt": true,
+          "gt_dir": "up",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 56
+        }
+      ],
+      "case_counts": {
+        "correct": 2
+      },
+      "root_cause": "naming_collision_on_correct_subgraph"
+    },
+    {
+      "type": "naming",
+      "description": "node 'dismal swamp' reachable at conflicting positions [(-3, 7, -6), (-2, 5, -6), (-1, 3, -6), (0, 1, -6)]",
+      "involved_edges": [],
+      "involved_nodes": [
+        "dismal swamp"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "lakeside",
+            "dismal swamp"
+          ],
+          "llm_dir": "west",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 8
+        },
+        {
+          "edge": [
+            "tree top",
+            "dismal swamp"
+          ],
+          "llm_dir": "down",
+          "in_gt": true,
+          "gt_dir": "down",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 14
+        },
+        {
+          "edge": [
+            "inside stump",
+            "dismal swamp"
+          ],
+          "llm_dir": "up",
+          "in_gt": true,
+          "gt_dir": "up",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 56
+        },
+        {
+          "edge": [
+            "dismal swamp",
+            "meadow"
+          ],
+          "llm_dir": "north",
+          "in_gt": true,
+          "gt_dir": "north",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 49
+        }
+      ],
+      "case_counts": {
+        "hallucinated_edge": 1,
+        "correct": 3
+      },
+      "root_cause": "real_name_corrupted_by_neighbour_error"
+    },
+    {
+      "type": "naming",
+      "description": "node 'lakeside' reachable at conflicting positions [(-3, 9, -6), (-2, 7, -6), (-1, 5, -6), (0, 3, -6), (1, 1, -6)]",
+      "involved_edges": [],
+      "involved_nodes": [
+        "lakeside"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "meadow",
+            "lakeside"
+          ],
+          "llm_dir": "north",
+          "in_gt": true,
+          "gt_dir": "north",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 2
+        },
+        {
+          "edge": [
+            "lakeside",
+            "bog"
+          ],
+          "llm_dir": "down",
+          "in_gt": true,
+          "gt_dir": "down",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 4
+        },
+        {
+          "edge": [
+            "lakeside",
+            "dismal swamp"
+          ],
+          "llm_dir": "west",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 8
+        }
+      ],
+      "case_counts": {
+        "correct": 2,
+        "hallucinated_edge": 1
+      },
+      "root_cause": "real_name_corrupted_by_neighbour_error"
+    },
+    {
+      "type": "naming",
+      "description": "node 'tree top' reachable at conflicting positions [(-3, 7, -5), (-2, 5, -5), (-1, 3, -5), (0, 1, -5)]",
+      "involved_edges": [],
+      "involved_nodes": [
+        "tree top"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "tree top",
+            "dismal swamp"
+          ],
+          "llm_dir": "down",
+          "in_gt": true,
+          "gt_dir": "down",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 14
+        }
+      ],
+      "case_counts": {
+        "correct": 1
+      },
+      "root_cause": "naming_collision_on_correct_subgraph"
+    },
+    {
+      "type": "naming",
+      "description": "node 'meadow' reachable at conflicting positions [(-3, 8, -6), (-2, 6, -6), (-1, 4, -6), (0, 2, -6), (1, 0, -6)]",
+      "involved_edges": [],
+      "involved_nodes": [
+        "meadow"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "forest",
+            "meadow"
+          ],
+          "llm_dir": "east",
+          "in_gt": true,
+          "gt_dir": "east",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 1
+        },
+        {
+          "edge": [
+            "dismal swamp",
+            "meadow"
+          ],
+          "llm_dir": "north",
+          "in_gt": true,
+          "gt_dir": "north",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 49
+        },
+        {
+          "edge": [
+            "meadow",
+            "lakeside"
+          ],
+          "llm_dir": "north",
+          "in_gt": true,
+          "gt_dir": "north",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 2
+        }
+      ],
+      "case_counts": {
+        "correct": 3
+      },
+      "root_cause": "naming_collision_on_correct_subgraph"
+    },
+    {
+      "type": "naming",
+      "description": "node 'forest' reachable at conflicting positions [(-4, 8, -6), (-3, 6, -6), (-2, 4, -6), (-1, 2, -6)]",
+      "involved_edges": [],
+      "involved_nodes": [
+        "forest"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "forest",
+            "meadow"
+          ],
+          "llm_dir": "east",
+          "in_gt": true,
+          "gt_dir": "east",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 1
+        }
+      ],
+      "case_counts": {
+        "correct": 1
+      },
+      "root_cause": "naming_collision_on_correct_subgraph"
+    },
+    {
+      "type": "naming",
+      "description": "node 'bog' reachable at conflicting positions [(-2, 7, -7), (-1, 5, -7), (0, 3, -7), (1, 1, -7)]",
+      "involved_edges": [],
+      "involved_nodes": [
+        "bog"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "lakeside",
+            "bog"
+          ],
+          "llm_dir": "down",
+          "in_gt": true,
+          "gt_dir": "down",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 4
+        }
+      ],
+      "case_counts": {
+        "correct": 1
+      },
+      "root_cause": "naming_collision_on_correct_subgraph"
+    }
+  ],
+  "walkthrough_steps_available": 71
+}

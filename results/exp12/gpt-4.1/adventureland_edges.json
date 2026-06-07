@@ -1,0 +1,134 @@
+[
+  {
+    "src_node": "meadow",
+    "dst_node": "lakeside",
+    "action": "north",
+    "seen_in_forward": 1
+  },
+  {
+    "src_node": "lakeside",
+    "dst_node": "bog",
+    "action": "down",
+    "seen_in_forward": 2
+  },
+  {
+    "src_node": "bog",
+    "dst_node": "grove",
+    "action": "west",
+    "seen_in_forward": 3
+  },
+  {
+    "src_node": "grove",
+    "dst_node": "dismal swamp",
+    "action": "east",
+    "seen_in_forward": 4
+  },
+  {
+    "src_node": "dismal swamp",
+    "dst_node": "dismal swamp",
+    "action": "down",
+    "seen_in_forward": 5
+  },
+  {
+    "src_node": "dismal swamp",
+    "dst_node": "root chamber",
+    "action": "down",
+    "seen_in_forward": 6
+  },
+  {
+    "src_node": "root chamber",
+    "dst_node": "inside stump",
+    "action": "up",
+    "seen_in_forward": 7
+  },
+  {
+    "src_node": "inside stump",
+    "dst_node": "hole",
+    "action": "down",
+    "seen_in_forward": 8
+  },
+  {
+    "src_node": "hole",
+    "dst_node": "maze (exit north, south, east, west, up, down; arrow down)",
+    "action": "down",
+    "seen_in_forward": 9
+  },
+  {
+    "src_node": "maze (exit north, south, east, west, up, down; arrow down)",
+    "dst_node": "cavern",
+    "action": "down",
+    "seen_in_forward": 10
+  },
+  {
+    "src_node": "cavern",
+    "dst_node": "anteroom",
+    "action": "south",
+    "seen_in_forward": 11
+  },
+  {
+    "src_node": "anteroom",
+    "dst_node": "cavern",
+    "action": "north",
+    "seen_in_forward": 12
+  },
+  {
+    "src_node": "cavern",
+    "dst_node": "maze (exit north, south, east, down)",
+    "action": "down",
+    "seen_in_forward": 13
+  },
+  {
+    "src_node": "maze (exit north, south, east, down)",
+    "dst_node": "maze (exit west, up)",
+    "action": "down",
+    "seen_in_forward": 14
+  },
+  {
+    "src_node": "maze (exit west, up)",
+    "dst_node": "maze (exit north, south, east, west, up, down; rock aladdin)",
+    "action": "west",
+    "seen_in_forward": 15
+  },
+  {
+    "src_node": "maze (exit north, south, east, west, up, down; rock aladdin)",
+    "dst_node": "maze (exit north, south, east, west, up, down; arrow down)",
+    "action": "north",
+    "seen_in_forward": 16
+  },
+  {
+    "src_node": "maze (exit north, south, east, west, up, down; arrow down)",
+    "dst_node": "chasm",
+    "action": "down",
+    "seen_in_forward": 17
+  },
+  {
+    "src_node": "chasm",
+    "dst_node": "maze (exit north, south, east, west, up, down; arrow down)",
+    "action": "up",
+    "seen_in_forward": 18
+  },
+  {
+    "src_node": "maze (exit north, south, east, west, up, down; arrow down)",
+    "dst_node": "maze (exit north, south, east, west, up, down; rock aladdin)",
+    "action": "up",
+    "seen_in_forward": 19
+  },
+  {
+    "src_node": "maze (exit north, south, east, west, up, down; rock aladdin)",
+    "dst_node": "dismal swamp",
+    "action": "south",
+    "seen_in_forward": 20
+  },
+  {
+    "src_node": "dismal swamp",
+    "dst_node": "meadow",
+    "action": "north",
+    "seen_in_forward": 21
+  },
+  {
+    "src_node": "meadow",
+    "dst_node": "dismal swamp",
+    "action": "up",
+    "seen_in_forward": 22
+  }
+]

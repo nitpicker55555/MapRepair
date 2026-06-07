@@ -1,0 +1,18 @@
+{
+  "game": "plundered",
+  "mode": "baseline",
+  "model": "gpt-4.1-mini",
+  "num_conflicts": 24,
+  "iterations": 41,
+  "success": false,
+  "remaining_conflicts": 23,
+  "pre_edge_recall": 0.5,
+  "pre_strict_direction_match": 0.5,
+  "pre_edge_direction_accuracy": 1.0,
+  "post_edge_recall": 0.5,
+  "post_strict_direction_match": 0.4666666666666667,
+  "post_permissive_direction_match": 0.9333333333333333,
+  "post_edge_direction_accuracy": 0.9333333333333333,
+  "edge_recall_delta": 0.0,
+  "strict_direction_delta": -0.033333333333333326
+}

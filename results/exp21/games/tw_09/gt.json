@@ -1,0 +1,139 @@
+{
+  "rooms": {
+    "r_1": {
+      "id": "r_1",
+      "name": "attic"
+    },
+    "r_0": {
+      "id": "r_0",
+      "name": "spare room"
+    },
+    "r_2": {
+      "id": "r_2",
+      "name": "bedchamber"
+    },
+    "r_3": {
+      "id": "r_3",
+      "name": "chamber"
+    },
+    "r_4": {
+      "id": "r_4",
+      "name": "basement"
+    },
+    "r_5": {
+      "id": "r_5",
+      "name": "kitchenette"
+    },
+    "r_6": {
+      "id": "r_6",
+      "name": "steam room"
+    }
+  },
+  "edges": [
+    {
+      "src_name": "attic",
+      "dst_name": "spare room",
+      "src_id": "r_1",
+      "dst_id": "r_0",
+      "direction": "west"
+    },
+    {
+      "src_name": "attic",
+      "dst_name": "bedchamber",
+      "src_id": "r_1",
+      "dst_id": "r_2",
+      "direction": "south"
+    },
+    {
+      "src_name": "attic",
+      "dst_name": "basement",
+      "src_id": "r_1",
+      "dst_id": "r_4",
+      "direction": "north"
+    },
+    {
+      "src_name": "spare room",
+      "dst_name": "chamber",
+      "src_id": "r_0",
+      "dst_id": "r_3",
+      "direction": "south"
+    },
+    {
+      "src_name": "spare room",
+      "dst_name": "attic",
+      "src_id": "r_0",
+      "dst_id": "r_1",
+      "direction": "east"
+    },
+    {
+      "src_name": "bedchamber",
+      "dst_name": "chamber",
+      "src_id": "r_2",
+      "dst_id": "r_3",
+      "direction": "west"
+    },
+    {
+      "src_name": "bedchamber",
+      "dst_name": "attic",
+      "src_id": "r_2",
+      "dst_id": "r_1",
+      "direction": "north"
+    },
+    {
+      "src_name": "chamber",
+      "dst_name": "spare room",
+      "src_id": "r_3",
+      "dst_id": "r_0",
+      "direction": "north"
+    },
+    {
+      "src_name": "chamber",
+      "dst_name": "bedchamber",
+      "src_id": "r_3",
+      "dst_id": "r_2",
+      "direction": "east"
+    },
+    {
+      "src_name": "basement",
+      "dst_name": "kitchenette",
+      "src_id": "r_4",
+      "dst_id": "r_5",
+      "direction": "west"
+    },
+    {
+      "src_name": "basement",
+      "dst_name": "attic",
+      "src_id": "r_4",
+      "dst_id": "r_1",
+      "direction": "south"
+    },
+    {
+      "src_name": "basement",
+      "dst_name": "steam room",
+      "src_id": "r_4",
+      "dst_id": "r_6",
+      "direction": "east"
+    },
+    {
+      "src_name": "kitchenette",
+      "dst_name": "basement",
+      "src_id": "r_5",
+      "dst_id": "r_4",
+      "direction": "east"
+    },
+    {
+      "src_name": "steam room",
+      "dst_name": "basement",
+      "src_id": "r_6",
+      "dst_id": "r_4",
+      "direction": "west"
+    }
+  ],
+  "n_rooms": 7,
+  "n_edges": 14,
+  "walkthrough": [
+    "go north",
+    "go east",
+    "lock spherical safe with spherical latchkey"
+  ]
+}

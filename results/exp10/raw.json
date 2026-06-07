@@ -1,0 +1,718 @@
+{
+  "total_conflicts": 928,
+  "type_distribution": {
+    "direction": 86,
+    "topology": 433,
+    "naming": 409
+  },
+  "root_cause_distribution": {
+    "real_vs_hallucinated": 46,
+    "overlap_mixed": 159,
+    "false_positive_overlap": 96,
+    "name_hallucination_caused_overlap": 141,
+    "real_name_corrupted_by_neighbour_error": 113,
+    "naming_collision_on_correct_subgraph": 242,
+    "naming_mixed": 22,
+    "name_hallucination": 57,
+    "src_dst_swap": 5,
+    "all_hallucinated_edges": 7,
+    "direction_mixed": 3,
+    "wrong_direction_caused_overlap": 37
+  },
+  "per_game": [
+    {
+      "game": "905",
+      "num_llm_edges": 3,
+      "num_gt_edges": 6,
+      "num_conflicts": 0,
+      "type_distribution": {},
+      "root_cause_distribution": {},
+      "walkthrough_steps_available": 22
+    },
+    {
+      "game": "advent",
+      "num_llm_edges": 34,
+      "num_gt_edges": 51,
+      "num_conflicts": 69,
+      "type_distribution": {
+        "direction": 2,
+        "topology": 34,
+        "naming": 33
+      },
+      "root_cause_distribution": {
+        "real_vs_hallucinated": 2,
+        "overlap_mixed": 5,
+        "false_positive_overlap": 15,
+        "name_hallucination_caused_overlap": 14,
+        "real_name_corrupted_by_neighbour_error": 8,
+        "naming_collision_on_correct_subgraph": 21,
+        "naming_mixed": 1,
+        "name_hallucination": 3
+      },
+      "walkthrough_steps_available": 71
+    },
+    {
+      "game": "adventureland",
+      "num_llm_edges": 20,
+      "num_gt_edges": 27,
+      "num_conflicts": 36,
+      "type_distribution": {
+        "direction": 3,
+        "topology": 14,
+        "naming": 19
+      },
+      "root_cause_distribution": {
+        "name_hallucination": 3,
+        "src_dst_swap": 1,
+        "real_vs_hallucinated": 1,
+        "name_hallucination_caused_overlap": 8,
+        "overlap_mixed": 5,
+        "false_positive_overlap": 1,
+        "real_name_corrupted_by_neighbour_error": 6,
+        "naming_collision_on_correct_subgraph": 11
+      },
+      "walkthrough_steps_available": 71
+    },
+    {
+      "game": "anchor",
+      "num_llm_edges": 24,
+      "num_gt_edges": 42,
+      "num_conflicts": 38,
+      "type_distribution": {
+        "direction": 1,
+        "topology": 13,
+        "naming": 24
+      },
+      "root_cause_distribution": {
+        "real_vs_hallucinated": 1,
+        "overlap_mixed": 4,
+        "false_positive_overlap": 9,
+        "real_name_corrupted_by_neighbour_error": 2,
+        "naming_collision_on_correct_subgraph": 21,
+        "naming_mixed": 1
+      },
+      "walkthrough_steps_available": 71
+    },
+    {
+      "game": "awaken",
+      "num_llm_edges": 18,
+      "num_gt_edges": 24,
+      "num_conflicts": 35,
+      "type_distribution": {
+        "direction": 3,
+        "topology": 17,
+        "naming": 15
+      },
+      "root_cause_distribution": {
+        "real_vs_hallucinated": 3,
+        "overlap_mixed": 14,
+        "false_positive_overlap": 3,
+        "real_name_corrupted_by_neighbour_error": 5,
+        "naming_collision_on_correct_subgraph": 9,
+        "naming_mixed": 1
+      },
+      "walkthrough_steps_available": 54
+    },
+    {
+      "game": "balances",
+      "num_llm_edges": 11,
+      "num_gt_edges": 13,
+      "num_conflicts": 25,
+      "type_distribution": {
+        "direction": 3,
+        "topology": 12,
+        "naming": 10
+      },
+      "root_cause_distribution": {
+        "real_vs_hallucinated": 1,
+        "name_hallucination": 5,
+        "name_hallucination_caused_overlap": 11,
+        "overlap_mixed": 1,
+        "real_name_corrupted_by_neighbour_error": 4,
+        "naming_collision_on_correct_subgraph": 3
+      },
+      "walkthrough_steps_available": 71
+    },
+    {
+      "game": "ballyhoo",
+      "num_llm_edges": 19,
+      "num_gt_edges": 33,
+      "num_conflicts": 34,
+      "type_distribution": {
+        "direction": 1,
+        "topology": 15,
+        "naming": 18
+      },
+      "root_cause_distribution": {
+        "real_vs_hallucinated": 1,
+        "overlap_mixed": 9,
+        "false_positive_overlap": 6,
+        "naming_collision_on_correct_subgraph": 14,
+        "real_name_corrupted_by_neighbour_error": 3,
+        "name_hallucination": 1
+      },
+      "walkthrough_steps_available": 71
+    },
+    {
+      "game": "curses",
+      "num_llm_edges": 13,
+      "num_gt_edges": 26,
+      "num_conflicts": 0,
+      "type_distribution": {},
+      "root_cause_distribution": {},
+      "walkthrough_steps_available": 71
+    },
+    {
+      "game": "deephome",
+      "num_llm_edges": 26,
+      "num_gt_edges": 46,
+      "num_conflicts": 20,
+      "type_distribution": {
+        "direction": 1,
+        "topology": 12,
+        "naming": 7
+      },
+      "root_cause_distribution": {
+        "real_vs_hallucinated": 1,
+        "false_positive_overlap": 2,
+        "overlap_mixed": 10,
+        "naming_collision_on_correct_subgraph": 4,
+        "real_name_corrupted_by_neighbour_error": 3
+      },
+      "walkthrough_steps_available": 71
+    },
+    {
+      "game": "detective",
+      "num_llm_edges": 30,
+      "num_gt_edges": 39,
+      "num_conflicts": 72,
+      "type_distribution": {
+        "direction": 7,
+        "topology": 37,
+        "naming": 28
+      },
+      "root_cause_distribution": {
+        "name_hallucination": 2,
+        "all_hallucinated_edges": 2,
+        "real_vs_hallucinated": 3,
+        "src_dst_swap": 1,
+        "false_positive_overlap": 8,
+        "overlap_mixed": 22,
+        "name_hallucination_caused_overlap": 7,
+        "naming_collision_on_correct_subgraph": 15,
+        "real_name_corrupted_by_neighbour_error": 6,
+        "naming_mixed": 6
+      },
+      "walkthrough_steps_available": 50
+    },
+    {
+      "game": "dragon",
+      "num_llm_edges": 24,
+      "num_gt_edges": 42,
+      "num_conflicts": 45,
+      "type_distribution": {
+        "direction": 2,
+        "topology": 22,
+        "naming": 21
+      },
+      "root_cause_distribution": {
+        "real_vs_hallucinated": 2,
+        "false_positive_overlap": 7,
+        "overlap_mixed": 15,
+        "naming_collision_on_correct_subgraph": 16,
+        "real_name_corrupted_by_neighbour_error": 5
+      },
+      "walkthrough_steps_available": 71
+    },
+    {
+      "game": "enchanter",
+      "num_llm_edges": 20,
+      "num_gt_edges": 39,
+      "num_conflicts": 0,
+      "type_distribution": {},
+      "root_cause_distribution": {},
+      "walkthrough_steps_available": 71
+    },
+    {
+      "game": "gold",
+      "num_llm_edges": 14,
+      "num_gt_edges": 22,
+      "num_conflicts": 4,
+      "type_distribution": {
+        "direction": 2,
+        "topology": 2
+      },
+      "root_cause_distribution": {
+        "name_hallucination": 2,
+        "name_hallucination_caused_overlap": 2
+      },
+      "walkthrough_steps_available": 71
+    },
+    {
+      "game": "hhgg",
+      "num_llm_edges": 4,
+      "num_gt_edges": 4,
+      "num_conflicts": 0,
+      "type_distribution": {},
+      "root_cause_distribution": {},
+      "walkthrough_steps_available": 71
+    },
+    {
+      "game": "huntdark",
+      "num_llm_edges": 5,
+      "num_gt_edges": 6,
+      "num_conflicts": 3,
+      "type_distribution": {
+        "topology": 3
+      },
+      "root_cause_distribution": {
+        "name_hallucination_caused_overlap": 2,
+        "false_positive_overlap": 1
+      },
+      "walkthrough_steps_available": 61
+    },
+    {
+      "game": "inhumane",
+      "num_llm_edges": 32,
+      "num_gt_edges": 50,
+      "num_conflicts": 55,
+      "type_distribution": {
+        "direction": 3,
+        "topology": 23,
+        "naming": 29
+      },
+      "root_cause_distribution": {
+        "direction_mixed": 1,
+        "all_hallucinated_edges": 1,
+        "real_vs_hallucinated": 1,
+        "overlap_mixed": 10,
+        "wrong_direction_caused_overlap": 9,
+        "false_positive_overlap": 2,
+        "name_hallucination_caused_overlap": 2,
+        "naming_collision_on_correct_subgraph": 16,
+        "real_name_corrupted_by_neighbour_error": 10,
+        "naming_mixed": 1,
+        "name_hallucination": 2
+      },
+      "walkthrough_steps_available": 71
+    },
+    {
+      "game": "jewel",
+      "num_llm_edges": 17,
+      "num_gt_edges": 31,
+      "num_conflicts": 29,
+      "type_distribution": {
+        "direction": 2,
+        "topology": 11,
+        "naming": 16
+      },
+      "root_cause_distribution": {
+        "real_vs_hallucinated": 2,
+        "overlap_mixed": 6,
+        "false_positive_overlap": 5,
+        "naming_collision_on_correct_subgraph": 11,
+        "real_name_corrupted_by_neighbour_error": 4,
+        "naming_mixed": 1
+      },
+      "walkthrough_steps_available": 71
+    },
+    {
+      "game": "karn",
+      "num_llm_edges": 24,
+      "num_gt_edges": 33,
+      "num_conflicts": 51,
+      "type_distribution": {
+        "direction": 5,
+        "topology": 26,
+        "naming": 20
+      },
+      "root_cause_distribution": {
+        "name_hallucination": 4,
+        "real_vs_hallucinated": 1,
+        "all_hallucinated_edges": 1,
+        "name_hallucination_caused_overlap": 8,
+        "wrong_direction_caused_overlap": 11,
+        "overlap_mixed": 2,
+        "false_positive_overlap": 5,
+        "naming_collision_on_correct_subgraph": 11,
+        "real_name_corrupted_by_neighbour_error": 6,
+        "naming_mixed": 2
+      },
+      "walkthrough_steps_available": 71
+    },
+    {
+      "game": "ludicorp",
+      "num_llm_edges": 22,
+      "num_gt_edges": 43,
+      "num_conflicts": 2,
+      "type_distribution": {
+        "topology": 2
+      },
+      "root_cause_distribution": {
+        "overlap_mixed": 1,
+        "name_hallucination_caused_overlap": 1
+      },
+      "walkthrough_steps_available": 71
+    },
+    {
+      "game": "lurking",
+      "num_llm_edges": 13,
+      "num_gt_edges": 26,
+      "num_conflicts": 0,
+      "type_distribution": {},
+      "root_cause_distribution": {},
+      "walkthrough_steps_available": 71
+    },
+    {
+      "game": "moonlit",
+      "num_llm_edges": 4,
+      "num_gt_edges": 8,
+      "num_conflicts": 0,
+      "type_distribution": {},
+      "root_cause_distribution": {},
+      "walkthrough_steps_available": 59
+    },
+    {
+      "game": "murdac",
+      "num_llm_edges": 34,
+      "num_gt_edges": 48,
+      "num_conflicts": 76,
+      "type_distribution": {
+        "direction": 13,
+        "topology": 34,
+        "naming": 29
+      },
+      "root_cause_distribution": {
+        "real_vs_hallucinated": 7,
+        "all_hallucinated_edges": 2,
+        "name_hallucination": 11,
+        "name_hallucination_caused_overlap": 24,
+        "overlap_mixed": 9,
+        "false_positive_overlap": 1,
+        "real_name_corrupted_by_neighbour_error": 11,
+        "naming_collision_on_correct_subgraph": 11
+      },
+      "walkthrough_steps_available": 71
+    },
+    {
+      "game": "night",
+      "num_llm_edges": 21,
+      "num_gt_edges": 32,
+      "num_conflicts": 45,
+      "type_distribution": {
+        "direction": 5,
+        "topology": 22,
+        "naming": 18
+      },
+      "root_cause_distribution": {
+        "real_vs_hallucinated": 2,
+        "direction_mixed": 2,
+        "src_dst_swap": 1,
+        "false_positive_overlap": 6,
+        "overlap_mixed": 8,
+        "wrong_direction_caused_overlap": 8,
+        "naming_collision_on_correct_subgraph": 11,
+        "real_name_corrupted_by_neighbour_error": 3,
+        "naming_mixed": 4
+      },
+      "walkthrough_steps_available": 71
+    },
+    {
+      "game": "omniquest",
+      "num_llm_edges": 31,
+      "num_gt_edges": 57,
+      "num_conflicts": 65,
+      "type_distribution": {
+        "direction": 2,
+        "topology": 34,
+        "naming": 29
+      },
+      "root_cause_distribution": {
+        "real_vs_hallucinated": 2,
+        "false_positive_overlap": 12,
+        "overlap_mixed": 15,
+        "name_hallucination_caused_overlap": 7,
+        "naming_collision_on_correct_subgraph": 22,
+        "real_name_corrupted_by_neighbour_error": 6,
+        "name_hallucination": 1
+      },
+      "walkthrough_steps_available": 71
+    },
+    {
+      "game": "partyfoul",
+      "num_llm_edges": 6,
+      "num_gt_edges": 7,
+      "num_conflicts": 3,
+      "type_distribution": {
+        "direction": 2,
+        "topology": 1
+      },
+      "root_cause_distribution": {
+        "name_hallucination": 2,
+        "name_hallucination_caused_overlap": 1
+      },
+      "walkthrough_steps_available": 56
+    },
+    {
+      "game": "pentari",
+      "num_llm_edges": 16,
+      "num_gt_edges": 26,
+      "num_conflicts": 5,
+      "type_distribution": {
+        "direction": 2,
+        "topology": 3
+      },
+      "root_cause_distribution": {
+        "real_vs_hallucinated": 2,
+        "name_hallucination_caused_overlap": 2,
+        "overlap_mixed": 1
+      },
+      "walkthrough_steps_available": 45
+    },
+    {
+      "game": "planetfall",
+      "num_llm_edges": 22,
+      "num_gt_edges": 40,
+      "num_conflicts": 1,
+      "type_distribution": {
+        "direction": 1
+      },
+      "root_cause_distribution": {
+        "name_hallucination": 1
+      },
+      "walkthrough_steps_available": 71
+    },
+    {
+      "game": "plundered",
+      "num_llm_edges": 20,
+      "num_gt_edges": 30,
+      "num_conflicts": 24,
+      "type_distribution": {
+        "direction": 1,
+        "topology": 11,
+        "naming": 12
+      },
+      "root_cause_distribution": {
+        "name_hallucination": 2,
+        "false_positive_overlap": 2,
+        "name_hallucination_caused_overlap": 9,
+        "naming_collision_on_correct_subgraph": 8,
+        "real_name_corrupted_by_neighbour_error": 3
+      },
+      "walkthrough_steps_available": 71
+    },
+    {
+      "game": "reverb",
+      "num_llm_edges": 23,
+      "num_gt_edges": 25,
+      "num_conflicts": 45,
+      "type_distribution": {
+        "direction": 10,
+        "topology": 16,
+        "naming": 19
+      },
+      "root_cause_distribution": {
+        "name_hallucination": 10,
+        "real_vs_hallucinated": 4,
+        "name_hallucination_caused_overlap": 16,
+        "naming_collision_on_correct_subgraph": 6,
+        "real_name_corrupted_by_neighbour_error": 9
+      },
+      "walkthrough_steps_available": 69
+    },
+    {
+      "game": "seastalker",
+      "num_llm_edges": 8,
+      "num_gt_edges": 12,
+      "num_conflicts": 1,
+      "type_distribution": {
+        "topology": 1
+      },
+      "root_cause_distribution": {
+        "false_positive_overlap": 1
+      },
+      "walkthrough_steps_available": 71
+    },
+    {
+      "game": "sherlock",
+      "num_llm_edges": 18,
+      "num_gt_edges": 29,
+      "num_conflicts": 21,
+      "type_distribution": {
+        "direction": 3,
+        "topology": 8,
+        "naming": 10
+      },
+      "root_cause_distribution": {
+        "real_vs_hallucinated": 3,
+        "wrong_direction_caused_overlap": 4,
+        "overlap_mixed": 4,
+        "real_name_corrupted_by_neighbour_error": 4,
+        "naming_collision_on_correct_subgraph": 6
+      },
+      "walkthrough_steps_available": 71
+    },
+    {
+      "game": "snacktime",
+      "num_llm_edges": 3,
+      "num_gt_edges": 5,
+      "num_conflicts": 0,
+      "type_distribution": {},
+      "root_cause_distribution": {},
+      "walkthrough_steps_available": 34
+    },
+    {
+      "game": "sorcerer",
+      "num_llm_edges": 25,
+      "num_gt_edges": 43,
+      "num_conflicts": 4,
+      "type_distribution": {
+        "direction": 2,
+        "topology": 2
+      },
+      "root_cause_distribution": {
+        "all_hallucinated_edges": 1,
+        "real_vs_hallucinated": 1,
+        "overlap_mixed": 1,
+        "name_hallucination_caused_overlap": 1
+      },
+      "walkthrough_steps_available": 71
+    },
+    {
+      "game": "spellbrkr",
+      "num_llm_edges": 14,
+      "num_gt_edges": 24,
+      "num_conflicts": 22,
+      "type_distribution": {
+        "direction": 1,
+        "topology": 9,
+        "naming": 12
+      },
+      "root_cause_distribution": {
+        "real_vs_hallucinated": 1,
+        "wrong_direction_caused_overlap": 5,
+        "name_hallucination_caused_overlap": 4,
+        "real_name_corrupted_by_neighbour_error": 3,
+        "naming_mixed": 4,
+        "naming_collision_on_correct_subgraph": 2,
+        "name_hallucination": 3
+      },
+      "walkthrough_steps_available": 71
+    },
+    {
+      "game": "spirit",
+      "num_llm_edges": 20,
+      "num_gt_edges": 40,
+      "num_conflicts": 0,
+      "type_distribution": {},
+      "root_cause_distribution": {},
+      "walkthrough_steps_available": 71
+    },
+    {
+      "game": "temple",
+      "num_llm_edges": 18,
+      "num_gt_edges": 32,
+      "num_conflicts": 2,
+      "type_distribution": {
+        "direction": 1,
+        "topology": 1
+      },
+      "root_cause_distribution": {
+        "name_hallucination": 1,
+        "name_hallucination_caused_overlap": 1
+      },
+      "walkthrough_steps_available": 71
+    },
+    {
+      "game": "trinity",
+      "num_llm_edges": 11,
+      "num_gt_edges": 20,
+      "num_conflicts": 1,
+      "type_distribution": {
+        "topology": 1
+      },
+      "root_cause_distribution": {
+        "false_positive_overlap": 1
+      },
+      "walkthrough_steps_available": 71
+    },
+    {
+      "game": "tryst205",
+      "num_llm_edges": 7,
+      "num_gt_edges": 9,
+      "num_conflicts": 0,
+      "type_distribution": {},
+      "root_cause_distribution": {},
+      "walkthrough_steps_available": 71
+    },
+    {
+      "game": "wishbringer",
+      "num_llm_edges": 20,
+      "num_gt_edges": 37,
+      "num_conflicts": 0,
+      "type_distribution": {},
+      "root_cause_distribution": {},
+      "walkthrough_steps_available": 71
+    },
+    {
+      "game": "zork1",
+      "num_llm_edges": 19,
+      "num_gt_edges": 29,
+      "num_conflicts": 2,
+      "type_distribution": {
+        "direction": 1,
+        "topology": 1
+      },
+      "root_cause_distribution": {
+        "real_vs_hallucinated": 1,
+        "name_hallucination_caused_overlap": 1
+      },
+      "walkthrough_steps_available": 71
+    },
+    {
+      "game": "zork2",
+      "num_llm_edges": 26,
+      "num_gt_edges": 36,
+      "num_conflicts": 43,
+      "type_distribution": {
+        "direction": 4,
+        "topology": 21,
+        "naming": 18
+      },
+      "root_cause_distribution": {
+        "src_dst_swap": 1,
+        "real_vs_hallucinated": 3,
+        "name_hallucination_caused_overlap": 4,
+        "overlap_mixed": 14,
+        "false_positive_overlap": 3,
+        "real_name_corrupted_by_neighbour_error": 5,
+        "naming_collision_on_correct_subgraph": 12,
+        "name_hallucination": 1
+      },
+      "walkthrough_steps_available": 71
+    },
+    {
+      "game": "zork3",
+      "num_llm_edges": 24,
+      "num_gt_edges": 38,
+      "num_conflicts": 50,
+      "type_distribution": {
+        "direction": 3,
+        "topology": 25,
+        "naming": 22
+      },
+      "root_cause_distribution": {
+        "real_vs_hallucinated": 1,
+        "name_hallucination": 3,
+        "src_dst_swap": 1,
+        "overlap_mixed": 3,
+        "false_positive_overlap": 6,
+        "name_hallucination_caused_overlap": 16,
+        "naming_collision_on_correct_subgraph": 12,
+        "real_name_corrupted_by_neighbour_error": 7,
+        "naming_mixed": 1
+      },
+      "walkthrough_steps_available": 71
+    }
+  ]
+}

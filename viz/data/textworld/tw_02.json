@@ -1,0 +1,470 @@
+{
+  "id": "tw_02",
+  "dataset": "textworld",
+  "n_rooms": 9,
+  "n_edges": 16,
+  "rooms": [
+    {
+      "id": "bar",
+      "label": "bar",
+      "description": "You find yourself in a bar. An usual one. There is an unguarded exit to the south."
+    },
+    {
+      "id": "basement",
+      "label": "basement",
+      "description": "You are in a basement. An ordinary one. You begin to take stock of what's here. You hear a noise behind you and spin around, but you can't see anything other than a case. The case contains . You idly wonder how they came up with the name TextWorld for this place. It's pretty fitting. The case is emp"
+    },
+    {
+      "id": "bedroom",
+      "label": "bedroom",
+      "description": "Of every bedroom you could have sauntered into, you had to come round an ordinary one. You can see a TextWorld limited edition chest. The TextWorld limited edition chest contains . Now why would someone leave that there? The TextWorld limited edition chest is empty, what a horrible day! There is an "
+    },
+    {
+      "id": "canteen",
+      "label": "canteen",
+      "description": "A rusty notice tells you that you are now in the canteen. You don't like doors? Why not try going north, that entranceway is unguarded."
+    },
+    {
+      "id": "kitchenette",
+      "label": "kitchenette",
+      "description": "This just in- You, in the kitchenette. There is an opena closed passageway leading east. There is an opena closed hatch leading west."
+    },
+    {
+      "id": "laundromat",
+      "label": "laundromat",
+      "description": "You've just walked into a laundromat. There is an opena closed passageway leading west. There is an exit to the north. Don't worry, it is unguarded."
+    },
+    {
+      "id": "playroom",
+      "label": "playroom",
+      "description": "You've just walked into a playroom. You can make out a chest. The chest contains . There's something strange about this being here, but you can't put your finger on it. Empty! What kind of nightmare TextWorld is this? There is an unguarded exit to the south."
+    },
+    {
+      "id": "sauna",
+      "label": "sauna",
+      "description": "Look at you, bigshot, walking into a sauna like it isn't some huge deal. Okay, just remember what you're here to do, and everything will go great. There is an exit to the south. Don't worry, it is unguarded."
+    },
+    {
+      "id": "shower",
+      "label": "shower",
+      "description": "Well how about that, you are in a place we're calling a shower. There is an opena closed hatch leading east. There is an opena closed gateway leading north. There is an unguarded exit to the south."
+    }
+  ],
+  "walkthrough": [],
+  "states": {
+    "gt": {
+      "edges": [
+        {
+          "src": "bedroom",
+          "dst": "basement",
+          "dir": "west"
+        },
+        {
+          "src": "bedroom",
+          "dst": "sauna",
+          "dir": "north"
+        },
+        {
+          "src": "basement",
+          "dst": "shower",
+          "dir": "south"
+        },
+        {
+          "src": "basement",
+          "dst": "bar",
+          "dir": "north"
+        },
+        {
+          "src": "basement",
+          "dst": "bedroom",
+          "dir": "east"
+        },
+        {
+          "src": "sauna",
+          "dst": "bedroom",
+          "dir": "south"
+        },
+        {
+          "src": "shower",
+          "dst": "canteen",
+          "dir": "south"
+        },
+        {
+          "src": "shower",
+          "dst": "basement",
+          "dir": "north"
+        },
+        {
+          "src": "shower",
+          "dst": "kitchenette",
+          "dir": "east"
+        },
+        {
+          "src": "bar",
+          "dst": "basement",
+          "dir": "south"
+        },
+        {
+          "src": "kitchenette",
+          "dst": "shower",
+          "dir": "west"
+        },
+        {
+          "src": "kitchenette",
+          "dst": "laundromat",
+          "dir": "east"
+        },
+        {
+          "src": "laundromat",
+          "dst": "kitchenette",
+          "dir": "west"
+        },
+        {
+          "src": "laundromat",
+          "dst": "playroom",
+          "dir": "north"
+        },
+        {
+          "src": "canteen",
+          "dst": "shower",
+          "dir": "north"
+        },
+        {
+          "src": "playroom",
+          "dst": "laundromat",
+          "dir": "south"
+        }
+      ]
+    },
+    "noised": {
+      "edges": [
+        {
+          "src": "bedroom",
+          "dst": "basement",
+          "dir": "west"
+        },
+        {
+          "src": "basement",
+          "dst": "shower",
+          "dir": "south"
+        },
+        {
+          "src": "basement",
+          "dst": "bar",
+          "dir": "north"
+        },
+        {
+          "src": "basement",
+          "dst": "bedroom",
+          "dir": "east"
+        },
+        {
+          "src": "shower",
+          "dst": "canteen",
+          "dir": "east"
+        },
+        {
+          "src": "shower",
+          "dst": "basement",
+          "dir": "north"
+        },
+        {
+          "src": "shower",
+          "dst": "kitchenette",
+          "dir": "east"
+        },
+        {
+          "src": "shower",
+          "dst": "laundromat",
+          "dir": "east"
+        },
+        {
+          "src": "bar",
+          "dst": "basement",
+          "dir": "south"
+        },
+        {
+          "src": "kitchenette",
+          "dst": "shower",
+          "dir": "west"
+        },
+        {
+          "src": "kitchenette",
+          "dst": "laundromat",
+          "dir": "east"
+        },
+        {
+          "src": "laundromat",
+          "dst": "kitchenette",
+          "dir": "west"
+        },
+        {
+          "src": "canteen",
+          "dst": "shower",
+          "dir": "north"
+        }
+      ],
+      "noise_records": [
+        {
+          "type": "N5_collapse_fallback",
+          "src": "playroom",
+          "dst": "laundromat",
+          "direction": null,
+          "note": "no prefix match available"
+        },
+        {
+          "type": "N5_collapse_fallback",
+          "src": "sauna",
+          "dst": "bedroom",
+          "direction": null,
+          "note": "no prefix match available"
+        },
+        {
+          "type": "N1_direction",
+          "src": "shower",
+          "dst": "laundromat",
+          "direction": "east",
+          "note": ""
+        },
+        {
+          "type": "N2_topology",
+          "src": "shower",
+          "dst": "canteen",
+          "direction": "east",
+          "note": ""
+        }
+      ],
+      "noise_summary": {
+        "N5_collapse_fallback": 2,
+        "N1_direction": 1,
+        "N2_topology": 1
+      },
+      "conflicts": [
+        {
+          "type": "direction",
+          "severity": "high",
+          "description": "node 'shower' has multiple outgoing edges labelled 'east'",
+          "edges": [
+            [
+              "shower",
+              "canteen"
+            ],
+            [
+              "shower",
+              "kitchenette"
+            ],
+            [
+              "shower",
+              "laundromat"
+            ]
+          ]
+        },
+        {
+          "type": "topology",
+          "severity": "high",
+          "description": "reverse direction mismatch: shower--[east]-->canteen but canteen--[north]-->shower (expected west)",
+          "edges": [
+            [
+              "shower",
+              "canteen"
+            ],
+            [
+              "canteen",
+              "shower"
+            ]
+          ]
+        },
+        {
+          "type": "topology",
+          "severity": "high",
+          "description": "position (-2, -1, 0) occupied by multiple rooms ['basement', 'bedroom', 'shower']",
+          "edges": []
+        },
+        {
+          "type": "topology",
+          "severity": "high",
+          "description": "position (-1, -1, 0) occupied by multiple rooms ['basement', 'bedroom', 'shower']",
+          "edges": []
+        },
+        {
+          "type": "topology",
+          "severity": "high",
+          "description": "position (0, -1, 0) occupied by multiple rooms ['basement', 'bedroom', 'shower']",
+          "edges": []
+        },
+        {
+          "type": "topology",
+          "severity": "high",
+          "description": "position (-2, -2, 0) occupied by multiple rooms ['canteen', 'kitchenette', 'laundromat', 'shower']",
+          "edges": []
+        },
+        {
+          "type": "topology",
+          "severity": "high",
+          "description": "position (-1, -2, 0) occupied by multiple rooms ['canteen', 'kitchenette', 'laundromat', 'shower']",
+          "edges": []
+        },
+        {
+          "type": "topology",
+          "severity": "high",
+          "description": "position (0, -2, 0) occupied by multiple rooms ['canteen', 'kitchenette', 'laundromat', 'shower']",
+          "edges": []
+        },
+        {
+          "type": "topology",
+          "severity": "high",
+          "description": "position (-3, -2, 0) occupied by multiple rooms ['kitchenette', 'shower']",
+          "edges": []
+        },
+        {
+          "type": "topology",
+          "severity": "high",
+          "description": "position (1, -1, 0) occupied by multiple rooms ['bedroom', 'shower']",
+          "edges": []
+        },
+        {
+          "type": "topology",
+          "severity": "high",
+          "description": "position (1, -2, 0) occupied by multiple rooms ['canteen', 'kitchenette', 'laundromat']",
+          "edges": []
+        },
+        {
+          "type": "naming",
+          "severity": "high",
+          "description": "node 'bar' reachable at conflicting positions [(-3, 0, 0), (-2, 0, 0), (-1, 0, 0), (0, 0, 0)]",
+          "edges": []
+        },
+        {
+          "type": "naming",
+          "severity": "high",
+          "description": "node 'basement' reachable at conflicting positions [(-3, -1, 0), (-2, -1, 0), (-1, -1, 0), (0, -1, 0)]",
+          "edges": []
+        },
+        {
+          "type": "naming",
+          "severity": "high",
+          "description": "node 'shower' reachable at conflicting positions [(-3, -2, 0), (-2, -2, 0), (-2, -1, 0), (-1, -2, 0), (-1, -1, 0), (0, -2, 0), (0, -1, 0), (1, -1, 0)]",
+          "edges": []
+        },
+        {
+          "type": "naming",
+          "severity": "high",
+          "description": "node 'bedroom' reachable at conflicting positions [(-2, -1, 0), (-1, -1, 0), (0, -1, 0), (1, -1, 0)]",
+          "edges": []
+        },
+        {
+          "type": "naming",
+          "severity": "high",
+          "description": "node 'canteen' reachable at conflicting positions [(-2, -2, 0), (-1, -2, 0), (0, -2, 0), (1, -2, 0)]",
+          "edges": []
+        },
+        {
+          "type": "naming",
+          "severity": "high",
+          "description": "node 'kitchenette' reachable at conflicting positions [(-3, -2, 0), (-2, -2, 0), (-1, -2, 0), (0, -2, 0), (1, -2, 0)]",
+          "edges": []
+        },
+        {
+          "type": "naming",
+          "severity": "high",
+          "description": "node 'laundromat' reachable at conflicting positions [(-2, -2, 0), (-1, -2, 0), (0, -2, 0), (1, -2, 0), (2, -2, 0)]",
+          "edges": []
+        }
+      ]
+    },
+    "repaired": {
+      "edges": [
+        {
+          "src": "bedroom",
+          "dst": "basement",
+          "dir": "west"
+        },
+        {
+          "src": "basement",
+          "dst": "shower",
+          "dir": "south"
+        },
+        {
+          "src": "basement",
+          "dst": "bar",
+          "dir": "north"
+        },
+        {
+          "src": "basement",
+          "dst": "bedroom",
+          "dir": "east"
+        },
+        {
+          "src": "shower",
+          "dst": "basement",
+          "dir": "north"
+        },
+        {
+          "src": "shower",
+          "dst": "laundromat",
+          "dir": "south"
+        },
+        {
+          "src": "bar",
+          "dst": "basement",
+          "dir": "south"
+        },
+        {
+          "src": "kitchenette",
+          "dst": "laundromat",
+          "dir": "east"
+        },
+        {
+          "src": "laundromat",
+          "dst": "kitchenette",
+          "dir": "west"
+        },
+        {
+          "src": "canteen",
+          "dst": "shower",
+          "dir": "north"
+        }
+      ],
+      "actions": [
+        {
+          "kind": "remove_edge",
+          "target": [
+            "shower",
+            "canteen"
+          ],
+          "new_dir": null,
+          "reason": "remove fallback"
+        },
+        {
+          "kind": "remove_edge",
+          "target": [
+            "shower",
+            "kitchenette"
+          ],
+          "new_dir": null,
+          "reason": "remove fallback"
+        },
+        {
+          "kind": "remove_edge",
+          "target": [
+            "kitchenette",
+            "shower"
+          ],
+          "new_dir": null,
+          "reason": "remove fallback"
+        },
+        {
+          "kind": "modify_edge",
+          "target": [
+            "shower",
+            "laundromat"
+          ],
+          "new_dir": "south",
+          "reason": "rotate to free direction south"
+        }
+      ],
+      "n_conflicts_before": 18,
+      "n_conflicts_after": 0
+    }
+  }
+}

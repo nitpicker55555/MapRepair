@@ -1,0 +1,18 @@
+{
+  "game": "deephome",
+  "mode": "vc_only",
+  "model": "gpt-4.1-mini",
+  "num_conflicts": 20,
+  "iterations": 1,
+  "success": false,
+  "remaining_conflicts": 14,
+  "pre_edge_recall": 0.5217391304347826,
+  "pre_strict_direction_match": 0.5217391304347826,
+  "pre_edge_direction_accuracy": 1.0,
+  "post_edge_recall": 0.5217391304347826,
+  "post_strict_direction_match": 0.5,
+  "post_permissive_direction_match": 0.9565217391304348,
+  "post_edge_direction_accuracy": 0.9583333333333334,
+  "edge_recall_delta": 0.0,
+  "strict_direction_delta": -0.021739130434782594
+}

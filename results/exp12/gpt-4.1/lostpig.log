@@ -1,0 +1,8 @@
+# lostpig  model=gpt-4.1  n_steps=7
+step   0 bad movement output: {'is_movement': True, 'src_node': None, 'dst_node': 'hole', 'action': 'northeast', 'seen_in_forward': 0, 'current_location': 'hole', 'reasoning': "Observation describes arrival at the bottom of a deep, dark hole, matching the canonical room 'hole'."}
+step   1 bad movement output: {'is_movement': True, 'src_node': None, 'dst_node': 'fountain room', 'action': 'east', 'seen_in_forward': 1, 'current_location': 'fountain room', 'reasoning': "Observation explicitly names 'Fountain Room', which matches the canonical list; action is 'east', a compass direction."}
+step   2 MOVE '<unknown>' --[north]--> 'statue room'
+step   3 MOVE 'statue room' --[south]--> 'fountain room'
+step   4 MOVE 'fountain room' --[southwest]--> 'table room'
+step   5 bad movement output: {'is_movement': True, 'src_node': 'table room', 'dst_node': None, 'action': 'east', 'seen_in_forward': 5, 'current_location': None, 'reasoning': "The observation gives the room name as 'Closet', which is not in the canonical list. The canonical destination is unknown from the list, so dst_node and current_location are set to null."}
+step   6 MOVE 'table room' --[east]--> 'shelf room'

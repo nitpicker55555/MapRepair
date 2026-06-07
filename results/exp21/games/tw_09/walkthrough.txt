@@ -1,0 +1,124 @@
+==>STEP NUM: 0
+==>ACT: west
+==>OBSERVATION: You can't go that way.
+
+
+-= Chamber =-0/3
+===========
+==>STEP NUM: 1
+==>ACT: south
+==>OBSERVATION: You can't go that way.
+
+
+-= Chamber =-0/4
+===========
+==>STEP NUM: 2
+==>ACT: east
+==>OBSERVATION: -= Bedchamber =-
+You've entered a bedchamber.
+
+
+
+You don't like doors? Why not try going north, that entranceway is unblocked. You don't like doors? Why not try going west, that entranceway is unguarded.
+
+
+-= Bedchamber =-0/5
+===========
+==>STEP NUM: 3
+==>ACT: west
+==>OBSERVATION: -= Chamber =-
+Well how about that, you are in a place we're calling a chamber. You try to gain information on your surroundings by using a technique you call "looking."
+
+
+
+There is an unguarded exit to the east. There is an exit to the north. Don't worry, it is unguarded.
+
+
+-= Chamber =-0/6
+===========
+==>STEP NUM: 4
+==>ACT: north
+==>OBSERVATION: -= Spare Room =-
+You've just walked into a spare room.
+
+You can make out a cabinet. You idly wonder how they came up with the name TextWorld for this place. It's pretty fitting. The cabinet is empty, what a horrible day!
+
+You don't like doors? Why not try going east, that entranceway is unblocked. There is an unblocked exit to the south.
+
+
+-= Spare Room =-0/7
+===========
+==>STEP NUM: 5
+==>ACT: east
+==>OBSERVATION: -= Attic =-
+You've fallen into an usual room. Your mind races to think of what kind of room would be usual. And then it hits you. Of course. You're in the attic. You begin looking for stuff.
+
+You can make out a closed spherical safe.
+
+There is a closed gateway leading north. You need an unguarded exit? You should try going south. You need an unblocked exit? You should try going west.
+
+
+-= Attic =-0/8
+===========
+==>STEP NUM: 6
+==>ACT: north
+==>OBSERVATION: You have to open the gateway first.
+
+
+-= Attic =-0/9
+===========
+==>STEP NUM: 7
+==>ACT: west
+==>OBSERVATION: -= Spare Room =-
+You've just walked into a spare room.
+
+You can make out a cabinet. You idly wonder how they came up with the name TextWorld for this place. It's pretty fitting. The cabinet is empty, what a horrible day!
+
+You don't like doors? Why not try going east, that entranceway is unblocked. There is an unblocked exit to the south.
+
+
+-= Spare Room =-0/10
+===========
+==>STEP NUM: 8
+==>ACT: east
+==>OBSERVATION: -= Attic =-
+You've fallen into an usual room. Your mind races to think of what kind of room would be usual. And then it hits you. Of course. You're in the attic. You begin looking for stuff.
+
+You can make out a closed spherical safe.
+
+There is a closed gateway leading north. You need an unguarded exit? You should try going south. You need an unblocked exit? You should try going west.
+
+
+-= Attic =-0/11
+===========
+==>STEP NUM: 9
+==>ACT: east
+==>OBSERVATION: You can't go that way.
+
+
+-= Attic =-0/12
+===========
+==>STEP NUM: 10
+==>ACT: west
+==>OBSERVATION: -= Spare Room =-
+You've just walked into a spare room.
+
+You can make out a cabinet. You idly wonder how they came up with the name TextWorld for this place. It's pretty fitting. The cabinet is empty, what a horrible day!
+
+You don't like doors? Why not try going east, that entranceway is unblocked. There is an unblocked exit to the south.
+
+
+-= Spare Room =-0/13
+===========
+==>STEP NUM: 11
+==>ACT: south
+==>OBSERVATION: -= Chamber =-
+Well how about that, you are in a place we're calling a chamber. You try to gain information on your surroundings by using a technique you call "looking."
+
+
+
+There is an unguarded exit to the east. There is an exit to the north. Don't worry, it is unguarded.
+
+
+-= Chamber =-0/14
+===========

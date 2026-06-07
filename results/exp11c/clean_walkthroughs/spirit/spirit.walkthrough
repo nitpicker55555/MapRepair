@@ -1,0 +1,197 @@
+===========
+==>STEP NUM: 0
+==>ACT: north
+==>OBSERVATION: Hallway (near your quarters)
+You are in a hallway running west and east. The vaulted ceilings are a nice touch. Your quarters are to the south.
+===========
+==>STEP NUM: 1
+==>ACT: west
+==>OBSERVATION: Hallway (west end)
+You are at the west end of an east-west hallway. There are stairs up and down here, and an exit to the west.
+===========
+==>STEP NUM: 2
+==>ACT: west
+==>OBSERVATION: Monastery Gardens
+You are in the Monastery gardens, where various shrubs and conifers are covered in a light blanket of snow. An open cloister lies to the west, while a doorway heads east.
+
+A small area in the snow has been cleared for late winter planting, and some sand has been sprinkled here and there.
+===========
+==>STEP NUM: 3
+==>ACT: west
+==>OBSERVATION: Cloister Walkway
+You are in an open cloister, that runs along the Monastery gardens to the east. To the north is the main wing of the Monastery. To the south is the entrance hall.
+===========
+==>STEP NUM: 4
+==>ACT: north
+==>OBSERVATION: Main Hall
+This is the main hall of worship in the Monastery. A large domed ceiling hides some sort of lighting that create a warm yet serene atmosphere. A covered walk to the rest of the Monastery lies to the south. To the north is the Monastery chapel. A brazier sits in the center of the room.
+===========
+==>STEP NUM: 5
+==>ACT: north
+==>OBSERVATION: Monastery Chapel
+You are in the Monastery Chapel, the site of the recent appearance of the legendary Anabais. Signs of the recent visit include the slightly scorched walls, and the reek of brimstone. Wood pews are arranged in a circle around the central altar. The exit is south.
+Brother Joseph is here, standing by the altar.
+
+Joseph smiles as you enter. "I'm glad you found me. As you know, thanks to the old fool standing before you, the demon Anabais is loose upon the world once more. He has broken the Rod of the Ancients which was keeping our house and Order protected from outsiders. It is a sorry day for us all." Joseph pauses for a moment. "You are our final hope in a time of chaos. Brothers Palemon, TuffBerry and Toolbox have left the Order, and only you remain. I must now ask you to serve the Order which you have so faithfully served in the past. No short order this, for our continued existence depends on it, but you must go out into a world gone mad alone, and retrieve the four broken pieces of the Rod of the Ancients, and return them here to me, so that we can rid the world of the evil we have loosed!"
+
+Brother Joseph pauses and searches his robes.
+
+"Here, you will need this," he says, giving you a strange amulet. "Without this amulet, the Ancient Ones cannot give you the mystic aid that you will most certainly need. But I waste much time. Go now, and may the Gods smile upon us all."
+
+[Your score has just gone up by two points.]
+===========
+==>STEP NUM: 6
+==>ACT: south
+==>OBSERVATION: Main Hall
+===========
+==>STEP NUM: 7
+==>ACT: south
+==>OBSERVATION: Cloister Walkway
+===========
+==>STEP NUM: 8
+==>ACT: east
+==>OBSERVATION: Monastery Gardens
+===========
+==>STEP NUM: 9
+==>ACT: east
+==>OBSERVATION: Hallway (west end)
+===========
+==>STEP NUM: 10
+==>ACT: east
+==>OBSERVATION: Hallway (near your quarters)
+===========
+==>STEP NUM: 11
+==>ACT: east
+==>OBSERVATION: Hallway (near quarters of Palemon and TuffBerry)
+You are in a hallway running west and east. Brother TuffBerry's quarters lie to the south. Brother Palemon's quarters are to the north.
+===========
+==>STEP NUM: 12
+==>ACT: east
+==>OBSERVATION: Hallway (east end)
+You are at the east end of an east-west hallway. Brother Joseph's quarters lie to the north, and Brother Toolbox's quarters lie to the south.
+===========
+==>STEP NUM: 13
+==>ACT: south
+==>OBSERVATION: Brother Toolbox's Quarters
+You are in Brother Toolbox's quarters, vacant ever since he left the order due to differences many years ago. The exit is north.
+
+You can see a diary and a folded scroll here.
+===========
+==>STEP NUM: 14
+==>ACT: north
+==>OBSERVATION: Hallway (east end)
+===========
+==>STEP NUM: 15
+==>ACT: west
+==>OBSERVATION: Hallway (near quarters of Palemon and TuffBerry)
+===========
+==>STEP NUM: 16
+==>ACT: south
+==>OBSERVATION: Brother TuffBerry's Quarters
+You are in Brother TuffBerry's quarters, vacant since he undertook his quest for Joseph not long ago. The exit is north.
+
+You can see a torn page here.
+===========
+==>STEP NUM: 17
+==>ACT: north
+==>OBSERVATION: Hallway (near quarters of Palemon and TuffBerry)
+===========
+==>STEP NUM: 18
+==>ACT: north
+==>OBSERVATION: Brother Palemon's Quarters
+You are in Brother Palemon's quarters, which have been left unattended ever since Brother Palemon's unexplained disappearance many years ago. The exit is south.
+
+You can see a thin journal here.
+===========
+==>STEP NUM: 19
+==>ACT: west
+==>OBSERVATION: Hidden Sanctum
+You are standing in a small chamber that obviously hasn't been used in quite some time -- the cobwebs and dust are several layers thick. There is a short crawl east.
+
+You can see a dusty scroll and a faded parchment here.
+===========
+==>STEP NUM: 20
+==>ACT: east
+==>OBSERVATION: Brother Palemon's Quarters
+
+You can see a thin journal here.
+===========
+==>STEP NUM: 21
+==>ACT: south
+==>OBSERVATION: Hallway (near quarters of Palemon and TuffBerry)
+===========
+==>STEP NUM: 22
+==>ACT: west
+==>OBSERVATION: Hallway (near your quarters)
+===========
+==>STEP NUM: 23
+==>ACT: up
+==>OBSERVATION: Hallway (second floor, west)
+You are in a hallway on the second floor of the Monastery. The hallway continues east, while stairs lead downwards.
+===========
+==>STEP NUM: 24
+==>ACT: east
+==>OBSERVATION: Hallway (second floor, east)
+You are in a hallway on the second floor of the Monastery that runs east-to-west. To the north is the private meditation room. To the east is the Monastery library. To the northeast is an entrance to the steeple room.
+===========
+==>STEP NUM: 25
+==>ACT: northeast
+==>OBSERVATION: Steeple Room
+You are in a round room with colored-glass windows. Wood beams line the walls and rise to form a short point in the peaked ceiling above. A small walkway returns to the southwest. A long wood table sits in the center of the room.
+A large rose-colored window lets some light in.
+===========
+==>STEP NUM: 26
+==>ACT: southwest
+==>OBSERVATION: Hallway (second floor, east)
+===========
+==>STEP NUM: 27
+==>ACT: east
+==>OBSERVATION: Monastery Library
+You are in the Monastery library, a cozy, almost cramped room with shelves of various books. The exit is to the west.
+
+On the shelves is a copy of the Holy Scriptures.
+===========
+==>STEP NUM: 28
+==>ACT: west
+==>OBSERVATION: Hallway (second floor, east)
+===========
+==>STEP NUM: 29
+==>ACT: west
+==>OBSERVATION: Hallway (second floor, west)
+===========
+==>STEP NUM: 30
+==>ACT: down
+==>OBSERVATION: Hallway (west end)
+===========
+==>STEP NUM: 31
+==>ACT: down
+==>OBSERVATION: Hallway (basement)
+You are in a hallway in the Monastery basement. The hallway continues to the east, and stairs lead upwards.
+===========
+==>STEP NUM: 32
+==>ACT: east
+==>OBSERVATION: Refectory
+You are in the Refectory, the general dining area for members of the Order. You grimace at the lingering scent of Brother Pufpistery's favorite dish -- Borphbelly stew. Several large oak tables and benches adorn this otherwise bare room. An exit lies to the west, the kitchen is to the north, and another exit lies to the east.
+===========
+==>STEP NUM: 33
+==>ACT: north
+==>OBSERVATION: Monastery Kitchen
+You are in Brother Pufpistery's domain -- the dreaded acolyte kitchen. A huge soup cauldron sits unused nearby. The refectory is south.
+
+You can see a preparing table (on which is a scrap of paper) here.
+===========
+==>STEP NUM: 34
+==>ACT: south
+==>OBSERVATION: Refectory
+===========
+==>STEP NUM: 35
+==>ACT: east
+==>OBSERVATION: Storeroom
+You are in a small cramped storeroom, stocked with various crates and barrels of foodstuffs. The refectory is west.
+
+You can see a large barrel (on which is a sack of flour) here.
+===========
+==>STEP NUM: 36
+==>ACT: west
+==>OBSERVATION: Refectory
+===========

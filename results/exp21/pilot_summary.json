@@ -1,0 +1,202 @@
+[
+  {
+    "game": "tw_00",
+    "size": 5,
+    "seed": 1,
+    "n_rooms": 5,
+    "n_gt_edges": 10,
+    "tour_steps": 8,
+    "n_pred_edges": 6,
+    "gt_edge_recall": 0.6,
+    "gt_pair_recall": 0.6,
+    "buckets": {
+      "CORRECT": 6,
+      "WRONG_DIRECTION": 0,
+      "WRONG_DST": 0,
+      "SPURIOUS_PAIR": 0,
+      "HALLUCINATED_DST": 0,
+      "HALLUCINATED_SRC": 0
+    },
+    "elapsed_sec": 14.271070003509521
+  },
+  {
+    "game": "tw_01",
+    "size": 7,
+    "seed": 2,
+    "n_rooms": 7,
+    "n_gt_edges": 16,
+    "tour_steps": 12,
+    "n_pred_edges": 7,
+    "gt_edge_recall": 0.4375,
+    "gt_pair_recall": 0.4375,
+    "buckets": {
+      "CORRECT": 7,
+      "WRONG_DIRECTION": 0,
+      "WRONG_DST": 0,
+      "SPURIOUS_PAIR": 0,
+      "HALLUCINATED_DST": 0,
+      "HALLUCINATED_SRC": 0
+    },
+    "elapsed_sec": 18.4528968334198
+  },
+  {
+    "game": "tw_02",
+    "size": 9,
+    "seed": 3,
+    "n_rooms": 9,
+    "n_gt_edges": 16,
+    "tour_steps": 16,
+    "n_pred_edges": 7,
+    "gt_edge_recall": 0.3125,
+    "gt_pair_recall": 0.3125,
+    "buckets": {
+      "CORRECT": 7,
+      "WRONG_DIRECTION": 0,
+      "WRONG_DST": 0,
+      "SPURIOUS_PAIR": 0,
+      "HALLUCINATED_DST": 0,
+      "HALLUCINATED_SRC": 0
+    },
+    "elapsed_sec": 39.56361222267151
+  },
+  {
+    "game": "tw_03",
+    "size": 11,
+    "seed": 4,
+    "n_rooms": 11,
+    "n_gt_edges": 22,
+    "tour_steps": 20,
+    "n_pred_edges": 8,
+    "gt_edge_recall": 0.3181818181818182,
+    "gt_pair_recall": 0.3181818181818182,
+    "buckets": {
+      "CORRECT": 8,
+      "WRONG_DIRECTION": 0,
+      "WRONG_DST": 0,
+      "SPURIOUS_PAIR": 0,
+      "HALLUCINATED_DST": 0,
+      "HALLUCINATED_SRC": 0
+    },
+    "elapsed_sec": 59.990670919418335
+  },
+  {
+    "game": "tw_04",
+    "size": 5,
+    "seed": 5,
+    "n_rooms": 5,
+    "n_gt_edges": 8,
+    "tour_steps": 8,
+    "n_pred_edges": 7,
+    "gt_edge_recall": 0.875,
+    "gt_pair_recall": 0.875,
+    "buckets": {
+      "CORRECT": 7,
+      "WRONG_DIRECTION": 0,
+      "WRONG_DST": 0,
+      "SPURIOUS_PAIR": 0,
+      "HALLUCINATED_DST": 0,
+      "HALLUCINATED_SRC": 0
+    },
+    "elapsed_sec": 13.4466712474823
+  },
+  {
+    "game": "tw_05",
+    "size": 7,
+    "seed": 6,
+    "n_rooms": 7,
+    "n_gt_edges": 14,
+    "tour_steps": 12,
+    "n_pred_edges": 9,
+    "gt_edge_recall": 0.42857142857142855,
+    "gt_pair_recall": 0.42857142857142855,
+    "buckets": {
+      "CORRECT": 9,
+      "WRONG_DIRECTION": 0,
+      "WRONG_DST": 0,
+      "SPURIOUS_PAIR": 0,
+      "HALLUCINATED_DST": 0,
+      "HALLUCINATED_SRC": 0
+    },
+    "elapsed_sec": 19.067193031311035
+  },
+  {
+    "game": "tw_06",
+    "size": 9,
+    "seed": 7,
+    "n_rooms": 9,
+    "n_gt_edges": 16,
+    "tour_steps": 16,
+    "n_pred_edges": 0,
+    "gt_edge_recall": 0.0,
+    "gt_pair_recall": 0.0,
+    "buckets": {
+      "CORRECT": 0,
+      "WRONG_DIRECTION": 0,
+      "WRONG_DST": 0,
+      "SPURIOUS_PAIR": 0,
+      "HALLUCINATED_DST": 0,
+      "HALLUCINATED_SRC": 0
+    },
+    "elapsed_sec": 30.681214809417725
+  },
+  {
+    "game": "tw_07",
+    "size": 11,
+    "seed": 8,
+    "n_rooms": 11,
+    "n_gt_edges": 24,
+    "tour_steps": 20,
+    "n_pred_edges": 16,
+    "gt_edge_recall": 0.5416666666666666,
+    "gt_pair_recall": 0.5416666666666666,
+    "buckets": {
+      "CORRECT": 16,
+      "WRONG_DIRECTION": 0,
+      "WRONG_DST": 0,
+      "SPURIOUS_PAIR": 0,
+      "HALLUCINATED_DST": 0,
+      "HALLUCINATED_SRC": 0
+    },
+    "elapsed_sec": 34.401089906692505
+  },
+  {
+    "game": "tw_08",
+    "size": 5,
+    "seed": 9,
+    "n_rooms": 5,
+    "n_gt_edges": 8,
+    "tour_steps": 8,
+    "n_pred_edges": 4,
+    "gt_edge_recall": 0.375,
+    "gt_pair_recall": 0.375,
+    "buckets": {
+      "CORRECT": 4,
+      "WRONG_DIRECTION": 0,
+      "WRONG_DST": 0,
+      "SPURIOUS_PAIR": 0,
+      "HALLUCINATED_DST": 0,
+      "HALLUCINATED_SRC": 0
+    },
+    "elapsed_sec": 12.206614017486572
+  },
+  {
+    "game": "tw_09",
+    "size": 7,
+    "seed": 10,
+    "n_rooms": 7,
+    "n_gt_edges": 14,
+    "tour_steps": 12,
+    "n_pred_edges": 8,
+    "gt_edge_recall": 0.42857142857142855,
+    "gt_pair_recall": 0.42857142857142855,
+    "buckets": {
+      "CORRECT": 8,
+      "WRONG_DIRECTION": 0,
+      "WRONG_DST": 0,
+      "SPURIOUS_PAIR": 0,
+      "HALLUCINATED_DST": 0,
+      "HALLUCINATED_SRC": 0
+    },
+    "elapsed_sec": 28.25123906135559
+  }
+]

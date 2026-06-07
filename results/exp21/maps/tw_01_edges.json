@@ -1,0 +1,58 @@
+[
+  {
+    "src_node": "spare room",
+    "dst_node": "bedchamber",
+    "action": "north",
+    "step_num": 3,
+    "gt_src": "steam room",
+    "gt_dst": "workshop"
+  },
+  {
+    "src_node": "bedchamber",
+    "dst_node": "laundry place",
+    "action": "east",
+    "step_num": 4,
+    "gt_src": "workshop",
+    "gt_dst": "spare room"
+  },
+  {
+    "src_node": "laundry place",
+    "dst_node": "bar",
+    "action": "south",
+    "step_num": 7,
+    "gt_src": "laundry place",
+    "gt_dst": "bar"
+  },
+  {
+    "src_node": "bar",
+    "dst_node": "spare room",
+    "action": "west",
+    "step_num": 8,
+    "gt_src": "bar",
+    "gt_dst": "spare room"
+  },
+  {
+    "src_node": "spare room",
+    "dst_node": "workshop",
+    "action": "west",
+    "step_num": 9,
+    "gt_src": "spare room",
+    "gt_dst": "workshop"
+  },
+  {
+    "src_node": "workshop",
+    "dst_node": "kitchen",
+    "action": "north",
+    "step_num": 10,
+    "gt_src": "workshop",
+    "gt_dst": "kitchen"
+  },
+  {
+    "src_node": "kitchen",
+    "dst_node": "bedchamber",
+    "action": "east",
+    "step_num": 11,
+    "gt_src": "kitchen",
+    "gt_dst": "bedchamber"
+  }
+]

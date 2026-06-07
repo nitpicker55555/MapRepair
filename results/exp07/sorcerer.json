@@ -1,0 +1,16 @@
+{
+  "game": "sorcerer",
+  "num_conflicts": 4,
+  "iterations": 4,
+  "success": true,
+  "remaining_conflicts": 0,
+  "pre_edge_recall": 0.4186046511627907,
+  "pre_strict_direction_match": 0.4186046511627907,
+  "pre_edge_direction_accuracy": 1.0,
+  "post_edge_recall": 0.4186046511627907,
+  "post_strict_direction_match": 0.3953488372093023,
+  "post_permissive_direction_match": 0.6976744186046512,
+  "post_edge_direction_accuracy": 0.9444444444444444,
+  "edge_recall_delta": 0.0,
+  "strict_direction_delta": -0.023255813953488413
+}

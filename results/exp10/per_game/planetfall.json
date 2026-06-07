@@ -1,0 +1,67 @@
+{
+  "game": "planetfall",
+  "num_llm_edges": 22,
+  "num_gt_edges": 40,
+  "num_conflicts": 1,
+  "type_distribution": {
+    "direction": 1
+  },
+  "root_cause_distribution": {
+    "name_hallucination": 1
+  },
+  "conflicts": [
+    {
+      "type": "direction",
+      "description": "node 'escape pod' has multiple outgoing edges labelled 'out'",
+      "involved_edges": [
+        [
+          "escape pod",
+          "safety web"
+        ],
+        [
+          "escape pod",
+          "underwater"
+        ]
+      ],
+      "involved_nodes": [
+        "escape pod",
+        "safety web",
+        "underwater"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "escape pod",
+            "safety web"
+          ],
+          "llm_dir": "out",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "dst_hallucinated",
+          "source_in_gt": true,
+          "target_in_gt": false,
+          "step": null
+        },
+        {
+          "edge": [
+            "escape pod",
+            "underwater"
+          ],
+          "llm_dir": "out",
+          "in_gt": true,
+          "gt_dir": "out",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 23
+        }
+      ],
+      "case_counts": {
+        "dst_hallucinated": 1,
+        "correct": 1
+      },
+      "root_cause": "name_hallucination"
+    }
+  ],
+  "walkthrough_steps_available": 71
+}

@@ -1,0 +1,194 @@
+[
+  {
+    "src_node": "great cavern",
+    "dst_node": "dark tunnel",
+    "action": "south",
+    "seen_in_forward": 3
+  },
+  {
+    "src_node": "dark tunnel",
+    "dst_node": "north end of garden",
+    "action": "southeast",
+    "seen_in_forward": 4
+  },
+  {
+    "src_node": "north end of garden",
+    "dst_node": "north end of garden",
+    "action": "out",
+    "seen_in_forward": 5
+  },
+  {
+    "src_node": "north end of garden",
+    "dst_node": "formal garden",
+    "action": "south",
+    "seen_in_forward": 6
+  },
+  {
+    "src_node": "formal garden",
+    "dst_node": "path near stream",
+    "action": "west",
+    "seen_in_forward": 7
+  },
+  {
+    "src_node": "path near stream",
+    "dst_node": "carousel room",
+    "action": "southwest",
+    "seen_in_forward": 8
+  },
+  {
+    "src_node": "carousel room",
+    "dst_node": "topiary",
+    "action": "north",
+    "seen_in_forward": 9
+  },
+  {
+    "src_node": "topiary",
+    "dst_node": "carousel room",
+    "action": "west",
+    "seen_in_forward": 10
+  },
+  {
+    "src_node": "carousel room",
+    "dst_node": "marble hall",
+    "action": "north",
+    "seen_in_forward": 11
+  },
+  {
+    "src_node": "marble hall",
+    "dst_node": "deep ford",
+    "action": "north",
+    "seen_in_forward": 12
+  },
+  {
+    "src_node": "deep ford",
+    "dst_node": "ledge in ravine",
+    "action": "north",
+    "seen_in_forward": 13
+  },
+  {
+    "src_node": "ledge in ravine",
+    "dst_node": "tiny room",
+    "action": "up",
+    "seen_in_forward": 14
+  },
+  {
+    "src_node": "tiny room",
+    "dst_node": "dreary room",
+    "action": "north",
+    "seen_in_forward": 15
+  },
+  {
+    "src_node": "dreary room",
+    "dst_node": "tiny room",
+    "action": "south",
+    "seen_in_forward": 16
+  },
+  {
+    "src_node": "tiny room",
+    "dst_node": "ledge in ravine",
+    "action": "down",
+    "seen_in_forward": 17
+  },
+  {
+    "src_node": "ledge in ravine",
+    "dst_node": "end of ledge",
+    "action": "west",
+    "seen_in_forward": 18
+  },
+  {
+    "src_node": "end of ledge",
+    "dst_node": "stone bridge",
+    "action": "south",
+    "seen_in_forward": 19
+  },
+  {
+    "src_node": "stone bridge",
+    "dst_node": "cool room",
+    "action": "south",
+    "seen_in_forward": 20
+  },
+  {
+    "src_node": "cool room",
+    "dst_node": "ice room",
+    "action": "west",
+    "seen_in_forward": 21
+  },
+  {
+    "src_node": "ice room",
+    "dst_node": "cool room",
+    "action": "east",
+    "seen_in_forward": 22
+  },
+  {
+    "src_node": "cool room",
+    "dst_node": "stone bridge",
+    "action": "north",
+    "seen_in_forward": 23
+  },
+  {
+    "src_node": "stone bridge",
+    "dst_node": "dragon room",
+    "action": "north",
+    "seen_in_forward": 24
+  },
+  {
+    "src_node": "dragon room",
+    "dst_node": "dragon's lair",
+    "action": "north",
+    "seen_in_forward": 25
+  },
+  {
+    "src_node": "dragon's lair",
+    "dst_node": "dragon room",
+    "action": "south",
+    "seen_in_forward": 26
+  },
+  {
+    "src_node": "dragon room",
+    "dst_node": "ledge in ravine",
+    "action": "east",
+    "seen_in_forward": 27
+  },
+  {
+    "src_node": "ledge in ravine",
+    "dst_node": "deep ford",
+    "action": "down",
+    "seen_in_forward": 28
+  },
+  {
+    "src_node": "deep ford",
+    "dst_node": "marble hall",
+    "action": "south",
+    "seen_in_forward": 29
+  },
+  {
+    "src_node": "marble hall",
+    "dst_node": "path near stream",
+    "action": "east",
+    "seen_in_forward": 30
+  },
+  {
+    "src_node": "path near stream",
+    "dst_node": "formal garden",
+    "action": "east",
+    "seen_in_forward": 31
+  },
+  {
+    "src_node": "formal garden",
+    "dst_node": "north end of garden",
+    "action": "north",
+    "seen_in_forward": 32
+  },
+  {
+    "src_node": "north end of garden",
+    "dst_node": "gazebo",
+    "action": "in",
+    "seen_in_forward": 33
+  },
+  {
+    "src_node": "gazebo",
+    "dst_node": "topiary",
+    "action": "south",
+    "seen_in_forward": 34
+  }
+]

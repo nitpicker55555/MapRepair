@@ -1,0 +1,130 @@
+[
+  {
+    "step_num": 0,
+    "action": "west",
+    "command": "go west",
+    "observation": "You can't go that way.\n\n\n-= Recreation Zone =-0/3",
+    "gt_src": "dish-pit",
+    "gt_dst": "lounge"
+  },
+  {
+    "step_num": 1,
+    "action": "east",
+    "command": "go east",
+    "observation": "You can't go that way.\n\n\n-= Recreation Zone =-0/4",
+    "gt_src": "lounge",
+    "gt_dst": "dish-pit"
+  },
+  {
+    "step_num": 2,
+    "action": "south",
+    "command": "go south",
+    "observation": "You have to open the hatch first.\n\n\n-= Recreation Zone =-0/5",
+    "gt_src": "dish-pit",
+    "gt_dst": "recreation zone"
+  },
+  {
+    "step_num": 3,
+    "action": "south",
+    "command": "go south",
+    "observation": "You have to open the hatch first.\n\n\n-= Recreation Zone =-0/6",
+    "gt_src": "recreation zone",
+    "gt_dst": "laundry place"
+  },
+  {
+    "step_num": 4,
+    "action": "east",
+    "command": "go east",
+    "observation": "You can't go that way.\n\n\n-= Recreation Zone =-0/7",
+    "gt_src": "laundry place",
+    "gt_dst": "bedroom"
+  },
+  {
+    "step_num": 5,
+    "action": "north",
+    "command": "go north",
+    "observation": "You have to open the passageway first.\n\n\n-= Recreation Zone =-0/8",
+    "gt_src": "bedroom",
+    "gt_dst": "cookhouse"
+  },
+  {
+    "step_num": 6,
+    "action": "north",
+    "command": "go north",
+    "observation": "You have to open the passageway first.\n\n\n-= Recreation Zone =-0/9",
+    "gt_src": "cookhouse",
+    "gt_dst": "cubicle"
+  },
+  {
+    "step_num": 7,
+    "action": "south",
+    "command": "go south",
+    "observation": "You have to open the hatch first.\n\n\n-= Recreation Zone =-0/10",
+    "gt_src": "cubicle",
+    "gt_dst": "cookhouse"
+  },
+  {
+    "step_num": 8,
+    "action": "south",
+    "command": "go south",
+    "observation": "You have to open the hatch first.\n\n\n-= Recreation Zone =-0/11",
+    "gt_src": "cookhouse",
+    "gt_dst": "bedroom"
+  },
+  {
+    "step_num": 9,
+    "action": "west",
+    "command": "go west",
+    "observation": "You can't go that way.\n\n\n-= Recreation Zone =-0/12",
+    "gt_src": "bedroom",
+    "gt_dst": "laundry place"
+  },
+  {
+    "step_num": 10,
+    "action": "north",
+    "command": "go north",
+    "observation": "You have to open the passageway first.\n\n\n-= Recreation Zone =-0/13",
+    "gt_src": "laundry place",
+    "gt_dst": "recreation zone"
+  },
+  {
+    "step_num": 11,
+    "action": "north",
+    "command": "go north",
+    "observation": "You have to open the passageway first.\n\n\n-= Recreation Zone =-0/14",
+    "gt_src": "recreation zone",
+    "gt_dst": "dish-pit"
+  },
+  {
+    "step_num": 12,
+    "action": "north",
+    "command": "go north",
+    "observation": "You have to open the passageway first.\n\n\n-= Recreation Zone =-0/15",
+    "gt_src": "dish-pit",
+    "gt_dst": "parlor"
+  },
+  {
+    "step_num": 13,
+    "action": "east",
+    "command": "go east",
+    "observation": "You can't go that way.\n\n\n-= Recreation Zone =-0/16",
+    "gt_src": "parlor",
+    "gt_dst": "washroom"
+  },
+  {
+    "step_num": 14,
+    "action": "west",
+    "command": "go west",
+    "observation": "You can't go that way.\n\n\n-= Recreation Zone =-0/17",
+    "gt_src": "washroom",
+    "gt_dst": "parlor"
+  },
+  {
+    "step_num": 15,
+    "action": "south",
+    "command": "go south",
+    "observation": "You have to open the hatch first.\n\n\n-= Recreation Zone =-0/18",
+    "gt_src": "parlor",
+    "gt_dst": "dish-pit"
+  }
+]

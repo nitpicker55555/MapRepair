@@ -1,0 +1,134 @@
+[
+  {
+    "src_node": "the enterprise closet",
+    "dst_node": "the cafe",
+    "action": "south",
+    "seen_in_forward": 1
+  },
+  {
+    "src_node": "the cafe",
+    "dst_node": "north-south hall--mid way",
+    "action": "west",
+    "seen_in_forward": 2
+  },
+  {
+    "src_node": "north-south hall--mid way",
+    "dst_node": "hall near room 7",
+    "action": "north",
+    "seen_in_forward": 3
+  },
+  {
+    "src_node": "hall near room 7",
+    "dst_node": "room 7",
+    "action": "east",
+    "seen_in_forward": 4
+  },
+  {
+    "src_node": "room 7",
+    "dst_node": "hall near room 7",
+    "action": "west",
+    "seen_in_forward": 5
+  },
+  {
+    "src_node": "hall near room 7",
+    "dst_node": "north-south hall--mid way",
+    "action": "south",
+    "seen_in_forward": 6
+  },
+  {
+    "src_node": "north-south hall--mid way",
+    "dst_node": "hall near room 2",
+    "action": "south",
+    "seen_in_forward": 7
+  },
+  {
+    "src_node": "hall near room 2",
+    "dst_node": "room 2",
+    "action": "east",
+    "seen_in_forward": 8
+  },
+  {
+    "src_node": "room 2",
+    "dst_node": "hall near room 2",
+    "action": "west",
+    "seen_in_forward": 9
+  },
+  {
+    "src_node": "hall near room 2",
+    "dst_node": "north-south hall--south end",
+    "action": "south",
+    "seen_in_forward": 10
+  },
+  {
+    "src_node": "north-south hall--south end",
+    "dst_node": "room 4",
+    "action": "west",
+    "seen_in_forward": 11
+  },
+  {
+    "src_node": "room 4",
+    "dst_node": "north-south hall--south end",
+    "action": "east",
+    "seen_in_forward": 12
+  },
+  {
+    "src_node": "north-south hall--south end",
+    "dst_node": "hall near room 2",
+    "action": "north",
+    "seen_in_forward": 13
+  },
+  {
+    "src_node": "hall near room 2",
+    "dst_node": "north-south hall--mid way",
+    "action": "north",
+    "seen_in_forward": 14
+  },
+  {
+    "src_node": "north-south hall--mid way",
+    "dst_node": "north-south hall--north end",
+    "action": "north",
+    "seen_in_forward": 15
+  },
+  {
+    "src_node": "north-south hall--north end",
+    "dst_node": "room 8",
+    "action": "west",
+    "seen_in_forward": 16
+  },
+  {
+    "src_node": "room 8",
+    "dst_node": "north-south hall--north end",
+    "action": "east",
+    "seen_in_forward": 17
+  },
+  {
+    "src_node": "north-south hall--north end",
+    "dst_node": "hall near office",
+    "action": "northwest",
+    "seen_in_forward": 18
+  },
+  {
+    "src_node": "hall near office",
+    "dst_node": "hall near room 11",
+    "action": "west",
+    "seen_in_forward": 19
+  },
+  {
+    "src_node": "hall near room 11",
+    "dst_node": "hall near office",
+    "action": "east",
+    "seen_in_forward": 20
+  },
+  {
+    "src_node": "hall near office",
+    "dst_node": "office",
+    "action": "north",
+    "seen_in_forward": 21
+  },
+  {
+    "src_node": "office",
+    "dst_node": "hall near office",
+    "action": "south",
+    "seen_in_forward": 22
+  }
+]

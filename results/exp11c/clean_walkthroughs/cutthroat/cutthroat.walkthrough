@@ -1,0 +1,207 @@
+===========
+==>STEP NUM: 0
+==>ACT: north
+==>OBSERVATION: Upstairs Hallway
+You are at the top of the stairs in the Red Boar. Your room is to the south, and other rooms line the hall. The lighting in the hallway is dim and drab like the wallpaper and carpeting.
+===========
+==>STEP NUM: 1
+==>ACT: north
+==>OBSERVATION: Red Boar Inn
+This is the lobby of the Red Boar Inn, a place with the charm of a two-dollar flophouse. The Wharf Road is outside, to the north, and a stairway leads up to the rooms to the south.
+A desk clerk sits behind the counter.
+The Weasel walks past you.
+===========
+==>STEP NUM: 2
+==>ACT: north
+==>OBSERVATION: Wharf Road
+This is the end of the Wharf Road, an east/west, two-lane road that's the island's main street. Off to the east, small businesses line the south side of the street. A winding road starts to the southwest, heading toward the lighthouse. The Red Boar Inn is to the south.
+===========
+==>STEP NUM: 3
+==>ACT: east
+==>OBSERVATION: Wharf Road
+You are on the Wharf Road, with the McGinty Salvage office to the south. The ocean lies to the north, its brine smell strong and refreshing.
+Your throat starts to feel dry.
+===========
+==>STEP NUM: 4
+==>ACT: east
+==>OBSERVATION: Wharf Road
+You are on the Wharf Road where the wharf starts up to the north. The former site of Outfitters International's warehouse fronts the south side of the road.
+===========
+==>STEP NUM: 5
+==>ACT: east
+==>OBSERVATION: Wharf Road
+The east/west Wharf Road continues, with Outfitters International, a store which supplies ocean-going vessels, to the south.
+To the west the Weasel comes into view from the south.
+===========
+==>STEP NUM: 6
+==>ACT: east
+==>OBSERVATION: Wharf Road
+You're on the east end of Wharf Road. The Ocean Road starts here and parallels the island's east edge, heading to the southeast. The Shanty is to the south.
+The Weasel is to the west, heading toward the east.
+===========
+==>STEP NUM: 7
+==>ACT: south
+==>OBSERVATION: The Shanty
+This is The Shanty, a tavern which serves the locals. A wooden bar travels the length of the place, and behind it is a mirror so dirty, it offers no reflection. Round tables occupy the floor. The smell of cooking food permeates the place.
+A bartender behind the bar polishes glasses with a worn towel.
+A parrot with an eyepatch hobbles up and down the bar.
+A man wearing an eyepatch, black turtleneck, and jeans is standing about. He is known as Pete the Rat.
+Johnny Red is here. Red hair sprouts from his head and from beneath his flannel shirt.
+"Sit down and we'll talk," Johnny Red says.
+===========
+==>STEP NUM: 8
+==>ACT: north
+==>OBSERVATION: Wharf Road
+===========
+==>STEP NUM: 9
+==>ACT: west
+==>OBSERVATION: Wharf Road
+===========
+==>STEP NUM: 10
+==>ACT: west
+==>OBSERVATION: Wharf Road
+===========
+==>STEP NUM: 11
+==>ACT: south
+==>OBSERVATION: Vacant Lot
+You are standing on the former site of the Outfitters International warehouse, which burned down a few months back. To the north is the Wharf Road and an alley is to the south.
+===========
+==>STEP NUM: 12
+==>ACT: south
+==>OBSERVATION: Back Alley
+You are in an east/west alley. To the north is a vacant lot, and an overgrown field lies to the south.
+===========
+==>STEP NUM: 13
+==>ACT: west
+==>OBSERVATION: Back Alley
+You are in a narrow alley. To the north is the back door of McGinty Salvage, as well as a small window. An overgrown field lies to the south.
+===========
+==>STEP NUM: 14
+==>ACT: west
+==>OBSERVATION: Back Alley
+You're at the west end of an east/west alley. The back entrance to the Red Boar Inn is to the north, and an overgrown field is to the south.
+===========
+==>STEP NUM: 15
+==>ACT: east
+==>OBSERVATION: Back Alley
+===========
+==>STEP NUM: 16
+==>ACT: east
+==>OBSERVATION: Back Alley
+===========
+==>STEP NUM: 17
+==>ACT: east
+==>OBSERVATION: Back Alley
+You are in an alley behind Outfitters International. An abandoned field lies to the south.
+===========
+==>STEP NUM: 18
+==>ACT: east
+==>OBSERVATION: Back Alley
+You're at the east end of an east/west alley. The back door of The Shanty is to the north, and an overgrown field is to the south. Narrow paths to the northeast and southeast lead to the Ocean Road.
+===========
+==>STEP NUM: 19
+==>ACT: northeast
+==>OBSERVATION: Ocean Road
+You are at the north end of the Ocean Road, a narrow north/south road on the east edge of the island. The Wharf Road starts to the northwest, and a back alley starts off to the southwest.
+===========
+==>STEP NUM: 20
+==>ACT: south
+==>OBSERVATION: Ocean Road
+You are halfway along the Ocean Road, with the start of an alley off to the northwest. An empty field lies to your west, and the dangerous ocean shore lies off to your east.
+===========
+==>STEP NUM: 21
+==>ACT: south
+==>OBSERVATION: Ocean Road
+This is the south end of the Ocean Road. To the southeast is a small path leading up to about 100 feet above sea level. The Ocean Road heads north, and the Shore Road starts to the southwest.
+===========
+==>STEP NUM: 22
+==>ACT: southwest
+==>OBSERVATION: Shore Road
+This is the east end of the Shore Road, an east/west road with a ferry landing at its west end. The Mariners' Trust, the island's only bank, is off to the north. The Ocean Road starts up to the northeast.
+===========
+==>STEP NUM: 23
+==>ACT: west
+==>OBSERVATION: Shore Road
+You are at the west end of the east/west Shore Road, with the ferry landing to the west. To the north is an impenetrable field, while the south is bordered by the ocean. You can see the mainland in the distance.
+===========
+==>STEP NUM: 24
+==>ACT: west
+==>OBSERVATION: Ferry Landing
+The ferry to the mainland arrives here every two hours during the day. People are milling about. The Shore Road starts off to the east.
+===========
+==>STEP NUM: 25
+==>ACT: east
+==>OBSERVATION: Shore Road
+===========
+==>STEP NUM: 26
+==>ACT: east
+==>OBSERVATION: Shore Road
+===========
+==>STEP NUM: 27
+==>ACT: north
+==>OBSERVATION: Mariners' Trust
+You are in Mariners' Trust, the Island's bank. In it are a table and a teller's window. You can see the safe beyond, and it looks pretty empty.
+A teller sits behind the window.
+===========
+==>STEP NUM: 28
+==>ACT: south
+==>OBSERVATION: Shore Road
+===========
+==>STEP NUM: 29
+==>ACT: northeast
+==>OBSERVATION: Ocean Road
+===========
+==>STEP NUM: 30
+==>ACT: north
+==>OBSERVATION: Ocean Road
+===========
+==>STEP NUM: 31
+==>ACT: northwest
+==>OBSERVATION: Back Alley
+===========
+==>STEP NUM: 32
+==>ACT: west
+==>OBSERVATION: Back Alley
+===========
+==>STEP NUM: 33
+==>ACT: west
+==>OBSERVATION: Back Alley
+===========
+==>STEP NUM: 34
+==>ACT: north
+==>OBSERVATION: Vacant Lot
+===========
+==>STEP NUM: 35
+==>ACT: north
+==>OBSERVATION: Wharf Road
+===========
+==>STEP NUM: 36
+==>ACT: west
+==>OBSERVATION: Wharf Road
+===========
+==>STEP NUM: 37
+==>ACT: west
+==>OBSERVATION: Wharf Road
+===========
+==>STEP NUM: 38
+==>ACT: southwest
+==>OBSERVATION: Winding Road
+A winding road starts up here to the southwest. You can see the top of the lighthouse off to the northwest. The Wharf Road lies to the northeast.
+===========
+==>STEP NUM: 39
+==>ACT: southwest
+==>OBSERVATION: Winding Road
+The road branches to the northeast and northwest with the lighthouse off to the northwest. To the south is an impenetrable swamp.
+Pete the Rat is off to the northwest.
+The Weasel is off to the northwest.
+Johnny Red is off to the northwest.
+===========
+==>STEP NUM: 40
+==>ACT: northwest
+==>OBSERVATION: Winding Road
+The road ends at the lighthouse to the north, and heads back to the southeast. You can see and hear the ocean pound the shoreline.
+Pete the Rat fiddles with his eyepatch, shifting his weight from foot to foot.
+A short, wiry guy known only as "the Weasel" is over in a corner, picking his teeth with a knife.
+Johnny Red is here.
+Johnny nods, then pulls out a dinner plate he says he came across while on a shark hunt.
+===========

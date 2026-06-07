@@ -1,0 +1,70 @@
+Traceback (most recent call last):
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/runpy.py", line 197, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/runpy.py", line 87, in _run_code
+    exec(code, run_globals)
+  File "/Users/puzhen/Downloads/spatial_paper_polish/experiments/exp12_remap_on_v3_clean.py", line 373, in <module>
+    raise SystemExit(main())
+  File "/Users/puzhen/Downloads/spatial_paper_polish/experiments/exp12_remap_on_v3_clean.py", line 308, in main
+    q = evaluate_quality(g, model_dir / f"{g}_edges.json", args.gt_root)
+  File "/Users/puzhen/Downloads/spatial_paper_polish/experiments/exp12_remap_on_v3_clean.py", line 240, in evaluate_quality
+    g = NavGraph.from_edges([(e["src_node"], e["dst_node"], e["action"]) for e in pred_edges],
+  File "/Users/puzhen/Downloads/spatial_paper_polish/src/maprepair/graph.py", line 97, in from_edges
+    g.add_edge(src, dst, direction, add_auto_reverse=add_auto_reverse)
+  File "/Users/puzhen/Downloads/spatial_paper_polish/src/maprepair/graph.py", line 117, in add_edge
+    raise ValueError(f"Self-loops are not allowed: {src!r}")
+ValueError: Self-loops are not allowed: 'dismal swamp'
+Mapping 53 games with gpt-4.1, workers=8
+  [1/53] 905: edges=2 t=10.9s
+  [2/53] balances: edges=9 t=19.5s
+  [3/53] afflicted: edges=18 t=38.8s
+  [4/53] awaken: edges=20 t=44.4s
+  [5/53] adventureland: edges=22 t=48.7s
+  [6/53] ballyhoo: edges=23 t=50.3s
+  [7/53] anchor: edges=27 t=56.9s
+  [8/53] curses: edges=23 t=47.0s
+  [9/53] advent: edges=38 t=79.9s
+  [10/53] hhgg: edges=1 t=4.8s
+  [11/53] gold: edges=18 t=39.7s
+  [12/53] enter: edges=21 t=41.0s
+  [13/53] enchanter: edges=23 t=51.5s
+  [14/53] huntdark: edges=3 t=4.9s
+  [15/53] dragon: edges=31 t=57.0s
+  [16/53] cutthroat: edges=33 t=88.7s
+  [17/53] hollywood: edges=17 t=29.8s
+  [18/53] detective: edges=31 t=74.1s
+  [19/53] deephome: edges=40 t=82.3s
+  [20/53] library: edges=10 t=22.4s
+  [21/53] lostpig: edges=4 t=12.6s
+  [22/53] moonlit: edges=4 t=10.8s
+  [23/53] loose: edges=15 t=30.2s
+  [24/53] jewel: edges=26 t=48.1s
+  [25/53] infidel: edges=27 t=54.7s
+  [26/53] inhumane: edges=28 t=53.4s
+  [27/53] karn: edges=24 t=53.7s
+  [28/53] lurking: edges=16 t=33.4s
+  [29/53] partyfoul: edges=6 t=15.5s
+  [30/53] ludicorp: edges=35 t=65.5s
+  [31/53] pentari: edges=19 t=40.2s
+  [32/53] seastalker: edges=8 t=16.6s
+  [33/53] night: edges=28 t=60.8s
+  [34/53] plundered: edges=22 t=41.5s
+  [35/53] reverb: edges=20 t=40.0s
+  [36/53] planetfall: edges=27 t=50.7s
+  [37/53] snacktime: edges=4 t=11.3s
+  [38/53] murdac: edges=31 t=75.2s
+  [39/53] omniquest: edges=38 t=76.3s
+  [40/53] trinity: edges=9 t=17.1s
+  [41/53] tryst205: edges=7 t=14.9s
+  [42/53] spellbrkr: edges=14 t=32.1s
+  [43/53] sherlock: edges=22 t=45.3s
+  [44/53] temple: edges=20 t=44.8s
+  [45/53] yomomma: edges=14 t=28.3s
+  [46/53] zenon: edges=15 t=34.2s
+  [47/53] zork1: edges=20 t=35.4s
+  [48/53] spirit: edges=36 t=65.4s
+  [49/53] sorcerer: edges=24 t=70.6s
+  [50/53] wishbringer: edges=26 t=50.2s
+  [51/53] zork2: edges=32 t=59.9s
+  [52/53] zork3: edges=24 t=46.3s
+  [53/53] ztuu: edges=21 t=43.8s

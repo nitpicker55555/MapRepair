@@ -1,0 +1,20 @@
+# afflicted  model=gpt-4.1  n_steps=19
+step   0 bad movement output: {'is_movement': True, 'src_node': None, 'dst_node': '19th street east', 'action': 'east', 'seen_in_forward': 0, 'current_location': '19th street east', 'reasoning': "The observation begins with '19th Street East', which matches a canonical location, indicating arrival after moving east."}
+step   1 MOVE '<unknown>' --[west]--> '19th street'
+step   2 MOVE '19th street' --[north]--> 'dining room'
+step   3 MOVE 'dining room' --[east]--> 'bar'
+step   4 MOVE 'bar' --[north]--> 'lavatory'
+step   5 MOVE 'lavatory' --[south]--> 'bar'
+step   6 MOVE 'bar' --[west]--> 'dining room'
+step   7 MOVE 'dining room' --[north]--> 'galley kitchen'
+step   8 MOVE 'galley kitchen' --[north]--> 'refrigerator'
+step   9 MOVE 'refrigerator' --[west]--> 'refrigerator'
+step  10 MOVE 'refrigerator' --[east]--> 'darkness'
+step  11 MOVE 'darkness' --[north]--> 'dish room'
+step  12 MOVE 'dish room' --[south]--> 'darkness'
+step  13 MOVE 'darkness' --[south]--> 'galley kitchen'
+step  14 MOVE 'galley kitchen' --[south]--> 'dining room'
+step  15 MOVE 'dining room' --[down]--> 'crypt'
+step  16 MOVE 'crypt' --[up]--> 'dish room'
+step  17 MOVE 'dish room' --[south]--> '19th street'
+step  18 MOVE '19th street' --[up]--> "nikolai's office"

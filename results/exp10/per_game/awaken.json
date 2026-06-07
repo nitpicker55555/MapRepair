@@ -1,0 +1,2747 @@
+{
+  "game": "awaken",
+  "num_llm_edges": 18,
+  "num_gt_edges": 24,
+  "num_conflicts": 35,
+  "type_distribution": {
+    "direction": 3,
+    "topology": 17,
+    "naming": 15
+  },
+  "root_cause_distribution": {
+    "real_vs_hallucinated": 3,
+    "overlap_mixed": 14,
+    "false_positive_overlap": 3,
+    "real_name_corrupted_by_neighbour_error": 5,
+    "naming_collision_on_correct_subgraph": 9,
+    "naming_mixed": 1
+  },
+  "conflicts": [
+    {
+      "type": "direction",
+      "description": "node 'front of the church' has multiple outgoing edges labelled 'north'",
+      "involved_edges": [
+        [
+          "front of the church",
+          "vestibule"
+        ],
+        [
+          "front of the church",
+          "church porch"
+        ],
+        [
+          "front of the church",
+          "belfry"
+        ]
+      ],
+      "involved_nodes": [
+        "front of the church",
+        "vestibule",
+        "church porch",
+        "belfry"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "front of the church",
+            "vestibule"
+          ],
+          "llm_dir": "north",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 13
+        },
+        {
+          "edge": [
+            "front of the church",
+            "church porch"
+          ],
+          "llm_dir": "north",
+          "in_gt": true,
+          "gt_dir": "north",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": null
+        },
+        {
+          "edge": [
+            "front of the church",
+            "belfry"
+          ],
+          "llm_dir": "north",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 40
+        }
+      ],
+      "case_counts": {
+        "hallucinated_edge": 2,
+        "correct": 1
+      },
+      "root_cause": "real_vs_hallucinated"
+    },
+    {
+      "type": "direction",
+      "description": "node 'vestibule' has multiple outgoing edges labelled 'south'",
+      "involved_edges": [
+        [
+          "vestibule",
+          "front of the church"
+        ],
+        [
+          "vestibule",
+          "church porch"
+        ]
+      ],
+      "involved_nodes": [
+        "vestibule",
+        "front of the church",
+        "church porch"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "vestibule",
+            "front of the church"
+          ],
+          "llm_dir": "south",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": null
+        },
+        {
+          "edge": [
+            "vestibule",
+            "church porch"
+          ],
+          "llm_dir": "south",
+          "in_gt": true,
+          "gt_dir": "south",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 37
+        }
+      ],
+      "case_counts": {
+        "hallucinated_edge": 1,
+        "correct": 1
+      },
+      "root_cause": "real_vs_hallucinated"
+    },
+    {
+      "type": "direction",
+      "description": "node 'belfry' has multiple outgoing edges labelled 'south'",
+      "involved_edges": [
+        [
+          "belfry",
+          "front of the church"
+        ],
+        [
+          "belfry",
+          "top of oak tree"
+        ]
+      ],
+      "involved_nodes": [
+        "belfry",
+        "front of the church",
+        "top of oak tree"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "belfry",
+            "front of the church"
+          ],
+          "llm_dir": "south",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": null
+        },
+        {
+          "edge": [
+            "belfry",
+            "top of oak tree"
+          ],
+          "llm_dir": "south",
+          "in_gt": true,
+          "gt_dir": "south",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 42
+        }
+      ],
+      "case_counts": {
+        "hallucinated_edge": 1,
+        "correct": 1
+      },
+      "root_cause": "real_vs_hallucinated"
+    },
+    {
+      "type": "topology",
+      "description": "position (0, 0, -1) occupied by multiple rooms ['belfry', 'church porch', 'steeple chamber', 'vestibule']",
+      "involved_edges": [],
+      "involved_nodes": [
+        "belfry",
+        "church porch",
+        "steeple chamber",
+        "vestibule"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "front of the church",
+            "belfry"
+          ],
+          "llm_dir": "north",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 40
+        },
+        {
+          "edge": [
+            "belfry",
+            "top of oak tree"
+          ],
+          "llm_dir": "south",
+          "in_gt": true,
+          "gt_dir": "south",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 42
+        },
+        {
+          "edge": [
+            "vestibule",
+            "church porch"
+          ],
+          "llm_dir": "south",
+          "in_gt": true,
+          "gt_dir": "south",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 37
+        },
+        {
+          "edge": [
+            "church porch",
+            "front of the church"
+          ],
+          "llm_dir": "south",
+          "in_gt": true,
+          "gt_dir": "south",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 38
+        },
+        {
+          "edge": [
+            "vestibule",
+            "steeple chamber"
+          ],
+          "llm_dir": "up",
+          "in_gt": false,
+          "gt_dir": "down",
+          "case": "swapped_src_dst",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 32
+        },
+        {
+          "edge": [
+            "steeple chamber",
+            "inner chamber"
+          ],
+          "llm_dir": "north",
+          "in_gt": true,
+          "gt_dir": "north",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 49
+        },
+        {
+          "edge": [
+            "front of the church",
+            "vestibule"
+          ],
+          "llm_dir": "north",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 13
+        },
+        {
+          "edge": [
+            "vestibule",
+            "sanctuary"
+          ],
+          "llm_dir": "north",
+          "in_gt": true,
+          "gt_dir": "north",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 14
+        }
+      ],
+      "case_counts": {
+        "hallucinated_edge": 2,
+        "correct": 5,
+        "swapped_src_dst": 1
+      },
+      "root_cause": "overlap_mixed"
+    },
+    {
+      "type": "topology",
+      "description": "position (0, 0, 0) occupied by multiple rooms ['belfry', 'church porch', 'steeple chamber', 'vestibule']",
+      "involved_edges": [],
+      "involved_nodes": [
+        "belfry",
+        "church porch",
+        "steeple chamber",
+        "vestibule"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "front of the church",
+            "belfry"
+          ],
+          "llm_dir": "north",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 40
+        },
+        {
+          "edge": [
+            "belfry",
+            "top of oak tree"
+          ],
+          "llm_dir": "south",
+          "in_gt": true,
+          "gt_dir": "south",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 42
+        },
+        {
+          "edge": [
+            "vestibule",
+            "church porch"
+          ],
+          "llm_dir": "south",
+          "in_gt": true,
+          "gt_dir": "south",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 37
+        },
+        {
+          "edge": [
+            "church porch",
+            "front of the church"
+          ],
+          "llm_dir": "south",
+          "in_gt": true,
+          "gt_dir": "south",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 38
+        },
+        {
+          "edge": [
+            "vestibule",
+            "steeple chamber"
+          ],
+          "llm_dir": "up",
+          "in_gt": false,
+          "gt_dir": "down",
+          "case": "swapped_src_dst",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 32
+        },
+        {
+          "edge": [
+            "steeple chamber",
+            "inner chamber"
+          ],
+          "llm_dir": "north",
+          "in_gt": true,
+          "gt_dir": "north",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 49
+        },
+        {
+          "edge": [
+            "front of the church",
+            "vestibule"
+          ],
+          "llm_dir": "north",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 13
+        },
+        {
+          "edge": [
+            "vestibule",
+            "sanctuary"
+          ],
+          "llm_dir": "north",
+          "in_gt": true,
+          "gt_dir": "north",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 14
+        }
+      ],
+      "case_counts": {
+        "hallucinated_edge": 2,
+        "correct": 5,
+        "swapped_src_dst": 1
+      },
+      "root_cause": "overlap_mixed"
+    },
+    {
+      "type": "topology",
+      "description": "position (0, 0, -2) occupied by multiple rooms ['belfry', 'church porch', 'steeple chamber', 'vestibule']",
+      "involved_edges": [],
+      "involved_nodes": [
+        "belfry",
+        "church porch",
+        "steeple chamber",
+        "vestibule"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "front of the church",
+            "belfry"
+          ],
+          "llm_dir": "north",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 40
+        },
+        {
+          "edge": [
+            "belfry",
+            "top of oak tree"
+          ],
+          "llm_dir": "south",
+          "in_gt": true,
+          "gt_dir": "south",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 42
+        },
+        {
+          "edge": [
+            "vestibule",
+            "church porch"
+          ],
+          "llm_dir": "south",
+          "in_gt": true,
+          "gt_dir": "south",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 37
+        },
+        {
+          "edge": [
+            "church porch",
+            "front of the church"
+          ],
+          "llm_dir": "south",
+          "in_gt": true,
+          "gt_dir": "south",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 38
+        },
+        {
+          "edge": [
+            "vestibule",
+            "steeple chamber"
+          ],
+          "llm_dir": "up",
+          "in_gt": false,
+          "gt_dir": "down",
+          "case": "swapped_src_dst",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 32
+        },
+        {
+          "edge": [
+            "steeple chamber",
+            "inner chamber"
+          ],
+          "llm_dir": "north",
+          "in_gt": true,
+          "gt_dir": "north",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 49
+        },
+        {
+          "edge": [
+            "front of the church",
+            "vestibule"
+          ],
+          "llm_dir": "north",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 13
+        },
+        {
+          "edge": [
+            "vestibule",
+            "sanctuary"
+          ],
+          "llm_dir": "north",
+          "in_gt": true,
+          "gt_dir": "north",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 14
+        }
+      ],
+      "case_counts": {
+        "hallucinated_edge": 2,
+        "correct": 5,
+        "swapped_src_dst": 1
+      },
+      "root_cause": "overlap_mixed"
+    },
+    {
+      "type": "topology",
+      "description": "position (0, 0, -3) occupied by multiple rooms ['belfry', 'church porch', 'front of the church', 'vestibule']",
+      "involved_edges": [],
+      "involved_nodes": [
+        "belfry",
+        "church porch",
+        "front of the church",
+        "vestibule"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "front of the church",
+            "belfry"
+          ],
+          "llm_dir": "north",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 40
+        },
+        {
+          "edge": [
+            "belfry",
+            "top of oak tree"
+          ],
+          "llm_dir": "south",
+          "in_gt": true,
+          "gt_dir": "south",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 42
+        },
+        {
+          "edge": [
+            "vestibule",
+            "church porch"
+          ],
+          "llm_dir": "south",
+          "in_gt": true,
+          "gt_dir": "south",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 37
+        },
+        {
+          "edge": [
+            "church porch",
+            "front of the church"
+          ],
+          "llm_dir": "south",
+          "in_gt": true,
+          "gt_dir": "south",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 38
+        },
+        {
+          "edge": [
+            "west side of the church",
+            "front of the church"
+          ],
+          "llm_dir": "southeast",
+          "in_gt": true,
+          "gt_dir": "southeast",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 4
+        },
+        {
+          "edge": [
+            "east side of the church",
+            "front of the church"
+          ],
+          "llm_dir": "north",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 10
+        },
+        {
+          "edge": [
+            "top of oak tree",
+            "front of the church"
+          ],
+          "llm_dir": "down",
+          "in_gt": true,
+          "gt_dir": "down",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 43
+        },
+        {
+          "edge": [
+            "inner chamber",
+            "front of the church"
+          ],
+          "llm_dir": "out",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 53
+        },
+        {
+          "edge": [
+            "front of the church",
+            "vestibule"
+          ],
+          "llm_dir": "north",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 13
+        },
+        {
+          "edge": [
+            "vestibule",
+            "sanctuary"
+          ],
+          "llm_dir": "north",
+          "in_gt": true,
+          "gt_dir": "north",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 14
+        },
+        {
+          "edge": [
+            "vestibule",
+            "steeple chamber"
+          ],
+          "llm_dir": "up",
+          "in_gt": false,
+          "gt_dir": "down",
+          "case": "swapped_src_dst",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 32
+        }
+      ],
+      "case_counts": {
+        "hallucinated_edge": 4,
+        "correct": 6,
+        "swapped_src_dst": 1
+      },
+      "root_cause": "overlap_mixed"
+    },
+    {
+      "type": "topology",
+      "description": "position (0, -1, -1) occupied by multiple rooms ['church porch', 'front of the church', 'top of oak tree']",
+      "involved_edges": [],
+      "involved_nodes": [
+        "church porch",
+        "front of the church",
+        "top of oak tree"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "vestibule",
+            "church porch"
+          ],
+          "llm_dir": "south",
+          "in_gt": true,
+          "gt_dir": "south",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 37
+        },
+        {
+          "edge": [
+            "church porch",
+            "front of the church"
+          ],
+          "llm_dir": "south",
+          "in_gt": true,
+          "gt_dir": "south",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 38
+        },
+        {
+          "edge": [
+            "west side of the church",
+            "front of the church"
+          ],
+          "llm_dir": "southeast",
+          "in_gt": true,
+          "gt_dir": "southeast",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 4
+        },
+        {
+          "edge": [
+            "east side of the church",
+            "front of the church"
+          ],
+          "llm_dir": "north",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 10
+        },
+        {
+          "edge": [
+            "top of oak tree",
+            "front of the church"
+          ],
+          "llm_dir": "down",
+          "in_gt": true,
+          "gt_dir": "down",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 43
+        },
+        {
+          "edge": [
+            "inner chamber",
+            "front of the church"
+          ],
+          "llm_dir": "out",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 53
+        },
+        {
+          "edge": [
+            "front of the church",
+            "vestibule"
+          ],
+          "llm_dir": "north",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 13
+        },
+        {
+          "edge": [
+            "front of the church",
+            "belfry"
+          ],
+          "llm_dir": "north",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 40
+        },
+        {
+          "edge": [
+            "belfry",
+            "top of oak tree"
+          ],
+          "llm_dir": "south",
+          "in_gt": true,
+          "gt_dir": "south",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 42
+        }
+      ],
+      "case_counts": {
+        "correct": 5,
+        "hallucinated_edge": 4
+      },
+      "root_cause": "overlap_mixed"
+    },
+    {
+      "type": "topology",
+      "description": "position (0, -1, -2) occupied by multiple rooms ['church porch', 'front of the church', 'top of oak tree']",
+      "involved_edges": [],
+      "involved_nodes": [
+        "church porch",
+        "front of the church",
+        "top of oak tree"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "vestibule",
+            "church porch"
+          ],
+          "llm_dir": "south",
+          "in_gt": true,
+          "gt_dir": "south",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 37
+        },
+        {
+          "edge": [
+            "church porch",
+            "front of the church"
+          ],
+          "llm_dir": "south",
+          "in_gt": true,
+          "gt_dir": "south",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 38
+        },
+        {
+          "edge": [
+            "west side of the church",
+            "front of the church"
+          ],
+          "llm_dir": "southeast",
+          "in_gt": true,
+          "gt_dir": "southeast",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 4
+        },
+        {
+          "edge": [
+            "east side of the church",
+            "front of the church"
+          ],
+          "llm_dir": "north",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 10
+        },
+        {
+          "edge": [
+            "top of oak tree",
+            "front of the church"
+          ],
+          "llm_dir": "down",
+          "in_gt": true,
+          "gt_dir": "down",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 43
+        },
+        {
+          "edge": [
+            "inner chamber",
+            "front of the church"
+          ],
+          "llm_dir": "out",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 53
+        },
+        {
+          "edge": [
+            "front of the church",
+            "vestibule"
+          ],
+          "llm_dir": "north",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 13
+        },
+        {
+          "edge": [
+            "front of the church",
+            "belfry"
+          ],
+          "llm_dir": "north",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 40
+        },
+        {
+          "edge": [
+            "belfry",
+            "top of oak tree"
+          ],
+          "llm_dir": "south",
+          "in_gt": true,
+          "gt_dir": "south",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 42
+        }
+      ],
+      "case_counts": {
+        "correct": 5,
+        "hallucinated_edge": 4
+      },
+      "root_cause": "overlap_mixed"
+    },
+    {
+      "type": "topology",
+      "description": "position (0, 2, -3) occupied by multiple rooms ['front of the church', 'pulpit', 'sanctuary']",
+      "involved_edges": [],
+      "involved_nodes": [
+        "front of the church",
+        "pulpit",
+        "sanctuary"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "west side of the church",
+            "front of the church"
+          ],
+          "llm_dir": "southeast",
+          "in_gt": true,
+          "gt_dir": "southeast",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 4
+        },
+        {
+          "edge": [
+            "east side of the church",
+            "front of the church"
+          ],
+          "llm_dir": "north",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 10
+        },
+        {
+          "edge": [
+            "church porch",
+            "front of the church"
+          ],
+          "llm_dir": "south",
+          "in_gt": true,
+          "gt_dir": "south",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 38
+        },
+        {
+          "edge": [
+            "top of oak tree",
+            "front of the church"
+          ],
+          "llm_dir": "down",
+          "in_gt": true,
+          "gt_dir": "down",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 43
+        },
+        {
+          "edge": [
+            "inner chamber",
+            "front of the church"
+          ],
+          "llm_dir": "out",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 53
+        },
+        {
+          "edge": [
+            "front of the church",
+            "vestibule"
+          ],
+          "llm_dir": "north",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 13
+        },
+        {
+          "edge": [
+            "front of the church",
+            "belfry"
+          ],
+          "llm_dir": "north",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 40
+        },
+        {
+          "edge": [
+            "sanctuary",
+            "pulpit"
+          ],
+          "llm_dir": "north",
+          "in_gt": true,
+          "gt_dir": "north",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 15
+        },
+        {
+          "edge": [
+            "pulpit",
+            "small office"
+          ],
+          "llm_dir": "north",
+          "in_gt": true,
+          "gt_dir": "north",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 18
+        },
+        {
+          "edge": [
+            "vestibule",
+            "sanctuary"
+          ],
+          "llm_dir": "north",
+          "in_gt": true,
+          "gt_dir": "north",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 14
+        }
+      ],
+      "case_counts": {
+        "correct": 6,
+        "hallucinated_edge": 4
+      },
+      "root_cause": "overlap_mixed"
+    },
+    {
+      "type": "topology",
+      "description": "position (0, -1, 0) occupied by multiple rooms ['front of the church', 'top of oak tree']",
+      "involved_edges": [],
+      "involved_nodes": [
+        "front of the church",
+        "top of oak tree"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "west side of the church",
+            "front of the church"
+          ],
+          "llm_dir": "southeast",
+          "in_gt": true,
+          "gt_dir": "southeast",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 4
+        },
+        {
+          "edge": [
+            "east side of the church",
+            "front of the church"
+          ],
+          "llm_dir": "north",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 10
+        },
+        {
+          "edge": [
+            "church porch",
+            "front of the church"
+          ],
+          "llm_dir": "south",
+          "in_gt": true,
+          "gt_dir": "south",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 38
+        },
+        {
+          "edge": [
+            "top of oak tree",
+            "front of the church"
+          ],
+          "llm_dir": "down",
+          "in_gt": true,
+          "gt_dir": "down",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 43
+        },
+        {
+          "edge": [
+            "inner chamber",
+            "front of the church"
+          ],
+          "llm_dir": "out",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 53
+        },
+        {
+          "edge": [
+            "front of the church",
+            "vestibule"
+          ],
+          "llm_dir": "north",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 13
+        },
+        {
+          "edge": [
+            "front of the church",
+            "belfry"
+          ],
+          "llm_dir": "north",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 40
+        },
+        {
+          "edge": [
+            "belfry",
+            "top of oak tree"
+          ],
+          "llm_dir": "south",
+          "in_gt": true,
+          "gt_dir": "south",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 42
+        }
+      ],
+      "case_counts": {
+        "correct": 4,
+        "hallucinated_edge": 4
+      },
+      "root_cause": "overlap_mixed"
+    },
+    {
+      "type": "topology",
+      "description": "position (0, -1, -3) occupied by multiple rooms ['church porch', 'front of the church', 'top of oak tree']",
+      "involved_edges": [],
+      "involved_nodes": [
+        "church porch",
+        "front of the church",
+        "top of oak tree"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "vestibule",
+            "church porch"
+          ],
+          "llm_dir": "south",
+          "in_gt": true,
+          "gt_dir": "south",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 37
+        },
+        {
+          "edge": [
+            "church porch",
+            "front of the church"
+          ],
+          "llm_dir": "south",
+          "in_gt": true,
+          "gt_dir": "south",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 38
+        },
+        {
+          "edge": [
+            "west side of the church",
+            "front of the church"
+          ],
+          "llm_dir": "southeast",
+          "in_gt": true,
+          "gt_dir": "southeast",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 4
+        },
+        {
+          "edge": [
+            "east side of the church",
+            "front of the church"
+          ],
+          "llm_dir": "north",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 10
+        },
+        {
+          "edge": [
+            "top of oak tree",
+            "front of the church"
+          ],
+          "llm_dir": "down",
+          "in_gt": true,
+          "gt_dir": "down",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 43
+        },
+        {
+          "edge": [
+            "inner chamber",
+            "front of the church"
+          ],
+          "llm_dir": "out",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 53
+        },
+        {
+          "edge": [
+            "front of the church",
+            "vestibule"
+          ],
+          "llm_dir": "north",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 13
+        },
+        {
+          "edge": [
+            "front of the church",
+            "belfry"
+          ],
+          "llm_dir": "north",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 40
+        },
+        {
+          "edge": [
+            "belfry",
+            "top of oak tree"
+          ],
+          "llm_dir": "south",
+          "in_gt": true,
+          "gt_dir": "south",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 42
+        }
+      ],
+      "case_counts": {
+        "correct": 5,
+        "hallucinated_edge": 4
+      },
+      "root_cause": "overlap_mixed"
+    },
+    {
+      "type": "topology",
+      "description": "position (0, -2, -3) occupied by multiple rooms ['east side of the church', 'front of the church']",
+      "involved_edges": [],
+      "involved_nodes": [
+        "east side of the church",
+        "front of the church"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "north side of the church",
+            "east side of the church"
+          ],
+          "llm_dir": "east",
+          "in_gt": true,
+          "gt_dir": "east",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 9
+        },
+        {
+          "edge": [
+            "east side of the church",
+            "front of the church"
+          ],
+          "llm_dir": "north",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 10
+        },
+        {
+          "edge": [
+            "west side of the church",
+            "front of the church"
+          ],
+          "llm_dir": "southeast",
+          "in_gt": true,
+          "gt_dir": "southeast",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 4
+        },
+        {
+          "edge": [
+            "church porch",
+            "front of the church"
+          ],
+          "llm_dir": "south",
+          "in_gt": true,
+          "gt_dir": "south",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 38
+        },
+        {
+          "edge": [
+            "top of oak tree",
+            "front of the church"
+          ],
+          "llm_dir": "down",
+          "in_gt": true,
+          "gt_dir": "down",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 43
+        },
+        {
+          "edge": [
+            "inner chamber",
+            "front of the church"
+          ],
+          "llm_dir": "out",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 53
+        },
+        {
+          "edge": [
+            "front of the church",
+            "vestibule"
+          ],
+          "llm_dir": "north",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 13
+        },
+        {
+          "edge": [
+            "front of the church",
+            "belfry"
+          ],
+          "llm_dir": "north",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 40
+        }
+      ],
+      "case_counts": {
+        "correct": 4,
+        "hallucinated_edge": 4
+      },
+      "root_cause": "overlap_mixed"
+    },
+    {
+      "type": "topology",
+      "description": "position (0, 1, -3) occupied by multiple rooms ['east side of the church', 'sanctuary', 'vestibule']",
+      "involved_edges": [],
+      "involved_nodes": [
+        "east side of the church",
+        "sanctuary",
+        "vestibule"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "north side of the church",
+            "east side of the church"
+          ],
+          "llm_dir": "east",
+          "in_gt": true,
+          "gt_dir": "east",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 9
+        },
+        {
+          "edge": [
+            "east side of the church",
+            "front of the church"
+          ],
+          "llm_dir": "north",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 10
+        },
+        {
+          "edge": [
+            "vestibule",
+            "sanctuary"
+          ],
+          "llm_dir": "north",
+          "in_gt": true,
+          "gt_dir": "north",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 14
+        },
+        {
+          "edge": [
+            "sanctuary",
+            "pulpit"
+          ],
+          "llm_dir": "north",
+          "in_gt": true,
+          "gt_dir": "north",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 15
+        },
+        {
+          "edge": [
+            "front of the church",
+            "vestibule"
+          ],
+          "llm_dir": "north",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 13
+        },
+        {
+          "edge": [
+            "vestibule",
+            "steeple chamber"
+          ],
+          "llm_dir": "up",
+          "in_gt": false,
+          "gt_dir": "down",
+          "case": "swapped_src_dst",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 32
+        },
+        {
+          "edge": [
+            "vestibule",
+            "church porch"
+          ],
+          "llm_dir": "south",
+          "in_gt": true,
+          "gt_dir": "south",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 37
+        }
+      ],
+      "case_counts": {
+        "correct": 4,
+        "hallucinated_edge": 2,
+        "swapped_src_dst": 1
+      },
+      "root_cause": "overlap_mixed"
+    },
+    {
+      "type": "topology",
+      "description": "position (0, 1, -2) occupied by multiple rooms ['east side of the church', 'inner chamber', 'sanctuary', 'steeple chamber', 'vestibule']",
+      "involved_edges": [],
+      "involved_nodes": [
+        "east side of the church",
+        "inner chamber",
+        "sanctuary",
+        "steeple chamber",
+        "vestibule"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "north side of the church",
+            "east side of the church"
+          ],
+          "llm_dir": "east",
+          "in_gt": true,
+          "gt_dir": "east",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 9
+        },
+        {
+          "edge": [
+            "east side of the church",
+            "front of the church"
+          ],
+          "llm_dir": "north",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 10
+        },
+        {
+          "edge": [
+            "steeple chamber",
+            "inner chamber"
+          ],
+          "llm_dir": "north",
+          "in_gt": true,
+          "gt_dir": "north",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 49
+        },
+        {
+          "edge": [
+            "inner chamber",
+            "front of the church"
+          ],
+          "llm_dir": "out",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 53
+        },
+        {
+          "edge": [
+            "vestibule",
+            "sanctuary"
+          ],
+          "llm_dir": "north",
+          "in_gt": true,
+          "gt_dir": "north",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 14
+        },
+        {
+          "edge": [
+            "sanctuary",
+            "pulpit"
+          ],
+          "llm_dir": "north",
+          "in_gt": true,
+          "gt_dir": "north",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 15
+        },
+        {
+          "edge": [
+            "vestibule",
+            "steeple chamber"
+          ],
+          "llm_dir": "up",
+          "in_gt": false,
+          "gt_dir": "down",
+          "case": "swapped_src_dst",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 32
+        },
+        {
+          "edge": [
+            "front of the church",
+            "vestibule"
+          ],
+          "llm_dir": "north",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 13
+        },
+        {
+          "edge": [
+            "vestibule",
+            "church porch"
+          ],
+          "llm_dir": "south",
+          "in_gt": true,
+          "gt_dir": "south",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 37
+        }
+      ],
+      "case_counts": {
+        "correct": 5,
+        "hallucinated_edge": 3,
+        "swapped_src_dst": 1
+      },
+      "root_cause": "overlap_mixed"
+    },
+    {
+      "type": "topology",
+      "description": "position (0, 1, -1) occupied by multiple rooms ['inner chamber', 'sanctuary', 'vestibule']",
+      "involved_edges": [],
+      "involved_nodes": [
+        "inner chamber",
+        "sanctuary",
+        "vestibule"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "steeple chamber",
+            "inner chamber"
+          ],
+          "llm_dir": "north",
+          "in_gt": true,
+          "gt_dir": "north",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 49
+        },
+        {
+          "edge": [
+            "inner chamber",
+            "front of the church"
+          ],
+          "llm_dir": "out",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 53
+        },
+        {
+          "edge": [
+            "vestibule",
+            "sanctuary"
+          ],
+          "llm_dir": "north",
+          "in_gt": true,
+          "gt_dir": "north",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 14
+        },
+        {
+          "edge": [
+            "sanctuary",
+            "pulpit"
+          ],
+          "llm_dir": "north",
+          "in_gt": true,
+          "gt_dir": "north",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 15
+        },
+        {
+          "edge": [
+            "front of the church",
+            "vestibule"
+          ],
+          "llm_dir": "north",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 13
+        },
+        {
+          "edge": [
+            "vestibule",
+            "steeple chamber"
+          ],
+          "llm_dir": "up",
+          "in_gt": false,
+          "gt_dir": "down",
+          "case": "swapped_src_dst",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 32
+        },
+        {
+          "edge": [
+            "vestibule",
+            "church porch"
+          ],
+          "llm_dir": "south",
+          "in_gt": true,
+          "gt_dir": "south",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 37
+        }
+      ],
+      "case_counts": {
+        "correct": 4,
+        "hallucinated_edge": 2,
+        "swapped_src_dst": 1
+      },
+      "root_cause": "overlap_mixed"
+    },
+    {
+      "type": "topology",
+      "description": "position (0, 2, -2) occupied by multiple rooms ['inner chamber', 'pulpit']",
+      "involved_edges": [],
+      "involved_nodes": [
+        "inner chamber",
+        "pulpit"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "steeple chamber",
+            "inner chamber"
+          ],
+          "llm_dir": "north",
+          "in_gt": true,
+          "gt_dir": "north",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 49
+        },
+        {
+          "edge": [
+            "inner chamber",
+            "front of the church"
+          ],
+          "llm_dir": "out",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 53
+        },
+        {
+          "edge": [
+            "sanctuary",
+            "pulpit"
+          ],
+          "llm_dir": "north",
+          "in_gt": true,
+          "gt_dir": "north",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 15
+        },
+        {
+          "edge": [
+            "pulpit",
+            "small office"
+          ],
+          "llm_dir": "north",
+          "in_gt": true,
+          "gt_dir": "north",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 18
+        }
+      ],
+      "case_counts": {
+        "correct": 3,
+        "hallucinated_edge": 1
+      },
+      "root_cause": "overlap_mixed"
+    },
+    {
+      "type": "topology",
+      "description": "position (0, 3, -3) occupied by multiple rooms ['pulpit', 'small office']",
+      "involved_edges": [],
+      "involved_nodes": [
+        "pulpit",
+        "small office"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "sanctuary",
+            "pulpit"
+          ],
+          "llm_dir": "north",
+          "in_gt": true,
+          "gt_dir": "north",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 15
+        },
+        {
+          "edge": [
+            "pulpit",
+            "small office"
+          ],
+          "llm_dir": "north",
+          "in_gt": true,
+          "gt_dir": "north",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 18
+        }
+      ],
+      "case_counts": {
+        "correct": 2
+      },
+      "root_cause": "false_positive_overlap"
+    },
+    {
+      "type": "topology",
+      "description": "position (-2, 0, -3) occupied by multiple rooms ['graveyard', 'in the mud']",
+      "involved_edges": [],
+      "involved_nodes": [
+        "graveyard",
+        "in the mud"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "in the mud",
+            "graveyard"
+          ],
+          "llm_dir": "up",
+          "in_gt": true,
+          "gt_dir": "up",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 1
+        },
+        {
+          "edge": [
+            "graveyard",
+            "west side of the church"
+          ],
+          "llm_dir": "east",
+          "in_gt": true,
+          "gt_dir": "east",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 3
+        }
+      ],
+      "case_counts": {
+        "correct": 2
+      },
+      "root_cause": "false_positive_overlap"
+    },
+    {
+      "type": "topology",
+      "description": "position (-2, 0, -2) occupied by multiple rooms ['graveyard', 'in the mud']",
+      "involved_edges": [],
+      "involved_nodes": [
+        "graveyard",
+        "in the mud"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "in the mud",
+            "graveyard"
+          ],
+          "llm_dir": "up",
+          "in_gt": true,
+          "gt_dir": "up",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 1
+        },
+        {
+          "edge": [
+            "graveyard",
+            "west side of the church"
+          ],
+          "llm_dir": "east",
+          "in_gt": true,
+          "gt_dir": "east",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 3
+        }
+      ],
+      "case_counts": {
+        "correct": 2
+      },
+      "root_cause": "false_positive_overlap"
+    },
+    {
+      "type": "naming",
+      "description": "node 'belfry' reachable at conflicting positions [(0, 0, -3), (0, 0, -2), (0, 0, -1), (0, 0, 0)]",
+      "involved_edges": [],
+      "involved_nodes": [
+        "belfry"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "front of the church",
+            "belfry"
+          ],
+          "llm_dir": "north",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 40
+        },
+        {
+          "edge": [
+            "belfry",
+            "top of oak tree"
+          ],
+          "llm_dir": "south",
+          "in_gt": true,
+          "gt_dir": "south",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 42
+        }
+      ],
+      "case_counts": {
+        "hallucinated_edge": 1,
+        "correct": 1
+      },
+      "root_cause": "real_name_corrupted_by_neighbour_error"
+    },
+    {
+      "type": "naming",
+      "description": "node 'front of the church' reachable at conflicting positions [(0, -4, -3), (0, -2, -3), (0, -1, -4), (0, -1, -3), (0, -1, -2), (0, -1, -1), (0, -1, 0), (0, 0, -3), (0, 2, -3)]",
+      "involved_edges": [],
+      "involved_nodes": [
+        "front of the church"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "west side of the church",
+            "front of the church"
+          ],
+          "llm_dir": "southeast",
+          "in_gt": true,
+          "gt_dir": "southeast",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 4
+        },
+        {
+          "edge": [
+            "east side of the church",
+            "front of the church"
+          ],
+          "llm_dir": "north",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 10
+        },
+        {
+          "edge": [
+            "church porch",
+            "front of the church"
+          ],
+          "llm_dir": "south",
+          "in_gt": true,
+          "gt_dir": "south",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 38
+        },
+        {
+          "edge": [
+            "top of oak tree",
+            "front of the church"
+          ],
+          "llm_dir": "down",
+          "in_gt": true,
+          "gt_dir": "down",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 43
+        },
+        {
+          "edge": [
+            "inner chamber",
+            "front of the church"
+          ],
+          "llm_dir": "out",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 53
+        },
+        {
+          "edge": [
+            "front of the church",
+            "vestibule"
+          ],
+          "llm_dir": "north",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 13
+        },
+        {
+          "edge": [
+            "front of the church",
+            "belfry"
+          ],
+          "llm_dir": "north",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 40
+        }
+      ],
+      "case_counts": {
+        "correct": 3,
+        "hallucinated_edge": 4
+      },
+      "root_cause": "real_name_corrupted_by_neighbour_error"
+    },
+    {
+      "type": "naming",
+      "description": "node 'top of oak tree' reachable at conflicting positions [(0, -1, -3), (0, -1, -2), (0, -1, -1), (0, -1, 0), (0, -1, 1)]",
+      "involved_edges": [],
+      "involved_nodes": [
+        "top of oak tree"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "belfry",
+            "top of oak tree"
+          ],
+          "llm_dir": "south",
+          "in_gt": true,
+          "gt_dir": "south",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 42
+        },
+        {
+          "edge": [
+            "top of oak tree",
+            "front of the church"
+          ],
+          "llm_dir": "down",
+          "in_gt": true,
+          "gt_dir": "down",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 43
+        }
+      ],
+      "case_counts": {
+        "correct": 2
+      },
+      "root_cause": "naming_collision_on_correct_subgraph"
+    },
+    {
+      "type": "naming",
+      "description": "node 'west side of the church' reachable at conflicting positions [(-1, -3, -3), (-1, -3, -2), (-1, 0, -3), (-1, 0, -2), (-1, 0, -1), (-1, 0, 0)]",
+      "involved_edges": [],
+      "involved_nodes": [
+        "west side of the church"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "graveyard",
+            "west side of the church"
+          ],
+          "llm_dir": "east",
+          "in_gt": true,
+          "gt_dir": "east",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 3
+        },
+        {
+          "edge": [
+            "west side of the church",
+            "front of the church"
+          ],
+          "llm_dir": "southeast",
+          "in_gt": true,
+          "gt_dir": "southeast",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 4
+        },
+        {
+          "edge": [
+            "west side of the church",
+            "north side of the church"
+          ],
+          "llm_dir": "north",
+          "in_gt": true,
+          "gt_dir": "north",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 8
+        }
+      ],
+      "case_counts": {
+        "correct": 3
+      },
+      "root_cause": "naming_collision_on_correct_subgraph"
+    },
+    {
+      "type": "naming",
+      "description": "node 'east side of the church' reachable at conflicting positions [(0, -2, -3), (0, -2, -2), (0, -2, -1), (0, -2, 0), (0, 1, -3), (0, 1, -2)]",
+      "involved_edges": [],
+      "involved_nodes": [
+        "east side of the church"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "north side of the church",
+            "east side of the church"
+          ],
+          "llm_dir": "east",
+          "in_gt": true,
+          "gt_dir": "east",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 9
+        },
+        {
+          "edge": [
+            "east side of the church",
+            "front of the church"
+          ],
+          "llm_dir": "north",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 10
+        }
+      ],
+      "case_counts": {
+        "correct": 1,
+        "hallucinated_edge": 1
+      },
+      "root_cause": "real_name_corrupted_by_neighbour_error"
+    },
+    {
+      "type": "naming",
+      "description": "node 'vestibule' reachable at conflicting positions [(0, 0, -3), (0, 0, -2), (0, 0, -1), (0, 0, 0), (0, 1, -3), (0, 1, -2), (0, 1, -1)]",
+      "involved_edges": [],
+      "involved_nodes": [
+        "vestibule"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "front of the church",
+            "vestibule"
+          ],
+          "llm_dir": "north",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 13
+        },
+        {
+          "edge": [
+            "vestibule",
+            "sanctuary"
+          ],
+          "llm_dir": "north",
+          "in_gt": true,
+          "gt_dir": "north",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 14
+        },
+        {
+          "edge": [
+            "vestibule",
+            "steeple chamber"
+          ],
+          "llm_dir": "up",
+          "in_gt": false,
+          "gt_dir": "down",
+          "case": "swapped_src_dst",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 32
+        },
+        {
+          "edge": [
+            "vestibule",
+            "church porch"
+          ],
+          "llm_dir": "south",
+          "in_gt": true,
+          "gt_dir": "south",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 37
+        }
+      ],
+      "case_counts": {
+        "hallucinated_edge": 1,
+        "correct": 2,
+        "swapped_src_dst": 1
+      },
+      "root_cause": "real_name_corrupted_by_neighbour_error"
+    },
+    {
+      "type": "naming",
+      "description": "node 'church porch' reachable at conflicting positions [(0, -1, -3), (0, -1, -2), (0, -1, -1), (0, 0, -3), (0, 0, -2), (0, 0, -1), (0, 0, 0)]",
+      "involved_edges": [],
+      "involved_nodes": [
+        "church porch"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "vestibule",
+            "church porch"
+          ],
+          "llm_dir": "south",
+          "in_gt": true,
+          "gt_dir": "south",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 37
+        },
+        {
+          "edge": [
+            "church porch",
+            "front of the church"
+          ],
+          "llm_dir": "south",
+          "in_gt": true,
+          "gt_dir": "south",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 38
+        }
+      ],
+      "case_counts": {
+        "correct": 2
+      },
+      "root_cause": "naming_collision_on_correct_subgraph"
+    },
+    {
+      "type": "naming",
+      "description": "node 'sanctuary' reachable at conflicting positions [(0, 1, -3), (0, 1, -2), (0, 1, -1), (0, 2, -3)]",
+      "involved_edges": [],
+      "involved_nodes": [
+        "sanctuary"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "vestibule",
+            "sanctuary"
+          ],
+          "llm_dir": "north",
+          "in_gt": true,
+          "gt_dir": "north",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 14
+        },
+        {
+          "edge": [
+            "sanctuary",
+            "pulpit"
+          ],
+          "llm_dir": "north",
+          "in_gt": true,
+          "gt_dir": "north",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 15
+        }
+      ],
+      "case_counts": {
+        "correct": 2
+      },
+      "root_cause": "naming_collision_on_correct_subgraph"
+    },
+    {
+      "type": "naming",
+      "description": "node 'steeple chamber' reachable at conflicting positions [(0, 0, -2), (0, 0, -1), (0, 0, 0), (0, 1, -2)]",
+      "involved_edges": [],
+      "involved_nodes": [
+        "steeple chamber"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "vestibule",
+            "steeple chamber"
+          ],
+          "llm_dir": "up",
+          "in_gt": false,
+          "gt_dir": "down",
+          "case": "swapped_src_dst",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 32
+        },
+        {
+          "edge": [
+            "steeple chamber",
+            "inner chamber"
+          ],
+          "llm_dir": "north",
+          "in_gt": true,
+          "gt_dir": "north",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 49
+        }
+      ],
+      "case_counts": {
+        "swapped_src_dst": 1,
+        "correct": 1
+      },
+      "root_cause": "naming_mixed"
+    },
+    {
+      "type": "naming",
+      "description": "node 'inner chamber' reachable at conflicting positions [(0, 1, -2), (0, 1, -1), (0, 1, 0), (0, 2, -2)]",
+      "involved_edges": [],
+      "involved_nodes": [
+        "inner chamber"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "steeple chamber",
+            "inner chamber"
+          ],
+          "llm_dir": "north",
+          "in_gt": true,
+          "gt_dir": "north",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 49
+        },
+        {
+          "edge": [
+            "inner chamber",
+            "front of the church"
+          ],
+          "llm_dir": "out",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 53
+        }
+      ],
+      "case_counts": {
+        "correct": 1,
+        "hallucinated_edge": 1
+      },
+      "root_cause": "real_name_corrupted_by_neighbour_error"
+    },
+    {
+      "type": "naming",
+      "description": "node 'pulpit' reachable at conflicting positions [(0, 2, -3), (0, 2, -2), (0, 2, -1), (0, 3, -3)]",
+      "involved_edges": [],
+      "involved_nodes": [
+        "pulpit"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "sanctuary",
+            "pulpit"
+          ],
+          "llm_dir": "north",
+          "in_gt": true,
+          "gt_dir": "north",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 15
+        },
+        {
+          "edge": [
+            "pulpit",
+            "small office"
+          ],
+          "llm_dir": "north",
+          "in_gt": true,
+          "gt_dir": "north",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 18
+        }
+      ],
+      "case_counts": {
+        "correct": 2
+      },
+      "root_cause": "naming_collision_on_correct_subgraph"
+    },
+    {
+      "type": "naming",
+      "description": "node 'small office' reachable at conflicting positions [(0, 3, -3), (0, 3, -2), (0, 3, -1), (0, 4, -3)]",
+      "involved_edges": [],
+      "involved_nodes": [
+        "small office"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "pulpit",
+            "small office"
+          ],
+          "llm_dir": "north",
+          "in_gt": true,
+          "gt_dir": "north",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 18
+        }
+      ],
+      "case_counts": {
+        "correct": 1
+      },
+      "root_cause": "naming_collision_on_correct_subgraph"
+    },
+    {
+      "type": "naming",
+      "description": "node 'north side of the church' reachable at conflicting positions [(-1, -2, -3), (-1, -2, -2), (-1, -2, -1), (-1, 1, -3), (-1, 1, -2), (-1, 1, -1)]",
+      "involved_edges": [],
+      "involved_nodes": [
+        "north side of the church"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "west side of the church",
+            "north side of the church"
+          ],
+          "llm_dir": "north",
+          "in_gt": true,
+          "gt_dir": "north",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 8
+        },
+        {
+          "edge": [
+            "north side of the church",
+            "east side of the church"
+          ],
+          "llm_dir": "east",
+          "in_gt": true,
+          "gt_dir": "east",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 9
+        }
+      ],
+      "case_counts": {
+        "correct": 2
+      },
+      "root_cause": "naming_collision_on_correct_subgraph"
+    },
+    {
+      "type": "naming",
+      "description": "node 'graveyard' reachable at conflicting positions [(-2, -3, -3), (-2, 0, -3), (-2, 0, -2), (-2, 0, -1)]",
+      "involved_edges": [],
+      "involved_nodes": [
+        "graveyard"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "in the mud",
+            "graveyard"
+          ],
+          "llm_dir": "up",
+          "in_gt": true,
+          "gt_dir": "up",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 1
+        },
+        {
+          "edge": [
+            "graveyard",
+            "west side of the church"
+          ],
+          "llm_dir": "east",
+          "in_gt": true,
+          "gt_dir": "east",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 3
+        }
+      ],
+      "case_counts": {
+        "correct": 2
+      },
+      "root_cause": "naming_collision_on_correct_subgraph"
+    },
+    {
+      "type": "naming",
+      "description": "node 'in the mud' reachable at conflicting positions [(-2, -3, -4), (-2, 0, -4), (-2, 0, -3), (-2, 0, -2)]",
+      "involved_edges": [],
+      "involved_nodes": [
+        "in the mud"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "in the mud",
+            "graveyard"
+          ],
+          "llm_dir": "up",
+          "in_gt": true,
+          "gt_dir": "up",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 1
+        }
+      ],
+      "case_counts": {
+        "correct": 1
+      },
+      "root_cause": "naming_collision_on_correct_subgraph"
+    }
+  ],
+  "walkthrough_steps_available": 54
+}

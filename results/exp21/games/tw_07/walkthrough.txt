@@ -1,0 +1,225 @@
+==>STEP NUM: 0
+==>ACT: west
+==>OBSERVATION: -= Recreation Zone =-
+You are in a recreation zone. A standard one. The room is well lit.
+
+
+
+You don't like doors? Why not try going east, that entranceway is unblocked. There is an exit to the south. Don't worry, it is unblocked. You don't like doors? Why not try going west, that entranceway is unguarded.
+
+
+-= Recreation Zone =-0/3
+===========
+==>STEP NUM: 1
+==>ACT: west
+==>OBSERVATION: -= Playroom =-
+You find yourself in a playroom. An usual one. I guess you better just go and list everything you see here.
+
+
+
+There is an open passageway leading south. There is an unguarded exit to the east. There is an exit to the west. Don't worry, it is unguarded.
+
+
+-= Playroom =-0/4
+===========
+==>STEP NUM: 2
+==>ACT: east
+==>OBSERVATION: -= Recreation Zone =-
+You are in a recreation zone. A standard one. The room is well lit.
+
+
+
+You don't like doors? Why not try going east, that entranceway is unblocked. There is an exit to the south. Don't worry, it is unblocked. You don't like doors? Why not try going west, that entranceway is unguarded.
+
+
+-= Recreation Zone =-0/5
+===========
+==>STEP NUM: 3
+==>ACT: south
+==>OBSERVATION: -= Cubicle =-
+Well, here we are in the cubicle. I guess you better just go and list everything you see here.
+
+You make out an opened bureau. The bureau contains a desktop computer.
+
+There is a closed hatch leading east. There is a closed gate leading west. You don't like doors? Why not try going north, that entranceway is unguarded. You need an unguarded exit? You should try going south.
+
+
+-= Cubicle =-0/6
+===========
+==>STEP NUM: 4
+==>ACT: north
+==>OBSERVATION: -= Recreation Zone =-
+You are in a recreation zone. A standard one. The room is well lit.
+
+
+
+You don't like doors? Why not try going east, that entranceway is unblocked. There is an exit to the south. Don't worry, it is unblocked. You don't like doors? Why not try going west, that entranceway is unguarded.
+
+
+-= Recreation Zone =-0/7
+===========
+==>STEP NUM: 5
+==>ACT: north
+==>OBSERVATION: You can't go that way.
+
+
+-= Recreation Zone =-0/8
+===========
+==>STEP NUM: 6
+==>ACT: west
+==>OBSERVATION: -= Playroom =-
+You find yourself in a playroom. An usual one. I guess you better just go and list everything you see here.
+
+
+
+There is an open passageway leading south. There is an unguarded exit to the east. There is an exit to the west. Don't worry, it is unguarded.
+
+
+-= Playroom =-0/9
+===========
+==>STEP NUM: 7
+==>ACT: east
+==>OBSERVATION: -= Recreation Zone =-
+You are in a recreation zone. A standard one. The room is well lit.
+
+
+
+You don't like doors? Why not try going east, that entranceway is unblocked. There is an exit to the south. Don't worry, it is unblocked. You don't like doors? Why not try going west, that entranceway is unguarded.
+
+
+-= Recreation Zone =-0/10
+===========
+==>STEP NUM: 8
+==>ACT: east
+==>OBSERVATION: -= Office =-
+You've just walked into an office. You try to gain information on your surroundings by using a technique you call "looking."
+
+
+
+There is an unguarded exit to the south. There is an unguarded exit to the west.
+
+
+-= Office =-0/11
+===========
+==>STEP NUM: 9
+==>ACT: east
+==>OBSERVATION: You can't go that way.
+
+
+-= Office =-0/12
+===========
+==>STEP NUM: 10
+==>ACT: south
+==>OBSERVATION: -= Attic =-
+You've entered an attic.
+
+
+
+There is a closed hatch leading west. There is an unblocked exit to the north. You don't like doors? Why not try going south, that entranceway is unblocked.
+
+
+-= Attic =-0/13
+===========
+==>STEP NUM: 11
+==>ACT: south
+==>OBSERVATION: -= Basement =-
+You are in a basement. An usual one.
+
+
+
+There is an unguarded exit to the north.
+
+
+-= Basement =-0/14
+===========
+==>STEP NUM: 12
+==>ACT: north
+==>OBSERVATION: -= Attic =-
+You've entered an attic.
+
+
+
+There is a closed hatch leading west. There is an unblocked exit to the north. You don't like doors? Why not try going south, that entranceway is unblocked.
+
+
+-= Attic =-0/15
+===========
+==>STEP NUM: 13
+==>ACT: north
+==>OBSERVATION: -= Office =-
+You've just walked into an office. You try to gain information on your surroundings by using a technique you call "looking."
+
+
+
+There is an unguarded exit to the south. There is an unguarded exit to the west.
+
+
+-= Office =-0/16
+===========
+==>STEP NUM: 14
+==>ACT: west
+==>OBSERVATION: -= Recreation Zone =-
+You are in a recreation zone. A standard one. The room is well lit.
+
+
+
+You don't like doors? Why not try going east, that entranceway is unblocked. There is an exit to the south. Don't worry, it is unblocked. You don't like doors? Why not try going west, that entranceway is unguarded.
+
+
+-= Recreation Zone =-0/17
+===========
+==>STEP NUM: 15
+==>ACT: west
+==>OBSERVATION: -= Playroom =-
+You find yourself in a playroom. An usual one. I guess you better just go and list everything you see here.
+
+
+
+There is an open passageway leading south. There is an unguarded exit to the east. There is an exit to the west. Don't worry, it is unguarded.
+
+
+-= Playroom =-0/18
+===========
+==>STEP NUM: 16
+==>ACT: south
+==>OBSERVATION: -= Study =-
+You find yourself in a study. An usual one.
+
+
+
+There is a closed gate leading east. There is an open passageway leading north. There is an unguarded exit to the south. There is an exit to the west. Don't worry, it is unblocked.
+
+
+-= Study =-0/19
+===========
+==>STEP NUM: 17
+==>ACT: east
+==>OBSERVATION: You have to open the gate first.
+
+
+-= Study =-0/20
+===========
+==>STEP NUM: 18
+==>ACT: south
+==>OBSERVATION: -= Dish-Pit =-
+You've stumbled into an usual room. Your mind races to think of what kind of room would be usual. And then it hits you. Of course. You're in the dish-pit.
+
+
+
+There is an unguarded exit to the north.
+
+
+-= Dish-Pit =-0/21
+===========
+==>STEP NUM: 19
+==>ACT: north
+==>OBSERVATION: -= Study =-
+You find yourself in a study. An usual one.
+
+
+
+There is a closed gate leading east. There is an open passageway leading north. There is an unguarded exit to the south. There is an exit to the west. Don't worry, it is unblocked.
+
+
+-= Study =-0/22
+===========

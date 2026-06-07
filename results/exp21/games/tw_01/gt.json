@@ -1,0 +1,153 @@
+{
+  "rooms": {
+    "r_2": {
+      "id": "r_2",
+      "name": "bedchamber"
+    },
+    "r_1": {
+      "id": "r_1",
+      "name": "kitchen"
+    },
+    "r_3": {
+      "id": "r_3",
+      "name": "spare room"
+    },
+    "r_0": {
+      "id": "r_0",
+      "name": "workshop"
+    },
+    "r_4": {
+      "id": "r_4",
+      "name": "bar"
+    },
+    "r_5": {
+      "id": "r_5",
+      "name": "laundry place"
+    },
+    "r_6": {
+      "id": "r_6",
+      "name": "steam room"
+    }
+  },
+  "edges": [
+    {
+      "src_name": "bedchamber",
+      "dst_name": "kitchen",
+      "src_id": "r_2",
+      "dst_id": "r_1",
+      "direction": "west"
+    },
+    {
+      "src_name": "bedchamber",
+      "dst_name": "spare room",
+      "src_id": "r_2",
+      "dst_id": "r_3",
+      "direction": "south"
+    },
+    {
+      "src_name": "bedchamber",
+      "dst_name": "laundry place",
+      "src_id": "r_2",
+      "dst_id": "r_5",
+      "direction": "east"
+    },
+    {
+      "src_name": "kitchen",
+      "dst_name": "workshop",
+      "src_id": "r_1",
+      "dst_id": "r_0",
+      "direction": "south"
+    },
+    {
+      "src_name": "kitchen",
+      "dst_name": "bedchamber",
+      "src_id": "r_1",
+      "dst_id": "r_2",
+      "direction": "east"
+    },
+    {
+      "src_name": "spare room",
+      "dst_name": "workshop",
+      "src_id": "r_3",
+      "dst_id": "r_0",
+      "direction": "west"
+    },
+    {
+      "src_name": "spare room",
+      "dst_name": "bedchamber",
+      "src_id": "r_3",
+      "dst_id": "r_2",
+      "direction": "north"
+    },
+    {
+      "src_name": "spare room",
+      "dst_name": "bar",
+      "src_id": "r_3",
+      "dst_id": "r_4",
+      "direction": "east"
+    },
+    {
+      "src_name": "workshop",
+      "dst_name": "steam room",
+      "src_id": "r_0",
+      "dst_id": "r_6",
+      "direction": "south"
+    },
+    {
+      "src_name": "workshop",
+      "dst_name": "kitchen",
+      "src_id": "r_0",
+      "dst_id": "r_1",
+      "direction": "north"
+    },
+    {
+      "src_name": "workshop",
+      "dst_name": "spare room",
+      "src_id": "r_0",
+      "dst_id": "r_3",
+      "direction": "east"
+    },
+    {
+      "src_name": "bar",
+      "dst_name": "spare room",
+      "src_id": "r_4",
+      "dst_id": "r_3",
+      "direction": "west"
+    },
+    {
+      "src_name": "bar",
+      "dst_name": "laundry place",
+      "src_id": "r_4",
+      "dst_id": "r_5",
+      "direction": "north"
+    },
+    {
+      "src_name": "laundry place",
+      "dst_name": "bedchamber",
+      "src_id": "r_5",
+      "dst_id": "r_2",
+      "direction": "west"
+    },
+    {
+      "src_name": "laundry place",
+      "dst_name": "bar",
+      "src_id": "r_5",
+      "dst_id": "r_4",
+      "direction": "south"
+    },
+    {
+      "src_name": "steam room",
+      "dst_name": "workshop",
+      "src_id": "r_6",
+      "dst_id": "r_0",
+      "direction": "north"
+    }
+  ],
+  "n_rooms": 7,
+  "n_edges": 16,
+  "walkthrough": [
+    "go north",
+    "go west",
+    "unlock spherical chest with spherical latchkey"
+  ]
+}

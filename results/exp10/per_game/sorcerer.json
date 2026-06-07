@@ -1,0 +1,285 @@
+{
+  "game": "sorcerer",
+  "num_llm_edges": 25,
+  "num_gt_edges": 43,
+  "num_conflicts": 4,
+  "type_distribution": {
+    "direction": 2,
+    "topology": 2
+  },
+  "root_cause_distribution": {
+    "all_hallucinated_edges": 1,
+    "real_vs_hallucinated": 1,
+    "overlap_mixed": 1,
+    "name_hallucination_caused_overlap": 1
+  },
+  "conflicts": [
+    {
+      "type": "direction",
+      "description": "node \"belboz's quarters\" has multiple outgoing edges labelled 'east'",
+      "involved_edges": [
+        [
+          "belboz's quarters",
+          "quarters"
+        ],
+        [
+          "belboz's quarters",
+          "hallway (marble archway leading south)"
+        ]
+      ],
+      "involved_nodes": [
+        "belboz's quarters",
+        "quarters",
+        "hallway (marble archway leading south)"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "belboz's quarters",
+            "quarters"
+          ],
+          "llm_dir": "east",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": null
+        },
+        {
+          "edge": [
+            "belboz's quarters",
+            "hallway (marble archway leading south)"
+          ],
+          "llm_dir": "east",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 14
+        }
+      ],
+      "case_counts": {
+        "hallucinated_edge": 2
+      },
+      "root_cause": "all_hallucinated_edges"
+    },
+    {
+      "type": "direction",
+      "description": "node 'lobby' has multiple outgoing edges labelled 'north'",
+      "involved_edges": [
+        [
+          "lobby",
+          "hallway (marble archway leading south)"
+        ],
+        [
+          "lobby",
+          "hallway (wooden door leading north)"
+        ]
+      ],
+      "involved_nodes": [
+        "lobby",
+        "hallway (marble archway leading south)",
+        "hallway (wooden door leading north)"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "lobby",
+            "hallway (marble archway leading south)"
+          ],
+          "llm_dir": "north",
+          "in_gt": true,
+          "gt_dir": "north",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": null
+        },
+        {
+          "edge": [
+            "lobby",
+            "hallway (wooden door leading north)"
+          ],
+          "llm_dir": "north",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 38
+        }
+      ],
+      "case_counts": {
+        "correct": 1,
+        "hallucinated_edge": 1
+      },
+      "root_cause": "real_vs_hallucinated"
+    },
+    {
+      "type": "topology",
+      "description": "position (2, 0, 3) occupied by multiple rooms [\"belboz's quarters\", \"helistar's quarters\"]",
+      "involved_edges": [],
+      "involved_nodes": [
+        "belboz's quarters",
+        "helistar's quarters"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "quarters",
+            "belboz's quarters"
+          ],
+          "llm_dir": "west",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 6
+        },
+        {
+          "edge": [
+            "belboz's quarters",
+            "hallway (marble archway leading south)"
+          ],
+          "llm_dir": "east",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 14
+        },
+        {
+          "edge": [
+            "hallway (wooden door leading north)",
+            "helistar's quarters"
+          ],
+          "llm_dir": "west",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 39
+        },
+        {
+          "edge": [
+            "helistar's quarters",
+            "twisted forest"
+          ],
+          "llm_dir": "northeast",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 43
+        }
+      ],
+      "case_counts": {
+        "hallucinated_edge": 4
+      },
+      "root_cause": "overlap_mixed"
+    },
+    {
+      "type": "topology",
+      "description": "position (3, 0, 3) occupied by multiple rooms ['hallway (marble archway leading south)', 'hallway (wooden door leading north)', 'quarters']",
+      "involved_edges": [],
+      "involved_nodes": [
+        "hallway (marble archway leading south)",
+        "hallway (wooden door leading north)",
+        "quarters"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "belboz's quarters",
+            "hallway (marble archway leading south)"
+          ],
+          "llm_dir": "east",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 14
+        },
+        {
+          "edge": [
+            "hallway (marble archway leading south)",
+            "lobby"
+          ],
+          "llm_dir": "south",
+          "in_gt": true,
+          "gt_dir": "south",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 16
+        },
+        {
+          "edge": [
+            "lobby",
+            "hallway (wooden door leading north)"
+          ],
+          "llm_dir": "north",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 38
+        },
+        {
+          "edge": [
+            "hallway (wooden door leading north)",
+            "helistar's quarters"
+          ],
+          "llm_dir": "west",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 39
+        },
+        {
+          "edge": [
+            "in the bed",
+            "quarters"
+          ],
+          "llm_dir": "west",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "src_hallucinated",
+          "source_in_gt": false,
+          "target_in_gt": true,
+          "step": 3
+        },
+        {
+          "edge": [
+            "quarters",
+            "belboz's quarters"
+          ],
+          "llm_dir": "west",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 6
+        }
+      ],
+      "case_counts": {
+        "hallucinated_edge": 4,
+        "correct": 1,
+        "src_hallucinated": 1
+      },
+      "root_cause": "name_hallucination_caused_overlap"
+    }
+  ],
+  "walkthrough_steps_available": 71
+}

@@ -1,0 +1,631 @@
+===========
+==>STEP NUM: 0
+==>ACT: north
+==>OBSERVATION: North of House
+You are facing the north side of a white house. There is no door here, and all the windows are boarded up. To the north a narrow path winds through the trees.
+===========
+==>STEP NUM: 1
+==>ACT: north
+==>OBSERVATION: Forest Path
+This is a path winding through a dimly lit forest. The path heads north-south here. One particularly large tree with some low branches stands at the edge of the path.
+===========
+==>STEP NUM: 2
+==>ACT: up
+==>OBSERVATION: Up a Tree
+You are about 10 feet above the ground nestled among some large branches. The nearest branch above you is above your reach.
+Beside you on the branch is a small bird's nest.
+In the bird's nest is a large egg encrusted with precious jewels, apparently scavenged by a childless songbird. The egg is covered with fine gold inlay, and ornamented in lapis lazuli and mother-of-pearl. Unlike most eggs, this one is hinged and closed with a delicate looking clasp. The egg appears extremely fragile.
+===========
+==>STEP NUM: 3
+==>ACT: down
+==>OBSERVATION: Forest Path
+===========
+==>STEP NUM: 4
+==>ACT: south
+==>OBSERVATION: North of House
+===========
+==>STEP NUM: 5
+==>ACT: east
+==>OBSERVATION: Behind House
+You are behind the white house. A path leads into the forest to the east. In one corner of the house there is a small window which is slightly ajar.
+===========
+==>STEP NUM: 6
+==>ACT: west
+==>OBSERVATION: Kitchen
+You are in the kitchen of the white house. A table seems to have been used recently for the preparation of food. A passage leads to the west and a dark staircase can be seen leading upward. A dark chimney leads down and to the east is a small window which is open.
+On the table is an elongated brown sack, smelling of hot peppers.
+A bottle is sitting on the table.
+The glass bottle contains:
+  A quantity of water
+===========
+==>STEP NUM: 7
+==>ACT: west
+==>OBSERVATION: Living Room
+You are in the living room. There is a doorway to the east, a wooden door with strange gothic lettering to the west, which appears to be nailed shut, a trophy case, and a large oriental rug in the center of the room.
+Above the trophy case hangs an elvish sword of great antiquity.
+A battery-powered brass lantern is on the trophy case.
+===========
+==>STEP NUM: 8
+==>ACT: east
+==>OBSERVATION: Kitchen
+A bottle is sitting on the table.
+The glass bottle contains:
+  A quantity of water
+There is a brown sack here.
+The brown sack contains:
+  A lunch
+===========
+==>STEP NUM: 9
+==>ACT: down
+==>OBSERVATION: Kitchen
+A bottle is sitting on the table.
+The glass bottle contains:
+  A quantity of water
+There is a brown sack here.
+The brown sack contains:
+  A lunch
+===========
+==>STEP NUM: 10
+==>ACT: west
+==>OBSERVATION: Living Room
+Above the trophy case hangs an elvish sword of great antiquity.
+===========
+==>STEP NUM: 11
+==>ACT: north
+==>OBSERVATION: The Troll Room
+This is a small room with passages to the east and south and a forbidding hole leading west. Bloodstains and deep scratches (perhaps made by an axe) mar the walls.
+A nasty-looking troll, brandishing a bloody axe, blocks all passages out of the room.
+Your sword has begun to glow very brightly.
+===========
+==>STEP NUM: 12
+==>ACT: east
+==>OBSERVATION: East-West Passage
+This is a narrow east-west passageway. There is a narrow stairway leading down at the north end of the room.
+===========
+==>STEP NUM: 13
+==>ACT: east
+==>OBSERVATION: Round Room
+This is a circular stone room with passages in all directions. Several of them have unfortunately been blocked by cave-ins.
+===========
+==>STEP NUM: 14
+==>ACT: southeast
+==>OBSERVATION: Engravings Cave
+You have entered a low cave with passages leading northwest and east.
+There are old engravings on the walls here.
+===========
+==>STEP NUM: 15
+==>ACT: east
+==>OBSERVATION: Dome Room
+You are at the periphery of a large dome, which forms the ceiling of another room below. Protecting you from a precipitous drop is a wooden railing which circles the dome.
+===========
+==>STEP NUM: 16
+==>ACT: down
+==>OBSERVATION: Torch Room
+This is a large room with a prominent doorway leading to a down staircase. Above you is a large dome. Up around the edge of the dome (20 feet up) is a wooden railing. In the center of the room sits a white marble pedestal.
+A piece of rope descends from the railing above, ending some five feet above your head.
+Sitting on the pedestal is a flaming torch, made of ivory.
+===========
+==>STEP NUM: 17
+==>ACT: down
+==>OBSERVATION: Temple
+This is the north end of a large temple. On the east wall is an ancient inscription, probably a prayer in a long-forgotten language. Below the prayer is a staircase leading down. The west wall is solid granite. The exit to the north end of the room is through huge marble pillars.
+There is a brass bell here.
+===========
+==>STEP NUM: 18
+==>ACT: south
+==>OBSERVATION: Altar
+This is the south end of a large temple. In front of you is what appears to be an altar. In one corner is a small hole in the floor which leads into darkness. You probably could not get back up it.
+On the two ends of the altar are burning candles.
+On the altar is a large black book, open to page 569.
+===========
+==>STEP NUM: 19
+==>ACT: north
+==>OBSERVATION: Temple
+There is a brass bell here.
+===========
+==>STEP NUM: 20
+==>ACT: east
+==>OBSERVATION: Egyptian Room
+This is a room which looks like an Egyptian tomb. There is an ascending staircase to the west.
+The solid-gold coffin used for the burial of Ramses II is here.
+===========
+==>STEP NUM: 21
+==>ACT: west
+==>OBSERVATION: Temple
+===========
+==>STEP NUM: 22
+==>ACT: south
+==>OBSERVATION: Altar
+There is a sword here.
+===========
+==>STEP NUM: 23
+==>ACT: east
+==>OBSERVATION: Forest Path
+===========
+==>STEP NUM: 24
+==>ACT: south
+==>OBSERVATION: North of House
+===========
+==>STEP NUM: 25
+==>ACT: east
+==>OBSERVATION: Behind House
+===========
+==>STEP NUM: 26
+==>ACT: west
+==>OBSERVATION: Kitchen
+A bottle is sitting on the table.
+The glass bottle contains:
+  A quantity of water
+There is a brown sack here.
+The brown sack contains:
+  A lunch
+===========
+==>STEP NUM: 27
+==>ACT: west
+==>OBSERVATION: Living Room
+===========
+==>STEP NUM: 28
+==>ACT: down
+==>OBSERVATION: Cellar
+There is a bloody axe here.
+===========
+==>STEP NUM: 29
+==>ACT: north
+==>OBSERVATION: The Troll Room
+===========
+==>STEP NUM: 30
+==>ACT: east
+==>OBSERVATION: East-West Passage
+===========
+==>STEP NUM: 31
+==>ACT: east
+==>OBSERVATION: Round Room
+===========
+==>STEP NUM: 32
+==>ACT: southeast
+==>OBSERVATION: Engravings Cave
+There are old engravings on the walls here.
+===========
+==>STEP NUM: 33
+==>ACT: east
+==>OBSERVATION: Dome Room
+===========
+==>STEP NUM: 34
+==>ACT: down
+==>OBSERVATION: Torch Room
+===========
+==>STEP NUM: 35
+==>ACT: down
+==>OBSERVATION: Temple
+===========
+==>STEP NUM: 36
+==>ACT: down
+==>OBSERVATION: Egyptian Room
+The solid-gold coffin used for the burial of Ramses II is here.
+===========
+==>STEP NUM: 37
+==>ACT: up
+==>OBSERVATION: Temple
+===========
+==>STEP NUM: 38
+==>ACT: south
+==>OBSERVATION: Altar
+There is a sword here.
+===========
+==>STEP NUM: 39
+==>ACT: east
+==>OBSERVATION: Forest Path
+===========
+==>STEP NUM: 40
+==>ACT: south
+==>OBSERVATION: North of House
+===========
+==>STEP NUM: 41
+==>ACT: east
+==>OBSERVATION: Behind House
+===========
+==>STEP NUM: 42
+==>ACT: west
+==>OBSERVATION: Kitchen
+A bottle is sitting on the table.
+The glass bottle contains:
+  A quantity of water
+There is a brown sack here.
+The brown sack contains:
+  A lunch
+===========
+==>STEP NUM: 43
+==>ACT: west
+==>OBSERVATION: Living Room
+There is a clove of garlic here.
+There is a nasty knife here.
+There is a pair of candles here.
+There is a black book here.
+There is a brass bell here.
+An ornamented sceptre, tapering to a sharp point, is here.
+===========
+==>STEP NUM: 44
+==>ACT: down
+==>OBSERVATION: Cellar
+There is a bloody axe here.
+===========
+==>STEP NUM: 45
+==>ACT: north
+==>OBSERVATION: Cellar
+There is a bloody axe here.
+===========
+==>STEP NUM: 46
+==>ACT: north
+==>OBSERVATION: The Troll Room
+===========
+==>STEP NUM: 47
+==>ACT: east
+==>OBSERVATION: East-West Passage
+===========
+==>STEP NUM: 48
+==>ACT: east
+==>OBSERVATION: Round Room
+===========
+==>STEP NUM: 49
+==>ACT: west
+==>OBSERVATION: Round Room
+===========
+==>STEP NUM: 50
+==>ACT: north
+==>OBSERVATION: Round Room
+===========
+==>STEP NUM: 51
+==>ACT: west
+==>OBSERVATION: East-West Passage
+===========
+==>STEP NUM: 52
+==>ACT: west
+==>OBSERVATION: The Troll Room
+===========
+==>STEP NUM: 53
+==>ACT: south
+==>OBSERVATION: Cellar
+There is a bloody axe here.
+===========
+==>STEP NUM: 54
+==>ACT: up
+==>OBSERVATION: Living Room
+There is a clove of garlic here.
+There is a nasty knife here.
+An ornamented sceptre, tapering to a sharp point, is here.
+Your collection of treasures consists of:
+    A gold coffin
+===========
+==>STEP NUM: 55
+==>ACT: down
+==>OBSERVATION: Cellar
+There is a bloody axe here.
+===========
+==>STEP NUM: 56
+==>ACT: north
+==>OBSERVATION: The Troll Room
+===========
+==>STEP NUM: 57
+==>ACT: east
+==>OBSERVATION: Living Room
+There is a clove of garlic here.
+There is a nasty knife here.
+An ornamented sceptre, tapering to a sharp point, is here.
+Your collection of treasures consists of:
+    A platinum bar
+    A crystal skull
+    A gold coffin
+===========
+==>STEP NUM: 58
+==>ACT: down
+==>OBSERVATION: Cellar
+There is a bloody axe here.
+===========
+==>STEP NUM: 59
+==>ACT: north
+==>OBSERVATION: The Troll Room
+===========
+==>STEP NUM: 60
+==>ACT: east
+==>OBSERVATION: East-West Passage
+===========
+==>STEP NUM: 61
+==>ACT: east
+==>OBSERVATION: Round Room
+===========
+==>STEP NUM: 62
+==>ACT: south
+==>OBSERVATION: Round Room
+===========
+==>STEP NUM: 63
+==>ACT: west
+==>OBSERVATION: East-West Passage
+===========
+==>STEP NUM: 64
+==>ACT: west
+==>OBSERVATION: The Troll Room
+===========
+==>STEP NUM: 65
+==>ACT: south
+==>OBSERVATION: Cellar
+There is a bloody axe here.
+===========
+==>STEP NUM: 66
+==>ACT: up
+==>OBSERVATION: Living Room
+There is a rusty knife here.
+There is a clove of garlic here.
+There is a nasty knife here.
+An ornamented sceptre, tapering to a sharp point, is here.
+Your collection of treasures consists of:
+    A leather bag of coins
+    A platinum bar
+    A crystal skull
+    A gold coffin
+===========
+==>STEP NUM: 67
+==>ACT: down
+==>OBSERVATION: Cellar
+There is a bloody axe here.
+===========
+==>STEP NUM: 68
+==>ACT: north
+==>OBSERVATION: The Troll Room
+===========
+==>STEP NUM: 69
+==>ACT: east
+==>OBSERVATION: East-West Passage
+===========
+==>STEP NUM: 70
+==>ACT: east
+==>OBSERVATION: Round Room
+===========
+==>STEP NUM: 71
+==>ACT: south
+==>OBSERVATION: Round Room
+===========
+==>STEP NUM: 72
+==>ACT: west
+==>OBSERVATION: East-West Passage
+===========
+==>STEP NUM: 73
+==>ACT: west
+==>OBSERVATION: The Troll Room
+===========
+==>STEP NUM: 74
+==>ACT: south
+==>OBSERVATION: Cellar
+There is a bloody axe here.
+===========
+==>STEP NUM: 75
+==>ACT: up
+==>OBSERVATION: Living Room
+There is a screwdriver here.
+There is a folded pile of plastic here which has a small valve attached.
+There is a rusty knife here.
+There is a clove of garlic here.
+There is a nasty knife here.
+An ornamented sceptre, tapering to a sharp point, is here.
+Your collection of treasures consists of:
+    A leather bag of coins
+    A platinum bar
+    A crystal skull
+    A gold coffin
+===========
+==>STEP NUM: 76
+==>ACT: down
+==>OBSERVATION: Cellar
+There is a bloody axe here.
+===========
+==>STEP NUM: 77
+==>ACT: north
+==>OBSERVATION: The Troll Room
+===========
+==>STEP NUM: 78
+==>ACT: east
+==>OBSERVATION: East-West Passage
+===========
+==>STEP NUM: 79
+==>ACT: east
+==>OBSERVATION: Round Room
+===========
+==>STEP NUM: 80
+==>ACT: west
+==>OBSERVATION: Behind House
+===========
+==>STEP NUM: 81
+==>ACT: west
+==>OBSERVATION: Kitchen
+A bottle is sitting on the table.
+The glass bottle contains:
+  A quantity of water
+There is a brown sack here.
+The brown sack contains:
+  A lunch
+===========
+==>STEP NUM: 82
+==>ACT: west
+==>OBSERVATION: Living Room
+There is a screwdriver here.
+There is a rusty knife here.
+There is a clove of garlic here.
+There is a nasty knife here.
+Your collection of treasures consists of:
+    A crystal trident
+    A leather bag of coins
+    A platinum bar
+    A crystal skull
+    A gold coffin
+===========
+==>STEP NUM: 83
+==>ACT: east
+==>OBSERVATION: Living Room
+There is a screwdriver here.
+There is a clove of garlic here.
+Your collection of treasures consists of:
+    A beautiful jeweled scarab
+    A large emerald
+    A pot of gold
+    A sceptre
+    A crystal trident
+    A leather bag of coins
+    A platinum bar
+    A crystal skull
+    A gold coffin
+===========
+==>STEP NUM: 84
+==>ACT: east
+==>OBSERVATION: Kitchen
+A bottle is sitting on the table.
+The glass bottle contains:
+  A quantity of water
+There is a brown sack here.
+The brown sack contains:
+  A lunch
+===========
+==>STEP NUM: 85
+==>ACT: east
+==>OBSERVATION: Behind House
+===========
+==>STEP NUM: 86
+==>ACT: north
+==>OBSERVATION: North of House
+===========
+==>STEP NUM: 87
+==>ACT: north
+==>OBSERVATION: Forest Path
+===========
+==>STEP NUM: 88
+==>ACT: east
+==>OBSERVATION: Forest
+This is a dimly lit forest, with large trees all around.
+===========
+==>STEP NUM: 89
+==>ACT: west
+==>OBSERVATION: Forest Path
+===========
+==>STEP NUM: 90
+==>ACT: south
+==>OBSERVATION: North of House
+===========
+==>STEP NUM: 91
+==>ACT: east
+==>OBSERVATION: Behind House
+===========
+==>STEP NUM: 92
+==>ACT: west
+==>OBSERVATION: Kitchen
+A bottle is sitting on the table.
+The glass bottle contains:
+  A quantity of water
+There is a brown sack here.
+The brown sack contains:
+  A lunch
+===========
+==>STEP NUM: 93
+==>ACT: west
+==>OBSERVATION: Living Room
+There is a screwdriver here.
+There is a clove of garlic here.
+Your collection of treasures consists of:
+    A jewel-encrusted egg
+    A chalice
+    A painting
+    A beautiful jeweled scarab
+    A large emerald
+    A pot of gold
+    A sceptre
+    A crystal trident
+    A leather bag of coins
+    A platinum bar
+    A crystal skull
+    A gold coffin
+===========
+==>STEP NUM: 94
+==>ACT: down
+==>OBSERVATION: Cellar
+There is a bloody axe here.
+===========
+==>STEP NUM: 95
+==>ACT: north
+==>OBSERVATION: The Troll Room
+===========
+==>STEP NUM: 96
+==>ACT: east
+==>OBSERVATION: East-West Passage
+===========
+==>STEP NUM: 97
+==>ACT: east
+==>OBSERVATION: Round Room
+===========
+==>STEP NUM: 98
+==>ACT: down
+==>OBSERVATION: Cellar
+There is a bloody axe here.
+===========
+==>STEP NUM: 99
+==>ACT: up
+==>OBSERVATION: Living Room
+Your collection of treasures consists of:
+  A beautiful brass bauble
+  A golden clockwork canary
+  A jewel-encrusted egg
+  A chalice
+  A painting
+  A beautiful jeweled scarab
+  A large emerald
+  A pot of gold
+  A sceptre
+  A crystal trident
+  A leather bag of coins
+  A platinum bar
+  A crystal skull
+  A gold coffin
+===========
+==>STEP NUM: 100
+==>ACT: east
+==>OBSERVATION: Living Room
+Your collection of treasures consists of:
+  A jade figurine
+  A sapphire-encrusted bracelet
+  A torch (providing light)
+  A huge diamond
+  A beautiful brass bauble
+  A golden clockwork canary
+  A jewel-encrusted egg
+  A chalice
+  A painting
+  A beautiful jeweled scarab
+  A large emerald
+  A pot of gold
+  A sceptre
+  A crystal trident
+  A leather bag of coins
+  A platinum bar
+  A crystal skull
+  A gold coffin
+===========
+==>STEP NUM: 101
+==>ACT: east
+==>OBSERVATION: Kitchen
+A bottle is sitting on the table.
+The glass bottle contains:
+  A quantity of water
+There is a brown sack here.
+The brown sack contains:
+  A lunch
+===========
+==>STEP NUM: 102
+==>ACT: east
+==>OBSERVATION: Behind House
+===========
+==>STEP NUM: 103
+==>ACT: north
+==>OBSERVATION: North of House
+===========
+==>STEP NUM: 104
+==>ACT: west
+==>OBSERVATION: West of House
+You are standing in an open field west of a white house, with a boarded front door. A secret path leads southwest into the forest.
+There is a small mailbox here.
+===========

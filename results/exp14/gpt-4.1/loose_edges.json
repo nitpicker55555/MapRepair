@@ -1,0 +1,104 @@
+[
+  {
+    "src_node": "forest",
+    "dst_node": "deep forest",
+    "action": "north",
+    "seen_in_forward": 1
+  },
+  {
+    "src_node": "deep forest",
+    "dst_node": "country lane",
+    "action": "southwest",
+    "seen_in_forward": 2
+  },
+  {
+    "src_node": "country lane",
+    "dst_node": "outside the cottage",
+    "action": "west",
+    "seen_in_forward": 3
+  },
+  {
+    "src_node": "outside the cottage",
+    "dst_node": "outside the bungalow",
+    "action": "west",
+    "seen_in_forward": 4
+  },
+  {
+    "src_node": "outside the bungalow",
+    "dst_node": "meadow behind the bungalow",
+    "action": "southwest",
+    "seen_in_forward": 5
+  },
+  {
+    "src_node": "meadow behind the bungalow",
+    "dst_node": "hilltop",
+    "action": "southwest",
+    "seen_in_forward": 6
+  },
+  {
+    "src_node": "hilltop",
+    "dst_node": "meadow behind the bungalow",
+    "action": "northeast",
+    "seen_in_forward": 7
+  },
+  {
+    "src_node": "meadow behind the bungalow",
+    "dst_node": "outside the bungalow",
+    "action": "northeast",
+    "seen_in_forward": 8
+  },
+  {
+    "src_node": "outside the bungalow",
+    "dst_node": "outside the cottage",
+    "action": "east",
+    "seen_in_forward": 9
+  },
+  {
+    "src_node": "outside the cottage",
+    "dst_node": "country lane",
+    "action": "east",
+    "seen_in_forward": 10
+  },
+  {
+    "src_node": "country lane",
+    "dst_node": "deep forest",
+    "action": "northeast",
+    "seen_in_forward": 11
+  },
+  {
+    "src_node": "deep forest",
+    "dst_node": "forest",
+    "action": "south",
+    "seen_in_forward": 12
+  },
+  {
+    "src_node": "forest",
+    "dst_node": "rickety fence",
+    "action": "south",
+    "seen_in_forward": 13
+  },
+  {
+    "src_node": "rickety fence",
+    "dst_node": "schoolyard",
+    "action": "northwest",
+    "seen_in_forward": 14
+  },
+  {
+    "src_node": "schoolyard",
+    "dst_node": "inside the school",
+    "action": "south",
+    "seen_in_forward": 15
+  },
+  {
+    "src_node": "inside the school",
+    "dst_node": "clock tower stairs",
+    "action": "south",
+    "seen_in_forward": 16
+  },
+  {
+    "src_node": "clock tower stairs",
+    "dst_node": "inside the clock tower",
+    "action": "south",
+    "seen_in_forward": 17
+  }
+]

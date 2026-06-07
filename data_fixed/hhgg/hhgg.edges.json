@@ -1,0 +1,46 @@
+[
+    {
+        "src_node": "bedroom",
+        "dst_node": "front porch",
+        "action": "south",
+        "seen_in_forward": 8,
+        "seen_in_reversed": 9999,
+        "edge_min_step": 8,
+        "seen_in_forward_answerable": 8,
+        "seen_in_reversed_answerable": 9999,
+        "edge_min_step_answerable": 8
+    },
+    {
+        "src_node": "front porch",
+        "dst_node": "front of house",
+        "action": "south",
+        "seen_in_forward": 10,
+        "seen_in_reversed": 9999,
+        "edge_min_step": 10,
+        "seen_in_forward_answerable": 10,
+        "seen_in_reversed_answerable": 9999,
+        "edge_min_step_answerable": 10
+    },
+    {
+        "src_node": "front porch",
+        "dst_node": "bedroom",
+        "action": "north",
+        "seen_in_forward": 9999,
+        "seen_in_reversed": 8,
+        "edge_min_step": 8,
+        "seen_in_forward_answerable": 9999,
+        "seen_in_reversed_answerable": 8,
+        "edge_min_step_answerable": 8
+    },
+    {
+        "src_node": "pub",
+        "dst_node": "country lane",
+        "action": "exit",
+        "seen_in_forward": 26,
+        "seen_in_reversed": 9999,
+        "edge_min_step": 26,
+        "seen_in_forward_answerable": 26,
+        "seen_in_reversed_answerable": 9999,
+        "edge_min_step_answerable": 26
+    }
+]

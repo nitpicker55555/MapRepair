@@ -1,0 +1,26 @@
+# curses  model=gpt-4.1  n_steps=25
+step   0 bad movement output: {'is_movement': True, 'src_node': None, 'dst_node': 'old furniture', 'action': 'south', 'seen_in_forward': 0, 'current_location': 'old furniture', 'reasoning': "Observation explicitly names 'Old Furniture', matching canonical location list."}
+step   1 bad movement output: {'is_movement': True, 'src_node': None, 'dst_node': 'attic', 'action': 'north', 'seen_in_forward': 1, 'current_location': 'attic', 'reasoning': "Observation begins with 'Attic', which matches a canonical location; action is a compass direction."}
+step   2 MOVE 'attic' --[north]--> 'old winery'
+step   3 MOVE 'old winery' --[west]--> "aunt jemima's lair"
+step   4 MOVE "aunt jemima's lair" --[south]--> 'airing cupboard'
+step   5 MOVE 'airing cupboard' --[west]--> 'potting room'
+step   6 MOVE 'potting room' --[east]--> "aunt jemima's lair"
+step   7 MOVE "aunt jemima's lair" --[east]--> 'old winery'
+step   8 MOVE 'old winery' --[east]--> 'storage room'
+step   9 MOVE 'storage room' --[west]--> 'old winery'
+step  10 MOVE 'old winery' --[south]--> 'attic'
+step  11 MOVE 'attic' --[southeast]--> 'over the east wing'
+step  12 MOVE 'over the east wing' --[east]--> 'east annexe'
+step  13 MOVE 'east annexe' --[south]--> 'dead end'
+step  14 MOVE 'dead end' --[north]--> 'east annexe'
+step  15 MOVE 'east annexe' --[north]--> 'inside cupboard'
+step  16 MOVE 'inside cupboard' --[south]--> 'east annexe'
+step  17 MOVE 'east annexe' --[west]--> 'over the east wing'
+step  18 MOVE 'over the east wing' --[west]--> 'dark room'
+step  19 MOVE 'dark room' --[east]--> 'over the east wing'
+step  20 MOVE 'over the east wing' --[south]--> 'disused observatory'
+step  21 MOVE 'disused observatory' --[west]--> 'library storage'
+step  22 MOVE 'library storage' --[east]--> 'disused observatory'
+step  23 MOVE 'disused observatory' --[north]--> 'over the east wing'
+step  24 MOVE 'over the east wing' --[northwest]--> 'old furniture'

@@ -1,0 +1,66 @@
+[
+  {
+    "src_node": "chamber",
+    "dst_node": "bedchamber",
+    "action": "east",
+    "step_num": 2,
+    "gt_src": "chamber",
+    "gt_dst": "bedchamber"
+  },
+  {
+    "src_node": "bedchamber",
+    "dst_node": "chamber",
+    "action": "west",
+    "step_num": 3,
+    "gt_src": "bedchamber",
+    "gt_dst": "chamber"
+  },
+  {
+    "src_node": "chamber",
+    "dst_node": "spare room",
+    "action": "north",
+    "step_num": 4,
+    "gt_src": "chamber",
+    "gt_dst": "spare room"
+  },
+  {
+    "src_node": "spare room",
+    "dst_node": "attic",
+    "action": "east",
+    "step_num": 5,
+    "gt_src": "spare room",
+    "gt_dst": "attic"
+  },
+  {
+    "src_node": "attic",
+    "dst_node": "spare room",
+    "action": "west",
+    "step_num": 7,
+    "gt_src": "basement",
+    "gt_dst": "kitchenette"
+  },
+  {
+    "src_node": "spare room",
+    "dst_node": "attic",
+    "action": "east",
+    "step_num": 8,
+    "gt_src": "kitchenette",
+    "gt_dst": "basement"
+  },
+  {
+    "src_node": "attic",
+    "dst_node": "spare room",
+    "action": "west",
+    "step_num": 10,
+    "gt_src": "steam room",
+    "gt_dst": "basement"
+  },
+  {
+    "src_node": "spare room",
+    "dst_node": "chamber",
+    "action": "south",
+    "step_num": 11,
+    "gt_src": "basement",
+    "gt_dst": "attic"
+  }
+]

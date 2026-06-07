@@ -1,0 +1,66 @@
+[
+  {
+    "step_num": 0,
+    "action": "west",
+    "command": "go west",
+    "observation": "You can't go that way.\n\n\n-= Kitchenette =-0/3",
+    "gt_src": "study",
+    "gt_dst": "kitchenette"
+  },
+  {
+    "step_num": 1,
+    "action": "south",
+    "command": "go south",
+    "observation": "-= Bedroom =-\nYou are in a bedroom. A standard one.\n\n\n\nYou need an unguarded exit? You should try going north.\n\n\n-= Bedroom =-0/4",
+    "gt_src": "kitchenette",
+    "gt_dst": "bedroom"
+  },
+  {
+    "step_num": 2,
+    "action": "north",
+    "command": "go north",
+    "observation": "-= Kitchenette =-\nYou are in a kitchenette. A normal one.\n\nYou make out a board. The board appears to be empty. This always happens!\n\nThere is an open gateway leading east. There is an exit to the south. Don't worry, it is unguarded.\n\n\n-= Kitchenette =-0/5",
+    "gt_src": "bedroom",
+    "gt_dst": "kitchenette"
+  },
+  {
+    "step_num": 3,
+    "action": "east",
+    "command": "go east",
+    "observation": "-= Study =-\nYou are in a study. A normal kind of place.\n\nYou make out an opened display in the corner. The display is empty! What a waste of a day!\n\nThere is an open gate leading south. There is an open gateway leading west.\n\nThere is a backup calendar on the floor.\n\n\n-= Study =-0/6",
+    "gt_src": "kitchenette",
+    "gt_dst": "study"
+  },
+  {
+    "step_num": 4,
+    "action": "south",
+    "command": "go south",
+    "observation": "-= Chamber =-\nGuess what, you are in the place we're calling the chamber.\n\nYou can make out a coffer. The coffer is empty, what a horrible day!\n\nThere is an open gate leading north. There is an unblocked exit to the east.\n\n\n-= Chamber =-0/7",
+    "gt_src": "study",
+    "gt_dst": "chamber"
+  },
+  {
+    "step_num": 5,
+    "action": "east",
+    "command": "go east",
+    "observation": "-= Cookhouse =-\nFancy seeing you here. Here, by the way, being the cookhouse.\n\n\n\nThere is an exit to the west. Don't worry, it is unblocked.\n\n\n-= Cookhouse =-0/8",
+    "gt_src": "chamber",
+    "gt_dst": "cookhouse"
+  },
+  {
+    "step_num": 6,
+    "action": "west",
+    "command": "go west",
+    "observation": "-= Chamber =-\nGuess what, you are in the place we're calling the chamber.\n\nYou can make out a coffer. The coffer is empty, what a horrible day!\n\nThere is an open gate leading north. There is an unblocked exit to the east.\n\n\n-= Chamber =-0/9",
+    "gt_src": "cookhouse",
+    "gt_dst": "chamber"
+  },
+  {
+    "step_num": 7,
+    "action": "north",
+    "command": "go north",
+    "observation": "-= Study =-\nYou are in a study. A normal kind of place.\n\nYou make out an opened display in the corner. The display is empty! What a waste of a day!\n\nThere is an open gate leading south. There is an open gateway leading west.\n\nThere is a backup calendar on the floor.\n\n\n-= Study =-0/10",
+    "gt_src": "chamber",
+    "gt_dst": "study"
+  }
+]

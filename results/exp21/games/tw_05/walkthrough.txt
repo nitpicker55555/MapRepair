@@ -1,0 +1,134 @@
+==>STEP NUM: 0
+==>ACT: west
+==>OBSERVATION: -= Cookhouse =-
+You are in a cookhouse. A normal one.
+
+You make out a closed freezer.
+
+There is an unblocked exit to the east. You need an unguarded exit? You should try going south.
+
+
+-= Cookhouse =-0/3
+===========
+==>STEP NUM: 1
+==>ACT: south
+==>OBSERVATION: -= Sauna =-
+You're now in the sauna. You try to gain information on your surroundings by using a technique you call "looking."
+
+You can see a shelf. Now why would someone leave that there? You see a broom on the shelf. Now that's what I call TextWorld!
+
+There is a closed hatch leading west. You need an unguarded exit? You should try going east. You need an unguarded exit? You should try going north.
+
+
+-= Sauna =-0/4
+===========
+==>STEP NUM: 2
+==>ACT: north
+==>OBSERVATION: -= Cookhouse =-
+You are in a cookhouse. A normal one.
+
+You make out a closed freezer.
+
+There is an unblocked exit to the east. You need an unguarded exit? You should try going south.
+
+
+-= Cookhouse =-0/5
+===========
+==>STEP NUM: 3
+==>ACT: north
+==>OBSERVATION: You can't go that way.
+
+
+-= Cookhouse =-0/6
+===========
+==>STEP NUM: 4
+==>ACT: south
+==>OBSERVATION: -= Sauna =-
+You're now in the sauna. You try to gain information on your surroundings by using a technique you call "looking."
+
+You can see a shelf. Now why would someone leave that there? You see a broom on the shelf. Now that's what I call TextWorld!
+
+There is a closed hatch leading west. You need an unguarded exit? You should try going east. You need an unguarded exit? You should try going north.
+
+
+-= Sauna =-0/7
+===========
+==>STEP NUM: 5
+==>ACT: east
+==>OBSERVATION: -= Kitchenette =-
+Ah, the kitchenette. This is some kind of kitchenette, really great usual vibes in this place, a wonderful usual atmosphere. And now, well, you're in it.
+
+
+
+There is an unguarded exit to the north. There is an unguarded exit to the west.
+
+
+-= Kitchenette =-0/8
+===========
+==>STEP NUM: 6
+==>ACT: north
+==>OBSERVATION: -= Lounge =-
+You've just walked into a lounge.
+
+
+
+You need an unguarded exit? You should try going south. There is an exit to the west. Don't worry, it is unguarded.
+
+
+-= Lounge =-0/9
+===========
+==>STEP NUM: 7
+==>ACT: east
+==>OBSERVATION: You can't go that way.
+
+
+-= Lounge =-0/10
+===========
+==>STEP NUM: 8
+==>ACT: south
+==>OBSERVATION: -= Kitchenette =-
+Ah, the kitchenette. This is some kind of kitchenette, really great usual vibes in this place, a wonderful usual atmosphere. And now, well, you're in it.
+
+
+
+There is an unguarded exit to the north. There is an unguarded exit to the west.
+
+
+-= Kitchenette =-0/11
+===========
+==>STEP NUM: 9
+==>ACT: north
+==>OBSERVATION: -= Lounge =-
+You've just walked into a lounge.
+
+
+
+You need an unguarded exit? You should try going south. There is an exit to the west. Don't worry, it is unguarded.
+
+
+-= Lounge =-0/12
+===========
+==>STEP NUM: 10
+==>ACT: west
+==>OBSERVATION: -= Cookhouse =-
+You are in a cookhouse. A normal one.
+
+You make out a closed freezer.
+
+There is an unblocked exit to the east. You need an unguarded exit? You should try going south.
+
+
+-= Cookhouse =-0/13
+===========
+==>STEP NUM: 11
+==>ACT: south
+==>OBSERVATION: -= Sauna =-
+You're now in the sauna. You try to gain information on your surroundings by using a technique you call "looking."
+
+You can see a shelf. Now why would someone leave that there? You see a broom on the shelf. Now that's what I call TextWorld!
+
+There is a closed hatch leading west. You need an unguarded exit? You should try going east. You need an unguarded exit? You should try going north.
+
+
+-= Sauna =-0/14
+===========

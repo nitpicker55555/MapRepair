@@ -1,0 +1,18 @@
+{
+  "game": "sherlock",
+  "mode": "vc_ei",
+  "model": "gpt-4.1-mini",
+  "num_conflicts": 21,
+  "iterations": 210,
+  "success": false,
+  "remaining_conflicts": 21,
+  "pre_edge_recall": 0.4482758620689655,
+  "pre_strict_direction_match": 0.41379310344827586,
+  "pre_edge_direction_accuracy": 0.9230769230769231,
+  "post_edge_recall": 0.4482758620689655,
+  "post_strict_direction_match": 0.41379310344827586,
+  "post_permissive_direction_match": 0.8275862068965517,
+  "post_edge_direction_accuracy": 0.9230769230769231,
+  "edge_recall_delta": 0.0,
+  "strict_direction_delta": 0.0
+}

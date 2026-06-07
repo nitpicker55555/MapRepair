@@ -1,0 +1,197 @@
+{
+  "game": "huntdark",
+  "num_llm_edges": 5,
+  "num_gt_edges": 6,
+  "num_conflicts": 3,
+  "type_distribution": {
+    "topology": 3
+  },
+  "root_cause_distribution": {
+    "name_hallucination_caused_overlap": 2,
+    "false_positive_overlap": 1
+  },
+  "conflicts": [
+    {
+      "type": "topology",
+      "description": "position (0, 0, 0) occupied by multiple rooms ['base of canyon', 'bottom of pit', 'canyon wall', 'cramped cavern', 'largish dome']",
+      "involved_edges": [],
+      "involved_nodes": [
+        "base of canyon",
+        "bottom of pit",
+        "canyon wall",
+        "cramped cavern",
+        "largish dome"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "cramped room",
+            "base of canyon"
+          ],
+          "llm_dir": "up",
+          "in_gt": true,
+          "gt_dir": "up",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 49
+        },
+        {
+          "edge": [
+            "bottom of pit",
+            "tight crawl"
+          ],
+          "llm_dir": "down",
+          "in_gt": true,
+          "gt_dir": "down",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 6
+        },
+        {
+          "edge": [
+            "canyon wall",
+            "rising path"
+          ],
+          "llm_dir": "up",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "both_names_hallucinated",
+          "source_in_gt": false,
+          "target_in_gt": false,
+          "step": 60
+        },
+        {
+          "edge": [
+            "smallish cave",
+            "cramped cavern"
+          ],
+          "llm_dir": "up",
+          "in_gt": true,
+          "gt_dir": "up",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 25
+        },
+        {
+          "edge": [
+            "largish dome",
+            "small cave"
+          ],
+          "llm_dir": "up",
+          "in_gt": true,
+          "gt_dir": "up",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 42
+        }
+      ],
+      "case_counts": {
+        "correct": 4,
+        "both_names_hallucinated": 1
+      },
+      "root_cause": "name_hallucination_caused_overlap"
+    },
+    {
+      "type": "topology",
+      "description": "position (0, 0, -1) occupied by multiple rooms ['cramped room', 'smallish cave', 'tight crawl']",
+      "involved_edges": [],
+      "involved_nodes": [
+        "cramped room",
+        "smallish cave",
+        "tight crawl"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "cramped room",
+            "base of canyon"
+          ],
+          "llm_dir": "up",
+          "in_gt": true,
+          "gt_dir": "up",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 49
+        },
+        {
+          "edge": [
+            "smallish cave",
+            "cramped cavern"
+          ],
+          "llm_dir": "up",
+          "in_gt": true,
+          "gt_dir": "up",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 25
+        },
+        {
+          "edge": [
+            "bottom of pit",
+            "tight crawl"
+          ],
+          "llm_dir": "down",
+          "in_gt": true,
+          "gt_dir": "down",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 6
+        }
+      ],
+      "case_counts": {
+        "correct": 3
+      },
+      "root_cause": "false_positive_overlap"
+    },
+    {
+      "type": "topology",
+      "description": "position (0, 0, 1) occupied by multiple rooms ['rising path', 'small cave']",
+      "involved_edges": [],
+      "involved_nodes": [
+        "rising path",
+        "small cave"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "canyon wall",
+            "rising path"
+          ],
+          "llm_dir": "up",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "both_names_hallucinated",
+          "source_in_gt": false,
+          "target_in_gt": false,
+          "step": 60
+        },
+        {
+          "edge": [
+            "largish dome",
+            "small cave"
+          ],
+          "llm_dir": "up",
+          "in_gt": true,
+          "gt_dir": "up",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 42
+        }
+      ],
+      "case_counts": {
+        "both_names_hallucinated": 1,
+        "correct": 1
+      },
+      "root_cause": "name_hallucination_caused_overlap"
+    }
+  ],
+  "walkthrough_steps_available": 61
+}

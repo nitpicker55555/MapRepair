@@ -1,0 +1,3153 @@
+{
+  "game": "zork2",
+  "num_llm_edges": 26,
+  "num_gt_edges": 36,
+  "num_conflicts": 43,
+  "type_distribution": {
+    "direction": 4,
+    "topology": 21,
+    "naming": 18
+  },
+  "root_cause_distribution": {
+    "src_dst_swap": 1,
+    "real_vs_hallucinated": 3,
+    "name_hallucination_caused_overlap": 4,
+    "overlap_mixed": 14,
+    "false_positive_overlap": 3,
+    "real_name_corrupted_by_neighbour_error": 5,
+    "naming_collision_on_correct_subgraph": 12,
+    "name_hallucination": 1
+  },
+  "conflicts": [
+    {
+      "type": "direction",
+      "description": "node 'carousel room' has multiple outgoing edges labelled 'north'",
+      "involved_edges": [
+        [
+          "carousel room",
+          "topiary"
+        ],
+        [
+          "carousel room",
+          "marble hall"
+        ]
+      ],
+      "involved_nodes": [
+        "carousel room",
+        "topiary",
+        "marble hall"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "carousel room",
+            "topiary"
+          ],
+          "llm_dir": "north",
+          "in_gt": true,
+          "gt_dir": "north",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 13
+        },
+        {
+          "edge": [
+            "carousel room",
+            "marble hall"
+          ],
+          "llm_dir": "north",
+          "in_gt": false,
+          "gt_dir": "south",
+          "case": "swapped_src_dst",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 18
+        }
+      ],
+      "case_counts": {
+        "correct": 1,
+        "swapped_src_dst": 1
+      },
+      "root_cause": "src_dst_swap"
+    },
+    {
+      "type": "direction",
+      "description": "node 'ledge in ravine' has multiple outgoing edges labelled 'down'",
+      "involved_edges": [
+        [
+          "ledge in ravine",
+          "marble hall"
+        ],
+        [
+          "ledge in ravine",
+          "deep ford"
+        ]
+      ],
+      "involved_nodes": [
+        "ledge in ravine",
+        "marble hall",
+        "deep ford"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "ledge in ravine",
+            "marble hall"
+          ],
+          "llm_dir": "down",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": null
+        },
+        {
+          "edge": [
+            "ledge in ravine",
+            "deep ford"
+          ],
+          "llm_dir": "down",
+          "in_gt": true,
+          "gt_dir": "down",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 51
+        }
+      ],
+      "case_counts": {
+        "hallucinated_edge": 1,
+        "correct": 1
+      },
+      "root_cause": "real_vs_hallucinated"
+    },
+    {
+      "type": "direction",
+      "description": "node 'ledge in ravine' has multiple outgoing edges labelled 'west'",
+      "involved_edges": [
+        [
+          "ledge in ravine",
+          "end of ledge"
+        ],
+        [
+          "ledge in ravine",
+          "dragon room"
+        ]
+      ],
+      "involved_nodes": [
+        "ledge in ravine",
+        "end of ledge",
+        "dragon room"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "ledge in ravine",
+            "end of ledge"
+          ],
+          "llm_dir": "west",
+          "in_gt": true,
+          "gt_dir": "west",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 34
+        },
+        {
+          "edge": [
+            "ledge in ravine",
+            "dragon room"
+          ],
+          "llm_dir": "west",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": null
+        }
+      ],
+      "case_counts": {
+        "correct": 1,
+        "hallucinated_edge": 1
+      },
+      "root_cause": "real_vs_hallucinated"
+    },
+    {
+      "type": "direction",
+      "description": "node 'dreary room' has multiple outgoing edges labelled 'south'",
+      "involved_edges": [
+        [
+          "dreary room",
+          "ledge in ravine"
+        ],
+        [
+          "dreary room",
+          "tiny room"
+        ]
+      ],
+      "involved_nodes": [
+        "dreary room",
+        "ledge in ravine",
+        "tiny room"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "dreary room",
+            "ledge in ravine"
+          ],
+          "llm_dir": "south",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": null
+        },
+        {
+          "edge": [
+            "dreary room",
+            "tiny room"
+          ],
+          "llm_dir": "south",
+          "in_gt": true,
+          "gt_dir": "south",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 32
+        }
+      ],
+      "case_counts": {
+        "hallucinated_edge": 1,
+        "correct": 1
+      },
+      "root_cause": "real_vs_hallucinated"
+    },
+    {
+      "type": "topology",
+      "description": "position (0, 0, 0) occupied by multiple rooms ['carousel room', 'dark place']",
+      "involved_edges": [],
+      "involved_nodes": [
+        "carousel room",
+        "dark place"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "path near stream",
+            "carousel room"
+          ],
+          "llm_dir": "southwest",
+          "in_gt": true,
+          "gt_dir": "southwest",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 12
+        },
+        {
+          "edge": [
+            "carousel room",
+            "topiary"
+          ],
+          "llm_dir": "north",
+          "in_gt": true,
+          "gt_dir": "north",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 13
+        },
+        {
+          "edge": [
+            "carousel room",
+            "marble hall"
+          ],
+          "llm_dir": "north",
+          "in_gt": false,
+          "gt_dir": "south",
+          "case": "swapped_src_dst",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 18
+        },
+        {
+          "edge": [
+            "carousel room",
+            "menhir room"
+          ],
+          "llm_dir": "southeast",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "dst_hallucinated",
+          "source_in_gt": true,
+          "target_in_gt": false,
+          "step": 67
+        },
+        {
+          "edge": [
+            "great cavern",
+            "dark place"
+          ],
+          "llm_dir": "south",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "dst_hallucinated",
+          "source_in_gt": true,
+          "target_in_gt": false,
+          "step": 5
+        }
+      ],
+      "case_counts": {
+        "correct": 2,
+        "swapped_src_dst": 1,
+        "dst_hallucinated": 2
+      },
+      "root_cause": "name_hallucination_caused_overlap"
+    },
+    {
+      "type": "topology",
+      "description": "position (0, 1, 0) occupied by multiple rooms ['carousel room', 'deep ford', 'great cavern', 'marble hall', 'topiary']",
+      "involved_edges": [],
+      "involved_nodes": [
+        "carousel room",
+        "deep ford",
+        "great cavern",
+        "marble hall",
+        "topiary"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "path near stream",
+            "carousel room"
+          ],
+          "llm_dir": "southwest",
+          "in_gt": true,
+          "gt_dir": "southwest",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 12
+        },
+        {
+          "edge": [
+            "carousel room",
+            "topiary"
+          ],
+          "llm_dir": "north",
+          "in_gt": true,
+          "gt_dir": "north",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 13
+        },
+        {
+          "edge": [
+            "carousel room",
+            "marble hall"
+          ],
+          "llm_dir": "north",
+          "in_gt": false,
+          "gt_dir": "south",
+          "case": "swapped_src_dst",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 18
+        },
+        {
+          "edge": [
+            "carousel room",
+            "menhir room"
+          ],
+          "llm_dir": "southeast",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "dst_hallucinated",
+          "source_in_gt": true,
+          "target_in_gt": false,
+          "step": 67
+        },
+        {
+          "edge": [
+            "ledge in ravine",
+            "deep ford"
+          ],
+          "llm_dir": "down",
+          "in_gt": true,
+          "gt_dir": "down",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 51
+        },
+        {
+          "edge": [
+            "deep ford",
+            "marble hall"
+          ],
+          "llm_dir": "south",
+          "in_gt": true,
+          "gt_dir": "south",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 52
+        },
+        {
+          "edge": [
+            "foot bridge",
+            "great cavern"
+          ],
+          "llm_dir": "south",
+          "in_gt": true,
+          "gt_dir": "south",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 4
+        },
+        {
+          "edge": [
+            "great cavern",
+            "dark place"
+          ],
+          "llm_dir": "south",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "dst_hallucinated",
+          "source_in_gt": true,
+          "target_in_gt": false,
+          "step": 5
+        },
+        {
+          "edge": [
+            "marble hall",
+            "ledge in ravine"
+          ],
+          "llm_dir": "up",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 20
+        },
+        {
+          "edge": [
+            "marble hall",
+            "path near stream"
+          ],
+          "llm_dir": "east",
+          "in_gt": true,
+          "gt_dir": "east",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 55
+        },
+        {
+          "edge": [
+            "formal garden",
+            "topiary"
+          ],
+          "llm_dir": "south",
+          "in_gt": true,
+          "gt_dir": "south",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 63
+        }
+      ],
+      "case_counts": {
+        "correct": 7,
+        "swapped_src_dst": 1,
+        "dst_hallucinated": 2,
+        "hallucinated_edge": 1
+      },
+      "root_cause": "name_hallucination_caused_overlap"
+    },
+    {
+      "type": "topology",
+      "description": "position (0, 2, 0) occupied by multiple rooms ['deep ford', 'foot bridge', 'formal garden', 'marble hall']",
+      "involved_edges": [],
+      "involved_nodes": [
+        "deep ford",
+        "foot bridge",
+        "formal garden",
+        "marble hall"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "ledge in ravine",
+            "deep ford"
+          ],
+          "llm_dir": "down",
+          "in_gt": true,
+          "gt_dir": "down",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 51
+        },
+        {
+          "edge": [
+            "deep ford",
+            "marble hall"
+          ],
+          "llm_dir": "south",
+          "in_gt": true,
+          "gt_dir": "south",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 52
+        },
+        {
+          "edge": [
+            "narrow tunnel",
+            "foot bridge"
+          ],
+          "llm_dir": "south",
+          "in_gt": true,
+          "gt_dir": "south",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 3
+        },
+        {
+          "edge": [
+            "foot bridge",
+            "great cavern"
+          ],
+          "llm_dir": "south",
+          "in_gt": true,
+          "gt_dir": "south",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 4
+        },
+        {
+          "edge": [
+            "north end of garden",
+            "formal garden"
+          ],
+          "llm_dir": "south",
+          "in_gt": true,
+          "gt_dir": "south",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 10
+        },
+        {
+          "edge": [
+            "formal garden",
+            "path near stream"
+          ],
+          "llm_dir": "west",
+          "in_gt": true,
+          "gt_dir": "west",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 11
+        },
+        {
+          "edge": [
+            "formal garden",
+            "topiary"
+          ],
+          "llm_dir": "south",
+          "in_gt": true,
+          "gt_dir": "south",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 63
+        },
+        {
+          "edge": [
+            "carousel room",
+            "marble hall"
+          ],
+          "llm_dir": "north",
+          "in_gt": false,
+          "gt_dir": "south",
+          "case": "swapped_src_dst",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 18
+        },
+        {
+          "edge": [
+            "marble hall",
+            "ledge in ravine"
+          ],
+          "llm_dir": "up",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 20
+        },
+        {
+          "edge": [
+            "marble hall",
+            "path near stream"
+          ],
+          "llm_dir": "east",
+          "in_gt": true,
+          "gt_dir": "east",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 55
+        }
+      ],
+      "case_counts": {
+        "correct": 8,
+        "swapped_src_dst": 1,
+        "hallucinated_edge": 1
+      },
+      "root_cause": "overlap_mixed"
+    },
+    {
+      "type": "topology",
+      "description": "position (0, 3, 0) occupied by multiple rooms ['deep ford', 'narrow tunnel', 'north end of garden']",
+      "involved_edges": [],
+      "involved_nodes": [
+        "deep ford",
+        "narrow tunnel",
+        "north end of garden"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "ledge in ravine",
+            "deep ford"
+          ],
+          "llm_dir": "down",
+          "in_gt": true,
+          "gt_dir": "down",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 51
+        },
+        {
+          "edge": [
+            "deep ford",
+            "marble hall"
+          ],
+          "llm_dir": "south",
+          "in_gt": true,
+          "gt_dir": "south",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 52
+        },
+        {
+          "edge": [
+            "inside the barrow",
+            "narrow tunnel"
+          ],
+          "llm_dir": "south",
+          "in_gt": true,
+          "gt_dir": "south",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 2
+        },
+        {
+          "edge": [
+            "narrow tunnel",
+            "foot bridge"
+          ],
+          "llm_dir": "south",
+          "in_gt": true,
+          "gt_dir": "south",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 3
+        },
+        {
+          "edge": [
+            "dark tunnel",
+            "north end of garden"
+          ],
+          "llm_dir": "southeast",
+          "in_gt": true,
+          "gt_dir": "southeast",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 7
+        },
+        {
+          "edge": [
+            "gazebo",
+            "north end of garden"
+          ],
+          "llm_dir": "out",
+          "in_gt": true,
+          "gt_dir": "out",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 9
+        },
+        {
+          "edge": [
+            "north end of garden",
+            "formal garden"
+          ],
+          "llm_dir": "south",
+          "in_gt": true,
+          "gt_dir": "south",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 10
+        }
+      ],
+      "case_counts": {
+        "correct": 7
+      },
+      "root_cause": "false_positive_overlap"
+    },
+    {
+      "type": "topology",
+      "description": "position (0, 0, 1) occupied by multiple rooms ['carousel room', 'marble hall']",
+      "involved_edges": [],
+      "involved_nodes": [
+        "carousel room",
+        "marble hall"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "path near stream",
+            "carousel room"
+          ],
+          "llm_dir": "southwest",
+          "in_gt": true,
+          "gt_dir": "southwest",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 12
+        },
+        {
+          "edge": [
+            "carousel room",
+            "topiary"
+          ],
+          "llm_dir": "north",
+          "in_gt": true,
+          "gt_dir": "north",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 13
+        },
+        {
+          "edge": [
+            "carousel room",
+            "marble hall"
+          ],
+          "llm_dir": "north",
+          "in_gt": false,
+          "gt_dir": "south",
+          "case": "swapped_src_dst",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 18
+        },
+        {
+          "edge": [
+            "carousel room",
+            "menhir room"
+          ],
+          "llm_dir": "southeast",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "dst_hallucinated",
+          "source_in_gt": true,
+          "target_in_gt": false,
+          "step": 67
+        },
+        {
+          "edge": [
+            "deep ford",
+            "marble hall"
+          ],
+          "llm_dir": "south",
+          "in_gt": true,
+          "gt_dir": "south",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 52
+        },
+        {
+          "edge": [
+            "marble hall",
+            "ledge in ravine"
+          ],
+          "llm_dir": "up",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 20
+        },
+        {
+          "edge": [
+            "marble hall",
+            "path near stream"
+          ],
+          "llm_dir": "east",
+          "in_gt": true,
+          "gt_dir": "east",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 55
+        }
+      ],
+      "case_counts": {
+        "correct": 4,
+        "swapped_src_dst": 1,
+        "dst_hallucinated": 1,
+        "hallucinated_edge": 1
+      },
+      "root_cause": "name_hallucination_caused_overlap"
+    },
+    {
+      "type": "topology",
+      "description": "position (0, 1, 1) occupied by multiple rooms ['carousel room', 'deep ford', 'ledge in ravine', 'marble hall', 'topiary']",
+      "involved_edges": [],
+      "involved_nodes": [
+        "carousel room",
+        "deep ford",
+        "ledge in ravine",
+        "marble hall",
+        "topiary"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "path near stream",
+            "carousel room"
+          ],
+          "llm_dir": "southwest",
+          "in_gt": true,
+          "gt_dir": "southwest",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 12
+        },
+        {
+          "edge": [
+            "carousel room",
+            "topiary"
+          ],
+          "llm_dir": "north",
+          "in_gt": true,
+          "gt_dir": "north",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 13
+        },
+        {
+          "edge": [
+            "carousel room",
+            "marble hall"
+          ],
+          "llm_dir": "north",
+          "in_gt": false,
+          "gt_dir": "south",
+          "case": "swapped_src_dst",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 18
+        },
+        {
+          "edge": [
+            "carousel room",
+            "menhir room"
+          ],
+          "llm_dir": "southeast",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "dst_hallucinated",
+          "source_in_gt": true,
+          "target_in_gt": false,
+          "step": 67
+        },
+        {
+          "edge": [
+            "ledge in ravine",
+            "deep ford"
+          ],
+          "llm_dir": "down",
+          "in_gt": true,
+          "gt_dir": "down",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 51
+        },
+        {
+          "edge": [
+            "deep ford",
+            "marble hall"
+          ],
+          "llm_dir": "south",
+          "in_gt": true,
+          "gt_dir": "south",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 52
+        },
+        {
+          "edge": [
+            "marble hall",
+            "ledge in ravine"
+          ],
+          "llm_dir": "up",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 20
+        },
+        {
+          "edge": [
+            "tiny room",
+            "ledge in ravine"
+          ],
+          "llm_dir": "down",
+          "in_gt": true,
+          "gt_dir": "down",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 33
+        },
+        {
+          "edge": [
+            "dragon room",
+            "ledge in ravine"
+          ],
+          "llm_dir": "east",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 50
+        },
+        {
+          "edge": [
+            "ledge in ravine",
+            "dreary room"
+          ],
+          "llm_dir": "north",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 30
+        },
+        {
+          "edge": [
+            "ledge in ravine",
+            "end of ledge"
+          ],
+          "llm_dir": "west",
+          "in_gt": true,
+          "gt_dir": "west",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 34
+        },
+        {
+          "edge": [
+            "marble hall",
+            "path near stream"
+          ],
+          "llm_dir": "east",
+          "in_gt": true,
+          "gt_dir": "east",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 55
+        },
+        {
+          "edge": [
+            "formal garden",
+            "topiary"
+          ],
+          "llm_dir": "south",
+          "in_gt": true,
+          "gt_dir": "south",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 63
+        }
+      ],
+      "case_counts": {
+        "correct": 8,
+        "swapped_src_dst": 1,
+        "dst_hallucinated": 1,
+        "hallucinated_edge": 3
+      },
+      "root_cause": "name_hallucination_caused_overlap"
+    },
+    {
+      "type": "topology",
+      "description": "position (2, 0, 1) occupied by multiple rooms ['marble hall', 'topiary']",
+      "involved_edges": [],
+      "involved_nodes": [
+        "marble hall",
+        "topiary"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "carousel room",
+            "marble hall"
+          ],
+          "llm_dir": "north",
+          "in_gt": false,
+          "gt_dir": "south",
+          "case": "swapped_src_dst",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 18
+        },
+        {
+          "edge": [
+            "deep ford",
+            "marble hall"
+          ],
+          "llm_dir": "south",
+          "in_gt": true,
+          "gt_dir": "south",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 52
+        },
+        {
+          "edge": [
+            "marble hall",
+            "ledge in ravine"
+          ],
+          "llm_dir": "up",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 20
+        },
+        {
+          "edge": [
+            "marble hall",
+            "path near stream"
+          ],
+          "llm_dir": "east",
+          "in_gt": true,
+          "gt_dir": "east",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 55
+        },
+        {
+          "edge": [
+            "carousel room",
+            "topiary"
+          ],
+          "llm_dir": "north",
+          "in_gt": true,
+          "gt_dir": "north",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 13
+        },
+        {
+          "edge": [
+            "formal garden",
+            "topiary"
+          ],
+          "llm_dir": "south",
+          "in_gt": true,
+          "gt_dir": "south",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 63
+        }
+      ],
+      "case_counts": {
+        "swapped_src_dst": 1,
+        "correct": 4,
+        "hallucinated_edge": 1
+      },
+      "root_cause": "overlap_mixed"
+    },
+    {
+      "type": "topology",
+      "description": "position (4, -1, 1) occupied by multiple rooms ['marble hall', 'topiary']",
+      "involved_edges": [],
+      "involved_nodes": [
+        "marble hall",
+        "topiary"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "carousel room",
+            "marble hall"
+          ],
+          "llm_dir": "north",
+          "in_gt": false,
+          "gt_dir": "south",
+          "case": "swapped_src_dst",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 18
+        },
+        {
+          "edge": [
+            "deep ford",
+            "marble hall"
+          ],
+          "llm_dir": "south",
+          "in_gt": true,
+          "gt_dir": "south",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 52
+        },
+        {
+          "edge": [
+            "marble hall",
+            "ledge in ravine"
+          ],
+          "llm_dir": "up",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 20
+        },
+        {
+          "edge": [
+            "marble hall",
+            "path near stream"
+          ],
+          "llm_dir": "east",
+          "in_gt": true,
+          "gt_dir": "east",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 55
+        },
+        {
+          "edge": [
+            "carousel room",
+            "topiary"
+          ],
+          "llm_dir": "north",
+          "in_gt": true,
+          "gt_dir": "north",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 13
+        },
+        {
+          "edge": [
+            "formal garden",
+            "topiary"
+          ],
+          "llm_dir": "south",
+          "in_gt": true,
+          "gt_dir": "south",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 63
+        }
+      ],
+      "case_counts": {
+        "swapped_src_dst": 1,
+        "correct": 4,
+        "hallucinated_edge": 1
+      },
+      "root_cause": "overlap_mixed"
+    },
+    {
+      "type": "topology",
+      "description": "position (0, 2, 1) occupied by multiple rooms ['deep ford', 'dreary room', 'ledge in ravine', 'marble hall', 'tiny room']",
+      "involved_edges": [],
+      "involved_nodes": [
+        "deep ford",
+        "dreary room",
+        "ledge in ravine",
+        "marble hall",
+        "tiny room"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "ledge in ravine",
+            "deep ford"
+          ],
+          "llm_dir": "down",
+          "in_gt": true,
+          "gt_dir": "down",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 51
+        },
+        {
+          "edge": [
+            "deep ford",
+            "marble hall"
+          ],
+          "llm_dir": "south",
+          "in_gt": true,
+          "gt_dir": "south",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 52
+        },
+        {
+          "edge": [
+            "ledge in ravine",
+            "dreary room"
+          ],
+          "llm_dir": "north",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 30
+        },
+        {
+          "edge": [
+            "dreary room",
+            "tiny room"
+          ],
+          "llm_dir": "south",
+          "in_gt": true,
+          "gt_dir": "south",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 32
+        },
+        {
+          "edge": [
+            "marble hall",
+            "ledge in ravine"
+          ],
+          "llm_dir": "up",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 20
+        },
+        {
+          "edge": [
+            "tiny room",
+            "ledge in ravine"
+          ],
+          "llm_dir": "down",
+          "in_gt": true,
+          "gt_dir": "down",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 33
+        },
+        {
+          "edge": [
+            "dragon room",
+            "ledge in ravine"
+          ],
+          "llm_dir": "east",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 50
+        },
+        {
+          "edge": [
+            "ledge in ravine",
+            "end of ledge"
+          ],
+          "llm_dir": "west",
+          "in_gt": true,
+          "gt_dir": "west",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 34
+        },
+        {
+          "edge": [
+            "carousel room",
+            "marble hall"
+          ],
+          "llm_dir": "north",
+          "in_gt": false,
+          "gt_dir": "south",
+          "case": "swapped_src_dst",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 18
+        },
+        {
+          "edge": [
+            "marble hall",
+            "path near stream"
+          ],
+          "llm_dir": "east",
+          "in_gt": true,
+          "gt_dir": "east",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 55
+        }
+      ],
+      "case_counts": {
+        "correct": 6,
+        "hallucinated_edge": 3,
+        "swapped_src_dst": 1
+      },
+      "root_cause": "overlap_mixed"
+    },
+    {
+      "type": "topology",
+      "description": "position (0, 2, 2) occupied by multiple rooms ['dreary room', 'ledge in ravine', 'tiny room']",
+      "involved_edges": [],
+      "involved_nodes": [
+        "dreary room",
+        "ledge in ravine",
+        "tiny room"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "ledge in ravine",
+            "dreary room"
+          ],
+          "llm_dir": "north",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 30
+        },
+        {
+          "edge": [
+            "dreary room",
+            "tiny room"
+          ],
+          "llm_dir": "south",
+          "in_gt": true,
+          "gt_dir": "south",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 32
+        },
+        {
+          "edge": [
+            "marble hall",
+            "ledge in ravine"
+          ],
+          "llm_dir": "up",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 20
+        },
+        {
+          "edge": [
+            "tiny room",
+            "ledge in ravine"
+          ],
+          "llm_dir": "down",
+          "in_gt": true,
+          "gt_dir": "down",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 33
+        },
+        {
+          "edge": [
+            "dragon room",
+            "ledge in ravine"
+          ],
+          "llm_dir": "east",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 50
+        },
+        {
+          "edge": [
+            "ledge in ravine",
+            "end of ledge"
+          ],
+          "llm_dir": "west",
+          "in_gt": true,
+          "gt_dir": "west",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 34
+        },
+        {
+          "edge": [
+            "ledge in ravine",
+            "deep ford"
+          ],
+          "llm_dir": "down",
+          "in_gt": true,
+          "gt_dir": "down",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 51
+        }
+      ],
+      "case_counts": {
+        "hallucinated_edge": 3,
+        "correct": 4
+      },
+      "root_cause": "overlap_mixed"
+    },
+    {
+      "type": "topology",
+      "description": "position (0, 1, 2) occupied by multiple rooms ['ledge in ravine', 'tiny room']",
+      "involved_edges": [],
+      "involved_nodes": [
+        "ledge in ravine",
+        "tiny room"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "marble hall",
+            "ledge in ravine"
+          ],
+          "llm_dir": "up",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 20
+        },
+        {
+          "edge": [
+            "tiny room",
+            "ledge in ravine"
+          ],
+          "llm_dir": "down",
+          "in_gt": true,
+          "gt_dir": "down",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 33
+        },
+        {
+          "edge": [
+            "dragon room",
+            "ledge in ravine"
+          ],
+          "llm_dir": "east",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 50
+        },
+        {
+          "edge": [
+            "ledge in ravine",
+            "dreary room"
+          ],
+          "llm_dir": "north",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 30
+        },
+        {
+          "edge": [
+            "ledge in ravine",
+            "end of ledge"
+          ],
+          "llm_dir": "west",
+          "in_gt": true,
+          "gt_dir": "west",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 34
+        },
+        {
+          "edge": [
+            "ledge in ravine",
+            "deep ford"
+          ],
+          "llm_dir": "down",
+          "in_gt": true,
+          "gt_dir": "down",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 51
+        },
+        {
+          "edge": [
+            "dreary room",
+            "tiny room"
+          ],
+          "llm_dir": "south",
+          "in_gt": true,
+          "gt_dir": "south",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 32
+        }
+      ],
+      "case_counts": {
+        "hallucinated_edge": 3,
+        "correct": 4
+      },
+      "root_cause": "overlap_mixed"
+    },
+    {
+      "type": "topology",
+      "description": "position (0, 1, 3) occupied by multiple rooms ['ledge in ravine', 'tiny room']",
+      "involved_edges": [],
+      "involved_nodes": [
+        "ledge in ravine",
+        "tiny room"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "marble hall",
+            "ledge in ravine"
+          ],
+          "llm_dir": "up",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 20
+        },
+        {
+          "edge": [
+            "tiny room",
+            "ledge in ravine"
+          ],
+          "llm_dir": "down",
+          "in_gt": true,
+          "gt_dir": "down",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 33
+        },
+        {
+          "edge": [
+            "dragon room",
+            "ledge in ravine"
+          ],
+          "llm_dir": "east",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 50
+        },
+        {
+          "edge": [
+            "ledge in ravine",
+            "dreary room"
+          ],
+          "llm_dir": "north",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 30
+        },
+        {
+          "edge": [
+            "ledge in ravine",
+            "end of ledge"
+          ],
+          "llm_dir": "west",
+          "in_gt": true,
+          "gt_dir": "west",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 34
+        },
+        {
+          "edge": [
+            "ledge in ravine",
+            "deep ford"
+          ],
+          "llm_dir": "down",
+          "in_gt": true,
+          "gt_dir": "down",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 51
+        },
+        {
+          "edge": [
+            "dreary room",
+            "tiny room"
+          ],
+          "llm_dir": "south",
+          "in_gt": true,
+          "gt_dir": "south",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 32
+        }
+      ],
+      "case_counts": {
+        "hallucinated_edge": 3,
+        "correct": 4
+      },
+      "root_cause": "overlap_mixed"
+    },
+    {
+      "type": "topology",
+      "description": "position (0, 3, 2) occupied by multiple rooms ['dreary room', 'ledge in ravine']",
+      "involved_edges": [],
+      "involved_nodes": [
+        "dreary room",
+        "ledge in ravine"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "ledge in ravine",
+            "dreary room"
+          ],
+          "llm_dir": "north",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 30
+        },
+        {
+          "edge": [
+            "dreary room",
+            "tiny room"
+          ],
+          "llm_dir": "south",
+          "in_gt": true,
+          "gt_dir": "south",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 32
+        },
+        {
+          "edge": [
+            "marble hall",
+            "ledge in ravine"
+          ],
+          "llm_dir": "up",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 20
+        },
+        {
+          "edge": [
+            "tiny room",
+            "ledge in ravine"
+          ],
+          "llm_dir": "down",
+          "in_gt": true,
+          "gt_dir": "down",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 33
+        },
+        {
+          "edge": [
+            "dragon room",
+            "ledge in ravine"
+          ],
+          "llm_dir": "east",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 50
+        },
+        {
+          "edge": [
+            "ledge in ravine",
+            "end of ledge"
+          ],
+          "llm_dir": "west",
+          "in_gt": true,
+          "gt_dir": "west",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 34
+        },
+        {
+          "edge": [
+            "ledge in ravine",
+            "deep ford"
+          ],
+          "llm_dir": "down",
+          "in_gt": true,
+          "gt_dir": "down",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 51
+        }
+      ],
+      "case_counts": {
+        "hallucinated_edge": 3,
+        "correct": 4
+      },
+      "root_cause": "overlap_mixed"
+    },
+    {
+      "type": "topology",
+      "description": "position (0, 3, 1) occupied by multiple rooms ['deep ford', 'dreary room']",
+      "involved_edges": [],
+      "involved_nodes": [
+        "deep ford",
+        "dreary room"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "ledge in ravine",
+            "deep ford"
+          ],
+          "llm_dir": "down",
+          "in_gt": true,
+          "gt_dir": "down",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 51
+        },
+        {
+          "edge": [
+            "deep ford",
+            "marble hall"
+          ],
+          "llm_dir": "south",
+          "in_gt": true,
+          "gt_dir": "south",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 52
+        },
+        {
+          "edge": [
+            "ledge in ravine",
+            "dreary room"
+          ],
+          "llm_dir": "north",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 30
+        },
+        {
+          "edge": [
+            "dreary room",
+            "tiny room"
+          ],
+          "llm_dir": "south",
+          "in_gt": true,
+          "gt_dir": "south",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 32
+        }
+      ],
+      "case_counts": {
+        "correct": 3,
+        "hallucinated_edge": 1
+      },
+      "root_cause": "overlap_mixed"
+    },
+    {
+      "type": "topology",
+      "description": "position (0, 2, 3) occupied by multiple rooms ['dreary room', 'tiny room']",
+      "involved_edges": [],
+      "involved_nodes": [
+        "dreary room",
+        "tiny room"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "ledge in ravine",
+            "dreary room"
+          ],
+          "llm_dir": "north",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 30
+        },
+        {
+          "edge": [
+            "dreary room",
+            "tiny room"
+          ],
+          "llm_dir": "south",
+          "in_gt": true,
+          "gt_dir": "south",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 32
+        },
+        {
+          "edge": [
+            "tiny room",
+            "ledge in ravine"
+          ],
+          "llm_dir": "down",
+          "in_gt": true,
+          "gt_dir": "down",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 33
+        }
+      ],
+      "case_counts": {
+        "hallucinated_edge": 1,
+        "correct": 2
+      },
+      "root_cause": "overlap_mixed"
+    },
+    {
+      "type": "topology",
+      "description": "position (-1, 1, 2) occupied by multiple rooms ['dragon room', 'end of ledge', 'stone bridge']",
+      "involved_edges": [],
+      "involved_nodes": [
+        "dragon room",
+        "end of ledge",
+        "stone bridge"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "dragon room",
+            "stone bridge"
+          ],
+          "llm_dir": "south",
+          "in_gt": true,
+          "gt_dir": "south",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 36
+        },
+        {
+          "edge": [
+            "dragon room",
+            "dragon's lair"
+          ],
+          "llm_dir": "north",
+          "in_gt": true,
+          "gt_dir": "north",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 45
+        },
+        {
+          "edge": [
+            "dragon room",
+            "ledge in ravine"
+          ],
+          "llm_dir": "east",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 50
+        },
+        {
+          "edge": [
+            "ledge in ravine",
+            "end of ledge"
+          ],
+          "llm_dir": "west",
+          "in_gt": true,
+          "gt_dir": "west",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 34
+        },
+        {
+          "edge": [
+            "stone bridge",
+            "cool room"
+          ],
+          "llm_dir": "south",
+          "in_gt": true,
+          "gt_dir": "south",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 38
+        }
+      ],
+      "case_counts": {
+        "correct": 4,
+        "hallucinated_edge": 1
+      },
+      "root_cause": "overlap_mixed"
+    },
+    {
+      "type": "topology",
+      "description": "position (-1, 2, 1) occupied by multiple rooms ['dragon room', \"dragon's lair\", 'end of ledge']",
+      "involved_edges": [],
+      "involved_nodes": [
+        "dragon room",
+        "dragon's lair",
+        "end of ledge"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "dragon room",
+            "stone bridge"
+          ],
+          "llm_dir": "south",
+          "in_gt": true,
+          "gt_dir": "south",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 36
+        },
+        {
+          "edge": [
+            "dragon room",
+            "dragon's lair"
+          ],
+          "llm_dir": "north",
+          "in_gt": true,
+          "gt_dir": "north",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 45
+        },
+        {
+          "edge": [
+            "dragon room",
+            "ledge in ravine"
+          ],
+          "llm_dir": "east",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 50
+        },
+        {
+          "edge": [
+            "ledge in ravine",
+            "end of ledge"
+          ],
+          "llm_dir": "west",
+          "in_gt": true,
+          "gt_dir": "west",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 34
+        }
+      ],
+      "case_counts": {
+        "correct": 3,
+        "hallucinated_edge": 1
+      },
+      "root_cause": "overlap_mixed"
+    },
+    {
+      "type": "topology",
+      "description": "position (-1, 2, 2) occupied by multiple rooms ['dragon room', \"dragon's lair\", 'end of ledge']",
+      "involved_edges": [],
+      "involved_nodes": [
+        "dragon room",
+        "dragon's lair",
+        "end of ledge"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "dragon room",
+            "stone bridge"
+          ],
+          "llm_dir": "south",
+          "in_gt": true,
+          "gt_dir": "south",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 36
+        },
+        {
+          "edge": [
+            "dragon room",
+            "dragon's lair"
+          ],
+          "llm_dir": "north",
+          "in_gt": true,
+          "gt_dir": "north",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 45
+        },
+        {
+          "edge": [
+            "dragon room",
+            "ledge in ravine"
+          ],
+          "llm_dir": "east",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 50
+        },
+        {
+          "edge": [
+            "ledge in ravine",
+            "end of ledge"
+          ],
+          "llm_dir": "west",
+          "in_gt": true,
+          "gt_dir": "west",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 34
+        }
+      ],
+      "case_counts": {
+        "correct": 3,
+        "hallucinated_edge": 1
+      },
+      "root_cause": "overlap_mixed"
+    },
+    {
+      "type": "topology",
+      "description": "position (-1, 1, 1) occupied by multiple rooms ['dragon room', 'end of ledge', 'stone bridge']",
+      "involved_edges": [],
+      "involved_nodes": [
+        "dragon room",
+        "end of ledge",
+        "stone bridge"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "dragon room",
+            "stone bridge"
+          ],
+          "llm_dir": "south",
+          "in_gt": true,
+          "gt_dir": "south",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 36
+        },
+        {
+          "edge": [
+            "dragon room",
+            "dragon's lair"
+          ],
+          "llm_dir": "north",
+          "in_gt": true,
+          "gt_dir": "north",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 45
+        },
+        {
+          "edge": [
+            "dragon room",
+            "ledge in ravine"
+          ],
+          "llm_dir": "east",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 50
+        },
+        {
+          "edge": [
+            "ledge in ravine",
+            "end of ledge"
+          ],
+          "llm_dir": "west",
+          "in_gt": true,
+          "gt_dir": "west",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 34
+        },
+        {
+          "edge": [
+            "stone bridge",
+            "cool room"
+          ],
+          "llm_dir": "south",
+          "in_gt": true,
+          "gt_dir": "south",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 38
+        }
+      ],
+      "case_counts": {
+        "correct": 4,
+        "hallucinated_edge": 1
+      },
+      "root_cause": "overlap_mixed"
+    },
+    {
+      "type": "topology",
+      "description": "position (-1, 0, 1) occupied by multiple rooms ['cool room', 'stone bridge']",
+      "involved_edges": [],
+      "involved_nodes": [
+        "cool room",
+        "stone bridge"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "stone bridge",
+            "cool room"
+          ],
+          "llm_dir": "south",
+          "in_gt": true,
+          "gt_dir": "south",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 38
+        },
+        {
+          "edge": [
+            "cool room",
+            "ice room"
+          ],
+          "llm_dir": "west",
+          "in_gt": true,
+          "gt_dir": "west",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 40
+        },
+        {
+          "edge": [
+            "dragon room",
+            "stone bridge"
+          ],
+          "llm_dir": "south",
+          "in_gt": true,
+          "gt_dir": "south",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 36
+        }
+      ],
+      "case_counts": {
+        "correct": 3
+      },
+      "root_cause": "false_positive_overlap"
+    },
+    {
+      "type": "topology",
+      "description": "position (-1, 0, 2) occupied by multiple rooms ['cool room', 'stone bridge']",
+      "involved_edges": [],
+      "involved_nodes": [
+        "cool room",
+        "stone bridge"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "stone bridge",
+            "cool room"
+          ],
+          "llm_dir": "south",
+          "in_gt": true,
+          "gt_dir": "south",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 38
+        },
+        {
+          "edge": [
+            "cool room",
+            "ice room"
+          ],
+          "llm_dir": "west",
+          "in_gt": true,
+          "gt_dir": "west",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 40
+        },
+        {
+          "edge": [
+            "dragon room",
+            "stone bridge"
+          ],
+          "llm_dir": "south",
+          "in_gt": true,
+          "gt_dir": "south",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 36
+        }
+      ],
+      "case_counts": {
+        "correct": 3
+      },
+      "root_cause": "false_positive_overlap"
+    },
+    {
+      "type": "naming",
+      "description": "node 'carousel room' reachable at conflicting positions [(0, 0, 0), (0, 0, 1), (0, 1, 0), (0, 1, 1), (2, -1, 1), (4, -2, 1), (6, -3, 1)]",
+      "involved_edges": [],
+      "involved_nodes": [
+        "carousel room"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "path near stream",
+            "carousel room"
+          ],
+          "llm_dir": "southwest",
+          "in_gt": true,
+          "gt_dir": "southwest",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 12
+        },
+        {
+          "edge": [
+            "carousel room",
+            "topiary"
+          ],
+          "llm_dir": "north",
+          "in_gt": true,
+          "gt_dir": "north",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 13
+        },
+        {
+          "edge": [
+            "carousel room",
+            "marble hall"
+          ],
+          "llm_dir": "north",
+          "in_gt": false,
+          "gt_dir": "south",
+          "case": "swapped_src_dst",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 18
+        },
+        {
+          "edge": [
+            "carousel room",
+            "menhir room"
+          ],
+          "llm_dir": "southeast",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "dst_hallucinated",
+          "source_in_gt": true,
+          "target_in_gt": false,
+          "step": 67
+        }
+      ],
+      "case_counts": {
+        "correct": 2,
+        "swapped_src_dst": 1,
+        "dst_hallucinated": 1
+      },
+      "root_cause": "real_name_corrupted_by_neighbour_error"
+    },
+    {
+      "type": "naming",
+      "description": "node 'path near stream' reachable at conflicting positions [(-1, 2, 0), (1, 1, 0), (1, 1, 1), (1, 2, 0), (1, 2, 1), (3, 0, 1), (5, -1, 1)]",
+      "involved_edges": [],
+      "involved_nodes": [
+        "path near stream"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "formal garden",
+            "path near stream"
+          ],
+          "llm_dir": "west",
+          "in_gt": true,
+          "gt_dir": "west",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 11
+        },
+        {
+          "edge": [
+            "marble hall",
+            "path near stream"
+          ],
+          "llm_dir": "east",
+          "in_gt": true,
+          "gt_dir": "east",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 55
+        },
+        {
+          "edge": [
+            "path near stream",
+            "carousel room"
+          ],
+          "llm_dir": "southwest",
+          "in_gt": true,
+          "gt_dir": "southwest",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 12
+        }
+      ],
+      "case_counts": {
+        "correct": 3
+      },
+      "root_cause": "naming_collision_on_correct_subgraph"
+    },
+    {
+      "type": "naming",
+      "description": "node 'topiary' reachable at conflicting positions [(0, 1, 0), (0, 1, 1), (2, 0, 1), (4, -1, 1), (6, -2, 1)]",
+      "involved_edges": [],
+      "involved_nodes": [
+        "topiary"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "carousel room",
+            "topiary"
+          ],
+          "llm_dir": "north",
+          "in_gt": true,
+          "gt_dir": "north",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 13
+        },
+        {
+          "edge": [
+            "formal garden",
+            "topiary"
+          ],
+          "llm_dir": "south",
+          "in_gt": true,
+          "gt_dir": "south",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 63
+        }
+      ],
+      "case_counts": {
+        "correct": 2
+      },
+      "root_cause": "naming_collision_on_correct_subgraph"
+    },
+    {
+      "type": "naming",
+      "description": "node 'marble hall' reachable at conflicting positions [(0, 0, 1), (0, 1, 0), (0, 1, 1), (0, 2, 0), (0, 2, 1), (2, 0, 1), (4, -1, 1)]",
+      "involved_edges": [],
+      "involved_nodes": [
+        "marble hall"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "carousel room",
+            "marble hall"
+          ],
+          "llm_dir": "north",
+          "in_gt": false,
+          "gt_dir": "south",
+          "case": "swapped_src_dst",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 18
+        },
+        {
+          "edge": [
+            "deep ford",
+            "marble hall"
+          ],
+          "llm_dir": "south",
+          "in_gt": true,
+          "gt_dir": "south",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 52
+        },
+        {
+          "edge": [
+            "marble hall",
+            "ledge in ravine"
+          ],
+          "llm_dir": "up",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 20
+        },
+        {
+          "edge": [
+            "marble hall",
+            "path near stream"
+          ],
+          "llm_dir": "east",
+          "in_gt": true,
+          "gt_dir": "east",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 55
+        }
+      ],
+      "case_counts": {
+        "swapped_src_dst": 1,
+        "correct": 2,
+        "hallucinated_edge": 1
+      },
+      "root_cause": "real_name_corrupted_by_neighbour_error"
+    },
+    {
+      "type": "naming",
+      "description": "node 'menhir room' reachable at conflicting positions [(1, -1, 0), (1, -1, 1), (3, -2, 1), (5, -3, 1)]",
+      "involved_edges": [],
+      "involved_nodes": [
+        "menhir room"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "carousel room",
+            "menhir room"
+          ],
+          "llm_dir": "southeast",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "dst_hallucinated",
+          "source_in_gt": true,
+          "target_in_gt": false,
+          "step": 67
+        }
+      ],
+      "case_counts": {
+        "dst_hallucinated": 1
+      },
+      "root_cause": "name_hallucination"
+    },
+    {
+      "type": "naming",
+      "description": "node 'ledge in ravine' reachable at conflicting positions [(0, 1, 1), (0, 1, 2), (0, 1, 3), (0, 2, 1), (0, 2, 2), (0, 3, 2)]",
+      "involved_edges": [],
+      "involved_nodes": [
+        "ledge in ravine"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "marble hall",
+            "ledge in ravine"
+          ],
+          "llm_dir": "up",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 20
+        },
+        {
+          "edge": [
+            "tiny room",
+            "ledge in ravine"
+          ],
+          "llm_dir": "down",
+          "in_gt": true,
+          "gt_dir": "down",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 33
+        },
+        {
+          "edge": [
+            "dragon room",
+            "ledge in ravine"
+          ],
+          "llm_dir": "east",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 50
+        },
+        {
+          "edge": [
+            "ledge in ravine",
+            "dreary room"
+          ],
+          "llm_dir": "north",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 30
+        },
+        {
+          "edge": [
+            "ledge in ravine",
+            "end of ledge"
+          ],
+          "llm_dir": "west",
+          "in_gt": true,
+          "gt_dir": "west",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 34
+        },
+        {
+          "edge": [
+            "ledge in ravine",
+            "deep ford"
+          ],
+          "llm_dir": "down",
+          "in_gt": true,
+          "gt_dir": "down",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 51
+        }
+      ],
+      "case_counts": {
+        "hallucinated_edge": 3,
+        "correct": 3
+      },
+      "root_cause": "real_name_corrupted_by_neighbour_error"
+    },
+    {
+      "type": "naming",
+      "description": "node 'deep ford' reachable at conflicting positions [(0, 1, 0), (0, 1, 1), (0, 2, 0), (0, 2, 1), (0, 3, 0), (0, 3, 1)]",
+      "involved_edges": [],
+      "involved_nodes": [
+        "deep ford"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "ledge in ravine",
+            "deep ford"
+          ],
+          "llm_dir": "down",
+          "in_gt": true,
+          "gt_dir": "down",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 51
+        },
+        {
+          "edge": [
+            "deep ford",
+            "marble hall"
+          ],
+          "llm_dir": "south",
+          "in_gt": true,
+          "gt_dir": "south",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 52
+        }
+      ],
+      "case_counts": {
+        "correct": 2
+      },
+      "root_cause": "naming_collision_on_correct_subgraph"
+    },
+    {
+      "type": "naming",
+      "description": "node 'dreary room' reachable at conflicting positions [(0, 2, 1), (0, 2, 2), (0, 2, 3), (0, 3, 1), (0, 3, 2), (0, 3, 3)]",
+      "involved_edges": [],
+      "involved_nodes": [
+        "dreary room"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "ledge in ravine",
+            "dreary room"
+          ],
+          "llm_dir": "north",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 30
+        },
+        {
+          "edge": [
+            "dreary room",
+            "tiny room"
+          ],
+          "llm_dir": "south",
+          "in_gt": true,
+          "gt_dir": "south",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 32
+        }
+      ],
+      "case_counts": {
+        "hallucinated_edge": 1,
+        "correct": 1
+      },
+      "root_cause": "real_name_corrupted_by_neighbour_error"
+    },
+    {
+      "type": "naming",
+      "description": "node 'tiny room' reachable at conflicting positions [(0, 1, 2), (0, 1, 3), (0, 2, 1), (0, 2, 2), (0, 2, 3)]",
+      "involved_edges": [],
+      "involved_nodes": [
+        "tiny room"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "dreary room",
+            "tiny room"
+          ],
+          "llm_dir": "south",
+          "in_gt": true,
+          "gt_dir": "south",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 32
+        },
+        {
+          "edge": [
+            "tiny room",
+            "ledge in ravine"
+          ],
+          "llm_dir": "down",
+          "in_gt": true,
+          "gt_dir": "down",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 33
+        }
+      ],
+      "case_counts": {
+        "correct": 2
+      },
+      "root_cause": "naming_collision_on_correct_subgraph"
+    },
+    {
+      "type": "naming",
+      "description": "node 'end of ledge' reachable at conflicting positions [(-1, 1, 1), (-1, 1, 2), (-1, 2, 1), (-1, 2, 2)]",
+      "involved_edges": [],
+      "involved_nodes": [
+        "end of ledge"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "ledge in ravine",
+            "end of ledge"
+          ],
+          "llm_dir": "west",
+          "in_gt": true,
+          "gt_dir": "west",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 34
+        }
+      ],
+      "case_counts": {
+        "correct": 1
+      },
+      "root_cause": "naming_collision_on_correct_subgraph"
+    },
+    {
+      "type": "naming",
+      "description": "node 'dragon room' reachable at conflicting positions [(-1, 1, 1), (-1, 1, 2), (-1, 2, 1), (-1, 2, 2)]",
+      "involved_edges": [],
+      "involved_nodes": [
+        "dragon room"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "dragon room",
+            "stone bridge"
+          ],
+          "llm_dir": "south",
+          "in_gt": true,
+          "gt_dir": "south",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 36
+        },
+        {
+          "edge": [
+            "dragon room",
+            "dragon's lair"
+          ],
+          "llm_dir": "north",
+          "in_gt": true,
+          "gt_dir": "north",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 45
+        },
+        {
+          "edge": [
+            "dragon room",
+            "ledge in ravine"
+          ],
+          "llm_dir": "east",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 50
+        }
+      ],
+      "case_counts": {
+        "correct": 2,
+        "hallucinated_edge": 1
+      },
+      "root_cause": "real_name_corrupted_by_neighbour_error"
+    },
+    {
+      "type": "naming",
+      "description": "node 'stone bridge' reachable at conflicting positions [(-1, 0, 1), (-1, 0, 2), (-1, 1, 1), (-1, 1, 2)]",
+      "involved_edges": [],
+      "involved_nodes": [
+        "stone bridge"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "dragon room",
+            "stone bridge"
+          ],
+          "llm_dir": "south",
+          "in_gt": true,
+          "gt_dir": "south",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 36
+        },
+        {
+          "edge": [
+            "stone bridge",
+            "cool room"
+          ],
+          "llm_dir": "south",
+          "in_gt": true,
+          "gt_dir": "south",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 38
+        }
+      ],
+      "case_counts": {
+        "correct": 2
+      },
+      "root_cause": "naming_collision_on_correct_subgraph"
+    },
+    {
+      "type": "naming",
+      "description": "node \"dragon's lair\" reachable at conflicting positions [(-1, 2, 1), (-1, 2, 2), (-1, 3, 1), (-1, 3, 2)]",
+      "involved_edges": [],
+      "involved_nodes": [
+        "dragon's lair"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "dragon room",
+            "dragon's lair"
+          ],
+          "llm_dir": "north",
+          "in_gt": true,
+          "gt_dir": "north",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 45
+        }
+      ],
+      "case_counts": {
+        "correct": 1
+      },
+      "root_cause": "naming_collision_on_correct_subgraph"
+    },
+    {
+      "type": "naming",
+      "description": "node 'cool room' reachable at conflicting positions [(-1, -1, 1), (-1, -1, 2), (-1, 0, 1), (-1, 0, 2)]",
+      "involved_edges": [],
+      "involved_nodes": [
+        "cool room"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "stone bridge",
+            "cool room"
+          ],
+          "llm_dir": "south",
+          "in_gt": true,
+          "gt_dir": "south",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 38
+        },
+        {
+          "edge": [
+            "cool room",
+            "ice room"
+          ],
+          "llm_dir": "west",
+          "in_gt": true,
+          "gt_dir": "west",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 40
+        }
+      ],
+      "case_counts": {
+        "correct": 2
+      },
+      "root_cause": "naming_collision_on_correct_subgraph"
+    },
+    {
+      "type": "naming",
+      "description": "node 'ice room' reachable at conflicting positions [(-2, -1, 1), (-2, -1, 2), (-2, 0, 1), (-2, 0, 2)]",
+      "involved_edges": [],
+      "involved_nodes": [
+        "ice room"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "cool room",
+            "ice room"
+          ],
+          "llm_dir": "west",
+          "in_gt": true,
+          "gt_dir": "west",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 40
+        }
+      ],
+      "case_counts": {
+        "correct": 1
+      },
+      "root_cause": "naming_collision_on_correct_subgraph"
+    },
+    {
+      "type": "naming",
+      "description": "node 'formal garden' reachable at conflicting positions [(0, 2, 0), (2, 1, 0), (2, 1, 1), (4, 0, 1), (6, -1, 1)]",
+      "involved_edges": [],
+      "involved_nodes": [
+        "formal garden"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "north end of garden",
+            "formal garden"
+          ],
+          "llm_dir": "south",
+          "in_gt": true,
+          "gt_dir": "south",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 10
+        },
+        {
+          "edge": [
+            "formal garden",
+            "path near stream"
+          ],
+          "llm_dir": "west",
+          "in_gt": true,
+          "gt_dir": "west",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 11
+        },
+        {
+          "edge": [
+            "formal garden",
+            "topiary"
+          ],
+          "llm_dir": "south",
+          "in_gt": true,
+          "gt_dir": "south",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 63
+        }
+      ],
+      "case_counts": {
+        "correct": 3
+      },
+      "root_cause": "naming_collision_on_correct_subgraph"
+    },
+    {
+      "type": "naming",
+      "description": "node 'north end of garden' reachable at conflicting positions [(0, 3, 0), (2, 2, 1), (4, 1, 1), (6, 0, 1)]",
+      "involved_edges": [],
+      "involved_nodes": [
+        "north end of garden"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "dark tunnel",
+            "north end of garden"
+          ],
+          "llm_dir": "southeast",
+          "in_gt": true,
+          "gt_dir": "southeast",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 7
+        },
+        {
+          "edge": [
+            "gazebo",
+            "north end of garden"
+          ],
+          "llm_dir": "out",
+          "in_gt": true,
+          "gt_dir": "out",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 9
+        },
+        {
+          "edge": [
+            "north end of garden",
+            "formal garden"
+          ],
+          "llm_dir": "south",
+          "in_gt": true,
+          "gt_dir": "south",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 10
+        }
+      ],
+      "case_counts": {
+        "correct": 3
+      },
+      "root_cause": "naming_collision_on_correct_subgraph"
+    },
+    {
+      "type": "naming",
+      "description": "node 'dark tunnel' reachable at conflicting positions [(-1, 4, 0), (1, 3, 1), (3, 2, 1), (5, 1, 1)]",
+      "involved_edges": [],
+      "involved_nodes": [
+        "dark tunnel"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "dark tunnel",
+            "north end of garden"
+          ],
+          "llm_dir": "southeast",
+          "in_gt": true,
+          "gt_dir": "southeast",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 7
+        }
+      ],
+      "case_counts": {
+        "correct": 1
+      },
+      "root_cause": "naming_collision_on_correct_subgraph"
+    }
+  ],
+  "walkthrough_steps_available": 71
+}

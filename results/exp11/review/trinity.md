@@ -1,0 +1,36 @@
+# Review: trinity
+
+- Source steps: 611
+- Kept steps: 247
+- Skipped non-canonical actions: 364
+  - distribution: {'Init': 1, 'inventory': 3, 'examine watch': 3, 'take coin': 3, 'examine coin': 1, 'examine memorial': 1, 'examine blossoms': 1, 'take ball': 2, 'examine sundial': 3, 'examine gnomon': 1, 'unscrew gnomon': 1, 'take gnomon': 2, 'examine woman': 3, 'examine pigeons': 1, 'buy bag': 2, 'take bag': 3, 'feed birds': 2, 'take ruby': 3, 'ask woman about roadrunner': 2, 'ask woman about ruby': 2, 'examine boats': 2, 'take bird': 1, 'examine bird': 1, 'open bird': 2, 'read paper': 2, 'examine pram': 1, 'open pram': 2, 'look in pram': 1, 'push pram east': 4, 'examine boy': 2, 'throw ball at umbrella': 1, 'take umbrella': 3, 'push pram south': 1, 'examine notice': 1, 'enter pram': 1, 'open umbrella': 2, 'take all but pram': 1, 'examine statue': 1, 'examine missile': 1, 'fold paper': 1, 'examine meteor': 1, 'put paper in pocket': 1, 'put coin in pocket': 1, 'take card': 1, 'read card': 1, 'put card in pocket': 1, 'examine toadstools': 1, 'examine log': 1, 'take log': 1, 'examine splinter': 1, 'take splinter': 2, 'drop bag': 3, 'drop umbrella': 2, 'examine shadow': 1, 'examine symbols': 1, 'examine rose': 1, 'examine hole': 2, 'examine ring': 1, 'put gnomon in hole': 2, 'examine sculpture': 1, 'reach in sculpture': 1, 'take axe': 3, 'examine axe': 1, 'push lever': 1, 'turn ring': 1, 'examine flytrap': 2, 'examine tree': 2, 'examine chasm': 1, 'examine mesa': 1, 'examine toadstool': 2, 'chop tree': 1, 'push tree north': 1, 'drop axe': 3, 'examine waterfall': 1, 'enter waterfall': 1, 'search waterfall': 1, 'examine icicles': 1, 'hit icicle with umbrella': 1, 'take icicle': 1, 'put icicle on lump': 1, 'take lump': 2, 'examine lump': 1, 'examine hive': 1, 'drop lump': 1, 'examine crypt': 1, 'read crypt': 1, 'open crypt': 1, 'examine statues': 1, 'examine barrow': 1, 'examine wight': 1, 'examine door': 2, 'examine bones': 1, 'search bones': 1, 'take key': 2, 'examine key': 1, 'put key in hole': 1, 'turn key': 2, 'examine bubble': 1, 'examine wand': 1, 'examine dish': 1, 'examine headphones': 1, 'talk to boy': 1, 'examine cottage': 1, 'knock on door': 1, 'open door': 3, 'examine map': 1, 'examine cauldron': 1, 'look in cauldron': 2, 'smell': 1, 'examine book': 1, 'read book': 2, 'examine pedestal': 1, 'turn page': 1, 'examine magpie': 1, 'examine cage': 1, 'wait': 31, 'open cage': 2, 'take cage': 2, 'open back door': 1, 'examine herbs': 1, 'examine fence': 1, 'examine thyme': 1, 'take thyme': 1, 'examine refuse': 1, 'search refuse': 1, 'take garlic': 2, 'examine garlic': 1, 'examine white door': 1, 'put hand in hive': 2, 'put honey in cauldron': 1, 'put hand in cauldron': 1, 'drop garlic': 1, 'drop birdcage': 1, 'drop splinter': 1, 'turn ring to sixth symbol': 1, 'enter door': 8, 'take all': 3, 'examine teachers': 1, 'examine children': 1, 'examine spade': 1, 'take spade': 1, 'give umbrella to girl': 1, 'give paper to girl': 1, 'ride bird': 1, 'open lid with spade': 1, 'look in crypt': 1, 'examine corpse': 2, 'examine bandage': 1, 'take bandage': 1, 'examine mouth': 1, 'take silver coin': 1, 'examine silver coin': 1, 'put silver coin in pocket': 1, 'examine boots': 1, 'take boots': 1, 'wear boots': 1, 'examine shroud': 1, 'take shroud': 2, 'kiss corpse': 1, 'drop shroud': 2, 'drop bandage': 1, 'drop spade': 1, 'turn ring to third symbol': 1, 'examine cylinder': 1, 'take lantern': 2, 'turn on lantern': 2, 'drop lantern': 2, 'put splinter into crevice': 1, 'take skink': 3, 'put skink in pocket': 1, 'turn off lantern': 1, 'examine walkie': 1, 'drop walkie': 2, 'turn ring to second symbol': 1, 'enter dish': 1, 'kill skink': 1, 'examine satellite': 1, 'examine stars': 1, 'break bubble with axe': 1, 'drop skink': 1, 'turn ring to fourth symbol': 1, 'open box': 1, 'examine switch': 1, 'push switch': 1, 'push button': 1, 'examine islet': 1, 'examine crabs': 1, 'examine fin': 1, 'look': 1, 'examine coconuts': 1, 'point at coconut': 1, 'examine tide': 3, 'point to coconut': 1, 'take coconut': 2, 'drop coconut': 2, 'cut coconut with axe': 1, 'pour milk in cauldron': 1, 'put skink in cauldron': 1, 'put garlic in cauldron': 1, 'examine emerald': 1, 'take emerald': 1, 'put emerald in green boot': 1, 'turn ring to fifth symbol': 1, 'enter white door': 1, 'look in fissure': 1, 'take lemming': 1, 'put lemming in cage': 1, 'close cage': 1, 'examine lemming': 1, 'wear shroud': 1, 'take walkie': 1, 'turn ring to seventh symbol': 1, 'enter dory': 1, 'give silver coin to oarsman': 1, 'open book': 1, 'take slip': 1, 'examine slip': 1, 'examine diagram': 1, 'drop slip': 1, 'put ruby in red boot': 1, 'open jeep': 1, 'examine radio': 1, 'examine dial': 1, 'set slider to 31': 1, 'pull antenna': 1, 'turn on walkie': 1, 'open gate': 1, 'take knife': 1, 'close door': 1, 'drop cage': 1, 'search workbench': 1, 'take screwdriver': 1, 'open front door': 1, 'take binoculars': 1, 'take all but lantern': 1, 'look through binoculars at shelter': 1, 'point to key': 1, 'examine thin man': 1, 'unlock box with key': 1, 'examine panel': 2, 'pull breaker': 1, 'close breaker': 1, 'examine dog': 1, 'examine searchlight': 1, 'examine enclosure': 1, 'unscrew panel': 1, 'look in panel': 2, 'turn on bulb': 1, 'cut blue wire': 1, 'turn gnomon': 1, 'give card to woman': 1, 'take paper bird': 1, 'take dish': 1, '': 1}
+- Synthetic lines removed: 0
+- GT edges: 20
+- GT distinct step indices: 12
+- Kept steps matched to a GT-step: 11/247
+- Unmapped kept steps: 236
+- Synthetic-text leaks in kept steps: 0
+
+
+## Unmapped kept steps (action ∈ canonical but no GT edge cites step) — first 20
+
+- new step 5 (orig 42): --[east]--> 'as your feet touch the grass you sense a strange motion around you. looking down, you watch with horror as the grass begins to ripple and writhe with vegetable indignance!'
+- new step 7 (orig 49): --[east]--> 'as you wade to the threshold a familiar roadrunner flutters past. the ruby in its beak gleams enticingly as it slips through the white door'
+- new step 13 (orig 78): --[down]--> 'fighting back fear, you descend the stairway'
+- new step 14 (orig 79): --[down]--> 'the air grows warmer as you continue your descent'
+- new step 15 (orig 80): --[south]--> 'trellises'
+- new step 16 (orig 81): --[southwest]--> 'arborvitaes'
+- new step 17 (orig 82): --[east]--> 'arboretum'
+- new step 18 (orig 85): --[north]--> 'you ascend the north side of the pergola'
+- new step 19 (orig 86): --[up]--> 'the floor twists alarmingly as you continue your ascent'
+- new step 20 (orig 89): --[south]--> 'south arbor'
+- new step 21 (orig 90): --[down]--> 'the floor twists alarmingly as you descend'
+- new step 22 (orig 91): --[west]--> 'arborvitaes'
+- new step 23 (orig 92): --[northeast]--> 'trellises'
+- new step 24 (orig 93): --[north]--> 'bottom of stairs'
+- new step 25 (orig 94): --[up]--> 'with a fearful gulp, you ascend the narrow stairway'
+- new step 26 (orig 95): --[up]--> 'the air grows colder as you continue your ascent'
+- new step 27 (orig 99): --[down]--> 'fighting back fear, you descend the stairway'
+- new step 28 (orig 100): --[down]--> 'the air grows warmer as you continue your descent'
+- new step 29 (orig 101): --[south]--> 'trellises'
+- new step 30 (orig 102): --[southwest]--> 'arborvitaes'

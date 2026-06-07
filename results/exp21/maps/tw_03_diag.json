@@ -1,0 +1,63 @@
+{
+  "buckets": {
+    "CORRECT": 8,
+    "WRONG_DIRECTION": 0,
+    "WRONG_DST": 0,
+    "SPURIOUS_PAIR": 0,
+    "HALLUCINATED_DST": 0,
+    "HALLUCINATED_SRC": 0
+  },
+  "samples": {
+    "CORRECT": [
+      {
+        "src_node": "pantry",
+        "dst_node": "cookhouse",
+        "action": "south",
+        "step_num": 2,
+        "gt_src": "pantry",
+        "gt_dst": "cookhouse"
+      },
+      {
+        "src_node": "cookhouse",
+        "dst_node": "parlor",
+        "action": "east",
+        "step_num": 5,
+        "gt_src": "kitchenette",
+        "gt_dst": "cellar"
+      },
+      {
+        "src_node": "parlor",
+        "dst_node": "cookhouse",
+        "action": "west",
+        "step_num": 6,
+        "gt_src": "cellar",
+        "gt_dst": "kitchenette"
+      },
+      {
+        "src_node": "cookhouse",
+        "dst_node": "pantry",
+        "action": "north",
+        "step_num": 7,
+        "gt_src": "kitchenette",
+        "gt_dst": "bedchamber"
+      },
+      {
+        "src_node": "pantry",
+        "dst_node": "shower",
+        "action": "east",
+        "step_num": 9,
+        "gt_src": "cookhouse",
+        "gt_dst": "parlor"
+      }
+    ],
+    "WRONG_DIRECTION": [],
+    "WRONG_DST": [],
+    "SPURIOUS_PAIR": [],
+    "HALLUCINATED_DST": [],
+    "HALLUCINATED_SRC": []
+  },
+  "n_gt_edges": 22,
+  "n_pred_edges": 8,
+  "gt_edge_recall": 0.3181818181818182,
+  "gt_pair_recall": 0.3181818181818182
+}

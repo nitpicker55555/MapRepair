@@ -1,0 +1,16 @@
+{
+  "game": "plundered",
+  "num_conflicts": 24,
+  "iterations": 6,
+  "success": false,
+  "remaining_conflicts": 16,
+  "pre_edge_recall": 0.5,
+  "pre_strict_direction_match": 0.5,
+  "pre_edge_direction_accuracy": 1.0,
+  "post_edge_recall": 0.5,
+  "post_strict_direction_match": 0.4,
+  "post_permissive_direction_match": 0.8,
+  "post_edge_direction_accuracy": 0.8,
+  "edge_recall_delta": 0.0,
+  "strict_direction_delta": -0.09999999999999998
+}

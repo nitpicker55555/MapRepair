@@ -1,0 +1,109 @@
+===========
+==>STEP NUM: 0
+==>ACT: out
+==>OBSERVATION: Grasslands, near Hut
+The grasslands sway over low hills in all directions: it is a peaceful wilderness, broken only by this hut and a faint path to the north.
+===========
+==>STEP NUM: 1
+==>ACT: north
+==>OBSERVATION: Pocket Valley
+A pleasant pocket valley in the grassy hills, through which a trail runs north-to-south.
+There is a chestnut horse here, munching on a pile of oats.
+===========
+==>STEP NUM: 2
+==>ACT: north
+==>OBSERVATION: Crest of Hill
+The road crosses the top of a ridge here, sloping downwards to the south and the northwest. A track diverges to east.
+
+A tortoise ambles along the road, extremely slowly.
+===========
+==>STEP NUM: 3
+==>ACT: northwest
+==>OBSERVATION: Cave Mouth
+This is a cave mouth, at one end of a road which winds southeast over rising ground. The entrance west to the caves is a dark tunnel, and only a footpath runs further north, into gorse.
+A heavy iron door bars the cave mouth.
+
+Clotted in the mud beside the door is a perfect sapphire.
+===========
+==>STEP NUM: 4
+==>ACT: north
+==>OBSERVATION: Gorse Bushes
+The footpath from the cave mouth runs into dense, impenetrable gorse bushes. Perhaps it wasn't so much a footpath as a rill in the earth where roots wouldn't take; anyway, there's no way but back south.
+
+Slung over one of the gorse bushes is a beautiful red carpet.
+===========
+==>STEP NUM: 5
+==>ACT: south
+==>OBSERVATION: Cave Mouth
+A heavy iron door bars the cave mouth.
+===========
+==>STEP NUM: 6
+==>ACT: west
+==>OBSERVATION: Darkness
+It is pitch black. You are likely to be eaten by a grue.
+===========
+==>STEP NUM: 7
+==>ACT: east
+==>OBSERVATION: Cave Mouth
+
+The iron door stands open.
+===========
+==>STEP NUM: 8
+==>ACT: southeast
+==>OBSERVATION: Crest of Hill
+===========
+==>STEP NUM: 9
+==>ACT: south
+==>OBSERVATION: Edge of Chasm
+
+Lying in a tight coil at the edge of the chasm is a hissing snake.
+
+The snake appears to be curled around a featureless white cube.
+===========
+==>STEP NUM: 10
+==>ACT: east
+==>OBSERVATION: Track, outside Temple
+This is the end of a long track winding through desolate hills, which runs back west up to the ridge.
+
+You stand outside an enormous temple in the shape of a perfect, featureless white cube, four hundred feet on a side. From somewhere within you hear the tiny sound of the monks chanting.
+===========
+==>STEP NUM: 11
+==>ACT: west
+==>OBSERVATION: Crest of Hill
+===========
+==>STEP NUM: 12
+==>ACT: northwest
+==>OBSERVATION: Cave Mouth
+
+The iron door stands open.
+===========
+==>STEP NUM: 13
+==>ACT: west
+==>OBSERVATION: Inside Cave
+
+The iron door stands open.
+
+A fair-sized pair of scales hangs from a bracket in the cave wall. The scales are balanced.
+
+On the right pan are three gold coins.
+
+On the left pan are a silver coin (providing light) and two gold coins.
+===========
+==>STEP NUM: 14
+==>ACT: east
+==>OBSERVATION: Cave Mouth
+
+The iron door stands open.
+===========
+==>STEP NUM: 15
+==>ACT: southeast
+==>OBSERVATION: Crest of Hill
+===========
+==>STEP NUM: 16
+==>ACT: east
+==>OBSERVATION: Track, outside Temple
+
+You stand outside an enormous temple in the shape of a perfect, featureless white cube, four hundred feet on a side. From somewhere within you hear the tiny sound of the monks chanting.
+
+Far above you, a tortoise flaps across the sun.
+===========

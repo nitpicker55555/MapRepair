@@ -1,0 +1,8 @@
+# partyfoul  model=gpt-4.1  n_steps=7  (exp14 bootstrap-fixed)
+step   0 BOOTSTRAP seed current_loc='guest room' (src missing, dst valid)
+step   1 MOVE 'guest room' --[east]--> 'living room'
+step   2 MOVE 'living room' --[north]--> 'den'
+step   3 MOVE 'den' --[west]--> 'kitchen'
+step   4 MOVE 'kitchen' --[east]--> 'den'
+step   5 MOVE 'den' --[south]--> 'living room'
+step   6 MOVE 'living room' --[northwest]--> 'kitchen'

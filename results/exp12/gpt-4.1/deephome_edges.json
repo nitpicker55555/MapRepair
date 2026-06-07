@@ -1,0 +1,242 @@
+[
+  {
+    "src_node": "main hall",
+    "dst_node": "n. main street",
+    "action": "south",
+    "seen_in_forward": 2
+  },
+  {
+    "src_node": "n. main street",
+    "dst_node": "s. main street",
+    "action": "south",
+    "seen_in_forward": 3
+  },
+  {
+    "src_node": "s. main street",
+    "dst_node": "intersection",
+    "action": "south",
+    "seen_in_forward": 4
+  },
+  {
+    "src_node": "intersection",
+    "dst_node": "extreme south main street",
+    "action": "south",
+    "seen_in_forward": 5
+  },
+  {
+    "src_node": "extreme south main street",
+    "dst_node": "mining center",
+    "action": "south",
+    "seen_in_forward": 6
+  },
+  {
+    "src_node": "mining center",
+    "dst_node": "ore mines",
+    "action": "south",
+    "seen_in_forward": 7
+  },
+  {
+    "src_node": "ore mines",
+    "dst_node": "mining center",
+    "action": "north",
+    "seen_in_forward": 8
+  },
+  {
+    "src_node": "mining center",
+    "dst_node": "coal mines",
+    "action": "east",
+    "seen_in_forward": 9
+  },
+  {
+    "src_node": "coal mines",
+    "dst_node": "mining center",
+    "action": "west",
+    "seen_in_forward": 10
+  },
+  {
+    "src_node": "mining center",
+    "dst_node": "extreme south main street",
+    "action": "north",
+    "seen_in_forward": 11
+  },
+  {
+    "src_node": "extreme south main street",
+    "dst_node": "city generator",
+    "action": "east",
+    "seen_in_forward": 12
+  },
+  {
+    "src_node": "city generator",
+    "dst_node": "extreme south main street",
+    "action": "west",
+    "seen_in_forward": 13
+  },
+  {
+    "src_node": "extreme south main street",
+    "dst_node": "intersection",
+    "action": "north",
+    "seen_in_forward": 14
+  },
+  {
+    "src_node": "intersection",
+    "dst_node": "s. main street",
+    "action": "north",
+    "seen_in_forward": 15
+  },
+  {
+    "src_node": "s. main street",
+    "dst_node": "n. main street",
+    "action": "north",
+    "seen_in_forward": 16
+  },
+  {
+    "src_node": "n. main street",
+    "dst_node": "main hall",
+    "action": "north",
+    "seen_in_forward": 17
+  },
+  {
+    "src_node": "main hall",
+    "dst_node": "railway station (main hall)",
+    "action": "west",
+    "seen_in_forward": 18
+  },
+  {
+    "src_node": "railway station (main hall)",
+    "dst_node": "railway station (smithy court)",
+    "action": "out",
+    "seen_in_forward": 19
+  },
+  {
+    "src_node": "railway station (smithy court)",
+    "dst_node": "smithy court",
+    "action": "northwest",
+    "seen_in_forward": 20
+  },
+  {
+    "src_node": "smithy court",
+    "dst_node": "blacksmith",
+    "action": "southwest",
+    "seen_in_forward": 21
+  },
+  {
+    "src_node": "blacksmith",
+    "dst_node": "smithy court",
+    "action": "northeast",
+    "seen_in_forward": 22
+  },
+  {
+    "src_node": "smithy court",
+    "dst_node": "silversmith",
+    "action": "west",
+    "seen_in_forward": 23
+  },
+  {
+    "src_node": "silversmith",
+    "dst_node": "smithy court",
+    "action": "east",
+    "seen_in_forward": 24
+  },
+  {
+    "src_node": "smithy court",
+    "dst_node": "carpenter's shop",
+    "action": "northwest",
+    "seen_in_forward": 25
+  },
+  {
+    "src_node": "carpenter's shop",
+    "dst_node": "smithy court",
+    "action": "southeast",
+    "seen_in_forward": 26
+  },
+  {
+    "src_node": "smithy court",
+    "dst_node": "common forge",
+    "action": "north",
+    "seen_in_forward": 27
+  },
+  {
+    "src_node": "common forge",
+    "dst_node": "smithy court",
+    "action": "south",
+    "seen_in_forward": 28
+  },
+  {
+    "src_node": "smithy court",
+    "dst_node": "slag pit",
+    "action": "northeast",
+    "seen_in_forward": 29
+  },
+  {
+    "src_node": "slag pit",
+    "dst_node": "smithy court",
+    "action": "southwest",
+    "seen_in_forward": 30
+  },
+  {
+    "src_node": "smithy court",
+    "dst_node": "goldsmith",
+    "action": "east",
+    "seen_in_forward": 31
+  },
+  {
+    "src_node": "goldsmith",
+    "dst_node": "smithy court",
+    "action": "west",
+    "seen_in_forward": 32
+  },
+  {
+    "src_node": "smithy court",
+    "dst_node": "railway station (smithy court)",
+    "action": "southeast",
+    "seen_in_forward": 33
+  },
+  {
+    "src_node": "railway station (smithy court)",
+    "dst_node": "soldiers' barracks",
+    "action": "west",
+    "seen_in_forward": 34
+  },
+  {
+    "src_node": "soldiers' barracks",
+    "dst_node": "training grounds",
+    "action": "southwest",
+    "seen_in_forward": 35
+  },
+  {
+    "src_node": "training grounds",
+    "dst_node": "waterfall",
+    "action": "southwest",
+    "seen_in_forward": 36
+  },
+  {
+    "src_node": "waterfall",
+    "dst_node": "training grounds",
+    "action": "northeast",
+    "seen_in_forward": 37
+  },
+  {
+    "src_node": "training grounds",
+    "dst_node": "soldiers' barracks",
+    "action": "northeast",
+    "seen_in_forward": 38
+  },
+  {
+    "src_node": "soldiers' barracks",
+    "dst_node": "armory",
+    "action": "west",
+    "seen_in_forward": 39
+  },
+  {
+    "src_node": "armory",
+    "dst_node": "soldiers' barracks",
+    "action": "east",
+    "seen_in_forward": 40
+  },
+  {
+    "src_node": "soldiers' barracks",
+    "dst_node": "mess hall",
+    "action": "south",
+    "seen_in_forward": 41
+  }
+]

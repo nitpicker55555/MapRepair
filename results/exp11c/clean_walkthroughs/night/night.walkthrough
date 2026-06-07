@@ -1,0 +1,162 @@
+===========
+==>STEP NUM: 0
+==>ACT: northeast
+==>OBSERVATION: Hall Outside Computer Site
+This is the north end of the third floor of Hodges Hall.  To the southwest is the entrance to the Computer Site, and to the east are stairs up to the fourth floor.  Stairs down to lower floors are to the west.
+
+To one side, a water fountain hums quietly.
+===========
+==>STEP NUM: 1
+==>ACT: south
+==>OBSERVATION: Hall
+You're in the middle of a long north-south hallway in Hodges Hall.  You can go east here as well as north or south.
+===========
+==>STEP NUM: 2
+==>ACT: east
+==>OBSERVATION: Hall Outside Elevator
+You're in a short east-west hall off the main hall.  You can see an elevator here.
+
+There's a sign on the elevator.
+
+You see a box mounted on the wall in one corner.
+===========
+==>STEP NUM: 3
+==>ACT: west
+==>OBSERVATION: Hall
+===========
+==>STEP NUM: 4
+==>ACT: north
+==>OBSERVATION: Hall Outside Computer Site
+
+To one side, a water fountain hums quietly.
+===========
+==>STEP NUM: 5
+==>ACT: west
+==>OBSERVATION: Stairwell (Third Floor)
+You're in the north stairwell.  Stairs lead down.  There is a door to the east.
+===========
+==>STEP NUM: 6
+==>ACT: down
+==>OBSERVATION: Stairwell (Second Floor)
+You're in the north stairwell.  Stairs lead up and down.  There is a door to the east.
+===========
+==>STEP NUM: 7
+==>ACT: down
+==>OBSERVATION: Stairwell (First Floor)
+You're in the north stairwell.  Stairs lead up, and dark, foreboding stairs lead down.  There is a door to the east.
+===========
+==>STEP NUM: 8
+==>ACT: east
+==>OBSERVATION: Hall
+You're at the north end of a long hall on the first floor of Hodges.  There are stairs to the west.
+
+To one side, a water fountain hums quietly.
+===========
+==>STEP NUM: 9
+==>ACT: south
+==>OBSERVATION: Hall
+You're in the middle of a long north/south hall.  You can go east here as well as north or south.
+===========
+==>STEP NUM: 10
+==>ACT: east
+==>OBSERVATION: Hall Outside Elevator
+You're in a short east-west hall off the main hall.  You can see an elevator here.  (They forgot the sign, but it's still out of order.)
+
+There is a door on the south wall.
+===========
+==>STEP NUM: 11
+==>ACT: south
+==>OBSERVATION: Janitor's Closet
+Boy, what a mess.  Buckets, pails, gigantic mops, dust cloths, brooms, cleaning solutions, etc. etc. etc., are scattered about with no semblance of order.  It rather resembles your apartment (the level of organization, not the contents).  You manage to squeeze into it.  After a few moments of looking, you think you hear something on the other side of the south wall.
+
+The door on the north wall is open.
+===========
+==>STEP NUM: 12
+==>ACT: north
+==>OBSERVATION: Hall Outside Elevator
+
+The door on the south wall is open, leading to a janitor's closet.
+===========
+==>STEP NUM: 13
+==>ACT: west
+==>OBSERVATION: Hall
+===========
+==>STEP NUM: 14
+==>ACT: north
+==>OBSERVATION: Hall
+
+To one side, a water fountain hums quietly.
+===========
+==>STEP NUM: 15
+==>ACT: west
+==>OBSERVATION: Stairwell (First Floor)
+===========
+==>STEP NUM: 16
+==>ACT: up
+==>OBSERVATION: Stairwell (Second Floor)
+===========
+==>STEP NUM: 17
+==>ACT: east
+==>OBSERVATION: Outside Physics Office
+You're at the north end of a long north/south hall, outside the Physics Office.  You hear a faint humming.  There are stairs to the west.
+===========
+==>STEP NUM: 18
+==>ACT: south
+==>OBSERVATION: Hall
+You're in the middle of a long north/south hall. You can go east here as well as north or south.
+
+To one side, a water fountain buzzes noisily.
+===========
+==>STEP NUM: 19
+==>ACT: east
+==>OBSERVATION: Maze of Twisty Passages
+You are in a maze of twisty little passages, all alike.
+===========
+==>STEP NUM: 20
+==>ACT: west
+==>OBSERVATION: Maze of Twisty Passages
+===========
+==>STEP NUM: 21
+==>ACT: west
+==>OBSERVATION: Maze of Twisty Passages
+===========
+==>STEP NUM: 22
+==>ACT: east
+==>OBSERVATION: Maze of Twisty Passages
+===========
+==>STEP NUM: 23
+==>ACT: west
+==>OBSERVATION: Maze of Twisty Passages
+===========
+==>STEP NUM: 24
+==>ACT: up
+==>OBSERVATION: Hall
+
+To one side, a buzzing water fountain has been moved, revealing an open panel and a dark, sinister hole leading down.
+===========
+==>STEP NUM: 25
+==>ACT: north
+==>OBSERVATION: Outside Physics Office
+===========
+==>STEP NUM: 26
+==>ACT: west
+==>OBSERVATION: Stairwell (Second Floor)
+===========
+==>STEP NUM: 27
+==>ACT: up
+==>OBSERVATION: Stairwell (Third Floor)
+===========
+==>STEP NUM: 28
+==>ACT: east
+==>OBSERVATION: Hall Outside Computer Site
+
+To one side, a water fountain hums quietly.
+===========
+==>STEP NUM: 29
+==>ACT: southwest
+==>OBSERVATION: Computer Site
+===========
+==>STEP NUM: 30
+==>ACT: down
+==>OBSERVATION: Maze of Twisty Passages
+===========

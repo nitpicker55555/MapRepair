@@ -1,0 +1,320 @@
+[
+  {
+    "game": "905",
+    "n_steps": 4,
+    "n_edges": 2,
+    "elapsed_sec": 10.90746808052063
+  },
+  {
+    "game": "balances",
+    "n_steps": 11,
+    "n_edges": 9,
+    "elapsed_sec": 19.511292219161987
+  },
+  {
+    "game": "afflicted",
+    "n_steps": 19,
+    "n_edges": 18,
+    "elapsed_sec": 38.83621406555176
+  },
+  {
+    "game": "awaken",
+    "n_steps": 22,
+    "n_edges": 20,
+    "elapsed_sec": 44.37152099609375
+  },
+  {
+    "game": "adventureland",
+    "n_steps": 23,
+    "n_edges": 22,
+    "elapsed_sec": 48.71120309829712
+  },
+  {
+    "game": "ballyhoo",
+    "n_steps": 26,
+    "n_edges": 23,
+    "elapsed_sec": 50.32434606552124
+  },
+  {
+    "game": "anchor",
+    "n_steps": 30,
+    "n_edges": 27,
+    "elapsed_sec": 56.85474991798401
+  },
+  {
+    "game": "curses",
+    "n_steps": 25,
+    "n_edges": 23,
+    "elapsed_sec": 46.99499869346619
+  },
+  {
+    "game": "advent",
+    "n_steps": 41,
+    "n_edges": 38,
+    "elapsed_sec": 79.92938899993896
+  },
+  {
+    "game": "hhgg",
+    "n_steps": 3,
+    "n_edges": 1,
+    "elapsed_sec": 4.839226961135864
+  },
+  {
+    "game": "gold",
+    "n_steps": 22,
+    "n_edges": 18,
+    "elapsed_sec": 39.696829319000244
+  },
+  {
+    "game": "enter",
+    "n_steps": 23,
+    "n_edges": 21,
+    "elapsed_sec": 40.967918157577515
+  },
+  {
+    "game": "enchanter",
+    "n_steps": 28,
+    "n_edges": 23,
+    "elapsed_sec": 51.45240592956543
+  },
+  {
+    "game": "huntdark",
+    "n_steps": 4,
+    "n_edges": 3,
+    "elapsed_sec": 4.887167930603027
+  },
+  {
+    "game": "dragon",
+    "n_steps": 32,
+    "n_edges": 31,
+    "elapsed_sec": 56.97589087486267
+  },
+  {
+    "game": "cutthroat",
+    "n_steps": 41,
+    "n_edges": 33,
+    "elapsed_sec": 88.72469711303711
+  },
+  {
+    "game": "hollywood",
+    "n_steps": 18,
+    "n_edges": 17,
+    "elapsed_sec": 29.829260110855103
+  },
+  {
+    "game": "detective",
+    "n_steps": 36,
+    "n_edges": 31,
+    "elapsed_sec": 74.05697178840637
+  },
+  {
+    "game": "deephome",
+    "n_steps": 42,
+    "n_edges": 40,
+    "elapsed_sec": 82.31106209754944
+  },
+  {
+    "game": "library",
+    "n_steps": 12,
+    "n_edges": 10,
+    "elapsed_sec": 22.426880598068237
+  },
+  {
+    "game": "lostpig",
+    "n_steps": 7,
+    "n_edges": 4,
+    "elapsed_sec": 12.645529985427856
+  },
+  {
+    "game": "moonlit",
+    "n_steps": 6,
+    "n_edges": 4,
+    "elapsed_sec": 10.796302080154419
+  },
+  {
+    "game": "loose",
+    "n_steps": 18,
+    "n_edges": 15,
+    "elapsed_sec": 30.19916605949402
+  },
+  {
+    "game": "jewel",
+    "n_steps": 28,
+    "n_edges": 26,
+    "elapsed_sec": 48.05577206611633
+  },
+  {
+    "game": "infidel",
+    "n_steps": 29,
+    "n_edges": 27,
+    "elapsed_sec": 54.697497844696045
+  },
+  {
+    "game": "inhumane",
+    "n_steps": 30,
+    "n_edges": 28,
+    "elapsed_sec": 53.44208216667175
+  },
+  {
+    "game": "karn",
+    "n_steps": 26,
+    "n_edges": 24,
+    "elapsed_sec": 53.673316955566406
+  },
+  {
+    "game": "lurking",
+    "n_steps": 18,
+    "n_edges": 16,
+    "elapsed_sec": 33.37730312347412
+  },
+  {
+    "game": "partyfoul",
+    "n_steps": 7,
+    "n_edges": 6,
+    "elapsed_sec": 15.503061056137085
+  },
+  {
+    "game": "ludicorp",
+    "n_steps": 37,
+    "n_edges": 35,
+    "elapsed_sec": 65.52169609069824
+  },
+  {
+    "game": "pentari",
+    "n_steps": 22,
+    "n_edges": 19,
+    "elapsed_sec": 40.211946964263916
+  },
+  {
+    "game": "seastalker",
+    "n_steps": 10,
+    "n_edges": 8,
+    "elapsed_sec": 16.61641001701355
+  },
+  {
+    "game": "night",
+    "n_steps": 31,
+    "n_edges": 28,
+    "elapsed_sec": 60.78391909599304
+  },
+  {
+    "game": "plundered",
+    "n_steps": 24,
+    "n_edges": 22,
+    "elapsed_sec": 41.542142152786255
+  },
+  {
+    "game": "reverb",
+    "n_steps": 23,
+    "n_edges": 20,
+    "elapsed_sec": 40.041725873947144
+  },
+  {
+    "game": "planetfall",
+    "n_steps": 29,
+    "n_edges": 27,
+    "elapsed_sec": 50.703036069869995
+  },
+  {
+    "game": "snacktime",
+    "n_steps": 5,
+    "n_edges": 4,
+    "elapsed_sec": 11.280184030532837
+  },
+  {
+    "game": "murdac",
+    "n_steps": 39,
+    "n_edges": 31,
+    "elapsed_sec": 75.2132077217102
+  },
+  {
+    "game": "omniquest",
+    "n_steps": 40,
+    "n_edges": 38,
+    "elapsed_sec": 76.29208898544312
+  },
+  {
+    "game": "trinity",
+    "n_steps": 11,
+    "n_edges": 9,
+    "elapsed_sec": 17.082655906677246
+  },
+  {
+    "game": "tryst205",
+    "n_steps": 9,
+    "n_edges": 7,
+    "elapsed_sec": 14.874189138412476
+  },
+  {
+    "game": "spellbrkr",
+    "n_steps": 16,
+    "n_edges": 14,
+    "elapsed_sec": 32.14095711708069
+  },
+  {
+    "game": "sherlock",
+    "n_steps": 24,
+    "n_edges": 22,
+    "elapsed_sec": 45.28202295303345
+  },
+  {
+    "game": "temple",
+    "n_steps": 22,
+    "n_edges": 20,
+    "elapsed_sec": 44.836177110672
+  },
+  {
+    "game": "yomomma",
+    "n_steps": 16,
+    "n_edges": 14,
+    "elapsed_sec": 28.277477741241455
+  },
+  {
+    "game": "zenon",
+    "n_steps": 17,
+    "n_edges": 15,
+    "elapsed_sec": 34.21704912185669
+  },
+  {
+    "game": "zork1",
+    "n_steps": 22,
+    "n_edges": 20,
+    "elapsed_sec": 35.42318511009216
+  },
+  {
+    "game": "spirit",
+    "n_steps": 37,
+    "n_edges": 36,
+    "elapsed_sec": 65.44938802719116
+  },
+  {
+    "game": "sorcerer",
+    "n_steps": 29,
+    "n_edges": 24,
+    "elapsed_sec": 70.62752199172974
+  },
+  {
+    "game": "wishbringer",
+    "n_steps": 28,
+    "n_edges": 26,
+    "elapsed_sec": 50.22820711135864
+  },
+  {
+    "game": "zork2",
+    "n_steps": 35,
+    "n_edges": 32,
+    "elapsed_sec": 59.92100405693054
+  },
+  {
+    "game": "zork3",
+    "n_steps": 27,
+    "n_edges": 24,
+    "elapsed_sec": 46.25559878349304
+  },
+  {
+    "game": "ztuu",
+    "n_steps": 26,
+    "n_edges": 21,
+    "elapsed_sec": 43.84889483451843
+  }
+]

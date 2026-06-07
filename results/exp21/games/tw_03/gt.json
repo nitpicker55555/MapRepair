@@ -1,0 +1,211 @@
+{
+  "rooms": {
+    "r_1": {
+      "id": "r_1",
+      "name": "cookery"
+    },
+    "r_2": {
+      "id": "r_2",
+      "name": "shower"
+    },
+    "r_8": {
+      "id": "r_8",
+      "name": "pantry"
+    },
+    "r_3": {
+      "id": "r_3",
+      "name": "parlor"
+    },
+    "r_4": {
+      "id": "r_4",
+      "name": "cookhouse"
+    },
+    "r_7": {
+      "id": "r_7",
+      "name": "cellar"
+    },
+    "r_6": {
+      "id": "r_6",
+      "name": "kitchenette"
+    },
+    "r_10": {
+      "id": "r_10",
+      "name": "canteen"
+    },
+    "r_9": {
+      "id": "r_9",
+      "name": "workshop"
+    },
+    "r_0": {
+      "id": "r_0",
+      "name": "scullery"
+    },
+    "r_5": {
+      "id": "r_5",
+      "name": "bedchamber"
+    }
+  },
+  "edges": [
+    {
+      "src_name": "cookery",
+      "dst_name": "shower",
+      "src_id": "r_1",
+      "dst_id": "r_2",
+      "direction": "west"
+    },
+    {
+      "src_name": "cookery",
+      "dst_name": "scullery",
+      "src_id": "r_1",
+      "dst_id": "r_0",
+      "direction": "south"
+    },
+    {
+      "src_name": "shower",
+      "dst_name": "pantry",
+      "src_id": "r_2",
+      "dst_id": "r_8",
+      "direction": "west"
+    },
+    {
+      "src_name": "shower",
+      "dst_name": "parlor",
+      "src_id": "r_2",
+      "dst_id": "r_3",
+      "direction": "south"
+    },
+    {
+      "src_name": "shower",
+      "dst_name": "cookery",
+      "src_id": "r_2",
+      "dst_id": "r_1",
+      "direction": "east"
+    },
+    {
+      "src_name": "pantry",
+      "dst_name": "cookhouse",
+      "src_id": "r_8",
+      "dst_id": "r_4",
+      "direction": "south"
+    },
+    {
+      "src_name": "pantry",
+      "dst_name": "shower",
+      "src_id": "r_8",
+      "dst_id": "r_2",
+      "direction": "east"
+    },
+    {
+      "src_name": "parlor",
+      "dst_name": "cookhouse",
+      "src_id": "r_3",
+      "dst_id": "r_4",
+      "direction": "west"
+    },
+    {
+      "src_name": "parlor",
+      "dst_name": "shower",
+      "src_id": "r_3",
+      "dst_id": "r_2",
+      "direction": "north"
+    },
+    {
+      "src_name": "cookhouse",
+      "dst_name": "bedchamber",
+      "src_id": "r_4",
+      "dst_id": "r_5",
+      "direction": "south"
+    },
+    {
+      "src_name": "cookhouse",
+      "dst_name": "pantry",
+      "src_id": "r_4",
+      "dst_id": "r_8",
+      "direction": "north"
+    },
+    {
+      "src_name": "cookhouse",
+      "dst_name": "parlor",
+      "src_id": "r_4",
+      "dst_id": "r_3",
+      "direction": "east"
+    },
+    {
+      "src_name": "cellar",
+      "dst_name": "kitchenette",
+      "src_id": "r_7",
+      "dst_id": "r_6",
+      "direction": "west"
+    },
+    {
+      "src_name": "kitchenette",
+      "dst_name": "bedchamber",
+      "src_id": "r_6",
+      "dst_id": "r_5",
+      "direction": "north"
+    },
+    {
+      "src_name": "kitchenette",
+      "dst_name": "cellar",
+      "src_id": "r_6",
+      "dst_id": "r_7",
+      "direction": "east"
+    },
+    {
+      "src_name": "canteen",
+      "dst_name": "workshop",
+      "src_id": "r_10",
+      "dst_id": "r_9",
+      "direction": "north"
+    },
+    {
+      "src_name": "workshop",
+      "dst_name": "canteen",
+      "src_id": "r_9",
+      "dst_id": "r_10",
+      "direction": "south"
+    },
+    {
+      "src_name": "workshop",
+      "dst_name": "scullery",
+      "src_id": "r_9",
+      "dst_id": "r_0",
+      "direction": "north"
+    },
+    {
+      "src_name": "scullery",
+      "dst_name": "workshop",
+      "src_id": "r_0",
+      "dst_id": "r_9",
+      "direction": "south"
+    },
+    {
+      "src_name": "scullery",
+      "dst_name": "cookery",
+      "src_id": "r_0",
+      "dst_id": "r_1",
+      "direction": "north"
+    },
+    {
+      "src_name": "bedchamber",
+      "dst_name": "kitchenette",
+      "src_id": "r_5",
+      "dst_id": "r_6",
+      "direction": "south"
+    },
+    {
+      "src_name": "bedchamber",
+      "dst_name": "cookhouse",
+      "src_id": "r_5",
+      "dst_id": "r_4",
+      "direction": "north"
+    }
+  ],
+  "n_rooms": 11,
+  "n_edges": 22,
+  "walkthrough": [
+    "go east",
+    "go east",
+    "unlock type 2 chest with type 2 latchkey"
+  ]
+}

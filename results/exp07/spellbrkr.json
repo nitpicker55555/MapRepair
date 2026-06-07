@@ -1,0 +1,16 @@
+{
+  "game": "spellbrkr",
+  "num_conflicts": 22,
+  "iterations": 2,
+  "success": false,
+  "remaining_conflicts": 14,
+  "pre_edge_recall": 0.25,
+  "pre_strict_direction_match": 0.20833333333333334,
+  "pre_edge_direction_accuracy": 0.8333333333333334,
+  "post_edge_recall": 0.25,
+  "post_strict_direction_match": 0.16666666666666666,
+  "post_permissive_direction_match": 0.25,
+  "post_edge_direction_accuracy": 0.6666666666666666,
+  "edge_recall_delta": 0.0,
+  "strict_direction_delta": -0.041666666666666685
+}

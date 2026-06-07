@@ -135,6 +135,59 @@ introduces a directional error at step 5, watches the topological conflict
 fire 15 steps later when Lab and Meeting Room land on the same coordinate,
 runs LCA on the Reasoning History Tree, and prints the EIS ranking that
 puts the true error at the top.
+
+## Extended research framework
+
+The root-level files above are the minimal reference implementation used to
+illustrate the paper's algorithms. The same algorithms have been re-packaged
+as a richer Python library and reproducibility suite living under:
+
+```
+src/maprepair/      # extended framework: graph, conflict, localizer,
+                    # scoring, version control, synth, agents/, llm_client*
+experiments/        # exp01–exp29: scripts that produce every number in the paper
+results/            # raw per-run JSON + summary.md for each experiment
+data_fixed/         # the cleaned MANGO benchmark (53 environments)
+tests/, viz/        # unit tests and visualization helpers
+```
+
+Setup:
+
+```bash
+pip install -e .            # or pip install -r requirements.txt
+cp .env.example .env        # add OPENAI_API_KEY / proxy keys
+export PYTHONPATH=src
+```
+
+### Key experiment scripts
+
+| Script | What it produces |
+|---|---|
+| `experiments/exp01_localization.py` | LCA candidate-reduction at scale (n=1160 synthetic graphs) |
+| `experiments/exp02_scoring.py` | Edge-impact ranking validation |
+| `experiments/exp19_llm_full_pipeline.py` | 4-mode LLM ablation across synthetic families (2720 runs) |
+| `experiments/exp25_*` / `exp26_*` | Cross-vendor (7 LLMs from OpenAI/Anthropic/Google) on synthetic + TextWorld |
+| `experiments/exp27_table1_rerun.py` | MANGO 4-mode Table 1 rerun on current model snapshots |
+| `experiments/exp29_complementary_roles.py` | Per-component ablation at high error density |
+
+Run examples:
+
+```bash
+# Per-component ablation reported in the paper's Table 1
+python -m experiments.exp29_complementary_roles --seeds 20
+
+# Cross-vendor generalization on synthetic graphs (paper Table 2, left)
+python -m experiments.exp25_cross_vendor
+
+# Cross-vendor generalization on TextWorld (paper Table 2, right)
+python -m experiments.exp26_textworld_mango_like
+```
+
+The algorithmic-validation suite for Section 4.4 / Appendix B (TC1–TC6)
+lives separately at https://github.com/nitpicker55555/spatial_memory in
+the directory `lca_algorithm_validation/`; the same numbers reproduce
+bit-exactly there.
+
 ## Citation
 ```
 @misc{zhang2025constructingcoherentspatialmemory,

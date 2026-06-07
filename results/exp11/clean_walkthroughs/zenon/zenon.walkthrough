@@ -1,0 +1,197 @@
+===========
+==>STEP NUM: 0
+==>ACT: south
+==>OBSERVATION: Landing
+This is a long corridor stretching west and east. The cell you where once held in is to the north, though you have no wish to return there.
+
+The door is open
+===========
+==>STEP NUM: 1
+==>ACT: east
+==>OBSERVATION: Corridor
+Another section of corridor that leads south into a room of some sort and west back towards your old cell.
+
+You can see a Janitor here.
+===========
+==>STEP NUM: 2
+==>ACT: south
+==>OBSERVATION: Armoury
+The armoury is very sparsely stocked. If it where not for the bid red sign that proclaims "ARMOURY!" you'd probably guess it was just another cell...
+
+You can see a box of chaff grenades (which is closed) here.
+===========
+==>STEP NUM: 3
+==>ACT: north
+==>OBSERVATION: Corridor
+===========
+==>STEP NUM: 4
+==>ACT: west
+==>OBSERVATION: Landing
+
+The door is open
+
+You can also see a Janitor here.
+
+The janitor wanders off, mopping as he goes.
+===========
+==>STEP NUM: 5
+==>ACT: west
+==>OBSERVATION: Corridor
+A section of corridor. You can see your old cell door to the east and the corridor stretches further west.
+===========
+==>STEP NUM: 6
+==>ACT: west
+==>OBSERVATION: Corridor
+A section of corridor that stretches east back toward your old cell and north into some sort of hall. It also leads south to another room.
+===========
+==>STEP NUM: 7
+==>ACT: south
+==>OBSERVATION: Control Room
+Some kind of control room. Unfortunatly you fail to see a big button marked "Disable security devices"...Might have to be a bit more subtle.
+
+A cupboard is beneath the control panels.
+===========
+==>STEP NUM: 8
+==>ACT: north
+==>OBSERVATION: Corridor
+===========
+==>STEP NUM: 9
+==>ACT: north
+==>OBSERVATION: Hall
+A reasonably large hall with a security camera positioned to the far north. The walls are that inhumane stainless steel white that turns your brain to mush after looking at it for a while.
+
+The camera just sits there, smoking gently
+===========
+==>STEP NUM: 10
+==>ACT: north
+==>OBSERVATION: Lift
+A lift. There's a button that says "Down" on it and also a door to the south.
+===========
+==>STEP NUM: 11
+==>ACT: down
+==>OBSERVATION: The lift shoots downwards and gradually comes to a halt...
+
+Lift
+The bottom of the lift. There's a button with "Up" written on it and also a door to the north.
+===========
+==>STEP NUM: 12
+==>ACT: north
+==>OBSERVATION: Hallway
+A hallway leading south into a lift of some kind and northwards into a fairly large room.
+===========
+==>STEP NUM: 13
+==>ACT: north
+==>OBSERVATION: Office
+This room is large administration office with two desks stacked with papers, which behind sit two office workers, one male and one female. There are corridors emitting from this room in every direction and a sign on the wall that seems to explain where each of these corridors goes.
+
+A male secretary sits at a desk to the west, working furiously
+
+A female secretary sits at a desk to the east, not appearing to be doing much work
+The male secretary gives the female secretary a baleful stare.
+===========
+==>STEP NUM: 14
+==>ACT: north
+==>OBSERVATION: "You cannot pass without proper paperwork!" snorts the male secretary.
+"Sorry, hon." says the female secretary. "You can't pass without paperwork, unless you bribe us of course." She giggles foolishly.
+You can't go that way.
+The male secretary gives the female secretary a baleful stare.
+===========
+==>STEP NUM: 15
+==>ACT: east
+==>OBSERVATION: Bar
+Finally, a bar! Somewhere to quench your thirst for a pint of smooth, creamy ale...Your mouth begins to dribble, until you realise you have no money to speak of.... Your heart sinks, and you pause to take in the surroundings. It looks rather like a 20th century wine bar, with classy furnishings well placed around the room. There is a large sign on the wall.
+
+A barman beams at you from behind the bar.
+
+You can also see a juke box here.
+===========
+==>STEP NUM: 16
+==>ACT: west
+==>OBSERVATION: Office
+
+A male secretary sits at a desk to the west, working furiously
+
+A female secretary sits at a desk to the east, not appearing to be doing much work
+===========
+==>STEP NUM: 17
+==>ACT: east
+==>OBSERVATION: Bar
+
+A barman beams at you from behind the bar.
+
+You can also see a juke box here.
+===========
+==>STEP NUM: 18
+==>ACT: west
+==>OBSERVATION: Office
+
+A male secretary sits at a desk to the west, working furiously
+
+A female secretary sits at a desk to the east, not appearing to be doing much work
+The female secretary looks wistfully towards the bar, before turning back.
+===========
+==>STEP NUM: 19
+==>ACT: west
+==>OBSERVATION: Officer's Room
+Rather than an officers social hall, it appears to be a place of work. There is a photocopier stood on a table and a smart looking officer type sat behind the desk.
+
+On the table is a photocopier (which is closed).
+===========
+==>STEP NUM: 20
+==>ACT: east
+==>OBSERVATION: The officer takes his invite back off you before you leave.
+
+
+Office
+
+A male secretary sits at a desk to the west, working furiously
+
+A female secretary sits at a desk to the east, not appearing to be doing much work
+The female secretary looks wistfully towards the bar, before turning back.
+===========
+==>STEP NUM: 21
+==>ACT: north
+==>OBSERVATION: Hallway
+A south/north corridor. To the south is a large room of some kind while the corridor leads north to some sort of airlock.
+===========
+==>STEP NUM: 22
+==>ACT: north
+==>OBSERVATION: North end of hallway
+Before you stands a bulkhead door, looking every inch your ticket to freedom. Unfortunatly, it doesn't appear to have any method of opening. Back to the south you can see a large room, while to your east lies a small control room. 
+
+You can see a door here.
+===========
+==>STEP NUM: 23
+==>ACT: east
+==>OBSERVATION: A control room
+A small, dank control room, which only has the one button. An incredibly strange state of affairs for a control room, really. It's a big button, if it helps.
+
+You can see a Button here.
+===========
+==>STEP NUM: 24
+==>ACT: west
+==>OBSERVATION: North end of hallway
+
+You can see a door here.
+===========
+==>STEP NUM: 25
+==>ACT: north
+==>OBSERVATION: You leap through the airlock, and find an escape pod at the other side. How convieniant! You engage the throttle and speed away into the unknown.
+
+This really is all too good to be true. Escaped from the spaceship with not a scratch or scrape and now your own escape pod to call your own, there must be a catch somewhere. I expect you'll find out in the sequal.
+
+
+The end!
+
+You won!
+
+The door is open
+
+
+    *** You have won ***
+
+
+In that game you scored 20 out of a possible 20, in 82 turns, which tells me you've completed my game and are ready to send in the shareware fee!
+
+Would you like to RESTART, RESTORE a saved game, give the FULL score for that game or QUIT
+===========

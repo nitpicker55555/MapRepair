@@ -1,0 +1,8 @@
+[
+  {
+    "src_node": "front of house",
+    "dst_node": "country lane",
+    "action": "exit",
+    "seen_in_forward": 2
+  }
+]

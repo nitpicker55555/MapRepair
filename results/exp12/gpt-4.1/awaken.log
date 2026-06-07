@@ -1,0 +1,23 @@
+# awaken  model=gpt-4.1  n_steps=22
+step   0 bad movement output: {'is_movement': True, 'src_node': None, 'dst_node': 'graveyard', 'action': 'up', 'seen_in_forward': 0, 'current_location': 'graveyard', 'reasoning': "The observation explicitly states arrival in the 'Graveyard', which matches the canonical location list."}
+step   1 bad movement output: {'is_movement': True, 'src_node': None, 'dst_node': 'west side of the church', 'action': 'east', 'seen_in_forward': 1, 'current_location': 'west side of the church', 'reasoning': "Observation explicitly names 'West Side of the Church', which matches the canonical location list."}
+step   2 MOVE 'west side of the church' --[southeast]--> 'front of the church'
+step   3 MOVE 'front of the church' --[northwest]--> 'west side of the church'
+step   4 MOVE 'west side of the church' --[north]--> 'north side of the church'
+step   5 MOVE 'north side of the church' --[east]--> 'east side of the church'
+step   6 MOVE 'east side of the church' --[north]--> 'church porch'
+step   7 MOVE 'church porch' --[north]--> 'vestibule'
+step   8 MOVE 'vestibule' --[north]--> 'sanctuary'
+step   9 MOVE 'sanctuary' --[north]--> 'pulpit'
+step  10 MOVE 'pulpit' --[north]--> 'small office'
+step  11 MOVE 'small office' --[south]--> 'pulpit'
+step  12 MOVE 'pulpit' --[south]--> 'sanctuary'
+step  13 MOVE 'sanctuary' --[south]--> 'vestibule'
+step  14 MOVE 'vestibule' --[down]--> 'steeple chamber'
+step  15 MOVE 'steeple chamber' --[down]--> 'vestibule'
+step  16 MOVE 'vestibule' --[south]--> 'church porch'
+step  17 MOVE 'church porch' --[south]--> 'front of the church'
+step  18 MOVE 'front of the church' --[north]--> 'belfry'
+step  19 MOVE 'belfry' --[south]--> 'top of oak tree'
+step  20 MOVE 'top of oak tree' --[down]--> 'front of the church'
+step  21 MOVE 'front of the church' --[north]--> 'inner chamber'

@@ -1,0 +1,3561 @@
+{
+  "game": "inhumane",
+  "num_llm_edges": 32,
+  "num_gt_edges": 50,
+  "num_conflicts": 55,
+  "type_distribution": {
+    "direction": 3,
+    "topology": 23,
+    "naming": 29
+  },
+  "root_cause_distribution": {
+    "direction_mixed": 1,
+    "all_hallucinated_edges": 1,
+    "real_vs_hallucinated": 1,
+    "overlap_mixed": 10,
+    "wrong_direction_caused_overlap": 9,
+    "false_positive_overlap": 2,
+    "name_hallucination_caused_overlap": 2,
+    "naming_collision_on_correct_subgraph": 16,
+    "real_name_corrupted_by_neighbour_error": 10,
+    "naming_mixed": 1,
+    "name_hallucination": 2
+  },
+  "conflicts": [
+    {
+      "type": "direction",
+      "description": "node 'round room' has multiple outgoing edges labelled 'west'",
+      "involved_edges": [
+        [
+          "round room",
+          "t-intersection (east/west/south, east to round room)"
+        ],
+        [
+          "round room",
+          "south branch"
+        ],
+        [
+          "round room",
+          "corridor near pit"
+        ]
+      ],
+      "involved_nodes": [
+        "round room",
+        "t-intersection (east/west/south, east to round room)",
+        "south branch",
+        "corridor near pit"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "round room",
+            "t-intersection (east/west/south, east to round room)"
+          ],
+          "llm_dir": "west",
+          "in_gt": true,
+          "gt_dir": "east",
+          "case": "wrong_direction",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 21
+        },
+        {
+          "edge": [
+            "round room",
+            "south branch"
+          ],
+          "llm_dir": "west",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": null
+        },
+        {
+          "edge": [
+            "round room",
+            "corridor near pit"
+          ],
+          "llm_dir": "west",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 53
+        }
+      ],
+      "case_counts": {
+        "wrong_direction": 1,
+        "hallucinated_edge": 2
+      },
+      "root_cause": "direction_mixed"
+    },
+    {
+      "type": "direction",
+      "description": "node 'round room' has multiple outgoing edges labelled 'east'",
+      "involved_edges": [
+        [
+          "round room",
+          "corridor at doorway"
+        ],
+        [
+          "round room",
+          "north stalagmite room"
+        ]
+      ],
+      "involved_nodes": [
+        "round room",
+        "corridor at doorway",
+        "north stalagmite room"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "round room",
+            "corridor at doorway"
+          ],
+          "llm_dir": "east",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 29
+        },
+        {
+          "edge": [
+            "round room",
+            "north stalagmite room"
+          ],
+          "llm_dir": "east",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": null
+        }
+      ],
+      "case_counts": {
+        "hallucinated_edge": 2
+      },
+      "root_cause": "all_hallucinated_edges"
+    },
+    {
+      "type": "direction",
+      "description": "node 'landing' has multiple outgoing edges labelled 'south'",
+      "involved_edges": [
+        [
+          "landing",
+          "end of glass hall"
+        ],
+        [
+          "landing",
+          "round room"
+        ]
+      ],
+      "involved_nodes": [
+        "landing",
+        "end of glass hall",
+        "round room"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "landing",
+            "end of glass hall"
+          ],
+          "llm_dir": "south",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": null
+        },
+        {
+          "edge": [
+            "landing",
+            "round room"
+          ],
+          "llm_dir": "south",
+          "in_gt": true,
+          "gt_dir": "south",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": null
+        }
+      ],
+      "case_counts": {
+        "hallucinated_edge": 1,
+        "correct": 1
+      },
+      "root_cause": "real_vs_hallucinated"
+    },
+    {
+      "type": "topology",
+      "description": "position (0, 0, 0) occupied by multiple rooms ['alcove at end of corridor', 'south branch']",
+      "involved_edges": [],
+      "involved_nodes": [
+        "alcove at end of corridor",
+        "south branch"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "south branch",
+            "alcove at end of corridor"
+          ],
+          "llm_dir": "south",
+          "in_gt": true,
+          "gt_dir": "south",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 23
+        },
+        {
+          "edge": [
+            "t-intersection (east/west/south, east to round room)",
+            "south branch"
+          ],
+          "llm_dir": "south",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 22
+        },
+        {
+          "edge": [
+            "south branch",
+            "round room"
+          ],
+          "llm_dir": "east",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 28
+        }
+      ],
+      "case_counts": {
+        "correct": 1,
+        "hallucinated_edge": 2
+      },
+      "root_cause": "overlap_mixed"
+    },
+    {
+      "type": "topology",
+      "description": "position (0, -8, 0) occupied by multiple rooms ['alcove at end of corridor', 'south branch']",
+      "involved_edges": [],
+      "involved_nodes": [
+        "alcove at end of corridor",
+        "south branch"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "south branch",
+            "alcove at end of corridor"
+          ],
+          "llm_dir": "south",
+          "in_gt": true,
+          "gt_dir": "south",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 23
+        },
+        {
+          "edge": [
+            "t-intersection (east/west/south, east to round room)",
+            "south branch"
+          ],
+          "llm_dir": "south",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 22
+        },
+        {
+          "edge": [
+            "south branch",
+            "round room"
+          ],
+          "llm_dir": "east",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 28
+        }
+      ],
+      "case_counts": {
+        "correct": 1,
+        "hallucinated_edge": 2
+      },
+      "root_cause": "overlap_mixed"
+    },
+    {
+      "type": "topology",
+      "description": "position (0, -4, 0) occupied by multiple rooms ['alcove at end of corridor', 'south branch']",
+      "involved_edges": [],
+      "involved_nodes": [
+        "alcove at end of corridor",
+        "south branch"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "south branch",
+            "alcove at end of corridor"
+          ],
+          "llm_dir": "south",
+          "in_gt": true,
+          "gt_dir": "south",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 23
+        },
+        {
+          "edge": [
+            "t-intersection (east/west/south, east to round room)",
+            "south branch"
+          ],
+          "llm_dir": "south",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 22
+        },
+        {
+          "edge": [
+            "south branch",
+            "round room"
+          ],
+          "llm_dir": "east",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 28
+        }
+      ],
+      "case_counts": {
+        "correct": 1,
+        "hallucinated_edge": 2
+      },
+      "root_cause": "overlap_mixed"
+    },
+    {
+      "type": "topology",
+      "description": "position (0, -3, 0) occupied by multiple rooms ['corridor near pit', 'glass hall', 'south branch', 't-intersection (east/west/south, east to round room)']",
+      "involved_edges": [],
+      "involved_nodes": [
+        "corridor near pit",
+        "glass hall",
+        "south branch",
+        "t-intersection (east/west/south, east to round room)"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "round room",
+            "corridor near pit"
+          ],
+          "llm_dir": "west",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 53
+        },
+        {
+          "edge": [
+            "corridor near pit",
+            "on the platform"
+          ],
+          "llm_dir": "west",
+          "in_gt": true,
+          "gt_dir": "west",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 57
+        },
+        {
+          "edge": [
+            "hall full of fur",
+            "glass hall"
+          ],
+          "llm_dir": "east",
+          "in_gt": true,
+          "gt_dir": "east",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 34
+        },
+        {
+          "edge": [
+            "glass hall",
+            "end of glass hall"
+          ],
+          "llm_dir": "east",
+          "in_gt": true,
+          "gt_dir": "east",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 35
+        },
+        {
+          "edge": [
+            "t-intersection (east/west/south, east to round room)",
+            "south branch"
+          ],
+          "llm_dir": "south",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 22
+        },
+        {
+          "edge": [
+            "south branch",
+            "alcove at end of corridor"
+          ],
+          "llm_dir": "south",
+          "in_gt": true,
+          "gt_dir": "south",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 23
+        },
+        {
+          "edge": [
+            "south branch",
+            "round room"
+          ],
+          "llm_dir": "east",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 28
+        },
+        {
+          "edge": [
+            "round room",
+            "t-intersection (east/west/south, east to round room)"
+          ],
+          "llm_dir": "west",
+          "in_gt": true,
+          "gt_dir": "east",
+          "case": "wrong_direction",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 21
+        }
+      ],
+      "case_counts": {
+        "hallucinated_edge": 3,
+        "correct": 4,
+        "wrong_direction": 1
+      },
+      "root_cause": "wrong_direction_caused_overlap"
+    },
+    {
+      "type": "topology",
+      "description": "position (0, -7, 0) occupied by multiple rooms ['corridor near pit', 'glass hall', 'south branch', 't-intersection (east/west/south, east to round room)']",
+      "involved_edges": [],
+      "involved_nodes": [
+        "corridor near pit",
+        "glass hall",
+        "south branch",
+        "t-intersection (east/west/south, east to round room)"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "round room",
+            "corridor near pit"
+          ],
+          "llm_dir": "west",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 53
+        },
+        {
+          "edge": [
+            "corridor near pit",
+            "on the platform"
+          ],
+          "llm_dir": "west",
+          "in_gt": true,
+          "gt_dir": "west",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 57
+        },
+        {
+          "edge": [
+            "hall full of fur",
+            "glass hall"
+          ],
+          "llm_dir": "east",
+          "in_gt": true,
+          "gt_dir": "east",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 34
+        },
+        {
+          "edge": [
+            "glass hall",
+            "end of glass hall"
+          ],
+          "llm_dir": "east",
+          "in_gt": true,
+          "gt_dir": "east",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 35
+        },
+        {
+          "edge": [
+            "t-intersection (east/west/south, east to round room)",
+            "south branch"
+          ],
+          "llm_dir": "south",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 22
+        },
+        {
+          "edge": [
+            "south branch",
+            "alcove at end of corridor"
+          ],
+          "llm_dir": "south",
+          "in_gt": true,
+          "gt_dir": "south",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 23
+        },
+        {
+          "edge": [
+            "south branch",
+            "round room"
+          ],
+          "llm_dir": "east",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 28
+        },
+        {
+          "edge": [
+            "round room",
+            "t-intersection (east/west/south, east to round room)"
+          ],
+          "llm_dir": "west",
+          "in_gt": true,
+          "gt_dir": "east",
+          "case": "wrong_direction",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 21
+        }
+      ],
+      "case_counts": {
+        "hallucinated_edge": 3,
+        "correct": 4,
+        "wrong_direction": 1
+      },
+      "root_cause": "wrong_direction_caused_overlap"
+    },
+    {
+      "type": "topology",
+      "description": "position (0, 1, 0) occupied by multiple rooms ['corridor near pit', 'south branch', 't-intersection (east/west/south, east to round room)']",
+      "involved_edges": [],
+      "involved_nodes": [
+        "corridor near pit",
+        "south branch",
+        "t-intersection (east/west/south, east to round room)"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "round room",
+            "corridor near pit"
+          ],
+          "llm_dir": "west",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 53
+        },
+        {
+          "edge": [
+            "corridor near pit",
+            "on the platform"
+          ],
+          "llm_dir": "west",
+          "in_gt": true,
+          "gt_dir": "west",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 57
+        },
+        {
+          "edge": [
+            "t-intersection (east/west/south, east to round room)",
+            "south branch"
+          ],
+          "llm_dir": "south",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 22
+        },
+        {
+          "edge": [
+            "south branch",
+            "alcove at end of corridor"
+          ],
+          "llm_dir": "south",
+          "in_gt": true,
+          "gt_dir": "south",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 23
+        },
+        {
+          "edge": [
+            "south branch",
+            "round room"
+          ],
+          "llm_dir": "east",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 28
+        },
+        {
+          "edge": [
+            "round room",
+            "t-intersection (east/west/south, east to round room)"
+          ],
+          "llm_dir": "west",
+          "in_gt": true,
+          "gt_dir": "east",
+          "case": "wrong_direction",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 21
+        }
+      ],
+      "case_counts": {
+        "hallucinated_edge": 3,
+        "correct": 2,
+        "wrong_direction": 1
+      },
+      "root_cause": "wrong_direction_caused_overlap"
+    },
+    {
+      "type": "topology",
+      "description": "position (0, -11, 0) occupied by multiple rooms ['corridor near pit', 'glass hall', 'south branch', 't-intersection (east/west/south, east to round room)']",
+      "involved_edges": [],
+      "involved_nodes": [
+        "corridor near pit",
+        "glass hall",
+        "south branch",
+        "t-intersection (east/west/south, east to round room)"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "round room",
+            "corridor near pit"
+          ],
+          "llm_dir": "west",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 53
+        },
+        {
+          "edge": [
+            "corridor near pit",
+            "on the platform"
+          ],
+          "llm_dir": "west",
+          "in_gt": true,
+          "gt_dir": "west",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 57
+        },
+        {
+          "edge": [
+            "hall full of fur",
+            "glass hall"
+          ],
+          "llm_dir": "east",
+          "in_gt": true,
+          "gt_dir": "east",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 34
+        },
+        {
+          "edge": [
+            "glass hall",
+            "end of glass hall"
+          ],
+          "llm_dir": "east",
+          "in_gt": true,
+          "gt_dir": "east",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 35
+        },
+        {
+          "edge": [
+            "t-intersection (east/west/south, east to round room)",
+            "south branch"
+          ],
+          "llm_dir": "south",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 22
+        },
+        {
+          "edge": [
+            "south branch",
+            "alcove at end of corridor"
+          ],
+          "llm_dir": "south",
+          "in_gt": true,
+          "gt_dir": "south",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 23
+        },
+        {
+          "edge": [
+            "south branch",
+            "round room"
+          ],
+          "llm_dir": "east",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 28
+        },
+        {
+          "edge": [
+            "round room",
+            "t-intersection (east/west/south, east to round room)"
+          ],
+          "llm_dir": "west",
+          "in_gt": true,
+          "gt_dir": "east",
+          "case": "wrong_direction",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 21
+        }
+      ],
+      "case_counts": {
+        "hallucinated_edge": 3,
+        "correct": 4,
+        "wrong_direction": 1
+      },
+      "root_cause": "wrong_direction_caused_overlap"
+    },
+    {
+      "type": "topology",
+      "description": "position (1, -11, 0) occupied by multiple rooms ['end of glass hall', 'round room']",
+      "involved_edges": [],
+      "involved_nodes": [
+        "end of glass hall",
+        "round room"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "glass hall",
+            "end of glass hall"
+          ],
+          "llm_dir": "east",
+          "in_gt": true,
+          "gt_dir": "east",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 35
+        },
+        {
+          "edge": [
+            "end of glass hall",
+            "landing"
+          ],
+          "llm_dir": "north",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 36
+        },
+        {
+          "edge": [
+            "roboff's tent",
+            "round room"
+          ],
+          "llm_dir": "down",
+          "in_gt": true,
+          "gt_dir": "down",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 19
+        },
+        {
+          "edge": [
+            "south branch",
+            "round room"
+          ],
+          "llm_dir": "east",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 28
+        },
+        {
+          "edge": [
+            "exercise-wheel room",
+            "round room"
+          ],
+          "llm_dir": "north",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 45
+        },
+        {
+          "edge": [
+            "north stalagmite room",
+            "round room"
+          ],
+          "llm_dir": "west",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 52
+        },
+        {
+          "edge": [
+            "round room",
+            "t-intersection (east/west/south, east to round room)"
+          ],
+          "llm_dir": "west",
+          "in_gt": true,
+          "gt_dir": "east",
+          "case": "wrong_direction",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 21
+        },
+        {
+          "edge": [
+            "round room",
+            "corridor at doorway"
+          ],
+          "llm_dir": "east",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 29
+        },
+        {
+          "edge": [
+            "round room",
+            "landing"
+          ],
+          "llm_dir": "north",
+          "in_gt": true,
+          "gt_dir": "north",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 46
+        },
+        {
+          "edge": [
+            "round room",
+            "corridor near pit"
+          ],
+          "llm_dir": "west",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 53
+        }
+      ],
+      "case_counts": {
+        "correct": 3,
+        "hallucinated_edge": 6,
+        "wrong_direction": 1
+      },
+      "root_cause": "wrong_direction_caused_overlap"
+    },
+    {
+      "type": "topology",
+      "description": "position (1, 1, 0) occupied by multiple rooms ['end of glass hall', 'round room']",
+      "involved_edges": [],
+      "involved_nodes": [
+        "end of glass hall",
+        "round room"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "glass hall",
+            "end of glass hall"
+          ],
+          "llm_dir": "east",
+          "in_gt": true,
+          "gt_dir": "east",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 35
+        },
+        {
+          "edge": [
+            "end of glass hall",
+            "landing"
+          ],
+          "llm_dir": "north",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 36
+        },
+        {
+          "edge": [
+            "roboff's tent",
+            "round room"
+          ],
+          "llm_dir": "down",
+          "in_gt": true,
+          "gt_dir": "down",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 19
+        },
+        {
+          "edge": [
+            "south branch",
+            "round room"
+          ],
+          "llm_dir": "east",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 28
+        },
+        {
+          "edge": [
+            "exercise-wheel room",
+            "round room"
+          ],
+          "llm_dir": "north",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 45
+        },
+        {
+          "edge": [
+            "north stalagmite room",
+            "round room"
+          ],
+          "llm_dir": "west",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 52
+        },
+        {
+          "edge": [
+            "round room",
+            "t-intersection (east/west/south, east to round room)"
+          ],
+          "llm_dir": "west",
+          "in_gt": true,
+          "gt_dir": "east",
+          "case": "wrong_direction",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 21
+        },
+        {
+          "edge": [
+            "round room",
+            "corridor at doorway"
+          ],
+          "llm_dir": "east",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 29
+        },
+        {
+          "edge": [
+            "round room",
+            "landing"
+          ],
+          "llm_dir": "north",
+          "in_gt": true,
+          "gt_dir": "north",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 46
+        },
+        {
+          "edge": [
+            "round room",
+            "corridor near pit"
+          ],
+          "llm_dir": "west",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 53
+        }
+      ],
+      "case_counts": {
+        "correct": 3,
+        "hallucinated_edge": 6,
+        "wrong_direction": 1
+      },
+      "root_cause": "wrong_direction_caused_overlap"
+    },
+    {
+      "type": "topology",
+      "description": "position (1, 2, 0) occupied by multiple rooms ['landing', 'round room']",
+      "involved_edges": [],
+      "involved_nodes": [
+        "landing",
+        "round room"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "end of glass hall",
+            "landing"
+          ],
+          "llm_dir": "north",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 36
+        },
+        {
+          "edge": [
+            "round room",
+            "landing"
+          ],
+          "llm_dir": "north",
+          "in_gt": true,
+          "gt_dir": "north",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 46
+        },
+        {
+          "edge": [
+            "landing",
+            "bottom of shaft"
+          ],
+          "llm_dir": "north",
+          "in_gt": true,
+          "gt_dir": "north",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 37
+        },
+        {
+          "edge": [
+            "landing",
+            "t intersection"
+          ],
+          "llm_dir": "east",
+          "in_gt": true,
+          "gt_dir": "east",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 47
+        },
+        {
+          "edge": [
+            "roboff's tent",
+            "round room"
+          ],
+          "llm_dir": "down",
+          "in_gt": true,
+          "gt_dir": "down",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 19
+        },
+        {
+          "edge": [
+            "south branch",
+            "round room"
+          ],
+          "llm_dir": "east",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 28
+        },
+        {
+          "edge": [
+            "exercise-wheel room",
+            "round room"
+          ],
+          "llm_dir": "north",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 45
+        },
+        {
+          "edge": [
+            "north stalagmite room",
+            "round room"
+          ],
+          "llm_dir": "west",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 52
+        },
+        {
+          "edge": [
+            "round room",
+            "t-intersection (east/west/south, east to round room)"
+          ],
+          "llm_dir": "west",
+          "in_gt": true,
+          "gt_dir": "east",
+          "case": "wrong_direction",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 21
+        },
+        {
+          "edge": [
+            "round room",
+            "corridor at doorway"
+          ],
+          "llm_dir": "east",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 29
+        },
+        {
+          "edge": [
+            "round room",
+            "corridor near pit"
+          ],
+          "llm_dir": "west",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 53
+        }
+      ],
+      "case_counts": {
+        "hallucinated_edge": 6,
+        "correct": 4,
+        "wrong_direction": 1
+      },
+      "root_cause": "wrong_direction_caused_overlap"
+    },
+    {
+      "type": "topology",
+      "description": "position (1, -3, 0) occupied by multiple rooms ['end of glass hall', 'round room']",
+      "involved_edges": [],
+      "involved_nodes": [
+        "end of glass hall",
+        "round room"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "glass hall",
+            "end of glass hall"
+          ],
+          "llm_dir": "east",
+          "in_gt": true,
+          "gt_dir": "east",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 35
+        },
+        {
+          "edge": [
+            "end of glass hall",
+            "landing"
+          ],
+          "llm_dir": "north",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 36
+        },
+        {
+          "edge": [
+            "roboff's tent",
+            "round room"
+          ],
+          "llm_dir": "down",
+          "in_gt": true,
+          "gt_dir": "down",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 19
+        },
+        {
+          "edge": [
+            "south branch",
+            "round room"
+          ],
+          "llm_dir": "east",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 28
+        },
+        {
+          "edge": [
+            "exercise-wheel room",
+            "round room"
+          ],
+          "llm_dir": "north",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 45
+        },
+        {
+          "edge": [
+            "north stalagmite room",
+            "round room"
+          ],
+          "llm_dir": "west",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 52
+        },
+        {
+          "edge": [
+            "round room",
+            "t-intersection (east/west/south, east to round room)"
+          ],
+          "llm_dir": "west",
+          "in_gt": true,
+          "gt_dir": "east",
+          "case": "wrong_direction",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 21
+        },
+        {
+          "edge": [
+            "round room",
+            "corridor at doorway"
+          ],
+          "llm_dir": "east",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 29
+        },
+        {
+          "edge": [
+            "round room",
+            "landing"
+          ],
+          "llm_dir": "north",
+          "in_gt": true,
+          "gt_dir": "north",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 46
+        },
+        {
+          "edge": [
+            "round room",
+            "corridor near pit"
+          ],
+          "llm_dir": "west",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 53
+        }
+      ],
+      "case_counts": {
+        "correct": 3,
+        "hallucinated_edge": 6,
+        "wrong_direction": 1
+      },
+      "root_cause": "wrong_direction_caused_overlap"
+    },
+    {
+      "type": "topology",
+      "description": "position (1, -7, 0) occupied by multiple rooms ['end of glass hall', 'round room']",
+      "involved_edges": [],
+      "involved_nodes": [
+        "end of glass hall",
+        "round room"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "glass hall",
+            "end of glass hall"
+          ],
+          "llm_dir": "east",
+          "in_gt": true,
+          "gt_dir": "east",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 35
+        },
+        {
+          "edge": [
+            "end of glass hall",
+            "landing"
+          ],
+          "llm_dir": "north",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 36
+        },
+        {
+          "edge": [
+            "roboff's tent",
+            "round room"
+          ],
+          "llm_dir": "down",
+          "in_gt": true,
+          "gt_dir": "down",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 19
+        },
+        {
+          "edge": [
+            "south branch",
+            "round room"
+          ],
+          "llm_dir": "east",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 28
+        },
+        {
+          "edge": [
+            "exercise-wheel room",
+            "round room"
+          ],
+          "llm_dir": "north",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 45
+        },
+        {
+          "edge": [
+            "north stalagmite room",
+            "round room"
+          ],
+          "llm_dir": "west",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 52
+        },
+        {
+          "edge": [
+            "round room",
+            "t-intersection (east/west/south, east to round room)"
+          ],
+          "llm_dir": "west",
+          "in_gt": true,
+          "gt_dir": "east",
+          "case": "wrong_direction",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 21
+        },
+        {
+          "edge": [
+            "round room",
+            "corridor at doorway"
+          ],
+          "llm_dir": "east",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 29
+        },
+        {
+          "edge": [
+            "round room",
+            "landing"
+          ],
+          "llm_dir": "north",
+          "in_gt": true,
+          "gt_dir": "north",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 46
+        },
+        {
+          "edge": [
+            "round room",
+            "corridor near pit"
+          ],
+          "llm_dir": "west",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 53
+        }
+      ],
+      "case_counts": {
+        "correct": 3,
+        "hallucinated_edge": 6,
+        "wrong_direction": 1
+      },
+      "root_cause": "wrong_direction_caused_overlap"
+    },
+    {
+      "type": "topology",
+      "description": "position (2, -7, 0) occupied by multiple rooms ['corridor at doorway', 'north stalagmite room']",
+      "involved_edges": [],
+      "involved_nodes": [
+        "corridor at doorway",
+        "north stalagmite room"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "round room",
+            "corridor at doorway"
+          ],
+          "llm_dir": "east",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 29
+        },
+        {
+          "edge": [
+            "corridor at doorway",
+            "glue pit"
+          ],
+          "llm_dir": "east",
+          "in_gt": true,
+          "gt_dir": "east",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 30
+        },
+        {
+          "edge": [
+            "stalagmite room",
+            "north stalagmite room"
+          ],
+          "llm_dir": "north",
+          "in_gt": true,
+          "gt_dir": "north",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 51
+        },
+        {
+          "edge": [
+            "north stalagmite room",
+            "round room"
+          ],
+          "llm_dir": "west",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 52
+        }
+      ],
+      "case_counts": {
+        "hallucinated_edge": 2,
+        "correct": 2
+      },
+      "root_cause": "overlap_mixed"
+    },
+    {
+      "type": "topology",
+      "description": "position (2, -11, 0) occupied by multiple rooms ['corridor at doorway', 'north stalagmite room']",
+      "involved_edges": [],
+      "involved_nodes": [
+        "corridor at doorway",
+        "north stalagmite room"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "round room",
+            "corridor at doorway"
+          ],
+          "llm_dir": "east",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 29
+        },
+        {
+          "edge": [
+            "corridor at doorway",
+            "glue pit"
+          ],
+          "llm_dir": "east",
+          "in_gt": true,
+          "gt_dir": "east",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 30
+        },
+        {
+          "edge": [
+            "stalagmite room",
+            "north stalagmite room"
+          ],
+          "llm_dir": "north",
+          "in_gt": true,
+          "gt_dir": "north",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 51
+        },
+        {
+          "edge": [
+            "north stalagmite room",
+            "round room"
+          ],
+          "llm_dir": "west",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 52
+        }
+      ],
+      "case_counts": {
+        "hallucinated_edge": 2,
+        "correct": 2
+      },
+      "root_cause": "overlap_mixed"
+    },
+    {
+      "type": "topology",
+      "description": "position (2, 1, 0) occupied by multiple rooms ['corridor at doorway', 'north stalagmite room']",
+      "involved_edges": [],
+      "involved_nodes": [
+        "corridor at doorway",
+        "north stalagmite room"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "round room",
+            "corridor at doorway"
+          ],
+          "llm_dir": "east",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 29
+        },
+        {
+          "edge": [
+            "corridor at doorway",
+            "glue pit"
+          ],
+          "llm_dir": "east",
+          "in_gt": true,
+          "gt_dir": "east",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 30
+        },
+        {
+          "edge": [
+            "stalagmite room",
+            "north stalagmite room"
+          ],
+          "llm_dir": "north",
+          "in_gt": true,
+          "gt_dir": "north",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 51
+        },
+        {
+          "edge": [
+            "north stalagmite room",
+            "round room"
+          ],
+          "llm_dir": "west",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 52
+        }
+      ],
+      "case_counts": {
+        "hallucinated_edge": 2,
+        "correct": 2
+      },
+      "root_cause": "overlap_mixed"
+    },
+    {
+      "type": "topology",
+      "description": "position (2, -3, 0) occupied by multiple rooms ['corridor at doorway', 'north stalagmite room']",
+      "involved_edges": [],
+      "involved_nodes": [
+        "corridor at doorway",
+        "north stalagmite room"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "round room",
+            "corridor at doorway"
+          ],
+          "llm_dir": "east",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 29
+        },
+        {
+          "edge": [
+            "corridor at doorway",
+            "glue pit"
+          ],
+          "llm_dir": "east",
+          "in_gt": true,
+          "gt_dir": "east",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 30
+        },
+        {
+          "edge": [
+            "stalagmite room",
+            "north stalagmite room"
+          ],
+          "llm_dir": "north",
+          "in_gt": true,
+          "gt_dir": "north",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 51
+        },
+        {
+          "edge": [
+            "north stalagmite room",
+            "round room"
+          ],
+          "llm_dir": "west",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 52
+        }
+      ],
+      "case_counts": {
+        "hallucinated_edge": 2,
+        "correct": 2
+      },
+      "root_cause": "overlap_mixed"
+    },
+    {
+      "type": "topology",
+      "description": "position (1, -5, 1) occupied by multiple rooms ['exercise-wheel room', 'in your tent']",
+      "involved_edges": [],
+      "involved_nodes": [
+        "exercise-wheel room",
+        "in your tent"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "bottom of shaft",
+            "exercise-wheel room"
+          ],
+          "llm_dir": "up",
+          "in_gt": true,
+          "gt_dir": "up",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 38
+        },
+        {
+          "edge": [
+            "exercise-wheel room",
+            "round room"
+          ],
+          "llm_dir": "north",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 45
+        },
+        {
+          "edge": [
+            "in your tent",
+            "center of camp"
+          ],
+          "llm_dir": "south",
+          "in_gt": true,
+          "gt_dir": "south",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 2
+        }
+      ],
+      "case_counts": {
+        "correct": 2,
+        "hallucinated_edge": 1
+      },
+      "root_cause": "overlap_mixed"
+    },
+    {
+      "type": "topology",
+      "description": "position (1, -9, 1) occupied by multiple rooms ['exercise-wheel room', 'in your tent']",
+      "involved_edges": [],
+      "involved_nodes": [
+        "exercise-wheel room",
+        "in your tent"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "bottom of shaft",
+            "exercise-wheel room"
+          ],
+          "llm_dir": "up",
+          "in_gt": true,
+          "gt_dir": "up",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 38
+        },
+        {
+          "edge": [
+            "exercise-wheel room",
+            "round room"
+          ],
+          "llm_dir": "north",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 45
+        },
+        {
+          "edge": [
+            "in your tent",
+            "center of camp"
+          ],
+          "llm_dir": "south",
+          "in_gt": true,
+          "gt_dir": "south",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 2
+        }
+      ],
+      "case_counts": {
+        "correct": 2,
+        "hallucinated_edge": 1
+      },
+      "root_cause": "overlap_mixed"
+    },
+    {
+      "type": "topology",
+      "description": "position (1, -1, 1) occupied by multiple rooms ['exercise-wheel room', 'in your tent']",
+      "involved_edges": [],
+      "involved_nodes": [
+        "exercise-wheel room",
+        "in your tent"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "bottom of shaft",
+            "exercise-wheel room"
+          ],
+          "llm_dir": "up",
+          "in_gt": true,
+          "gt_dir": "up",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 38
+        },
+        {
+          "edge": [
+            "exercise-wheel room",
+            "round room"
+          ],
+          "llm_dir": "north",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 45
+        },
+        {
+          "edge": [
+            "in your tent",
+            "center of camp"
+          ],
+          "llm_dir": "south",
+          "in_gt": true,
+          "gt_dir": "south",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 2
+        }
+      ],
+      "case_counts": {
+        "correct": 2,
+        "hallucinated_edge": 1
+      },
+      "root_cause": "overlap_mixed"
+    },
+    {
+      "type": "topology",
+      "description": "position (-1, -11, 0) occupied by multiple rooms ['hall full of fur', 'on the platform']",
+      "involved_edges": [],
+      "involved_nodes": [
+        "hall full of fur",
+        "on the platform"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "outside door",
+            "hall full of fur"
+          ],
+          "llm_dir": "east",
+          "in_gt": true,
+          "gt_dir": "east",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 33
+        },
+        {
+          "edge": [
+            "hall full of fur",
+            "glass hall"
+          ],
+          "llm_dir": "east",
+          "in_gt": true,
+          "gt_dir": "east",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 34
+        },
+        {
+          "edge": [
+            "corridor near pit",
+            "on the platform"
+          ],
+          "llm_dir": "west",
+          "in_gt": true,
+          "gt_dir": "west",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 57
+        },
+        {
+          "edge": [
+            "on the platform",
+            "west of the pit"
+          ],
+          "llm_dir": "west",
+          "in_gt": true,
+          "gt_dir": "west",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 61
+        }
+      ],
+      "case_counts": {
+        "correct": 4
+      },
+      "root_cause": "false_positive_overlap"
+    },
+    {
+      "type": "topology",
+      "description": "position (-1, -7, 0) occupied by multiple rooms ['hall full of fur', 'on the platform']",
+      "involved_edges": [],
+      "involved_nodes": [
+        "hall full of fur",
+        "on the platform"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "outside door",
+            "hall full of fur"
+          ],
+          "llm_dir": "east",
+          "in_gt": true,
+          "gt_dir": "east",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 33
+        },
+        {
+          "edge": [
+            "hall full of fur",
+            "glass hall"
+          ],
+          "llm_dir": "east",
+          "in_gt": true,
+          "gt_dir": "east",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 34
+        },
+        {
+          "edge": [
+            "corridor near pit",
+            "on the platform"
+          ],
+          "llm_dir": "west",
+          "in_gt": true,
+          "gt_dir": "west",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 57
+        },
+        {
+          "edge": [
+            "on the platform",
+            "west of the pit"
+          ],
+          "llm_dir": "west",
+          "in_gt": true,
+          "gt_dir": "west",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 61
+        }
+      ],
+      "case_counts": {
+        "correct": 4
+      },
+      "root_cause": "false_positive_overlap"
+    },
+    {
+      "type": "topology",
+      "description": "position (-2, -11, 0) occupied by multiple rooms ['outside door', 'west of the pit']",
+      "involved_edges": [],
+      "involved_nodes": [
+        "outside door",
+        "west of the pit"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "glue pit",
+            "outside door"
+          ],
+          "llm_dir": "east",
+          "in_gt": true,
+          "gt_dir": "east",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 31
+        },
+        {
+          "edge": [
+            "outside door",
+            "hall full of fur"
+          ],
+          "llm_dir": "east",
+          "in_gt": true,
+          "gt_dir": "east",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 33
+        },
+        {
+          "edge": [
+            "on the platform",
+            "west of the pit"
+          ],
+          "llm_dir": "west",
+          "in_gt": true,
+          "gt_dir": "west",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 61
+        },
+        {
+          "edge": [
+            "west of the pit",
+            "key room"
+          ],
+          "llm_dir": "north",
+          "in_gt": true,
+          "gt_dir": "north",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 62
+        },
+        {
+          "edge": [
+            "west of the pit",
+            "black room"
+          ],
+          "llm_dir": "south",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "dst_hallucinated",
+          "source_in_gt": true,
+          "target_in_gt": false,
+          "step": 68
+        }
+      ],
+      "case_counts": {
+        "correct": 4,
+        "dst_hallucinated": 1
+      },
+      "root_cause": "name_hallucination_caused_overlap"
+    },
+    {
+      "type": "topology",
+      "description": "position (-2, -7, 0) occupied by multiple rooms ['outside door', 'west of the pit']",
+      "involved_edges": [],
+      "involved_nodes": [
+        "outside door",
+        "west of the pit"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "glue pit",
+            "outside door"
+          ],
+          "llm_dir": "east",
+          "in_gt": true,
+          "gt_dir": "east",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 31
+        },
+        {
+          "edge": [
+            "outside door",
+            "hall full of fur"
+          ],
+          "llm_dir": "east",
+          "in_gt": true,
+          "gt_dir": "east",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 33
+        },
+        {
+          "edge": [
+            "on the platform",
+            "west of the pit"
+          ],
+          "llm_dir": "west",
+          "in_gt": true,
+          "gt_dir": "west",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 61
+        },
+        {
+          "edge": [
+            "west of the pit",
+            "key room"
+          ],
+          "llm_dir": "north",
+          "in_gt": true,
+          "gt_dir": "north",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 62
+        },
+        {
+          "edge": [
+            "west of the pit",
+            "black room"
+          ],
+          "llm_dir": "south",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "dst_hallucinated",
+          "source_in_gt": true,
+          "target_in_gt": false,
+          "step": 68
+        }
+      ],
+      "case_counts": {
+        "correct": 4,
+        "dst_hallucinated": 1
+      },
+      "root_cause": "name_hallucination_caused_overlap"
+    },
+    {
+      "type": "naming",
+      "description": "node 'alcove at end of corridor' reachable at conflicting positions [(0, -12, 0), (0, -8, 0), (0, -4, 0), (0, 0, 0)]",
+      "involved_edges": [],
+      "involved_nodes": [
+        "alcove at end of corridor"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "south branch",
+            "alcove at end of corridor"
+          ],
+          "llm_dir": "south",
+          "in_gt": true,
+          "gt_dir": "south",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 23
+        }
+      ],
+      "case_counts": {
+        "correct": 1
+      },
+      "root_cause": "naming_collision_on_correct_subgraph"
+    },
+    {
+      "type": "naming",
+      "description": "node 'south branch' reachable at conflicting positions [(0, -11, 0), (0, -8, 0), (0, -7, 0), (0, -4, 0), (0, -3, 0), (0, 0, 0), (0, 1, 0)]",
+      "involved_edges": [],
+      "involved_nodes": [
+        "south branch"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "t-intersection (east/west/south, east to round room)",
+            "south branch"
+          ],
+          "llm_dir": "south",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 22
+        },
+        {
+          "edge": [
+            "south branch",
+            "alcove at end of corridor"
+          ],
+          "llm_dir": "south",
+          "in_gt": true,
+          "gt_dir": "south",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 23
+        },
+        {
+          "edge": [
+            "south branch",
+            "round room"
+          ],
+          "llm_dir": "east",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 28
+        }
+      ],
+      "case_counts": {
+        "hallucinated_edge": 2,
+        "correct": 1
+      },
+      "root_cause": "real_name_corrupted_by_neighbour_error"
+    },
+    {
+      "type": "naming",
+      "description": "node 't-intersection (east/west/south, east to round room)' reachable at conflicting positions [(0, -11, 0), (0, -10, 0), (0, -7, 0), (0, -6, 0), (0, -3, 0), (0, -2, 0), (0, 1, 0), (0, 2, 0)]",
+      "involved_edges": [],
+      "involved_nodes": [
+        "t-intersection (east/west/south, east to round room)"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "round room",
+            "t-intersection (east/west/south, east to round room)"
+          ],
+          "llm_dir": "west",
+          "in_gt": true,
+          "gt_dir": "east",
+          "case": "wrong_direction",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 21
+        },
+        {
+          "edge": [
+            "t-intersection (east/west/south, east to round room)",
+            "south branch"
+          ],
+          "llm_dir": "south",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 22
+        }
+      ],
+      "case_counts": {
+        "wrong_direction": 1,
+        "hallucinated_edge": 1
+      },
+      "root_cause": "naming_mixed"
+    },
+    {
+      "type": "naming",
+      "description": "node 'round room' reachable at conflicting positions [(1, -11, 0), (1, -7, 0), (1, -3, 0), (1, 1, 0), (1, 2, 0)]",
+      "involved_edges": [],
+      "involved_nodes": [
+        "round room"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "roboff's tent",
+            "round room"
+          ],
+          "llm_dir": "down",
+          "in_gt": true,
+          "gt_dir": "down",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 19
+        },
+        {
+          "edge": [
+            "south branch",
+            "round room"
+          ],
+          "llm_dir": "east",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 28
+        },
+        {
+          "edge": [
+            "exercise-wheel room",
+            "round room"
+          ],
+          "llm_dir": "north",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 45
+        },
+        {
+          "edge": [
+            "north stalagmite room",
+            "round room"
+          ],
+          "llm_dir": "west",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 52
+        },
+        {
+          "edge": [
+            "round room",
+            "t-intersection (east/west/south, east to round room)"
+          ],
+          "llm_dir": "west",
+          "in_gt": true,
+          "gt_dir": "east",
+          "case": "wrong_direction",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 21
+        },
+        {
+          "edge": [
+            "round room",
+            "corridor at doorway"
+          ],
+          "llm_dir": "east",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 29
+        },
+        {
+          "edge": [
+            "round room",
+            "landing"
+          ],
+          "llm_dir": "north",
+          "in_gt": true,
+          "gt_dir": "north",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 46
+        },
+        {
+          "edge": [
+            "round room",
+            "corridor near pit"
+          ],
+          "llm_dir": "west",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 53
+        }
+      ],
+      "case_counts": {
+        "correct": 2,
+        "hallucinated_edge": 5,
+        "wrong_direction": 1
+      },
+      "root_cause": "real_name_corrupted_by_neighbour_error"
+    },
+    {
+      "type": "naming",
+      "description": "node \"roboff's tent\" reachable at conflicting positions [(1, -11, 1), (1, -7, 1), (1, -3, 1), (1, 1, 1)]",
+      "involved_edges": [],
+      "involved_nodes": [
+        "roboff's tent"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "center of camp",
+            "roboff's tent"
+          ],
+          "llm_dir": "south",
+          "in_gt": true,
+          "gt_dir": "south",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 17
+        },
+        {
+          "edge": [
+            "roboff's tent",
+            "round room"
+          ],
+          "llm_dir": "down",
+          "in_gt": true,
+          "gt_dir": "down",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 19
+        }
+      ],
+      "case_counts": {
+        "correct": 2
+      },
+      "root_cause": "naming_collision_on_correct_subgraph"
+    },
+    {
+      "type": "naming",
+      "description": "node 'corridor at doorway' reachable at conflicting positions [(-4, -11, 0), (-4, -7, 0), (2, -11, 0), (2, -7, 0), (2, -3, 0), (2, 1, 0)]",
+      "involved_edges": [],
+      "involved_nodes": [
+        "corridor at doorway"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "round room",
+            "corridor at doorway"
+          ],
+          "llm_dir": "east",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 29
+        },
+        {
+          "edge": [
+            "corridor at doorway",
+            "glue pit"
+          ],
+          "llm_dir": "east",
+          "in_gt": true,
+          "gt_dir": "east",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 30
+        }
+      ],
+      "case_counts": {
+        "hallucinated_edge": 1,
+        "correct": 1
+      },
+      "root_cause": "real_name_corrupted_by_neighbour_error"
+    },
+    {
+      "type": "naming",
+      "description": "node 'exercise-wheel room' reachable at conflicting positions [(1, -12, 0), (1, -9, 1), (1, -8, 0), (1, -5, 1), (1, -4, 0), (1, -1, 1), (1, 0, 0)]",
+      "involved_edges": [],
+      "involved_nodes": [
+        "exercise-wheel room"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "bottom of shaft",
+            "exercise-wheel room"
+          ],
+          "llm_dir": "up",
+          "in_gt": true,
+          "gt_dir": "up",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 38
+        },
+        {
+          "edge": [
+            "exercise-wheel room",
+            "round room"
+          ],
+          "llm_dir": "north",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 45
+        }
+      ],
+      "case_counts": {
+        "correct": 1,
+        "hallucinated_edge": 1
+      },
+      "root_cause": "real_name_corrupted_by_neighbour_error"
+    },
+    {
+      "type": "naming",
+      "description": "node 'landing' reachable at conflicting positions [(1, -14, 0), (1, -13, -1), (1, -10, 0), (1, -6, 0), (1, -2, 0), (1, 2, 0), (7, -10, 0)]",
+      "involved_edges": [],
+      "involved_nodes": [
+        "landing"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "end of glass hall",
+            "landing"
+          ],
+          "llm_dir": "north",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 36
+        },
+        {
+          "edge": [
+            "round room",
+            "landing"
+          ],
+          "llm_dir": "north",
+          "in_gt": true,
+          "gt_dir": "north",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 46
+        },
+        {
+          "edge": [
+            "landing",
+            "bottom of shaft"
+          ],
+          "llm_dir": "north",
+          "in_gt": true,
+          "gt_dir": "north",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 37
+        },
+        {
+          "edge": [
+            "landing",
+            "t intersection"
+          ],
+          "llm_dir": "east",
+          "in_gt": true,
+          "gt_dir": "east",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 47
+        }
+      ],
+      "case_counts": {
+        "hallucinated_edge": 1,
+        "correct": 3
+      },
+      "root_cause": "real_name_corrupted_by_neighbour_error"
+    },
+    {
+      "type": "naming",
+      "description": "node 'north stalagmite room' reachable at conflicting positions [(2, -11, 0), (2, -7, 0), (2, -3, 0), (2, 1, 0)]",
+      "involved_edges": [],
+      "involved_nodes": [
+        "north stalagmite room"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "stalagmite room",
+            "north stalagmite room"
+          ],
+          "llm_dir": "north",
+          "in_gt": true,
+          "gt_dir": "north",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 51
+        },
+        {
+          "edge": [
+            "north stalagmite room",
+            "round room"
+          ],
+          "llm_dir": "west",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 52
+        }
+      ],
+      "case_counts": {
+        "correct": 1,
+        "hallucinated_edge": 1
+      },
+      "root_cause": "real_name_corrupted_by_neighbour_error"
+    },
+    {
+      "type": "naming",
+      "description": "node 'corridor near pit' reachable at conflicting positions [(0, -11, 0), (0, -7, 0), (0, -3, 0), (0, 1, 0)]",
+      "involved_edges": [],
+      "involved_nodes": [
+        "corridor near pit"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "round room",
+            "corridor near pit"
+          ],
+          "llm_dir": "west",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 53
+        },
+        {
+          "edge": [
+            "corridor near pit",
+            "on the platform"
+          ],
+          "llm_dir": "west",
+          "in_gt": true,
+          "gt_dir": "west",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 57
+        }
+      ],
+      "case_counts": {
+        "hallucinated_edge": 1,
+        "correct": 1
+      },
+      "root_cause": "real_name_corrupted_by_neighbour_error"
+    },
+    {
+      "type": "naming",
+      "description": "node 'on the platform' reachable at conflicting positions [(-1, -11, 0), (-1, -7, 0), (-1, -3, 0), (-1, 1, 0)]",
+      "involved_edges": [],
+      "involved_nodes": [
+        "on the platform"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "corridor near pit",
+            "on the platform"
+          ],
+          "llm_dir": "west",
+          "in_gt": true,
+          "gt_dir": "west",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 57
+        },
+        {
+          "edge": [
+            "on the platform",
+            "west of the pit"
+          ],
+          "llm_dir": "west",
+          "in_gt": true,
+          "gt_dir": "west",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 61
+        }
+      ],
+      "case_counts": {
+        "correct": 2
+      },
+      "root_cause": "naming_collision_on_correct_subgraph"
+    },
+    {
+      "type": "naming",
+      "description": "node 'west of the pit' reachable at conflicting positions [(-2, -11, 0), (-2, -7, 0), (-2, -3, 0), (-2, 1, 0)]",
+      "involved_edges": [],
+      "involved_nodes": [
+        "west of the pit"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "on the platform",
+            "west of the pit"
+          ],
+          "llm_dir": "west",
+          "in_gt": true,
+          "gt_dir": "west",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 61
+        },
+        {
+          "edge": [
+            "west of the pit",
+            "key room"
+          ],
+          "llm_dir": "north",
+          "in_gt": true,
+          "gt_dir": "north",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 62
+        },
+        {
+          "edge": [
+            "west of the pit",
+            "black room"
+          ],
+          "llm_dir": "south",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "dst_hallucinated",
+          "source_in_gt": true,
+          "target_in_gt": false,
+          "step": 68
+        }
+      ],
+      "case_counts": {
+        "correct": 2,
+        "dst_hallucinated": 1
+      },
+      "root_cause": "real_name_corrupted_by_neighbour_error"
+    },
+    {
+      "type": "naming",
+      "description": "node 'key room' reachable at conflicting positions [(-2, -10, 0), (-2, -6, 0), (-2, -2, 0), (-2, 2, 0)]",
+      "involved_edges": [],
+      "involved_nodes": [
+        "key room"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "west of the pit",
+            "key room"
+          ],
+          "llm_dir": "north",
+          "in_gt": true,
+          "gt_dir": "north",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 62
+        },
+        {
+          "edge": [
+            "key room",
+            "demon room"
+          ],
+          "llm_dir": "north",
+          "in_gt": true,
+          "gt_dir": "north",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 64
+        }
+      ],
+      "case_counts": {
+        "correct": 2
+      },
+      "root_cause": "naming_collision_on_correct_subgraph"
+    },
+    {
+      "type": "naming",
+      "description": "node 'black room' reachable at conflicting positions [(-2, -12, 0), (-2, -8, 0), (-2, -4, 0), (-2, 0, 0)]",
+      "involved_edges": [],
+      "involved_nodes": [
+        "black room"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "west of the pit",
+            "black room"
+          ],
+          "llm_dir": "south",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "dst_hallucinated",
+          "source_in_gt": true,
+          "target_in_gt": false,
+          "step": 68
+        }
+      ],
+      "case_counts": {
+        "dst_hallucinated": 1
+      },
+      "root_cause": "name_hallucination"
+    },
+    {
+      "type": "naming",
+      "description": "node 'demon room' reachable at conflicting positions [(-2, -9, 0), (-2, -5, 0), (-2, -1, 0), (-2, 3, 0)]",
+      "involved_edges": [],
+      "involved_nodes": [
+        "demon room"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "key room",
+            "demon room"
+          ],
+          "llm_dir": "north",
+          "in_gt": true,
+          "gt_dir": "north",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 64
+        }
+      ],
+      "case_counts": {
+        "correct": 1
+      },
+      "root_cause": "naming_collision_on_correct_subgraph"
+    },
+    {
+      "type": "naming",
+      "description": "node 'stalagmite room' reachable at conflicting positions [(2, -12, 0), (2, -8, 0), (2, -4, 0), (2, 0, 0)]",
+      "involved_edges": [],
+      "involved_nodes": [
+        "stalagmite room"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "door near blades",
+            "stalagmite room"
+          ],
+          "llm_dir": "north",
+          "in_gt": true,
+          "gt_dir": "north",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 50
+        },
+        {
+          "edge": [
+            "stalagmite room",
+            "north stalagmite room"
+          ],
+          "llm_dir": "north",
+          "in_gt": true,
+          "gt_dir": "north",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 51
+        }
+      ],
+      "case_counts": {
+        "correct": 2
+      },
+      "root_cause": "naming_collision_on_correct_subgraph"
+    },
+    {
+      "type": "naming",
+      "description": "node 'door near blades' reachable at conflicting positions [(2, -13, 0), (2, -9, 0), (2, -5, 0), (2, -1, 0)]",
+      "involved_edges": [],
+      "involved_nodes": [
+        "door near blades"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "t intersection",
+            "door near blades"
+          ],
+          "llm_dir": "north",
+          "in_gt": true,
+          "gt_dir": "north",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 48
+        },
+        {
+          "edge": [
+            "door near blades",
+            "stalagmite room"
+          ],
+          "llm_dir": "north",
+          "in_gt": true,
+          "gt_dir": "north",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 50
+        }
+      ],
+      "case_counts": {
+        "correct": 2
+      },
+      "root_cause": "naming_collision_on_correct_subgraph"
+    },
+    {
+      "type": "naming",
+      "description": "node 't intersection' reachable at conflicting positions [(2, -14, 0), (2, -10, 0), (2, -6, 0), (2, -2, 0), (2, 2, 0)]",
+      "involved_edges": [],
+      "involved_nodes": [
+        "t intersection"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "landing",
+            "t intersection"
+          ],
+          "llm_dir": "east",
+          "in_gt": true,
+          "gt_dir": "east",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 47
+        },
+        {
+          "edge": [
+            "t intersection",
+            "door near blades"
+          ],
+          "llm_dir": "north",
+          "in_gt": true,
+          "gt_dir": "north",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 48
+        }
+      ],
+      "case_counts": {
+        "correct": 2
+      },
+      "root_cause": "naming_collision_on_correct_subgraph"
+    },
+    {
+      "type": "naming",
+      "description": "node 'end of glass hall' reachable at conflicting positions [(1, -11, 0), (1, -7, 0), (1, -3, 0), (1, 1, 0), (7, -11, 0), (7, -7, 0)]",
+      "involved_edges": [],
+      "involved_nodes": [
+        "end of glass hall"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "glass hall",
+            "end of glass hall"
+          ],
+          "llm_dir": "east",
+          "in_gt": true,
+          "gt_dir": "east",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 35
+        },
+        {
+          "edge": [
+            "end of glass hall",
+            "landing"
+          ],
+          "llm_dir": "north",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 36
+        }
+      ],
+      "case_counts": {
+        "correct": 1,
+        "hallucinated_edge": 1
+      },
+      "root_cause": "real_name_corrupted_by_neighbour_error"
+    },
+    {
+      "type": "naming",
+      "description": "node 'bottom of shaft' reachable at conflicting positions [(1, -12, -1), (1, -9, 0), (1, -8, -1), (1, -5, 0), (1, -4, -1), (1, -1, 0), (1, 0, -1), (1, 3, 0)]",
+      "involved_edges": [],
+      "involved_nodes": [
+        "bottom of shaft"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "landing",
+            "bottom of shaft"
+          ],
+          "llm_dir": "north",
+          "in_gt": true,
+          "gt_dir": "north",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 37
+        },
+        {
+          "edge": [
+            "bottom of shaft",
+            "exercise-wheel room"
+          ],
+          "llm_dir": "up",
+          "in_gt": true,
+          "gt_dir": "up",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 38
+        }
+      ],
+      "case_counts": {
+        "correct": 2
+      },
+      "root_cause": "naming_collision_on_correct_subgraph"
+    },
+    {
+      "type": "naming",
+      "description": "node 'glue pit' reachable at conflicting positions [(-3, -11, 0), (-3, -7, 0), (3, -11, 0), (3, -7, 0), (3, -3, 0), (3, 1, 0)]",
+      "involved_edges": [],
+      "involved_nodes": [
+        "glue pit"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "corridor at doorway",
+            "glue pit"
+          ],
+          "llm_dir": "east",
+          "in_gt": true,
+          "gt_dir": "east",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 30
+        },
+        {
+          "edge": [
+            "glue pit",
+            "outside door"
+          ],
+          "llm_dir": "east",
+          "in_gt": true,
+          "gt_dir": "east",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 31
+        }
+      ],
+      "case_counts": {
+        "correct": 2
+      },
+      "root_cause": "naming_collision_on_correct_subgraph"
+    },
+    {
+      "type": "naming",
+      "description": "node 'outside door' reachable at conflicting positions [(-2, -11, 0), (-2, -7, 0), (4, -11, 0), (4, -7, 0)]",
+      "involved_edges": [],
+      "involved_nodes": [
+        "outside door"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "glue pit",
+            "outside door"
+          ],
+          "llm_dir": "east",
+          "in_gt": true,
+          "gt_dir": "east",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 31
+        },
+        {
+          "edge": [
+            "outside door",
+            "hall full of fur"
+          ],
+          "llm_dir": "east",
+          "in_gt": true,
+          "gt_dir": "east",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 33
+        }
+      ],
+      "case_counts": {
+        "correct": 2
+      },
+      "root_cause": "naming_collision_on_correct_subgraph"
+    },
+    {
+      "type": "naming",
+      "description": "node 'hall full of fur' reachable at conflicting positions [(-1, -11, 0), (-1, -7, 0), (5, -11, 0), (5, -7, 0)]",
+      "involved_edges": [],
+      "involved_nodes": [
+        "hall full of fur"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "outside door",
+            "hall full of fur"
+          ],
+          "llm_dir": "east",
+          "in_gt": true,
+          "gt_dir": "east",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 33
+        },
+        {
+          "edge": [
+            "hall full of fur",
+            "glass hall"
+          ],
+          "llm_dir": "east",
+          "in_gt": true,
+          "gt_dir": "east",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 34
+        }
+      ],
+      "case_counts": {
+        "correct": 2
+      },
+      "root_cause": "naming_collision_on_correct_subgraph"
+    },
+    {
+      "type": "naming",
+      "description": "node 'glass hall' reachable at conflicting positions [(0, -11, 0), (0, -7, 0), (0, -3, 0), (6, -11, 0), (6, -7, 0)]",
+      "involved_edges": [],
+      "involved_nodes": [
+        "glass hall"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "hall full of fur",
+            "glass hall"
+          ],
+          "llm_dir": "east",
+          "in_gt": true,
+          "gt_dir": "east",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 34
+        },
+        {
+          "edge": [
+            "glass hall",
+            "end of glass hall"
+          ],
+          "llm_dir": "east",
+          "in_gt": true,
+          "gt_dir": "east",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 35
+        }
+      ],
+      "case_counts": {
+        "correct": 2
+      },
+      "root_cause": "naming_collision_on_correct_subgraph"
+    },
+    {
+      "type": "naming",
+      "description": "node 'center of camp' reachable at conflicting positions [(1, -10, 1), (1, -6, 1), (1, -2, 1), (1, 2, 1)]",
+      "involved_edges": [],
+      "involved_nodes": [
+        "center of camp"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "in your tent",
+            "center of camp"
+          ],
+          "llm_dir": "south",
+          "in_gt": true,
+          "gt_dir": "south",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 2
+        },
+        {
+          "edge": [
+            "center of camp",
+            "storage tent"
+          ],
+          "llm_dir": "west",
+          "in_gt": true,
+          "gt_dir": "west",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 3
+        },
+        {
+          "edge": [
+            "center of camp",
+            "in the desert"
+          ],
+          "llm_dir": "east",
+          "in_gt": true,
+          "gt_dir": "east",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 7
+        },
+        {
+          "edge": [
+            "center of camp",
+            "roboff's tent"
+          ],
+          "llm_dir": "south",
+          "in_gt": true,
+          "gt_dir": "south",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 17
+        }
+      ],
+      "case_counts": {
+        "correct": 4
+      },
+      "root_cause": "naming_collision_on_correct_subgraph"
+    },
+    {
+      "type": "naming",
+      "description": "node 'in your tent' reachable at conflicting positions [(1, -9, 1), (1, -5, 1), (1, -1, 1), (1, 3, 1)]",
+      "involved_edges": [],
+      "involved_nodes": [
+        "in your tent"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "in your tent",
+            "center of camp"
+          ],
+          "llm_dir": "south",
+          "in_gt": true,
+          "gt_dir": "south",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 2
+        }
+      ],
+      "case_counts": {
+        "correct": 1
+      },
+      "root_cause": "naming_collision_on_correct_subgraph"
+    },
+    {
+      "type": "naming",
+      "description": "node 'storage tent' reachable at conflicting positions [(0, -10, 1), (0, -6, 1), (0, -2, 1), (0, 2, 1)]",
+      "involved_edges": [],
+      "involved_nodes": [
+        "storage tent"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "center of camp",
+            "storage tent"
+          ],
+          "llm_dir": "west",
+          "in_gt": true,
+          "gt_dir": "west",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 3
+        }
+      ],
+      "case_counts": {
+        "correct": 1
+      },
+      "root_cause": "naming_collision_on_correct_subgraph"
+    },
+    {
+      "type": "naming",
+      "description": "node 'in the desert' reachable at conflicting positions [(2, -10, 1), (2, -6, 1), (2, -2, 1), (2, 2, 1)]",
+      "involved_edges": [],
+      "involved_nodes": [
+        "in the desert"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "center of camp",
+            "in the desert"
+          ],
+          "llm_dir": "east",
+          "in_gt": true,
+          "gt_dir": "east",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 7
+        },
+        {
+          "edge": [
+            "in the desert",
+            "bottom of a hole"
+          ],
+          "llm_dir": "south",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "dst_hallucinated",
+          "source_in_gt": true,
+          "target_in_gt": false,
+          "step": 12
+        }
+      ],
+      "case_counts": {
+        "correct": 1,
+        "dst_hallucinated": 1
+      },
+      "root_cause": "real_name_corrupted_by_neighbour_error"
+    },
+    {
+      "type": "naming",
+      "description": "node 'bottom of a hole' reachable at conflicting positions [(2, -11, 1), (2, -7, 1), (2, -3, 1), (2, 1, 1)]",
+      "involved_edges": [],
+      "involved_nodes": [
+        "bottom of a hole"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "in the desert",
+            "bottom of a hole"
+          ],
+          "llm_dir": "south",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "dst_hallucinated",
+          "source_in_gt": true,
+          "target_in_gt": false,
+          "step": 12
+        }
+      ],
+      "case_counts": {
+        "dst_hallucinated": 1
+      },
+      "root_cause": "name_hallucination"
+    }
+  ],
+  "walkthrough_steps_available": 71
+}

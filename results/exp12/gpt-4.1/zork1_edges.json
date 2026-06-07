@@ -1,0 +1,122 @@
+[
+  {
+    "src_node": "<unknown>",
+    "dst_node": "up a tree",
+    "action": "up",
+    "seen_in_forward": 2
+  },
+  {
+    "src_node": "up a tree",
+    "dst_node": "forest path",
+    "action": "down",
+    "seen_in_forward": 3
+  },
+  {
+    "src_node": "forest path",
+    "dst_node": "north of house",
+    "action": "south",
+    "seen_in_forward": 4
+  },
+  {
+    "src_node": "north of house",
+    "dst_node": "kitchen",
+    "action": "west",
+    "seen_in_forward": 5
+  },
+  {
+    "src_node": "kitchen",
+    "dst_node": "living room",
+    "action": "west",
+    "seen_in_forward": 6
+  },
+  {
+    "src_node": "living room",
+    "dst_node": "kitchen",
+    "action": "east",
+    "seen_in_forward": 7
+  },
+  {
+    "src_node": "kitchen",
+    "dst_node": "attic",
+    "action": "up",
+    "seen_in_forward": 8
+  },
+  {
+    "src_node": "attic",
+    "dst_node": "kitchen",
+    "action": "down",
+    "seen_in_forward": 9
+  },
+  {
+    "src_node": "kitchen",
+    "dst_node": "cellar",
+    "action": "down",
+    "seen_in_forward": 10
+  },
+  {
+    "src_node": "cellar",
+    "dst_node": "the troll room",
+    "action": "north",
+    "seen_in_forward": 11
+  },
+  {
+    "src_node": "the troll room",
+    "dst_node": "east-west passage",
+    "action": "east",
+    "seen_in_forward": 12
+  },
+  {
+    "src_node": "east-west passage",
+    "dst_node": "round room",
+    "action": "east",
+    "seen_in_forward": 13
+  },
+  {
+    "src_node": "round room",
+    "dst_node": "engravings cave",
+    "action": "southeast",
+    "seen_in_forward": 14
+  },
+  {
+    "src_node": "engravings cave",
+    "dst_node": "dome room",
+    "action": "east",
+    "seen_in_forward": 15
+  },
+  {
+    "src_node": "dome room",
+    "dst_node": "torch room",
+    "action": "down",
+    "seen_in_forward": 16
+  },
+  {
+    "src_node": "torch room",
+    "dst_node": "temple",
+    "action": "down",
+    "seen_in_forward": 17
+  },
+  {
+    "src_node": "temple",
+    "dst_node": "altar",
+    "action": "south",
+    "seen_in_forward": 18
+  },
+  {
+    "src_node": "altar",
+    "dst_node": "temple",
+    "action": "north",
+    "seen_in_forward": 19
+  },
+  {
+    "src_node": "temple",
+    "dst_node": "forest path",
+    "action": "east",
+    "seen_in_forward": 20
+  },
+  {
+    "src_node": "forest path",
+    "dst_node": "cellar",
+    "action": "down",
+    "seen_in_forward": 21
+  }
+]

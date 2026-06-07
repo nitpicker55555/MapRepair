@@ -1,0 +1,63 @@
+{
+  "buckets": {
+    "CORRECT": 8,
+    "WRONG_DIRECTION": 0,
+    "WRONG_DST": 0,
+    "SPURIOUS_PAIR": 0,
+    "HALLUCINATED_DST": 0,
+    "HALLUCINATED_SRC": 0
+  },
+  "samples": {
+    "CORRECT": [
+      {
+        "src_node": "chamber",
+        "dst_node": "bedchamber",
+        "action": "east",
+        "step_num": 2,
+        "gt_src": "chamber",
+        "gt_dst": "bedchamber"
+      },
+      {
+        "src_node": "bedchamber",
+        "dst_node": "chamber",
+        "action": "west",
+        "step_num": 3,
+        "gt_src": "bedchamber",
+        "gt_dst": "chamber"
+      },
+      {
+        "src_node": "chamber",
+        "dst_node": "spare room",
+        "action": "north",
+        "step_num": 4,
+        "gt_src": "chamber",
+        "gt_dst": "spare room"
+      },
+      {
+        "src_node": "spare room",
+        "dst_node": "attic",
+        "action": "east",
+        "step_num": 5,
+        "gt_src": "spare room",
+        "gt_dst": "attic"
+      },
+      {
+        "src_node": "attic",
+        "dst_node": "spare room",
+        "action": "west",
+        "step_num": 7,
+        "gt_src": "basement",
+        "gt_dst": "kitchenette"
+      }
+    ],
+    "WRONG_DIRECTION": [],
+    "WRONG_DST": [],
+    "SPURIOUS_PAIR": [],
+    "HALLUCINATED_DST": [],
+    "HALLUCINATED_SRC": []
+  },
+  "n_gt_edges": 14,
+  "n_pred_edges": 8,
+  "gt_edge_recall": 0.42857142857142855,
+  "gt_pair_recall": 0.42857142857142855
+}

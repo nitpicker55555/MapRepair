@@ -1,0 +1,66 @@
+[
+  {
+    "step_num": 0,
+    "action": "west",
+    "command": "go west",
+    "observation": "-= Bedchamber =-\nYou've just sauntered into a bedchamber. Let's see what's in here.\n\n\n\nYou need an unguarded exit? You should try going east.\n\n\n-= Bedchamber =-0/3",
+    "gt_src": "basement",
+    "gt_dst": "bedchamber"
+  },
+  {
+    "step_num": 1,
+    "action": "east",
+    "command": "go east",
+    "observation": "-= Basement =-\nIf you're wondering why everything seems so ordinary all of a sudden, it's because you've just walked into the basement.\n\nOh wow! Is that what I think it is? It is! It's a box.\n\nThere is a closed gateway leading east. There is an unblocked exit to the south. There is an exit to the west. Don't worry, it is unguarded.\n\n\n-= Basement =-0/4",
+    "gt_src": "bedchamber",
+    "gt_dst": "basement"
+  },
+  {
+    "step_num": 2,
+    "action": "south",
+    "command": "go south",
+    "observation": "-= Spare Room =-\nYou have come into the most normal of all possible spare rooms.\n\nYou bend down to tie your shoe. When you stand up, you notice a workbench. The workbench appears to be empty.\n\nThere is an exit to the north. Don't worry, it is unguarded.\n\n\n-= Spare Room =-0/5",
+    "gt_src": "basement",
+    "gt_dst": "spare room"
+  },
+  {
+    "step_num": 3,
+    "action": "north",
+    "command": "go north",
+    "observation": "-= Basement =-\nIf you're wondering why everything seems so ordinary all of a sudden, it's because you've just walked into the basement.\n\nOh wow! Is that what I think it is? It is! It's a box.\n\nThere is a closed gateway leading east. There is an unblocked exit to the south. There is an exit to the west. Don't worry, it is unguarded.\n\n\n-= Basement =-0/6",
+    "gt_src": "spare room",
+    "gt_dst": "basement"
+  },
+  {
+    "step_num": 4,
+    "action": "east",
+    "command": "go east",
+    "observation": "You have to open the gateway first.\n\n\n-= Basement =-0/7",
+    "gt_src": "basement",
+    "gt_dst": "sauna"
+  },
+  {
+    "step_num": 5,
+    "action": "north",
+    "command": "go north",
+    "observation": "You can't go that way.\n\n\n-= Basement =-0/8",
+    "gt_src": "sauna",
+    "gt_dst": "canteen"
+  },
+  {
+    "step_num": 6,
+    "action": "south",
+    "command": "go south",
+    "observation": "-= Spare Room =-\nYou have come into the most normal of all possible spare rooms.\n\nYou bend down to tie your shoe. When you stand up, you notice a workbench. The workbench appears to be empty.\n\nThere is an exit to the north. Don't worry, it is unguarded.\n\n\n-= Spare Room =-0/9",
+    "gt_src": "canteen",
+    "gt_dst": "sauna"
+  },
+  {
+    "step_num": 7,
+    "action": "west",
+    "command": "go west",
+    "observation": "You can't go that way.\n\n\n-= Spare Room =-0/10",
+    "gt_src": "sauna",
+    "gt_dst": "basement"
+  }
+]

@@ -1,0 +1,16 @@
+{
+  "game": "huntdark",
+  "num_conflicts": 3,
+  "iterations": 0,
+  "success": false,
+  "remaining_conflicts": 3,
+  "pre_edge_recall": 0.6666666666666666,
+  "pre_strict_direction_match": 0.6666666666666666,
+  "pre_edge_direction_accuracy": 1.0,
+  "post_edge_recall": 0.6666666666666666,
+  "post_strict_direction_match": 0.6666666666666666,
+  "post_permissive_direction_match": 1.0,
+  "post_edge_direction_accuracy": 1.0,
+  "edge_recall_delta": 0.0,
+  "strict_direction_delta": 0.0
+}

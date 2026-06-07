@@ -1,0 +1,42 @@
+[
+  {
+    "src_id": "r_2",
+    "direction": "west",
+    "dst_id": "r_0"
+  },
+  {
+    "src_id": "r_0",
+    "direction": "south",
+    "dst_id": "r_1"
+  },
+  {
+    "src_id": "r_1",
+    "direction": "north",
+    "dst_id": "r_0"
+  },
+  {
+    "src_id": "r_0",
+    "direction": "east",
+    "dst_id": "r_2"
+  },
+  {
+    "src_id": "r_2",
+    "direction": "south",
+    "dst_id": "r_3"
+  },
+  {
+    "src_id": "r_3",
+    "direction": "east",
+    "dst_id": "r_4"
+  },
+  {
+    "src_id": "r_4",
+    "direction": "west",
+    "dst_id": "r_3"
+  },
+  {
+    "src_id": "r_3",
+    "direction": "north",
+    "dst_id": "r_2"
+  }
+]

@@ -1,0 +1,158 @@
+[
+  {
+    "src_node": "mineralized corridor",
+    "dst_node": "tight fit",
+    "action": "up",
+    "seen_in_forward": 2
+  },
+  {
+    "src_node": "tight fit",
+    "dst_node": "fifth layer dropoff",
+    "action": "up",
+    "seen_in_forward": 3
+  },
+  {
+    "src_node": "fifth layer dropoff",
+    "dst_node": "tight fit",
+    "action": "down",
+    "seen_in_forward": 4
+  },
+  {
+    "src_node": "tight fit",
+    "dst_node": "mineralized corridor",
+    "action": "down",
+    "seen_in_forward": 5
+  },
+  {
+    "src_node": "mineralized corridor",
+    "dst_node": "cool cavern",
+    "action": "southeast",
+    "seen_in_forward": 6
+  },
+  {
+    "src_node": "cool cavern",
+    "dst_node": "east-west passage",
+    "action": "west",
+    "seen_in_forward": 7
+  },
+  {
+    "src_node": "east-west passage",
+    "dst_node": "carved steps",
+    "action": "west",
+    "seen_in_forward": 8
+  },
+  {
+    "src_node": "carved steps",
+    "dst_node": "moss-filled cave",
+    "action": "north",
+    "seen_in_forward": 9
+  },
+  {
+    "src_node": "moss-filled cave",
+    "dst_node": "cleaning closet",
+    "action": "down",
+    "seen_in_forward": 10
+  },
+  {
+    "src_node": "cleaning closet",
+    "dst_node": "moss-filled cave",
+    "action": "up",
+    "seen_in_forward": 11
+  },
+  {
+    "src_node": "moss-filled cave",
+    "dst_node": "carved steps",
+    "action": "south",
+    "seen_in_forward": 12
+  },
+  {
+    "src_node": "carved steps",
+    "dst_node": "lonely burial ground",
+    "action": "south",
+    "seen_in_forward": 13
+  },
+  {
+    "src_node": "lonely burial ground",
+    "dst_node": "carved steps",
+    "action": "north",
+    "seen_in_forward": 14
+  },
+  {
+    "src_node": "carved steps",
+    "dst_node": "east-west passage",
+    "action": "east",
+    "seen_in_forward": 15
+  },
+  {
+    "src_node": "east-west passage",
+    "dst_node": "cool cavern",
+    "action": "east",
+    "seen_in_forward": 16
+  },
+  {
+    "src_node": "cool cavern",
+    "dst_node": "narrow passage",
+    "action": "west",
+    "seen_in_forward": 17
+  },
+  {
+    "src_node": "narrow passage",
+    "dst_node": "gaseous geyser",
+    "action": "west",
+    "seen_in_forward": 18
+  },
+  {
+    "src_node": "gaseous geyser",
+    "dst_node": "middle shaft",
+    "action": "up",
+    "seen_in_forward": 19
+  },
+  {
+    "src_node": "middle shaft",
+    "dst_node": "top of the shaft",
+    "action": "up",
+    "seen_in_forward": 20
+  },
+  {
+    "src_node": "top of the shaft",
+    "dst_node": "on the ledge",
+    "action": "east",
+    "seen_in_forward": 21
+  },
+  {
+    "src_node": "on the ledge",
+    "dst_node": "top of the shaft",
+    "action": "west",
+    "seen_in_forward": 22
+  },
+  {
+    "src_node": "top of the shaft",
+    "dst_node": "middle shaft",
+    "action": "down",
+    "seen_in_forward": 23
+  },
+  {
+    "src_node": "middle shaft",
+    "dst_node": "shaft base",
+    "action": "down",
+    "seen_in_forward": 24
+  },
+  {
+    "src_node": "shaft base",
+    "dst_node": "gaseous geyser",
+    "action": "down",
+    "seen_in_forward": 25
+  },
+  {
+    "src_node": "gaseous geyser",
+    "dst_node": "quarry",
+    "action": "west",
+    "seen_in_forward": 26
+  },
+  {
+    "src_node": "quarry",
+    "dst_node": "gaseous geyser",
+    "action": "east",
+    "seen_in_forward": 27
+  }
+]

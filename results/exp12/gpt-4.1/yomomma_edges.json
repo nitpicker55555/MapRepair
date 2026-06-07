@@ -1,0 +1,86 @@
+[
+  {
+    "src_node": "dark corner (se corner)",
+    "dst_node": "entrance (southern side)",
+    "action": "west",
+    "seen_in_forward": 2
+  },
+  {
+    "src_node": "entrance (southern side)",
+    "dst_node": "arcade corner (sw corner)",
+    "action": "west",
+    "seen_in_forward": 3
+  },
+  {
+    "src_node": "arcade corner (sw corner)",
+    "dst_node": "entrance (southern side)",
+    "action": "east",
+    "seen_in_forward": 4
+  },
+  {
+    "src_node": "entrance (southern side)",
+    "dst_node": "dance floor (center of the club)",
+    "action": "north",
+    "seen_in_forward": 5
+  },
+  {
+    "src_node": "dance floor (center of the club)",
+    "dst_node": "artist hangout (ne corner)",
+    "action": "northeast",
+    "seen_in_forward": 6
+  },
+  {
+    "src_node": "artist hangout (ne corner)",
+    "dst_node": "dance floor (center of the club)",
+    "action": "southwest",
+    "seen_in_forward": 7
+  },
+  {
+    "src_node": "dance floor (center of the club)",
+    "dst_node": "bar (western side)",
+    "action": "west",
+    "seen_in_forward": 8
+  },
+  {
+    "src_node": "bar (western side)",
+    "dst_node": "dance floor (center of the club)",
+    "action": "east",
+    "seen_in_forward": 9
+  },
+  {
+    "src_node": "dance floor (center of the club)",
+    "dst_node": "vip lounge (nw corner)",
+    "action": "north",
+    "seen_in_forward": 10
+  },
+  {
+    "src_node": "vip lounge (nw corner)",
+    "dst_node": "bar (western side)",
+    "action": "south",
+    "seen_in_forward": 11
+  },
+  {
+    "src_node": "bar (western side)",
+    "dst_node": "dance floor (center of the club)",
+    "action": "southeast",
+    "seen_in_forward": 12
+  },
+  {
+    "src_node": "dance floor (center of the club)",
+    "dst_node": "hall of fame (eastern side)",
+    "action": "south",
+    "seen_in_forward": 13
+  },
+  {
+    "src_node": "hall of fame (eastern side)",
+    "dst_node": "artist hangout (ne corner)",
+    "action": "north",
+    "seen_in_forward": 14
+  },
+  {
+    "src_node": "artist hangout (ne corner)",
+    "dst_node": "dance floor (center of the club)",
+    "action": "northwest",
+    "seen_in_forward": 15
+  }
+]

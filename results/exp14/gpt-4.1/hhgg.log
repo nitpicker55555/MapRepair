@@ -1,0 +1,4 @@
+# hhgg  model=gpt-4.1  n_steps=3  (exp14 bootstrap-fixed)
+step   0 BOOTSTRAP seed current_loc='front porch' (src missing, dst valid)
+step   1 MOVE 'front porch' --[south]--> 'front of house'
+step   2 MOVE 'front of house' --[exit]--> 'country lane'

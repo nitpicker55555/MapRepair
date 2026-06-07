@@ -1,0 +1,68 @@
+[
+    {
+        "src_node": "bottom of pit",
+        "dst_node": "tight crawl",
+        "action": "down",
+        "seen_in_forward": 7,
+        "seen_in_reversed": 9999,
+        "edge_min_step": 7,
+        "seen_in_forward_answerable": 7,
+        "seen_in_reversed_answerable": 9999,
+        "edge_min_step_answerable": 7
+    },
+    {
+        "src_node": "smallish cave",
+        "dst_node": "cramped cavern",
+        "action": "up",
+        "seen_in_forward": 27,
+        "seen_in_reversed": 9999,
+        "edge_min_step": 27,
+        "seen_in_forward_answerable": 27,
+        "seen_in_reversed_answerable": 9999,
+        "edge_min_step_answerable": 27
+    },
+    {
+        "src_node": "cramped cavern",
+        "dst_node": "smallish cave",
+        "action": "down",
+        "seen_in_forward": 9999,
+        "seen_in_reversed": 27,
+        "edge_min_step": 27,
+        "seen_in_forward_answerable": 9999,
+        "seen_in_reversed_answerable": 27,
+        "edge_min_step_answerable": 27
+    },
+    {
+        "src_node": "largish dome",
+        "dst_node": "small cave",
+        "action": "up",
+        "seen_in_forward": 46,
+        "seen_in_reversed": 9999,
+        "edge_min_step": 46,
+        "seen_in_forward_answerable": 46,
+        "seen_in_reversed_answerable": 9999,
+        "edge_min_step_answerable": 46
+    },
+    {
+        "src_node": "small cave",
+        "dst_node": "largish dome",
+        "action": "down",
+        "seen_in_forward": 9999,
+        "seen_in_reversed": 46,
+        "edge_min_step": 46,
+        "seen_in_forward_answerable": 9999,
+        "seen_in_reversed_answerable": 46,
+        "edge_min_step_answerable": 46
+    },
+    {
+        "src_node": "cramped room",
+        "dst_node": "base of canyon",
+        "action": "up",
+        "seen_in_forward": 54,
+        "seen_in_reversed": 9999,
+        "edge_min_step": 54,
+        "seen_in_forward_answerable": 54,
+        "seen_in_reversed_answerable": 9999,
+        "edge_min_step_answerable": 54
+    }
+]

@@ -1,0 +1,122 @@
+[
+  {
+    "src_node": "street, near courthouse",
+    "dst_node": "courthouse",
+    "action": "south",
+    "seen_in_forward": 3
+  },
+  {
+    "src_node": "courthouse",
+    "dst_node": "street, near courthouse",
+    "action": "north",
+    "seen_in_forward": 4
+  },
+  {
+    "src_node": "street, near courthouse",
+    "dst_node": "downtown",
+    "action": "west",
+    "seen_in_forward": 5
+  },
+  {
+    "src_node": "downtown",
+    "dst_node": "office building",
+    "action": "west",
+    "seen_in_forward": 6
+  },
+  {
+    "src_node": "office building",
+    "dst_node": "law office",
+    "action": "east",
+    "seen_in_forward": 7
+  },
+  {
+    "src_node": "law office",
+    "dst_node": "second floor",
+    "action": "west",
+    "seen_in_forward": 8
+  },
+  {
+    "src_node": "second floor",
+    "dst_node": "mayor's office",
+    "action": "east",
+    "seen_in_forward": 9
+  },
+  {
+    "src_node": "mayor's office",
+    "dst_node": "downtown",
+    "action": "east",
+    "seen_in_forward": 10
+  },
+  {
+    "src_node": "downtown",
+    "dst_node": "street, near courthouse",
+    "action": "east",
+    "seen_in_forward": 11
+  },
+  {
+    "src_node": "street, near courthouse",
+    "dst_node": "street, by pizza parlor",
+    "action": "east",
+    "seen_in_forward": 12
+  },
+  {
+    "src_node": "street, by pizza parlor",
+    "dst_node": "pizza parlor",
+    "action": "north",
+    "seen_in_forward": 13
+  },
+  {
+    "src_node": "pizza parlor",
+    "dst_node": "street, by department store",
+    "action": "east",
+    "seen_in_forward": 14
+  },
+  {
+    "src_node": "street, by department store",
+    "dst_node": "clothing department",
+    "action": "south",
+    "seen_in_forward": 15
+  },
+  {
+    "src_node": "clothing department",
+    "dst_node": "cosmetics department",
+    "action": "southeast",
+    "seen_in_forward": 16
+  },
+  {
+    "src_node": "cosmetics department",
+    "dst_node": "clothing department",
+    "action": "northwest",
+    "seen_in_forward": 17
+  },
+  {
+    "src_node": "clothing department",
+    "dst_node": "street, by department store",
+    "action": "north",
+    "seen_in_forward": 18
+  },
+  {
+    "src_node": "street, by department store",
+    "dst_node": "hardware department",
+    "action": "southwest",
+    "seen_in_forward": 19
+  },
+  {
+    "src_node": "hardware department",
+    "dst_node": "clothing department",
+    "action": "northeast",
+    "seen_in_forward": 20
+  },
+  {
+    "src_node": "clothing department",
+    "dst_node": "street, by pizza parlor",
+    "action": "west",
+    "seen_in_forward": 21
+  },
+  {
+    "src_node": "street, by pizza parlor",
+    "dst_node": "roof of office building",
+    "action": "north",
+    "seen_in_forward": 22
+  }
+]

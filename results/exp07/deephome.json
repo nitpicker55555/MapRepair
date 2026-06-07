@@ -1,0 +1,16 @@
+{
+  "game": "deephome",
+  "num_conflicts": 20,
+  "iterations": 2,
+  "success": false,
+  "remaining_conflicts": 1,
+  "pre_edge_recall": 0.5217391304347826,
+  "pre_strict_direction_match": 0.5217391304347826,
+  "pre_edge_direction_accuracy": 1.0,
+  "post_edge_recall": 0.5217391304347826,
+  "post_strict_direction_match": 0.4782608695652174,
+  "post_permissive_direction_match": 0.9130434782608695,
+  "post_edge_direction_accuracy": 0.9166666666666666,
+  "edge_recall_delta": 0.0,
+  "strict_direction_delta": -0.04347826086956519
+}

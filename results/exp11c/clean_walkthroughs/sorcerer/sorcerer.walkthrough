@@ -1,0 +1,168 @@
+===========
+==>STEP NUM: 0
+==>ACT: west
+==>OBSERVATION: Hallway
+Rooms lie to the east and west from this north-south corridor. A heavy wooden door, currently closed, leads north.
+Tacked to the doorframe of your room is a note, hurriedly scribbled on parchment.
+===========
+==>STEP NUM: 1
+==>ACT: west
+==>OBSERVATION: Belboz's Quarters
+The personal chamber of Belboz, who presides over the Circle of Enchanters, is appointed with a beautiful woven wall hanging, an exotic morgia plant, and a wide darkwood desk crafted by the artisans of Gurth. The hallway lies to the east.
+Pacing back and forth on a perch in the corner is Belboz's prized pet parrot, native to the jungles of Miznia.
+===========
+==>STEP NUM: 2
+==>ACT: east
+==>OBSERVATION: Hallway
+There is a scribbled note here.
+===========
+==>STEP NUM: 3
+==>ACT: south
+==>OBSERVATION: Hallway
+Rooms lie to the east and west from this north-south corridor. A large marble archway to the south leads into an open area.
+===========
+==>STEP NUM: 4
+==>ACT: south
+==>OBSERVATION: Lobby
+This is the entrance lobby of the Guild Hall. Befitting the status and wealth of the Guild, the lobby is finished with polished Antharian marble, inlaid with intricate patterns of silver leaf. To the north is a wide arch, and smaller openings flank the area on the eastern and western sides, as well as the northeastern and northwestern corners. A narrow stair leads downward. Through another arch to the south, you can see the entrance steps and the main road into town.
+Affixed to the southern arch is an ornate brass receptacle, intended for use by messengers.
+===========
+==>STEP NUM: 5
+==>ACT: west
+==>OBSERVATION: Store Room
+This is a closet for storage. The only exit is east.
+Among the provisions here is a small ochre-colored vial, closed and labelled with tiny lettering.
+There is a calendar here (providing light).
+There is a depleted matchbook here.
+===========
+==>STEP NUM: 6
+==>ACT: east
+==>OBSERVATION: Lobby
+Affixed to the southern arch is an ornate brass receptacle, intended for use by messengers.
+===========
+==>STEP NUM: 7
+==>ACT: east
+==>OBSERVATION: Library
+This is a study chamber for members of the Guild. Usually, there would be several elder Enchanters patiently training novices, but no one is here at the moment. The only exit is west.
+Lying open on a stand in one corner is a heavy volume, probably a copy of the Encyclopedia Frobizzica.
+The servants have been lax lately, for a scroll is lying among the dust in the corner.
+===========
+==>STEP NUM: 8
+==>ACT: west
+==>OBSERVATION: Lobby
+Affixed to the southern arch is an ornate brass receptacle, intended for use by messengers.
+
+You are now somewhat thirsty.
+===========
+==>STEP NUM: 9
+==>ACT: down
+==>OBSERVATION: Cellar
+You are in the basement of the Guild Hall. A steep, narrow stair leads upward from the southwest corner.
+At the far end of the cellar, draped in cobwebs, is a large trunk. At each corner of its lid is a button: a black button with a picture of a star, a gray button depicting the moon, a red button illustrated with a bloody knife, and a purple button engraved with a royal crown. In the center of the lid is a white button picturing a dove in flight.
+===========
+==>STEP NUM: 10
+==>ACT: up
+==>OBSERVATION: Lobby
+Affixed to the southern arch is an ornate brass receptacle, intended for use by messengers.
+===========
+==>STEP NUM: 11
+==>ACT: north
+==>OBSERVATION: Hallway
+===========
+==>STEP NUM: 12
+==>ACT: west
+==>OBSERVATION: Helistar's Quarters
+Helistar is one of the foremost members of the Circle, and this is her private chamber.
+Among Helistar's possessions is a scroll, new and shiny.
+===========
+==>STEP NUM: 13
+==>ACT: northeast
+==>OBSERVATION: Forest Edge
+To the west, a path enters the blighted woods, which stretch out of sight. A signpost stands beside another path leading north, and to the east is a wide meadow. At the base of the signpost is a slimy hole leading down.
+The hellhound stops at the edge of the forest and bellows. After a moment, it turns and slinks into the trees.
+===========
+==>STEP NUM: 14
+==>ACT: east
+==>OBSERVATION: Meadow
+You are in the center of a barren field. To the east is the turret of a ruined castle, and from the northeast comes the sound of rushing water.
+
+A swarm of bloodsucking locusts appears on the horizon.
+===========
+==>STEP NUM: 15
+==>ACT: northeast
+==>OBSERVATION: River Bank
+You are on a muddy bank of a fast-moving river, full of sharp rocks and foaming rapids, flowing to the southwest. The ground is soft and eroded, and continually threatens to dump you into the turbulent waters. A field lies to the southwest, and a trail leads southeast along the bank.
+===========
+==>STEP NUM: 16
+==>ACT: down
+==>OBSERVATION: River Bed
+You are on the bed of an evaporated river. Fish splash helplessly in tiny puddles. The bed leads northwest and southeast. A climb up the southwest bank is possible. To the northeast is a dark cave, hollowed out by years of rushing water.
+===========
+==>STEP NUM: 17
+==>ACT: northeast
+==>OBSERVATION: Hidden Cave
+This is a hollow area under the northeast bank of the river. The floor rises away from the mouth of the cave, which is at its southwest end. A dark hole leads downward at the far end of the cave.
+Lying in the corner, in a pile of bat guano, is a scroll.
+There is an amber vial here.
+===========
+==>STEP NUM: 18
+==>ACT: down
+==>OBSERVATION: Pit of Bones
+In the center of the room is a deep pit filled with countless bones, an indication of the brutality of dungeon life. There are exits south and southwest. High above you is a small opening in the ceiling.
+===========
+==>STEP NUM: 19
+==>ACT: south
+==>OBSERVATION: Torture Chamber
+This is a large and well-equipped torture chamber. These were very popular in castles of several centuries ago, but are somewhat out of fashion now. There are exits to the west and north.
+Sitting near one of the torture devices is an indigo vial, labelled in tiny letters.
+===========
+==>STEP NUM: 20
+==>ACT: west
+==>OBSERVATION: Dungeon
+This is the dark and dank dungeon of the ruined castle. There's probably a torture chamber nearby. You can go east, northeast, or upward. A small opening leads down as well.
+===========
+==>STEP NUM: 21
+==>ACT: down
+==>OBSERVATION: Highway
+This is a wide road winding away to the east and west, perhaps a relic of the Great Underground Empire you read about in history class. A passage leads up to the north.
+===========
+==>STEP NUM: 22
+==>ACT: west
+==>OBSERVATION: Bend
+The road curves here, heading east and southwest.
+===========
+==>STEP NUM: 23
+==>ACT: southwest
+==>OBSERVATION: Edge of Crater
+You are at the northeastern rim of a gigantic crater, the result of some ancient explosion. A wide underground highway, which ends at the crater's edge, leads northeast.
+===========
+==>STEP NUM: 24
+==>ACT: southwest
+==>OBSERVATION: Crater
+You are standing in the center of an enormous crater, strewn with debris. Several points around the perimeter look climbable.
+===========
+==>STEP NUM: 25
+==>ACT: west
+==>OBSERVATION: Edge of Chasm
+This is a strip of land to the east of a gaping chasm. You might try jumping across, but I'd advise against it. A wide crater lies to the east.
+===========
+==>STEP NUM: 26
+==>ACT: west
+==>OBSERVATION: You fly easily across the chasm...
+
+Bare Passage (you are flying)
+This is a featureless tunnel, narrowing to the west. To the east is a deep gorge, probably too wide to jump across.
+===========
+==>STEP NUM: 27
+==>ACT: west
+==>OBSERVATION: Elbow Room (you are flying)
+The tunnel turns a corner here. You could go either north or east.
+
+You settle gently to the ground.
+===========
+==>STEP NUM: 28
+==>ACT: north
+==>OBSERVATION: Tree Room
+This is a tall room flooded with light from an unseen source. The only exit is south.
+Growing in the center of the room is a tree, thick with foliage. As though to disprove the ancient adage, every branch, bow, and twig has a zorkmid coin growing on it.
+===========

@@ -1,0 +1,18 @@
+{
+  "game": "jewel",
+  "mode": "baseline",
+  "model": "gpt-4.1-mini",
+  "num_conflicts": 29,
+  "iterations": 12,
+  "success": false,
+  "remaining_conflicts": 30,
+  "pre_edge_recall": 0.45161290322580644,
+  "pre_strict_direction_match": 0.45161290322580644,
+  "pre_edge_direction_accuracy": 1.0,
+  "post_edge_recall": 0.45161290322580644,
+  "post_strict_direction_match": 0.41935483870967744,
+  "post_permissive_direction_match": 0.8709677419354839,
+  "post_edge_direction_accuracy": 0.9285714285714286,
+  "edge_recall_delta": 0.0,
+  "strict_direction_delta": -0.032258064516129004
+}

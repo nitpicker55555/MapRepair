@@ -6,3 +6,15 @@ __pycache__/
 .venv/
 venv/
 output/
+
+# Transient build / cache
+__pycache__/
+*.pyc
+.venv/
+.pytest_cache/
+*.egg-info/
+.env
+
+# Mac
+.DS_Store
+.idea/

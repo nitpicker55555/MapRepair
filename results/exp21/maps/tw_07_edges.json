@@ -1,0 +1,130 @@
+[
+  {
+    "src_node": "recreation zone",
+    "dst_node": "playroom",
+    "action": "west",
+    "step_num": 1,
+    "gt_src": "study",
+    "gt_dst": "bedroom"
+  },
+  {
+    "src_node": "playroom",
+    "dst_node": "recreation zone",
+    "action": "east",
+    "step_num": 2,
+    "gt_src": "bedroom",
+    "gt_dst": "study"
+  },
+  {
+    "src_node": "recreation zone",
+    "dst_node": "cubicle",
+    "action": "south",
+    "step_num": 3,
+    "gt_src": "study",
+    "gt_dst": "dish-pit"
+  },
+  {
+    "src_node": "cubicle",
+    "dst_node": "recreation zone",
+    "action": "north",
+    "step_num": 4,
+    "gt_src": "dish-pit",
+    "gt_dst": "study"
+  },
+  {
+    "src_node": "recreation zone",
+    "dst_node": "playroom",
+    "action": "west",
+    "step_num": 6,
+    "gt_src": "playroom",
+    "gt_dst": "laundry place"
+  },
+  {
+    "src_node": "playroom",
+    "dst_node": "recreation zone",
+    "action": "east",
+    "step_num": 7,
+    "gt_src": "laundry place",
+    "gt_dst": "playroom"
+  },
+  {
+    "src_node": "recreation zone",
+    "dst_node": "office",
+    "action": "east",
+    "step_num": 8,
+    "gt_src": "playroom",
+    "gt_dst": "recreation zone"
+  },
+  {
+    "src_node": "office",
+    "dst_node": "attic",
+    "action": "south",
+    "step_num": 10,
+    "gt_src": "office",
+    "gt_dst": "attic"
+  },
+  {
+    "src_node": "attic",
+    "dst_node": "basement",
+    "action": "south",
+    "step_num": 11,
+    "gt_src": "attic",
+    "gt_dst": "basement"
+  },
+  {
+    "src_node": "basement",
+    "dst_node": "attic",
+    "action": "north",
+    "step_num": 12,
+    "gt_src": "basement",
+    "gt_dst": "attic"
+  },
+  {
+    "src_node": "attic",
+    "dst_node": "office",
+    "action": "north",
+    "step_num": 13,
+    "gt_src": "attic",
+    "gt_dst": "office"
+  },
+  {
+    "src_node": "office",
+    "dst_node": "recreation zone",
+    "action": "west",
+    "step_num": 14,
+    "gt_src": "office",
+    "gt_dst": "recreation zone"
+  },
+  {
+    "src_node": "recreation zone",
+    "dst_node": "playroom",
+    "action": "west",
+    "step_num": 15,
+    "gt_src": "recreation zone",
+    "gt_dst": "playroom"
+  },
+  {
+    "src_node": "playroom",
+    "dst_node": "study",
+    "action": "south",
+    "step_num": 16,
+    "gt_src": "playroom",
+    "gt_dst": "study"
+  },
+  {
+    "src_node": "study",
+    "dst_node": "dish-pit",
+    "action": "south",
+    "step_num": 18,
+    "gt_src": "cubicle",
+    "gt_dst": "cookhouse"
+  },
+  {
+    "src_node": "dish-pit",
+    "dst_node": "study",
+    "action": "north",
+    "step_num": 19,
+    "gt_src": "cookhouse",
+    "gt_dst": "cubicle"
+  }
+]

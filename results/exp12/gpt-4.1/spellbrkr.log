@@ -1,0 +1,17 @@
+# spellbrkr  model=gpt-4.1  n_steps=16
+step   0 bad movement output: {'is_movement': True, 'src_node': None, 'dst_node': 'guild hall', 'action': 'south', 'seen_in_forward': 0, 'current_location': 'guild hall', 'reasoning': "Observation begins with 'Guild Hall', matching a canonical location, indicating arrival after moving south."}
+step   1 bad movement output: {'is_movement': True, 'src_node': None, 'dst_node': 'belwit square', 'action': 'south', 'seen_in_forward': 1, 'current_location': 'belwit square', 'reasoning': "The observation explicitly names 'Belwit Square', which matches a canonical location, after moving south."}
+step   2 MOVE 'belwit square' --[down]--> 'midair'
+step   3 MOVE 'midair' --[east]--> 'hall of stone'
+step   4 MOVE 'hall of stone' --[south]--> 'ruins room'
+step   5 MOVE 'ruins room' --[south]--> 'cliff middle'
+step   6 MOVE 'cliff middle' --[up]--> 'cliff top'
+step   7 MOVE 'cliff top' --[up]--> 'boulder(a long oblong boulder below you)'
+step   8 MOVE 'boulder(a long oblong boulder below you)' --[up]--> 'boulder(a nice oblong boulder above you and another large one below you)'
+step   9 MOVE 'boulder(a nice oblong boulder above you and another large one below you)' --[up]--> 'boulder(a long oblong boulder below you)'
+step  10 MOVE 'boulder(a long oblong boulder below you)' --[up]--> 'mountain top'
+step  11 MOVE 'mountain top' --[west]--> 'stone hut'
+step  12 MOVE 'stone hut' --[east]--> 'mountain top'
+step  13 MOVE 'mountain top' --[south]--> 'meadow'
+step  14 MOVE 'meadow' --[west]--> 'cave entrance'
+step  15 MOVE 'cave entrance' --[north]--> 'cave'

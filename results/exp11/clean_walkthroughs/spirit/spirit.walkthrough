@@ -1,0 +1,3627 @@
+===========
+==>STEP NUM: 0
+==>ACT: north
+==>OBSERVATION: Hallway (near your quarters)
+You are in a hallway running west and east. The vaulted ceilings are a nice touch. Your quarters are to the south.
+===========
+==>STEP NUM: 1
+==>ACT: west
+==>OBSERVATION: Hallway (west end)
+You are at the west end of an east-west hallway. There are stairs up and down here, and an exit to the west.
+===========
+==>STEP NUM: 2
+==>ACT: west
+==>OBSERVATION: Monastery Gardens
+You are in the Monastery gardens, where various shrubs and conifers are covered in a light blanket of snow. An open cloister lies to the west, while a doorway heads east.
+
+A small area in the snow has been cleared for late winter planting, and some sand has been sprinkled here and there.
+===========
+==>STEP NUM: 3
+==>ACT: west
+==>OBSERVATION: Cloister Walkway
+You are in an open cloister, that runs along the Monastery gardens to the east. To the north is the main wing of the Monastery. To the south is the entrance hall.
+===========
+==>STEP NUM: 4
+==>ACT: north
+==>OBSERVATION: Main Hall
+This is the main hall of worship in the Monastery. A large domed ceiling hides some sort of lighting that create a warm yet serene atmosphere. A covered walk to the rest of the Monastery lies to the south. To the north is the Monastery chapel. A brazier sits in the center of the room.
+===========
+==>STEP NUM: 5
+==>ACT: north
+==>OBSERVATION: Monastery Chapel
+You are in the Monastery Chapel, the site of the recent appearance of the legendary Anabais. Signs of the recent visit include the slightly scorched walls, and the reek of brimstone. Wood pews are arranged in a circle around the central altar. The exit is south.
+Brother Joseph is here, standing by the altar.
+
+Joseph smiles as you enter. "I'm glad you found me. As you know, thanks to the old fool standing before you, the demon Anabais is loose upon the world once more. He has broken the Rod of the Ancients which was keeping our house and Order protected from outsiders. It is a sorry day for us all." Joseph pauses for a moment. "You are our final hope in a time of chaos. Brothers Palemon, TuffBerry and Toolbox have left the Order, and only you remain. I must now ask you to serve the Order which you have so faithfully served in the past. No short order this, for our continued existence depends on it, but you must go out into a world gone mad alone, and retrieve the four broken pieces of the Rod of the Ancients, and return them here to me, so that we can rid the world of the evil we have loosed!"
+
+Brother Joseph pauses and searches his robes.
+
+"Here, you will need this," he says, giving you a strange amulet. "Without this amulet, the Ancient Ones cannot give you the mystic aid that you will most certainly need. But I waste much time. Go now, and may the Gods smile upon us all."
+
+[Your score has just gone up by two points.]
+===========
+==>STEP NUM: 6
+==>ACT: south
+==>OBSERVATION: Main Hall
+===========
+==>STEP NUM: 7
+==>ACT: south
+==>OBSERVATION: Cloister Walkway
+===========
+==>STEP NUM: 8
+==>ACT: east
+==>OBSERVATION: Monastery Gardens
+===========
+==>STEP NUM: 9
+==>ACT: east
+==>OBSERVATION: Hallway (west end)
+===========
+==>STEP NUM: 10
+==>ACT: east
+==>OBSERVATION: Hallway (near your quarters)
+===========
+==>STEP NUM: 11
+==>ACT: east
+==>OBSERVATION: Hallway (near quarters of Palemon and TuffBerry)
+You are in a hallway running west and east. Brother TuffBerry's quarters lie to the south. Brother Palemon's quarters are to the north.
+===========
+==>STEP NUM: 12
+==>ACT: east
+==>OBSERVATION: Hallway (east end)
+You are at the east end of an east-west hallway. Brother Joseph's quarters lie to the north, and Brother Toolbox's quarters lie to the south.
+===========
+==>STEP NUM: 13
+==>ACT: south
+==>OBSERVATION: Brother Toolbox's Quarters
+You are in Brother Toolbox's quarters, vacant ever since he left the order due to differences many years ago. The exit is north.
+
+You can see a diary and a folded scroll here.
+===========
+==>STEP NUM: 14
+==>ACT: north
+==>OBSERVATION: Hallway (east end)
+===========
+==>STEP NUM: 15
+==>ACT: west
+==>OBSERVATION: Hallway (near quarters of Palemon and TuffBerry)
+===========
+==>STEP NUM: 16
+==>ACT: south
+==>OBSERVATION: Brother TuffBerry's Quarters
+You are in Brother TuffBerry's quarters, vacant since he undertook his quest for Joseph not long ago. The exit is north.
+
+You can see a torn page here.
+===========
+==>STEP NUM: 17
+==>ACT: north
+==>OBSERVATION: Hallway (near quarters of Palemon and TuffBerry)
+===========
+==>STEP NUM: 18
+==>ACT: north
+==>OBSERVATION: Brother Palemon's Quarters
+You are in Brother Palemon's quarters, which have been left unattended ever since Brother Palemon's unexplained disappearance many years ago. The exit is south.
+
+You can see a thin journal here.
+===========
+==>STEP NUM: 19
+==>ACT: west
+==>OBSERVATION: Hidden Sanctum
+You are standing in a small chamber that obviously hasn't been used in quite some time -- the cobwebs and dust are several layers thick. There is a short crawl east.
+
+You can see a dusty scroll and a faded parchment here.
+===========
+==>STEP NUM: 20
+==>ACT: east
+==>OBSERVATION: Brother Palemon's Quarters
+
+You can see a thin journal here.
+===========
+==>STEP NUM: 21
+==>ACT: south
+==>OBSERVATION: Hallway (near quarters of Palemon and TuffBerry)
+===========
+==>STEP NUM: 22
+==>ACT: west
+==>OBSERVATION: Hallway (near your quarters)
+===========
+==>STEP NUM: 23
+==>ACT: west
+==>OBSERVATION: Hallway (west end)
+===========
+==>STEP NUM: 24
+==>ACT: up
+==>OBSERVATION: Hallway (second floor, west)
+You are in a hallway on the second floor of the Monastery. The hallway continues east, while stairs lead downwards.
+===========
+==>STEP NUM: 25
+==>ACT: east
+==>OBSERVATION: Hallway (second floor, east)
+You are in a hallway on the second floor of the Monastery that runs east-to-west. To the north is the private meditation room. To the east is the Monastery library. To the northeast is an entrance to the steeple room.
+===========
+==>STEP NUM: 26
+==>ACT: northeast
+==>OBSERVATION: Steeple Room
+You are in a round room with colored-glass windows. Wood beams line the walls and rise to form a short point in the peaked ceiling above. A small walkway returns to the southwest. A long wood table sits in the center of the room.
+A large rose-colored window lets some light in.
+===========
+==>STEP NUM: 27
+==>ACT: southwest
+==>OBSERVATION: Hallway (second floor, east)
+===========
+==>STEP NUM: 28
+==>ACT: east
+==>OBSERVATION: Monastery Library
+You are in the Monastery library, a cozy, almost cramped room with shelves of various books. The exit is to the west.
+
+On the shelves is a copy of the Holy Scriptures.
+===========
+==>STEP NUM: 29
+==>ACT: west
+==>OBSERVATION: Hallway (second floor, east)
+===========
+==>STEP NUM: 30
+==>ACT: west
+==>OBSERVATION: Hallway (second floor, west)
+===========
+==>STEP NUM: 31
+==>ACT: down
+==>OBSERVATION: Hallway (west end)
+===========
+==>STEP NUM: 32
+==>ACT: down
+==>OBSERVATION: Hallway (basement)
+You are in a hallway in the Monastery basement. The hallway continues to the east, and stairs lead upwards.
+===========
+==>STEP NUM: 33
+==>ACT: east
+==>OBSERVATION: Refectory
+You are in the Refectory, the general dining area for members of the Order. You grimace at the lingering scent of Brother Pufpistery's favorite dish -- Borphbelly stew. Several large oak tables and benches adorn this otherwise bare room. An exit lies to the west, the kitchen is to the north, and another exit lies to the east.
+===========
+==>STEP NUM: 34
+==>ACT: north
+==>OBSERVATION: Monastery Kitchen
+You are in Brother Pufpistery's domain -- the dreaded acolyte kitchen. A huge soup cauldron sits unused nearby. The refectory is south.
+
+You can see a preparing table (on which is a scrap of paper) here.
+===========
+==>STEP NUM: 35
+==>ACT: south
+==>OBSERVATION: Refectory
+===========
+==>STEP NUM: 36
+==>ACT: east
+==>OBSERVATION: Storeroom
+You are in a small cramped storeroom, stocked with various crates and barrels of foodstuffs. The refectory is west.
+
+You can see a large barrel (on which is a sack of flour) here.
+===========
+==>STEP NUM: 37
+==>ACT: west
+==>OBSERVATION: Refectory
+===========
+==>STEP NUM: 38
+==>ACT: west
+==>OBSERVATION: Hallway (basement)
+===========
+==>STEP NUM: 39
+==>ACT: up
+==>OBSERVATION: Hallway (west end)
+===========
+==>STEP NUM: 40
+==>ACT: west
+==>OBSERVATION: Monastery Gardens
+===========
+==>STEP NUM: 41
+==>ACT: west
+==>OBSERVATION: Cloister Walkway
+===========
+==>STEP NUM: 42
+==>ACT: south
+==>OBSERVATION: Entrance Hall
+This is the large entrance hall to the Monastery. Many a devoted visitor has passed through this place. There is an exit to the outside world to the south, and the rest of the Monastery lies to the north.
+===========
+==>STEP NUM: 43
+==>ACT: south
+==>OBSERVATION: You are surprised by a cold blast of wind as you leave the Monastery!
+
+Cliff Face
+You are standing near the top of a snowy mountain peak. The wind is quite cold and is making your teeth chatter. The general vicinity is mostly snow and rock; however, the entrance into the Monastery is to the north, all but hidden from view by the enormous slabs of snow-covered rock that make up the cliff face. There is a rough but obvious trail leading down the mountain to the south. There is also another trail that winds even further up the mountain peak almost hidden in the snow to the east.
+===========
+==>STEP NUM: 44
+==>ACT: east
+==>OBSERVATION: Covered Trail
+You are climbing up a small trail that gets periodically lost in great bluffs of snow. The swirling snow makes seeing an unusual effort. The trail leads downwards to a cliff face to the west, and rises towards the mountain top to the north.
+===========
+==>STEP NUM: 45
+==>ACT: up
+==>OBSERVATION: Mountain Peak
+You are standing on the top of a peak of the Gray Mountains. A cold wind blows snow everywhere, obscuring what would otherwise surely be a wonderful view of the surrounding countryside. You can just make out some buildings to the far south in Frostham. A snowy bluff marks the way back down, or to the west, there appears to be a snowy outcropping. It seems to hang precariously over the edge of the mountain, however.
+===========
+==>STEP NUM: 46
+==>ACT: west
+==>OBSERVATION: You carefully make your way onto the outcropping.
+
+Snowy Outcropping
+You are standing on a snow-covered outcropping. You are almost waist-deep in snow, and the blisteringly cold winds aren't helping. The outcropping juts out alarmingly over the western edge of the mountain. In fact, you can see the Monastery steeple below this ledge. The main portion of the mountain peak lies to the east.
+
+There is a dirty scroll here, practically buried in the snow!
+
+Some snow falls off the outermost edge of the outcropping.
+===========
+==>STEP NUM: 47
+==>ACT: southwest
+==>OBSERVATION: Hallway (second floor, east)
+===========
+==>STEP NUM: 48
+==>ACT: west
+==>OBSERVATION: Hallway (second floor, west)
+===========
+==>STEP NUM: 49
+==>ACT: down
+==>OBSERVATION: Hallway (west end)
+===========
+==>STEP NUM: 50
+==>ACT: west
+==>OBSERVATION: Monastery Gardens
+===========
+==>STEP NUM: 51
+==>ACT: west
+==>OBSERVATION: Cloister Walkway
+===========
+==>STEP NUM: 52
+==>ACT: south
+==>OBSERVATION: Entrance Hall
+===========
+==>STEP NUM: 53
+==>ACT: south
+==>OBSERVATION: You are surprised by a cold blast of wind as you leave the Monastery!
+
+Cliff Face
+
+You can see a holy amulet, a prayer book, a sleeping pallet, some sand and a sack of flour here.
+===========
+==>STEP NUM: 54
+==>ACT: south
+==>OBSERVATION: Rocky Mountain Trail
+You are on a rocky mountain trail that winds up and down a mountain. Patches of snow can be found here and there. The trail continues down the mountain to the south, or up to the north.
+===========
+==>STEP NUM: 55
+==>ACT: south
+==>OBSERVATION: Snowy Intersection
+You are at a snow-filled crossroads in a mountain trail. Paths lead north towards the top of the mountain, east, west, and south towards the base of the mountain.
+
+There is a large stone marker here, in the center of the intersection.
+===========
+==>STEP NUM: 56
+==>ACT: west
+==>OBSERVATION: Top of Snowy Slope
+You're at the top of a short downwards slope into a snowy area below. A path leads east. You could also slide down the slope. A lone tree stands here, overlooking the slope.
+===========
+==>STEP NUM: 57
+==>ACT: down
+==>OBSERVATION: Bottom of Snowy Slope
+You've made your way down to a small snow-covered clearing, ringed by pine trees. The only exit is back up the slope.
+
+There's a large boulder here, sitting squat in the middle of the clearing.
+===========
+==>STEP NUM: 58
+==>ACT: up
+==>OBSERVATION: Top of Snowy Slope
+===========
+==>STEP NUM: 59
+==>ACT: down
+==>OBSERVATION: Top of Snowy Slope
+===========
+==>STEP NUM: 60
+==>ACT: down
+==>OBSERVATION: Bottom of Snowy Slope
+
+There's a large boulder here, sitting squat in the middle of the clearing.
+
+On the large boulder is a sleeping pallet.
+
+You can also see a corbie egg here.
+===========
+==>STEP NUM: 61
+==>ACT: up
+==>OBSERVATION: Top of Snowy Slope
+===========
+==>STEP NUM: 62
+==>ACT: east
+==>OBSERVATION: Snowy Intersection
+
+There is a large stone marker here, in the center of the intersection.
+===========
+==>STEP NUM: 63
+==>ACT: south
+==>OBSERVATION: North of Frozen River
+You are standing just north of a frozen river (probably a tributary of Lake Dinge). You can just see the south bank from here, where the trail seems to continue. There doesn't seem to be a bridge, however. A trail also continues north.
+===========
+==>STEP NUM: 64
+==>ACT: south
+==>OBSERVATION: On Frozen River
+You are standing on a wide smooth river of ice. The river 'runs' east to west, and there are banks to the north and south.
+===========
+==>STEP NUM: 65
+==>ACT: south
+==>OBSERVATION: You tread lightly on the sand covered portion of the ice, and scramble to the south bank.
+
+South of Frozen River
+You are standing just south of a frozen river. You can just see the north bank from here, where the trail seems to continue. The only way to get there is across the river. A trail heads south into a valley.
+===========
+==>STEP NUM: 66
+==>ACT: south
+==>OBSERVATION: Valley Trail
+You are walking along a valley trail, just below a portion of the Gray Mountain ranges. You can see the beginnings of a city to the south, while the trail winds further into the mountain ranges to the north.
+===========
+==>STEP NUM: 67
+==>ACT: south
+==>OBSERVATION: Frostham Outskirts
+You are at the northern outskirts of Frostham. The city proper is to the south. A few snow covered residences are nearby. A trail leads into a valley to the north.
+
+The last time you saw Frostham was before you entered the Monastery -- many years ago at least. Oddly, it seemed bigger and less desolate then.
+===========
+==>STEP NUM: 68
+==>ACT: south
+==>OBSERVATION: Frostham
+You are in Frostham City, the famous winter-lover's haven. The once booming ski vacation spot seems to be a bit more run-down than in times past. The city thins out towards the north, while another section of town is to the south. To the west is a large wood structure. To the southwest is a small building. To the southeast is another small building, possibly a store.
+===========
+==>STEP NUM: 69
+==>ACT: southeast
+==>OBSERVATION: General Store
+This appears to be a small grocery store, strangely abandoned at the moment. Shelves line the walls, although, since no one is minding the store, the current stock seems to be a bit depleted. You notice an exit south marked "EMPLOYEES ONLY" that appears to lead to some hallway. The way back out is to the northwest.
+
+You can see a dusty crate, a moldy crate and a filthy crate here.
+===========
+==>STEP NUM: 70
+==>ACT: north
+==>OBSERVATION: General Store
+
+You can see a moldy crate and a filthy crate here.
+===========
+==>STEP NUM: 71
+==>ACT: north
+==>OBSERVATION: General Store
+
+You can see a filthy crate here.
+===========
+==>STEP NUM: 72
+==>ACT: north
+==>OBSERVATION: You hear a low grinding noise. The hallway underfoot suddenly shifts and drops!
+
+North end of Hallway
+
+You can see a filthy crate and a moldy crate here.
+===========
+==>STEP NUM: 73
+==>ACT: north
+==>OBSERVATION: You hear a low grinding noise. The hallway underfoot suddenly shifts and drops!
+
+North end of Hallway
+
+You can see a filthy crate here.
+===========
+==>STEP NUM: 74
+==>ACT: north
+==>OBSERVATION: North end of Hallway
+===========
+==>STEP NUM: 75
+==>ACT: north
+==>OBSERVATION: Attic
+This is an exceptionally cramped attic, obviously unused for some time. The floorboards are starting to crack. An exit heads south.
+
+You can see a square key here.
+===========
+==>STEP NUM: 76
+==>ACT: south
+==>OBSERVATION: North end of Hallway
+===========
+==>STEP NUM: 77
+==>ACT: south
+==>OBSERVATION: South end of Hallway
+
+You can see a filthy crate, a moldy crate and a dusty crate here.
+===========
+==>STEP NUM: 78
+==>ACT: south
+==>OBSERVATION: You hear a low grinding noise. The hallway underfoot suddenly shifts and drops!
+
+South end of Hallway
+
+You can see a filthy crate and a moldy crate here.
+===========
+==>STEP NUM: 79
+==>ACT: south
+==>OBSERVATION: You hear a low grinding noise. The hallway underfoot suddenly shifts and drops!
+
+South end of Hallway
+
+You can see a filthy crate here.
+===========
+==>STEP NUM: 80
+==>ACT: south
+==>OBSERVATION: North end of Hallway
+
+You can see a moldy crate and a dusty crate here.
+===========
+==>STEP NUM: 81
+==>ACT: north
+==>OBSERVATION: You hear a low grinding noise. The hallway underfoot suddenly shifts and drops!
+
+North end of Hallway
+
+You can see a moldy crate here.
+===========
+==>STEP NUM: 82
+==>ACT: north
+==>OBSERVATION: You hear a low grinding noise. The hallway underfoot suddenly shifts and drops!
+
+North end of Hallway
+===========
+==>STEP NUM: 83
+==>ACT: north
+==>OBSERVATION: You hear a low grinding noise behind you.
+
+Stockroom
+This is a tiny poorly lit room, that is covered in dust. An exit south leads to a dark hole.
+
+You notice a loose board, partially broken, hanging from the ceiling structure.
+
+A dust-covered icebox stands closed against the northern wall.
+===========
+==>STEP NUM: 84
+==>ACT: up
+==>OBSERVATION: Attic
+===========
+==>STEP NUM: 85
+==>ACT: south
+==>OBSERVATION: You hear a low grinding noise. The hallway underfoot suddenly shifts and drops!
+
+North end of Hallway
+===========
+==>STEP NUM: 86
+==>ACT: south
+==>OBSERVATION: You hear a low grinding noise. The hallway underfoot suddenly shifts and drops!
+
+South end of Hallway
+
+You can see a moldy crate and a dusty crate here.
+===========
+==>STEP NUM: 87
+==>ACT: south
+==>OBSERVATION: You hear a low grinding noise. The hallway underfoot suddenly shifts and drops!
+
+South end of Hallway
+
+You can see a dusty crate here.
+===========
+==>STEP NUM: 88
+==>ACT: north
+==>OBSERVATION: General Store
+
+You can see a filthy crate here.
+===========
+==>STEP NUM: 89
+==>ACT: northwest
+==>OBSERVATION: Frostham
+===========
+==>STEP NUM: 90
+==>ACT: southwest
+==>OBSERVATION: Governor's House, Waiting Room
+You are in a waiting room in the house of the Frostham Governor. The carpet is surprisingly plush. The walls have been painted a rather bland peach-like color. The furnishings are also colored peach, which complements the walls without being too nouveau. The way out is to the northeast.
+
+There's a closed door to the south.
+
+A comfortable-looking peach-colored couch is here.
+
+On the desk are a ledger and an alarm clock.
+
+A receptionist sits behind a desk, engrossed in the ledger.
+
+You can also see a travel brochure and a subway brochure here.
+
+Without even looking up, the receptionist says, "The governor is busy right now."
+===========
+==>STEP NUM: 91
+==>ACT: south
+==>OBSERVATION: Governor's Office
+You are in a rather spacious office. The carpeting is quite plush, and all the furnishings seem excessively lavish.
+
+There's an open door to the north.
+
+On the desk is a shiny key.
+
+The governor of Frostham is sitting behind a desk here, trying to look busy.
+
+The governor scowls as you enter. "What do you want?" he says, and doesn't wait for a response. "Oh, I know. More complaints about the snow, I suppose? Well look, I didn't ask for this job. Do you want it? I didn't think so." He shoves something into your hand. "Here, buy yourself a cup of coffee, and stop bothering me."
+===========
+==>STEP NUM: 92
+==>ACT: north
+==>OBSERVATION: You hear the door slam and lock behind you.
+
+Governor's House, Waiting Room
+
+There's a closed door to the south.
+
+A comfortable-looking peach-colored couch is here.
+
+You can also see a travel brochure and a subway brochure here.
+===========
+==>STEP NUM: 93
+==>ACT: northeast
+==>OBSERVATION: Frostham
+===========
+==>STEP NUM: 94
+==>ACT: south
+==>OBSERVATION: Subway Entrance
+You're near the southern end of the city. The rest of the city lies to the north. There's also a rather conspicuous stairway down here.
+
+Standing on a tall pole next to the stairs is a circular sign.
+===========
+==>STEP NUM: 95
+==>ACT: down
+==>OBSERVATION: Frostham GUS Station
+You are standing in a dimly lit underground chamber. There seems to be a much larger room to the southeast, which is unfortunately almost completely blocked by a long metal barricade and gate. Stairs lead up to the outside.
+
+A metal gate bisects the fence to the southeast.
+===========
+==>STEP NUM: 96
+==>ACT: southeast
+==>OBSERVATION: You saunter through the apparently open gate.
+
+Frostham Train Platform
+You are standing in a long underground chamber. The east side of the room contains a lowered set of what appear to be train tracks. The tracks run south into a dark tunnel. Along one wall painted lettering reads "FROSTHAM STATION". A short walkway leads northwest, to a metal fence.
+
+A metal gate bisects the fence to the northwest.
+===========
+==>STEP NUM: 97
+==>ACT: east
+==>OBSERVATION: You enter the train car. The doors slam shut behind you.
+
+Subway car
+You are in an underground train car. Various people fill the train, some in uncomfortable-looking seats.
+
+There's a discarded newspaper in a seat nearby.
+
+You can also see a sinister-looking thug here.
+
+The train starts to move, quickly exiting the station going south.
+
+The sinister-looking thug notices you from the back of the car, and approaches. "Well, well, well," he says, "what do we have here?".
+===========
+==>STEP NUM: 98
+==>ACT: west
+==>OBSERVATION: Aragain Train Platform
+You are standing in a long underground chamber. The east side of the room contains a lowered set of what appear to be train tracks. The tracks run north and south into dark tunnels. Along one wall painted lettering reads "ARAGAIN STATION". A short walkway leads northwest, to a metal fence. There is also a stairway down here. In addition, there is a large train car sitting on the tracks to the east.
+
+A metal gate bisects the fence to the northwest.
+
+The train doors close, and the train rolls off.
+===========
+==>STEP NUM: 99
+==>ACT: down
+==>OBSERVATION: Aragain Train Platform (lower)
+You are standing in a long underground chamber. The south side of the room contains a lowered set of what appear to be train tracks. The tracks run west into a dark tunnel. Along one wall painted lettering reads "ARAGAIN STATION". A set of stairs leads up out of the gloom.
+===========
+==>STEP NUM: 100
+==>ACT: south
+==>OBSERVATION: You squeeze onto the train car. The doors close behind you.
+
+Subway car
+You are in an underground train car. Various people fill the train, some in uncomfortable-looking seats.
+
+The train starts to move, quickly exiting the station going west.
+===========
+==>STEP NUM: 101
+==>ACT: north
+==>OBSERVATION: Greater Anthar Train Platform
+You are standing in a long underground chamber. The south side of the room contains a lowered set of what appear to be train tracks. The tracks run east and west into dark tunnels. Along one wall painted lettering reads "ANTHAR STATION". A short walkway leads north, to a metal fence. There is a large train car sitting on the tracks to the south.
+
+A metal gate bisects the fence to the north.
+
+The train doors close, and the train rolls off.
+===========
+==>STEP NUM: 102
+==>ACT: north
+==>OBSERVATION: Greater Anthar GUS Station
+You are standing at the entrance to the Greater Anthar Great Underground Subway (GUS) station. The train platform lies past the gate to the south, or stairs lead up into the city.
+
+A metal gate bisects the fence to the south.
+===========
+==>STEP NUM: 103
+==>ACT: up
+==>OBSERVATION: Entrance to Greater Anthar
+You're just west of Greater Anthar on the island nation of Antharia. The bright sunlight seems to make the city streets east of here glitter. A stairway leads down.
+
+Standing on a tall pole next to the stairs is a circular sign.
+===========
+==>STEP NUM: 104
+==>ACT: east
+==>OBSERVATION: Anthar West
+You are standing in a busy section of West Greater Anthar City. The city seems to thin out to the west. A roadway heads east, the ever-popular Flathead Stadium lies to the northeast, and a pub lies to the south.
+===========
+==>STEP NUM: 105
+==>ACT: east
+==>OBSERVATION: Anthar East
+You are standing in a busy section of East Greater Anthar City. The city continues to the west. There is a large odd structure to the east, made mostly of glass. The ever-popular Flathead Stadium lies to the northwest. A short walk down to a waterfront area is to the south.
+===========
+==>STEP NUM: 106
+==>ACT: east
+==>OBSERVATION: Conservatory Entrance
+You stand before the entrance to a large public conservatory. You can enter the greenhouses to the northeast and southeast, or walk back to Anthar to the west.
+===========
+==>STEP NUM: 107
+==>ACT: southeast
+==>OBSERVATION: Flower Garden
+A rather lovely flower garden lies before you. The multi-colored flowers are turning the air into perfume. The conservatory entrance is northwest, or more greenhouse gardens lie to the north and east. A tiny trail leads south past the flower beds.
+===========
+==>STEP NUM: 108
+==>ACT: east
+==>OBSERVATION: Jungle Garden
+A garden path winds through this long greenhouse, which is filled with plants native to jungle settings. The environment is somewhat humid. The path heads west and north from here.
+
+A nice little waterfall enhances the jungle setting to the east.
+===========
+==>STEP NUM: 109
+==>ACT: east
+==>OBSERVATION: Nursery
+This small back room is apparently the conservatory nursery. Bits of soil and plant debris are everywhere, along with immature seedling plants. A exit lies west, partially covered by some cloth.
+
+You can see a small flower pot (which is empty) here.
+===========
+==>STEP NUM: 110
+==>ACT: west
+==>OBSERVATION: Jungle Garden
+
+A fake waterfall hides a passage to the east.
+===========
+==>STEP NUM: 111
+==>ACT: north
+==>OBSERVATION: Fountain
+A tasteful fountain intercepts a north-south garden trail here.
+
+It looks like someone left their glasses here.
+
+You hear someone whistling nearby, but there doesn't seem to be anyone around.
+===========
+==>STEP NUM: 112
+==>ACT: south
+==>OBSERVATION: Jungle Garden
+
+A fake waterfall hides a passage to the east.
+===========
+==>STEP NUM: 113
+==>ACT: west
+==>OBSERVATION: Flower Garden
+===========
+==>STEP NUM: 114
+==>ACT: south
+==>OBSERVATION: Gardener's Storehouse
+This must be a storehouse for the conservatory gardeners. There are soil stains and plant debris all over. The only exit is north.
+
+A toolshed stands closed against the wall.
+===========
+==>STEP NUM: 115
+==>ACT: north
+==>OBSERVATION: Flower Garden
+===========
+==>STEP NUM: 116
+==>ACT: north
+==>OBSERVATION: Decorative Plants Garden
+You are standing in a small well-kept garden. The plots surrounding the paths are filled with a variety of general ground-cover plants, all appropriate for most discerning homeowners. Exits lie north and south.
+
+A Christmas Tree stands in one plot, swaying back and forth.
+
+A small shrub sits near and under the Christmas Tree, almost covered by it.
+
+A small plaque sticks out of the soil near the two plants.
+
+The Christmas Tree Monster hums to itself.
+===========
+==>STEP NUM: 117
+==>ACT: south
+==>OBSERVATION: Flower Garden
+===========
+==>STEP NUM: 118
+==>ACT: northwest
+==>OBSERVATION: Conservatory Entrance
+===========
+==>STEP NUM: 119
+==>ACT: west
+==>OBSERVATION: Anthar East
+===========
+==>STEP NUM: 120
+==>ACT: south
+==>OBSERVATION: Swank Waterfront
+A pleasant waterfront walk is your current location. You can see the Great Sea stretching out before you to the south, a breath-taking sight. A rail runs along the south end, preventing an untimely fall into the rock shore below. The city is back to the north.
+
+There's a viewing telescope here, attached to the railing.
+===========
+==>STEP NUM: 121
+==>ACT: north
+==>OBSERVATION: Anthar East
+===========
+==>STEP NUM: 122
+==>ACT: west
+==>OBSERVATION: Anthar West
+===========
+==>STEP NUM: 123
+==>ACT: south
+==>OBSERVATION: Delbin's Pub
+Delbin's Pub has been a popular food and drink spot in South Anthar for quite a while. Usually, you need to fight off barbarians to find a place to sit. At the moment, however, the place is unusually quiet. A group of barbarians seem paralyzed with fear near the back wall, glancing nervously at the front of the bar. The exit is to the north.
+
+A gaudy headdress of some kind is hanging on a nearby wall.
+
+On the bar are a glass of ale and a dirty rag.
+
+There's a warrior-maiden sitting at the bar, her eyes riveted to the glass of ale.
+
+There's an old wizard sitting at the bar, his eyes riveted to the glass of ale.
+
+There's a gentleman dressed in black sitting at the bar, his eyes riveted to the glass of ale.
+
+Delbin himself is standing behind the bar.
+===========
+==>STEP NUM: 124
+==>ACT: north
+==>OBSERVATION: Delbin calls out "Visit us again!" as you leave.
+
+Anthar West
+===========
+==>STEP NUM: 125
+==>ACT: west
+==>OBSERVATION: Entrance to Greater Anthar
+
+Standing on a tall pole next to the stairs is a circular sign.
+===========
+==>STEP NUM: 126
+==>ACT: down
+==>OBSERVATION: Greater Anthar GUS Station
+
+A metal gate bisects the fence to the south.
+===========
+==>STEP NUM: 127
+==>ACT: south
+==>OBSERVATION: You saunter through the apparently open gate.
+
+Greater Anthar Train Platform
+
+A metal gate bisects the fence to the north.
+
+You hear a distant rumbling noise from the west.
+===========
+==>STEP NUM: 128
+==>ACT: south
+==>OBSERVATION: You squeeze onto the train car. The doors close behind you.
+
+Subway car
+
+The train starts to move, quickly exiting the station going west.
+===========
+==>STEP NUM: 129
+==>ACT: north
+==>OBSERVATION: Gurth City Train Platform (lower)
+You are standing in a long underground chamber. The south side of the room contains a lowered set of what appear to be train tracks. The tracks run east into a dark tunnel. Along one wall painted lettering reads "GURTH CITY STATION". A set of stairs leads up out of the gloom. There is a large train car sitting on the tracks to the south.
+
+The train doors close, and the train heads off to the east.
+===========
+==>STEP NUM: 130
+==>ACT: up
+==>OBSERVATION: Gurth City Train Platform
+You are standing in a long underground chamber. The west side of the room contains a lowered set of what appear to be train tracks. The tracks run north and south into dark tunnels. Along one wall painted lettering reads "GURTH CITY STATION". A short walkway leads northeast, to a metal fence. There is also a stairway down here.
+
+A metal gate bisects the fence to the northeast.
+
+Suddenly, from the north, a train emerges from the tunnel! It pulls to a screeching halt, the doors open, and several people rush out and exit the station.
+===========
+==>STEP NUM: 131
+==>ACT: west
+==>OBSERVATION: You shove your way onto train car. The doors close behind you.
+
+Subway car
+You are in an underground train car. Various people fill the train, some in uncomfortable-looking seats.
+
+You can see an annoying yupple here.
+
+The train starts to move, quickly exiting the station going south.
+
+The annoying-looking yupple notices you from the back of the car, and approaches. "A priest," he says, "Just the person I was looking for." He squeezes into a seat near you.
+===========
+==>STEP NUM: 132
+==>ACT: east
+==>OBSERVATION: New Borphee Train Platform
+You are standing in a long underground chamber. The west side of the room contains a lowered set of what appear to be train tracks. The tracks run south into a dark tunnel. Along one wall painted lettering reads "NEW BORPHEE STATION". A short walkway leads northeast, to a metal fence. There is a large train car sitting on the tracks to the west.
+
+A metal gate bisects the fence to the northeast.
+
+The train doors close, and the train rolls off to the south.
+===========
+==>STEP NUM: 133
+==>ACT: northeast
+==>OBSERVATION: New Borphee GUS Station
+You are standing at the entrance to the New Borphee Great Underground Subway (GUS) station. The train platform lies past the gate to the southwest, or stairs lead up into the city.
+
+A metal gate bisects the fence to the southwest.
+===========
+==>STEP NUM: 134
+==>ACT: up
+==>OBSERVATION: You enter the city and are nearly flattened by crowds rushing past.
+
+Downtown New Borphee
+You're right in the middle of downtown New Borphee -- perhaps the busiest, most crowded city you've ever seen. Huge brand-new buildings and throngs of fast-moving people make the whole scene somewhat surreal. The streets head north to a business district, while a set of stairs here leads down.
+
+Standing on a tall pole next to the stairs is a circular sign.
+===========
+==>STEP NUM: 135
+==>ACT: north
+==>OBSERVATION: Business District
+You're in a crowded business district filled with busy people. The city thins out a bit to the north, while city streets head west and south. Directly to the east is a building so tall it makes you dizzy just looking at it.
+
+A number of people rudely brush past you and accidentally knock you down. A kindly old lady helps you to your feet. "I think you dropped that," she says, pointing to a paper object nearby that doesn't seem familiar. She walks off, and is soon lost in the crowd.
+===========
+==>STEP NUM: 136
+==>ACT: west
+==>OBSERVATION: City Streets
+You're on some busy side street in New Borphee. There's a crowded walk back east. To the north is the entrance to some sort of open area, with a large open arch.
+===========
+==>STEP NUM: 137
+==>ACT: north
+==>OBSERVATION: GUE Entrance
+You're standing under an open archway that has the letters "GUE TECH" prominently displayed in twisted brass and copper. A busy street lies to the south, and the campus quad opens up to the north.
+===========
+==>STEP NUM: 138
+==>ACT: north
+==>OBSERVATION: South Quad
+You're walking across a grassy field. More lawn lies to the north, while an archway exits the area to the south. To the west is a low stone building with the word "GYMNASIUM" etched in stone across the entrance. To the east is a old brick building covered in ivy.
+===========
+==>STEP NUM: 139
+==>ACT: west
+==>OBSERVATION: Gymnasium
+There's a large field house here, filled with gym equipment and helpful rubber mats. The exit is east.
+
+Someone left a key here.
+===========
+==>STEP NUM: 140
+==>ACT: east
+==>OBSERVATION: South Quad
+===========
+==>STEP NUM: 141
+==>ACT: east
+==>OBSERVATION: Humanities Building
+You're in the humanities building, which is vacant and closed for the summer. The exit is west.
+
+Someone left a history book here.
+===========
+==>STEP NUM: 142
+==>ACT: west
+==>OBSERVATION: South Quad
+===========
+==>STEP NUM: 143
+==>ACT: north
+==>OBSERVATION: Center of Quad
+The center of the campus is a nicely tended green lawn with a bronze statue in the center. Paths lead north and south across grassy fields. To the west is a small brick building. To the east is a large stone building with a lintel roof and the words "WOOMAX LIBRARY" enscribed across the entrance.
+===========
+==>STEP NUM: 144
+==>ACT: west
+==>OBSERVATION: Cafeteria
+A small cramped area with lots of tables and chairs and food stains. The exit is east.
+
+Someone must've had a late night recently, as there is quite a mess of coffee cups, napkins, and other junk on one table.
+===========
+==>STEP NUM: 145
+==>ACT: east
+==>OBSERVATION: Center of Quad
+===========
+==>STEP NUM: 146
+==>ACT: north
+==>OBSERVATION: North Quad
+You're walking across a grassy field. More lawn lies to the south, while a large building that resembles a auditorium of some sort is north. An inscription near the entrance reads "ENCHANTER HALL". To the west you see a small house-like building. To the east you see a low stone building, clearly new and rather modern looking in contrast to its surroundings.
+===========
+==>STEP NUM: 147
+==>ACT: west
+==>OBSERVATION: Dorms
+You're in a short hallway inside some student dormitories. The exit is east.
+
+There's a closed door to the north.
+
+There's a closed door to the south.
+
+You can also see a dirty ID card here.
+===========
+==>STEP NUM: 148
+==>ACT: north
+==>OBSERVATION: Dorm room
+A cramped room, mostly empty, with some bare furnishings.
+
+There's an open door to the south.
+
+A forgotten textbook is lying in one corner of the room.
+===========
+==>STEP NUM: 149
+==>ACT: south
+==>OBSERVATION: Dorms
+
+There's an open door to the north.
+
+There's a closed door to the south.
+
+You can also see a flat key and a dirty ID card here.
+===========
+==>STEP NUM: 150
+==>ACT: east
+==>OBSERVATION: North Quad
+===========
+==>STEP NUM: 151
+==>ACT: north
+==>OBSERVATION: Enchanter Hall (top)
+You're at the top of a large auditorium which is empty. You can walk down a long aisle to the front of the hall, or out to the south.
+===========
+==>STEP NUM: 152
+==>ACT: north
+==>OBSERVATION: Enchanter Hall (bottom)
+You're at the very front of a large auditorium. From here you can look south and sees rows upon rows of empty seats focused on the stage-like area where you now stand. You can walk back into the seats to the south.
+
+You can see a switch and a large desk here.
+===========
+==>STEP NUM: 153
+==>ACT: south
+==>OBSERVATION: Enchanter Hall (top)
+===========
+==>STEP NUM: 154
+==>ACT: south
+==>OBSERVATION: North Quad
+===========
+==>STEP NUM: 155
+==>ACT: south
+==>OBSERVATION: Center of Quad
+===========
+==>STEP NUM: 156
+==>ACT: east
+==>OBSERVATION: Library
+A student library is here, filled with various texts. The exit is west.
+
+There's a wrinkled magazine ("US News and Dungeon Report") here.
+
+There's a pen-marked scroll sitting amongst some books here.
+
+You can also see a librarian here.
+===========
+==>STEP NUM: 157
+==>ACT: west
+==>OBSERVATION: Some strange invisible force stops you as you try to leave. The librarian doesn't look up, but merely says, "If you want to check something out, I'll need to see some ID first."
+===========
+==>STEP NUM: 158
+==>ACT: west
+==>OBSERVATION: Center of Quad
+===========
+==>STEP NUM: 159
+==>ACT: north
+==>OBSERVATION: North Quad
+===========
+==>STEP NUM: 160
+==>ACT: east
+==>OBSERVATION: Science Center
+You are in a short hallway of some new building. The words "SCIENCE CENTER" are painted on one wall. The hallway opens to rooms to the east, or you can escape to the west.
+===========
+==>STEP NUM: 161
+==>ACT: east
+==>OBSERVATION: Engineering Labs
+You shudder as you look around this area. Clearly a place of science, piles of heavy machinery and strange delicate-looking tools and artifacts are everywhere here. Hallways run west and east.
+
+There's a closed heavy metal door to the south.
+
+There's an odd set of dials in the wall near the metal door.
+
+You can also see a research paper here.
+===========
+==>STEP NUM: 162
+==>ACT: east
+==>OBSERVATION: Office
+You're in a small office of some sort. The only exit is west.
+
+A small desk sits in one corner here.
+
+On the desk is a lab journal.
+===========
+==>STEP NUM: 163
+==>ACT: west
+==>OBSERVATION: Engineering Labs
+
+There's a closed heavy metal door to the south.
+
+There's an odd set of dials in the wall near the metal door.
+
+You can also see a research paper here.
+===========
+==>STEP NUM: 164
+==>ACT: west
+==>OBSERVATION: Science Center
+===========
+==>STEP NUM: 165
+==>ACT: west
+==>OBSERVATION: North Quad
+===========
+==>STEP NUM: 166
+==>ACT: south
+==>OBSERVATION: Center of Quad
+===========
+==>STEP NUM: 167
+==>ACT: south
+==>OBSERVATION: South Quad
+===========
+==>STEP NUM: 168
+==>ACT: south
+==>OBSERVATION: GUE Entrance
+===========
+==>STEP NUM: 169
+==>ACT: south
+==>OBSERVATION: City Streets
+===========
+==>STEP NUM: 170
+==>ACT: east
+==>OBSERVATION: Business District
+===========
+==>STEP NUM: 171
+==>ACT: south
+==>OBSERVATION: Downtown New Borphee
+
+Standing on a tall pole next to the stairs is a circular sign.
+===========
+==>STEP NUM: 172
+==>ACT: down
+==>OBSERVATION: New Borphee GUS Station
+
+A metal gate bisects the fence to the southwest.
+===========
+==>STEP NUM: 173
+==>ACT: southwest
+==>OBSERVATION: You saunter through the apparently open gate.
+
+New Borphee Train Platform
+
+A metal gate bisects the fence to the northeast.
+
+You hear a distant rumbling noise from the south.
+===========
+==>STEP NUM: 174
+==>ACT: west
+==>OBSERVATION: You shove your way onto train car. The doors close behind you.
+
+Subway car
+
+The train starts to move, quickly exiting the station going south.
+===========
+==>STEP NUM: 175
+==>ACT: east
+==>OBSERVATION: Miznia Train Platform
+You are standing in a long underground chamber. The west side of the room contains a lowered set of what appear to be train tracks. The tracks run north into a dark tunnel. Along one wall painted lettering reads "MIZNIA STATION". A short walkway leads northeast, to a metal fence. There is a large train car sitting on the tracks to the west.
+
+A metal gate bisects the fence to the northeast.
+
+The train doors close, and the train rolls off to the north.
+===========
+==>STEP NUM: 176
+==>ACT: northeast
+==>OBSERVATION: Miznia GUS Station
+You are standing at the entrance to the Miznia Great Underground Subway (GUS) station. The train platform lies past the gate to the southwest, or stairs lead up into the city.
+
+A metal gate bisects the fence to the southwest.
+===========
+==>STEP NUM: 177
+==>ACT: up
+==>OBSERVATION: Mizniaport
+The Great Change certainly hasn't changed the ultra-swank city of Mizniaport. The entire place is filled with splashy color and a disturbing sense of moderness. There's a stairway down here, while side walkways head west and northeast.
+
+Standing on a tall pole next to the stairs is a circular sign.
+===========
+==>STEP NUM: 178
+==>ACT: northeast
+==>OBSERVATION: In Front of Swank House
+You're in front of a rather swank looking house to the northeast. To the southwest is the rest of Mizniaport.
+
+You can see a mailbox (which is closed) here.
+===========
+==>STEP NUM: 179
+==>ACT: northeast
+==>OBSERVATION: Entrance Foyer
+You are in the Entrance Foyer of a small but tasteful home. The exit is to the southwest. The general area is tastefully done in maroon carpeting and brass fixtures. Another room lies to the north.
+===========
+==>STEP NUM: 180
+==>ACT: north
+==>OBSERVATION: Parlor
+You are in a very decorative parlor. Various furnishings of high quality are arranged around an enormous rug with intricate golden symbols in the weave design. Open doorways lead south, north, east and west.
+
+A large potted plant sits in one corner.
+===========
+==>STEP NUM: 181
+==>ACT: east
+==>OBSERVATION: Study
+This is a study room with fancy wood paneling and plush carpeting. There is an exit to the west.
+
+A large bookshelf takes up most of the north wall.
+
+On the large bookshelf are a plain journal and a twisted parchment.
+
+You can also see a large wood desk here.
+===========
+==>STEP NUM: 182
+==>ACT: west
+==>OBSERVATION: Parlor
+
+Frobar the Enchanter is here.
+
+A large potted plant sits in one corner.
+===========
+==>STEP NUM: 183
+==>ACT: south
+==>OBSERVATION: Entrance Foyer
+===========
+==>STEP NUM: 184
+==>ACT: southwest
+==>OBSERVATION: In Front of Swank House
+
+You can see a mailbox (which is closed) here.
+===========
+==>STEP NUM: 185
+==>ACT: southwest
+==>OBSERVATION: Mizniaport
+
+Standing on a tall pole next to the stairs is a circular sign.
+===========
+==>STEP NUM: 186
+==>ACT: west
+==>OBSERVATION: Miznia Suburbs
+Overly cozy-looking homes sprout up all over the place here. Ridiculously well-trimmed front lawns remind you that you're still in Miznia. A nice pebble path heads east and west. You see the entrance to a swank-looking boutique to the south.
+
+A stuffed toy has been left unattended on someone's lawn.
+===========
+==>STEP NUM: 187
+==>ACT: south
+==>OBSERVATION: Swank Boutique
+A ultra-swank accessory store, filled with flashy items for the fashion-unconscious shopper. An exit lies north.
+
+You can see a small sign and a coin here.
+===========
+==>STEP NUM: 188
+==>ACT: north
+==>OBSERVATION: Miznia Suburbs
+===========
+==>STEP NUM: 189
+==>ACT: west
+==>OBSERVATION: City Limits
+The city stops here abruptly. The Miznia jungle makes its presence known for real here, forming a natural barrier. A path leads east, while an almost overgrown path leads into the jungle to the southwest.
+===========
+==>STEP NUM: 190
+==>ACT: southwest
+==>OBSERVATION: Edge of Jungle
+Wild birds and wilder vegetation distract you from a faint trail through the jungle here. The path leads northeast and southwest.
+===========
+==>STEP NUM: 191
+==>ACT: southwest
+==>OBSERVATION: Deep Jungle
+You're in very deep jungle, just on the verge of getting lost. Your surroundings are green and untamed. A path leads northeast, while a muddy path heads south.
+
+Partially buried in the mud is a scroll.
+===========
+==>STEP NUM: 192
+==>ACT: south
+==>OBSERVATION: Swamp
+You're knee-deep in a murky swamp. Huge swamp grasses wall you in. Drier land is north or south.
+===========
+==>STEP NUM: 193
+==>ACT: south
+==>OBSERVATION: Jungle Clearing
+The Jungle clears out a bit here, so you can actually see patches of sky and walk ten paces without running into a tree. There's a path into the jungle undergrowth to the north. You notice a group of jungle natives gathered here.
+===========
+==>STEP NUM: 194
+==>ACT: north
+==>OBSERVATION: Swamp
+===========
+==>STEP NUM: 195
+==>ACT: north
+==>OBSERVATION: Deep Jungle
+===========
+==>STEP NUM: 196
+==>ACT: northeast
+==>OBSERVATION: Edge of Jungle
+===========
+==>STEP NUM: 197
+==>ACT: northeast
+==>OBSERVATION: City Limits
+===========
+==>STEP NUM: 198
+==>ACT: east
+==>OBSERVATION: Miznia Suburbs
+===========
+==>STEP NUM: 199
+==>ACT: east
+==>OBSERVATION: Mizniaport
+
+Standing on a tall pole next to the stairs is a circular sign.
+===========
+==>STEP NUM: 200
+==>ACT: down
+==>OBSERVATION: Miznia GUS Station
+
+A metal gate bisects the fence to the southwest.
+===========
+==>STEP NUM: 201
+==>ACT: southwest
+==>OBSERVATION: You saunter through the apparently open gate.
+
+Miznia Train Platform
+
+A metal gate bisects the fence to the northeast.
+===========
+==>STEP NUM: 202
+==>ACT: west
+==>OBSERVATION: You shove your way onto train car. The doors close behind you.
+
+Subway car
+
+The train starts to move, quickly exiting the station going north.
+===========
+==>STEP NUM: 203
+==>ACT: east
+==>OBSERVATION: Gurth City Train Platform
+
+A metal gate bisects the fence to the northeast.
+
+A few people exit the train, and hurry out of the station. You hear a voice from inside the train say, "Doors will be closing, please stand clear."
+===========
+==>STEP NUM: 204
+==>ACT: northeast
+==>OBSERVATION: Gurth City GUS Station
+You are standing at the entrance to the Gurth City Great Underground Subway (GUS) station. The train platform lies past the gate to the southwest, or stairs lead up into the city. Some lettering on the wall reads "TRANSFER STATION".
+
+A metal gate bisects the fence to the southwest.
+===========
+==>STEP NUM: 205
+==>ACT: up
+==>OBSERVATION: You are greeted by a light rain as you leave the station.
+
+Gurth City Streets
+A foggy sky covers the ever-busy city of Gurth. A road heads southeast into a larger portion of the city, and stairs lead down here.
+
+Standing on a tall pole next to the stairs is a circular sign.
+
+You can also see an umbrella here.
+===========
+==>STEP NUM: 206
+==>ACT: southeast
+==>OBSERVATION: North District
+Probably the safest district in Gurth, the North District is mostly cobblestone roads and barricaded buildings. A main road heads south, or forks northwest and northeast.
+===========
+==>STEP NUM: 207
+==>ACT: south
+==>OBSERVATION: Market District
+The famous Gurth Market District is as noisy, crowded, and dangerous as it ever was. A cobblestone road heads north and south here.
+===========
+==>STEP NUM: 208
+==>ACT: south
+==>OBSERVATION: South District
+The general gloomy atmosphere is more noticeable than ever here, in the extremely dangerous South District. The general area is filled with boarded-up houses, and a few shifty-eyed characters are the only people milling about here. A road leads north. To the east is an abandoned flat, probably in better shape than the rest.
+===========
+==>STEP NUM: 209
+==>ACT: east
+==>OBSERVATION: Front of House
+You're standing at the rotting front steps of a small flat. The front door to the east has been battered down and you could probably walk right in, or return to the street to the west.
+===========
+==>STEP NUM: 210
+==>ACT: east
+==>OBSERVATION: Entrance Room
+A bare room, with peeling paint and rotting, water-stained walls. There's a room to the east, and a rickety stairway down. The outdoors lie west.
+===========
+==>STEP NUM: 211
+==>ACT: down
+==>OBSERVATION: Basement
+A musty, smelly basement. Stairs head up.
+
+There's a dusty metal box attached to the wall here.
+
+A large break in the wall exposes a good portion of the house's foundation.
+
+You can also see a frightening zombie and a gray scroll here.
+===========
+==>STEP NUM: 212
+==>ACT: up
+==>OBSERVATION: Entrance Room
+===========
+==>STEP NUM: 213
+==>ACT: west
+==>OBSERVATION: Front of House
+===========
+==>STEP NUM: 214
+==>ACT: west
+==>OBSERVATION: South District
+===========
+==>STEP NUM: 215
+==>ACT: north
+==>OBSERVATION: Market District
+===========
+==>STEP NUM: 216
+==>ACT: north
+==>OBSERVATION: North District
+===========
+==>STEP NUM: 217
+==>ACT: northwest
+==>OBSERVATION: Gurth City Streets
+
+Standing on a tall pole next to the stairs is a circular sign.
+===========
+==>STEP NUM: 218
+==>ACT: down
+==>OBSERVATION: Gurth City GUS Station
+
+A metal gate bisects the fence to the southwest.
+===========
+==>STEP NUM: 219
+==>ACT: southwest
+==>OBSERVATION: You saunter through the apparently open gate.
+
+Gurth City Train Platform
+
+A metal gate bisects the fence to the northeast.
+
+The train doors close, and the train rolls off.
+===========
+==>STEP NUM: 220
+==>ACT: down
+==>OBSERVATION: Gurth City Train Platform (lower)
+
+Suddenly, from the east, a train emerges from the tunnel! It pulls to a screeching halt, the doors open, and several people rush out and up the stairs.
+===========
+==>STEP NUM: 221
+==>ACT: south
+==>OBSERVATION: You squeeze onto the train car. The doors close behind you.
+
+Subway car
+
+The train starts to move, quickly exiting the station going east.
+===========
+==>STEP NUM: 222
+==>ACT: north
+==>OBSERVATION: Aragain Train Platform (lower)
+
+The train doors close, and the train heads off to the west.
+===========
+==>STEP NUM: 223
+==>ACT: up
+==>OBSERVATION: Aragain Train Platform
+
+A metal gate bisects the fence to the northwest.
+
+Suddenly, from the north, a train emerges from the tunnel! It pulls to a screeching halt, the doors open, and several people rush out and exit the station.
+===========
+==>STEP NUM: 224
+==>ACT: east
+==>OBSERVATION: You enter the train car. The doors slam shut behind you.
+
+Subway car
+
+You can see a newspaper here.
+
+The train starts to move, quickly exiting the station going south.
+===========
+==>STEP NUM: 225
+==>ACT: west
+==>OBSERVATION: Frostham Train Platform
+
+A metal gate bisects the fence to the northwest.
+
+The train doors close, and the train rolls off to the south.
+===========
+==>STEP NUM: 226
+==>ACT: northwest
+==>OBSERVATION: Frostham GUS Station
+
+A metal gate bisects the fence to the southeast.
+===========
+==>STEP NUM: 227
+==>ACT: up
+==>OBSERVATION: Subway Entrance
+
+Standing on a tall pole next to the stairs is a circular sign.
+===========
+==>STEP NUM: 228
+==>ACT: north
+==>OBSERVATION: Frostham
+===========
+==>STEP NUM: 229
+==>ACT: west
+==>OBSERVATION: Ski Resort
+You are inside a large ski resort. Perhaps it's not ski-season, as the entire place is basically empty. Frostham city lies to the east.
+
+A tall lanky guy is here, holding two colorful skis. He seems to be waxing them with a scroll.
+===========
+==>STEP NUM: 230
+==>ACT: east
+==>OBSERVATION: Frostham
+===========
+==>STEP NUM: 231
+==>ACT: south
+==>OBSERVATION: Subway Entrance
+
+Standing on a tall pole next to the stairs is a circular sign.
+===========
+==>STEP NUM: 232
+==>ACT: down
+==>OBSERVATION: Frostham GUS Station
+
+A metal gate bisects the fence to the southeast.
+===========
+==>STEP NUM: 233
+==>ACT: southeast
+==>OBSERVATION: You saunter through the apparently open gate.
+
+Frostham Train Platform
+
+A metal gate bisects the fence to the northwest.
+
+Suddenly, from the south, a train emerges from the tunnel! It pulls to a screeching halt, the doors open, and several people rush out and exit the station.
+===========
+==>STEP NUM: 234
+==>ACT: east
+==>OBSERVATION: You enter the train car. The doors slam shut behind you.
+
+Subway car
+
+You can see a newspaper here.
+
+The train starts to move, quickly exiting the station going south.
+===========
+==>STEP NUM: 235
+==>ACT: west
+==>OBSERVATION: Fublio Valley Train Platform
+You are standing in a long underground chamber. The east side of the room contains a lowered set of what appear to be train tracks. The tracks run north into a dark tunnel. Along one wall painted lettering reads "FUBLIO VALLEY STATION". A short walkway leads northwest, to a metal fence. There is a large train car sitting on the tracks to the east.
+
+A metal gate bisects the fence to the northwest.
+
+The train doors close, and the train rolls off to the north.
+===========
+==>STEP NUM: 236
+==>ACT: northwest
+==>OBSERVATION: Fublio Valley GUS Station
+You are standing at the entrance to the South Fublio Valley Great Underground Subway (GUS) station. The train platform lies past the gate to the southeast, or stairs lead up into the city.
+
+A metal gate bisects the fence to the southeast.
+===========
+==>STEP NUM: 237
+==>ACT: up
+==>OBSERVATION: Southern Fublio Valley
+You are in a southern region of Fublio Valley, where someone apparently decided to start a city. So far, a couple huts and farmhouses are the result. A rather run-down farmhouse lies to the southwest, a trail runs through grasslands to the south and a smaller trail runs along the hills to the southeast. To the north, you see a decrepit old building. There is also a stairway into the ground here.
+
+Standing on a tall pole next to the stairs is a circular sign.
+===========
+==>STEP NUM: 238
+==>ACT: southwest
+==>OBSERVATION: Farm
+You're standing in front of a small farmhouse. A trail leads northeast, a sand bar lies to the southwest, and another trail heads east.
+
+There's a tired-looking farmer here.
+===========
+==>STEP NUM: 239
+==>ACT: southwest
+==>OBSERVATION: Oyster Farm
+A coastline sand bar curves west a short distance here, ending in a shoal of large rocks. Nearby, someone has dug some shallow holes in the sand, probably farming for live Rotund Oysters, a popular Eastland delicacy.Unfortunately, the oyster beds are too far inland, and they appear to be empty. A bit to the west you can see a small shoreline cave in the rocks.
+===========
+==>STEP NUM: 240
+==>ACT: west
+==>OBSERVATION: You try to head towards the cave, but the unstable rocks and sea waves make it difficult to get there from here. Suddenly, a rock slips from underfoot! You fall...
+
+Dark Damp Cave
+You seem to be in some underground cave. There are no visible exits. You feel rather claustrophobic. You also hear some unexpected noises.
+
+You can see a mad hermit and a spotted scroll here.
+
+The hermit shrinks into a corner and weeps. "No more, no more. I can help you no more."
+===========
+==>STEP NUM: 241
+==>ACT: south
+==>OBSERVATION: You crawl through the dark tunnel, which seems to snake back and forth. After what seems like an eternity, you see daylight, and stumble forward. You find yourself on the sand bar again! Looking back, you can't locate the tunnel you just left at all!
+
+Oyster Farm
+===========
+==>STEP NUM: 242
+==>ACT: northeast
+==>OBSERVATION: Farm
+
+There's a tired-looking farmer here.
+===========
+==>STEP NUM: 243
+==>ACT: east
+==>OBSERVATION: Grassland Beach
+A nice beach with lots of tall grasses hides behind a short dune here. The Great Sea stretches out to the south. From here, you can go north, west or east. You can just glimpse some sort of tower-like structure far across the bay in the east.
+
+You can see a small sailboat (in which is a fur sack (which is closed)) here.
+===========
+==>STEP NUM: 244
+==>ACT: east
+==>OBSERVATION: On Peninsula
+You stand in a clearing on a grassland peninsula. A trail leads northwest from here, and another leads west. Off to the southeast, there's an entrance into what looks like an old abandoned lighthouse, just at the tip of the peninsula.
+===========
+==>STEP NUM: 245
+==>ACT: southeast
+==>OBSERVATION: Bottom of Lighthouse
+You're inside an ancient lighthouse. The place must have been deserted quite a long time ago, and is now a mess of broken stone, cobwebs and seabird droppings. The rest of the peninsula is back northwest. You can see a hole above where a stairway probably entered an upper floor of the place, but the stairway itself crumbled into dust long ago.
+
+Your amulet suddenly gives off a bright purple flash, then returns to normal!
+===========
+==>STEP NUM: 246
+==>ACT: northwest
+==>OBSERVATION: On Peninsula
+===========
+==>STEP NUM: 247
+==>ACT: west
+==>OBSERVATION: Grassland Beach
+
+You can see a small sailboat (in which is a fur sack (which is closed)) here.
+===========
+==>STEP NUM: 248
+==>ACT: south
+==>OBSERVATION: On Fublio Bay (in the small sailboat)
+You are sailing on Fublio Bay. A shoreline lies to the north. You could probably sail out of the bay to the south, but I'd advise against it, the winds aren't very strong. To the northeast you can see the tip of a peninsula where a lighthouse tower is standing.
+===========
+==>STEP NUM: 249
+==>ACT: north
+==>OBSERVATION: Grassland Beach (in the small sailboat)
+===========
+==>STEP NUM: 250
+==>ACT: exit
+==>OBSERVATION: You get out of the small sailboat.
+
+Grassland Beach
+
+You can see a small sailboat (which is empty) here.
+===========
+==>STEP NUM: 251
+==>ACT: north
+==>OBSERVATION: Southern Fublio Valley
+
+Standing on a tall pole next to the stairs is a circular sign.
+
+You hear a massive explosion from the south! It sounded pretty far off, but whatever it was, it was loud.
+===========
+==>STEP NUM: 252
+==>ACT: south
+==>OBSERVATION: Grassland Beach
+
+You can see a small sailboat (which is empty) here.
+===========
+==>STEP NUM: 253
+==>ACT: south
+==>OBSERVATION: On Fublio Bay (in the small sailboat)
+===========
+==>STEP NUM: 254
+==>ACT: northeast
+==>OBSERVATION: Near Submerged Lighthouse (in the small sailboat)
+You're on the outside of what looks like the upper part of a lighthouse, sticking straight out of the sea. The lighthouse is broken in many places, and several areas provide ledge-space to stand on. In fact, you could probably climb into the lighthouse through one of many large cracks in the walls to the east. The rest of Fublio bay is back southwest.
+===========
+==>STEP NUM: 255
+==>ACT: exit
+==>OBSERVATION: You get out of the small sailboat.
+
+Near Submerged Lighthouse
+
+You can see a small sailboat (which is empty) here.
+===========
+==>STEP NUM: 256
+==>ACT: east
+==>OBSERVATION: Lighthouse, upper level
+You're inside an abandoned lighthouse, on what must be an upper floor. The whole interior is lifeless and barren. There's a large broken crack in the western wall. You also notice a hole in the floor nearby, which might have been an exitway a long, long time ago.
+
+In the center of the room is a short gray rod.
+
+Suddenly, water seeps in from the west, and forms into a large vaguely-humanoid shape before your very eyes!
+===========
+==>STEP NUM: 257
+==>ACT: west
+==>OBSERVATION: Near Submerged Lighthouse
+
+You can see a small sailboat (which is empty) here.
+===========
+==>STEP NUM: 258
+==>ACT: southwest
+==>OBSERVATION: On Fublio Bay (in the small sailboat)
+===========
+==>STEP NUM: 259
+==>ACT: north
+==>OBSERVATION: Grassland Beach (in the small sailboat)
+===========
+==>STEP NUM: 260
+==>ACT: exit
+==>OBSERVATION: You get out of the small sailboat.
+
+Grassland Beach
+
+You can see a small sailboat (which is empty) here.
+===========
+==>STEP NUM: 261
+==>ACT: west
+==>OBSERVATION: Farm
+
+There's a tired-looking farmer here.
+
+The farmer sees you approach and rushes to greet you. "I saw what you did, sir, yes indeed. A mighty crazy thing to do, calling a volcano outa the water like that. But you did it! And my oyster beds thank you kindly! I'd like to repay the favor, but I'm only a poor farmer." He pauses, then searches his pockets. "Here," he says, putting something in your hand. "Found it digging in the sand. Don't know what it is, but I'll bet you can use it." He smiles and disappears into the farmhouse.
+
+[Your score has just gone up by two points.]
+===========
+==>STEP NUM: 262
+==>ACT: northeast
+==>OBSERVATION: Southern Fublio Valley
+
+Standing on a tall pole next to the stairs is a circular sign.
+===========
+==>STEP NUM: 263
+==>ACT: north
+==>OBSERVATION: Abandoned Bank
+You're inside what must have once been a small branch office of the once indestructible Bank of Zork. However, the place has clearly been abandoned, and age has not been kind. Even the required portrait of J. Pierpont Flathead has been pilfered. An exit lies south.
+
+An vault labeled "INTEREST PAID" is open in the wall.
+
+An vault labeled "OVERHEAD" is open in the wall.
+
+An vault labeled "BASIS" is open in the wall. Inside are twenty coins.
+
+An vault labeled "LOANS" is open in the wall.
+
+You can also see a bank memo here.
+===========
+==>STEP NUM: 264
+==>ACT: south
+==>OBSERVATION: Southern Fublio Valley
+
+Standing on a tall pole next to the stairs is a circular sign.
+===========
+==>STEP NUM: 265
+==>ACT: down
+==>OBSERVATION: Fublio Valley GUS Station
+
+A metal gate bisects the fence to the southeast.
+===========
+==>STEP NUM: 266
+==>ACT: southeast
+==>OBSERVATION: You saunter through the apparently open gate.
+
+Fublio Valley Train Platform
+
+A metal gate bisects the fence to the northwest.
+
+Suddenly, from the north, a train emerges from the tunnel! It pulls to a screeching halt, the doors open, and several people rush out and exit the station.
+===========
+==>STEP NUM: 267
+==>ACT: east
+==>OBSERVATION: You enter the train car. The doors slam shut behind you.
+
+Subway car
+
+You can see a newspaper here.
+
+The train starts to move, quickly exiting the station going north.
+===========
+==>STEP NUM: 268
+==>ACT: west
+==>OBSERVATION: Aragain Train Platform
+
+A metal gate bisects the fence to the northwest.
+
+The train doors close, and the train rolls off.
+===========
+==>STEP NUM: 269
+==>ACT: down
+==>OBSERVATION: Aragain Train Platform (lower)
+===========
+==>STEP NUM: 270
+==>ACT: south
+==>OBSERVATION: You squeeze onto the train car. The doors close behind you.
+
+Subway car
+
+The train starts to move, quickly exiting the station going west.
+===========
+==>STEP NUM: 271
+==>ACT: north
+==>OBSERVATION: Greater Anthar Train Platform
+
+A metal gate bisects the fence to the north.
+
+The train doors close, and the train rolls off.
+===========
+==>STEP NUM: 272
+==>ACT: north
+==>OBSERVATION: Greater Anthar GUS Station
+
+A metal gate bisects the fence to the south.
+===========
+==>STEP NUM: 273
+==>ACT: up
+==>OBSERVATION: Entrance to Greater Anthar
+
+Standing on a tall pole next to the stairs is a circular sign.
+===========
+==>STEP NUM: 274
+==>ACT: east
+==>OBSERVATION: Anthar West
+===========
+==>STEP NUM: 275
+==>ACT: east
+==>OBSERVATION: Anthar East
+===========
+==>STEP NUM: 276
+==>ACT: east
+==>OBSERVATION: Conservatory Entrance
+===========
+==>STEP NUM: 277
+==>ACT: southeast
+==>OBSERVATION: Flower Garden
+===========
+==>STEP NUM: 278
+==>ACT: north
+==>OBSERVATION: Decorative Plants Garden
+
+A Christmas Tree stands in one plot, swaying back and forth.
+
+A small shrub sits near and under the Christmas Tree.
+
+A small plaque sticks out of the soil near the two plants.
+
+You can also see a hedge clipper and a cap here.
+
+The Christmas Tree Monster hums a few notes from 'Dornbeasts Roasting on an Open Pyre'.
+===========
+==>STEP NUM: 279
+==>ACT: south
+==>OBSERVATION: Flower Garden
+===========
+==>STEP NUM: 280
+==>ACT: northwest
+==>OBSERVATION: Conservatory Entrance
+===========
+==>STEP NUM: 281
+==>ACT: west
+==>OBSERVATION: Anthar East
+===========
+==>STEP NUM: 282
+==>ACT: northwest
+==>OBSERVATION: Entrance to Flathead Stadium
+Here stands the entrance into the still popular Flathead Stadium, home to esoteric sports activities you never fully understood. Walkways lie southeast and southwest from here, or you can enter the stadium to the north.
+
+A stadium event sign is pasted to one of the stadium walls here.
+
+A statue depicting the legendary Babe Flathead greets all visitors in front of the stadium.
+===========
+==>STEP NUM: 283
+==>ACT: north
+==>OBSERVATION: You walk right into the stadium. The ticket-takers must be on strike or something.
+
+In Flathead Stadium, upper seats
+You are near the top cheap seats of Flathead Stadium. The crowd is busy cheering whatever is going on down on the field. Looking at the field, you see two small dots. The Stadium exit is back south, or you can walk down to the front seats to the north.
+===========
+==>STEP NUM: 284
+==>ACT: north
+==>OBSERVATION: In Flathead Stadium, lower seats
+You are near the good seats in Flathead Stadium. The crowd is busy cheering for the current event on the field. Looking at the field, you see two large dots. The seats continue up and south, or you can walk down to the field below.
+
+You can see a burly man here.
+===========
+==>STEP NUM: 285
+==>ACT: north
+==>OBSERVATION: Near Locker Room
+You are near a locker room under Flathead field. You can enter the locker room to the north, or start the climb back into the roaring crowd to the south.
+
+A couple front row fans are getting a bit boisterous. Several of them throw garbage and paper debris towards the field. You notice something flutter down by your feet.
+===========
+==>STEP NUM: 286
+==>ACT: north
+==>OBSERVATION: Locker Room
+You are inside a locker room under Flathead field. You can hear the crowds outside. The room is empty. There is an exit to the south, and the entrance to the field is to the north.
+
+You can see a tough-looking coach here.
+
+The coach looks up and notices you. "Oh, you must be the replacement," he says. He drags you over to the field entrance. "Well, I hoped you're warmed up, cuz you're up." He shoves you north. "Remember, these guys are tough, so give 'em your best stuff."
+
+Flathead Field
+You're on Flathead field, in front of millions of zany fans, a lifetime dream. Or not. Well, anyway, there's a locker room to the south.
+
+You can see a referee and a dangerous-looking wood golem here.
+===========
+==>STEP NUM: 287
+==>ACT: south
+==>OBSERVATION: Locker Room
+
+You can see a tough-looking coach here.
+
+The coach gives you a slap on the back that knocks the wind out of you. "You did it! I didn't think you had it in you!" He hands you a small bag. "Here's the winnings. I went ahead and took out my cut, of course."
+===========
+==>STEP NUM: 288
+==>ACT: south
+==>OBSERVATION: Near Locker Room
+===========
+==>STEP NUM: 289
+==>ACT: south
+==>OBSERVATION: In Flathead Stadium, lower seats
+
+You can see a burly man here.
+===========
+==>STEP NUM: 290
+==>ACT: south
+==>OBSERVATION: In Flathead Stadium, upper seats
+===========
+==>STEP NUM: 291
+==>ACT: south
+==>OBSERVATION: Entrance to Flathead Stadium
+
+A stadium event sign is pasted to one of the stadium walls here.
+
+A statue depicting the legendary Babe Flathead greets all visitors in front of the stadium.
+===========
+==>STEP NUM: 292
+==>ACT: southwest
+==>OBSERVATION: Anthar West
+===========
+==>STEP NUM: 293
+==>ACT: south
+==>OBSERVATION: Delbin's Pub
+
+Delbin himself is standing behind the bar.
+===========
+==>STEP NUM: 294
+==>ACT: north
+==>OBSERVATION: Delbin calls out "Visit us again!" as you leave.
+
+Anthar West
+===========
+==>STEP NUM: 295
+==>ACT: west
+==>OBSERVATION: Entrance to Greater Anthar
+
+Standing on a tall pole next to the stairs is a circular sign.
+===========
+==>STEP NUM: 296
+==>ACT: down
+==>OBSERVATION: Greater Anthar GUS Station
+
+A metal gate bisects the fence to the south.
+===========
+==>STEP NUM: 297
+==>ACT: south
+==>OBSERVATION: You saunter through the apparently open gate.
+
+Greater Anthar Train Platform
+
+A metal gate bisects the fence to the north.
+===========
+==>STEP NUM: 298
+==>ACT: south
+==>OBSERVATION: You squeeze onto the train car. The doors close behind you.
+
+Subway car
+
+The train starts to move, quickly exiting the station going east.
+===========
+==>STEP NUM: 299
+==>ACT: north
+==>OBSERVATION: Gurth City Train Platform (lower)
+
+The train doors close, and the train heads off to the east.
+===========
+==>STEP NUM: 300
+==>ACT: up
+==>OBSERVATION: Gurth City Train Platform
+
+A metal gate bisects the fence to the northeast.
+
+You hear a distant rumbling noise from the south.
+===========
+==>STEP NUM: 301
+==>ACT: northeast
+==>OBSERVATION: Gurth City GUS Station
+
+A metal gate bisects the fence to the southwest.
+
+You can also see a thin wire here.
+===========
+==>STEP NUM: 302
+==>ACT: up
+==>OBSERVATION: You are greeted by a light rain as you leave the station.
+
+Gurth City Streets
+
+Standing on a tall pole next to the stairs is a circular sign.
+===========
+==>STEP NUM: 303
+==>ACT: southeast
+==>OBSERVATION: North District
+===========
+==>STEP NUM: 304
+==>ACT: northeast
+==>OBSERVATION: Forest Edge
+Dark forest meets dark city outskirts here. The only exit is along an old path to the southwest -- the forest is too thick for travel otherwise. Rain falls periodically from a dark stormy sky.
+
+You can see an angry treant and a log cabin here.
+
+A rumble of thunder booms overhead.
+
+The treant angrily attacks the wood cabin, which shakes with the continued blows.
+===========
+==>STEP NUM: 305
+==>ACT: southwest
+==>OBSERVATION: North District
+===========
+==>STEP NUM: 306
+==>ACT: south
+==>OBSERVATION: Market District
+===========
+==>STEP NUM: 307
+==>ACT: south
+==>OBSERVATION: South District
+===========
+==>STEP NUM: 308
+==>ACT: east
+==>OBSERVATION: Front of House
+===========
+==>STEP NUM: 309
+==>ACT: east
+==>OBSERVATION: Entrance Room
+===========
+==>STEP NUM: 310
+==>ACT: east
+==>OBSERVATION: Kitchen
+You're in the kitchen, by the looks of things. Some broken cabinets are on the wall. Light from partially boarded-up windows lets you see the rotting wood floors. Rooms lie to the north and west.
+
+Strangely untouched and undamaged, a GUE-Automatic oven is sitting closed in a corner of the room.
+===========
+==>STEP NUM: 311
+==>ACT: north
+==>OBSERVATION: Pantry
+This was once probably a pantry of some sort. It's now a bare closet-sized room. The exit is south.
+
+You can see a baking pan (in which is a sticker) here.
+===========
+==>STEP NUM: 312
+==>ACT: south
+==>OBSERVATION: Kitchen
+
+Strangely untouched and undamaged, a GUE-Automatic oven is sitting closed in a corner of the room.
+===========
+==>STEP NUM: 313
+==>ACT: west
+==>OBSERVATION: Entrance Room
+===========
+==>STEP NUM: 314
+==>ACT: west
+==>OBSERVATION: Front of House
+===========
+==>STEP NUM: 315
+==>ACT: west
+==>OBSERVATION: South District
+===========
+==>STEP NUM: 316
+==>ACT: north
+==>OBSERVATION: Market District
+===========
+==>STEP NUM: 317
+==>ACT: north
+==>OBSERVATION: North District
+===========
+==>STEP NUM: 318
+==>ACT: northwest
+==>OBSERVATION: Gurth City Streets
+
+Standing on a tall pole next to the stairs is a circular sign.
+===========
+==>STEP NUM: 319
+==>ACT: down
+==>OBSERVATION: Gurth City GUS Station
+
+A metal gate bisects the fence to the southwest.
+
+You can also see a thin wire here.
+===========
+==>STEP NUM: 320
+==>ACT: southwest
+==>OBSERVATION: You saunter through the apparently open gate.
+
+Gurth City Train Platform
+
+A metal gate bisects the fence to the northeast.
+
+Suddenly, from the south, a train emerges from the tunnel! It pulls to a screeching halt, the doors open, and several people rush out and exit the station.
+===========
+==>STEP NUM: 321
+==>ACT: down
+==>OBSERVATION: Gurth City Train Platform (lower)
+===========
+==>STEP NUM: 322
+==>ACT: south
+==>OBSERVATION: You squeeze onto the train car. The doors close behind you.
+
+Subway car
+
+The train starts to move, quickly exiting the station going east.
+===========
+==>STEP NUM: 323
+==>ACT: north
+==>OBSERVATION: Aragain Train Platform (lower)
+
+The train doors close, and the train heads off to the west.
+===========
+==>STEP NUM: 324
+==>ACT: up
+==>OBSERVATION: Aragain Train Platform
+
+A metal gate bisects the fence to the northwest.
+
+Suddenly, from the south, a train emerges from the tunnel! It pulls to a screeching halt, the doors open, and several people rush out and exit the station.
+===========
+==>STEP NUM: 325
+==>ACT: northwest
+==>OBSERVATION: Aragain GUS Station
+You are standing at the entrance to the Aragain Great Underground Subway (GUS) station. The train platform lies past the gate to the southeast, or stairs lead up into the city. Some lettering on the wall reads "TRANSFER STATION".
+
+A metal gate bisects the fence to the southeast.
+===========
+==>STEP NUM: 326
+==>ACT: up
+==>OBSERVATION: Aragain North
+You are just north of the newly built Aragain City. The general vicinity is busy with important-looking people. A stairway goes down here, while a large walkway heads south into Aragain.
+
+Standing on a tall pole next to the stairs is a circular sign.
+===========
+==>STEP NUM: 327
+==>ACT: south
+==>OBSERVATION: Aragain Entrance
+Before you is a truly astounding sight. A huge metal gate to the south blocks the entrance into the newly built Aragain Royal Grounds. Worse yet, a seemingly endless line of people stands before the gate. They look like dignitaries, diplomats, or just plain politicians. A walkway heads north.
+
+The massive gate is closed.
+
+There is a large sign bolted to the gate.
+
+A tough-looking palace guard is standing by the gate.
+===========
+==>STEP NUM: 328
+==>ACT: south
+==>OBSERVATION: Courtyard
+You're standing in a lovely courtyard with magnificent topiary designs and real marble walkways. A large gate stands to the north. To the east is a red stone building with spires and columns. To the west is a large flat stone building. To the south is a huge entranceway into what must be the new Royal Palace, which appears to be carved out of the face of a massive mountain.
+
+The massive gate is open.
+===========
+==>STEP NUM: 329
+==>ACT: west
+==>OBSERVATION: Warm Room
+You are in a long stone room, which is strangely warm. In the very center of the room is a hole, with a ladder down. An outdoor courtyard lies to the east.
+
+There is a large sign posted near the doorway.
+===========
+==>STEP NUM: 330
+==>ACT: down
+==>OBSERVATION: On Giant White Cube
+As far as you can tell, you are standing on a large white stone cube that somehow floats without visible supports in a terrifyingly large underground chamber. The entire place is dimly lit red from somewhere below. There is a ladder up to a hole high in the ceiling here.
+
+There's a square niche in the western edge of the floor here. Resting in the niche is a pine beam that extends into the darkness.
+
+There's a square niche in the southern edge of the floor here. Resting in the niche is an ebony beam that extends into the darkness.
+===========
+==>STEP NUM: 331
+==>ACT: west
+==>OBSERVATION: You step gingerly onto the wood beam...
+
+On wood beam
+You're walking along a very narrow wood beam that runs east to west into darkness. Below, you can see the dark silhouette of a network of beams and floating cubes. Much farther below you can see a dull red glow.
+===========
+==>STEP NUM: 332
+==>ACT: west
+==>OBSERVATION: On Giant White Cube
+You are standing on a large floating white stone cube in a very large underground chamber. The entire place is dimly lit red from somewhere below.
+
+There's a square niche in the eastern edge of the floor here. Resting in the niche is a pine beam that extends into the darkness.
+
+There's a square niche in the southern edge of the floor here. Resting in the niche is a pine beam that extends into the darkness.
+
+There's a square niche in the western edge of the floor here. Resting in the niche is a pine beam that extends into the darkness.
+===========
+==>STEP NUM: 333
+==>ACT: south
+==>OBSERVATION: You step gingerly onto the wood beam...
+
+On wood beam
+You're walking along a very narrow wood beam that runs north to south into darkness. Below, you can see the dark silhouette of a network of beams and floating cubes. Much farther below you can see a dull red glow.
+===========
+==>STEP NUM: 334
+==>ACT: south
+==>OBSERVATION: On Giant White Cube
+You are standing on a large floating white stone cube in a very large underground chamber. The entire place is dimly lit red from somewhere below.
+
+There's a square niche in the northern edge of the floor here. Resting in the niche is a pine beam that extends into the darkness.
+
+There's a square niche in the eastern edge of the floor here. Resting in the niche is a balsa beam that extends into the darkness.
+
+There's a square niche in the western edge of the floor here. Resting in the niche is a balsa beam that extends into the darkness.
+
+There's a square niche in the southern edge of the floor here. Resting in the niche is an ebony beam that extends into the darkness.
+===========
+==>STEP NUM: 335
+==>ACT: west
+==>OBSERVATION: As you step onto the wood beam, it breaks with a shuddering crack! Amazingly, you float downwards like a feather, instead of falling to your death! You float down towards another network of floating cubes and beams. You float to another wood beam and your feet land on it, perfectly balanced!
+
+On wood beam
+You're walking along a very narrow wood beam that runs east to west into darkness. Both above and below, you can see the dark silhouette of a network of beams and floating cubes. Farther below you can see a dull red glow.
+===========
+==>STEP NUM: 336
+==>ACT: east
+==>OBSERVATION: On Giant White Cube
+You are on the surface of a floating stone cube. You can barely see another cube floating far above you in the dim red light that illuminates the entire area.
+
+There's a square niche in the northern edge of the floor here. Resting in the niche is a balsa beam that extends into the darkness.
+
+There's a square niche in the eastern edge of the floor here. Resting in the niche is a pine beam that extends into the darkness.
+
+There's a square niche in the western edge of the floor here. Resting in the niche is a pine beam that extends into the darkness.
+
+There's a square niche in the southern edge of the floor here. Resting in the niche is a balsa beam that extends into the darkness.
+===========
+==>STEP NUM: 337
+==>ACT: north
+==>OBSERVATION: You step gingerly onto the wood beam...
+
+On wood beam
+You're walking along a very narrow wood beam that runs north to south into darkness. Both above and below, you can see the dark silhouette of a network of beams and floating cubes. Farther below you can see a dull red glow.
+===========
+==>STEP NUM: 338
+==>ACT: north
+==>OBSERVATION: On Giant White Cube
+You are on the surface of a floating stone cube. You can barely see another cube floating far above you in the dim red light that illuminates the entire area.
+
+There's a square niche in the eastern edge of the floor here. Resting in the niche is a balsa beam that extends into the darkness.
+
+There's a square niche in the southern edge of the floor here. Resting in the niche is an ebony beam that extends into the darkness.
+
+There's a square niche in the western edge of the floor here. Resting in the niche is a balsa beam that extends into the darkness.
+===========
+==>STEP NUM: 339
+==>ACT: west
+==>OBSERVATION: As you step onto the wood beam, it breaks with a shuddering crack! Amazingly, you float downwards like a feather, instead of falling to your death! You float down towards another network of floating cubes and beams. You float to another wood beam and your feet land on it, perfectly balanced!
+
+On wood beam
+You're walking along a very narrow wood beam that runs east to west into darkness. Above you can see a network of floating beams and cubes. Below you can see a red glow.
+===========
+==>STEP NUM: 340
+==>ACT: east
+==>OBSERVATION: On Giant White Cube
+You are on the surface of a floating stone cube. The red light from below seems a bit brighter here.
+
+There's a square niche in the eastern edge of the floor here. Resting in the niche is a balsa beam that extends into the darkness.
+
+There's a square niche in the southern edge of the floor here. Resting in the niche is a balsa beam that extends into the darkness.
+
+There's a square niche in the western edge of the floor here. Resting in the niche is a pine beam that extends into the darkness.
+===========
+==>STEP NUM: 341
+==>ACT: south
+==>OBSERVATION: You step gingerly onto the wood beam...
+
+On wood beam
+You're walking along a very narrow wood beam that runs north to south into darkness. Above you can see a network of floating beams and cubes. Below you can see a red glow..
+===========
+==>STEP NUM: 342
+==>ACT: south
+==>OBSERVATION: On Giant White Cube
+You are on the surface of a floating stone cube. The red light from below seems a bit brighter here.
+
+There's a square niche in the northern edge of the floor here. Resting in the niche is an ebony beam that extends into the darkness.
+
+There's a square niche in the eastern edge of the floor here. Resting in the niche is a balsa beam that extends into the darkness.
+
+There's a square niche in the western edge of the floor here. Resting in the niche is a balsa beam that extends into the darkness.
+
+There's a square niche in the southern edge of the floor here. Resting in the niche is a balsa beam that extends into the darkness.
+===========
+==>STEP NUM: 343
+==>ACT: south
+==>OBSERVATION: You step gingerly onto the wood beam...
+
+On wood beam
+You're walking along a very narrow wood beam that runs north to south into darkness. Above you can see a network of floating beams and cubes. Below you can see a red glow..
+===========
+==>STEP NUM: 344
+==>ACT: south
+==>OBSERVATION: On Giant White Cube
+You are on the surface of a floating stone cube. The red light from below seems a bit brighter here.
+
+There's a square niche in the northern edge of the floor here. Resting in the niche is an ebony beam that extends into the darkness.
+
+There's a square niche in the western edge of the floor here. Resting in the niche is a balsa beam that extends into the darkness.
+
+There's a square niche in the eastern edge of the floor here. Resting in the niche is a balsa beam that extends into the darkness.
+===========
+==>STEP NUM: 345
+==>ACT: east
+==>OBSERVATION: You step gingerly onto the wood beam...
+
+On wood beam
+You're walking along a very narrow wood beam that runs east to west into darkness. Above you can see a network of floating beams and cubes. Below you can see a red glow.
+
+Your amulet suddenly gives off a bright flash, then fades!
+===========
+==>STEP NUM: 346
+==>ACT: east
+==>OBSERVATION: On Giant White Cube
+You are on the surface of a floating stone cube. The red light from below seems a bit brighter here.
+
+There's a square niche in the northern edge of the floor here. Resting in the niche is a balsa beam that extends into the darkness.
+
+There's a square niche in the western edge of the floor here. Resting in the niche is an ebony beam that extends into the darkness.
+
+In the center of the room is a large round hole, going straight down through the floating cube.
+
+Sitting on the floor is a short smoke-colored rod.
+
+Suddenly, a flash of flame bursts through the hole in the center of the cube! A living tower of flame attacks!
+===========
+==>STEP NUM: 347
+==>ACT: up
+==>OBSERVATION: Warm Room
+
+There is a large sign posted near the doorway.
+===========
+==>STEP NUM: 348
+==>ACT: east
+==>OBSERVATION: Courtyard
+
+The massive gate is open.
+===========
+==>STEP NUM: 349
+==>ACT: south
+==>OBSERVATION: Palace Entrance Hall
+A vast hall runs north and south in this massive palace. Royal trappings decorate the walls and ceiling, and red carpet lines the floor. A tremendous open archway exits to the north into some courtyard, while two open solid brass doors mark the entrance south into some audience chamber. Two smaller exits head east and west towards stairways up and down respectively.
+===========
+==>STEP NUM: 350
+==>ACT: east
+==>OBSERVATION: Royal Bedroom
+This might have once been a lavish bedroom for royalty. At the moment, it seems like someone has converted it into a private lounge of some sort. A stairway heads down.
+
+A wooden cabinet stands against one wall, clearly a new addition to the room.
+===========
+==>STEP NUM: 351
+==>ACT: down
+==>OBSERVATION: Palace Entrance Hall
+===========
+==>STEP NUM: 352
+==>ACT: south
+==>OBSERVATION: Audience Hall
+This is a giant audience hall, equivalent to a large auditorium with a throne on the stage. The hall is filled with luxurious decorations -- red carpeting, expensive chandeliers, sweeping gold-edged drapery. The hall is also currently filled with a large number of dignitaries and important-looking people taking up all the seats. Open brass doors lie to the north.
+
+There is a royal magistrate here.
+===========
+==>STEP NUM: 353
+==>ACT: north
+==>OBSERVATION: Palace Entrance Hall
+===========
+==>STEP NUM: 354
+==>ACT: north
+==>OBSERVATION: Courtyard
+
+The massive gate is open.
+===========
+==>STEP NUM: 355
+==>ACT: east
+==>OBSERVATION: Royal Museum
+You're in the entrance to a museum. The lighting is rather dim, throwing light shadows all over the walls. There are exhibit rooms to the north and south, or an exit west.
+===========
+==>STEP NUM: 356
+==>ACT: south
+==>OBSERVATION: South Exhibit Room
+You are in a square exhibit room with wood flooring and plain plaster walls. In the center of the room is an exhibit platform made from a large slab of marble. The room is lit brightly by hidden torches. The exit is north.
+
+On the platform is a flower vase (which is empty).
+===========
+==>STEP NUM: 357
+==>ACT: north
+==>OBSERVATION: Royal Museum
+===========
+==>STEP NUM: 358
+==>ACT: north
+==>OBSERVATION: North Exhibit Room
+You are in a small exhibit room designed with dark wood floors and plaster-on-stucco walls. The room is dimly lit by hidden lamps or torches behind recessed wall niches. The exit is south.
+
+There is a priceless painting hanging on the north wall.
+
+A metal plaque is attached to the wall next to the painting.
+
+You get the odd feeling that there's someone behind you, but when you turn around, you see no one!
+===========
+==>STEP NUM: 359
+==>ACT: north
+==>OBSERVATION: You can't go that way.
+===========
+==>STEP NUM: 360
+==>ACT: south
+==>OBSERVATION: Royal Museum
+===========
+==>STEP NUM: 361
+==>ACT: west
+==>OBSERVATION: Courtyard
+
+The massive gate is open.
+===========
+==>STEP NUM: 362
+==>ACT: north
+==>OBSERVATION: Aragain Entrance
+
+The massive gate is open.
+
+There is a large sign bolted to the gate.
+
+A tough-looking palace guard is standing by the gate.
+
+A representative from Borphee steps up and presents a pile of baked dough-bits on a plate to the guard. "Frobolli cake, eh? Well, this may be popular where you come from, but it ain't popular here." The representative walks off.
+===========
+==>STEP NUM: 363
+==>ACT: north
+==>OBSERVATION: Aragain North
+
+Standing on a tall pole next to the stairs is a circular sign.
+You feet feel heavy again.
+===========
+==>STEP NUM: 364
+==>ACT: down
+==>OBSERVATION: Aragain GUS Station
+
+A metal gate bisects the fence to the southeast.
+===========
+==>STEP NUM: 365
+==>ACT: southeast
+==>OBSERVATION: You saunter through the apparently open gate.
+
+Aragain Train Platform
+
+A metal gate bisects the fence to the northwest.
+
+A few exit the train, and hurry out of the station. You hear a voice from inside the train say, "Doors will be closing, please stand clear."
+===========
+==>STEP NUM: 366
+==>ACT: down
+==>OBSERVATION: Aragain Train Platform (lower)
+===========
+==>STEP NUM: 367
+==>ACT: south
+==>OBSERVATION: You squeeze onto the train car. The doors close behind you.
+
+Subway car
+
+The train starts to move, quickly exiting the station going west.
+===========
+==>STEP NUM: 368
+==>ACT: north
+==>OBSERVATION: Gurth City Train Platform (lower)
+
+The train doors close, and the train heads off to the east.
+===========
+==>STEP NUM: 369
+==>ACT: up
+==>OBSERVATION: Gurth City Train Platform
+
+A metal gate bisects the fence to the northeast.
+
+A few people exit the train, and hurry out of the station. You hear a voice from inside the train say, "Doors will be closing, please stand clear."
+===========
+==>STEP NUM: 370
+==>ACT: west
+==>OBSERVATION: You shove your way onto train car. The doors close behind you.
+
+Subway car
+
+The train starts to move, quickly exiting the station going north.
+===========
+==>STEP NUM: 371
+==>ACT: east
+==>OBSERVATION: New Borphee Train Platform
+
+A metal gate bisects the fence to the northeast.
+
+The train doors close, and the train rolls off to the south.
+===========
+==>STEP NUM: 372
+==>ACT: northeast
+==>OBSERVATION: New Borphee GUS Station
+
+A metal gate bisects the fence to the southwest.
+===========
+==>STEP NUM: 373
+==>ACT: up
+==>OBSERVATION: You enter the city and are nearly flattened by crowds rushing past.
+
+Downtown New Borphee
+
+Standing on a tall pole next to the stairs is a circular sign.
+===========
+==>STEP NUM: 374
+==>ACT: north
+==>OBSERVATION: Business District
+===========
+==>STEP NUM: 375
+==>ACT: east
+==>OBSERVATION: Inside Skyscraper
+You're inside a gigantic skyscraper. The marble and brass fixtures and trim exude professionalism. There's a small open chamber to the north. City streets are to the west.
+
+There is a large sign posted near the small chamber.
+===========
+==>STEP NUM: 376
+==>ACT: east
+==>OBSERVATION: Wondrous Stairway
+An enormous spiral staircase seems to wind miles above your head in this curious column-like chamber. Strange points of light brighten the chamber from above. To the west is a small exit.
+===========
+==>STEP NUM: 377
+==>ACT: up
+==>OBSERVATION: You begin the long trek upwards. Strangely, the stair seems to twist and move as you step on it, turning like a corkscrew, until you are graciously deposited at the top, far above your previous location.
+
+Fancy Hall
+This must be an apartment or penthouse in the skyscraper. You are in a very high hall, with black slate stone walls that seem to reflect shadows everywhere. There is a room to the north. The southern edge of this room drops off into the darkness, followed by a long spiral staircase. The ceiling overhead seems to have tiny points of light like a night sky.
+===========
+==>STEP NUM: 378
+==>ACT: north
+==>OBSERVATION: Magnificent Foyer
+This is an exceptionally grand entrance foyer, with sweeping arched ceilings and sparkling chandeliers. The room is dimly lit. Open hallways lead south and west.
+===========
+==>STEP NUM: 379
+==>ACT: west
+==>OBSERVATION: Fancy Lounge
+A tastefully overdone lounge with tapestries and gold enamel finished walls. The room is dimly lit, although you see no windows or other sources of light. Open hallways lead east and west.
+
+There's an open journal sitting here.
+===========
+==>STEP NUM: 380
+==>ACT: west
+==>OBSERVATION: Workroom
+A sight to inspire even the most avaricious, this storeroom is filled with all sorts of rare and precious treasures. A hallway leads east. You notice that the west wall appears to be made of solid granite.
+
+You can see two priceless paintings here.
+===========
+==>STEP NUM: 381
+==>ACT: east
+==>OBSERVATION: Fancy Lounge
+
+There's an open journal sitting here.
+===========
+==>STEP NUM: 382
+==>ACT: east
+==>OBSERVATION: Magnificent Foyer
+===========
+==>STEP NUM: 383
+==>ACT: south
+==>OBSERVATION: Fancy Hall
+===========
+==>STEP NUM: 384
+==>ACT: down
+==>OBSERVATION: Wondrous Stairway
+===========
+==>STEP NUM: 385
+==>ACT: west
+==>OBSERVATION: Inside Skyscraper
+
+There's an open door to the east.
+
+There is a large sign posted near the small chamber.
+===========
+==>STEP NUM: 386
+==>ACT: west
+==>OBSERVATION: Business District
+===========
+==>STEP NUM: 387
+==>ACT: north
+==>OBSERVATION: Suburbs
+A suburb starts here, in contrast to the start of a big downtown to the south. For a residential area, it's surprisingly crowded. A main street runs north-south here.
+===========
+==>STEP NUM: 388
+==>ACT: north
+==>OBSERVATION: Outskirts
+New Borphee stops here, although it probably won't for long. A rough trail leads off into some woods to the northwest, or you can enter the city to the south.
+===========
+==>STEP NUM: 389
+==>ACT: northwest
+==>OBSERVATION: Forest
+Deep forest surrounds you. A rough trail runs north and southeast.
+===========
+==>STEP NUM: 390
+==>ACT: north
+==>OBSERVATION: Over River
+You're on a nice new bridge crossing some large river below. Trails lead north and south into woods.
+
+You can see a coin here.
+===========
+==>STEP NUM: 391
+==>ACT: north
+==>OBSERVATION: Forest Trail
+A beaten trail cuts through some very dense forest running north and south.
+===========
+==>STEP NUM: 392
+==>ACT: north
+==>OBSERVATION: Ravine Pass
+A forest ravine opens into some sort of clearing to the north here, or a trail heads south.
+
+Morgan the Ranger is here.
+
+You can also see a group of soldiers, a wicker cage (which is closed) (in which are a speckled windcat and a spotted windcat), two red flags and two blue flags here.
+
+The Ranger sees you approach and recognizes you. "Well met again, Priest. I have need of your assistance to end the kobold border war that has been going on far too long." She pauses. "To the west and east are two of my lieutenants and their soldiers, cut off from the rest of us by previous kobold raids. I have the power to end this war and call a truce, but to do so, I need to inform both of my lieutenants to stop fighting via windcat message carriers." She points to the two windcats in the wicker cage and the pile of colored flags. "The 'red' flags indicate 'attack', the 'blue', truce. When my lieutenants receive the instructions, they will verify my commands by sending additional messengers with 'attack' or 'truce' instructions to each other. Based on the two received messages, each lieutenant will act accordingly." She slaps you on the back, jolting you to attention. "Herein lies my problem, Priest. I know for a fact, that one of my lieutenants is a traitor, who will disobey my orders. Any instruction I send to the traitor, the opposite will be sent by the traitor to my remaining good lieutenant. The traitor will also take the two orders he receives and do the opposite, if there is a majority, or attack outright, if there are messages of 'truce' and 'attack'. Thankfully, my good lieutenant will faithfully copy my instructions to the other lieutenant, and will follow orders received, if there is a majority, or follow a 'truce' if there are mixed messages. My greatest problem, Priest, is that I do not know which lieutenant is the traitor! If you can bring peace once and for all to Southern Egreth, many will remember your good deeds."
+===========
+==>STEP NUM: 393
+==>ACT: north
+==>OBSERVATION: Forest Clearing
+A open clearing is surrounded by forest trees here. A ravine pass is to the south, and a short trail heads northwest. You can just see a small cave opening to the northeast.
+===========
+==>STEP NUM: 394
+==>ACT: northwest
+==>OBSERVATION: Forest Brambles
+There's a small area of forest surrounded by brambles and shrubs here. A trail leads southeast.
+
+There appears to be a wounded kobold here, resting against a shrub.
+===========
+==>STEP NUM: 395
+==>ACT: southeast
+==>OBSERVATION: Forest Clearing
+===========
+==>STEP NUM: 396
+==>ACT: northeast
+==>OBSERVATION: In front of cave
+A small cave mouth enters into darkness to the north here. A clearing lies to the southwest.
+===========
+==>STEP NUM: 397
+==>ACT: north
+==>OBSERVATION: North-South Tunnel
+You're in a natural cave tunnel running north and south. To the south you can see a glimmer of daylight.
+===========
+==>STEP NUM: 398
+==>ACT: north
+==>OBSERVATION: Tunnel Intersection
+Several natural cave tunnels intersect here, running north, south, and east.
+===========
+==>STEP NUM: 399
+==>ACT: east
+==>OBSERVATION: Sloping Tunnel
+You're in a windy tunnel that gradually slopes up to the east, or down to the west. A cold breeze blows from a tunnel to the north.
+===========
+==>STEP NUM: 400
+==>ACT: east
+==>OBSERVATION: Windy Tunnel
+A strange wind seems to howl through this winding tunnel heading east and west. A crack in the tunnel wall exposes an exit north.
+===========
+==>STEP NUM: 401
+==>ACT: east
+==>OBSERVATION: Bare Cavern
+A bare cavern. The exit is west.
+
+You can see a torn parchment here.
+===========
+==>STEP NUM: 402
+==>ACT: west
+==>OBSERVATION: Windy Tunnel
+===========
+==>STEP NUM: 403
+==>ACT: north
+==>OBSERVATION: Ancient Hallway
+You're in a stone hallway, clearly man-made. The dust and musty smell indicate the place hasn't been used in quite some time. The corridor runs north, while the south wall has a large crack, creating a dark opening.
+===========
+==>STEP NUM: 404
+==>ACT: north
+==>OBSERVATION: End of Hallway
+You're at the north end of a long stone hallway. You can follow the hallway back south, or you can take a set of cracked stone stairs up.
+===========
+==>STEP NUM: 405
+==>ACT: up
+==>OBSERVATION: Domed Chamber
+You are in a large man-made underground chamber, with a perfectly domed high ceiling. Smooth stone archways lead to rooms to the north, south, east and west. Stone cut steps lead down. In the very center of the ceiling you notice a strange circular depression in the stone.
+
+Your amulet suddenly gives off a flash of purple light, then fades!
+===========
+==>STEP NUM: 406
+==>ACT: east
+==>OBSERVATION: East Trophy Room
+This is a bare cubical stone chamber. Some worn black lettering on the wall reads: "THE NORTH CHAMBER HAS SILVER LETTERING". An archway exits west.
+
+There is a circular depression in the center of the floor.
+===========
+==>STEP NUM: 407
+==>ACT: west
+==>OBSERVATION: Domed Chamber
+===========
+==>STEP NUM: 408
+==>ACT: west
+==>OBSERVATION: West Trophy Room
+This is a bare cubical stone chamber. Some worn black lettering on the wall reads: "EITHER I AM THE SECOND TROPHY ROOM AND THE NORTH CHAMBER IS THE LAST TROPHY ROOM, OR I HAVE GOLD LETTERING". An archway exits east.
+
+There is a circular depression in the center of the floor.
+===========
+==>STEP NUM: 409
+==>ACT: east
+==>OBSERVATION: Domed Chamber
+===========
+==>STEP NUM: 410
+==>ACT: south
+==>OBSERVATION: South Trophy Room
+This is a bare cubical stone chamber. Some worn black lettering on the wall reads: "THE EAST CHAMBER HAS SILVER LETTERING AND I HAVE GOLD LETTERING". An archway exits north.
+
+There is a circular depression in the center of the floor.
+===========
+==>STEP NUM: 411
+==>ACT: north
+==>OBSERVATION: Domed Chamber
+===========
+==>STEP NUM: 412
+==>ACT: north
+==>OBSERVATION: North Trophy Room
+This is a bare cubical stone chamber. Some worn black lettering on the wall reads: "THE EAST CHAMBER IS NOT THE FIRST TROPHY ROOM". An archway exits south.
+
+There is a circular depression in the center of the floor.
+===========
+==>STEP NUM: 413
+==>ACT: south
+==>OBSERVATION: Domed Chamber
+
+In the center of the room is a short white rod.
+
+You hear a strange intake of air from the hole above your head. Without warning, a small tornado seems to flow in from above. It seems to be sentient!
+===========
+==>STEP NUM: 414
+==>ACT: down
+==>OBSERVATION: End of Hallway
+===========
+==>STEP NUM: 415
+==>ACT: south
+==>OBSERVATION: Ancient Hallway
+===========
+==>STEP NUM: 416
+==>ACT: south
+==>OBSERVATION: Windy Tunnel
+===========
+==>STEP NUM: 417
+==>ACT: west
+==>OBSERVATION: Sloping Tunnel
+===========
+==>STEP NUM: 418
+==>ACT: west
+==>OBSERVATION: Tunnel Intersection
+===========
+==>STEP NUM: 419
+==>ACT: south
+==>OBSERVATION: North-South Tunnel
+===========
+==>STEP NUM: 420
+==>ACT: south
+==>OBSERVATION: In front of cave
+===========
+==>STEP NUM: 421
+==>ACT: southwest
+==>OBSERVATION: Forest Clearing
+===========
+==>STEP NUM: 422
+==>ACT: south
+==>OBSERVATION: Ravine Pass
+
+You can see a balsa beam, a wicker cage (which is closed and empty) and two blue flags here.
+===========
+==>STEP NUM: 423
+==>ACT: south
+==>OBSERVATION: Forest Trail
+===========
+==>STEP NUM: 424
+==>ACT: south
+==>OBSERVATION: Over River
+===========
+==>STEP NUM: 425
+==>ACT: south
+==>OBSERVATION: Forest
+===========
+==>STEP NUM: 426
+==>ACT: southeast
+==>OBSERVATION: Outskirts
+===========
+==>STEP NUM: 427
+==>ACT: south
+==>OBSERVATION: Suburbs
+===========
+==>STEP NUM: 428
+==>ACT: south
+==>OBSERVATION: Business District
+===========
+==>STEP NUM: 429
+==>ACT: west
+==>OBSERVATION: City Streets
+===========
+==>STEP NUM: 430
+==>ACT: north
+==>OBSERVATION: GUE Entrance
+===========
+==>STEP NUM: 431
+==>ACT: north
+==>OBSERVATION: South Quad
+===========
+==>STEP NUM: 432
+==>ACT: north
+==>OBSERVATION: Center of Quad
+===========
+==>STEP NUM: 433
+==>ACT: north
+==>OBSERVATION: North Quad
+===========
+==>STEP NUM: 434
+==>ACT: east
+==>OBSERVATION: Science Center
+===========
+==>STEP NUM: 435
+==>ACT: east
+==>OBSERVATION: Engineering Labs
+
+There's a closed heavy metal door to the south.
+
+There's an odd set of dials in the wall near the metal door.
+
+You can also see a research paper here.
+===========
+==>STEP NUM: 436
+==>ACT: south
+==>OBSERVATION: Strange Lab
+This is an odd room, cramped even by lab standards. The place seems to have been cleared out recently.
+
+There's an open metal door to the north.
+
+You can also see a strange contraption here.
+===========
+==>STEP NUM: 437
+==>ACT: southwest
+==>OBSERVATION: Ethereal Plane of Atrii
+Flat, featureless gray is in every direction you look. Stranger still is the upright rectangular hole in the fabric of space that stands in the center of this area. Otherwise, you could wander this gray dimension in any direction, it seems.
+===========
+==>STEP NUM: 438
+==>ACT: southwest
+==>OBSERVATION: Ethereal Plane of Atrii
+Flat, featureless gray is in every direction you look. Stranger still is the large black hole to the south. Otherwise, you could wander this gray dimension in any direction, it seems.
+===========
+==>STEP NUM: 439
+==>ACT: south
+==>OBSERVATION: You step into the black hole. You stumble forward, surrounded by blacker-than-night darkness.
+
+Dark Tunnel
+You're in a large dark tunnel that seems to run north and south. To the south you see light. There seem to be two metal tracks running along the ground.
+
+You can see a briefcase (which is closed) here.
+===========
+==>STEP NUM: 440
+==>ACT: south
+==>OBSERVATION: You step out into an underground chamber. A burly uniformed figure sees you exit the tunnel and yells, "Hey, no playing in the tunnels, pal!"
+
+Gurth City Train Platform
+
+A metal gate bisects the fence to the northeast.
+
+[Your score has just gone up by five points.]
+===========
+==>STEP NUM: 441
+==>ACT: west
+==>OBSERVATION: You shove your way onto train car. The doors close behind you.
+
+Subway car
+
+The train starts to move, quickly exiting the station going north.
+===========
+==>STEP NUM: 442
+==>ACT: east
+==>OBSERVATION: Miznia Train Platform
+
+A metal gate bisects the fence to the northeast.
+
+The train doors close, and the train rolls off to the north.
+===========
+==>STEP NUM: 443
+==>ACT: northeast
+==>OBSERVATION: Miznia GUS Station
+
+A metal gate bisects the fence to the southwest.
+===========
+==>STEP NUM: 444
+==>ACT: up
+==>OBSERVATION: Mizniaport
+
+Standing on a tall pole next to the stairs is a circular sign.
+===========
+==>STEP NUM: 445
+==>ACT: west
+==>OBSERVATION: Miznia Suburbs
+===========
+==>STEP NUM: 446
+==>ACT: west
+==>OBSERVATION: City Limits
+===========
+==>STEP NUM: 447
+==>ACT: southwest
+==>OBSERVATION: Edge of Jungle
+===========
+==>STEP NUM: 448
+==>ACT: southwest
+==>OBSERVATION: Deep Jungle
+===========
+==>STEP NUM: 449
+==>ACT: south
+==>OBSERVATION: Swamp
+
+You can see a jungle map here.
+===========
+==>STEP NUM: 450
+==>ACT: west
+==>OBSERVATION: Hidden Ruins
+Hidden here in some extremely deep jungle are the ruins of some ancient civilization. Broken sandstone structures are nearly covered with jungle vines and mosses. There is a partially intact structure to the north. It seems to be a short pyramid-like building, with a single dark entrance hidden amongst vines. Definitely a find to write the Monastery about, or at least your local Archeology Guild.
+===========
+==>STEP NUM: 451
+==>ACT: north
+==>OBSERVATION: Pyramid Entrance
+A damp, dark, unmarked stone room. You can hear the sounds of the jungle from the exit to the south. There are dark passages north and east.
+===========
+==>STEP NUM: 452
+==>ACT: east
+==>OBSERVATION: Statue Room
+A tiny dark chamber, with a passage west.
+
+You can see a large statue here.
+===========
+==>STEP NUM: 453
+==>ACT: north
+==>OBSERVATION: You step over and around the jammed rollers and the statue and head north.
+
+Bare Chamber
+You are in a bare stone chamber with passages leading north, east, south and west. A stone ladder also heads upwards through a dark hole in the ceiling.
+===========
+==>STEP NUM: 454
+==>ACT: east
+==>OBSERVATION: Small Chamber
+You're in a small stone chamber. In the center of the floor is a strange funnel-like depression, which starts as a large circular opening, and narrows into a very small tunnel below, probably no wider than your hand. You also see a small round hole in the ceiling above. An exit heads west.
+
+The opening appears to be empty.
+===========
+==>STEP NUM: 455
+==>ACT: west
+==>OBSERVATION: Bare Chamber
+===========
+==>STEP NUM: 456
+==>ACT: up
+==>OBSERVATION: Bare Chamber
+You are in a bare stone chamber with passages leading north, east, south and west. A stone ladder leads upwards and downwards into dark holes.
+===========
+==>STEP NUM: 457
+==>ACT: east
+==>OBSERVATION: Small Chamber
+You're in a bare stone chamber which is partially filled with a sunken pool of dirty blackish water. Near the south wall is a depression in the floor that was probably a drain for the pool, given the apparent water stains; however the level of the pool is below the point where it would overflow into the drain. Near the center of the ceiling is a small round hole, right above the pool. An exit lies west.
+
+Your amulet suddenly gives off a bright purple flash!
+
+The black pool is disturbingly calm.
+===========
+==>STEP NUM: 458
+==>ACT: west
+==>OBSERVATION: Bare Chamber
+===========
+==>STEP NUM: 459
+==>ACT: up
+==>OBSERVATION: Collapsed Chamber
+You are in a stone chamber that has broken and eroded walls in several places. Broken stones and dirt are everywhere. It appears there was once an open archway east, however the heavy stones that framed it have collapsed. A tiny hole remains, but it would be an exceptionally tight squeeze. A stone ladder leads downwards into a dark hole.
+
+Some of the dirt and mud in one corner stirs! A form made of mud and earth suddenly rises to attack!
+===========
+==>STEP NUM: 460
+==>ACT: east
+==>OBSERVATION: Low Chamber
+You're in a tiny low room, dimly lit by strange glowing lichens and mosses. A tiny exit lies west between some collapsed rock -- it looks like a very tight squeeze. The room is otherwise filled with broken rock and the like. A tiny round hole is in the very center of the floor.
+
+In the center of the room is a short black rod.
+===========
+==>STEP NUM: 461
+==>ACT: west
+==>OBSERVATION: Collapsed Chamber
+
+You can see a holy amulet (providing light), a prayer book, a square key, a small flower pot (in which are a white rod piece, a green sphere, a brown sphere, a smoke rod piece, a red sphere, a silver sphere, a gray rod piece and a can of decaf coffee), a fancy scroll, a fur sack (in which are ten coins), a bag (in which are seven coins), three balsa wood beams and a coin here.
+===========
+==>STEP NUM: 462
+==>ACT: down
+==>OBSERVATION: Bare Chamber
+===========
+==>STEP NUM: 463
+==>ACT: down
+==>OBSERVATION: Bare Chamber
+===========
+==>STEP NUM: 464
+==>ACT: east
+==>OBSERVATION: Small Chamber
+
+The opening contains:
+  a flower vase
+    a black rod piece
+===========
+==>STEP NUM: 465
+==>ACT: west
+==>OBSERVATION: Bare Chamber
+===========
+==>STEP NUM: 466
+==>ACT: south
+==>OBSERVATION: Strange Chamber
+
+There are two stone rollers pinned against the statue.
+
+You can also see a large statue here.
+===========
+==>STEP NUM: 467
+==>ACT: south
+==>OBSERVATION: Pyramid Entrance
+===========
+==>STEP NUM: 468
+==>ACT: south
+==>OBSERVATION: Hidden Ruins
+===========
+==>STEP NUM: 469
+==>ACT: east
+==>OBSERVATION: Swamp
+
+You can see a jungle map here.
+===========
+==>STEP NUM: 470
+==>ACT: north
+==>OBSERVATION: Deep Jungle
+===========
+==>STEP NUM: 471
+==>ACT: northeast
+==>OBSERVATION: Edge of Jungle
+===========
+==>STEP NUM: 472
+==>ACT: northeast
+==>OBSERVATION: City Limits
+===========
+==>STEP NUM: 473
+==>ACT: east
+==>OBSERVATION: Miznia Suburbs
+===========
+==>STEP NUM: 474
+==>ACT: east
+==>OBSERVATION: Mizniaport
+
+Standing on a tall pole next to the stairs is a circular sign.
+===========
+==>STEP NUM: 475
+==>ACT: down
+==>OBSERVATION: Miznia GUS Station
+
+A metal gate bisects the fence to the southwest.
+===========
+==>STEP NUM: 476
+==>ACT: southwest
+==>OBSERVATION: You saunter through the apparently open gate.
+
+Miznia Train Platform
+
+A metal gate bisects the fence to the northeast.
+
+You hear a distant rumbling noise from the north.
+===========
+==>STEP NUM: 477
+==>ACT: west
+==>OBSERVATION: You shove your way onto train car. The doors close behind you.
+
+Subway car
+
+The train starts to move, quickly exiting the station going north.
+===========
+==>STEP NUM: 478
+==>ACT: east
+==>OBSERVATION: New Borphee Train Platform
+
+A metal gate bisects the fence to the northeast.
+
+The train doors close, and the train rolls off to the south.
+===========
+==>STEP NUM: 479
+==>ACT: northeast
+==>OBSERVATION: New Borphee GUS Station
+
+A metal gate bisects the fence to the southwest.
+===========
+==>STEP NUM: 480
+==>ACT: up
+==>OBSERVATION: You enter the city and are nearly flattened by crowds rushing past.
+
+Downtown New Borphee
+
+Standing on a tall pole next to the stairs is a circular sign.
+===========
+==>STEP NUM: 481
+==>ACT: north
+==>OBSERVATION: Business District
+===========
+==>STEP NUM: 482
+==>ACT: west
+==>OBSERVATION: City Streets
+===========
+==>STEP NUM: 483
+==>ACT: north
+==>OBSERVATION: GUE Entrance
+===========
+==>STEP NUM: 484
+==>ACT: north
+==>OBSERVATION: South Quad
+===========
+==>STEP NUM: 485
+==>ACT: north
+==>OBSERVATION: Center of Quad
+===========
+==>STEP NUM: 486
+==>ACT: north
+==>OBSERVATION: North Quad
+===========
+==>STEP NUM: 487
+==>ACT: east
+==>OBSERVATION: Science Center
+===========
+==>STEP NUM: 488
+==>ACT: east
+==>OBSERVATION: Engineering Labs
+
+There's an open metal door to the south.
+
+There's an odd set of dials in the wall near the metal door.
+
+You can also see a research paper here.
+===========
+==>STEP NUM: 489
+==>ACT: south
+==>OBSERVATION: Strange Lab
+
+There's an open metal door to the north.
+
+You can also see a strange contraption here.
+===========
+==>STEP NUM: 490
+==>ACT: southeast
+==>OBSERVATION: Ethereal Plane of Atrii
+Flat, featureless gray is in every direction you look. Stranger still is the flat, glass-like square in the center of the 'floor' of this area. Otherwise, you could wander this gray dimension in any direction, it seems.
+===========
+==>STEP NUM: 491
+==>ACT: southeast
+==>OBSERVATION: Ethereal Plane of Atrii
+Flat, featureless gray is in every direction you look. It seems like you could go in any direction from here.
+
+You can see a ripped parchment here.
+===========
+==>STEP NUM: 492
+==>ACT: southwest
+==>OBSERVATION: Ethereal Plane of Atrii
+Flat, featureless gray is in every direction you look. Stranger still is the odd-shaped depression in the gray plane here. Otherwise, you could wander this gray dimension in any direction, it seems.
+===========
+==>STEP NUM: 493
+==>ACT: southwest
+==>OBSERVATION: Ethereal Plane of Atrii
+Flat, featureless gray is in every direction you look. Directly overhead, you notice odd streaks of light. From here, you could wander this gray dimension in any direction, it seems.
+
+You can see a flower vase (in which is a black rod piece) here.
+===========
+==>STEP NUM: 494
+==>ACT: east
+==>OBSERVATION: Strange Kitchen
+A room that could be a kitchen, if it didn't seem completely strange. Harsh bright lights seem to be coming from some unknown source. Strange-looking white countertops and cabinets fill the area, along with a curious white closet-like object. A room lies to the west.
+
+You can see a curious machine and a can of regular coffee here.
+===========
+==>STEP NUM: 495
+==>ACT: west
+==>OBSERVATION: Strange Room
+
+There's a closed door to the west.
+
+You can also see a set of curtains here.
+
+You hear some faint noises to the west.
+===========
+==>STEP NUM: 496
+==>ACT: exit
+==>OBSERVATION: You get out of the set of curtains.
+
+Strange Room
+
+There's a closed door to the west.
+
+You can also see a set of curtains here.
+
+You hear some faint noises to the west.
+===========
+==>STEP NUM: 497
+==>ACT: west
+==>OBSERVATION: Strange Bedroom
+A very curious small bedroom. A white desk sits here amongst other odd furnishings.
+
+There's an open door to the east.
+
+Someone you assume must be an Implementor is here, sound asleep.
+
+On the desk is a strange machine.
+===========
+==>STEP NUM: 498
+==>ACT: northeast
+==>OBSERVATION: Ethereal Plane of Atrii
+===========
+==>STEP NUM: 499
+==>ACT: north
+==>OBSERVATION: Ethereal Plane of Atrii
+===========
+==>STEP NUM: 500
+==>ACT: west
+==>OBSERVATION: As you step west, a slight downwards slope in the ice sends you sliding uncontrollably.
+
+On Frozen River
+
+You can see some sand here.
+===========
+==>STEP NUM: 501
+==>ACT: north
+==>OBSERVATION: North of Frozen River
+===========
+==>STEP NUM: 502
+==>ACT: north
+==>OBSERVATION: Snowy Intersection
+
+There is a large stone marker here, in the center of the intersection.
+===========
+==>STEP NUM: 503
+==>ACT: north
+==>OBSERVATION: Rocky Mountain Trail
+===========
+==>STEP NUM: 504
+==>ACT: north
+==>OBSERVATION: Cliff Face
+===========
+==>STEP NUM: 505
+==>ACT: north
+==>OBSERVATION: You are greeted by relatively warm and cozy air.
+
+Entrance Hall
+===========
+==>STEP NUM: 506
+==>ACT: north
+==>OBSERVATION: Cloister Walkway
+===========
+==>STEP NUM: 507
+==>ACT: north
+==>OBSERVATION: Main Hall
+===========
+==>STEP NUM: 508
+==>ACT: south
+==>OBSERVATION: Cloister Walkway
+===========
+==>STEP NUM: 509
+==>ACT: east
+==>OBSERVATION: Monastery Gardens
+===========
+==>STEP NUM: 510
+==>ACT: east
+==>OBSERVATION: Hallway (west end)
+===========
+==>STEP NUM: 511
+==>ACT: down
+==>OBSERVATION: Hallway (basement)
+===========
+==>STEP NUM: 512
+==>ACT: east
+==>OBSERVATION: Refectory
+===========
+==>STEP NUM: 513
+==>ACT: east
+==>OBSERVATION: Storeroom
+A trapdoor opens into darkness below.
+
+You can also see a large barrel here.
+===========
+==>STEP NUM: 514
+==>ACT: down
+==>OBSERVATION: Caverns
+You are in an low underground cavern, made of roughly worked stone. An even lower tunnel travels east.
+Light gleams in from an open trapdoor above.
+===========
+==>STEP NUM: 515
+==>ACT: east
+==>OBSERVATION: Cave Intersection
+You are in a large open cavern. The rough limestone here was probably eroded by underground springs to form the somewhat circular chamber you now stand in. Oddly, there seems to have been a recent cave-in, as piles of rubble line the walls. A tunnel snakes off to the west. To the southeast, there is a wide square hole!
+===========
+==>STEP NUM: 516
+==>ACT: southeast
+==>OBSERVATION: As you enter the tunnel, a strange light surrounds you! The four rod pieces you were carrying crumble into dust!
+
+Mystical Cave
+You've entered a wondrous natural cave, lit everywhere by reflected light from some sort of purple crystalline substance in the walls. A tunnel exits to the northwest.
+
+There's a purple crystal sphere partially embedded in the rock floor here.
+
+Lying in one corner of the room is a skeleton.
+
+You can also see a blackened parchment, a silver rod piece, a red rod piece, a green rod piece and a brown rod piece here.
+===========
+==>STEP NUM: 517
+==>ACT: east
+==>OBSERVATION: Construction Site
+This is a long square ditch that is likely to be the starting point for some building. It is framed by wood slats and short brick walls. The only way out is to the west.
+
+A thick brick lies nearby.
+
+You notice a foundation side wall in the ditch.
+===========
+==>STEP NUM: 518
+==>ACT: northwest
+==>OBSERVATION: As you leave, a sudden tremor shakes the cave! You just narrowly avoid a sudden cave-in behind you!
+
+Cave Intersection
+===========
+==>STEP NUM: 519
+==>ACT: west
+==>OBSERVATION: Caverns
+Light gleams in from an open trapdoor above.
+===========
+==>STEP NUM: 520
+==>ACT: up
+==>OBSERVATION: Storeroom
+A trapdoor opens into darkness below.
+
+You can also see a large barrel here.
+===========
+==>STEP NUM: 521
+==>ACT: west
+==>OBSERVATION: Refectory
+===========
+==>STEP NUM: 522
+==>ACT: west
+==>OBSERVATION: Hallway (basement)
+===========
+==>STEP NUM: 523
+==>ACT: up
+==>OBSERVATION: Hallway (west end)
+===========
+==>STEP NUM: 524
+==>ACT: west
+==>OBSERVATION: Monastery Gardens
+===========
+==>STEP NUM: 525
+==>ACT: west
+==>OBSERVATION: Cloister Walkway
+===========
+==>STEP NUM: 526
+==>ACT: south
+==>OBSERVATION: Entrance Hall
+===========
+==>STEP NUM: 527
+==>ACT: south
+==>OBSERVATION: You are surprised by a cold blast of wind as you leave the Monastery!
+
+Cliff Face
+===========
+==>STEP NUM: 528
+==>ACT: south
+==>OBSERVATION: Rocky Mountain Trail
+===========
+==>STEP NUM: 529
+==>ACT: south
+==>OBSERVATION: Snowy Intersection
+
+There is a large stone marker here, in the center of the intersection.
+===========
+==>STEP NUM: 530
+==>ACT: south
+==>OBSERVATION: North of Frozen River
+===========
+==>STEP NUM: 531
+==>ACT: south
+==>OBSERVATION: On Frozen River
+
+You can see some sand here.
+===========
+==>STEP NUM: 532
+==>ACT: south
+==>OBSERVATION: You tread lightly on the sand covered portion of the ice, and scramble to the south bank.
+
+South of Frozen River
+===========
+==>STEP NUM: 533
+==>ACT: south
+==>OBSERVATION: Valley Trail
+===========
+==>STEP NUM: 534
+==>ACT: south
+==>OBSERVATION: Frostham Outskirts
+===========
+==>STEP NUM: 535
+==>ACT: south
+==>OBSERVATION: Frostham
+===========
+==>STEP NUM: 536
+==>ACT: south
+==>OBSERVATION: Subway Entrance
+
+Standing on a tall pole next to the stairs is a circular sign.
+===========
+==>STEP NUM: 537
+==>ACT: down
+==>OBSERVATION: Frostham GUS Station
+
+A metal gate bisects the fence to the southeast.
+===========
+==>STEP NUM: 538
+==>ACT: southeast
+==>OBSERVATION: You saunter through the apparently open gate.
+
+Frostham Train Platform
+
+A metal gate bisects the fence to the northwest.
+===========
+==>STEP NUM: 539
+==>ACT: east
+==>OBSERVATION: You enter the train car. The doors slam shut behind you.
+
+Subway car
+
+You can see a newspaper here.
+
+The train starts to move, quickly exiting the station going south.
+===========
+==>STEP NUM: 540
+==>ACT: west
+==>OBSERVATION: Fublio Valley Train Platform
+
+A metal gate bisects the fence to the northwest.
+
+The train doors close, and the train rolls off to the north.
+===========
+==>STEP NUM: 541
+==>ACT: northwest
+==>OBSERVATION: Fublio Valley GUS Station
+
+A metal gate bisects the fence to the southeast.
+===========
+==>STEP NUM: 542
+==>ACT: up
+==>OBSERVATION: Southern Fublio Valley
+
+Standing on a tall pole next to the stairs is a circular sign.
+===========
+==>STEP NUM: 543
+==>ACT: south
+==>OBSERVATION: Grassland Beach
+
+You can see a small sailboat (which is empty) here.
+===========
+==>STEP NUM: 544
+==>ACT: south
+==>OBSERVATION: On Fublio Bay (in the small sailboat)
+===========
+==>STEP NUM: 545
+==>ACT: southeast
+==>OBSERVATION: Volcanic Island (in the small sailboat)
+You're on the north shore of a small volcanic island in the middle of Fublio bay. A little more shore lies to the south. The bay spreads out before you to the northwest.
+===========
+==>STEP NUM: 546
+==>ACT: exit
+==>OBSERVATION: You get out of the small sailboat.
+
+Volcanic Island
+
+You can see a small sailboat (which is empty) here.
+===========
+==>STEP NUM: 547
+==>ACT: south
+==>OBSERVATION: South Part of Island
+You're on a southern section of a small volcanic island in the middle of Fublio bay. Most of the area here is lava-rock, still warm. You can see a more open shore to the north.
+
+An old shipwreck is almost embedded in the lava here.
+===========
+==>STEP NUM: 548
+==>ACT: north
+==>OBSERVATION: Volcanic Island
+
+You can see a small sailboat (which is empty) here.
+===========
+==>STEP NUM: 549
+==>ACT: northwest
+==>OBSERVATION: On Fublio Bay (in the small sailboat)
+===========
+==>STEP NUM: 550
+==>ACT: north
+==>OBSERVATION: Grassland Beach (in the small sailboat)
+===========
+==>STEP NUM: 551
+==>ACT: exit
+==>OBSERVATION: You get out of the small sailboat.
+
+Grassland Beach
+
+You can see a small sailboat (which is empty) here.
+===========
+==>STEP NUM: 552
+==>ACT: north
+==>OBSERVATION: Southern Fublio Valley
+
+Standing on a tall pole next to the stairs is a circular sign.
+===========
+==>STEP NUM: 553
+==>ACT: down
+==>OBSERVATION: Fublio Valley GUS Station
+
+A metal gate bisects the fence to the southeast.
+===========
+==>STEP NUM: 554
+==>ACT: southeast
+==>OBSERVATION: You saunter through the apparently open gate.
+
+Fublio Valley Train Platform
+
+A metal gate bisects the fence to the northwest.
+===========
+==>STEP NUM: 555
+==>ACT: east
+==>OBSERVATION: You enter the train car. The doors slam shut behind you.
+
+Subway car
+
+You can see a newspaper here.
+
+The train starts to move, quickly exiting the station going north.
+===========
+==>STEP NUM: 556
+==>ACT: west
+==>OBSERVATION: Aragain Train Platform
+
+A metal gate bisects the fence to the northwest.
+
+A few exit the train, and hurry out of the station. You hear a voice from inside the train say, "Doors will be closing, please stand clear."
+===========
+==>STEP NUM: 557
+==>ACT: down
+==>OBSERVATION: Aragain Train Platform (lower)
+
+Suddenly, from the west, a train emerges from the tunnel! It pulls to a screeching halt, the doors open, and several people rush out and up the stairs.
+===========
+==>STEP NUM: 558
+==>ACT: south
+==>OBSERVATION: You squeeze onto the train car. The doors close behind you.
+
+Subway car
+
+The train starts to move, quickly exiting the station going west.
+===========
+==>STEP NUM: 559
+==>ACT: north
+==>OBSERVATION: Greater Anthar Train Platform
+
+A metal gate bisects the fence to the north.
+
+The train doors close, and the train rolls off.
+===========
+==>STEP NUM: 560
+==>ACT: north
+==>OBSERVATION: Greater Anthar GUS Station
+
+A metal gate bisects the fence to the south.
+===========
+==>STEP NUM: 561
+==>ACT: up
+==>OBSERVATION: Entrance to Greater Anthar
+
+Standing on a tall pole next to the stairs is a circular sign.
+===========
+==>STEP NUM: 562
+==>ACT: east
+==>OBSERVATION: Anthar West
+===========
+==>STEP NUM: 563
+==>ACT: northeast
+==>OBSERVATION: Entrance to Flathead Stadium
+
+A stadium event sign is pasted to one of the stadium walls here.
+
+A statue depicting the legendary Babe Flathead greets all visitors in front of the stadium.
+===========
+==>STEP NUM: 564
+==>ACT: southwest
+==>OBSERVATION: Anthar West
+===========
+==>STEP NUM: 565
+==>ACT: west
+==>OBSERVATION: Entrance to Greater Anthar
+
+Standing on a tall pole next to the stairs is a circular sign.
+===========
+==>STEP NUM: 566
+==>ACT: down
+==>OBSERVATION: Greater Anthar GUS Station
+
+A metal gate bisects the fence to the south.
+===========
+==>STEP NUM: 567
+==>ACT: southwest
+==>OBSERVATION: You can't go that way.
+===========
+==>STEP NUM: 568
+==>ACT: west
+==>OBSERVATION: You can't go that way.
+===========
+==>STEP NUM: 569
+==>ACT: down
+==>OBSERVATION: You can't go that way.
+===========
+==>STEP NUM: 570
+==>ACT: south
+==>OBSERVATION: You saunter through the apparently open gate.
+
+Greater Anthar Train Platform
+
+A metal gate bisects the fence to the north.
+
+Suddenly, from the west, a train emerges from the tunnel! It pulls to a screeching halt, the doors open, and several people rush out and exit the station.
+===========
+==>STEP NUM: 571
+==>ACT: south
+==>OBSERVATION: You squeeze onto the train car. The doors close behind you.
+
+Subway car
+
+The train starts to move, quickly exiting the station going east.
+===========
+==>STEP NUM: 572
+==>ACT: north
+==>OBSERVATION: Gurth City Train Platform (lower)
+
+The train doors close, and the train heads off to the east.
+===========
+==>STEP NUM: 573
+==>ACT: up
+==>OBSERVATION: Gurth City Train Platform
+
+A metal gate bisects the fence to the northeast.
+
+You can also see a briefcase (which is empty) here.
+===========
+==>STEP NUM: 574
+==>ACT: northeast
+==>OBSERVATION: Gurth City GUS Station
+
+A metal gate bisects the fence to the southwest.
+
+You can also see a thin wire here.
+===========
+==>STEP NUM: 575
+==>ACT: up
+==>OBSERVATION: You are greeted by a light rain as you leave the station.
+
+Gurth City Streets
+
+Standing on a tall pole next to the stairs is a circular sign.
+===========
+==>STEP NUM: 576
+==>ACT: southeast
+==>OBSERVATION: North District
+===========
+==>STEP NUM: 577
+==>ACT: south
+==>OBSERVATION: Market District
+===========
+==>STEP NUM: 578
+==>ACT: south
+==>OBSERVATION: South District
+===========
+==>STEP NUM: 579
+==>ACT: east
+==>OBSERVATION: Front of House
+===========
+==>STEP NUM: 580
+==>ACT: east
+==>OBSERVATION: Entrance Room
+===========
+==>STEP NUM: 581
+==>ACT: down
+==>OBSERVATION: Basement
+
+There's an open metal box attached to the wall here. It seems to be empty.
+
+A large break in the wall exposes a good portion of the house's foundation.
+
+You can also see a pair of rubber gloves here.
+===========

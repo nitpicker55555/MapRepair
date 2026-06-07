@@ -1,0 +1,29 @@
+# enchanter  model=gpt-4.1  n_steps=28
+step   0 bad movement output: {'is_movement': True, 'src_node': None, 'dst_node': 'outside of shack', 'action': 'northeast', 'seen_in_forward': 0, 'current_location': 'outside of shack', 'reasoning': "Observation explicitly names 'Outside of Shack', which matches a canonical location; action is a compass direction."}
+step   1 bad movement output: {'is_movement': True, 'src_node': None, 'dst_node': 'trail', 'action': 'northeast', 'seen_in_forward': 1, 'current_location': 'trail', 'reasoning': "The observation describes a trail and matches the canonical location 'trail'; the action 'northeast' is a compass direction, so movement occurred."}
+step   2 bad movement output: {'is_movement': True, 'src_node': None, 'dst_node': 'trail head', 'action': 'southeast', 'seen_in_forward': 2, 'current_location': 'trail head', 'reasoning': "Observation begins with 'Trail Head', which matches the canonical location 'trail head'."}
+step   3 bad movement output: {'is_movement': True, 'src_node': None, 'dst_node': 'shady brook', 'action': 'northeast', 'seen_in_forward': 3, 'current_location': 'shady brook', 'reasoning': "Observation begins with 'Shady Brook', which matches the canonical location 'shady brook'."}
+step   4 bad movement output: {'is_movement': True, 'src_node': None, 'dst_node': 'trail head', 'action': 'southwest', 'seen_in_forward': 4, 'current_location': 'trail head', 'reasoning': "Observation matches canonical room name 'trail head', so player moved there."}
+step   5 MOVE 'trail head' --[southeast]--> 'eastern fork'
+step   6 MOVE 'eastern fork' --[southwest]--> 'village outskirts'
+step   7 MOVE 'village outskirts' --[southwest]--> 'deserted village'
+step   8 MOVE 'deserted village' --[northeast]--> 'village outskirts'
+step   9 MOVE 'village outskirts' --[northeast]--> 'eastern fork'
+step  10 MOVE 'eastern fork' --[east]--> 'western road'
+step  11 MOVE 'western road' --[east]--> 'outside gate'
+step  12 MOVE 'outside gate' --[east]--> 'inside gate'
+step  13 MOVE 'inside gate' --[north]--> 'pebbled path'
+step  14 MOVE 'pebbled path' --[north]--> 'tower'
+step  15 MOVE 'tower' --[up]--> 'jewel room'
+step  16 MOVE 'jewel room' --[down]--> 'tower'
+step  17 MOVE 'tower' --[east]--> 'hall of mirrors one'
+step  18 MOVE 'hall of mirrors one' --[east]--> 'hall of mirrors two'
+step  19 MOVE 'hall of mirrors two' --[east]--> 'hall of mirrors three'
+step  20 MOVE 'hall of mirrors three' --[east]--> 'hall of mirrors four'
+step  21 MOVE 'hall of mirrors four' --[east]--> 'north gate'
+step  22 MOVE 'north gate' --[north]--> 'forest'
+step  23 MOVE 'forest' --[east]--> 'swamp'
+step  24 MOVE 'swamp' --[west]--> 'forest'
+step  25 MOVE 'forest' --[south]--> 'north gate'
+step  26 MOVE 'north gate' --[south]--> 'library'
+step  27 MOVE 'library' --[north]--> 'north gate'

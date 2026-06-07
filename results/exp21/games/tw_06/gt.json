@@ -1,0 +1,161 @@
+{
+  "rooms": {
+    "r_1": {
+      "id": "r_1",
+      "name": "dish-pit"
+    },
+    "r_2": {
+      "id": "r_2",
+      "name": "lounge"
+    },
+    "r_4": {
+      "id": "r_4",
+      "name": "washroom"
+    },
+    "r_3": {
+      "id": "r_3",
+      "name": "parlor"
+    },
+    "r_6": {
+      "id": "r_6",
+      "name": "bedroom"
+    },
+    "r_5": {
+      "id": "r_5",
+      "name": "laundry place"
+    },
+    "r_7": {
+      "id": "r_7",
+      "name": "cookhouse"
+    },
+    "r_8": {
+      "id": "r_8",
+      "name": "cubicle"
+    },
+    "r_0": {
+      "id": "r_0",
+      "name": "recreation zone"
+    }
+  },
+  "edges": [
+    {
+      "src_name": "dish-pit",
+      "dst_name": "lounge",
+      "src_id": "r_1",
+      "dst_id": "r_2",
+      "direction": "west"
+    },
+    {
+      "src_name": "dish-pit",
+      "dst_name": "recreation zone",
+      "src_id": "r_1",
+      "dst_id": "r_0",
+      "direction": "south"
+    },
+    {
+      "src_name": "dish-pit",
+      "dst_name": "parlor",
+      "src_id": "r_1",
+      "dst_id": "r_3",
+      "direction": "north"
+    },
+    {
+      "src_name": "lounge",
+      "dst_name": "dish-pit",
+      "src_id": "r_2",
+      "dst_id": "r_1",
+      "direction": "east"
+    },
+    {
+      "src_name": "washroom",
+      "dst_name": "parlor",
+      "src_id": "r_4",
+      "dst_id": "r_3",
+      "direction": "west"
+    },
+    {
+      "src_name": "parlor",
+      "dst_name": "dish-pit",
+      "src_id": "r_3",
+      "dst_id": "r_1",
+      "direction": "south"
+    },
+    {
+      "src_name": "parlor",
+      "dst_name": "washroom",
+      "src_id": "r_3",
+      "dst_id": "r_4",
+      "direction": "east"
+    },
+    {
+      "src_name": "bedroom",
+      "dst_name": "laundry place",
+      "src_id": "r_6",
+      "dst_id": "r_5",
+      "direction": "west"
+    },
+    {
+      "src_name": "bedroom",
+      "dst_name": "cookhouse",
+      "src_id": "r_6",
+      "dst_id": "r_7",
+      "direction": "north"
+    },
+    {
+      "src_name": "laundry place",
+      "dst_name": "recreation zone",
+      "src_id": "r_5",
+      "dst_id": "r_0",
+      "direction": "north"
+    },
+    {
+      "src_name": "laundry place",
+      "dst_name": "bedroom",
+      "src_id": "r_5",
+      "dst_id": "r_6",
+      "direction": "east"
+    },
+    {
+      "src_name": "cookhouse",
+      "dst_name": "bedroom",
+      "src_id": "r_7",
+      "dst_id": "r_6",
+      "direction": "south"
+    },
+    {
+      "src_name": "cookhouse",
+      "dst_name": "cubicle",
+      "src_id": "r_7",
+      "dst_id": "r_8",
+      "direction": "north"
+    },
+    {
+      "src_name": "cubicle",
+      "dst_name": "cookhouse",
+      "src_id": "r_8",
+      "dst_id": "r_7",
+      "direction": "south"
+    },
+    {
+      "src_name": "recreation zone",
+      "dst_name": "laundry place",
+      "src_id": "r_0",
+      "dst_id": "r_5",
+      "direction": "south"
+    },
+    {
+      "src_name": "recreation zone",
+      "dst_name": "dish-pit",
+      "src_id": "r_0",
+      "dst_id": "r_1",
+      "direction": "north"
+    }
+  ],
+  "n_rooms": 9,
+  "n_edges": 16,
+  "walkthrough": [
+    "open passageway",
+    "go north",
+    "take teapot from refrigerator"
+  ]
+}

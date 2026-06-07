@@ -1,0 +1,180 @@
+==>STEP NUM: 0
+==>ACT: west
+==>OBSERVATION: You can't go that way.
+
+
+-= Pantry =-0/3
+===========
+==>STEP NUM: 1
+==>ACT: west
+==>OBSERVATION: You can't go that way.
+
+
+-= Pantry =-0/4
+===========
+==>STEP NUM: 2
+==>ACT: south
+==>OBSERVATION: -= Cookhouse =-
+Wow! You're in a cookhouse.
+
+
+
+There is a closed passageway leading south. You need an unguarded exit? You should try going east. There is an unguarded exit to the north.
+
+
+-= Cookhouse =-0/5
+===========
+==>STEP NUM: 3
+==>ACT: south
+==>OBSERVATION: You have to open the passageway first.
+
+
+-= Cookhouse =-0/6
+===========
+==>STEP NUM: 4
+==>ACT: south
+==>OBSERVATION: You have to open the passageway first.
+
+
+-= Cookhouse =-0/7
+===========
+==>STEP NUM: 5
+==>ACT: east
+==>OBSERVATION: -= Parlor =-
+You arrive in a parlor. A standard one.
+
+
+
+There is an exit to the north. Don't worry, it is unblocked. There is an unguarded exit to the west.
+
+
+-= Parlor =-0/8
+===========
+==>STEP NUM: 6
+==>ACT: west
+==>OBSERVATION: -= Cookhouse =-
+Wow! You're in a cookhouse.
+
+
+
+There is a closed passageway leading south. You need an unguarded exit? You should try going east. There is an unguarded exit to the north.
+
+
+-= Cookhouse =-0/9
+===========
+==>STEP NUM: 7
+==>ACT: north
+==>OBSERVATION: -= Pantry =-
+You arrive in a pantry. An usual one. You can barely contain your excitement.
+
+
+
+There is an exit to the east. Don't worry, it is unguarded. You need an unguarded exit? You should try going south.
+
+
+-= Pantry =-0/10
+===========
+==>STEP NUM: 8
+==>ACT: north
+==>OBSERVATION: You can't go that way.
+
+
+-= Pantry =-0/11
+===========
+==>STEP NUM: 9
+==>ACT: east
+==>OBSERVATION: -= Shower =-
+You are in a shower. A typical kind of place.
+
+
+
+There is an open gate leading east. You need an unguarded exit? You should try going south. You need an unguarded exit? You should try going west.
+
+
+-= Shower =-0/12
+===========
+==>STEP NUM: 10
+==>ACT: west
+==>OBSERVATION: -= Pantry =-
+You arrive in a pantry. An usual one. You can barely contain your excitement.
+
+
+
+There is an exit to the east. Don't worry, it is unguarded. You need an unguarded exit? You should try going south.
+
+
+-= Pantry =-0/13
+===========
+==>STEP NUM: 11
+==>ACT: north
+==>OBSERVATION: You can't go that way.
+
+
+-= Pantry =-0/14
+===========
+==>STEP NUM: 12
+==>ACT: east
+==>OBSERVATION: -= Shower =-
+You are in a shower. A typical kind of place.
+
+
+
+There is an open gate leading east. You need an unguarded exit? You should try going south. You need an unguarded exit? You should try going west.
+
+
+-= Shower =-0/15
+===========
+==>STEP NUM: 13
+==>ACT: east
+==>OBSERVATION: -= Cookery =-
+You are in a cookery. It seems to be pretty standard here. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
+
+You can see a type 2 chest.
+
+There is a closed portal leading south. There is an open gate leading west.
+
+
+-= Cookery =-0/16
+===========
+==>STEP NUM: 14
+==>ACT: south
+==>OBSERVATION: You have to open the portal first.
+
+
+-= Cookery =-0/17
+===========
+==>STEP NUM: 15
+==>ACT: south
+==>OBSERVATION: You have to open the portal first.
+
+
+-= Cookery =-0/18
+===========
+==>STEP NUM: 16
+==>ACT: south
+==>OBSERVATION: You have to open the portal first.
+
+
+-= Cookery =-0/19
+===========
+==>STEP NUM: 17
+==>ACT: north
+==>OBSERVATION: You can't go that way.
+
+
+-= Cookery =-0/20
+===========
+==>STEP NUM: 18
+==>ACT: north
+==>OBSERVATION: You can't go that way.
+
+
+-= Cookery =-0/21
+===========
+==>STEP NUM: 19
+==>ACT: north
+==>OBSERVATION: You can't go that way.
+
+
+-= Cookery =-0/22
+===========

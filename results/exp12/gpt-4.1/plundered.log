@@ -1,0 +1,25 @@
+# plundered  model=gpt-4.1  n_steps=24
+step   0 bad movement output: {'is_movement': True, 'src_node': None, 'dst_node': 'landing', 'action': 'north', 'seen_in_forward': 0, 'current_location': 'landing', 'reasoning': "The observation explicitly states arrival at 'Landing', which matches the canonical location 'landing'."}
+step   1 bad movement output: {'is_movement': True, 'src_node': None, 'dst_node': 'sleeping cupboard', 'action': 'in', 'seen_in_forward': 1, 'current_location': 'sleeping cupboard', 'reasoning': "The observation begins with 'Sleeping Cupboard', which matches the canonical location 'sleeping cupboard'. The action 'in' leads directly to this room."}
+step   2 MOVE 'sleeping cupboard' --[out]--> 'landing'
+step   3 MOVE 'landing' --[down]--> 'aft hold'
+step   4 MOVE 'aft hold' --[north]--> 'hold'
+step   5 MOVE 'hold' --[north]--> "crew's quarters"
+step   6 MOVE "crew's quarters" --[south]--> 'hold'
+step   7 MOVE 'hold' --[south]--> 'aft hold'
+step   8 MOVE 'aft hold' --[up]--> 'landing'
+step   9 MOVE 'landing' --[south]--> "captain's quarters"
+step  10 MOVE "captain's quarters" --[south]--> 'the ledge'
+step  11 MOVE 'the ledge' --[up]--> 'poop deck'
+step  12 MOVE 'poop deck' --[north]--> 'quarterdeck'
+step  13 MOVE 'quarterdeck' --[north]--> 'main deck'
+step  14 MOVE 'main deck' --[down]--> 'hold'
+step  15 MOVE 'hold' --[up]--> 'main deck'
+step  16 MOVE 'main deck' --[north]--> 'forecastle'
+step  17 MOVE 'forecastle' --[in]--> 'galley'
+step  18 MOVE 'galley' --[out]--> 'forecastle'
+step  19 MOVE 'forecastle' --[south]--> 'main deck'
+step  20 MOVE 'main deck' --[south]--> 'quarterdeck'
+step  21 MOVE 'quarterdeck' --[west]--> 'beach'
+step  22 MOVE 'beach' --[north]--> 'lawn'
+step  23 MOVE 'lawn' --[west]--> 'forest'

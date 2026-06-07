@@ -1,0 +1,162 @@
+[
+  {
+    "step_num": 0,
+    "action": "west",
+    "command": "go west",
+    "observation": "You can't go that way.\n\n\n-= Pantry =-0/3",
+    "gt_src": "cookery",
+    "gt_dst": "shower"
+  },
+  {
+    "step_num": 1,
+    "action": "west",
+    "command": "go west",
+    "observation": "You can't go that way.\n\n\n-= Pantry =-0/4",
+    "gt_src": "shower",
+    "gt_dst": "pantry"
+  },
+  {
+    "step_num": 2,
+    "action": "south",
+    "command": "go south",
+    "observation": "-= Cookhouse =-\nWow! You're in a cookhouse.\n\n\n\nThere is a closed passageway leading south. You need an unguarded exit? You should try going east. There is an unguarded exit to the north.\n\n\n-= Cookhouse =-0/5",
+    "gt_src": "pantry",
+    "gt_dst": "cookhouse"
+  },
+  {
+    "step_num": 3,
+    "action": "south",
+    "command": "go south",
+    "observation": "You have to open the passageway first.\n\n\n-= Cookhouse =-0/6",
+    "gt_src": "cookhouse",
+    "gt_dst": "bedchamber"
+  },
+  {
+    "step_num": 4,
+    "action": "south",
+    "command": "go south",
+    "observation": "You have to open the passageway first.\n\n\n-= Cookhouse =-0/7",
+    "gt_src": "bedchamber",
+    "gt_dst": "kitchenette"
+  },
+  {
+    "step_num": 5,
+    "action": "east",
+    "command": "go east",
+    "observation": "-= Parlor =-\nYou arrive in a parlor. A standard one.\n\n\n\nThere is an exit to the north. Don't worry, it is unblocked. There is an unguarded exit to the west.\n\n\n-= Parlor =-0/8",
+    "gt_src": "kitchenette",
+    "gt_dst": "cellar"
+  },
+  {
+    "step_num": 6,
+    "action": "west",
+    "command": "go west",
+    "observation": "-= Cookhouse =-\nWow! You're in a cookhouse.\n\n\n\nThere is a closed passageway leading south. You need an unguarded exit? You should try going east. There is an unguarded exit to the north.\n\n\n-= Cookhouse =-0/9",
+    "gt_src": "cellar",
+    "gt_dst": "kitchenette"
+  },
+  {
+    "step_num": 7,
+    "action": "north",
+    "command": "go north",
+    "observation": "-= Pantry =-\nYou arrive in a pantry. An usual one. You can barely contain your excitement.\n\n\n\nThere is an exit to the east. Don't worry, it is unguarded. You need an unguarded exit? You should try going south.\n\n\n-= Pantry =-0/10",
+    "gt_src": "kitchenette",
+    "gt_dst": "bedchamber"
+  },
+  {
+    "step_num": 8,
+    "action": "north",
+    "command": "go north",
+    "observation": "You can't go that way.\n\n\n-= Pantry =-0/11",
+    "gt_src": "bedchamber",
+    "gt_dst": "cookhouse"
+  },
+  {
+    "step_num": 9,
+    "action": "east",
+    "command": "go east",
+    "observation": "-= Shower =-\nYou are in a shower. A typical kind of place.\n\n\n\nThere is an open gate leading east. You need an unguarded exit? You should try going south. You need an unguarded exit? You should try going west.\n\n\n-= Shower =-0/12",
+    "gt_src": "cookhouse",
+    "gt_dst": "parlor"
+  },
+  {
+    "step_num": 10,
+    "action": "west",
+    "command": "go west",
+    "observation": "-= Pantry =-\nYou arrive in a pantry. An usual one. You can barely contain your excitement.\n\n\n\nThere is an exit to the east. Don't worry, it is unguarded. You need an unguarded exit? You should try going south.\n\n\n-= Pantry =-0/13",
+    "gt_src": "parlor",
+    "gt_dst": "cookhouse"
+  },
+  {
+    "step_num": 11,
+    "action": "north",
+    "command": "go north",
+    "observation": "You can't go that way.\n\n\n-= Pantry =-0/14",
+    "gt_src": "cookhouse",
+    "gt_dst": "pantry"
+  },
+  {
+    "step_num": 12,
+    "action": "east",
+    "command": "go east",
+    "observation": "-= Shower =-\nYou are in a shower. A typical kind of place.\n\n\n\nThere is an open gate leading east. You need an unguarded exit? You should try going south. You need an unguarded exit? You should try going west.\n\n\n-= Shower =-0/15",
+    "gt_src": "pantry",
+    "gt_dst": "shower"
+  },
+  {
+    "step_num": 13,
+    "action": "east",
+    "command": "go east",
+    "observation": "-= Cookery =-\nYou are in a cookery. It seems to be pretty standard here. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.\n\nYou can see a type 2 chest.\n\nThere is a closed portal leading south. There is an open gate leading west.\n\n\n-= Cookery =-0/16",
+    "gt_src": "shower",
+    "gt_dst": "cookery"
+  },
+  {
+    "step_num": 14,
+    "action": "south",
+    "command": "go south",
+    "observation": "You have to open the portal first.\n\n\n-= Cookery =-0/17",
+    "gt_src": "cookery",
+    "gt_dst": "scullery"
+  },
+  {
+    "step_num": 15,
+    "action": "south",
+    "command": "go south",
+    "observation": "You have to open the portal first.\n\n\n-= Cookery =-0/18",
+    "gt_src": "scullery",
+    "gt_dst": "workshop"
+  },
+  {
+    "step_num": 16,
+    "action": "south",
+    "command": "go south",
+    "observation": "You have to open the portal first.\n\n\n-= Cookery =-0/19",
+    "gt_src": "workshop",
+    "gt_dst": "canteen"
+  },
+  {
+    "step_num": 17,
+    "action": "north",
+    "command": "go north",
+    "observation": "You can't go that way.\n\n\n-= Cookery =-0/20",
+    "gt_src": "canteen",
+    "gt_dst": "workshop"
+  },
+  {
+    "step_num": 18,
+    "action": "north",
+    "command": "go north",
+    "observation": "You can't go that way.\n\n\n-= Cookery =-0/21",
+    "gt_src": "workshop",
+    "gt_dst": "scullery"
+  },
+  {
+    "step_num": 19,
+    "action": "north",
+    "command": "go north",
+    "observation": "You can't go that way.\n\n\n-= Cookery =-0/22",
+    "gt_src": "scullery",
+    "gt_dst": "cookery"
+  }
+]

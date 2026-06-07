@@ -1,0 +1,18 @@
+{
+  "game": "anchor",
+  "mode": "vc_ei",
+  "model": "gpt-4.1-mini",
+  "num_conflicts": 38,
+  "iterations": 380,
+  "success": false,
+  "remaining_conflicts": 38,
+  "pre_edge_recall": 0.5238095238095238,
+  "pre_strict_direction_match": 0.5238095238095238,
+  "pre_edge_direction_accuracy": 1.0,
+  "post_edge_recall": 0.5238095238095238,
+  "post_strict_direction_match": 0.5238095238095238,
+  "post_permissive_direction_match": 0.9761904761904762,
+  "post_edge_direction_accuracy": 1.0,
+  "edge_recall_delta": 0.0,
+  "strict_direction_delta": 0.0
+}

@@ -1,0 +1,34 @@
+[
+  {
+    "src_node": "bedchamber",
+    "dst_node": "basement",
+    "action": "east",
+    "step_num": 1,
+    "gt_src": "bedchamber",
+    "gt_dst": "basement"
+  },
+  {
+    "src_node": "basement",
+    "dst_node": "spare room",
+    "action": "south",
+    "step_num": 2,
+    "gt_src": "basement",
+    "gt_dst": "spare room"
+  },
+  {
+    "src_node": "spare room",
+    "dst_node": "basement",
+    "action": "north",
+    "step_num": 3,
+    "gt_src": "spare room",
+    "gt_dst": "basement"
+  },
+  {
+    "src_node": "basement",
+    "dst_node": "spare room",
+    "action": "south",
+    "step_num": 6,
+    "gt_src": "canteen",
+    "gt_dst": "sauna"
+  }
+]

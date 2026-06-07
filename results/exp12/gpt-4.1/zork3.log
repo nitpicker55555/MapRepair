@@ -1,0 +1,28 @@
+# zork3  model=gpt-4.1  n_steps=27
+step   0 bad movement output: {'is_movement': True, 'src_node': None, 'dst_node': 'pitch black 1', 'action': 'south', 'seen_in_forward': 0, 'current_location': 'pitch black 1', 'reasoning': "Compass movement south leads to a pitch black room; canonical list includes 'pitch black 1', so this is the destination."}
+step   1 bad movement output: {'is_movement': True, 'src_node': None, 'dst_node': 'barren area', 'action': 'west', 'seen_in_forward': 1, 'current_location': 'barren area', 'reasoning': "Observation explicitly names 'Barren Area', which matches the canonical location list."}
+step   2 bad movement output: {'is_movement': True, 'src_node': None, 'dst_node': 'cliff', 'action': 'west', 'seen_in_forward': 2, 'current_location': 'cliff', 'reasoning': "Observation begins with 'Cliff', which matches the canonical room 'cliff'."}
+step   3 MOVE 'cliff' --[east]--> 'barren area'
+step   4 MOVE 'barren area' --[east]--> 'junction'
+step   5 MOVE 'junction' --[east]--> 'damp passage'
+step   6 MOVE 'damp passage' --[northeast]--> 'engravings room'
+step   7 MOVE 'engravings room' --[southeast]--> 'dead end'
+step   8 MOVE 'dead end' --[west]--> 'damp passage'
+step   9 MOVE 'damp passage' --[southwest]--> 'damp passage'
+step  10 MOVE 'damp passage' --[west]--> 'junction'
+step  11 MOVE 'junction' --[south]--> 'creepy crawl'
+step  12 MOVE 'creepy crawl' --[south]--> 'foggy room'
+step  13 MOVE 'foggy room' --[south]--> 'lake shore'
+step  14 MOVE 'lake shore' --[down]--> 'underwater'
+step  15 MOVE 'underwater' --[west]--> 'western shore'
+step  16 MOVE 'western shore' --[south]--> 'scenic vista'
+step  17 MOVE 'scenic vista' --[north]--> 'western shore'
+step  18 MOVE 'western shore' --[south]--> 'southern shore'
+step  19 MOVE 'southern shore' --[south]--> 'pitch black 1'
+step  20 MOVE 'pitch black 1' --[south]--> 'pitch black 2'
+step  21 MOVE 'pitch black 2' --[east]--> 'key room'
+step  22 MOVE 'key room' --[down]--> 'aqueduct'
+step  23 MOVE 'aqueduct' --[north]--> 'high arch'
+step  24 MOVE 'high arch' --[north]--> 'water slide'
+step  25 MOVE 'water slide' --[north]--> 'damp passage'
+step  26 MOVE 'damp passage' --[down]--> 'cliff ledge'

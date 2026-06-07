@@ -1,0 +1,36 @@
+Total runs: 160 with 6 workers, model=gpt-4.1-mini
+  20/160 done
+  40/160 done
+  60/160 done
+  80/160 done
+  100/160 done
+  120/160 done
+  140/160 done
+  160/160 done
+Wrote results/exp04/summary.md
+# Experiment 4 — LLM end-to-end repair on synthetic GT (model=gpt-4.1-mini)
+
+Total runs: 160 (4 modes x 5 seeds x 8 cases)
+
+Headline metric: % of runs that end with **conflict-free graph that matches GT** (strict: GT direction accuracy = 100% and GT edge recall = 100%).
+
+## Aggregate by mode
+| mode | n | conflict_free %% | gt_recall %% | gt_dir_acc %% | strict_correct %% | mean_iters |
+|------|--:|-----------------:|--------------:|--------------:|-------------------:|-----------:|
+| baseline | 40 | 32.5 | 100.0 | 99.8 | 32.5 | 1.38 |
+| edge_impact | 40 | 12.5 | 100.0 | 98.8 | 12.5 | 4.08 |
+| vc_only | 40 | 35.0 | 100.0 | 99.9 | 35.0 | 1.40 |
+| vc_ei | 40 | 0.0 | 100.0 | 99.7 | 0.0 | 376.12 |
+
+## By (mode x err_type)
+
+| mode | err_type | n | conflict_free % | gt_dir_acc % | mean_iters |
+|------|----------|--:|----------------:|--------------:|-----------:|
+| baseline | direction | 25 | 4.0 | 100.0 | 1.60 |
+| baseline | topology | 15 | 80.0 | 99.6 | 1.00 |
+| edge_impact | direction | 25 | 4.0 | 99.3 | 5.60 |
+| edge_impact | topology | 15 | 26.7 | 97.8 | 1.53 |
+| vc_ei | direction | 25 | 0.0 | 100.0 | 406.20 |
+| vc_ei | topology | 15 | 0.0 | 99.3 | 326.00 |
+| vc_only | direction | 25 | 4.0 | 100.0 | 1.64 |
+| vc_only | topology | 15 | 86.7 | 99.7 | 1.00 |

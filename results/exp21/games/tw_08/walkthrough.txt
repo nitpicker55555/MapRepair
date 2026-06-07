@@ -1,0 +1,81 @@
+==>STEP NUM: 0
+==>ACT: west
+==>OBSERVATION: -= Bedchamber =-
+You've just sauntered into a bedchamber. Let's see what's in here.
+
+
+
+You need an unguarded exit? You should try going east.
+
+
+-= Bedchamber =-0/3
+===========
+==>STEP NUM: 1
+==>ACT: east
+==>OBSERVATION: -= Basement =-
+If you're wondering why everything seems so ordinary all of a sudden, it's because you've just walked into the basement.
+
+Oh wow! Is that what I think it is? It is! It's a box.
+
+There is a closed gateway leading east. There is an unblocked exit to the south. There is an exit to the west. Don't worry, it is unguarded.
+
+
+-= Basement =-0/4
+===========
+==>STEP NUM: 2
+==>ACT: south
+==>OBSERVATION: -= Spare Room =-
+You have come into the most normal of all possible spare rooms.
+
+You bend down to tie your shoe. When you stand up, you notice a workbench. The workbench appears to be empty.
+
+There is an exit to the north. Don't worry, it is unguarded.
+
+
+-= Spare Room =-0/5
+===========
+==>STEP NUM: 3
+==>ACT: north
+==>OBSERVATION: -= Basement =-
+If you're wondering why everything seems so ordinary all of a sudden, it's because you've just walked into the basement.
+
+Oh wow! Is that what I think it is? It is! It's a box.
+
+There is a closed gateway leading east. There is an unblocked exit to the south. There is an exit to the west. Don't worry, it is unguarded.
+
+
+-= Basement =-0/6
+===========
+==>STEP NUM: 4
+==>ACT: east
+==>OBSERVATION: You have to open the gateway first.
+
+
+-= Basement =-0/7
+===========
+==>STEP NUM: 5
+==>ACT: north
+==>OBSERVATION: You can't go that way.
+
+
+-= Basement =-0/8
+===========
+==>STEP NUM: 6
+==>ACT: south
+==>OBSERVATION: -= Spare Room =-
+You have come into the most normal of all possible spare rooms.
+
+You bend down to tie your shoe. When you stand up, you notice a workbench. The workbench appears to be empty.
+
+There is an exit to the north. Don't worry, it is unguarded.
+
+
+-= Spare Room =-0/9
+===========
+==>STEP NUM: 7
+==>ACT: west
+==>OBSERVATION: You can't go that way.
+
+
+-= Spare Room =-0/10
+===========

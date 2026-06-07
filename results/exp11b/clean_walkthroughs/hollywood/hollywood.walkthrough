@@ -1,0 +1,206 @@
+===========
+==>STEP NUM: 0
+==>ACT: north
+==>OBSERVATION: Game Room
+This was your favorite room as a child. Each summer Uncle Buddy would have props and models from his various movies brought here for the amusement of his numerous guests. There is a scale model of downtown Tokyo here. Doorways lead south, east and west. There is a door to the north.
+===========
+==>STEP NUM: 1
+==>ACT: east
+==>OBSERVATION: Short Hall
+This is a short hall stretching east and west. Doorways lead north to the ladies' room and south to the men's room.
+===========
+==>STEP NUM: 2
+==>ACT: east
+==>OBSERVATION: Screening Room
+This is the screening room where Uncle Buddy died. He had a massive heart attack while viewing the final cut of his first horror musical, "A Corpse Line." The film was never released and no one knows what happened to the only full-length version, worth a fortune today. Rumor has it that as he was dying he proclaimed "A Corpse Line" to be his masterwork of horror. Other rumors say the film was so bad that, if it had been released and he hadn't died, someone would have killed him. Several rows of plush theatre-like seats face a movie screen. Doorways lead south and west.
+
+You can see a yellow punch card here.
+===========
+==>STEP NUM: 3
+==>ACT: south
+==>OBSERVATION: Projection Booth
+This cramped area is just big enough for one person and all the equipment. A thick glass window overlooks the screening room to the north.
+
+You can see a slide projector, a film projector, a slide and a strip of film here.
+===========
+==>STEP NUM: 4
+==>ACT: north
+==>OBSERVATION: Screening Room
+
+You can see a yellow punch card here.
+===========
+==>STEP NUM: 5
+==>ACT: west
+==>OBSERVATION: Short Hall
+===========
+==>STEP NUM: 6
+==>ACT: west
+==>OBSERVATION: Game Room
+===========
+==>STEP NUM: 7
+==>ACT: south
+==>OBSERVATION: Foyer
+
+You hear the eerie whistling of wind coming down the chimney.
+===========
+==>STEP NUM: 8
+==>ACT: west
+==>OBSERVATION: Living Room
+This is the living room where Uncle Buddy and Aunt Hildegarde used spend their evenings. Most of the west wall is covered by a grand stone fireplace with a mantle over it. A long sofa, several cushy chairs and a telephone fill the room. Most of the hardwood floor is covered by a monstrous Persian rug. A doorway leads north and an archway exits to the east.
+
+Sitting on the mantle is a red wax statuette, a white wax statuette and a blue wax statuette.
+===========
+==>STEP NUM: 9
+==>ACT: east
+==>OBSERVATION: Foyer
+===========
+==>STEP NUM: 10
+==>ACT: east
+==>OBSERVATION: Hallway
+This is a long hall stretching east and west. There is a painting hanging here.
+===========
+==>STEP NUM: 11
+==>ACT: east
+==>OBSERVATION: Parlor
+This is the parlor where Uncle Buddy would bring his special guests. He would break out his finest scotch and Cuban cigars. Once they were tight he would present his latest movie idea. (You've seen his movies, so you know anyone who would agree to invest in one of them had to have been drinking.) Strange, you notice all the furniture in this room is bolted to the floor, except for the piano in the middle of the room. A doorway leads west.
+===========
+==>STEP NUM: 12
+==>ACT: down
+==>OBSERVATION: Crawl Space, North
+This is the northern half of an uncomfortably warm crawl space beneath the parlor. It appears as though this room was under construction. To the north, about a foot above the floor, you see an entrance to a passage. The entrance is partially blocked by the floor of the room above. A beam runs east-west across the ceiling, forming the boundary between this side of the crawl space and the other half to the south. There is a niche in the ceiling here. In the niche there is a dusty pillar supporting the ceiling.
+===========
+==>STEP NUM: 13
+==>ACT: south
+==>OBSERVATION: Crawl Space, South
+This is the southern half of an uncomfortably warm crawl space beneath the parlor. A beam runs east-west across the ceiling, forming the boundary between this side of the crawl space and the other half to the north. There is a niche in the ceiling here. In the niche there is a square pillar supporting the ceiling.
+===========
+==>STEP NUM: 14
+==>ACT: north
+==>OBSERVATION: Crawl Space, North
+===========
+==>STEP NUM: 15
+==>ACT: up
+==>OBSERVATION: Parlor
+===========
+==>STEP NUM: 16
+==>ACT: down
+==>OBSERVATION: Crawl Space, North
+
+You can see a dusty pillar here.
+===========
+==>STEP NUM: 17
+==>ACT: south
+==>OBSERVATION: Crawl Space, North
+
+You can see a dusty pillar here.
+===========
+==>STEP NUM: 18
+==>ACT: up
+==>OBSERVATION: Parlor
+===========
+==>STEP NUM: 19
+==>ACT: west
+==>OBSERVATION: Hallway
+===========
+==>STEP NUM: 20
+==>ACT: west
+==>OBSERVATION: Foyer
+===========
+==>STEP NUM: 21
+==>ACT: north
+==>OBSERVATION: Game Room
+===========
+==>STEP NUM: 22
+==>ACT: south
+==>OBSERVATION: Game Room
+===========
+==>STEP NUM: 23
+==>ACT: south
+==>OBSERVATION: Foyer
+
+You can see a parking meter, Mama Maggio's cheese grater and a Big Diamond Ring here.
+===========
+==>STEP NUM: 24
+==>ACT: west
+==>OBSERVATION: Living Room
+
+Sitting on the mantle is a red wax statuette, a white wax statuette and a blue wax statuette.
+===========
+==>STEP NUM: 25
+==>ACT: out
+==>OBSERVATION: Living Room
+
+Sitting on the mantle is a red wax statuette, a white wax statuette and a blue wax statuette.
+===========
+==>STEP NUM: 26
+==>ACT: south
+==>OBSERVATION: Living Room
+
+Sitting on the mantle is a red wax statuette, a white wax statuette and a blue wax statuette.
+===========
+==>STEP NUM: 27
+==>ACT: east
+==>OBSERVATION: Foyer
+
+You can see a cloth sack, a parking meter, Mama Maggio's cheese grater and a Big Diamond Ring here. It looks like the cloth sack contains a Maltese finch.
+===========
+==>STEP NUM: 28
+==>ACT: north
+==>OBSERVATION: Game Room
+===========
+==>STEP NUM: 29
+==>ACT: east
+==>OBSERVATION: Game Room
+===========
+==>STEP NUM: 30
+==>ACT: south
+==>OBSERVATION: Foyer
+
+You can see a cloth sack, a parking meter, Mama Maggio's cheese grater and a Big Diamond Ring here. It looks like the cloth sack contains a Maltese finch.
+
+Somewhere in the house you hear the creaking of floorboards.
+===========
+==>STEP NUM: 31
+==>ACT: out
+==>OBSERVATION: Foyer
+
+You can see a cloth sack, a parking meter, Mama Maggio's cheese grater and a Big Diamond Ring here. It looks like the cloth sack contains a Maltese finch.
+===========
+==>STEP NUM: 32
+==>ACT: north
+==>OBSERVATION: Game Room
+===========
+==>STEP NUM: 33
+==>ACT: east
+==>OBSERVATION: Game Room
+===========
+==>STEP NUM: 34
+==>ACT: south
+==>OBSERVATION: Foyer
+
+You can see a cloth sack, a parking meter, Mama Maggio's cheese grater and a Big Diamond Ring here. It looks like the cloth sack contains a Maltese finch.
+===========
+==>STEP NUM: 35
+==>ACT: north
+==>OBSERVATION: Game Room
+===========
+==>STEP NUM: 36
+==>ACT: south
+==>OBSERVATION: Game Room
+
+The water continues to dribble out of the rusty bucket.
+===========
+==>STEP NUM: 37
+==>ACT: south
+==>OBSERVATION: Foyer
+
+You can see a Maltese finch, a letter from Aunt Hildegarde, a photo of Uncle Buddy, Uncle Buddy's toupee, a cloth sack, a parking meter, Mama Maggio's cheese grater and a Big Diamond Ring here.
+
+The water continues to dribble out of the rusty bucket.
+===========
+==>STEP NUM: 38
+==>ACT: out
+==>OBSERVATION: Foyer
+
+You can see a Maltese finch, a letter from Aunt Hildegarde, a photo of Uncle Buddy, Uncle Buddy's toupee, a cloth sack, a parking meter, Mama Maggio's cheese grater and a Big Diamond Ring here.
+===========

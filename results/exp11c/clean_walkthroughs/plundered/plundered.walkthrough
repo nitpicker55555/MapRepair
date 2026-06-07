@@ -1,0 +1,148 @@
+===========
+==>STEP NUM: 0
+==>ACT: north
+==>OBSERVATION: The large cupboard is not flush against the doorsill. You squeeze through the opening between cupboard and wall.
+
+Landing
+   You are on the landing of a steep stairway heading up and down. A large cupboard against the aft wall blocks the doorway to the captain's quarters.
+===========
+==>STEP NUM: 1
+==>ACT: in
+==>OBSERVATION: Sleeping Cupboard
+   The bed is softer than it looks, plumped up with fresh straw. A soft, if somewhat cramped, bunk for the tall bulk of Jamison. The cupboard opens to the fore.
+   Kicked into a far corner is a pile of clothes.
+===========
+==>STEP NUM: 2
+==>ACT: out
+==>OBSERVATION: Landing
+===========
+==>STEP NUM: 3
+==>ACT: down
+==>OBSERVATION: Aft Hold
+   This is a gloomy, damp area at the bottom of the Helena Louise. To the fore there seems to be a little more light, or you can climb up some steep stairs.
+===========
+==>STEP NUM: 4
+==>ACT: north
+==>OBSERVATION: You hear a scuffling noise ahead, and scraping up near the ceiling. You would think it was caused by rats, but for the definite curse you heard before all the movement.
+
+Hold
+   Steep stairs lead up in the dimness to a canvas hatch above. Rats' scratchings counterpoint the lullaby of bilge water sloshing in the bulkheads, punctuated by footsteps slapping the deck overhead. You may move fore or aft.
+   Behind a high fence, decorated by a sign, are stacked the food and ammunition supplies; casks of rum, water, flour and salt meat interspersed with kegs of gunpowder and shot. A closed gate is the only way in.
+===========
+==>STEP NUM: 5
+==>ACT: north
+==>OBSERVATION: Crew's Quarters
+   The crew sleeps, in shifts, in this cramped space under the forecastle. A breeze blows in on a moonbeam through a grate in the ceiling. A low doorsill is abaft.
+   This area must also serve as sickroom. Strewn about the floor are various powders and spills of malodorous potions. In one corner, a large blood stain indicates an amputation; in another is the smear of a leech, dropped off a bloodletting.
+   A small bottle has been dropped nearby.
+   A chipped piece of mirror sits propped on a shoulder-high timber.
+===========
+==>STEP NUM: 6
+==>ACT: south
+==>OBSERVATION: Hold
+   You gradually notice a familiar, worrying smell, sniff, and identify it as smoke. A tiny glow of fire creeps across a stretch of floor -- inside the cage full of ammunition.
+===========
+==>STEP NUM: 7
+==>ACT: south
+==>OBSERVATION: Aft Hold
+===========
+==>STEP NUM: 8
+==>ACT: up
+==>OBSERVATION: Landing
+===========
+==>STEP NUM: 9
+==>ACT: south
+==>OBSERVATION: You squeeze through the opening between cupboard and wall.
+
+Captain's Quarters
+===========
+==>STEP NUM: 10
+==>ACT: south
+==>OBSERVATION: You climb onto the ledge. The ladder drifts within reach.
+===========
+==>STEP NUM: 11
+==>ACT: up
+==>OBSERVATION: You heave yourself over the stern rail and sink breathless to the deck of the Helena Louise.
+
+Poop
+   From this platform deck you can see the whole of the two-masted ship, shadowy forms moving about here and there. A railing protects you from stepping off the deck in any direction but to the fore. A rope ladder is tied to the railing at the stern of the ship.
+   The reefs seem a little larger than you thought before.
+===========
+==>STEP NUM: 12
+==>ACT: north
+==>OBSERVATION: Quarterdeck
+   No torches are lit, or needed on this moonlit night, except in the deep shadows cast by the huge navigation wheel. Men move about to the fore, talking quietly. Under the stairs aft to the poop is a barred door.
+   The reefs seem a little larger than you thought before.
+   Abaft the wheel sits a large pyramid of casks, held in place by a heavy rope.
+   Cannon line the deck, aimed at open sea and the island.
+===========
+==>STEP NUM: 13
+==>ACT: north
+==>OBSERVATION: Main Deck
+   It is a deceptively quiet evening on the ship, the pirates singing low shanties as they repair cannon, twist ropes and sharpen daggers. The mainmast casts an inky shadow over the canvas screening the hatch. A tangled mass of rigging hangs down from the mast, like many rope ladders woven together.
+   The reefs seem a little larger than you thought before.
+   Two large barrels stand near the stair to the foredeck.
+===========
+==>STEP NUM: 14
+==>ACT: down
+==>OBSERVATION: You glance around to see that no one is watching, and duck through the open corner of the canvas hatch.
+
+Hold
+   A tiny glow of fire creeps across a stretch of floor -- inside the cage full of ammunition.
+===========
+==>STEP NUM: 15
+==>ACT: up
+==>OBSERVATION: You slip lithely through the canvas hatch.
+
+Main Deck
+===========
+==>STEP NUM: 16
+==>ACT: north
+==>OBSERVATION: Forecastle
+   Higher than all but the poop deck, this end of the ship commands a good view of the island; the "crow's nest," swinging above in the heights of the foremast, would command a better. A tangled mass of rigging hangs down from the mast, like many rope ladders woven together.
+   Imbedded in the deck is a grated air hole to the crew's quarters below. You can go aft, or forward through a break in the ubiquitous railing.
+   Odors of old grease and char waft from a little shack perched behind the mast.
+   The reefs seem a little larger than you thought before.
+   You can see a mooring winch here.
+===========
+==>STEP NUM: 17
+==>ACT: in
+==>OBSERVATION: Galley
+   This tiny kitchen smells of old stew and yeast. A low door to starboard shows the way out.
+   A dagger is driven into the wooden floorboards.
+   An entirely bald man sits here, carving into his peg leg.
+   The man looks you over sharply, then winks an eye. "Hullo, boy -- Sam, I'll call you. Nervous about Cap'n? He'll come to no harm. And if there is trouble, he only has to signal from that seaward winder of the house -- ye can see it from the crow's nest -- and we'll be there in a jiffy. Me and my peg are to stay aboard and guard y--, the Cap'n's young lady."
+===========
+==>STEP NUM: 18
+==>ACT: out
+==>OBSERVATION: Forecastle
+   You can see a mooring winch here.
+===========
+==>STEP NUM: 19
+==>ACT: south
+==>OBSERVATION: Main Deck
+===========
+==>STEP NUM: 20
+==>ACT: south
+==>OBSERVATION: Quarterdeck
+   Abaft the wheel sits a large pyramid of casks, held in place by a heavy rope.
+   Cannon line the deck, aimed at open sea and the island.
+===========
+==>STEP NUM: 21
+==>ACT: west
+==>OBSERVATION: Beach
+   This is a tiny beach, at the base of vine-covered cliffs. To the east, the Helena Louise floats serenely on the lagoon.
+   Immediately north of you, a rocky staircase is hewn into the cliff.
+===========
+==>STEP NUM: 22
+==>ACT: north
+==>OBSERVATION: Lawn
+   Jungle looms around this clipped lawn, a path meandering westward into the dense undergrowth. To the east is a folly entangled in blooming jasmine. The way to the beach is obscure, but visible to the southeast. Behind the folly a thorny hedge blocks the cliff view of the sea.
+   Music and voices float from the veranda to the north.
+   Two men stand whispering in the shadows. You catch an occasional word, "Davis dead... girl... Falcon on Sinistra." The men separate, the well-dressed one going into the ballroom as the other slinks into the bushes. You see his face. Crulley!
+===========
+==>STEP NUM: 23
+==>ACT: west
+==>OBSERVATION: Forest
+   Buried in the subtropical undergrowth, you lose all sense of being on someone's private estate; jungle seems to extend for miles on all sides of you. A footworn path curves from east to north here, and the vegetation lessens to the northeast.
+===========

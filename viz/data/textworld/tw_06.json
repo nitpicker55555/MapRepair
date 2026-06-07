@@ -1,0 +1,548 @@
+{
+  "id": "tw_06",
+  "dataset": "textworld",
+  "n_rooms": 9,
+  "n_edges": 16,
+  "rooms": [
+    {
+      "id": "bedroom",
+      "label": "bedroom",
+      "description": "You arrive in a bedroom. An usual kind of place. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building. There is an opena closed gate leading north. There is an opena closed portal leading west."
+    },
+    {
+      "id": "cookhouse",
+      "label": "cookhouse",
+      "description": "You've just walked into a cookhouse. There is an opena closed gate leading south. There is an unblocked exit to the north."
+    },
+    {
+      "id": "cubicle",
+      "label": "cubicle",
+      "description": "You find yourself in a cubicle. A normal one. You don't like doors? Why not try going south, that entranceway is unblocked."
+    },
+    {
+      "id": "dish-pit",
+      "label": "dish-pit",
+      "description": "You have walked into the most standard of all possible dish-pits. You can see a lockedan openeda closed ordinary looking refrigerator nearby. The refrigerator contains . The refrigerator is empty! This is the worst thing that could possibly happen, ever! You can make out a bowl. You see on the bowl."
+    },
+    {
+      "id": "laundry place",
+      "label": "laundry place",
+      "description": "I am honoured to announce that you are now in the laundry place. There is an opena closed portal leading east. There is an opena closed hatch leading north."
+    },
+    {
+      "id": "lounge",
+      "label": "lounge",
+      "description": "You've just walked into a lounge. You need an unguarded exit? You should try going east."
+    },
+    {
+      "id": "parlor",
+      "label": "parlor",
+      "description": "You arrive in a parlor. An ordinary one. You can barely contain your excitement. There is an opena closed door leading south. You don't like doors? Why not try going east, that entranceway is unblocked."
+    },
+    {
+      "id": "recreation zone",
+      "label": "recreation zone",
+      "description": "You find yourself in a recreation zone. An ordinary kind of place. There is an opena closed passageway leading north. There is an opena closed hatch leading south."
+    },
+    {
+      "id": "washroom",
+      "label": "washroom",
+      "description": "You've entered a washroom. Okay, just remember what you're here to do, and everything will go great. You don't like doors? Why not try going west, that entranceway is unblocked."
+    }
+  ],
+  "walkthrough": [],
+  "states": {
+    "gt": {
+      "edges": [
+        {
+          "src": "dish-pit",
+          "dst": "lounge",
+          "dir": "west"
+        },
+        {
+          "src": "dish-pit",
+          "dst": "recreation zone",
+          "dir": "south"
+        },
+        {
+          "src": "dish-pit",
+          "dst": "parlor",
+          "dir": "north"
+        },
+        {
+          "src": "lounge",
+          "dst": "dish-pit",
+          "dir": "east"
+        },
+        {
+          "src": "recreation zone",
+          "dst": "laundry place",
+          "dir": "south"
+        },
+        {
+          "src": "recreation zone",
+          "dst": "dish-pit",
+          "dir": "north"
+        },
+        {
+          "src": "parlor",
+          "dst": "dish-pit",
+          "dir": "south"
+        },
+        {
+          "src": "parlor",
+          "dst": "washroom",
+          "dir": "east"
+        },
+        {
+          "src": "washroom",
+          "dst": "parlor",
+          "dir": "west"
+        },
+        {
+          "src": "bedroom",
+          "dst": "laundry place",
+          "dir": "west"
+        },
+        {
+          "src": "bedroom",
+          "dst": "cookhouse",
+          "dir": "north"
+        },
+        {
+          "src": "laundry place",
+          "dst": "recreation zone",
+          "dir": "north"
+        },
+        {
+          "src": "laundry place",
+          "dst": "bedroom",
+          "dir": "east"
+        },
+        {
+          "src": "cookhouse",
+          "dst": "bedroom",
+          "dir": "south"
+        },
+        {
+          "src": "cookhouse",
+          "dst": "cubicle",
+          "dir": "north"
+        },
+        {
+          "src": "cubicle",
+          "dst": "cookhouse",
+          "dir": "south"
+        }
+      ]
+    },
+    "noised": {
+      "edges": [
+        {
+          "src": "dish-pit",
+          "dst": "lounge",
+          "dir": "west"
+        },
+        {
+          "src": "dish-pit",
+          "dst": "parlor",
+          "dir": "west"
+        },
+        {
+          "src": "dish-pit",
+          "dst": "laundry place",
+          "dir": "south"
+        },
+        {
+          "src": "lounge",
+          "dst": "dish-pit",
+          "dir": "east"
+        },
+        {
+          "src": "parlor",
+          "dst": "dish-pit",
+          "dir": "south"
+        },
+        {
+          "src": "parlor",
+          "dst": "washroom",
+          "dir": "east"
+        },
+        {
+          "src": "parlor",
+          "dst": "laundry place",
+          "dir": "east"
+        },
+        {
+          "src": "washroom",
+          "dst": "parlor",
+          "dir": "west"
+        },
+        {
+          "src": "washroom",
+          "dst": "cookhouse",
+          "dir": "west"
+        },
+        {
+          "src": "bedroom",
+          "dst": "laundry place",
+          "dir": "west"
+        },
+        {
+          "src": "bedroom",
+          "dst": "cookhouse",
+          "dir": "north"
+        },
+        {
+          "src": "laundry place",
+          "dst": "bedroom",
+          "dir": "east"
+        },
+        {
+          "src": "laundry place",
+          "dst": "cookhouse",
+          "dir": "south"
+        },
+        {
+          "src": "laundry place",
+          "dst": "dish-pit",
+          "dir": "north"
+        },
+        {
+          "src": "cookhouse",
+          "dst": "bedroom",
+          "dir": "south"
+        },
+        {
+          "src": "cookhouse",
+          "dst": "laundry place",
+          "dir": "north"
+        }
+      ],
+      "noise_records": [
+        {
+          "type": "N5_collapse_fallback",
+          "src": "cubicle",
+          "dst": "laundry place",
+          "direction": null,
+          "note": "no prefix match available"
+        },
+        {
+          "type": "N5_collapse_fallback",
+          "src": "recreation zone",
+          "dst": "dish-pit",
+          "direction": null,
+          "note": "no prefix match available"
+        },
+        {
+          "type": "N1_direction",
+          "src": "parlor",
+          "dst": "laundry place",
+          "direction": "east",
+          "note": ""
+        },
+        {
+          "type": "N1_direction",
+          "src": "washroom",
+          "dst": "cookhouse",
+          "direction": "west",
+          "note": ""
+        },
+        {
+          "type": "N2_topology",
+          "src": "dish-pit",
+          "dst": "parlor",
+          "direction": "west",
+          "note": ""
+        }
+      ],
+      "noise_summary": {
+        "N5_collapse_fallback": 2,
+        "N1_direction": 2,
+        "N2_topology": 1
+      },
+      "conflicts": [
+        {
+          "type": "direction",
+          "severity": "high",
+          "description": "node 'dish-pit' has multiple outgoing edges labelled 'west'",
+          "edges": [
+            [
+              "dish-pit",
+              "lounge"
+            ],
+            [
+              "dish-pit",
+              "parlor"
+            ]
+          ]
+        },
+        {
+          "type": "direction",
+          "severity": "high",
+          "description": "node 'parlor' has multiple outgoing edges labelled 'east'",
+          "edges": [
+            [
+              "parlor",
+              "washroom"
+            ],
+            [
+              "parlor",
+              "laundry place"
+            ]
+          ]
+        },
+        {
+          "type": "direction",
+          "severity": "high",
+          "description": "node 'washroom' has multiple outgoing edges labelled 'west'",
+          "edges": [
+            [
+              "washroom",
+              "parlor"
+            ],
+            [
+              "washroom",
+              "cookhouse"
+            ]
+          ]
+        },
+        {
+          "type": "topology",
+          "severity": "high",
+          "description": "reverse direction mismatch: dish-pit--[west]-->parlor but parlor--[south]-->dish-pit (expected east)",
+          "edges": [
+            [
+              "dish-pit",
+              "parlor"
+            ],
+            [
+              "parlor",
+              "dish-pit"
+            ]
+          ]
+        },
+        {
+          "type": "topology",
+          "severity": "high",
+          "description": "position (0, 1, 0) occupied by multiple rooms ['bedroom', 'cookhouse']",
+          "edges": []
+        },
+        {
+          "type": "topology",
+          "severity": "high",
+          "description": "position (0, 2, 0) occupied by multiple rooms ['bedroom', 'cookhouse', 'laundry place']",
+          "edges": []
+        },
+        {
+          "type": "topology",
+          "severity": "high",
+          "description": "position (1, 3, 0) occupied by multiple rooms ['bedroom', 'cookhouse']",
+          "edges": []
+        },
+        {
+          "type": "topology",
+          "severity": "high",
+          "description": "position (1, 4, 0) occupied by multiple rooms ['bedroom', 'cookhouse']",
+          "edges": []
+        },
+        {
+          "type": "topology",
+          "severity": "high",
+          "description": "position (0, 3, 0) occupied by multiple rooms ['cookhouse', 'dish-pit', 'laundry place', 'washroom']",
+          "edges": []
+        },
+        {
+          "type": "topology",
+          "severity": "high",
+          "description": "position (0, 4, 0) occupied by multiple rooms ['dish-pit', 'laundry place', 'washroom']",
+          "edges": []
+        },
+        {
+          "type": "topology",
+          "severity": "high",
+          "description": "position (-1, 1, 0) occupied by multiple rooms ['dish-pit', 'laundry place']",
+          "edges": []
+        },
+        {
+          "type": "topology",
+          "severity": "high",
+          "description": "position (-1, 2, 0) occupied by multiple rooms ['dish-pit', 'laundry place', 'washroom']",
+          "edges": []
+        },
+        {
+          "type": "topology",
+          "severity": "high",
+          "description": "position (-1, 3, 0) occupied by multiple rooms ['cookhouse', 'dish-pit', 'laundry place', 'lounge', 'parlor', 'washroom']",
+          "edges": []
+        },
+        {
+          "type": "topology",
+          "severity": "high",
+          "description": "position (-1, 4, 0) occupied by multiple rooms ['cookhouse', 'lounge', 'parlor']",
+          "edges": []
+        },
+        {
+          "type": "topology",
+          "severity": "high",
+          "description": "position (-2, 2, 0) occupied by multiple rooms ['cookhouse', 'dish-pit', 'lounge', 'parlor']",
+          "edges": []
+        },
+        {
+          "type": "topology",
+          "severity": "high",
+          "description": "position (-2, 3, 0) occupied by multiple rooms ['cookhouse', 'lounge', 'parlor']",
+          "edges": []
+        },
+        {
+          "type": "naming",
+          "severity": "high",
+          "description": "node 'bedroom' reachable at conflicting positions [(0, 0, 0), (0, 1, 0), (0, 2, 0), (1, 2, 0), (1, 3, 0), (1, 4, 0)]",
+          "edges": []
+        },
+        {
+          "type": "naming",
+          "severity": "high",
+          "description": "node 'laundry place' reachable at conflicting positions [(-1, 0, 0), (-1, 1, 0), (-1, 2, 0), (-1, 3, 0), (0, 2, 0), (0, 3, 0), (0, 4, 0), (1, 6, 0)]",
+          "edges": []
+        },
+        {
+          "type": "naming",
+          "severity": "high",
+          "description": "node 'cookhouse' reachable at conflicting positions [(-2, 2, 0), (-2, 3, 0), (-1, -1, 0), (-1, 3, 0), (-1, 4, 0), (0, 1, 0), (0, 2, 0), (0, 3, 0), (1, 3, 0), (1, 4, 0), (1, 5, 0)]",
+          "edges": []
+        },
+        {
+          "type": "naming",
+          "severity": "high",
+          "description": "node 'dish-pit' reachable at conflicting positions [(-2, 1, 0), (-2, 2, 0), (-1, 1, 0), (-1, 2, 0), (-1, 3, 0), (0, 3, 0), (0, 4, 0), (0, 5, 0)]",
+          "edges": []
+        },
+        {
+          "type": "naming",
+          "severity": "high",
+          "description": "node 'lounge' reachable at conflicting positions [(-2, 2, 0), (-2, 3, 0), (-1, 3, 0), (-1, 4, 0)]",
+          "edges": []
+        },
+        {
+          "type": "naming",
+          "severity": "high",
+          "description": "node 'parlor' reachable at conflicting positions [(-2, 2, 0), (-2, 3, 0), (-1, 3, 0), (-1, 4, 0)]",
+          "edges": []
+        },
+        {
+          "type": "naming",
+          "severity": "high",
+          "description": "node 'washroom' reachable at conflicting positions [(-1, 2, 0), (-1, 3, 0), (0, 3, 0), (0, 4, 0)]",
+          "edges": []
+        }
+      ]
+    },
+    "repaired": {
+      "edges": [
+        {
+          "src": "dish-pit",
+          "dst": "lounge",
+          "dir": "west"
+        },
+        {
+          "src": "dish-pit",
+          "dst": "laundry place",
+          "dir": "south"
+        },
+        {
+          "src": "lounge",
+          "dst": "dish-pit",
+          "dir": "east"
+        },
+        {
+          "src": "parlor",
+          "dst": "dish-pit",
+          "dir": "south"
+        },
+        {
+          "src": "parlor",
+          "dst": "laundry place",
+          "dir": "east"
+        },
+        {
+          "src": "washroom",
+          "dst": "cookhouse",
+          "dir": "west"
+        },
+        {
+          "src": "bedroom",
+          "dst": "laundry place",
+          "dir": "west"
+        },
+        {
+          "src": "bedroom",
+          "dst": "cookhouse",
+          "dir": "north"
+        },
+        {
+          "src": "laundry place",
+          "dst": "bedroom",
+          "dir": "east"
+        },
+        {
+          "src": "laundry place",
+          "dst": "cookhouse",
+          "dir": "south"
+        },
+        {
+          "src": "laundry place",
+          "dst": "dish-pit",
+          "dir": "north"
+        },
+        {
+          "src": "cookhouse",
+          "dst": "bedroom",
+          "dir": "south"
+        },
+        {
+          "src": "cookhouse",
+          "dst": "laundry place",
+          "dir": "north"
+        }
+      ],
+      "actions": [
+        {
+          "kind": "remove_edge",
+          "target": [
+            "dish-pit",
+            "parlor"
+          ],
+          "new_dir": null,
+          "reason": "remove fallback"
+        },
+        {
+          "kind": "remove_edge",
+          "target": [
+            "parlor",
+            "washroom"
+          ],
+          "new_dir": null,
+          "reason": "remove fallback"
+        },
+        {
+          "kind": "remove_edge",
+          "target": [
+            "washroom",
+            "parlor"
+          ],
+          "new_dir": null,
+          "reason": "remove fallback"
+        },
+        {
+          "kind": "skip",
+          "target": null,
+          "new_dir": null,
+          "reason": "no candidates"
+        }
+      ],
+      "n_conflicts_before": 23,
+      "n_conflicts_after": 5
+    }
+  }
+}

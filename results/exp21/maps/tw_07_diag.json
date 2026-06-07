@@ -1,0 +1,63 @@
+{
+  "buckets": {
+    "CORRECT": 16,
+    "WRONG_DIRECTION": 0,
+    "WRONG_DST": 0,
+    "SPURIOUS_PAIR": 0,
+    "HALLUCINATED_DST": 0,
+    "HALLUCINATED_SRC": 0
+  },
+  "samples": {
+    "CORRECT": [
+      {
+        "src_node": "recreation zone",
+        "dst_node": "playroom",
+        "action": "west",
+        "step_num": 1,
+        "gt_src": "study",
+        "gt_dst": "bedroom"
+      },
+      {
+        "src_node": "playroom",
+        "dst_node": "recreation zone",
+        "action": "east",
+        "step_num": 2,
+        "gt_src": "bedroom",
+        "gt_dst": "study"
+      },
+      {
+        "src_node": "recreation zone",
+        "dst_node": "cubicle",
+        "action": "south",
+        "step_num": 3,
+        "gt_src": "study",
+        "gt_dst": "dish-pit"
+      },
+      {
+        "src_node": "cubicle",
+        "dst_node": "recreation zone",
+        "action": "north",
+        "step_num": 4,
+        "gt_src": "dish-pit",
+        "gt_dst": "study"
+      },
+      {
+        "src_node": "recreation zone",
+        "dst_node": "playroom",
+        "action": "west",
+        "step_num": 6,
+        "gt_src": "playroom",
+        "gt_dst": "laundry place"
+      }
+    ],
+    "WRONG_DIRECTION": [],
+    "WRONG_DST": [],
+    "SPURIOUS_PAIR": [],
+    "HALLUCINATED_DST": [],
+    "HALLUCINATED_SRC": []
+  },
+  "n_gt_edges": 24,
+  "n_pred_edges": 16,
+  "gt_edge_recall": 0.5416666666666666,
+  "gt_pair_recall": 0.5416666666666666
+}

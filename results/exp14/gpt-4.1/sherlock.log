@@ -1,0 +1,25 @@
+# sherlock  model=gpt-4.1  n_steps=24  (exp14 bootstrap-fixed)
+step   0 BOOTSTRAP seed current_loc='vestibule' (src missing, dst valid)
+step   1 MOVE 'vestibule' --[north]--> "holmes's study"
+step   2 MOVE "holmes's study" --[west]--> "holmes's bedroom"
+step   3 MOVE "holmes's bedroom" --[east]--> "holmes's study"
+step   4 MOVE "holmes's study" --[south]--> 'vestibule'
+step   5 MOVE 'vestibule' --[down]--> 'entry hall'
+step   6 MOVE 'entry hall' --[north]--> 'parlour'
+step   7 MOVE 'parlour' --[south]--> 'entry hall'
+step   8 MOVE 'entry hall' --[east]--> '221-b baker street'
+step   9 MOVE '221-b baker street' --[north]--> 'york place'
+step  10 MOVE 'york place' --[east]--> 'marylebone road'
+step  11 MOVE 'marylebone road' --[north]--> "madame tussaud's"
+step  12 MOVE "madame tussaud's" --[west]--> 'chamber of horrors'
+step  13 MOVE 'chamber of horrors' --[east]--> "madame tussaud's"
+step  14 MOVE "madame tussaud's" --[south]--> 'marylebone road'
+step  15 bad movement output: {'is_movement': True, 'src_node': 'marylebone road', 'dst_node': None, 'action': 'east', 'seen_in_forward': 15, 'current_location': None, 'reasoning': 'The observation does not specify a room name, but the action is a canonical compass direction, so movement occurred. Destination room cannot be inferred from the observation or canonical list.'}
+step  16 MOVE 'marylebone road' --[east]--> 'scotland yard'
+step  17 MOVE 'scotland yard' --[down]--> 'the black museum'
+step  18 MOVE 'the black museum' --[up]--> 'scotland yard'
+step  19 MOVE 'scotland yard' --[west]--> 'whitehall'
+step  20 MOVE 'whitehall' --[south]--> 'parliament square'
+step  21 MOVE 'parliament square' --[west]--> 'birdcage walk'
+step  22 MOVE 'birdcage walk' --[east]--> 'parliament square'
+step  23 MOVE 'parliament square' --[southeast]--> 'houses of parliament'

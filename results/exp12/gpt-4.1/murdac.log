@@ -1,0 +1,40 @@
+# murdac  model=gpt-4.1  n_steps=39
+step   0 bad movement output: {'is_movement': True, 'src_node': None, 'dst_node': 'brick wall (destroyed at some point)', 'action': 'north', 'seen_in_forward': 0, 'current_location': 'brick wall (destroyed at some point)', 'reasoning': "Observation describes arriving at a brick wall with a gap, matching the canonical location 'brick wall (destroyed at some point)'."}
+step   1 bad movement output: {'is_movement': True, 'src_node': None, 'dst_node': 'alley (north/south)', 'action': 'north', 'seen_in_forward': 1, 'current_location': 'alley (north/south)', 'reasoning': "The observation describes a long north-south alley between high walls, matching the canonical location 'alley (north/south)'."}
+step   2 bad movement output: {'is_movement': True, 'src_node': None, 'dst_node': 'alley (north end)', 'action': 'north', 'seen_in_forward': 2, 'current_location': 'alley (north end)', 'reasoning': "Observation states 'You are at the north end of the alley', which matches the canonical location 'alley (north end)'."}
+step   3 bad movement output: {'is_movement': True, 'src_node': None, 'dst_node': 'alley (north/south)', 'action': 'south', 'seen_in_forward': 3, 'current_location': 'alley (north/south)', 'reasoning': "Observation states 'You are in the alley', matching the canonical 'alley (north/south)'."}
+step   4 bad movement output: {'is_movement': True, 'src_node': None, 'dst_node': 'brick wall (destroyed at some point)', 'action': 'south', 'seen_in_forward': 4, 'current_location': 'brick wall (destroyed at some point)', 'reasoning': "Observation describes passing through the ruins of a brick wall into the garden; the canonical location matching this is 'brick wall (destroyed at some point)'."}
+step   5 bad movement output: {'is_movement': True, 'src_node': None, 'dst_node': 'vegetable garden', 'action': 'south', 'seen_in_forward': 5, 'current_location': 'vegetable garden', 'reasoning': "Observation explicitly states arrival in 'vegetable garden', which matches the canonical location."}
+step   6 bad movement output: {'is_movement': True, 'src_node': None, 'dst_node': 'shrubbery', 'action': 'south', 'seen_in_forward': 6, 'current_location': 'shrubbery', 'reasoning': "Observation explicitly states arrival in 'shrubbery', which matches the canonical location list."}
+step   7 MOVE 'shrubbery' --[east]--> 'remnants of a bonfire'
+step   8 MOVE 'remnants of a bonfire' --[north]--> 'flower garden'
+step   9 MOVE 'flower garden' --[west]--> 'old untended grave'
+step  10 MOVE 'old untended grave' --[north]--> 'sandpit'
+step  11 MOVE 'sandpit' --[south]--> 'old untended grave'
+step  12 MOVE 'old untended grave' --[east]--> 'outside the house'
+step  13 MOVE 'outside the house' --[east]--> 'edge of a large calm lake'
+step  14 MOVE 'edge of a large calm lake' --[west]--> 'outside the house'
+step  15 MOVE 'outside the house' --[north]--> 'inside the hut'
+step  16 MOVE 'inside the hut' --[down]--> 'large quadrangular cellar'
+step  17 MOVE 'large quadrangular cellar' --[west]--> "mad scientist's laboratory"
+step  18 MOVE "mad scientist's laboratory" --[west]--> 'high tunnel (to the west of lab)'
+step  19 MOVE 'high tunnel (to the west of lab)' --[west]--> 'wooden plank in east/west tunnel'
+step  20 MOVE 'wooden plank in east/west tunnel' --[west]--> 'high tunnel (east/west, alcove off to north)'
+step  21 MOVE 'high tunnel (east/west, alcove off to north)' --[north]--> 'alcove'
+step  22 MOVE 'alcove' --[south]--> 'high tunnel (east/west, alcove off to north)'
+step  23 MOVE 'high tunnel (east/west, alcove off to north)' --[west]--> 'high tunnel (east/west, path to west)'
+step  24 MOVE 'high tunnel (east/west, path to west)' --[west]--> 'secret cavern'
+step  25 MOVE 'secret cavern' --[south]--> 'low damp chamber'
+step  26 MOVE 'low damp chamber' --[north]--> 'secret cavern'
+step  27 MOVE 'secret cavern' --[east]--> 'high tunnel (east/west, path to west)'
+step  28 MOVE 'high tunnel (east/west, path to west)' --[east]--> 'wooden plank in east/west tunnel'
+step  29 MOVE 'wooden plank in east/west tunnel' --[east]--> 'wooden plank in east/west tunnel'
+step  30 MOVE 'wooden plank in east/west tunnel' --[east]--> "mad scientist's laboratory"
+step  31 MOVE "mad scientist's laboratory" --[east]--> "mad scientist's laboratory"
+step  32 MOVE "mad scientist's laboratory" --[east]--> 'large quadrangular cellar'
+step  33 MOVE 'large quadrangular cellar' --[east]--> 'complicated junction of passages'
+step  34 MOVE 'complicated junction of passages' --[east]--> 'entrance hall to haunted house'
+step  35 MOVE 'entrance hall to haunted house' --[west]--> 'small bedroom in haunted house'
+step  36 bad movement output: {'is_movement': True, 'src_node': 'small bedroom in haunted house', 'dst_node': None, 'action': 'east', 'seen_in_forward': 36, 'current_location': 'small bedroom in haunted house', 'reasoning': "The observation states arrival in 'the billiard room of the haunted house', but this is not present in the canonical list. Therefore, the canonical destination cannot be matched."}
+step  37 MOVE 'small bedroom in haunted house' --[north]--> 'kitchen of haunted house'
+step  38 MOVE 'kitchen of haunted house' --[south]--> 'living room of haunted house'

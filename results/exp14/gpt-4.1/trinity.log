@@ -1,0 +1,12 @@
+# trinity  model=gpt-4.1  n_steps=11  (exp14 bootstrap-fixed)
+step   0 BOOTSTRAP seed current_loc='flower walk' (src missing, dst valid)
+step   1 MOVE 'flower walk' --[northwest]--> 'the wabe'
+step   2 MOVE 'the wabe' --[northwest]--> 'broad walk'
+step   3 MOVE 'broad walk' --[east]--> 'round pond'
+step   4 MOVE 'round pond' --[northwest]--> 'black lion gate'
+step   5 MOVE 'black lion gate' --[east]--> 'wading'
+step   6 MOVE 'wading' --[north]--> 'summit'
+step   7 MOVE 'summit' --[northeast]--> 'south bog'
+step   8 MOVE 'south bog' --[east]--> 'bottom of stairs'
+step   9 MOVE 'bottom of stairs' --[up]--> 'halfway up'
+step  10 MOVE 'halfway up' --[up]--> 'vertex'

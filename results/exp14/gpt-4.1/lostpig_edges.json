@@ -1,0 +1,32 @@
+[
+  {
+    "src_node": "hole",
+    "dst_node": "fountain room",
+    "action": "east",
+    "seen_in_forward": 1
+  },
+  {
+    "src_node": "fountain room",
+    "dst_node": "statue room",
+    "action": "north",
+    "seen_in_forward": 2
+  },
+  {
+    "src_node": "statue room",
+    "dst_node": "fountain room",
+    "action": "south",
+    "seen_in_forward": 3
+  },
+  {
+    "src_node": "fountain room",
+    "dst_node": "table room",
+    "action": "southwest",
+    "seen_in_forward": 4
+  },
+  {
+    "src_node": "table room",
+    "dst_node": "shelf room",
+    "action": "east",
+    "seen_in_forward": 6
+  }
+]

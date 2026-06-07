@@ -1,0 +1,72 @@
+===========
+==>STEP NUM: 0
+==>ACT: north
+==>OBSERVATION: (north part)
+You're in the north part of your lab. A Computestor stands here to help test your inventions.
+Tip is off to the south.
+===========
+==>STEP NUM: 1
+==>ACT: east
+==>OBSERVATION: (east part)
+You're in the east part of your lab. A doorway leads out past the Electrical Panel through a short corridor to the office of your lab assistant, Sharon Kemp. A Microwave Security Scanner stands against the wall. An intercom sits on your desk.
+Tip is off to the west.
+===========
+==>STEP NUM: 2
+==>ACT: east
+==>OBSERVATION: (corridor)
+You're in a short corridor, with your lab to the west, a storage closet to the south, and an office to the east. An Electrical Panel fills most of the north wall.
+
+Tip follows you into the corridor.
+(Read hidden clue #1 on Infocard #3 in your SEASTALKER package. Don't type the words. Put "Electrical Panel" in the blank space.)
+===========
+==>STEP NUM: 3
+==>ACT: east
+==>OBSERVATION: (Kemp's office)
+You're in the office of your lab assistant, Sharon Kemp. There is a desk and chair here, and a door leading out to the parking lot. To the west, a hallway leads back to your lab.
+
+Tip follows you into Kemp's office.
+As you enter, Sharon is hastily going through the contents of an open file drawer. She turns with a somewhat startled expression as you appear in the doorway. Her face is flushed and her manner seems slightly emotional.
+===========
+==>STEP NUM: 4
+==>ACT: west
+==>OBSERVATION: (corridor)
+
+Tip follows you into the corridor.
+===========
+==>STEP NUM: 5
+==>ACT: west
+==>OBSERVATION: (east part)
+
+Tip follows you into the east part.
+"Look, John!" Tip cries as you re-enter the lab. "The videophone's working again! There's a normal test pattern on the screen!"
+===========
+==>STEP NUM: 6
+==>ACT: south
+==>OBSERVATION: (south part)
+You're in the south part of your lab, next to shelves full of chemical and electronic supplies. A door leads south to the test tank.
+Tip is off to the north.
+===========
+==>STEP NUM: 7
+==>ACT: south
+==>OBSERVATION: (north walkway)
+You're at a temporary runway or gangplank that leads from the walkway to the entry hatch of the SCIMITAR. The hatch is open.
+
+The test tank (which is now empty of sea water) is located in a large work room, just south of your private laboratory, with concrete-block walls on three sides and a high metal roof. Most of its floor is dug out and lined with steel, to form the huge tank used for developing and testing underwater gear and the pilot models of your submarine craft.
+There's a walkway around the tank on three sides -- north, west and south. On the east side, a steel gate forms the wall of the room.
+
+Tip follows you into the north walkway.
+===========
+==>STEP NUM: 8
+==>ACT: south
+==>OBSERVATION: (SCIMITAR)
+You're in the pilot's seat of the SCIMITAR, its operating control panel before you.
+A wraparound viewport, both fore and aft, provides a view ahead and astern. You can also observe your surroundings with sonarscope and a hydrophone listening device. There's a sonarphone for communication. You'll discover other features when you need them.
+Tip is sitting in the back seat, reading a magazine.
+(Your score just went up by 1 point!)
+===========
+==>STEP NUM: 9
+==>ACT: exit
+==>OBSERVATION: There's a sharp pain in your right arm! A flood of wet warmth and a spreading red stain mean you've seriously gashed your arm on a sharp metal corner!
+(SCIMITAR)
+Tip is sitting in the back seat, reading a magazine.
+===========

@@ -1,0 +1,138 @@
+{
+  "game": "temple",
+  "num_llm_edges": 18,
+  "num_gt_edges": 32,
+  "num_conflicts": 2,
+  "type_distribution": {
+    "direction": 1,
+    "topology": 1
+  },
+  "root_cause_distribution": {
+    "name_hallucination": 1,
+    "name_hallucination_caused_overlap": 1
+  },
+  "conflicts": [
+    {
+      "type": "direction",
+      "description": "node 'a dark hallway' has multiple outgoing edges labelled 'south'",
+      "involved_edges": [
+        [
+          "a dark hallway",
+          "road (east/west)"
+        ],
+        [
+          "a dark hallway",
+          "road"
+        ]
+      ],
+      "involved_nodes": [
+        "a dark hallway",
+        "road (east/west)",
+        "road"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "a dark hallway",
+            "road (east/west)"
+          ],
+          "llm_dir": "south",
+          "in_gt": true,
+          "gt_dir": "south",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": null
+        },
+        {
+          "edge": [
+            "a dark hallway",
+            "road"
+          ],
+          "llm_dir": "south",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "dst_hallucinated",
+          "source_in_gt": true,
+          "target_in_gt": false,
+          "step": 50
+        }
+      ],
+      "case_counts": {
+        "correct": 1,
+        "dst_hallucinated": 1
+      },
+      "root_cause": "name_hallucination"
+    },
+    {
+      "type": "topology",
+      "description": "position (0, -1, 0) occupied by multiple rooms ['road', 'road (east/west)']",
+      "involved_edges": [],
+      "involved_nodes": [
+        "road",
+        "road (east/west)"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "a dark hallway",
+            "road"
+          ],
+          "llm_dir": "south",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "dst_hallucinated",
+          "source_in_gt": true,
+          "target_in_gt": false,
+          "step": 50
+        },
+        {
+          "edge": [
+            "road",
+            "crossroads"
+          ],
+          "llm_dir": "west",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "src_hallucinated",
+          "source_in_gt": false,
+          "target_in_gt": true,
+          "step": 51
+        },
+        {
+          "edge": [
+            "public square",
+            "road (east/west)"
+          ],
+          "llm_dir": "west",
+          "in_gt": true,
+          "gt_dir": "west",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 33
+        },
+        {
+          "edge": [
+            "road (east/west)",
+            "a dark hallway"
+          ],
+          "llm_dir": "north",
+          "in_gt": true,
+          "gt_dir": "north",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 35
+        }
+      ],
+      "case_counts": {
+        "dst_hallucinated": 1,
+        "src_hallucinated": 1,
+        "correct": 2
+      },
+      "root_cause": "name_hallucination_caused_overlap"
+    }
+  ],
+  "walkthrough_steps_available": 71
+}

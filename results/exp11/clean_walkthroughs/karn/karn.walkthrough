@@ -1,0 +1,959 @@
+===========
+==>STEP NUM: 0
+==>ACT: east
+==>OBSERVATION: Corridor
+This corridor, like almost all the corridors of the TARDIS, seems to stretch on forever.  The console room lies to the west, and the corridor continues eastward into the distance.  There's a closed door on the south wall.
+===========
+==>STEP NUM: 1
+==>ACT: south
+==>OBSERVATION: Workshop
+This is the room where you do much of your tinkering with electronic gadgetry.  Many a Rutan invasion or Dalek plot has been foiled by an ingenius invention you've thrown together at last minute in this room.  In fitting with your work habits, it's usually a rather untidy place.  However, in your latest fit of spring cleaning you've almost emptied the place out. There's a small cupboard on the eastern wall, and on the north wall an open door connects the workshop to the corridor outside.
+
+Your workbench dominates the center of the room.
+
+On the workbench is your toolkit (which is closed).
+===========
+==>STEP NUM: 2
+==>ACT: north
+==>OBSERVATION: Corridor
+===========
+==>STEP NUM: 3
+==>ACT: west
+==>OBSERVATION: Console Room
+
+You can see the TARDIS key, your yo-yo and a tweed jacket here.
+===========
+==>STEP NUM: 4
+==>ACT: west
+==>OBSERVATION: Rocky Clearing
+You step onto the inhospitable landscape of the planet Karn. Nightmare-like memories flood back to you upon seeing this place again.  The cold air only antagonize the shivers running down your spine.  You're standing on a relatively flat piece of ground on the side of a mountain. Rocky outgrowths stand like walls all around you.  A trail through the rock is visible to the east, while another trail to the northwest leads farther up the mountain.
+
+The TARDIS sits reassuringly nearby.
+
+Against the western rockface stands a massive boulder.
+===========
+==>STEP NUM: 5
+==>ACT: northwest
+==>OBSERVATION: Mountain Trail
+You are on a grim trail that winds itself upwards along the mountain to the northeast.  A clearing lies to the southeast, and a stoney trail leads upwards to the west.
+===========
+==>STEP NUM: 6
+==>ACT: northeast
+==>OBSERVATION: Mountain Trail
+The trail continues up the mountain to the east, and downwards to the southwest.
+===========
+==>STEP NUM: 7
+==>ACT: east
+==>OBSERVATION: Mountain Trail
+The trail continues up the mountain to the northeast, and downwards to the west.
+
+To the south some steps are carved into the mountain.  They lead upwards out of sight.
+===========
+==>STEP NUM: 8
+==>ACT: up
+==>OBSERVATION: Ruins
+You stand before a huge pile of stone rubble and charred debris.  You recognize this spot to be the site of Solon's castle.  The castle appears to have been completely destroyed.  You sense a slight psychic twinge in the air. This looks like the work of the Sisterhood.
+
+Some stone steps lead back down the mountain.
+===========
+==>STEP NUM: 9
+==>ACT: down
+==>OBSERVATION: Mountain Trail
+
+To the south some steps are carved into the mountain.  They lead upwards out of sight.
+===========
+==>STEP NUM: 10
+==>ACT: northeast
+==>OBSERVATION: Mountain Trail
+Things level off here somewhat.  There is a narrow cleft leading into the rock to the northwest.  Two trails lead down the mountain to the southwest and the east.
+===========
+==>STEP NUM: 11
+==>ACT: northwest
+==>OBSERVATION: Narrow Cleft
+You're in a dark cleft between towering walls of rock.  To the southeast lies a trail, and there is light coming from the west.
+===========
+==>STEP NUM: 12
+==>ACT: west
+==>OBSERVATION: Bottom of Cliff
+You're at the bottom of a cliff that towers menacingly above you, merging with the murky sky above.  A narrow cleft runs into the cliff base to the east.
+
+You can see the battered remains of a hideously disfigured creature at the base of the cliff.
+===========
+==>STEP NUM: 13
+==>ACT: east
+==>OBSERVATION: Narrow Cleft
+===========
+==>STEP NUM: 14
+==>ACT: southeast
+==>OBSERVATION: Mountain Trail
+===========
+==>STEP NUM: 15
+==>ACT: southwest
+==>OBSERVATION: Mountain Trail
+
+To the south some steps are carved into the mountain.  They lead upwards out of sight.
+===========
+==>STEP NUM: 16
+==>ACT: west
+==>OBSERVATION: Mountain Trail
+===========
+==>STEP NUM: 17
+==>ACT: southwest
+==>OBSERVATION: Mountain Trail
+===========
+==>STEP NUM: 18
+==>ACT: southeast
+==>OBSERVATION: Rocky Clearing
+
+The TARDIS sits reassuringly nearby.
+
+Against the western rockface stands a massive boulder.
+===========
+==>STEP NUM: 19
+==>ACT: east
+==>OBSERVATION: Rocky Trail
+You're on a trail which winds its way through the side of the mountain. A clearing is visible to the west and the trail continues to the southeast.
+===========
+==>STEP NUM: 20
+==>ACT: southeast
+==>OBSERVATION: Rocky Trail
+The trail makes a descent here.  To the east, the trail widens markedly.  The trail narrows to the northwest.
+===========
+==>STEP NUM: 21
+==>ACT: east
+==>OBSERVATION: Lakeside
+You are standing before a large murky lake which stretches to the east as far as the eye can see.  The lake water has a greenish tinge, and seems to glow somewhat in the dim light.  A steep slope leads northwards, and a trail winds its way through the rock to the west.
+===========
+==>STEP NUM: 22
+==>ACT: north
+==>OBSERVATION: Ledge
+The trail ends here at a rather small ledge which overlooks a precipitous drop of about 30 feet.  Be careful not to lose your footing here.  Looking downwards, you are surprised to see what looks like a flying saucer parked below you.  You suspect that whoever took the Brain of Morbius is in that saucer.  You can only safely move back down the sloping trail to the south.
+
+A signpost has been erected here.
+===========
+==>STEP NUM: 23
+==>ACT: down
+==>OBSERVATION: You slide down the smooth, polished sides of the saucer...
+
+
+Plain
+You're in a large area fairly clear of rocks and debris.  Unclimbable walls of rock surround this area, but a path does lead between the rock to the northwest. About thirty feet above you, a ledge is visible on the side of the mountain.  A long, multi-coloured scarf dangles over the side of the ledge above, just beyond your reach.
+
+There is a flying saucer parked here.
+
+You can also see a battery here.
+===========
+==>STEP NUM: 24
+==>ACT: northwest
+==>OBSERVATION: Mountain Trail
+The trail continues up the mountain to the west.  The trail widens to the southeast.
+
+The solitary form of a blackened tree stands beside the trail.
+===========
+==>STEP NUM: 25
+==>ACT: west
+==>OBSERVATION: Mountain Trail
+The trail continues up the mountain to the west, and downwards to the east.
+===========
+==>STEP NUM: 26
+==>ACT: west
+==>OBSERVATION: Mountain Trail
+===========
+==>STEP NUM: 27
+==>ACT: southwest
+==>OBSERVATION: Mountain Trail
+
+To the south some steps are carved into the mountain.  They lead upwards out of sight.
+===========
+==>STEP NUM: 28
+==>ACT: west
+==>OBSERVATION: Mountain Trail
+===========
+==>STEP NUM: 29
+==>ACT: southwest
+==>OBSERVATION: Mountain Trail
+===========
+==>STEP NUM: 30
+==>ACT: southeast
+==>OBSERVATION: Rocky Clearing
+
+The TARDIS sits reassuringly nearby.
+
+Against the western rockface stands a massive boulder.
+===========
+==>STEP NUM: 31
+==>ACT: east
+==>OBSERVATION: Rocky Trail
+===========
+==>STEP NUM: 32
+==>ACT: southeast
+==>OBSERVATION: Rocky Trail
+===========
+==>STEP NUM: 33
+==>ACT: east
+==>OBSERVATION: Lakeside
+===========
+==>STEP NUM: 34
+==>ACT: north
+==>OBSERVATION: Ledge
+
+A signpost has been erected here.  A long, multi-coloured scarf is tied to the post at one end and dangles down over the ledge.
+===========
+==>STEP NUM: 35
+==>ACT: south
+==>OBSERVATION: Lakeside
+===========
+==>STEP NUM: 36
+==>ACT: west
+==>OBSERVATION: Rocky Trail
+===========
+==>STEP NUM: 37
+==>ACT: northwest
+==>OBSERVATION: Rocky Trail
+===========
+==>STEP NUM: 38
+==>ACT: west
+==>OBSERVATION: Rocky Clearing
+
+The TARDIS sits reassuringly nearby.
+
+Against the western rockface stands a massive boulder.
+===========
+==>STEP NUM: 39
+==>ACT: east
+==>OBSERVATION: Corridor
+===========
+==>STEP NUM: 40
+==>ACT: east
+==>OBSERVATION: Corridor
+You're in the middle of an east-west corridor that seems to stretch on forever.  Towards the west, the console room is visible and the corridor stretches out as far as you can see to the east.  An open doorway to the north leads to a storage room.
+
+An unlit match lies discarded on the floor.
+===========
+==>STEP NUM: 41
+==>ACT: north
+==>OBSERVATION: Storage Room
+This is the main storage room.  Well, technically it's supposed to be the main storage room.  You seem to store things in the most unusual places, regarding an actual storage room as cliche.  In fact, there's only one object stored in this room at present.  Otherwise it's been empty for centuries.
+
+K9 is here.
+===========
+==>STEP NUM: 42
+==>ACT: south
+==>OBSERVATION: Corridor
+===========
+==>STEP NUM: 43
+==>ACT: west
+==>OBSERVATION: Corridor
+===========
+==>STEP NUM: 44
+==>ACT: west
+==>OBSERVATION: Console Room
+
+You can see K9 here.
+
+You can also see an incredibly long scarf, the TARDIS key, your yo-yo and a tweed jacket here.
+===========
+==>STEP NUM: 45
+==>ACT: west
+==>OBSERVATION: Rocky Clearing
+
+The TARDIS sits reassuringly nearby.
+
+Against the western rockface stands a massive boulder.
+
+K9 trundles in.
+===========
+==>STEP NUM: 46
+==>ACT: west
+==>OBSERVATION: Dark Passage
+You're in a dim passage which leads into the rockface itself. Light streams in from an opening to the east, while the passage continues to the south.
+
+A firework lies on the dusty ground.
+
+K9 is unable to follow you here, as the ground is too uneven.
+===========
+==>STEP NUM: 47
+==>ACT: south
+==>OBSERVATION: Dark Passage
+You're in a dark passage carved into the rock.  A tapestry is drawn across the passage to the west.  Dim light comes from underneath it.  More light is visible to the north.
+===========
+==>STEP NUM: 48
+==>ACT: west
+==>OBSERVATION: Temple of the Sisterhood of Karn
+You stand in the middle of the Temple of the Sisterhood of Karn.  The light here is very dim, with only a few candles providing light.  A throne sits on a raised dias here.  On one wall you see a hinged metal shield, beneath which a large golden chalice sits upon a small ledge.  There is a tapestry on the east wall, and a closed wooden door on the south wall.  To the north, a passageway leads out of the Temple.
+
+You'd better watch your step here.  If the Sisterhood discover any trace of your uninvited visit to their Sacred Temple, they won't be pleased.
+
+From behind the closed wooden door, you hear the muffled sound of soft chanting.  It seems the Sisters are performing one of their Sacred Ceremonies.
+===========
+==>STEP NUM: 49
+==>ACT: east
+==>OBSERVATION: Dark Passage
+===========
+==>STEP NUM: 50
+==>ACT: north
+==>OBSERVATION: Dark Passage
+===========
+==>STEP NUM: 51
+==>ACT: east
+==>OBSERVATION: Rocky Clearing
+
+A dark passage leads into the western rockface.
+
+K9 is here, whirring quietly to himself.
+
+The TARDIS sits reassuringly nearby.
+===========
+==>STEP NUM: 52
+==>ACT: northwest
+==>OBSERVATION: Mountain Trail
+===========
+==>STEP NUM: 53
+==>ACT: west
+==>OBSERVATION: Stoney Trail
+You're on a trail leading through the stoney landscape.  The trail leads downhill to the east and climbs steeply to the south.
+===========
+==>STEP NUM: 54
+==>ACT: south
+==>OBSERVATION: Stoney Trail
+The trail levels off here, banking downwards steeply to the north and south climbing sharply upwards to the east.
+===========
+==>STEP NUM: 55
+==>ACT: east
+==>OBSERVATION: Above Clearing
+You seem to have reached a small plateau, which overlooks a rocky clearing far below.  Below you can see the familiar blue shape of the TARDIS standing in the clearing.  The stoney trail terminates here, leading back downwards to the west.
+
+At the edge of the plateau sits an enormous boulder.
+===========
+==>STEP NUM: 56
+==>ACT: west
+==>OBSERVATION: Stoney Trail
+===========
+==>STEP NUM: 57
+==>ACT: north
+==>OBSERVATION: Stoney Trail
+===========
+==>STEP NUM: 58
+==>ACT: east
+==>OBSERVATION: Mountain Trail
+===========
+==>STEP NUM: 59
+==>ACT: southeast
+==>OBSERVATION: Rocky Clearing
+
+Against the western rockface stands an enormous boulder.
+
+K9 is here, whirring quietly to himself.
+
+The TARDIS sits reassuringly nearby.
+===========
+==>STEP NUM: 60
+==>ACT: west
+==>OBSERVATION: Storage Room
+This room is very cramped, more like a large closet than a small room.  The floor, walls and ceiling are constructed of a seamless metal.  You notice that the gravity here is only local.  You appear to have arrived on some sort of spaceship.  An open archway to the north leads out into a corridor.
+
+There is a closed metal hatch in the floor here.
+
+
+The TARDIS sits reassuringly nearby.
+
+You can also see a metal table (on which are a battery-powered torch and an electronic landmine) here.
+
+K9 zips in behind you.
+===========
+==>STEP NUM: 61
+==>ACT: north
+==>OBSERVATION: Corridor
+You're in a metal corridor that stretches east and west.
+
+An open archway on the south wall leads to a small room.
+
+K9 trundles in.
+===========
+==>STEP NUM: 62
+==>ACT: west
+==>OBSERVATION: Corridor
+The corridor terminates here, stretching back to the east.
+
+On the west wall is a formidable metal door.  Above the doorway you can see a glass bubble which emits a blue glow.
+
+K9 trails in after you.
+
+K9 seems fascinated by the door in front of you.
+===========
+==>STEP NUM: 63
+==>ACT: east
+==>OBSERVATION: Corridor
+
+An open archway on the south wall leads to a small room.
+
+K9 trundles in.
+===========
+==>STEP NUM: 64
+==>ACT: south
+==>OBSERVATION: Storage Room
+
+There is an open hatch in the floor here.
+
+
+The TARDIS sits reassuringly nearby.
+
+You can also see a metal table here.
+
+K9 trails in after you.
+===========
+==>STEP NUM: 65
+==>ACT: down
+==>OBSERVATION: K9 is unable to climb down ladders, so he stays behind.
+
+Maintenance Shaft
+You're standing in a cramped metal maintenance shaft which leads below the floor of the spaceship.  There's not much space here, and you have to bend down a little to remain upright.  The shaft stretches out to the northwest.
+
+A ladder leads up to an open hatch above.
+===========
+==>STEP NUM: 66
+==>ACT: northwest
+==>OBSERVATION: Maintenance Shaft
+The shaft reaches a junction here, stretching out to the west, northeast and and southeast.  There's not much space here, and you have to bend down a little to avoid hitting your head on the floor plate above you.
+
+There is a small metal box attached to the wall here.
+===========
+==>STEP NUM: 67
+==>ACT: northeast
+==>OBSERVATION: Maintenance Shaft
+You're standing in a cramped maintenance shaft which leads below the floor of the spaceship.  There's not much space here, and you have to bend down a little to remain upright.  The shaft stretches out to the north and southwest.
+===========
+==>STEP NUM: 68
+==>ACT: north
+==>OBSERVATION: Maintenance Shaft
+You're standing in a cramped maintenance shaft which leads below the floor of the spaceship.  There's not much space here, and you have to bend down a little to remain upright.  The shaft stretches out to the south.
+
+A ladder leads up to a closed metal hatch above.
+===========
+==>STEP NUM: 69
+==>ACT: up
+==>OBSERVATION: Small Room
+This room is little more than an over-sized cupboard.  A corridor is visible to the east.
+
+There is an open hatch in the floor here.
+
+Against one wall, you can see a disposal unit.
+
+You can also see a long rope here.
+===========
+==>STEP NUM: 70
+==>ACT: east
+==>OBSERVATION: Corridor
+The corridor continues in a north-south direction.  There's a small room to the west.
+===========
+==>STEP NUM: 71
+==>ACT: south
+==>OBSERVATION: Corridor
+The corridor continues in a north-south direction here.  On the eastern wall you can see a large round metal door, with a metal wheel on its center.  The door is closed.  On one side of this door there is a large lever and a button.  A glass bubble above the door glows green.
+===========
+==>STEP NUM: 72
+==>ACT: east
+==>OBSERVATION: Docking Bay
+The docking bay is a cavernous chamber constructed of seamless metal. The east wall is dominated by the bulky bay doors, which are tightly sealed shut at the moment.  There is an open door on the west wall through which a corridor is visible.
+
+There is a flying saucer parked here.
+===========
+==>STEP NUM: 73
+==>ACT: west
+==>OBSERVATION: Corridor
+===========
+==>STEP NUM: 74
+==>ACT: east
+==>OBSERVATION: Docking Bay
+
+There is a closed metal hatch in the floor here.
+===========
+==>STEP NUM: 75
+==>ACT: down
+==>OBSERVATION: Maintenance Shaft
+You're standing in a cramped maintenance shaft which leads below the floor of the spaceship.  There's not much space here, and you have to bend down a little to remain upright.  The shaft stretches out to the north.
+
+A ladder leads up to an open hatch above.
+===========
+==>STEP NUM: 76
+==>ACT: north
+==>OBSERVATION: Maintenance Shaft
+You're standing in a cramped maintenance shaft which leads below the floor of the spaceship.  There's not much space here, and you have to bend down a little to remain upright.  The shaft stretches out to the south and west.
+===========
+==>STEP NUM: 77
+==>ACT: west
+==>OBSERVATION: Maintenance Shaft
+You're standing in a cramped maintenance shaft which leads below the floor of the spaceship.  There's not much space here, and you have to bend down a little to avoid hitting your head on the floor plate above you.  The shaft stretches out to the northwest and east.
+===========
+==>STEP NUM: 78
+==>ACT: northwest
+==>OBSERVATION: Maintenance Shaft
+You're standing in a cramped maintenance shaft which leads below the floor of the spaceship.  There's not much space here, and you have to bend down a little to remain upright.  The shaft stretches out to the southeast.
+
+A ladder leads up to a closed metal hatch above.
+===========
+==>STEP NUM: 79
+==>ACT: up
+==>OBSERVATION: Survellance Room
+This small room appears to have no lighting.  There's a closed door on the east wall.  The only light originates from two screens side by side on the north wall.  Below each screen is a single button.
+
+There is an open hatch in the floor here.
+===========
+==>STEP NUM: 80
+==>ACT: east
+==>OBSERVATION: Corridor
+The corridor makes a sharp bend here, leading south and east.  An open door leads to the west.
+
+In the ceiling you can see some sort of sensor.
+===========
+==>STEP NUM: 81
+==>ACT: south
+==>OBSERVATION: Corridor
+===========
+==>STEP NUM: 82
+==>ACT: south
+==>OBSERVATION: Corridor
+===========
+==>STEP NUM: 83
+==>ACT: south
+==>OBSERVATION: Corridor
+The corridor reaches a junction here, stretching north, east and west.
+
+In the ceiling you can see some sort of sensor.
+===========
+==>STEP NUM: 84
+==>ACT: east
+==>OBSERVATION: Corridor
+The corridor turns sharply here, leading west and south.
+
+You stop dead in your tracks.  At the sound end of the corridor you see two rather familiar figures.  They're Cybermen!
+
+Cybermen!  The Cybermen have stolen the brain of Morbius!  The implications of this overwhelm your thoughts.  Not only do the Cybermen have the necessary technology to provide a body for Morbius, Morbius has all the knowledge of the Timelords.  This could make the Cybermen the most destructive force in the universe!
+
+But you can't stop to think right now.  Forunately, the Cybermen haven't noticed you yet but that could change at any moment.
+===========
+==>STEP NUM: 85
+==>ACT: west
+==>OBSERVATION: Corridor
+
+In the ceiling you can see some sort of sensor.
+===========
+==>STEP NUM: 86
+==>ACT: west
+==>OBSERVATION: Corridor
+
+An open archway on the south wall leads to a small room.
+===========
+==>STEP NUM: 87
+==>ACT: west
+==>OBSERVATION: Corridor
+
+On the west wall is a formidable metal door.  Above the doorway you can see a glass bubble which emits a blue glow.
+Oh dear.  The floor appears to be missing in this room.  You tumble downwards...
+
+
+Maintenance Shaft
+
+There is a small metal box attached to the wall here.
+
+The floor plate above has been swung downwards, flooding this part of the shaft with light.
+
+You can also see an electronic landmine and a withered branch here.
+===========
+==>STEP NUM: 88
+==>ACT: southeast
+==>OBSERVATION: Maintenance Shaft
+
+A ladder leads up to an open hatch above.
+===========
+==>STEP NUM: 89
+==>ACT: up
+==>OBSERVATION: Storage Room
+
+There is an open hatch in the floor here.
+
+
+K9 is here.
+
+The TARDIS sits reassuringly nearby.
+
+You can also see a metal table here.
+===========
+==>STEP NUM: 90
+==>ACT: north
+==>OBSERVATION: Corridor
+
+An open archway on the south wall leads to a small room.
+
+K9 zips in behind you.
+===========
+==>STEP NUM: 91
+==>ACT: west
+==>OBSERVATION: Corridor
+
+On the west wall is a formidable metal door.  Above the doorway you can see a glass bubble which emits a yellow glow.
+
+K9 zips in behind you.
+===========
+==>STEP NUM: 92
+==>ACT: west
+==>OBSERVATION: Reactor Room
+This room is dominated by a large anti-matter reactor which supplies power to most of the ship.  Beside the reactor, you can see a control bank.
+
+There is a closed metal hatch in the floor here.
+
+An empty doorway in the east wall leads into a corridor.
+
+Against one wall, you can see a disposal unit.
+
+K9 trails in after you.
+===========
+==>STEP NUM: 93
+==>ACT: down
+==>OBSERVATION: K9 is unable to climb down ladders, so he stays behind.
+
+Maintenance Shaft
+You're standing in a cramped maintenance shaft which leads below the floor of the spaceship.  There's not much space here, and you have to bend down a little to remain upright.  The shaft stretches out to the east.
+
+A ladder leads up to an open hatch above.
+===========
+==>STEP NUM: 94
+==>ACT: east
+==>OBSERVATION: Maintenance Shaft
+
+There is a small metal box attached to the wall here.
+
+You can also see an electronic landmine and a withered branch here.
+===========
+==>STEP NUM: 95
+==>ACT: west
+==>OBSERVATION: Maintenance Shaft
+
+A ladder leads up to an open hatch above.
+===========
+==>STEP NUM: 96
+==>ACT: up
+==>OBSERVATION: Reactor Room
+
+There is an open hatch in the floor here.
+
+An empty doorway in the east wall leads into a corridor.
+
+K9 is here.
+
+Against one wall, you can see a disposal unit.
+===========
+==>STEP NUM: 97
+==>ACT: east
+==>OBSERVATION: Corridor
+
+An empty doorway in the west wall leads to a reactor room.  Above the doorway you can see a glass bubble which emits a yellow glow.
+
+K9 trails in after you.
+Oh dear.  The floor appears to be missing in this room.  You tumble downwards...
+
+
+Maintenance Shaft
+
+The floor is littered with large silver body parts.
+
+What used to be a small metal box is attached to the wall here.
+
+You can also see a white access card, a large withered branch and a small withered branch here.
+
+
+You hear a peculiar high-pitched squeal as K9 comes crashing down from above.
+===========
+==>STEP NUM: 98
+==>ACT: northeast
+==>OBSERVATION: Maintenance Shaft
+
+K9 trundles in.
+===========
+==>STEP NUM: 99
+==>ACT: north
+==>OBSERVATION: Maintenance Shaft
+
+A ladder leads up to an open hatch above.
+
+K9 zips in behind you.
+===========
+==>STEP NUM: 100
+==>ACT: up
+==>OBSERVATION: K9 is unable to climb up ladders, so he stays behind.
+
+Small Room
+
+There is an open hatch in the floor here.
+
+Against one wall, you can see a disposal unit.
+
+You can also see a long rope here.
+===========
+==>STEP NUM: 101
+==>ACT: down
+==>OBSERVATION: Maintenance Shaft
+
+A ladder leads up to an open hatch above.
+
+K9 is here, whirring quietly to himself.
+===========
+==>STEP NUM: 102
+==>ACT: up
+==>OBSERVATION: The long rope stretches out behind you.
+
+Small Room
+
+There is an open hatch in the floor here.
+
+Against one wall, you can see a disposal unit.
+
+You can also see a battery-powered torch here.
+===========
+==>STEP NUM: 103
+==>ACT: east
+==>OBSERVATION: Corridor
+
+K9 zips in behind you.
+===========
+==>STEP NUM: 104
+==>ACT: south
+==>OBSERVATION: Corridor
+
+K9 trundles in.
+===========
+==>STEP NUM: 105
+==>ACT: south
+==>OBSERVATION: Corridor
+
+In the ceiling you can see some sort of sensor.
+
+K9 trundles in.
+===========
+==>STEP NUM: 106
+==>ACT: west
+==>OBSERVATION: Corridor
+
+An open archway on the south wall leads to a small room.
+
+K9 zips in behind you.
+===========
+==>STEP NUM: 107
+==>ACT: south
+==>OBSERVATION: Storage Room
+
+There is an open hatch in the floor here.
+
+
+The TARDIS sits reassuringly nearby.
+
+You can also see a metal table here.
+
+K9 trundles in.
+===========
+==>STEP NUM: 108
+==>ACT: exit
+==>OBSERVATION: You get off the metal table.
+
+Prison Cell
+
+K9 is here, whirring quietly to himself.
+
+A door to the north has slid open, revealing the corridor outside.
+
+You can also see a metal table here.
+===========
+==>STEP NUM: 109
+==>ACT: north
+==>OBSERVATION: Corridor
+
+A door to the south has slid open, revealing a tiny chamber within.
+
+Against one wall, you can see a disposal unit.
+
+
+K9 trails in after you.
+===========
+==>STEP NUM: 110
+==>ACT: west
+==>OBSERVATION: Corridor
+
+There's a large sliding door on the north wall.
+
+K9 trails in after you.
+===========
+==>STEP NUM: 111
+==>ACT: west
+==>OBSERVATION: Corridor
+
+In the ceiling you can see some sort of sensor.
+
+K9 trails in after you.
+
+You hear a faint bang to the east.
+===========
+==>STEP NUM: 112
+==>ACT: east
+==>OBSERVATION: Corridor
+
+A large door to the north has slid open.
+
+K9 zips in behind you.
+
+A buzzing sound comes from the east.
+
+The Cyberman disappears into the prison cell to the east.
+===========
+==>STEP NUM: 113
+==>ACT: east
+==>OBSERVATION: Corridor
+
+A door to the south has slid open, revealing a tiny chamber within.
+
+Against one wall, you can see a disposal unit.
+
+
+K9 zips in behind you.
+
+A loud buzzing comes from the cell to the south.
+
+Inside the cell to the south, the Cyberman has removed the plastic device from the ceiling.  The device ceases its buzzing.
+===========
+==>STEP NUM: 114
+==>ACT: west
+==>OBSERVATION: Corridor
+
+A large door to the north has slid open.
+
+K9 trails in after you.
+===========
+==>STEP NUM: 115
+==>ACT: north
+==>OBSERVATION: Flight Deck
+This appears to be the flight deck of the spacecraft.  The north wall consists mostly of a large viewscreen before which sits a complex control panel.  A rather uncomfortable-looking metal chair sits before the control panel.
+
+A large door to the south has slid open, revealing the corridor outside.
+
+On the metal chair is a black access card.
+
+K9 trails in after you.
+===========
+==>STEP NUM: 116
+==>ACT: south
+==>OBSERVATION: Corridor
+
+A large door to the north has slid open.
+
+K9 trails in after you.
+===========
+==>STEP NUM: 117
+==>ACT: west
+==>OBSERVATION: Corridor
+
+In the ceiling you can see some sort of sensor.
+
+K9 trundles in.
+===========
+==>STEP NUM: 118
+==>ACT: south
+==>OBSERVATION: Corridor
+
+K9 trails in after you.
+===========
+==>STEP NUM: 119
+==>ACT: south
+==>OBSERVATION: Corridor
+
+K9 trundles in.
+===========
+==>STEP NUM: 120
+==>ACT: south
+==>OBSERVATION: Corridor
+
+In the ceiling you can see some sort of sensor.
+
+K9 trundles in.
+===========
+==>STEP NUM: 121
+==>ACT: east
+==>OBSERVATION: Corridor
+
+K9 trails in after you.
+===========
+==>STEP NUM: 122
+==>ACT: south
+==>OBSERVATION: Corridor
+The corridor terminates here, leading back to the north.
+
+On the west wall is a large sliding door.
+
+K9 trails in after you.
+===========
+==>STEP NUM: 123
+==>ACT: west
+==>OBSERVATION: Strange Chamber
+There's a distinctly eerie atmosphere to this small chamber.  On the far side of the room you can see what looks like a raised dias, or platform.
+
+A large cylindrical tank sits closed on the raised dias.  Through its transparent sides you can see a what appears to be a large brain, immersed in a sickly green fluid.  Beside the tank you can see some sort of apparatus.
+
+A door to the east has slid open, revealing the corridor outside.
+
+There's a small metal box attached to the wall here.  Above it a glass bubble glows blue.
+
+K9 trails in after you.
+
+A voice comes from somewhere within the tank.  "Is somebody there?"
+===========
+==>STEP NUM: 124
+==>ACT: east
+==>OBSERVATION: Corridor
+
+A door to the west has slid open, revealing a chamber within.
+
+K9 trundles in.
+===========
+==>STEP NUM: 125
+==>ACT: north
+==>OBSERVATION: Corridor
+
+K9 trundles in.
+===========
+==>STEP NUM: 126
+==>ACT: west
+==>OBSERVATION: Corridor
+
+In the ceiling you can see some sort of sensor.
+
+K9 zips in behind you.
+===========
+==>STEP NUM: 127
+==>ACT: west
+==>OBSERVATION: Corridor
+
+An open archway on the south wall leads to a small room.
+
+K9 trails in after you.
+===========
+==>STEP NUM: 128
+==>ACT: south
+==>OBSERVATION: Storage Room
+
+There is an open hatch in the floor here.
+
+
+The TARDIS sits reassuringly nearby.
+
+K9 trails in after you.
+===========
+==>STEP NUM: 129
+==>ACT: west
+==>OBSERVATION: Gallifrey
+You recognize this place to be a reception area somewhere within the Citidel on Gallifrey.  The room is so dimly lit that it's impossible to see the walls of the chamber.
+
+The TARDIS sits reassuringly nearby.
+
+A Timelord stands here, looking expectantly at you.
+
+K9 trails in after you.
+The Timelord steps forward.  "Welcome, Doctor.  We trust your mission was a success.  But there is no time to lose.  Please release Morbius' brain into my possession."
+===========

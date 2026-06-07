@@ -1,0 +1,947 @@
+===========
+==>STEP NUM: 0
+==>ACT: north
+==>OBSERVATION: Upstairs Hallway
+You are at the top of the stairs in the Red Boar. Your room is to the south, and other rooms line the hall. The lighting in the hallway is dim and drab like the wallpaper and carpeting.
+===========
+==>STEP NUM: 1
+==>ACT: north
+==>OBSERVATION: Red Boar Inn
+This is the lobby of the Red Boar Inn, a place with the charm of a two-dollar flophouse. The Wharf Road is outside, to the north, and a stairway leads up to the rooms to the south.
+A desk clerk sits behind the counter.
+The Weasel walks past you.
+===========
+==>STEP NUM: 2
+==>ACT: north
+==>OBSERVATION: Wharf Road
+This is the end of the Wharf Road, an east/west, two-lane road that's the island's main street. Off to the east, small businesses line the south side of the street. A winding road starts to the southwest, heading toward the lighthouse. The Red Boar Inn is to the south.
+===========
+==>STEP NUM: 3
+==>ACT: east
+==>OBSERVATION: Wharf Road
+You are on the Wharf Road, with the McGinty Salvage office to the south. The ocean lies to the north, its brine smell strong and refreshing.
+Your throat starts to feel dry.
+===========
+==>STEP NUM: 4
+==>ACT: east
+==>OBSERVATION: Wharf Road
+You are on the Wharf Road where the wharf starts up to the north. The former site of Outfitters International's warehouse fronts the south side of the road.
+===========
+==>STEP NUM: 5
+==>ACT: east
+==>OBSERVATION: Wharf Road
+The east/west Wharf Road continues, with Outfitters International, a store which supplies ocean-going vessels, to the south.
+To the west the Weasel comes into view from the south.
+===========
+==>STEP NUM: 6
+==>ACT: east
+==>OBSERVATION: Wharf Road
+You're on the east end of Wharf Road. The Ocean Road starts here and parallels the island's east edge, heading to the southeast. The Shanty is to the south.
+The Weasel is to the west, heading toward the east.
+===========
+==>STEP NUM: 7
+==>ACT: south
+==>OBSERVATION: The Shanty
+This is The Shanty, a tavern which serves the locals. A wooden bar travels the length of the place, and behind it is a mirror so dirty, it offers no reflection. Round tables occupy the floor. The smell of cooking food permeates the place.
+A bartender behind the bar polishes glasses with a worn towel.
+A parrot with an eyepatch hobbles up and down the bar.
+A man wearing an eyepatch, black turtleneck, and jeans is standing about. He is known as Pete the Rat.
+Johnny Red is here. Red hair sprouts from his head and from beneath his flannel shirt.
+"Sit down and we'll talk," Johnny Red says.
+===========
+==>STEP NUM: 8
+==>ACT: north
+==>OBSERVATION: Wharf Road
+===========
+==>STEP NUM: 9
+==>ACT: west
+==>OBSERVATION: Wharf Road
+===========
+==>STEP NUM: 10
+==>ACT: west
+==>OBSERVATION: Wharf Road
+===========
+==>STEP NUM: 11
+==>ACT: south
+==>OBSERVATION: Vacant Lot
+You are standing on the former site of the Outfitters International warehouse, which burned down a few months back. To the north is the Wharf Road and an alley is to the south.
+===========
+==>STEP NUM: 12
+==>ACT: south
+==>OBSERVATION: Back Alley
+You are in an east/west alley. To the north is a vacant lot, and an overgrown field lies to the south.
+===========
+==>STEP NUM: 13
+==>ACT: west
+==>OBSERVATION: Back Alley
+You are in a narrow alley. To the north is the back door of McGinty Salvage, as well as a small window. An overgrown field lies to the south.
+===========
+==>STEP NUM: 14
+==>ACT: west
+==>OBSERVATION: Back Alley
+You're at the west end of an east/west alley. The back entrance to the Red Boar Inn is to the north, and an overgrown field is to the south.
+===========
+==>STEP NUM: 15
+==>ACT: east
+==>OBSERVATION: Back Alley
+===========
+==>STEP NUM: 16
+==>ACT: east
+==>OBSERVATION: Back Alley
+===========
+==>STEP NUM: 17
+==>ACT: east
+==>OBSERVATION: Back Alley
+You are in an alley behind Outfitters International. An abandoned field lies to the south.
+===========
+==>STEP NUM: 18
+==>ACT: east
+==>OBSERVATION: Back Alley
+You're at the east end of an east/west alley. The back door of The Shanty is to the north, and an overgrown field is to the south. Narrow paths to the northeast and southeast lead to the Ocean Road.
+===========
+==>STEP NUM: 19
+==>ACT: northeast
+==>OBSERVATION: Ocean Road
+You are at the north end of the Ocean Road, a narrow north/south road on the east edge of the island. The Wharf Road starts to the northwest, and a back alley starts off to the southwest.
+===========
+==>STEP NUM: 20
+==>ACT: south
+==>OBSERVATION: Ocean Road
+You are halfway along the Ocean Road, with the start of an alley off to the northwest. An empty field lies to your west, and the dangerous ocean shore lies off to your east.
+===========
+==>STEP NUM: 21
+==>ACT: south
+==>OBSERVATION: Ocean Road
+This is the south end of the Ocean Road. To the southeast is a small path leading up to about 100 feet above sea level. The Ocean Road heads north, and the Shore Road starts to the southwest.
+===========
+==>STEP NUM: 22
+==>ACT: southwest
+==>OBSERVATION: Shore Road
+This is the east end of the Shore Road, an east/west road with a ferry landing at its west end. The Mariners' Trust, the island's only bank, is off to the north. The Ocean Road starts up to the northeast.
+===========
+==>STEP NUM: 23
+==>ACT: west
+==>OBSERVATION: Shore Road
+You are at the west end of the east/west Shore Road, with the ferry landing to the west. To the north is an impenetrable field, while the south is bordered by the ocean. You can see the mainland in the distance.
+===========
+==>STEP NUM: 24
+==>ACT: west
+==>OBSERVATION: Ferry Landing
+The ferry to the mainland arrives here every two hours during the day. People are milling about. The Shore Road starts off to the east.
+===========
+==>STEP NUM: 25
+==>ACT: east
+==>OBSERVATION: Shore Road
+===========
+==>STEP NUM: 26
+==>ACT: east
+==>OBSERVATION: Shore Road
+===========
+==>STEP NUM: 27
+==>ACT: north
+==>OBSERVATION: Mariners' Trust
+You are in Mariners' Trust, the Island's bank. In it are a table and a teller's window. You can see the safe beyond, and it looks pretty empty.
+A teller sits behind the window.
+===========
+==>STEP NUM: 28
+==>ACT: south
+==>OBSERVATION: Shore Road
+===========
+==>STEP NUM: 29
+==>ACT: northeast
+==>OBSERVATION: Ocean Road
+===========
+==>STEP NUM: 30
+==>ACT: north
+==>OBSERVATION: Ocean Road
+===========
+==>STEP NUM: 31
+==>ACT: northwest
+==>OBSERVATION: Back Alley
+===========
+==>STEP NUM: 32
+==>ACT: west
+==>OBSERVATION: Back Alley
+===========
+==>STEP NUM: 33
+==>ACT: west
+==>OBSERVATION: Back Alley
+===========
+==>STEP NUM: 34
+==>ACT: west
+==>OBSERVATION: Back Alley
+===========
+==>STEP NUM: 35
+==>ACT: west
+==>OBSERVATION: Back Alley
+===========
+==>STEP NUM: 36
+==>ACT: east
+==>OBSERVATION: Back Alley
+===========
+==>STEP NUM: 37
+==>ACT: east
+==>OBSERVATION: Back Alley
+===========
+==>STEP NUM: 38
+==>ACT: north
+==>OBSERVATION: Vacant Lot
+===========
+==>STEP NUM: 39
+==>ACT: north
+==>OBSERVATION: Wharf Road
+===========
+==>STEP NUM: 40
+==>ACT: west
+==>OBSERVATION: Wharf Road
+===========
+==>STEP NUM: 41
+==>ACT: west
+==>OBSERVATION: Wharf Road
+===========
+==>STEP NUM: 42
+==>ACT: southwest
+==>OBSERVATION: Winding Road
+A winding road starts up here to the southwest. You can see the top of the lighthouse off to the northwest. The Wharf Road lies to the northeast.
+===========
+==>STEP NUM: 43
+==>ACT: southwest
+==>OBSERVATION: Winding Road
+The road branches to the northeast and northwest with the lighthouse off to the northwest. To the south is an impenetrable swamp.
+Pete the Rat is off to the northwest.
+The Weasel is off to the northwest.
+Johnny Red is off to the northwest.
+===========
+==>STEP NUM: 44
+==>ACT: northwest
+==>OBSERVATION: Winding Road
+The road ends at the lighthouse to the north, and heads back to the southeast. You can see and hear the ocean pound the shoreline.
+Pete the Rat fiddles with his eyepatch, shifting his weight from foot to foot.
+A short, wiry guy known only as "the Weasel" is over in a corner, picking his teeth with a knife.
+Johnny Red is here.
+Johnny nods, then pulls out a dinner plate he says he came across while on a shark hunt.
+===========
+==>STEP NUM: 45
+==>ACT: southeast
+==>OBSERVATION: Winding Road
+Pete the Rat is off to the northwest.
+The Weasel is off to the northwest.
+Johnny Red is off to the northwest.
+===========
+==>STEP NUM: 46
+==>ACT: northeast
+==>OBSERVATION: Winding Road
+===========
+==>STEP NUM: 47
+==>ACT: northeast
+==>OBSERVATION: Wharf Road
+===========
+==>STEP NUM: 48
+==>ACT: east
+==>OBSERVATION: Wharf Road
+===========
+==>STEP NUM: 49
+==>ACT: south
+==>OBSERVATION: McGinty Salvage
+You are in the McGinty Salvage office, a concern whose main business is salvaging wrecks. The place is a mess, and the floor is littered with chewed-on cigar stubs. To the north lies the Wharf Road. You can't help feeling uncomfortable here.
+McGinty, a small, nervous man, is sitting behind a desk. His lips clamp around a cigar too large for his face.
+===========
+==>STEP NUM: 50
+==>ACT: north
+==>OBSERVATION: Wharf Road
+To the west Johnny Red comes into view from the southwest.
+===========
+==>STEP NUM: 51
+==>ACT: east
+==>OBSERVATION: Wharf Road
+Johnny Red is to the west, heading toward the east.
+===========
+==>STEP NUM: 52
+==>ACT: east
+==>OBSERVATION: Wharf Road
+Johnny Red is to the west, heading toward the east.
+===========
+==>STEP NUM: 53
+==>ACT: south
+==>OBSERVATION: Outfitters Int'l
+This is Outfitters International, a store that specializes in marine supplies. There is a long, high counter separating the supplies and the front area. To the north is the Wharf Road.
+A salesman stands behind the counter.
+There is a price list here.
+===========
+==>STEP NUM: 54
+==>ACT: north
+==>OBSERVATION: Wharf Road
+Johnny Red heads off to the south.
+===========
+==>STEP NUM: 55
+==>ACT: east
+==>OBSERVATION: Wharf Road
+===========
+==>STEP NUM: 56
+==>ACT: south
+==>OBSERVATION: The Shanty
+A bartender behind the bar polishes glasses with a worn towel.
+A parrot with an eyepatch hobbles up and down the bar.
+===========
+==>STEP NUM: 57
+==>ACT: north
+==>OBSERVATION: Wharf Road
+===========
+==>STEP NUM: 58
+==>ACT: southeast
+==>OBSERVATION: Ocean Road
+===========
+==>STEP NUM: 59
+==>ACT: south
+==>OBSERVATION: Ocean Road
+===========
+==>STEP NUM: 60
+==>ACT: south
+==>OBSERVATION: Ocean Road
+===========
+==>STEP NUM: 61
+==>ACT: southeast
+==>OBSERVATION: Point Lookout
+You are at Point Lookout, a small, high cliff that affords a spectacular view of the sea. The cliff bottom is dangerous, so the only safe path is the northwest footpath back to the Ocean Road.
+===========
+==>STEP NUM: 62
+==>ACT: northwest
+==>OBSERVATION: Ocean Road
+Johnny Red heads off to the north.
+===========
+==>STEP NUM: 63
+==>ACT: north
+==>OBSERVATION: Ocean Road
+Johnny Red heads off to the north.
+===========
+==>STEP NUM: 64
+==>ACT: north
+==>OBSERVATION: Ocean Road
+Johnny Red heads off to the northwest.
+===========
+==>STEP NUM: 65
+==>ACT: northwest
+==>OBSERVATION: Wharf Road
+Johnny Red heads off to the west.
+===========
+==>STEP NUM: 66
+==>ACT: west
+==>OBSERVATION: Wharf Road
+Johnny Red heads off to the south.
+===========
+==>STEP NUM: 67
+==>ACT: south
+==>OBSERVATION: Outfitters Int'l
+A salesman stands behind the counter.
+Johnny Red is here, glaring at McGinty.
+McGinty is here, talking with the salesman.
+There is a price list here.
+===========
+==>STEP NUM: 68
+==>ACT: north
+==>OBSERVATION: Wharf Road
+===========
+==>STEP NUM: 69
+==>ACT: east
+==>OBSERVATION: Wharf Road
+===========
+==>STEP NUM: 70
+==>ACT: south
+==>OBSERVATION: The Shanty
+A bartender behind the bar polishes glasses with a worn towel.
+Johnny Red is here, chatting with the bartender.
+The Weasel is picking his teeth with a nasty knife, looking around furtively.
+Pete the Rat fiddles with his eyepatch, shifting his weight from foot to foot.
+A parrot with an eyepatch hobbles up and down the bar.
+===========
+==>STEP NUM: 71
+==>ACT: north
+==>OBSERVATION: Wharf Road
+McGinty walks past you.
+===========
+==>STEP NUM: 72
+==>ACT: southeast
+==>OBSERVATION: Ocean Road
+McGinty walks along with you.
+===========
+==>STEP NUM: 73
+==>ACT: south
+==>OBSERVATION: Ocean Road
+McGinty walks along with you.
+===========
+==>STEP NUM: 74
+==>ACT: south
+==>OBSERVATION: Ocean Road
+McGinty walks along with you.
+===========
+==>STEP NUM: 75
+==>ACT: southwest
+==>OBSERVATION: Shore Road
+McGinty walks along with you.
+===========
+==>STEP NUM: 76
+==>ACT: west
+==>OBSERVATION: Shore Road
+McGinty walks along with you.
+===========
+==>STEP NUM: 77
+==>ACT: west
+==>OBSERVATION: Ferry Landing
+McGinty wanders in, looking preoccupied.
+===========
+==>STEP NUM: 78
+==>ACT: east
+==>OBSERVATION: Shore Road
+===========
+==>STEP NUM: 79
+==>ACT: east
+==>OBSERVATION: Shore Road
+===========
+==>STEP NUM: 80
+==>ACT: northeast
+==>OBSERVATION: Ocean Road
+McGinty, off to the north, disappears from sight to the northwest.
+===========
+==>STEP NUM: 81
+==>ACT: north
+==>OBSERVATION: Ocean Road
+===========
+==>STEP NUM: 82
+==>ACT: north
+==>OBSERVATION: Ocean Road
+===========
+==>STEP NUM: 83
+==>ACT: northwest
+==>OBSERVATION: Wharf Road
+McGinty is to the west, heading away from you.
+===========
+==>STEP NUM: 84
+==>ACT: west
+==>OBSERVATION: Wharf Road
+McGinty, off to the west, leaves your view to the south.
+===========
+==>STEP NUM: 85
+==>ACT: west
+==>OBSERVATION: Wharf Road
+===========
+==>STEP NUM: 86
+==>ACT: south
+==>OBSERVATION: Vacant Lot
+===========
+==>STEP NUM: 87
+==>ACT: south
+==>OBSERVATION: Back Alley
+===========
+==>STEP NUM: 88
+==>ACT: west
+==>OBSERVATION: Back Alley
+===========
+==>STEP NUM: 89
+==>ACT: west
+==>OBSERVATION: Back Alley
+There is a Mariners' Trust passbook here.
+===========
+==>STEP NUM: 90
+==>ACT: east
+==>OBSERVATION: Back Alley
+===========
+==>STEP NUM: 91
+==>ACT: north
+==>OBSERVATION: Wharf Road
+===========
+==>STEP NUM: 92
+==>ACT: west
+==>OBSERVATION: Wharf Road
+===========
+==>STEP NUM: 93
+==>ACT: south
+==>OBSERVATION: Red Boar Inn
+A desk clerk sits behind the counter.
+===========
+==>STEP NUM: 94
+==>ACT: south
+==>OBSERVATION: Upstairs Hallway
+===========
+==>STEP NUM: 95
+==>ACT: south
+==>OBSERVATION: Your Room
+In a corner of the room is a lopsided wooden dresser.
+The dresser contains:
+  A book of shipwrecks
+There is a note here.
+A comfortable bed sits along the wall.
+===========
+==>STEP NUM: 96
+==>ACT: north
+==>OBSERVATION: Upstairs Hallway
+===========
+==>STEP NUM: 97
+==>ACT: north
+==>OBSERVATION: Red Boar Inn
+A desk clerk sits behind the counter.
+Your throat starts to feel dry.
+===========
+==>STEP NUM: 98
+==>ACT: north
+==>OBSERVATION: Wharf Road
+To the east McGinty comes into view from the south.
+===========
+==>STEP NUM: 99
+==>ACT: east
+==>OBSERVATION: Wharf Road
+McGinty is to the east, heading toward the west.
+===========
+==>STEP NUM: 100
+==>ACT: east
+==>OBSERVATION: Wharf Road
+McGinty walks past you.
+===========
+==>STEP NUM: 101
+==>ACT: south
+==>OBSERVATION: Vacant Lot
+McGinty, off to the north, disappears from sight to the west.
+===========
+==>STEP NUM: 102
+==>ACT: south
+==>OBSERVATION: Back Alley
+===========
+==>STEP NUM: 103
+==>ACT: west
+==>OBSERVATION: Back Alley
+===========
+==>STEP NUM: 104
+==>ACT: west
+==>OBSERVATION: Back Alley
+There is a Mariners' Trust passbook here.
+===========
+==>STEP NUM: 105
+==>ACT: east
+==>OBSERVATION: Back Alley
+===========
+==>STEP NUM: 106
+==>ACT: east
+==>OBSERVATION: Back Alley
+===========
+==>STEP NUM: 107
+==>ACT: east
+==>OBSERVATION: Back Alley
+===========
+==>STEP NUM: 108
+==>ACT: east
+==>OBSERVATION: Back Alley
+===========
+==>STEP NUM: 109
+==>ACT: northeast
+==>OBSERVATION: Ocean Road
+===========
+==>STEP NUM: 110
+==>ACT: northwest
+==>OBSERVATION: Wharf Road
+===========
+==>STEP NUM: 111
+==>ACT: south
+==>OBSERVATION: The Shanty
+A bartender behind the bar polishes glasses with a worn towel.
+Johnny Red is here, chatting with the bartender.
+Pete the Rat fiddles with his eyepatch, shifting his weight from foot to foot.
+A parrot with an eyepatch hobbles up and down the bar.
+===========
+==>STEP NUM: 112
+==>ACT: north
+==>OBSERVATION: Wharf Road
+===========
+==>STEP NUM: 113
+==>ACT: west
+==>OBSERVATION: Wharf Road
+===========
+==>STEP NUM: 114
+==>ACT: south
+==>OBSERVATION: Outfitters Int'l
+A salesman stands behind the counter.
+There is a price list here.
+===========
+==>STEP NUM: 115
+==>ACT: north
+==>OBSERVATION: Wharf Road
+Pete the Rat walks past you.
+The Outfitters' delivery boy heads off to the west, pushing his cart.
+===========
+==>STEP NUM: 116
+==>ACT: west
+==>OBSERVATION: Wharf Road
+Pete the Rat walks along with you.
+The Outfitters' delivery boy heads off to the north, pushing his cart.
+===========
+==>STEP NUM: 117
+==>ACT: north
+==>OBSERVATION: Wharf
+You're on Hardscrabble Island's weatherbeaten wharf, north of the Wharf Road. A trawler called the Night Wind is berthed here to the west. The Mary Margaret is moored to the east.
+Pete the Rat walks along with you.
+The Outfitters' delivery boy heads off to the west, pushing his cart.
+===========
+==>STEP NUM: 118
+==>ACT: west
+==>OBSERVATION: Starboard Deck
+You are on the starboard side of the Night Wind, a sturdy vessel designed for trawling. To port is a small wheelhouse, while to starboard is the gangway leading to the dock. The gentle rocking of the boat in port reminds you of time spent on the open sea.
+Pete the Rat walks along with you.
+The Outfitters' delivery boy heads aft, pushing his cart.
+===========
+==>STEP NUM: 119
+==>ACT: south
+==>OBSERVATION: Aft Deck
+The smell of diesel fuel is strong but reassuring here on the aft deck. A ladder leads below deck, while forward you can see the entrance to the command center of the boat, the wheelhouse.
+Pete the Rat walks along with you.
+The Outfitters' delivery boy heads below, pushing his cart.
+===========
+==>STEP NUM: 120
+==>ACT: down
+==>OBSERVATION: Lounge
+You are in the crew's lounge, a cramped cabin with little more than a table and a few chairs. To aft is the captain's cabin, while the galley lies forward. A ladder leads into the engine room.
+Pete the Rat walks along with you.
+The Outfitters' delivery boy heads forward, pushing his cart.
+===========
+==>STEP NUM: 121
+==>ACT: north
+==>OBSERVATION: Galley
+You are in the Night Wind's galley. A stove and a small table are the fixtures here. Water is available. A ladder leads up through the deck to the wheelhouse for feeding the captain in rough weather.
+Pete the Rat arrives, quickly taking in the situation.
+The Outfitters' delivery boy heads forward, pushing his cart.
+===========
+==>STEP NUM: 122
+==>ACT: north
+==>OBSERVATION: Crew's Quarters
+You are below deck in the crew's quarters. Narrow, uncomfortable bunks line the bulkheads, and you note the similarity between this area and a sardine can. Sleeping here is necessary but uninviting. A ladder leads up and out to the fore deck.
+The Outfitters' delivery boy heads forward, pushing his cart.
+===========
+==>STEP NUM: 123
+==>ACT: north
+==>OBSERVATION: Storage Locker
+You are in a fairly empty storage locker. It must have been cleaned out after its last trawling expedition. There are spare parts for the engine and other equipment scattered about.
+There is a flashlight here.
+There is a shark repellent canister here.
+There is a C battery here.
+There is a tube of putty here.
+There is a portable electromagnet here.
+There is a small air compressor here.
+There is a portable drill here.
+The Outfitters' delivery boy heads aft, pushing his cart.
+===========
+==>STEP NUM: 124
+==>ACT: south
+==>OBSERVATION: Crew's Quarters
+===========
+==>STEP NUM: 125
+==>ACT: south
+==>OBSERVATION: Galley
+Pete the Rat is watching over his stew.
+===========
+==>STEP NUM: 126
+==>ACT: south
+==>OBSERVATION: Lounge
+===========
+==>STEP NUM: 127
+==>ACT: south
+==>OBSERVATION: Captain's Cabin
+You are in the captain's cabin. A large and comfortable-looking bunk is one of the many comforts in the cabin. The forward doorway leads to the crew's lounge.
+Johnny Red is here.
+===========
+==>STEP NUM: 128
+==>ACT: north
+==>OBSERVATION: Lounge
+===========
+==>STEP NUM: 129
+==>ACT: up
+==>OBSERVATION: Aft Deck
+===========
+==>STEP NUM: 130
+==>ACT: north
+==>OBSERVATION: Wheelhouse
+You are in the wheelhouse of the Night Wind. The passageway leading out onto the deck lies abaft. Through the glass windows you see the Mary Margaret docked at the wharf, and the island stretching aft. Forward, you see the choppy waters of the bay.
+===========
+==>STEP NUM: 131
+==>ACT: south
+==>OBSERVATION: Aft Deck
+===========
+==>STEP NUM: 132
+==>ACT: west
+==>OBSERVATION: Port Deck
+You are on the port side of the Night Wind. The wheelhouse is to starboard. The teak deck is very well-kept. The ocean lies off to port.
+===========
+==>STEP NUM: 133
+==>ACT: north
+==>OBSERVATION: Fore Deck
+You are at the fore end of the Night Wind. You can see the ocean over the rail that runs around the deck. A ladder leads below deck, and the wheelhouse is aft of you. A chair is bolted to the deck.
+===========
+==>STEP NUM: 134
+==>ACT: down
+==>OBSERVATION: Crew's Quarters
+The Weasel is picking his teeth with a nasty knife, looking around furtively.
+===========
+==>STEP NUM: 135
+==>ACT: north
+==>OBSERVATION: Storage Locker
+There is a flashlight here.
+There is a shark repellent canister here.
+There is a tube of putty here.
+There is a portable electromagnet here.
+There is a small air compressor here.
+===========
+==>STEP NUM: 136
+==>ACT: south
+==>OBSERVATION: Crew's Quarters
+The Weasel is picking his teeth with a nasty knife, looking around furtively.
+===========
+==>STEP NUM: 137
+==>ACT: south
+==>OBSERVATION: Galley
+Pete the Rat is watching over his stew.
+===========
+==>STEP NUM: 138
+==>ACT: south
+==>OBSERVATION: Lounge
+===========
+==>STEP NUM: 139
+==>ACT: down
+==>OBSERVATION: Engine Room
+You are in a tiny, smelly space where it is difficult to breathe. By your feet lie the diesel engines of the Night Wind.
+===========
+==>STEP NUM: 140
+==>ACT: up
+==>OBSERVATION: Lounge
+===========
+==>STEP NUM: 141
+==>ACT: south
+==>OBSERVATION: Captain's Cabin
+Johnny Red is here.
+===========
+==>STEP NUM: 142
+==>ACT: north
+==>OBSERVATION: Lounge
+===========
+==>STEP NUM: 143
+==>ACT: north
+==>OBSERVATION: Galley
+Pete the Rat is watching over his stew.
+===========
+==>STEP NUM: 144
+==>ACT: north
+==>OBSERVATION: Crew's Quarters
+The Weasel is picking his teeth with a nasty knife, looking around furtively.
+===========
+==>STEP NUM: 145
+==>ACT: north
+==>OBSERVATION: Storage Locker
+There is a small air compressor here.
+===========
+==>STEP NUM: 146
+==>ACT: south
+==>OBSERVATION: Crew's Quarters
+The Weasel is picking his teeth with a nasty knife, looking around furtively.
+Johnny Red walks up behind you and says, "We'll be leaving shortly. Get some sleep."
+Johnny Red heads aft.
+The Weasel heads aft.
+===========
+==>STEP NUM: 147
+==>ACT: up
+==>OBSERVATION: Fore Deck
+===========
+==>STEP NUM: 148
+==>ACT: west
+==>OBSERVATION: Port Deck
+===========
+==>STEP NUM: 149
+==>ACT: south
+==>OBSERVATION: Aft Deck
+There is a portable drill here.
+There is a diving mask here.
+There is a pair of flippers here.
+There is a wet suit here.
+Johnny Red heads forward.
+The Weasel heads starboard.
+===========
+==>STEP NUM: 150
+==>ACT: north
+==>OBSERVATION: Wheelhouse
+Johnny Red is here.
+===========
+==>STEP NUM: 151
+==>ACT: south
+==>OBSERVATION: Galley
+===========
+==>STEP NUM: 152
+==>ACT: south
+==>OBSERVATION: Lounge
+===========
+==>STEP NUM: 153
+==>ACT: south
+==>OBSERVATION: Captain's Cabin
+Johnny Red is here.
+===========
+==>STEP NUM: 154
+==>ACT: north
+==>OBSERVATION: Lounge
+Johnny Red heads above.
+===========
+==>STEP NUM: 155
+==>ACT: up
+==>OBSERVATION: Aft Deck
+The Weasel is firmly in Johnny's grasp.
+There is a portable drill here.
+There is a diving mask here.
+There is a pair of flippers here.
+There is a wet suit here.
+Johnny Red heads below.
+Johnny drags the Weasel along with him.
+You begin to feel hungry.
+===========
+==>STEP NUM: 156
+==>ACT: down
+==>OBSERVATION: Lounge
+The Weasel is tied up and squirming.
+Johnny Red heads above.
+===========
+==>STEP NUM: 157
+==>ACT: north
+==>OBSERVATION: Galley
+===========
+==>STEP NUM: 158
+==>ACT: south
+==>OBSERVATION: Lounge
+The Weasel is tied up and squirming.
+===========
+==>STEP NUM: 159
+==>ACT: up
+==>OBSERVATION: Aft Deck
+Johnny approaches, throws a weighted orange line over the side, and says, "Tie the line to the treasure when you've got it, then pull on it and we'll pull the treasure up."
+There is a portable drill here.
+There is a diving mask here.
+There is a pair of flippers here.
+There is a wet suit here.
+You feel fairly thirsty.
+===========
+==>STEP NUM: 160
+==>ACT: down
+==>OBSERVATION: You descend another 50 feet...
+
+It's too dark to see!
+===========
+==>STEP NUM: 161
+==>ACT: down
+==>OBSERVATION: You flutter down to a shipwreck...
+
+Top Deck
+You are at the bow of a steel ship that has been here for quite a while. The deck continues aft, and there is a passage leading down at your feet.
+===========
+==>STEP NUM: 162
+==>ACT: down
+==>OBSERVATION: Middle Deck
+This cabin seems to have been sleeping quarters. It must have been used by the crew, as it is spartanly furnished. The only ways out of this room are up and down.
+===========
+==>STEP NUM: 163
+==>ACT: down
+==>OBSERVATION: Below Decks
+This cabin is the third-class passengers' quarters. There couldn't have been many frills here since the remains are spartan. The cabin can be exited aft and up.
+===========
+==>STEP NUM: 164
+==>ACT: south
+==>OBSERVATION: Below Decks
+This was once the supplies locker, with exits forward and up, and a door with a sign on it in the aft bulkhead.
+===========
+==>STEP NUM: 165
+==>ACT: south
+==>OBSERVATION: Below Decks
+This had to have been a mine locker. There is a door forward and a passage above your head.
+A number of spherical mines with spikes sticking out of them litter the room. These mines must have once been used to blockade shipping lanes. Most of them are tethered together on the deck, but one is floating up near the hole in the ceiling.
+===========
+==>STEP NUM: 166
+==>ACT: up
+==>OBSERVATION: Middle Deck
+This former dining room has some tables upturned and scattered about, a door forward, a hole through the floor, and a narrow opening abaft.
+===========
+==>STEP NUM: 167
+==>ACT: south
+==>OBSERVATION: Carrying your tank in front of you, you swim to the next room...
+
+Middle Deck
+The settling of debris has left a very narrow passage through this cabin. You can go forward or aft.
+===========
+==>STEP NUM: 168
+==>ACT: south
+==>OBSERVATION: Carrying your tank in front of you, you swim to the next room...
+
+Middle Deck
+This might have been the purser's cabin. It can be exited forward through a narrow opening.
+There is a safe here.
+===========
+==>STEP NUM: 169
+==>ACT: north
+==>OBSERVATION: Carrying your tank in front of you, you swim to the next room...
+
+Middle Deck
+The water level in the glass case rises.
+===========
+==>STEP NUM: 170
+==>ACT: north
+==>OBSERVATION: Carrying your tank in front of you, you swim to the next room...
+
+Middle Deck
+The water level in the glass case rises.
+===========
+==>STEP NUM: 171
+==>ACT: down
+==>OBSERVATION: Below Decks
+There is a portable electromagnet here.
+There is a loose mine here.
+A number of spherical mines with spikes sticking out of them litter the room. These mines must have once been used to blockade shipping lanes. Most of them are tethered together on the deck, but one is being held by the portable electromagnet.
+The water level in the glass case rises.
+===========
+==>STEP NUM: 172
+==>ACT: north
+==>OBSERVATION: Below Decks
+The water level in the glass case rises.
+===========
+==>STEP NUM: 173
+==>ACT: up
+==>OBSERVATION: Middle Deck
+This cabin was once a passenger compartment, although the fragile partitions within have collapsed. The room is filled with air and a glance tells you why: the closed door to aft kept the air and water pressures equalized, stopping the flow of water up through the hole in the deck.
+===========
+==>STEP NUM: 174
+==>ACT: down
+==>OBSERVATION: Below Decks
+===========
+==>STEP NUM: 175
+==>ACT: north
+==>OBSERVATION: Below Decks
+===========
+==>STEP NUM: 176
+==>ACT: up
+==>OBSERVATION: Middle Deck
+===========
+==>STEP NUM: 177
+==>ACT: up
+==>OBSERVATION: Top Deck
+===========
+==>STEP NUM: 178
+==>ACT: up
+==>OBSERVATION: You ascend 50 feet...
+
+Underwater
+You are in the sea, completely surrounded by water.
+===========
+==>STEP NUM: 179
+==>ACT: up
+==>OBSERVATION: You ascend another 50 feet...
+
+Underwater
+You are in the sea, completely surrounded by water.
+===========
+==>STEP NUM: 180
+==>ACT: up
+==>OBSERVATION: You get out of the water and reboard your ship...
+
+When your shipmates find that you've recovered these priceless stamps, they congratulate you. Johnny slaps you on the back. "Good job, matey!" As you return to the island over the calm, dazzling blue sea, you contemplate your wealth with a touch of sadness. You think of Hevlin and hope his soul is resting a little easier now.
+
+Your score is 250 out of a possible 250.
+This score gives you the rank of a rich diver.
+ Underwater                                                                                                            Time:  7:02 am
+===========

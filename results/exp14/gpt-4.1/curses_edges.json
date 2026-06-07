@@ -1,0 +1,146 @@
+[
+  {
+    "src_node": "old furniture",
+    "dst_node": "attic",
+    "action": "north",
+    "seen_in_forward": 1
+  },
+  {
+    "src_node": "attic",
+    "dst_node": "old winery",
+    "action": "north",
+    "seen_in_forward": 2
+  },
+  {
+    "src_node": "old winery",
+    "dst_node": "aunt jemima's lair",
+    "action": "west",
+    "seen_in_forward": 3
+  },
+  {
+    "src_node": "aunt jemima's lair",
+    "dst_node": "airing cupboard",
+    "action": "south",
+    "seen_in_forward": 4
+  },
+  {
+    "src_node": "airing cupboard",
+    "dst_node": "potting room",
+    "action": "west",
+    "seen_in_forward": 5
+  },
+  {
+    "src_node": "potting room",
+    "dst_node": "aunt jemima's lair",
+    "action": "east",
+    "seen_in_forward": 6
+  },
+  {
+    "src_node": "aunt jemima's lair",
+    "dst_node": "old winery",
+    "action": "east",
+    "seen_in_forward": 7
+  },
+  {
+    "src_node": "old winery",
+    "dst_node": "storage room",
+    "action": "east",
+    "seen_in_forward": 8
+  },
+  {
+    "src_node": "storage room",
+    "dst_node": "old winery",
+    "action": "west",
+    "seen_in_forward": 9
+  },
+  {
+    "src_node": "old winery",
+    "dst_node": "attic",
+    "action": "south",
+    "seen_in_forward": 10
+  },
+  {
+    "src_node": "attic",
+    "dst_node": "over the east wing",
+    "action": "southeast",
+    "seen_in_forward": 11
+  },
+  {
+    "src_node": "over the east wing",
+    "dst_node": "east annexe",
+    "action": "east",
+    "seen_in_forward": 12
+  },
+  {
+    "src_node": "east annexe",
+    "dst_node": "dead end",
+    "action": "south",
+    "seen_in_forward": 13
+  },
+  {
+    "src_node": "dead end",
+    "dst_node": "east annexe",
+    "action": "north",
+    "seen_in_forward": 14
+  },
+  {
+    "src_node": "east annexe",
+    "dst_node": "inside cupboard",
+    "action": "north",
+    "seen_in_forward": 15
+  },
+  {
+    "src_node": "inside cupboard",
+    "dst_node": "east annexe",
+    "action": "south",
+    "seen_in_forward": 16
+  },
+  {
+    "src_node": "east annexe",
+    "dst_node": "over the east wing",
+    "action": "west",
+    "seen_in_forward": 17
+  },
+  {
+    "src_node": "over the east wing",
+    "dst_node": "dark room",
+    "action": "west",
+    "seen_in_forward": 18
+  },
+  {
+    "src_node": "dark room",
+    "dst_node": "over the east wing",
+    "action": "east",
+    "seen_in_forward": 19
+  },
+  {
+    "src_node": "over the east wing",
+    "dst_node": "disused observatory",
+    "action": "south",
+    "seen_in_forward": 20
+  },
+  {
+    "src_node": "disused observatory",
+    "dst_node": "library storage",
+    "action": "west",
+    "seen_in_forward": 21
+  },
+  {
+    "src_node": "library storage",
+    "dst_node": "disused observatory",
+    "action": "east",
+    "seen_in_forward": 22
+  },
+  {
+    "src_node": "disused observatory",
+    "dst_node": "over the east wing",
+    "action": "north",
+    "seen_in_forward": 23
+  },
+  {
+    "src_node": "over the east wing",
+    "dst_node": "old furniture",
+    "action": "northwest",
+    "seen_in_forward": 24
+  }
+]

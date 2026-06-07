@@ -1,0 +1,19 @@
+# loose  model=gpt-4.1  n_steps=18
+step   0 bad movement output: {'is_movement': True, 'src_node': None, 'dst_node': 'forest', 'action': 'north', 'seen_in_forward': 0, 'current_location': 'forest', 'reasoning': "The observation explicitly states arrival in 'Forest', which matches a canonical location."}
+step   1 bad movement output: {'is_movement': True, 'src_node': None, 'dst_node': 'deep forest', 'action': 'north', 'seen_in_forward': 1, 'current_location': 'deep forest', 'reasoning': "Observation begins with 'Deep Forest', which matches a canonical location. The action is 'north', so the player moved from an unknown location to 'deep forest'."}
+step   2 bad movement output: {'is_movement': True, 'src_node': None, 'dst_node': 'country lane', 'action': 'southwest', 'seen_in_forward': 2, 'current_location': 'country lane', 'reasoning': "The observation begins with 'Country Lane', which matches the canonical location 'country lane', indicating arrival there after moving southwest."}
+step   3 MOVE 'country lane' --[west]--> 'outside the cottage'
+step   4 MOVE 'outside the cottage' --[west]--> 'outside the bungalow'
+step   5 MOVE 'outside the bungalow' --[southwest]--> 'meadow behind the bungalow'
+step   6 MOVE 'meadow behind the bungalow' --[southwest]--> 'hilltop'
+step   7 MOVE 'hilltop' --[northeast]--> 'meadow behind the bungalow'
+step   8 MOVE 'meadow behind the bungalow' --[northeast]--> 'outside the bungalow'
+step   9 MOVE 'outside the bungalow' --[east]--> 'outside the cottage'
+step  10 MOVE 'outside the cottage' --[east]--> 'country lane'
+step  11 MOVE 'country lane' --[northeast]--> 'deep forest'
+step  12 MOVE 'deep forest' --[south]--> 'forest'
+step  13 MOVE 'forest' --[south]--> 'rickety fence'
+step  14 MOVE 'rickety fence' --[northwest]--> 'schoolyard'
+step  15 MOVE 'schoolyard' --[south]--> 'inside the school'
+step  16 MOVE 'inside the school' --[south]--> 'clock tower stairs'
+step  17 MOVE 'clock tower stairs' --[south]--> 'inside the clock tower'

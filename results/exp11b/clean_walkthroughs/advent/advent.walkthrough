@@ -1,0 +1,542 @@
+===========
+==>STEP NUM: 0
+==>ACT: east
+==>OBSERVATION: Inside Building
+You are inside a building, a well house for a large spring.
+
+There are some keys on the ground here.
+
+There is tasty food here.
+
+There is a shiny brass lamp nearby.
+
+There is an empty bottle here.
+===========
+==>STEP NUM: 1
+==>ACT: west
+==>OBSERVATION: At End Of Road
+===========
+==>STEP NUM: 2
+==>ACT: south
+==>OBSERVATION: In A Valley
+You are in a valley in the forest beside a stream tumbling along a rocky bed.
+===========
+==>STEP NUM: 3
+==>ACT: south
+==>OBSERVATION: At Slit In Streambed
+At your feet all the water of the stream splashes into a 2-inch slit in the rock. Downstream the streambed is bare rock.
+===========
+==>STEP NUM: 4
+==>ACT: south
+==>OBSERVATION: Outside Grate
+You are in a 20-foot depression floored with bare dirt. Set into the dirt is a strong steel grate mounted in concrete. A dry streambed leads into the depression.
+===========
+==>STEP NUM: 5
+==>ACT: down
+==>OBSERVATION: Below the Grate
+You are in a small chamber beneath a 3x3 steel grate to the surface. A low crawl over cobbles leads inward to the west.
+
+The grate stands open.
+===========
+==>STEP NUM: 6
+==>ACT: west
+==>OBSERVATION: Sloping E/W Canyon
+You are in an awkward sloping east/west canyon.
+===========
+==>STEP NUM: 7
+==>ACT: west
+==>OBSERVATION: Orange River Chamber
+You are in a splendid chamber thirty feet high. The walls are frozen rivers of orange stone. An awkward canyon and a good passage exit from east and west sides of the chamber.
+
+A cheerful little bird is sitting here singing.
+===========
+==>STEP NUM: 8
+==>ACT: west
+==>OBSERVATION: At Top of Small Pit
+At your feet is a small pit breathing traces of white mist. A west passage ends here except for a small crack leading on. 
+
+Rough stone steps lead down the pit.
+===========
+==>STEP NUM: 9
+==>ACT: down
+==>OBSERVATION: In Hall of Mists
+You are at one end of a vast hall stretching forward out of sight to the west. There are openings to either side. Nearby, a wide stone staircase leads downward. The hall is filled with wisps of white mist swaying to and fro almost as if alive. A cold wind blows up the staircase. There is a passage at the top of a dome behind you. 
+
+Rough stone steps lead up the dome.
+
+[Your score has just gone up by twenty-five points.]
+===========
+==>STEP NUM: 10
+==>ACT: south
+==>OBSERVATION: Low Room
+This is a low room with a crude note on the wall: 
+
+"You won't get it up the steps".
+
+There is a large sparkling nugget of gold here!
+===========
+==>STEP NUM: 11
+==>ACT: north
+==>OBSERVATION: In Hall of Mists
+===========
+==>STEP NUM: 12
+==>ACT: north
+==>OBSERVATION: Hall of the Mountain King
+You are in the hall of the mountain king, with passages off in all directions.
+
+A huge green fierce snake bars the way!
+===========
+==>STEP NUM: 13
+==>ACT: north
+==>OBSERVATION: Low N/S Passage
+You are in a low N/S passage at a hole in the floor. The hole goes down to an E/W passage.
+
+There are bars of silver here!
+===========
+==>STEP NUM: 14
+==>ACT: north
+==>OBSERVATION: At "Y2"
+You are in a large room, with a passage to the south, a passage to the west, and a wall of broken rock to the east. There is a large "Y2" on a rock in the room's center.
+===========
+==>STEP NUM: 15
+==>ACT: south
+==>OBSERVATION: Low N/S Passage
+
+You can see a set of keys here.
+===========
+==>STEP NUM: 16
+==>ACT: south
+==>OBSERVATION: Hall of the Mountain King
+===========
+==>STEP NUM: 17
+==>ACT: southwest
+==>OBSERVATION: Secret E/W Canyon Above Tight Canyon
+You are in a secret canyon which here runs E/W. It crosses over a very tight canyon 15 feet below. If you go down you may not be able to get back up.
+===========
+==>STEP NUM: 18
+==>ACT: west
+==>OBSERVATION: Secret Canyon
+You are in a secret canyon which exits to the north and east.
+
+A huge green fierce dragon bars the way!
+The dragon is sprawled out on the Persian rug!
+===========
+==>STEP NUM: 19
+==>ACT: east
+==>OBSERVATION: Secret E/W Canyon Above Tight Canyon
+===========
+==>STEP NUM: 20
+==>ACT: down
+==>OBSERVATION: N/S Canyon
+You are at a wide place in a very tight N/S canyon.
+===========
+==>STEP NUM: 21
+==>ACT: north
+==>OBSERVATION: In Tall E/W Canyon
+You are in a tall E/W canyon. A low tight crawl goes 3 feet north and seems to open up.
+===========
+==>STEP NUM: 22
+==>ACT: north
+==>OBSERVATION: In Swiss Cheese Room
+You are in a room whose walls resemble swiss cheese. Obvious passages go west, east, ne, and nw. Part of the room is occupied by a large bedrock block.
+===========
+==>STEP NUM: 23
+==>ACT: west
+==>OBSERVATION: At East End of Twopit Room
+You are at the east end of the twopit room. The floor here is littered with thin rock slabs, which make it easy to descend the pits. There is a path here bypassing the pits to connect passages from east and west. There are holes all over, but the only big one is on the wall directly over the west pit where you can't get to it.
+===========
+==>STEP NUM: 24
+==>ACT: west
+==>OBSERVATION: At West End of Twopit Room
+You are at the west end of the twopit room. There is a large hole in the wall above the pit at this end of the room.
+===========
+==>STEP NUM: 25
+==>ACT: down
+==>OBSERVATION: In West Pit
+You are at the bottom of the western pit in the twopit room. There is a large hole in the wall about 25 feet above you.
+There is a tiny little plant in the pit, murmuring "Water, water, ..."
+===========
+==>STEP NUM: 26
+==>ACT: up
+==>OBSERVATION: At West End of Twopit Room
+The top of a 12-foot-tall beanstalk is poking out of the west pit.
+===========
+==>STEP NUM: 27
+==>ACT: east
+==>OBSERVATION: At East End of Twopit Room
+The top of a 12-foot-tall beanstalk is poking out of the west pit.
+===========
+==>STEP NUM: 28
+==>ACT: east
+==>OBSERVATION: In Swiss Cheese Room
+===========
+==>STEP NUM: 29
+==>ACT: northwest
+==>OBSERVATION: Oriental Room
+This is the oriental room. Ancient oriental cave drawings cover the walls. A gently sloping passage leads upward to the north, another passage leads se, and a hands and knees crawl leads west.
+
+You can see a ming vase here.
+===========
+==>STEP NUM: 30
+==>ACT: north
+==>OBSERVATION: Misty Cavern
+You are following a wide path around the outer edge of a large cavern. Far below, through a heavy white mist, strange splashing noises can be heard. The mist rises up through a fissure in the ceiling. The path exits to the south and west.
+===========
+==>STEP NUM: 31
+==>ACT: west
+==>OBSERVATION: Alcove
+You are in an alcove. A small northwest path seems to widen after a short distance. An extremely tight tunnel leads east. It looks like a very tight squeeze. An eerie light can be seen at the other end.
+===========
+==>STEP NUM: 32
+==>ACT: east
+==>OBSERVATION: Plover Room
+You're in a small chamber lit by an eerie green light. An extremely narrow tunnel exits to the west. A dark corridor leads northeast.
+
+There is an emerald here the size of a plover's egg!
+===========
+==>STEP NUM: 33
+==>ACT: west
+==>OBSERVATION: Alcove
+
+Your lamp is here, gleaming brightly.
+The Persian rug is spread out on the floor here.
+
+You can also see a small bottle (which is empty) here.
+===========
+==>STEP NUM: 34
+==>ACT: northwest
+==>OBSERVATION: Misty Cavern
+===========
+==>STEP NUM: 35
+==>ACT: south
+==>OBSERVATION: Oriental Room
+
+You can see a ming vase here.
+===========
+==>STEP NUM: 36
+==>ACT: southeast
+==>OBSERVATION: In Swiss Cheese Room
+===========
+==>STEP NUM: 37
+==>ACT: east
+==>OBSERVATION: In Soft Room
+You are in the soft room. The walls are covered with heavy curtains, the floor with a thick pile carpet. Moss covers the ceiling.
+
+A small velvet pillow lies on the floor.
+===========
+==>STEP NUM: 38
+==>ACT: west
+==>OBSERVATION: In Swiss Cheese Room
+===========
+==>STEP NUM: 39
+==>ACT: northeast
+==>OBSERVATION: Bedquilt
+You are in bedquilt, a long east/west passage with holes everywhere. To explore at random select north, south, up, or down.
+===========
+==>STEP NUM: 40
+==>ACT: east
+==>OBSERVATION: At Complex Junction
+You are at a complex junction. A low hands and knees passage from the north joins a higher crawl from the east to make a walking passage going west. There is also a large room above. The air is damp here.
+===========
+==>STEP NUM: 41
+==>ACT: up
+==>OBSERVATION: Low N/S Passage
+
+You can see a set of keys here.
+===========
+==>STEP NUM: 42
+==>ACT: north
+==>OBSERVATION: At "Y2"
+===========
+==>STEP NUM: 43
+==>ACT: south
+==>OBSERVATION: Plover Room
+===========
+==>STEP NUM: 44
+==>ACT: south
+==>OBSERVATION: Low N/S Passage
+
+You can see a set of keys here.
+===========
+==>STEP NUM: 45
+==>ACT: down
+==>OBSERVATION: At Complex Junction
+===========
+==>STEP NUM: 46
+==>ACT: west
+==>OBSERVATION: Bedquilt
+===========
+==>STEP NUM: 47
+==>ACT: west
+==>OBSERVATION: In Swiss Cheese Room
+===========
+==>STEP NUM: 48
+==>ACT: west
+==>OBSERVATION: At East End of Twopit Room
+The top of a 12-foot-tall beanstalk is poking out of the west pit.
+===========
+==>STEP NUM: 49
+==>ACT: west
+==>OBSERVATION: At West End of Twopit Room
+The top of a 12-foot-tall beanstalk is poking out of the west pit.
+===========
+==>STEP NUM: 50
+==>ACT: down
+==>OBSERVATION: In West Pit
+There is a 12-foot-tall beanstalk stretching up out of the pit, bellowing "Water!! Water!!"
+===========
+==>STEP NUM: 51
+==>ACT: up
+==>OBSERVATION: At West End of Twopit Room
+There is a huge beanstalk growing out of the west pit up to the hole.
+===========
+==>STEP NUM: 52
+==>ACT: east
+==>OBSERVATION: At East End of Twopit Room
+There is a huge beanstalk growing out of the west pit up to the hole.
+===========
+==>STEP NUM: 53
+==>ACT: up
+==>OBSERVATION: At East End of Twopit Room
+There is a huge beanstalk growing out of the west pit up to the hole.
+===========
+==>STEP NUM: 54
+==>ACT: west
+==>OBSERVATION: At West End of Twopit Room
+There is a huge beanstalk growing out of the west pit up to the hole.
+===========
+==>STEP NUM: 55
+==>ACT: down
+==>OBSERVATION: In West Pit
+There is a gigantic beanstalk stretching all the way up to the hole.
+===========
+==>STEP NUM: 56
+==>ACT: southeast
+==>OBSERVATION: Oriental Room
+
+The dwarf stalks after you...
+===========
+==>STEP NUM: 57
+==>ACT: southeast
+==>OBSERVATION: In Swiss Cheese Room
+
+The dwarf stalks after you...
+
+The dwarf throws a nasty little knife at you, but misses!
+===========
+==>STEP NUM: 58
+==>ACT: northeast
+==>OBSERVATION: Bedquilt
+
+The dwarf stalks after you...
+
+The dwarf throws a nasty little knife at you, but misses!
+===========
+==>STEP NUM: 59
+==>ACT: east
+==>OBSERVATION: At Complex Junction
+
+The dwarf stalks after you...
+
+The dwarf throws a nasty little knife at you, but misses!
+===========
+==>STEP NUM: 60
+==>ACT: up
+==>OBSERVATION: At Complex Junction
+
+You can see a set of keys here.
+===========
+==>STEP NUM: 61
+==>ACT: south
+==>OBSERVATION: At Complex Junction
+
+You can see a set of keys here.
+
+The dwarf stalks after you...
+
+The dwarf throws a nasty little knife at you, but misses!
+===========
+==>STEP NUM: 62
+==>ACT: up
+==>OBSERVATION: Low N/S Passage
+
+The dwarf stalks after you...
+
+The dwarf throws a nasty little knife at you, but misses!
+===========
+==>STEP NUM: 63
+==>ACT: north
+==>OBSERVATION: At "Y2"
+
+The dwarf stalks after you...
+
+The dwarf throws a nasty little knife at you, but misses!
+
+A bearded pirate appears, catches sight of the dwarf and runs away.
+===========
+==>STEP NUM: 64
+==>ACT: south
+==>OBSERVATION: Low N/S Passage
+
+The dwarf stalks after you...
+
+The dwarf throws a nasty little knife at you, but misses!
+===========
+==>STEP NUM: 65
+==>ACT: down
+==>OBSERVATION: At Complex Junction
+
+You can see a set of keys here.
+
+The dwarf stalks after you...
+
+Tiring of this, the dwarf slips away.
+===========
+==>STEP NUM: 66
+==>ACT: west
+==>OBSERVATION: Bedquilt
+===========
+==>STEP NUM: 67
+==>ACT: west
+==>OBSERVATION: In Swiss Cheese Room
+===========
+==>STEP NUM: 68
+==>ACT: west
+==>OBSERVATION: At East End of Twopit Room
+There is a huge beanstalk growing out of the west pit up to the hole.
+
+There are faint rustling noises from the darkness behind you. As you turn toward them, you spot a bearded pirate. He is carrying a large chest. 
+
+"Shiver me timbers!" he cries, "I've been spotted! I'd best hie meself off to the maze to hide me chest!" 
+
+With that, he vanishes into the gloom.
+===========
+==>STEP NUM: 69
+==>ACT: west
+==>OBSERVATION: At West End of Twopit Room
+There is a huge beanstalk growing out of the west pit up to the hole.
+===========
+==>STEP NUM: 70
+==>ACT: down
+==>OBSERVATION: In West Pit
+There is a gigantic beanstalk stretching all the way up to the hole.
+===========
+==>STEP NUM: 71
+==>ACT: east
+==>OBSERVATION: In West Pit
+There is a gigantic beanstalk stretching all the way up to the hole.
+===========
+==>STEP NUM: 72
+==>ACT: up
+==>OBSERVATION: At West End of Twopit Room
+There is a huge beanstalk growing out of the west pit up to the hole.
+
+The dwarf stalks after you...
+
+The dwarf throws a nasty little knife at you, but misses!
+===========
+==>STEP NUM: 73
+==>ACT: east
+==>OBSERVATION: At East End of Twopit Room
+There is a huge beanstalk growing out of the west pit up to the hole.
+
+The dwarf stalks after you...
+
+The dwarf throws a nasty little knife at you, but misses!
+===========
+==>STEP NUM: 74
+==>ACT: east
+==>OBSERVATION: In Swiss Cheese Room
+
+The dwarf stalks after you...
+
+The dwarf throws a nasty little knife at you, but misses!
+===========
+==>STEP NUM: 75
+==>ACT: northeast
+==>OBSERVATION: Bedquilt
+
+The dwarf stalks after you...
+
+The dwarf throws a nasty little knife at you, but misses!
+===========
+==>STEP NUM: 76
+==>ACT: east
+==>OBSERVATION: At Complex Junction
+
+You can see a set of keys here.
+
+The dwarf stalks after you...
+
+The dwarf throws a nasty little knife at you, but misses!
+===========
+==>STEP NUM: 77
+==>ACT: up
+==>OBSERVATION: Low N/S Passage
+===========
+==>STEP NUM: 78
+==>ACT: north
+==>OBSERVATION: At "Y2"
+===========
+==>STEP NUM: 79
+==>ACT: south
+==>OBSERVATION: Low N/S Passage
+===========
+==>STEP NUM: 80
+==>ACT: south
+==>OBSERVATION: Hall of the Mountain King
+
+A threatening little dwarf comes out of the shadows!
+===========
+==>STEP NUM: 81
+==>ACT: north
+==>OBSERVATION: Hall of the Mountain King
+
+The dwarf stalks after you...
+
+The dwarf throws a nasty little knife at you, but misses!
+===========
+==>STEP NUM: 82
+==>ACT: east
+==>OBSERVATION: Hall of the Mountain King
+===========
+==>STEP NUM: 83
+==>ACT: north
+==>OBSERVATION: Low N/S Passage
+
+A threatening little dwarf comes out of the shadows!
+===========
+==>STEP NUM: 84
+==>ACT: north
+==>OBSERVATION: At "Y2"
+
+A hollow voice says, "Plugh."
+===========
+==>STEP NUM: 85
+==>ACT: south
+==>OBSERVATION: Low N/S Passage
+
+A threatening little dwarf comes out of the shadows!
+===========
+==>STEP NUM: 86
+==>ACT: south
+==>OBSERVATION: Hall of the Mountain King
+
+The dwarf stalks after you...
+
+The dwarf throws a nasty little knife at you, but misses!
+===========
+==>STEP NUM: 87
+==>ACT: down
+==>OBSERVATION: Orange River Chamber
+===========
+==>STEP NUM: 88
+==>ACT: east
+==>OBSERVATION: Sloping E/W Canyon
+===========
+==>STEP NUM: 89
+==>ACT: east
+==>OBSERVATION: In Debris Room
+
+A three foot black rod with a rusty star on one end lies nearby.
+===========

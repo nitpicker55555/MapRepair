@@ -1,0 +1,472 @@
+{
+  "id": "tw_05",
+  "dataset": "textworld",
+  "n_rooms": 7,
+  "n_edges": 14,
+  "rooms": [
+    {
+      "id": "basement",
+      "label": "basement",
+      "description": "You are in a basement. An ordinary one. You decide to start listing off everything you see in the room, as if you were in a text adventure. As if things weren't amazing enough already, you can even see a trunk. The trunk contains . The trunk is empty! This is the worst thing that could possibly happ"
+    },
+    {
+      "id": "cookhouse",
+      "label": "cookhouse",
+      "description": "You are in a cookhouse. A normal one. You make out a lockedan openeda closed freezer. The freezer contains . The freezer is empty! What a waste of a day! There is an unblocked exit to the east. You need an unguarded exit? You should try going south."
+    },
+    {
+      "id": "kitchenette",
+      "label": "kitchenette",
+      "description": "Ah, the kitchenette. This is some kind of kitchenette, really great usual vibes in this place, a wonderful usual atmosphere. And now, well, you're in it. There is an unguarded exit to the north. There is an unguarded exit to the west."
+    },
+    {
+      "id": "lounge",
+      "label": "lounge",
+      "description": "You've just walked into a lounge. You need an unguarded exit? You should try going south. There is an exit to the west. Don't worry, it is unguarded."
+    },
+    {
+      "id": "recreation zone",
+      "label": "recreation zone",
+      "description": "You are in a recreation zone. A typical one. You need an unguarded exit? You should try going south."
+    },
+    {
+      "id": "sauna",
+      "label": "sauna",
+      "description": "You're now in the sauna. You try to gain information on your surroundings by using a technique you call 'looking.' You can see a shelf. Now why would someone leave that there? You see on the shelf. Now that's what I call TextWorld!But the thing hasn't got anything on it. Hm. Oh well There is an open"
+    },
+    {
+      "id": "workshop",
+      "label": "workshop",
+      "description": "You are in a workshop. A normal one. There is an exit to the north. Don't worry, it is unguarded."
+    }
+  ],
+  "walkthrough": [],
+  "states": {
+    "gt": {
+      "edges": [
+        {
+          "src": "sauna",
+          "dst": "basement",
+          "dir": "west"
+        },
+        {
+          "src": "sauna",
+          "dst": "cookhouse",
+          "dir": "north"
+        },
+        {
+          "src": "sauna",
+          "dst": "kitchenette",
+          "dir": "east"
+        },
+        {
+          "src": "basement",
+          "dst": "workshop",
+          "dir": "south"
+        },
+        {
+          "src": "basement",
+          "dst": "recreation zone",
+          "dir": "north"
+        },
+        {
+          "src": "basement",
+          "dst": "sauna",
+          "dir": "east"
+        },
+        {
+          "src": "cookhouse",
+          "dst": "sauna",
+          "dir": "south"
+        },
+        {
+          "src": "cookhouse",
+          "dst": "lounge",
+          "dir": "east"
+        },
+        {
+          "src": "kitchenette",
+          "dst": "sauna",
+          "dir": "west"
+        },
+        {
+          "src": "kitchenette",
+          "dst": "lounge",
+          "dir": "north"
+        },
+        {
+          "src": "workshop",
+          "dst": "basement",
+          "dir": "north"
+        },
+        {
+          "src": "recreation zone",
+          "dst": "basement",
+          "dir": "south"
+        },
+        {
+          "src": "lounge",
+          "dst": "cookhouse",
+          "dir": "west"
+        },
+        {
+          "src": "lounge",
+          "dst": "kitchenette",
+          "dir": "south"
+        }
+      ]
+    },
+    "noised": {
+      "edges": [
+        {
+          "src": "sauna",
+          "dst": "basement",
+          "dir": "west"
+        },
+        {
+          "src": "sauna",
+          "dst": "cookhouse",
+          "dir": "north"
+        },
+        {
+          "src": "sauna",
+          "dst": "lounge",
+          "dir": "north"
+        },
+        {
+          "src": "basement",
+          "dst": "workshop",
+          "dir": "south"
+        },
+        {
+          "src": "basement",
+          "dst": "recreation zone",
+          "dir": "north"
+        },
+        {
+          "src": "basement",
+          "dst": "sauna",
+          "dir": "east"
+        },
+        {
+          "src": "cookhouse",
+          "dst": "sauna",
+          "dir": "south"
+        },
+        {
+          "src": "cookhouse",
+          "dst": "lounge",
+          "dir": "east"
+        },
+        {
+          "src": "cookhouse",
+          "dst": "workshop",
+          "dir": "east"
+        },
+        {
+          "src": "workshop",
+          "dst": "basement",
+          "dir": "north"
+        },
+        {
+          "src": "recreation zone",
+          "dst": "basement",
+          "dir": "south"
+        },
+        {
+          "src": "lounge",
+          "dst": "cookhouse",
+          "dir": "west"
+        },
+        {
+          "src": "lounge",
+          "dst": "sauna",
+          "dir": "west"
+        }
+      ],
+      "noise_records": [
+        {
+          "type": "N5_collapse_fallback",
+          "src": "kitchenette",
+          "dst": "lounge",
+          "direction": null,
+          "note": "no prefix match available"
+        },
+        {
+          "type": "N1_direction",
+          "src": "cookhouse",
+          "dst": "workshop",
+          "direction": "east",
+          "note": ""
+        },
+        {
+          "type": "N2_topology",
+          "src": "sauna",
+          "dst": "lounge",
+          "direction": "north",
+          "note": ""
+        }
+      ],
+      "noise_summary": {
+        "N5_collapse_fallback": 1,
+        "N1_direction": 1,
+        "N2_topology": 1
+      },
+      "conflicts": [
+        {
+          "type": "direction",
+          "severity": "high",
+          "description": "node 'sauna' has multiple outgoing edges labelled 'north'",
+          "edges": [
+            [
+              "sauna",
+              "cookhouse"
+            ],
+            [
+              "sauna",
+              "lounge"
+            ]
+          ]
+        },
+        {
+          "type": "direction",
+          "severity": "high",
+          "description": "node 'cookhouse' has multiple outgoing edges labelled 'east'",
+          "edges": [
+            [
+              "cookhouse",
+              "lounge"
+            ],
+            [
+              "cookhouse",
+              "workshop"
+            ]
+          ]
+        },
+        {
+          "type": "direction",
+          "severity": "high",
+          "description": "node 'lounge' has multiple outgoing edges labelled 'west'",
+          "edges": [
+            [
+              "lounge",
+              "cookhouse"
+            ],
+            [
+              "lounge",
+              "sauna"
+            ]
+          ]
+        },
+        {
+          "type": "topology",
+          "severity": "high",
+          "description": "reverse direction mismatch: sauna--[north]-->lounge but lounge--[west]-->sauna (expected south)",
+          "edges": [
+            [
+              "sauna",
+              "lounge"
+            ],
+            [
+              "lounge",
+              "sauna"
+            ]
+          ]
+        },
+        {
+          "type": "topology",
+          "severity": "high",
+          "description": "position (-1, 1, 0) occupied by multiple rooms ['basement', 'sauna']",
+          "edges": []
+        },
+        {
+          "type": "topology",
+          "severity": "high",
+          "description": "position (0, 0, 0) occupied by multiple rooms ['basement', 'sauna']",
+          "edges": []
+        },
+        {
+          "type": "topology",
+          "severity": "high",
+          "description": "position (1, 1, 0) occupied by multiple rooms ['cookhouse', 'lounge', 'workshop']",
+          "edges": []
+        },
+        {
+          "type": "topology",
+          "severity": "high",
+          "description": "position (1, 2, 0) occupied by multiple rooms ['lounge', 'workshop']",
+          "edges": []
+        },
+        {
+          "type": "topology",
+          "severity": "high",
+          "description": "position (0, 2, 0) occupied by multiple rooms ['cookhouse', 'lounge', 'workshop']",
+          "edges": []
+        },
+        {
+          "type": "topology",
+          "severity": "high",
+          "description": "position (2, 1, 0) occupied by multiple rooms ['lounge', 'workshop']",
+          "edges": []
+        },
+        {
+          "type": "topology",
+          "severity": "high",
+          "description": "position (-2, 3, 0) occupied by multiple rooms ['cookhouse', 'recreation zone', 'sauna']",
+          "edges": []
+        },
+        {
+          "type": "topology",
+          "severity": "high",
+          "description": "position (-3, 4, 0) occupied by multiple rooms ['cookhouse', 'recreation zone', 'sauna']",
+          "edges": []
+        },
+        {
+          "type": "topology",
+          "severity": "high",
+          "description": "position (0, 1, 0) occupied by multiple rooms ['cookhouse', 'recreation zone', 'sauna']",
+          "edges": []
+        },
+        {
+          "type": "topology",
+          "severity": "high",
+          "description": "position (-1, 2, 0) occupied by multiple rooms ['cookhouse', 'recreation zone', 'sauna']",
+          "edges": []
+        },
+        {
+          "type": "topology",
+          "severity": "high",
+          "description": "position (-2, 4, 0) occupied by multiple rooms ['cookhouse', 'lounge']",
+          "edges": []
+        },
+        {
+          "type": "topology",
+          "severity": "high",
+          "description": "position (-1, 3, 0) occupied by multiple rooms ['cookhouse', 'lounge']",
+          "edges": []
+        },
+        {
+          "type": "naming",
+          "severity": "high",
+          "description": "node 'basement' reachable at conflicting positions [(-3, 3, 0), (-2, 2, 0), (-1, 1, 0), (0, 0, 0), (0, 3, 0)]",
+          "edges": []
+        },
+        {
+          "type": "naming",
+          "severity": "high",
+          "description": "node 'workshop' reachable at conflicting positions [(-3, 2, 0), (-2, 1, 0), (-1, 0, 0), (0, -1, 0), (0, 2, 0), (1, 1, 0), (1, 2, 0), (2, 1, 0)]",
+          "edges": []
+        },
+        {
+          "type": "naming",
+          "severity": "high",
+          "description": "node 'recreation zone' reachable at conflicting positions [(-3, 4, 0), (-2, 3, 0), (-1, 2, 0), (0, 1, 0)]",
+          "edges": []
+        },
+        {
+          "type": "naming",
+          "severity": "high",
+          "description": "node 'sauna' reachable at conflicting positions [(-3, 4, 0), (-2, 3, 0), (-1, 1, 0), (-1, 2, 0), (0, 0, 0), (0, 1, 0), (1, 0, 0)]",
+          "edges": []
+        },
+        {
+          "type": "naming",
+          "severity": "high",
+          "description": "node 'cookhouse' reachable at conflicting positions [(-3, 4, 0), (-2, 3, 0), (-2, 4, 0), (-1, 2, 0), (-1, 3, 0), (0, 1, 0), (0, 2, 0), (1, 1, 0)]",
+          "edges": []
+        },
+        {
+          "type": "naming",
+          "severity": "high",
+          "description": "node 'lounge' reachable at conflicting positions [(-2, 4, 0), (-1, 3, 0), (0, 2, 0), (1, 1, 0), (1, 2, 0), (2, 1, 0)]",
+          "edges": []
+        }
+      ]
+    },
+    "repaired": {
+      "edges": [
+        {
+          "src": "sauna",
+          "dst": "basement",
+          "dir": "west"
+        },
+        {
+          "src": "sauna",
+          "dst": "cookhouse",
+          "dir": "north"
+        },
+        {
+          "src": "basement",
+          "dst": "workshop",
+          "dir": "south"
+        },
+        {
+          "src": "basement",
+          "dst": "recreation zone",
+          "dir": "north"
+        },
+        {
+          "src": "basement",
+          "dst": "sauna",
+          "dir": "east"
+        },
+        {
+          "src": "cookhouse",
+          "dst": "sauna",
+          "dir": "south"
+        },
+        {
+          "src": "cookhouse",
+          "dst": "lounge",
+          "dir": "east"
+        },
+        {
+          "src": "workshop",
+          "dst": "basement",
+          "dir": "north"
+        },
+        {
+          "src": "recreation zone",
+          "dst": "basement",
+          "dir": "south"
+        },
+        {
+          "src": "lounge",
+          "dst": "cookhouse",
+          "dir": "west"
+        }
+      ],
+      "actions": [
+        {
+          "kind": "remove_edge",
+          "target": [
+            "sauna",
+            "lounge"
+          ],
+          "new_dir": null,
+          "reason": "remove fallback"
+        },
+        {
+          "kind": "remove_edge",
+          "target": [
+            "cookhouse",
+            "workshop"
+          ],
+          "new_dir": null,
+          "reason": "remove fallback"
+        },
+        {
+          "kind": "remove_edge",
+          "target": [
+            "lounge",
+            "sauna"
+          ],
+          "new_dir": null,
+          "reason": "remove fallback"
+        }
+      ],
+      "n_conflicts_before": 22,
+      "n_conflicts_after": 0
+    }
+  }
+}

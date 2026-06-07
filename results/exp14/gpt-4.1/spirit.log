@@ -1,0 +1,38 @@
+# spirit  model=gpt-4.1  n_steps=37  (exp14 bootstrap-fixed)
+step   0 BOOTSTRAP seed current_loc='hallway (near your quarters)' (src missing, dst valid)
+step   1 MOVE 'hallway (near your quarters)' --[west]--> 'hallway (west end)'
+step   2 MOVE 'hallway (west end)' --[west]--> 'monastery gardens'
+step   3 MOVE 'monastery gardens' --[west]--> 'cloister walkway'
+step   4 MOVE 'cloister walkway' --[north]--> 'main hall'
+step   5 MOVE 'main hall' --[north]--> 'monastery chapel'
+step   6 MOVE 'monastery chapel' --[south]--> 'main hall'
+step   7 MOVE 'main hall' --[south]--> 'cloister walkway'
+step   8 MOVE 'cloister walkway' --[east]--> 'monastery gardens'
+step   9 MOVE 'monastery gardens' --[east]--> 'hallway (west end)'
+step  10 MOVE 'hallway (west end)' --[east]--> 'hallway (near your quarters)'
+step  11 MOVE 'hallway (near your quarters)' --[east]--> 'hallway (near quarters of palemon and tuffberry)'
+step  12 MOVE 'hallway (near quarters of palemon and tuffberry)' --[east]--> 'hallway (east end)'
+step  13 MOVE 'hallway (east end)' --[south]--> "brother toolbox's quarters"
+step  14 MOVE "brother toolbox's quarters" --[north]--> 'hallway (east end)'
+step  15 MOVE 'hallway (east end)' --[west]--> 'hallway (near quarters of palemon and tuffberry)'
+step  16 MOVE 'hallway (near quarters of palemon and tuffberry)' --[south]--> "brother tuffberry's quarters"
+step  17 MOVE "brother tuffberry's quarters" --[north]--> 'hallway (near quarters of palemon and tuffberry)'
+step  18 MOVE 'hallway (near quarters of palemon and tuffberry)' --[north]--> "brother palemon's quarters"
+step  19 MOVE "brother palemon's quarters" --[west]--> 'hidden sanctum'
+step  20 MOVE 'hidden sanctum' --[east]--> "brother palemon's quarters"
+step  21 MOVE "brother palemon's quarters" --[south]--> 'hallway (near quarters of palemon and tuffberry)'
+step  22 MOVE 'hallway (near quarters of palemon and tuffberry)' --[west]--> 'hallway (near your quarters)'
+step  23 MOVE 'hallway (near your quarters)' --[up]--> 'hallway (second floor, west)'
+step  24 MOVE 'hallway (second floor, west)' --[east]--> 'hallway (second floor, east)'
+step  25 MOVE 'hallway (second floor, east)' --[northeast]--> 'steeple room'
+step  26 MOVE 'steeple room' --[southwest]--> 'hallway (second floor, east)'
+step  27 MOVE 'hallway (second floor, east)' --[east]--> 'monastery library'
+step  28 MOVE 'monastery library' --[west]--> 'hallway (second floor, east)'
+step  29 MOVE 'hallway (second floor, east)' --[west]--> 'hallway (second floor, west)'
+step  30 MOVE 'hallway (second floor, west)' --[down]--> 'hallway (west end)'
+step  31 MOVE 'hallway (west end)' --[down]--> 'hallway (basement)'
+step  32 MOVE 'hallway (basement)' --[east]--> 'refectory'
+step  33 MOVE 'refectory' --[north]--> 'monastery kitchen'
+step  34 MOVE 'monastery kitchen' --[south]--> 'refectory'
+step  35 MOVE 'refectory' --[east]--> 'storeroom'
+step  36 MOVE 'storeroom' --[west]--> 'refectory'

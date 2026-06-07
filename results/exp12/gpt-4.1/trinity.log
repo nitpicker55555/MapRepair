@@ -1,0 +1,12 @@
+# trinity  model=gpt-4.1  n_steps=11
+step   0 bad movement output: {'is_movement': True, 'src_node': None, 'dst_node': 'flower walk', 'action': 'east', 'seen_in_forward': 0, 'current_location': 'flower walk', 'reasoning': "Observation explicitly names 'Flower Walk' as the destination room after moving east."}
+step   1 bad movement output: {'is_movement': True, 'src_node': None, 'dst_node': 'the wabe', 'action': 'northwest', 'seen_in_forward': 1, 'current_location': 'the wabe', 'reasoning': "Observation explicitly names 'The Wabe', which matches a canonical location, after a canonical compass action."}
+step   2 MOVE 'the wabe' --[northwest]--> 'broad walk'
+step   3 MOVE 'broad walk' --[east]--> 'round pond'
+step   4 MOVE 'round pond' --[northwest]--> 'black lion gate'
+step   5 MOVE 'black lion gate' --[east]--> 'wading'
+step   6 MOVE 'wading' --[north]--> 'summit'
+step   7 MOVE 'summit' --[northeast]--> 'south bog'
+step   8 MOVE 'south bog' --[east]--> 'bottom of stairs'
+step   9 MOVE 'bottom of stairs' --[up]--> 'halfway up'
+step  10 MOVE 'halfway up' --[up]--> 'vertex'

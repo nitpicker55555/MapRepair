@@ -1,0 +1,13 @@
+# library  model=gpt-4.1  n_steps=12  (exp14 bootstrap-fixed)
+step   0 BOOTSTRAP seed current_loc='ground floor stacks' (src missing, dst valid)
+step   1 MOVE 'ground floor stacks' --[east]--> 'lobby'
+step   2 MOVE 'lobby' --[north]--> 'ground floor stairwell'
+step   3 MOVE 'ground floor stairwell' --[up]--> 'second floor stairwell'
+step   4 MOVE 'second floor stairwell' --[south]--> 'second floor stacks'
+step   5 MOVE 'second floor stacks' --[south]--> 'rare books room'
+step   6 MOVE 'rare books room' --[north]--> 'second floor stacks'
+step   7 MOVE 'second floor stacks' --[east]--> 'computer lab'
+step   8 MOVE 'computer lab' --[west]--> 'second floor stacks'
+step   9 MOVE 'second floor stacks' --[north]--> 'second floor stairwell'
+step  10 MOVE 'second floor stairwell' --[down]--> 'ground floor stairwell'
+step  11 MOVE 'ground floor stairwell' --[south]--> 'ground floor stacks'

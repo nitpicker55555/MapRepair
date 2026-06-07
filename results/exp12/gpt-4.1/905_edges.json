@@ -1,0 +1,14 @@
+[
+  {
+    "src_node": "bedroom",
+    "dst_node": "living room",
+    "action": "east",
+    "seen_in_forward": 2
+  },
+  {
+    "src_node": "living room",
+    "dst_node": "driveway",
+    "action": "south",
+    "seen_in_forward": 3
+  }
+]

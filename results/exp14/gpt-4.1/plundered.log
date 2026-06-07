@@ -1,0 +1,25 @@
+# plundered  model=gpt-4.1  n_steps=24  (exp14 bootstrap-fixed)
+step   0 BOOTSTRAP seed current_loc='landing' (src missing, dst valid)
+step   1 MOVE 'landing' --[in]--> 'sleeping cupboard'
+step   2 MOVE 'sleeping cupboard' --[out]--> 'landing'
+step   3 MOVE 'landing' --[down]--> 'aft hold'
+step   4 MOVE 'aft hold' --[north]--> 'hold'
+step   5 MOVE 'hold' --[north]--> "crew's quarters"
+step   6 MOVE "crew's quarters" --[south]--> 'hold'
+step   7 MOVE 'hold' --[south]--> 'aft hold'
+step   8 MOVE 'aft hold' --[up]--> 'landing'
+step   9 MOVE 'landing' --[south]--> "captain's quarters"
+step  10 MOVE "captain's quarters" --[south]--> 'the ledge'
+step  11 MOVE 'the ledge' --[up]--> 'poop deck'
+step  12 MOVE 'poop deck' --[north]--> 'quarterdeck'
+step  13 MOVE 'quarterdeck' --[north]--> 'main deck'
+step  14 MOVE 'main deck' --[down]--> 'hold'
+step  15 MOVE 'hold' --[up]--> 'main deck'
+step  16 MOVE 'main deck' --[north]--> 'forecastle'
+step  17 MOVE 'forecastle' --[in]--> 'galley'
+step  18 MOVE 'galley' --[out]--> 'forecastle'
+step  19 MOVE 'forecastle' --[south]--> 'main deck'
+step  20 MOVE 'main deck' --[south]--> 'quarterdeck'
+step  21 MOVE 'quarterdeck' --[west]--> 'beach'
+step  22 MOVE 'beach' --[north]--> 'lawn'
+step  23 MOVE 'lawn' --[west]--> 'forest'

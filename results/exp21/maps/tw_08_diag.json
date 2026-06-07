@@ -1,0 +1,55 @@
+{
+  "buckets": {
+    "CORRECT": 4,
+    "WRONG_DIRECTION": 0,
+    "WRONG_DST": 0,
+    "SPURIOUS_PAIR": 0,
+    "HALLUCINATED_DST": 0,
+    "HALLUCINATED_SRC": 0
+  },
+  "samples": {
+    "CORRECT": [
+      {
+        "src_node": "bedchamber",
+        "dst_node": "basement",
+        "action": "east",
+        "step_num": 1,
+        "gt_src": "bedchamber",
+        "gt_dst": "basement"
+      },
+      {
+        "src_node": "basement",
+        "dst_node": "spare room",
+        "action": "south",
+        "step_num": 2,
+        "gt_src": "basement",
+        "gt_dst": "spare room"
+      },
+      {
+        "src_node": "spare room",
+        "dst_node": "basement",
+        "action": "north",
+        "step_num": 3,
+        "gt_src": "spare room",
+        "gt_dst": "basement"
+      },
+      {
+        "src_node": "basement",
+        "dst_node": "spare room",
+        "action": "south",
+        "step_num": 6,
+        "gt_src": "canteen",
+        "gt_dst": "sauna"
+      }
+    ],
+    "WRONG_DIRECTION": [],
+    "WRONG_DST": [],
+    "SPURIOUS_PAIR": [],
+    "HALLUCINATED_DST": [],
+    "HALLUCINATED_SRC": []
+  },
+  "n_gt_edges": 8,
+  "n_pred_edges": 4,
+  "gt_edge_recall": 0.375,
+  "gt_pair_recall": 0.375
+}

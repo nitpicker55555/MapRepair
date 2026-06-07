@@ -1,0 +1,18 @@
+{
+  "game": "balances",
+  "mode": "vc_only",
+  "model": "gpt-4.1-mini",
+  "num_conflicts": 25,
+  "iterations": 3,
+  "success": false,
+  "remaining_conflicts": 22,
+  "pre_edge_recall": 0.46153846153846156,
+  "pre_strict_direction_match": 0.46153846153846156,
+  "pre_edge_direction_accuracy": 1.0,
+  "post_edge_recall": 0.46153846153846156,
+  "post_strict_direction_match": 0.38461538461538464,
+  "post_permissive_direction_match": 0.6923076923076923,
+  "post_edge_direction_accuracy": 0.8333333333333334,
+  "edge_recall_delta": 0.0,
+  "strict_direction_delta": -0.07692307692307693
+}

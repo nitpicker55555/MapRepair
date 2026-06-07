@@ -1,0 +1,58 @@
+[
+  {
+    "src_node": "basement",
+    "dst_node": "bar",
+    "action": "north",
+    "step_num": 3,
+    "gt_src": "canteen",
+    "gt_dst": "shower"
+  },
+  {
+    "src_node": "bar",
+    "dst_node": "basement",
+    "action": "south",
+    "step_num": 7,
+    "gt_src": "playroom",
+    "gt_dst": "laundromat"
+  },
+  {
+    "src_node": "basement",
+    "dst_node": "bar",
+    "action": "north",
+    "step_num": 10,
+    "gt_src": "shower",
+    "gt_dst": "basement"
+  },
+  {
+    "src_node": "bar",
+    "dst_node": "basement",
+    "action": "south",
+    "step_num": 12,
+    "gt_src": "bar",
+    "gt_dst": "basement"
+  },
+  {
+    "src_node": "basement",
+    "dst_node": "bedroom",
+    "action": "east",
+    "step_num": 13,
+    "gt_src": "basement",
+    "gt_dst": "bedroom"
+  },
+  {
+    "src_node": "bedroom",
+    "dst_node": "sauna",
+    "action": "north",
+    "step_num": 14,
+    "gt_src": "bedroom",
+    "gt_dst": "sauna"
+  },
+  {
+    "src_node": "sauna",
+    "dst_node": "bedroom",
+    "action": "south",
+    "step_num": 15,
+    "gt_src": "sauna",
+    "gt_dst": "bedroom"
+  }
+]

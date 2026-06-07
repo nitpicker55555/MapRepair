@@ -1,0 +1,190 @@
+{
+  "game": "partyfoul",
+  "num_llm_edges": 6,
+  "num_gt_edges": 7,
+  "num_conflicts": 3,
+  "type_distribution": {
+    "direction": 2,
+    "topology": 1
+  },
+  "root_cause_distribution": {
+    "name_hallucination": 2,
+    "name_hallucination_caused_overlap": 1
+  },
+  "conflicts": [
+    {
+      "type": "direction",
+      "description": "node 'living room' has multiple outgoing edges labelled 'north'",
+      "involved_edges": [
+        [
+          "living room",
+          "den"
+        ],
+        [
+          "living room",
+          "darkness"
+        ]
+      ],
+      "involved_nodes": [
+        "living room",
+        "den",
+        "darkness"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "living room",
+            "den"
+          ],
+          "llm_dir": "north",
+          "in_gt": true,
+          "gt_dir": "north",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 9
+        },
+        {
+          "edge": [
+            "living room",
+            "darkness"
+          ],
+          "llm_dir": "north",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "dst_hallucinated",
+          "source_in_gt": true,
+          "target_in_gt": false,
+          "step": null
+        }
+      ],
+      "case_counts": {
+        "correct": 1,
+        "dst_hallucinated": 1
+      },
+      "root_cause": "name_hallucination"
+    },
+    {
+      "type": "direction",
+      "description": "node 'kitchen' has multiple outgoing edges labelled 'east'",
+      "involved_edges": [
+        [
+          "kitchen",
+          "den"
+        ],
+        [
+          "kitchen",
+          "darkness"
+        ]
+      ],
+      "involved_nodes": [
+        "kitchen",
+        "den",
+        "darkness"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "kitchen",
+            "den"
+          ],
+          "llm_dir": "east",
+          "in_gt": true,
+          "gt_dir": "east",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": null
+        },
+        {
+          "edge": [
+            "kitchen",
+            "darkness"
+          ],
+          "llm_dir": "east",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "dst_hallucinated",
+          "source_in_gt": true,
+          "target_in_gt": false,
+          "step": 36
+        }
+      ],
+      "case_counts": {
+        "correct": 1,
+        "dst_hallucinated": 1
+      },
+      "root_cause": "name_hallucination"
+    },
+    {
+      "type": "topology",
+      "description": "position (0, 0, 0) occupied by multiple rooms ['darkness', 'den']",
+      "involved_edges": [],
+      "involved_nodes": [
+        "darkness",
+        "den"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "kitchen",
+            "darkness"
+          ],
+          "llm_dir": "east",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "dst_hallucinated",
+          "source_in_gt": true,
+          "target_in_gt": false,
+          "step": 36
+        },
+        {
+          "edge": [
+            "darkness",
+            "living room"
+          ],
+          "llm_dir": "south",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "src_hallucinated",
+          "source_in_gt": false,
+          "target_in_gt": true,
+          "step": 41
+        },
+        {
+          "edge": [
+            "living room",
+            "den"
+          ],
+          "llm_dir": "north",
+          "in_gt": true,
+          "gt_dir": "north",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 9
+        },
+        {
+          "edge": [
+            "den",
+            "kitchen"
+          ],
+          "llm_dir": "west",
+          "in_gt": true,
+          "gt_dir": "west",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 12
+        }
+      ],
+      "case_counts": {
+        "dst_hallucinated": 1,
+        "src_hallucinated": 1,
+        "correct": 2
+      },
+      "root_cause": "name_hallucination_caused_overlap"
+    }
+  ],
+  "walkthrough_steps_available": 56
+}

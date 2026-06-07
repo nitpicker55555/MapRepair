@@ -1,0 +1,18 @@
+{
+  "game": "pentari",
+  "mode": "vc_only",
+  "model": "gpt-4.1-mini",
+  "num_conflicts": 5,
+  "iterations": 2,
+  "success": false,
+  "remaining_conflicts": 28,
+  "pre_edge_recall": 0.38461538461538464,
+  "pre_strict_direction_match": 0.38461538461538464,
+  "pre_edge_direction_accuracy": 1.0,
+  "post_edge_recall": 0.38461538461538464,
+  "post_strict_direction_match": 0.34615384615384615,
+  "post_permissive_direction_match": 0.6538461538461539,
+  "post_edge_direction_accuracy": 0.9,
+  "edge_recall_delta": 0.0,
+  "strict_direction_delta": -0.03846153846153849
+}

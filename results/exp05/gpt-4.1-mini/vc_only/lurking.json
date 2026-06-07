@@ -1,0 +1,15 @@
+{
+  "game": "lurking",
+  "mode": "vc_only",
+  "model": "gpt-4.1-mini",
+  "num_conflicts": 0,
+  "iterations": 0,
+  "success": true,
+  "pre_edge_recall": 0.4230769230769231,
+  "pre_strict_direction_match": 0.4230769230769231,
+  "post_edge_recall": 0.4230769230769231,
+  "post_strict_direction_match": 0.4230769230769231,
+  "post_permissive_direction_match": 0.8461538461538461,
+  "edge_recall_delta": 0.0,
+  "strict_direction_delta": 0.0
+}

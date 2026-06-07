@@ -1,0 +1,174 @@
+{
+  "games": [
+    {
+      "id": "tw_00",
+      "dataset": "textworld",
+      "label": "tw_00 \u00b7 5 rooms",
+      "n_rooms": 5,
+      "n_edges": 10,
+      "n_noise": 3,
+      "n_conflicts": 16,
+      "n_actions": 4,
+      "n_conflicts_after": 8
+    },
+    {
+      "id": "tw_01",
+      "dataset": "textworld",
+      "label": "tw_01 \u00b7 7 rooms",
+      "n_rooms": 7,
+      "n_edges": 16,
+      "n_noise": 4,
+      "n_conflicts": 21,
+      "n_actions": 6,
+      "n_conflicts_after": 11
+    },
+    {
+      "id": "tw_02",
+      "dataset": "textworld",
+      "label": "tw_02 \u00b7 9 rooms",
+      "n_rooms": 9,
+      "n_edges": 16,
+      "n_noise": 4,
+      "n_conflicts": 18,
+      "n_actions": 4,
+      "n_conflicts_after": 0
+    },
+    {
+      "id": "tw_03",
+      "dataset": "textworld",
+      "label": "tw_03 \u00b7 11 rooms",
+      "n_rooms": 11,
+      "n_edges": 22,
+      "n_noise": 9,
+      "n_conflicts": 28,
+      "n_actions": 8,
+      "n_conflicts_after": 0
+    },
+    {
+      "id": "tw_04",
+      "dataset": "textworld",
+      "label": "tw_04 \u00b7 5 rooms",
+      "n_rooms": 5,
+      "n_edges": 8,
+      "n_noise": 2,
+      "n_conflicts": 10,
+      "n_actions": 2,
+      "n_conflicts_after": 4
+    },
+    {
+      "id": "tw_05",
+      "dataset": "textworld",
+      "label": "tw_05 \u00b7 7 rooms",
+      "n_rooms": 7,
+      "n_edges": 14,
+      "n_noise": 3,
+      "n_conflicts": 22,
+      "n_actions": 3,
+      "n_conflicts_after": 0
+    },
+    {
+      "id": "tw_06",
+      "dataset": "textworld",
+      "label": "tw_06 \u00b7 9 rooms",
+      "n_rooms": 9,
+      "n_edges": 16,
+      "n_noise": 5,
+      "n_conflicts": 23,
+      "n_actions": 4,
+      "n_conflicts_after": 5
+    },
+    {
+      "id": "tw_07",
+      "dataset": "textworld",
+      "label": "tw_07 \u00b7 11 rooms",
+      "n_rooms": 11,
+      "n_edges": 24,
+      "n_noise": 17,
+      "n_conflicts": 31,
+      "n_actions": 10,
+      "n_conflicts_after": 13
+    },
+    {
+      "id": "tw_08",
+      "dataset": "textworld",
+      "label": "tw_08 \u00b7 5 rooms",
+      "n_rooms": 5,
+      "n_edges": 8,
+      "n_noise": 1,
+      "n_conflicts": 0,
+      "n_actions": 0,
+      "n_conflicts_after": 0
+    },
+    {
+      "id": "tw_09",
+      "dataset": "textworld",
+      "label": "tw_09 \u00b7 7 rooms",
+      "n_rooms": 7,
+      "n_edges": 14,
+      "n_noise": 3,
+      "n_conflicts": 15,
+      "n_actions": 2,
+      "n_conflicts_after": 0
+    },
+    {
+      "id": "zork1",
+      "dataset": "mango",
+      "label": "zork1 \u00b7 18 rooms \u00b7 29 GT edges",
+      "n_rooms": 18,
+      "n_edges": 29,
+      "n_llm_edges": 21,
+      "n_correct": 17,
+      "n_actions": 5
+    },
+    {
+      "id": "cutthroat",
+      "dataset": "mango",
+      "label": "cutthroat \u00b7 25 rooms \u00b7 49 GT edges",
+      "n_rooms": 25,
+      "n_edges": 49,
+      "n_llm_edges": 35,
+      "n_correct": 18,
+      "n_actions": 17
+    },
+    {
+      "id": "advent",
+      "dataset": "mango",
+      "label": "advent \u00b7 31 rooms \u00b7 51 GT edges",
+      "n_rooms": 31,
+      "n_edges": 51,
+      "n_llm_edges": 40,
+      "n_correct": 37,
+      "n_actions": 3
+    },
+    {
+      "id": "night",
+      "dataset": "mango",
+      "label": "night \u00b7 20 rooms \u00b7 32 GT edges",
+      "n_rooms": 20,
+      "n_edges": 32,
+      "n_llm_edges": 28,
+      "n_correct": 19,
+      "n_actions": 6
+    },
+    {
+      "id": "zork2",
+      "dataset": "mango",
+      "label": "zork2 \u00b7 22 rooms \u00b7 36 GT edges",
+      "n_rooms": 22,
+      "n_edges": 36,
+      "n_llm_edges": 32,
+      "n_correct": 25,
+      "n_actions": 4
+    },
+    {
+      "id": "ludicorp",
+      "dataset": "mango",
+      "label": "ludicorp \u00b7 23 rooms \u00b7 43 GT edges",
+      "n_rooms": 23,
+      "n_edges": 43,
+      "n_llm_edges": 35,
+      "n_correct": 32,
+      "n_actions": 3
+    }
+  ]
+}

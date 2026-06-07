@@ -1,0 +1,23 @@
+# gold  model=gpt-4.1  n_steps=22
+step   0 bad movement output: {'is_movement': True, 'src_node': None, 'dst_node': 'on a path in the forest', 'action': 'south', 'seen_in_forward': 0, 'current_location': 'on a path in the forest', 'reasoning': "The observation describes being on a path in the forest, which matches the canonical location 'on a path in the forest'."}
+step   1 bad movement output: {'is_movement': True, 'src_node': None, 'dst_node': 'at a fork in the path', 'action': 'west', 'seen_in_forward': 1, 'current_location': 'at a fork in the path', 'reasoning': "The observation explicitly states arrival at 'a fork in the path', which matches a canonical location."}
+step   2 bad movement output: {'is_movement': True, 'src_node': None, 'dst_node': 'in a clearing in the forest', 'action': 'north', 'seen_in_forward': 2, 'current_location': 'in a clearing in the forest', 'reasoning': "Observation begins with 'In a clearing in the forest', which matches the canonical location name."}
+step   3 bad movement output: {'is_movement': True, 'src_node': None, 'dst_node': 'on the porch', 'action': 'north', 'seen_in_forward': 3, 'current_location': 'on the porch', 'reasoning': "Observation begins with 'On the porch', which matches the canonical location 'on the porch'."}
+step   4 MOVE 'on the porch' --[south]--> 'in a clearing in the forest'
+step   5 MOVE 'in a clearing in the forest' --[west]--> 'in the garden'
+step   6 MOVE 'in the garden' --[north]--> 'in a small meadow'
+step   7 MOVE 'in a small meadow' --[south]--> 'in the garden'
+step   8 MOVE 'in the garden' --[east]--> 'in a clearing in the forest'
+step   9 MOVE 'in a clearing in the forest' --[south]--> 'at a fork in the path'
+step  10 MOVE 'at a fork in the path' --[east]--> 'on a path in the forest'
+step  11 MOVE 'on a path in the forest' --[north]--> 'in the enchanted forest'
+step  12 MOVE 'in the enchanted forest' --[in]--> 'in the potting shed'
+step  13 MOVE 'in the potting shed' --[out]--> 'in the garden'
+step  14 MOVE 'in the garden' --[north]--> 'in the pantry'
+step  15 MOVE 'in the pantry' --[south]--> 'in the kitchen'
+step  16 MOVE 'in the kitchen' --[east]--> 'in the hall'
+step  17 MOVE 'in the hall' --[up]--> 'in the bedroom'
+step  18 MOVE 'in the bedroom' --[down]--> 'in the hall'
+step  19 MOVE 'in the hall' --[north]--> 'in the sitting room'
+step  20 MOVE 'in the sitting room' --[south]--> 'in the hall'
+step  21 MOVE 'in the hall' --[west]--> 'in the kitchen'

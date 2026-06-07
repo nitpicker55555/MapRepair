@@ -1,0 +1,13 @@
+# library  model=gpt-4.1  n_steps=12
+step   0 bad movement output: {'is_movement': True, 'src_node': None, 'dst_node': 'ground floor stacks', 'action': 'west', 'seen_in_forward': 0, 'current_location': 'ground floor stacks', 'reasoning': "The observation explicitly names 'Ground Floor Stacks' as the room entered after moving west."}
+step   1 bad movement output: {'is_movement': True, 'src_node': None, 'dst_node': 'lobby', 'action': 'east', 'seen_in_forward': 1, 'current_location': 'lobby', 'reasoning': "The observation begins with 'Lobby', which matches a canonical location, so the player has moved east into the Lobby."}
+step   2 MOVE 'lobby' --[north]--> 'ground floor stairwell'
+step   3 MOVE 'ground floor stairwell' --[up]--> 'second floor stairwell'
+step   4 MOVE 'second floor stairwell' --[south]--> 'second floor stacks'
+step   5 MOVE 'second floor stacks' --[south]--> 'rare books room'
+step   6 MOVE 'rare books room' --[north]--> 'second floor stacks'
+step   7 MOVE 'second floor stacks' --[east]--> 'computer lab'
+step   8 MOVE 'computer lab' --[west]--> 'second floor stacks'
+step   9 MOVE 'second floor stacks' --[north]--> 'second floor stairwell'
+step  10 MOVE 'second floor stairwell' --[down]--> 'ground floor stairwell'
+step  11 MOVE 'ground floor stairwell' --[south]--> 'ground floor stacks'

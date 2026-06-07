@@ -1,0 +1,719 @@
+{
+  "id": "tw_03",
+  "dataset": "textworld",
+  "n_rooms": 11,
+  "n_edges": 22,
+  "rooms": [
+    {
+      "id": "bedchamber",
+      "label": "bedchamber",
+      "description": "Well, here we are in the bedchamber. You decide to start listing off everything you see in the room, as if you were in a text adventure. There is an opena closed passageway leading north. There is an opena closed hatch leading south."
+    },
+    {
+      "id": "canteen",
+      "label": "canteen",
+      "description": "Guess what, you are in the place we're calling the canteen. You don't like doors? Why not try going north, that entranceway is unguarded."
+    },
+    {
+      "id": "cellar",
+      "label": "cellar",
+      "description": "I am sorry to announce that you are now in the cellar. Okay, just remember what you're here to do, and everything will go great. There is an unblocked exit to the west."
+    },
+    {
+      "id": "cookery",
+      "label": "cookery",
+      "description": "You are in a cookery. It seems to be pretty standard here. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building. You can see a type 2 chest. The type 2 chest contains . There's something strange about this being here, but you can't put yo"
+    },
+    {
+      "id": "cookhouse",
+      "label": "cookhouse",
+      "description": "Wow! You're in a cookhouse. There is an opena closed passageway leading south. You need an unguarded exit? You should try going east. There is an unguarded exit to the north."
+    },
+    {
+      "id": "kitchenette",
+      "label": "kitchenette",
+      "description": "Fancy seeing you here. Here, by the way, being the kitchenette. There is an opena closed hatch leading north. You need an unblocked exit? You should try going east."
+    },
+    {
+      "id": "pantry",
+      "label": "pantry",
+      "description": "You arrive in a pantry. An usual one. You can barely contain your excitement. There is an exit to the east. Don't worry, it is unguarded. You need an unguarded exit? You should try going south."
+    },
+    {
+      "id": "parlor",
+      "label": "parlor",
+      "description": "You arrive in a parlor. A standard one. There is an exit to the north. Don't worry, it is unblocked. There is an unguarded exit to the west."
+    },
+    {
+      "id": "scullery",
+      "label": "scullery",
+      "description": "You're now in a scullery. You start to take note of what's in the room. There is an opena closed portal leading north. There is an opena closed gateway leading south."
+    },
+    {
+      "id": "shower",
+      "label": "shower",
+      "description": "You are in a shower. A typical kind of place. There is an opena closed gate leading east. You need an unguarded exit? You should try going south. You need an unguarded exit? You should try going west."
+    },
+    {
+      "id": "workshop",
+      "label": "workshop",
+      "description": "You are in a workshop. An usual kind of place. There is an opena closed gateway leading north. You don't like doors? Why not try going south, that entranceway is unguarded."
+    }
+  ],
+  "walkthrough": [],
+  "states": {
+    "gt": {
+      "edges": [
+        {
+          "src": "cookery",
+          "dst": "shower",
+          "dir": "west"
+        },
+        {
+          "src": "cookery",
+          "dst": "scullery",
+          "dir": "south"
+        },
+        {
+          "src": "shower",
+          "dst": "pantry",
+          "dir": "west"
+        },
+        {
+          "src": "shower",
+          "dst": "parlor",
+          "dir": "south"
+        },
+        {
+          "src": "shower",
+          "dst": "cookery",
+          "dir": "east"
+        },
+        {
+          "src": "scullery",
+          "dst": "workshop",
+          "dir": "south"
+        },
+        {
+          "src": "scullery",
+          "dst": "cookery",
+          "dir": "north"
+        },
+        {
+          "src": "pantry",
+          "dst": "cookhouse",
+          "dir": "south"
+        },
+        {
+          "src": "pantry",
+          "dst": "shower",
+          "dir": "east"
+        },
+        {
+          "src": "parlor",
+          "dst": "cookhouse",
+          "dir": "west"
+        },
+        {
+          "src": "parlor",
+          "dst": "shower",
+          "dir": "north"
+        },
+        {
+          "src": "cookhouse",
+          "dst": "bedchamber",
+          "dir": "south"
+        },
+        {
+          "src": "cookhouse",
+          "dst": "pantry",
+          "dir": "north"
+        },
+        {
+          "src": "cookhouse",
+          "dst": "parlor",
+          "dir": "east"
+        },
+        {
+          "src": "bedchamber",
+          "dst": "kitchenette",
+          "dir": "south"
+        },
+        {
+          "src": "bedchamber",
+          "dst": "cookhouse",
+          "dir": "north"
+        },
+        {
+          "src": "cellar",
+          "dst": "kitchenette",
+          "dir": "west"
+        },
+        {
+          "src": "kitchenette",
+          "dst": "bedchamber",
+          "dir": "north"
+        },
+        {
+          "src": "kitchenette",
+          "dst": "cellar",
+          "dir": "east"
+        },
+        {
+          "src": "canteen",
+          "dst": "workshop",
+          "dir": "north"
+        },
+        {
+          "src": "workshop",
+          "dst": "canteen",
+          "dir": "south"
+        },
+        {
+          "src": "workshop",
+          "dst": "scullery",
+          "dir": "north"
+        }
+      ]
+    },
+    "noised": {
+      "edges": [
+        {
+          "src": "cookery",
+          "dst": "scullery",
+          "dir": "west"
+        },
+        {
+          "src": "cookery",
+          "dst": "cookhouse",
+          "dir": "west"
+        },
+        {
+          "src": "scullery",
+          "dst": "cookery",
+          "dir": "east"
+        },
+        {
+          "src": "scullery",
+          "dst": "bedchamber",
+          "dir": "south"
+        },
+        {
+          "src": "scullery",
+          "dst": "pantry",
+          "dir": "west"
+        },
+        {
+          "src": "pantry",
+          "dst": "cookhouse",
+          "dir": "west"
+        },
+        {
+          "src": "pantry",
+          "dst": "scullery",
+          "dir": "east"
+        },
+        {
+          "src": "cookhouse",
+          "dst": "bedchamber",
+          "dir": "south"
+        },
+        {
+          "src": "cookhouse",
+          "dst": "pantry",
+          "dir": "north"
+        },
+        {
+          "src": "cookhouse",
+          "dst": "cookery",
+          "dir": "east"
+        },
+        {
+          "src": "cookhouse",
+          "dst": "scullery",
+          "dir": "south"
+        },
+        {
+          "src": "bedchamber",
+          "dst": "kitchenette",
+          "dir": "south"
+        },
+        {
+          "src": "bedchamber",
+          "dst": "cookhouse",
+          "dir": "north"
+        },
+        {
+          "src": "bedchamber",
+          "dst": "canteen",
+          "dir": "south"
+        },
+        {
+          "src": "bedchamber",
+          "dst": "scullery",
+          "dir": "north"
+        },
+        {
+          "src": "cellar",
+          "dst": "kitchenette",
+          "dir": "west"
+        },
+        {
+          "src": "cellar",
+          "dst": "bedchamber",
+          "dir": "west"
+        },
+        {
+          "src": "kitchenette",
+          "dst": "bedchamber",
+          "dir": "north"
+        },
+        {
+          "src": "kitchenette",
+          "dst": "cellar",
+          "dir": "east"
+        },
+        {
+          "src": "canteen",
+          "dst": "bedchamber",
+          "dir": "north"
+        }
+      ],
+      "noise_records": [
+        {
+          "type": "N5_collapse_fallback",
+          "src": "workshop",
+          "dst": "bedchamber",
+          "direction": null,
+          "note": "no prefix match available"
+        },
+        {
+          "type": "N5_collapse_fallback",
+          "src": "parlor",
+          "dst": "cookery",
+          "direction": null,
+          "note": "no prefix match available"
+        },
+        {
+          "type": "N6_duplicate",
+          "src": "scullery",
+          "dst": "pantry",
+          "direction": "west",
+          "note": ""
+        },
+        {
+          "type": "N6_duplicate",
+          "src": "scullery",
+          "dst": "cookery",
+          "direction": "east",
+          "note": ""
+        },
+        {
+          "type": "N6_duplicate",
+          "src": "cookery",
+          "dst": "scullery",
+          "direction": "west",
+          "note": ""
+        },
+        {
+          "type": "N6_duplicate",
+          "src": "pantry",
+          "dst": "scullery",
+          "direction": "east",
+          "note": ""
+        },
+        {
+          "type": "N1_direction",
+          "src": "cellar",
+          "dst": "bedchamber",
+          "direction": "west",
+          "note": ""
+        },
+        {
+          "type": "N1_direction",
+          "src": "cookhouse",
+          "dst": "scullery",
+          "direction": "south",
+          "note": ""
+        },
+        {
+          "type": "N2_topology",
+          "src": "pantry",
+          "dst": "cookhouse",
+          "direction": "west",
+          "note": ""
+        }
+      ],
+      "noise_summary": {
+        "N5_collapse_fallback": 2,
+        "N6_duplicate": 4,
+        "N1_direction": 2,
+        "N2_topology": 1
+      },
+      "conflicts": [
+        {
+          "type": "direction",
+          "severity": "high",
+          "description": "node 'cookery' has multiple outgoing edges labelled 'west'",
+          "edges": [
+            [
+              "cookery",
+              "scullery"
+            ],
+            [
+              "cookery",
+              "cookhouse"
+            ]
+          ]
+        },
+        {
+          "type": "direction",
+          "severity": "high",
+          "description": "node 'cookhouse' has multiple outgoing edges labelled 'south'",
+          "edges": [
+            [
+              "cookhouse",
+              "bedchamber"
+            ],
+            [
+              "cookhouse",
+              "scullery"
+            ]
+          ]
+        },
+        {
+          "type": "direction",
+          "severity": "high",
+          "description": "node 'bedchamber' has multiple outgoing edges labelled 'south'",
+          "edges": [
+            [
+              "bedchamber",
+              "kitchenette"
+            ],
+            [
+              "bedchamber",
+              "canteen"
+            ]
+          ]
+        },
+        {
+          "type": "direction",
+          "severity": "high",
+          "description": "node 'bedchamber' has multiple outgoing edges labelled 'north'",
+          "edges": [
+            [
+              "bedchamber",
+              "cookhouse"
+            ],
+            [
+              "bedchamber",
+              "scullery"
+            ]
+          ]
+        },
+        {
+          "type": "direction",
+          "severity": "high",
+          "description": "node 'cellar' has multiple outgoing edges labelled 'west'",
+          "edges": [
+            [
+              "cellar",
+              "kitchenette"
+            ],
+            [
+              "cellar",
+              "bedchamber"
+            ]
+          ]
+        },
+        {
+          "type": "topology",
+          "severity": "high",
+          "description": "reverse direction mismatch: pantry--[west]-->cookhouse but cookhouse--[north]-->pantry (expected east)",
+          "edges": [
+            [
+              "pantry",
+              "cookhouse"
+            ],
+            [
+              "cookhouse",
+              "pantry"
+            ]
+          ]
+        },
+        {
+          "type": "topology",
+          "severity": "high",
+          "description": "position (-4, -2, 0) occupied by multiple rooms ['bedchamber', 'canteen', 'kitchenette']",
+          "edges": []
+        },
+        {
+          "type": "topology",
+          "severity": "high",
+          "description": "position (-4, -1, 0) occupied by multiple rooms ['bedchamber', 'scullery']",
+          "edges": []
+        },
+        {
+          "type": "topology",
+          "severity": "high",
+          "description": "position (0, 0, 0) occupied by multiple rooms ['bedchamber', 'scullery']",
+          "edges": []
+        },
+        {
+          "type": "topology",
+          "severity": "high",
+          "description": "position (-2, -2, 0) occupied by multiple rooms ['bedchamber', 'canteen', 'kitchenette']",
+          "edges": []
+        },
+        {
+          "type": "topology",
+          "severity": "high",
+          "description": "position (0, -1, 0) occupied by multiple rooms ['bedchamber', 'canteen', 'kitchenette']",
+          "edges": []
+        },
+        {
+          "type": "topology",
+          "severity": "high",
+          "description": "position (-5, 0, 0) occupied by multiple rooms ['bedchamber', 'pantry', 'scullery']",
+          "edges": []
+        },
+        {
+          "type": "topology",
+          "severity": "high",
+          "description": "position (-2, 0, 0) occupied by multiple rooms ['bedchamber', 'cookhouse', 'scullery']",
+          "edges": []
+        },
+        {
+          "type": "topology",
+          "severity": "high",
+          "description": "position (-2, -1, 0) occupied by multiple rooms ['bedchamber', 'canteen', 'kitchenette']",
+          "edges": []
+        },
+        {
+          "type": "topology",
+          "severity": "high",
+          "description": "position (-4, 0, 0) occupied by multiple rooms ['cookhouse', 'scullery']",
+          "edges": []
+        },
+        {
+          "type": "topology",
+          "severity": "high",
+          "description": "position (-2, 1, 0) occupied by multiple rooms ['cookhouse', 'scullery']",
+          "edges": []
+        },
+        {
+          "type": "topology",
+          "severity": "high",
+          "description": "position (0, 1, 0) occupied by multiple rooms ['cookhouse', 'scullery']",
+          "edges": []
+        },
+        {
+          "type": "topology",
+          "severity": "high",
+          "description": "position (-4, 1, 0) occupied by multiple rooms ['cookery', 'pantry']",
+          "edges": []
+        },
+        {
+          "type": "topology",
+          "severity": "high",
+          "description": "position (-1, 1, 0) occupied by multiple rooms ['cookery', 'pantry']",
+          "edges": []
+        },
+        {
+          "type": "topology",
+          "severity": "high",
+          "description": "position (-3, 0, 0) occupied by multiple rooms ['cookery', 'pantry']",
+          "edges": []
+        },
+        {
+          "type": "naming",
+          "severity": "high",
+          "description": "node 'bedchamber' reachable at conflicting positions [(-5, 0, 0), (-4, -2, 0), (-4, -1, 0), (-2, -2, 0), (-2, -1, 0), (-2, 0, 0), (0, -1, 0), (0, 0, 0)]",
+          "edges": []
+        },
+        {
+          "type": "naming",
+          "severity": "high",
+          "description": "node 'kitchenette' reachable at conflicting positions [(-4, -2, 0), (-2, -2, 0), (-2, -1, 0), (0, -1, 0)]",
+          "edges": []
+        },
+        {
+          "type": "naming",
+          "severity": "high",
+          "description": "node 'cookhouse' reachable at conflicting positions [(-5, 1, 0), (-4, 0, 0), (-3, 2, 0), (-2, 0, 0), (-2, 1, 0), (0, 1, 0)]",
+          "edges": []
+        },
+        {
+          "type": "naming",
+          "severity": "high",
+          "description": "node 'canteen' reachable at conflicting positions [(-4, -2, 0), (-2, -2, 0), (-2, -1, 0), (0, -1, 0)]",
+          "edges": []
+        },
+        {
+          "type": "naming",
+          "severity": "high",
+          "description": "node 'scullery' reachable at conflicting positions [(-5, 0, 0), (-4, -1, 0), (-4, 0, 0), (-3, 1, 0), (-2, 0, 0), (-2, 1, 0), (-1, 2, 0), (0, 0, 0), (0, 1, 0)]",
+          "edges": []
+        },
+        {
+          "type": "naming",
+          "severity": "high",
+          "description": "node 'cookery' reachable at conflicting positions [(-4, 1, 0), (-3, -1, 0), (-3, 0, 0), (-1, 0, 0), (-1, 1, 0), (1, 1, 0)]",
+          "edges": []
+        },
+        {
+          "type": "naming",
+          "severity": "high",
+          "description": "node 'pantry' reachable at conflicting positions [(-5, -1, 0), (-5, 0, 0), (-5, 2, 0), (-4, 1, 0), (-3, 0, 0), (-2, 2, 0), (-1, 1, 0), (0, 2, 0)]",
+          "edges": []
+        },
+        {
+          "type": "naming",
+          "severity": "high",
+          "description": "node 'cellar' reachable at conflicting positions [(-3, -2, 0), (-1, -2, 0), (-1, -1, 0), (1, -1, 0)]",
+          "edges": []
+        }
+      ]
+    },
+    "repaired": {
+      "edges": [
+        {
+          "src": "cookery",
+          "dst": "cookhouse",
+          "dir": "west"
+        },
+        {
+          "src": "scullery",
+          "dst": "bedchamber",
+          "dir": "south"
+        },
+        {
+          "src": "scullery",
+          "dst": "pantry",
+          "dir": "west"
+        },
+        {
+          "src": "pantry",
+          "dst": "scullery",
+          "dir": "east"
+        },
+        {
+          "src": "cookhouse",
+          "dst": "pantry",
+          "dir": "north"
+        },
+        {
+          "src": "cookhouse",
+          "dst": "cookery",
+          "dir": "east"
+        },
+        {
+          "src": "cookhouse",
+          "dst": "scullery",
+          "dir": "south"
+        },
+        {
+          "src": "bedchamber",
+          "dst": "scullery",
+          "dir": "north"
+        },
+        {
+          "src": "cellar",
+          "dst": "kitchenette",
+          "dir": "west"
+        },
+        {
+          "src": "kitchenette",
+          "dst": "bedchamber",
+          "dir": "north"
+        },
+        {
+          "src": "kitchenette",
+          "dst": "cellar",
+          "dir": "east"
+        },
+        {
+          "src": "canteen",
+          "dst": "bedchamber",
+          "dir": "north"
+        }
+      ],
+      "actions": [
+        {
+          "kind": "remove_edge",
+          "target": [
+            "cookhouse",
+            "bedchamber"
+          ],
+          "new_dir": null,
+          "reason": "remove fallback"
+        },
+        {
+          "kind": "remove_edge",
+          "target": [
+            "bedchamber",
+            "cookhouse"
+          ],
+          "new_dir": null,
+          "reason": "remove fallback"
+        },
+        {
+          "kind": "remove_edge",
+          "target": [
+            "bedchamber",
+            "canteen"
+          ],
+          "new_dir": null,
+          "reason": "remove fallback"
+        },
+        {
+          "kind": "remove_edge",
+          "target": [
+            "cellar",
+            "bedchamber"
+          ],
+          "new_dir": null,
+          "reason": "remove fallback"
+        },
+        {
+          "kind": "remove_edge",
+          "target": [
+            "cookery",
+            "scullery"
+          ],
+          "new_dir": null,
+          "reason": "remove fallback"
+        },
+        {
+          "kind": "remove_edge",
+          "target": [
+            "pantry",
+            "cookhouse"
+          ],
+          "new_dir": null,
+          "reason": "remove fallback"
+        },
+        {
+          "kind": "remove_edge",
+          "target": [
+            "bedchamber",
+            "kitchenette"
+          ],
+          "new_dir": null,
+          "reason": "remove fallback"
+        },
+        {
+          "kind": "remove_edge",
+          "target": [
+            "scullery",
+            "cookery"
+          ],
+          "new_dir": null,
+          "reason": "remove fallback"
+        }
+      ],
+      "n_conflicts_before": 28,
+      "n_conflicts_after": 0
+    }
+  }
+}

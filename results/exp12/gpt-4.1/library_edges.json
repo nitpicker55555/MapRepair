@@ -1,0 +1,62 @@
+[
+  {
+    "src_node": "lobby",
+    "dst_node": "ground floor stairwell",
+    "action": "north",
+    "seen_in_forward": 2
+  },
+  {
+    "src_node": "ground floor stairwell",
+    "dst_node": "second floor stairwell",
+    "action": "up",
+    "seen_in_forward": 3
+  },
+  {
+    "src_node": "second floor stairwell",
+    "dst_node": "second floor stacks",
+    "action": "south",
+    "seen_in_forward": 4
+  },
+  {
+    "src_node": "second floor stacks",
+    "dst_node": "rare books room",
+    "action": "south",
+    "seen_in_forward": 5
+  },
+  {
+    "src_node": "rare books room",
+    "dst_node": "second floor stacks",
+    "action": "north",
+    "seen_in_forward": 6
+  },
+  {
+    "src_node": "second floor stacks",
+    "dst_node": "computer lab",
+    "action": "east",
+    "seen_in_forward": 7
+  },
+  {
+    "src_node": "computer lab",
+    "dst_node": "second floor stacks",
+    "action": "west",
+    "seen_in_forward": 8
+  },
+  {
+    "src_node": "second floor stacks",
+    "dst_node": "second floor stairwell",
+    "action": "north",
+    "seen_in_forward": 9
+  },
+  {
+    "src_node": "second floor stairwell",
+    "dst_node": "ground floor stairwell",
+    "action": "down",
+    "seen_in_forward": 10
+  },
+  {
+    "src_node": "ground floor stairwell",
+    "dst_node": "ground floor stacks",
+    "action": "south",
+    "seen_in_forward": 11
+  }
+]

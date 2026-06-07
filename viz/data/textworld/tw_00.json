@@ -1,0 +1,388 @@
+{
+  "id": "tw_00",
+  "dataset": "textworld",
+  "n_rooms": 5,
+  "n_edges": 10,
+  "rooms": [
+    {
+      "id": "cookery",
+      "label": "cookery",
+      "description": "You've just sauntered into a cookery. You rest your hand against a wall, but you miss the wall and fall onto a chest. The chest contains . The chest is empty! This is the worst thing that could possibly happen, ever! There is an unguarded exit to the south."
+    },
+    {
+      "id": "cookhouse",
+      "label": "cookhouse",
+      "description": "You arrive in a cookhouse. A normal kind of place. You decide to just list off a complete list of everything you see in the room, because hey, why not? You need an unblocked exit? You should try going north. There is an exit to the west. Don't worry, it is unblocked."
+    },
+    {
+      "id": "dish-pit",
+      "label": "dish-pit",
+      "description": "You arrive in a dish-pit. A standard kind of place. You scan the room for a counter, and you find a counter! On the counter you can make out .But the thing hasn't got anything on it. You need an unblocked exit? You should try going east. You don't like doors? Why not try going north, that entrancewa"
+    },
+    {
+      "id": "spare room",
+      "label": "spare room",
+      "description": "You've just walked into a spare room. You see a cabinet. There's something strange about this being here, but you can't put your finger on it. The cabinet contains . The cabinet is empty! What a waste of a day! There is an unblocked exit to the east. There is an unguarded exit to the south."
+    },
+    {
+      "id": "studio",
+      "label": "studio",
+      "description": "Well I'll be, you are in the place we're calling the studio. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building. You can make out a case. The case contains . The case is empty, what a horrible day! There is an unguarded exit to the nort"
+    }
+  ],
+  "walkthrough": [],
+  "states": {
+    "gt": {
+      "edges": [
+        {
+          "src": "studio",
+          "dst": "spare room",
+          "dir": "west"
+        },
+        {
+          "src": "studio",
+          "dst": "cookhouse",
+          "dir": "south"
+        },
+        {
+          "src": "studio",
+          "dst": "cookery",
+          "dir": "north"
+        },
+        {
+          "src": "spare room",
+          "dst": "dish-pit",
+          "dir": "south"
+        },
+        {
+          "src": "spare room",
+          "dst": "studio",
+          "dir": "east"
+        },
+        {
+          "src": "cookhouse",
+          "dst": "dish-pit",
+          "dir": "west"
+        },
+        {
+          "src": "cookhouse",
+          "dst": "studio",
+          "dir": "north"
+        },
+        {
+          "src": "cookery",
+          "dst": "studio",
+          "dir": "south"
+        },
+        {
+          "src": "dish-pit",
+          "dst": "spare room",
+          "dir": "north"
+        },
+        {
+          "src": "dish-pit",
+          "dst": "cookhouse",
+          "dir": "east"
+        }
+      ]
+    },
+    "noised": {
+      "edges": [
+        {
+          "src": "studio",
+          "dst": "spare room",
+          "dir": "west"
+        },
+        {
+          "src": "studio",
+          "dst": "cookhouse",
+          "dir": "south"
+        },
+        {
+          "src": "studio",
+          "dst": "cookery",
+          "dir": "north"
+        },
+        {
+          "src": "spare room",
+          "dst": "studio",
+          "dir": "east"
+        },
+        {
+          "src": "spare room",
+          "dst": "cookery",
+          "dir": "south"
+        },
+        {
+          "src": "spare room",
+          "dst": "cookhouse",
+          "dir": "south"
+        },
+        {
+          "src": "cookhouse",
+          "dst": "studio",
+          "dir": "west"
+        },
+        {
+          "src": "cookhouse",
+          "dst": "cookery",
+          "dir": "west"
+        },
+        {
+          "src": "cookery",
+          "dst": "studio",
+          "dir": "south"
+        },
+        {
+          "src": "cookery",
+          "dst": "spare room",
+          "dir": "north"
+        },
+        {
+          "src": "cookery",
+          "dst": "cookhouse",
+          "dir": "east"
+        }
+      ],
+      "noise_records": [
+        {
+          "type": "N5_collapse_fallback",
+          "src": "dish-pit",
+          "dst": "cookery",
+          "direction": null,
+          "note": "no prefix match available"
+        },
+        {
+          "type": "N1_direction",
+          "src": "spare room",
+          "dst": "cookhouse",
+          "direction": "south",
+          "note": ""
+        },
+        {
+          "type": "N2_topology",
+          "src": "cookhouse",
+          "dst": "studio",
+          "direction": "west",
+          "note": ""
+        }
+      ],
+      "noise_summary": {
+        "N5_collapse_fallback": 1,
+        "N1_direction": 1,
+        "N2_topology": 1
+      },
+      "conflicts": [
+        {
+          "type": "direction",
+          "severity": "high",
+          "description": "node 'spare room' has multiple outgoing edges labelled 'south'",
+          "edges": [
+            [
+              "spare room",
+              "cookery"
+            ],
+            [
+              "spare room",
+              "cookhouse"
+            ]
+          ]
+        },
+        {
+          "type": "direction",
+          "severity": "high",
+          "description": "node 'cookhouse' has multiple outgoing edges labelled 'west'",
+          "edges": [
+            [
+              "cookhouse",
+              "studio"
+            ],
+            [
+              "cookhouse",
+              "cookery"
+            ]
+          ]
+        },
+        {
+          "type": "topology",
+          "severity": "high",
+          "description": "reverse direction mismatch: studio--[south]-->cookhouse but cookhouse--[west]-->studio (expected north)",
+          "edges": [
+            [
+              "studio",
+              "cookhouse"
+            ],
+            [
+              "cookhouse",
+              "studio"
+            ]
+          ]
+        },
+        {
+          "type": "topology",
+          "severity": "high",
+          "description": "position (-1, 0, 0) occupied by multiple rooms ['cookery', 'cookhouse', 'spare room', 'studio']",
+          "edges": []
+        },
+        {
+          "type": "topology",
+          "severity": "high",
+          "description": "position (-1, 1, 0) occupied by multiple rooms ['cookery', 'spare room']",
+          "edges": []
+        },
+        {
+          "type": "topology",
+          "severity": "high",
+          "description": "position (0, 1, 0) occupied by multiple rooms ['cookery', 'cookhouse', 'spare room', 'studio']",
+          "edges": []
+        },
+        {
+          "type": "topology",
+          "severity": "high",
+          "description": "position (0, 2, 0) occupied by multiple rooms ['cookery', 'spare room']",
+          "edges": []
+        },
+        {
+          "type": "topology",
+          "severity": "high",
+          "description": "position (0, 0, 0) occupied by multiple rooms ['cookery', 'cookhouse', 'studio']",
+          "edges": []
+        },
+        {
+          "type": "topology",
+          "severity": "high",
+          "description": "position (-1, -1, 0) occupied by multiple rooms ['cookery', 'cookhouse', 'spare room', 'studio']",
+          "edges": []
+        },
+        {
+          "type": "topology",
+          "severity": "high",
+          "description": "position (1, 1, 0) occupied by multiple rooms ['cookhouse', 'studio']",
+          "edges": []
+        },
+        {
+          "type": "topology",
+          "severity": "high",
+          "description": "position (1, 2, 0) occupied by multiple rooms ['cookhouse', 'studio']",
+          "edges": []
+        },
+        {
+          "type": "topology",
+          "severity": "high",
+          "description": "position (0, -1, 0) occupied by multiple rooms ['cookhouse', 'studio']",
+          "edges": []
+        },
+        {
+          "type": "naming",
+          "severity": "high",
+          "description": "node 'cookery' reachable at conflicting positions [(-1, -1, 0), (-1, 0, 0), (-1, 1, 0), (0, 0, 0), (0, 1, 0), (0, 2, 0)]",
+          "edges": []
+        },
+        {
+          "type": "naming",
+          "severity": "high",
+          "description": "node 'studio' reachable at conflicting positions [(-1, -1, 0), (-1, 0, 0), (0, -1, 0), (0, 0, 0), (0, 1, 0), (1, 1, 0), (1, 2, 0)]",
+          "edges": []
+        },
+        {
+          "type": "naming",
+          "severity": "high",
+          "description": "node 'spare room' reachable at conflicting positions [(-2, 0, 0), (-1, -1, 0), (-1, 0, 0), (-1, 1, 0), (0, 1, 0), (0, 2, 0), (0, 3, 0)]",
+          "edges": []
+        },
+        {
+          "type": "naming",
+          "severity": "high",
+          "description": "node 'cookhouse' reachable at conflicting positions [(-1, -1, 0), (-1, 0, 0), (0, -2, 0), (0, -1, 0), (0, 0, 0), (0, 1, 0), (1, 0, 0), (1, 1, 0), (1, 2, 0)]",
+          "edges": []
+        }
+      ]
+    },
+    "repaired": {
+      "edges": [
+        {
+          "src": "studio",
+          "dst": "spare room",
+          "dir": "west"
+        },
+        {
+          "src": "studio",
+          "dst": "cookery",
+          "dir": "north"
+        },
+        {
+          "src": "spare room",
+          "dst": "studio",
+          "dir": "east"
+        },
+        {
+          "src": "spare room",
+          "dst": "cookhouse",
+          "dir": "south"
+        },
+        {
+          "src": "cookhouse",
+          "dst": "studio",
+          "dir": "north"
+        },
+        {
+          "src": "cookhouse",
+          "dst": "cookery",
+          "dir": "west"
+        },
+        {
+          "src": "cookery",
+          "dst": "studio",
+          "dir": "south"
+        },
+        {
+          "src": "cookery",
+          "dst": "spare room",
+          "dir": "north"
+        },
+        {
+          "src": "cookery",
+          "dst": "cookhouse",
+          "dir": "east"
+        }
+      ],
+      "actions": [
+        {
+          "kind": "remove_edge",
+          "target": [
+            "studio",
+            "cookhouse"
+          ],
+          "new_dir": null,
+          "reason": "remove fallback"
+        },
+        {
+          "kind": "remove_edge",
+          "target": [
+            "spare room",
+            "cookery"
+          ],
+          "new_dir": null,
+          "reason": "remove fallback"
+        },
+        {
+          "kind": "modify_edge",
+          "target": [
+            "cookhouse",
+            "studio"
+          ],
+          "new_dir": "north",
+          "reason": "rotate to free direction north"
+        },
+        {
+          "kind": "skip",
+          "target": null,
+          "new_dir": null,
+          "reason": "exhausted candidates"
+        }
+      ],
+      "n_conflicts_before": 16,
+      "n_conflicts_after": 8
+    }
+  }
+}

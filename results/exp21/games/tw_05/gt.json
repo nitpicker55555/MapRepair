@@ -1,0 +1,139 @@
+{
+  "rooms": {
+    "r_0": {
+      "id": "r_0",
+      "name": "sauna"
+    },
+    "r_4": {
+      "id": "r_4",
+      "name": "basement"
+    },
+    "r_2": {
+      "id": "r_2",
+      "name": "lounge"
+    },
+    "r_1": {
+      "id": "r_1",
+      "name": "cookhouse"
+    },
+    "r_3": {
+      "id": "r_3",
+      "name": "kitchenette"
+    },
+    "r_5": {
+      "id": "r_5",
+      "name": "workshop"
+    },
+    "r_6": {
+      "id": "r_6",
+      "name": "recreation zone"
+    }
+  },
+  "edges": [
+    {
+      "src_name": "sauna",
+      "dst_name": "basement",
+      "src_id": "r_0",
+      "dst_id": "r_4",
+      "direction": "west"
+    },
+    {
+      "src_name": "sauna",
+      "dst_name": "cookhouse",
+      "src_id": "r_0",
+      "dst_id": "r_1",
+      "direction": "north"
+    },
+    {
+      "src_name": "sauna",
+      "dst_name": "kitchenette",
+      "src_id": "r_0",
+      "dst_id": "r_3",
+      "direction": "east"
+    },
+    {
+      "src_name": "basement",
+      "dst_name": "workshop",
+      "src_id": "r_4",
+      "dst_id": "r_5",
+      "direction": "south"
+    },
+    {
+      "src_name": "basement",
+      "dst_name": "recreation zone",
+      "src_id": "r_4",
+      "dst_id": "r_6",
+      "direction": "north"
+    },
+    {
+      "src_name": "basement",
+      "dst_name": "sauna",
+      "src_id": "r_4",
+      "dst_id": "r_0",
+      "direction": "east"
+    },
+    {
+      "src_name": "lounge",
+      "dst_name": "cookhouse",
+      "src_id": "r_2",
+      "dst_id": "r_1",
+      "direction": "west"
+    },
+    {
+      "src_name": "lounge",
+      "dst_name": "kitchenette",
+      "src_id": "r_2",
+      "dst_id": "r_3",
+      "direction": "south"
+    },
+    {
+      "src_name": "cookhouse",
+      "dst_name": "sauna",
+      "src_id": "r_1",
+      "dst_id": "r_0",
+      "direction": "south"
+    },
+    {
+      "src_name": "cookhouse",
+      "dst_name": "lounge",
+      "src_id": "r_1",
+      "dst_id": "r_2",
+      "direction": "east"
+    },
+    {
+      "src_name": "kitchenette",
+      "dst_name": "sauna",
+      "src_id": "r_3",
+      "dst_id": "r_0",
+      "direction": "west"
+    },
+    {
+      "src_name": "kitchenette",
+      "dst_name": "lounge",
+      "src_id": "r_3",
+      "dst_id": "r_2",
+      "direction": "north"
+    },
+    {
+      "src_name": "workshop",
+      "dst_name": "basement",
+      "src_id": "r_5",
+      "dst_id": "r_4",
+      "direction": "north"
+    },
+    {
+      "src_name": "recreation zone",
+      "dst_name": "basement",
+      "src_id": "r_6",
+      "dst_id": "r_4",
+      "direction": "south"
+    }
+  ],
+  "n_rooms": 7,
+  "n_edges": 14,
+  "walkthrough": [
+    "go west",
+    "go south",
+    "take broom from shelf"
+  ]
+}

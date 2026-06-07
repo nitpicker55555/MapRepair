@@ -1,0 +1,27 @@
+# ballyhoo  model=gpt-4.1  n_steps=26
+step   0 bad movement output: {'is_movement': True, 'src_node': None, 'dst_node': 'connection', 'action': 'south', 'seen_in_forward': 0, 'current_location': 'connection', 'reasoning': "Observation names the room as 'Connection', matching the canonical list; action is 'south', indicating movement."}
+step   1 bad movement output: {'is_movement': True, 'src_node': None, 'dst_node': 'beside the big top', 'action': 'west', 'seen_in_forward': 1, 'current_location': 'beside the big top', 'reasoning': "Observation heading matches canonical location 'beside the big top'."}
+step   2 bad movement output: {'is_movement': True, 'src_node': None, 'dst_node': 'back yard', 'action': 'south', 'seen_in_forward': 2, 'current_location': 'back yard', 'reasoning': "The observation begins with 'Back Yard', which matches the canonical location 'back yard', indicating arrival in that room after moving south."}
+step   3 MOVE 'back yard' --[west]--> 'inside prop tent'
+step   4 MOVE 'inside prop tent' --[east]--> 'back yard'
+step   5 MOVE 'back yard' --[east]--> 'near white wagon'
+step   6 MOVE 'near white wagon' --[north]--> 'connection'
+step   7 MOVE 'connection' --[north]--> 'in the wings'
+step   8 MOVE 'in the wings' --[north]--> 'performance ring'
+step   9 MOVE 'performance ring' --[up]--> 'platform (west side)'
+step  10 MOVE 'platform (west side)' --[east]--> 'on the tightrope'
+step  11 MOVE 'on the tightrope' --[east]--> 'platform (east side)'
+step  12 MOVE 'platform (east side)' --[west]--> 'on the tightrope'
+step  13 MOVE 'on the tightrope' --[west]--> 'platform (west side)'
+step  14 MOVE 'platform (west side)' --[down]--> 'performance ring'
+step  15 MOVE 'performance ring' --[south]--> 'in the wings'
+step  16 MOVE 'in the wings' --[south]--> 'camp, east'
+step  17 MOVE 'camp, east' --[west]--> 'camp, west'
+step  18 MOVE 'camp, west' --[south]--> 'clown alley'
+step  19 MOVE 'clown alley' --[north]--> 'beside the big top'
+step  20 MOVE 'beside the big top' --[east]--> 'connection'
+step  21 MOVE 'connection' --[northeast]--> 'under the bleachers'
+step  22 MOVE 'under the bleachers' --[southwest]--> 'in the wings'
+step  23 MOVE 'in the wings' --[east]--> 'midway entrance'
+step  24 MOVE 'midway entrance' --[south]--> 'menagerie'
+step  25 MOVE 'menagerie' --[southeast]--> 'menagerie nook'

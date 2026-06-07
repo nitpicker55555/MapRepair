@@ -1,0 +1,25 @@
+===========
+==>STEP NUM: 0
+==>ACT: south
+==>OBSERVATION: Bathroom
+This is a far from luxurious but still quite functional bathroom, with a sink, toilet and shower. The bedroom lies to the north.
+===========
+==>STEP NUM: 1
+==>ACT: north
+==>OBSERVATION: Bedroom
+This bedroom is extremely spare, with dirty laundry scattered haphazardly all over the floor. Cleaner clothing can be found in the dresser. A bathroom lies to the south, while a door to the east leads to the living room.
+
+On the end table are a telephone, a wallet and some keys.
+===========
+==>STEP NUM: 2
+==>ACT: east
+==>OBSERVATION: Living room
+The furniture isn't as carefully arranged as one might like, and it's a bit lacking in the luxuries that might make this a more pleasant place to spend an evening - no stereo, no TV, no DVD, none of that - but this living room is still nicer than most of those in this neighborhood. A kitchenette lies to the east, the bedroom to the west and the front door to the south.
+===========
+==>STEP NUM: 3
+==>ACT: south
+==>OBSERVATION: Driveway
+This is quite a seedy neighborhood, but there isn't really anywhere in the whole Las Mesas metro area that isn't at least a little rundown. Of course, the locals may complain about the ugliness and the crime, but the fact is that a starter home like this one would cost easily five times as much in someplace like Las Playas - and that's if you could find one.
+
+The house lies to the north. A car is parked here in the driveway.
+===========

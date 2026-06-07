@@ -1,0 +1,640 @@
+===========
+==>STEP NUM: 0
+==>ACT: south
+==>OBSERVATION: Post Office
+This is the lobby of the Festeron Post Office. The walls are lined with small, private mailboxes and wanted posters. A service counter runs along the entire length of the room.
+
+Your boss, Mr. Crisp, is behind the service counter reading other people's postcards.
+
+Mr. Crisp hides the postcards away as you enter. "Where have you been?" he barks angrily. "Daydreaming again, eh? I've been looking everywhere for you!"
+
+(Your score just went up by 1 point! Your total score is 1 out of 100.)
+
+What next?
+===========
+==>STEP NUM: 1
+==>ACT: north
+==>OBSERVATION: As you leave the Post Office, somebody slams and locks the door behind you.
+
+Hilltop
+
+What next?
+===========
+==>STEP NUM: 2
+==>ACT: west
+==>OBSERVATION: Outside Cemetery
+You're standing next to an open iron gate that leads west into the Festeron Cemetery. A road runs east to the top of Post Office Hill.
+
+What next?
+===========
+==>STEP NUM: 3
+==>ACT: west
+==>OBSERVATION: The cemetery is a fearful place. Are you sure you want to go in there?
+
+(Please type YES or NO.)
+===========
+==>STEP NUM: 4
+==>ACT: north
+==>OBSERVATION: Spooky Copse
+A copse of willow trees makes this part of the cemetery look really spooky. Narrow lanes wander south and west.
+
+There's an open grave nearby, freshly dug, with a tombstone erected next to it.
+
+An old gravedigger is resting under a willow tree.
+
+The gravedigger nods a greeting as you approach.
+
+What next?
+===========
+==>STEP NUM: 5
+==>ACT: west
+==>OBSERVATION: Twilight Glen
+The trees here are so thick, it's almost too dark to see! You can make out an open iron gate to the north, and a narrow lane between the tombstones winds off to the east.
+
+There must have been a burial here recently. Somebody left their umbrella leaning up against a tombstone.
+
+The gravedigger follows behind you. "What's your hurry?" he complains.
+
+Throwing a shovel over his shoulder, the gravedigger ambles through the iron gate and locks it. "Keep out of the cemetery after Dark," he tells you with a sly wink.
+
+You can hear him chuckling as he disappears to the north.
+
+What next?
+===========
+==>STEP NUM: 6
+==>ACT: east
+==>OBSERVATION: Spooky Copse
+
+What next?
+===========
+==>STEP NUM: 7
+==>ACT: down
+==>OBSERVATION: Open Grave
+You're at the bottom of an open grave, surrounded by six-foot walls of dirt.
+
+There's an old bone here.
+
+(You won't see the "What next?" prompt any more.)
+===========
+==>STEP NUM: 8
+==>ACT: up
+==>OBSERVATION: With great difficulty, you manage to climb out of the open grave.
+
+Spooky Copse
+===========
+==>STEP NUM: 9
+==>ACT: south
+==>OBSERVATION: Creepy Corner
+===========
+==>STEP NUM: 10
+==>ACT: east
+==>OBSERVATION: Whew! That cemetery sure is spooky.
+
+Outside Cemetery
+===========
+==>STEP NUM: 11
+==>ACT: east
+==>OBSERVATION: Hilltop
+===========
+==>STEP NUM: 12
+==>ACT: east
+==>OBSERVATION: Outside Cottage
+You're outside the cottage of Miss Voss, the town librarian. The road turns north toward the village, and bends upward to the summit of Post Office Hill.
+
+As you approach the cottage you are greeted by the tiniest poodle you've ever seen in your entire life. It charges across the street, yapping angrily and showing its sharp little teeth.
+
+You can smell the poodle's hot breath as it yaps.
+===========
+==>STEP NUM: 13
+==>ACT: north
+==>OBSERVATION: The poodle yaps a threat as you back away.
+
+Rotary South
+This is the south side of the Festeron Rotary. A road branches south, towards Post Office Hill.
+
+The Festeron Public Library, famous for its museum of local historic artifacts, stands proudly on the nearby corner.
+
+Miss Voss, the town librarian, is locking the library door as you approach. "Just the person I was looking for!" she exclaims, smiling brightly.
+===========
+==>STEP NUM: 14
+==>ACT: north
+==>OBSERVATION: Park
+You're standing in a circular park, surrounded by the Festeron Rotary. Walks converge from four directions on a shallow marble fountain, filled with sparkling water.
+
+A statue stands in the middle of the fountain.
+===========
+==>STEP NUM: 15
+==>ACT: north
+==>OBSERVATION: Rotary North
+This is the northern side of the Festeron Rotary. A road leads north, towards the river.
+
+On the corner stands a quaint village church. Its little white steeple is straight out of a country postcard. The church door stands invitingly open.
+===========
+==>STEP NUM: 16
+==>ACT: north
+==>OBSERVATION: South of Bridge
+This is the south side of a covered bridge that spans the Festeron River. Paths lead off to the east and west, and a road leads south to the village.
+===========
+==>STEP NUM: 17
+==>ACT: north
+==>OBSERVATION: Bridge
+You're on a covered bridge that spans the Festeron River. A sign hangs on an arch overhead.
+===========
+==>STEP NUM: 18
+==>ACT: north
+==>OBSERVATION: North of Bridge
+This is the north side of the Festeron Bridge. Sheer cliff walls rise abruptly to the north and west. A path wanders east along the shore of the river.
+===========
+==>STEP NUM: 19
+==>ACT: east
+==>OBSERVATION: Cliff Bottom
+You're at the bottom of a cliff that rises up from the north bank of the river. A steep trail winds upward.
+
+A gnarled tree trunk stands nearby, a lone branch its only adornment.
+===========
+==>STEP NUM: 20
+==>ACT: up
+==>OBSERVATION: (The trail you're climbing is narrow and twisty. It's a good idea to draw a map as you go up.)
+
+Steep Trail
+A steep, rocky trail winds west and downward.
+===========
+==>STEP NUM: 21
+==>ACT: west
+==>OBSERVATION: Steep Trail
+A steep, rocky trail winds north and east.
+===========
+==>STEP NUM: 22
+==>ACT: north
+==>OBSERVATION: Steep Trail
+A steep, rocky trail winds south and upward.
+===========
+==>STEP NUM: 23
+==>ACT: up
+==>OBSERVATION: Steep Trail
+A steep, rocky trail winds east and downward.
+===========
+==>STEP NUM: 24
+==>ACT: east
+==>OBSERVATION: Steep Trail
+A steep, rocky trail winds south and west.
+===========
+==>STEP NUM: 25
+==>ACT: south
+==>OBSERVATION: Steep Trail
+A steep, rocky trail winds north and upward.
+===========
+==>STEP NUM: 26
+==>ACT: up
+==>OBSERVATION: (Your score just went up by 1 point! Your total score is 15 out of 100.)
+
+Cliff Edge
+You're standing high on a rocky cliff, at the top of a steep trail leading downward. Looking southwest, you can see the shadow of Post Office Hill creeping across the village as the sun sinks into a bank of clouds.
+
+The peaceful scenery is disturbed by a tiny figure emerging from the distant Post Office. It stares in your direction for a few moments, checks its wrist and shakes a threatening little fist at you.
+
+A little old-fashioned store stands nearby. Its brightly painted shutters and thatched roof remind you of something out of a fairy tale. A curiously painted sign over the front door reads, "Ye Olde Magick Shoppe."
+===========
+==>STEP NUM: 27
+==>ACT: in
+==>OBSERVATION: Magick Shoppe
+You're in the front showroom of the Magick Shoppe.
+
+Every inch of wall space is crowded with magic tricks, puzzles and mystical paraphernalia. A glass case offers a selection of obscene jokes and naughty birthday cards.
+
+In the corner stands an ancient grandfather clock, its dial ornamented with a smiling crescent moon and other celestial symbols.
+
+The front door of the Magick Shoppe is wide open. At the west end of the room, you can see another exit concealed by a curtain.
+
+A sudden gust of wind slams the Magick Shoppe door closed. A concealed bell tinkles merrily.
+
+"Just a moment!" cries a voice behind the curtain.
+===========
+==>STEP NUM: 28
+==>ACT: down
+==>OBSERVATION: As you descend the trail you are immediately engulfed in...
+
+Fog
+You're lost in a thick cloud of fog.
+===========
+==>STEP NUM: 29
+==>ACT: north
+==>OBSERVATION: Fog
+You're lost in a thick cloud of fog.
+===========
+==>STEP NUM: 30
+==>ACT: west
+==>OBSERVATION: Fog
+You're lost in a thick cloud of fog.
+===========
+==>STEP NUM: 31
+==>ACT: down
+==>OBSERVATION: Fog
+You're lost in a thick cloud of fog.
+===========
+==>STEP NUM: 32
+==>ACT: south
+==>OBSERVATION: Fog
+You're lost in a thick cloud of fog.
+===========
+==>STEP NUM: 33
+==>ACT: east
+==>OBSERVATION: Fog
+You're lost in a thick cloud of fog.
+===========
+==>STEP NUM: 34
+==>ACT: down
+==>OBSERVATION: A sudden gust of wind dissolves the fog and clears your vision.
+
+Cliff Bottom
+You're at the bottom of a cliff that rises up from the north bank of the river.
+
+A gnarled tree trunk stands nearby, a lone branch its only adornment. A vulture perched on top is watching every move you make.
+===========
+==>STEP NUM: 35
+==>ACT: west
+==>OBSERVATION: North of Bridge
+This is the north side of the Witchville Bridge. Sheer cliff walls rise abruptly to the north and west. A path wanders east along the shore of the river.
+
+A rickety toll gate has been thrown up across the entrance to the covered bridge. A handpainted sign is nailed to the middle of the closed gate.
+
+Standing near the toll gate is an ugly, gnomelike creature. A less original story would probably refer to it as a troll.
+===========
+==>STEP NUM: 36
+==>ACT: south
+==>OBSERVATION: Bridge
+You're on a covered bridge that spans the Witchville River. A sign hangs on an arch overhead.
+===========
+==>STEP NUM: 37
+==>ACT: south
+==>OBSERVATION: South of Bridge
+This is the south side of a covered bridge that spans the Witchville River. Paths lead off to the east and west, and a road leads south to the village.
+===========
+==>STEP NUM: 38
+==>ACT: west
+==>OBSERVATION: River Outlet
+This is where the lake empties into the Witchville River. A road leads south along the edge of the lake, and bends east to follow the river bank. A narrow trail leads upward to the top of Lookout Hill.
+===========
+==>STEP NUM: 39
+==>ACT: south
+==>OBSERVATION: Lake Edge
+You're on the sandy shore of the lake. A road heads east towards the village, and another runs north along the edge of the lake. Looking south, you can see a closed iron gate leading into the Witchville Cemetery.
+
+Misty Island, its outline shrouded in fog, is visible far across the water.
+
+You can see a narrow pit near the edge of the lake. Animal tracks are visible in the sand next to the pit.
+===========
+==>STEP NUM: 40
+==>ACT: west
+==>OBSERVATION: Throne Room
+You're standing in a long, high-ceilinged chamber. Hundreds of platypuses are milling about with teacups in their paws, their faces illuminated by a roaring fireplace.
+
+At the far end of the chamber stands a mighty throne. It's occupied by a snow-white platypus with a gold crown on its head and a jeweled scepter in its paw. On the floor near the throne is another crowned platypus... the same one you rescued from the pit.
+
+The crowd falls silent as you enter.
+
+"Welcome, brave Adventurer," says the white platypus, rising from its throne to greet you. "I am Anatinus, King of Misty Island. My court thanks you most humbly for rescuing the life of my daughter, Princess Tasmania. Great would our sorrow have been if not for your cunning."
+
+The crowd applauds politely, and Princess Tasmania blushes.
+===========
+==>STEP NUM: 41
+==>ACT: south
+==>OBSERVATION: The cemetery is a spooky place, especially at night. Are you sure you want to go in there?
+
+(Please type YES or NO.)
+===========
+==>STEP NUM: 42
+==>ACT: east
+==>OBSERVATION: Spooky Copse
+A copse of willow trees makes this part of the cemetery look really spooky. Narrow lanes wander south and west.
+
+There's an open grave nearby, freshly dug, with a tombstone erected next to it.
+
+The luminous mists suddenly condense into a cloud of eldritch vapors! Circling like sharks, they stroke your face with ghostly fingers and whisper dreadful secrets into your ears.
+===========
+==>STEP NUM: 43
+==>ACT: down
+==>OBSERVATION: The eldritch vapors moan with disappointment as you escape their misty clutches.
+
+Open Grave
+You're at the bottom of an open grave, surrounded by six-foot walls of dirt. Luminous ribbons of mist are swarming overhead, and a dark hole is visible in the north wall.
+===========
+==>STEP NUM: 44
+==>ACT: north
+==>OBSERVATION: Underground
+You're in a dirty underground chamber. Long, smelly tunnels wander away to the north and east, and there's a dark hole in the south wall.
+===========
+==>STEP NUM: 45
+==>ACT: east
+==>OBSERVATION: Underground
+You're in a dark underground chamber. Long tunnels wander away to the north and west.
+
+A dark, narrow hole is visible overhead.
+===========
+==>STEP NUM: 46
+==>ACT: up
+==>OBSERVATION: With great effort, you manage to squeeze yourself into the hole.
+
+Jail Cell
+You're locked inside a damp, uncomfortable jail cell. Its thick steel door and stone walls offer little hope for escape.
+
+The only furnishing is a hard bunk in the middle of the floor with a thick blanket on it.
+
+There's a dark, narrow hole in the floor.
+===========
+==>STEP NUM: 47
+==>ACT: down
+==>OBSERVATION: With great effort, you manage to squeeze yourself into the hole.
+
+Underground
+
+You can see a violet note, a gold coin, a small stone and a wizard's hat here.
+===========
+==>STEP NUM: 48
+==>ACT: north
+==>OBSERVATION: Underground
+You're in a damp underground chamber. Cold tunnels wander away to the south, east and west.
+===========
+==>STEP NUM: 49
+==>ACT: east
+==>OBSERVATION: Grue's Nest
+You have stumbled into the nesting place of a family of grues. Congratulations. Few indeed are the adventurers who have entered a grue's nest and lived as long as you have.
+
+Everything is littered with rusty swords of elvish workmanship, piles of bones and other debris. A closed refrigerator stands in one corner of the nest, and something... a small, dangerous-looking little beast... is curled up in the other corner.
+
+The only exit is to the west. Hope you survive long enough to use it.
+
+Snoring fitfully, the little beast turns away from the light of the small stone and faces the wall.
+===========
+==>STEP NUM: 50
+==>ACT: west
+==>OBSERVATION: Underground
+===========
+==>STEP NUM: 51
+==>ACT: west
+==>OBSERVATION: Underground
+You're in a damp underground chamber. Cold, dark tunnels wander away to the south and east.
+
+The surrounding walls are almost obscured by the roots of a mighty tree. Overhead you can see the underside of a large stump. It appears to be hinged.
+===========
+==>STEP NUM: 52
+==>ACT: up
+==>OBSERVATION: Lookout Hill
+You're standing at the summit of a high, barren hill. Looking east, you can see Witchville Village nestled among the trees. A narrow trail winds down the north side of the hill, towards the river.
+
+Crowning the hill is the stump of what must have been a very large and majestic oak tree. An opening in the stump leads down into darkness.
+
+A horseshoe is lying in the grass near the stump.
+===========
+==>STEP NUM: 53
+==>ACT: north
+==>OBSERVATION: River Outlet
+===========
+==>STEP NUM: 54
+==>ACT: east
+==>OBSERVATION: South of Bridge
+===========
+==>STEP NUM: 55
+==>ACT: east
+==>OBSERVATION: Rocky Path
+You're on a rocky path that runs east and west along the banks of the Witchville River. A shimmering trail leads south into a dense forest.
+===========
+==>STEP NUM: 56
+==>ACT: south
+==>OBSERVATION: As you walk along the shimmering trail you feel a vague sense of disorientation, then a shock of recognition...
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+West of House
+You are standing in an open field west of a white house, with a boarded front door.
+
+There's a little mailbox here.
+===========
+==>STEP NUM: 57
+==>ACT: north
+==>OBSERVATION: As the house disappears into the distance, you get the distinct feeling that, someday, you will pass this way again.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Rocky Path
+===========
+==>STEP NUM: 58
+==>ACT: east
+==>OBSERVATION: Lighthouse
+This is where the river empties into Witchville Bay. A path leads west along the riverbank.
+
+A broken-down old lighthouse, barely ten feet high, stands on the shore nearby.
+
+Perched on top of the lighthouse is a pelican, watching you through half-closed eyelids.
+===========
+==>STEP NUM: 59
+==>ACT: west
+==>OBSERVATION: Rocky Path
+===========
+==>STEP NUM: 60
+==>ACT: west
+==>OBSERVATION: South of Bridge
+===========
+==>STEP NUM: 61
+==>ACT: south
+==>OBSERVATION: Rotary North
+This is the northern side of the Witchville Rotary. A road leads north, towards the river.
+
+On the corner stands a broken-down old church that looks as if it hasn't been used for years.
+
+You can hear the tramp of marching boots to the east.
+===========
+==>STEP NUM: 62
+==>ACT: south
+==>OBSERVATION: Park
+You're standing in a circular park, surrounded by the Witchville Rotary. Walks converge from four directions on a neglected marble fountain, filled with greasy water.
+
+A statue stands in the middle of the fountain.
+
+You can hear the tramp of marching boots to the west.
+===========
+==>STEP NUM: 63
+==>ACT: east
+==>OBSERVATION: Rotary East
+You're on the eastern side of the Witchville Rotary. A street branches off to the east, towards the bay.
+
+On the corner nearby stands a sleazy little movie theater. Showtimes and admission prices are listed on a schedule near the open entrance, and a marquee announces the current feature.
+
+Miss Voss, the former town librarian, is peering at you suspiciously.
+===========
+==>STEP NUM: 64
+==>ACT: in
+==>OBSERVATION: Theater Lobby
+You're standing in the lobby of the movie theater. A short corridor leads north into darkness. Sound effects and music can be heard drifting down the corridor.
+
+The gravedigger is standing near the corridor, a large cardboard carton at his feet.
+===========
+==>STEP NUM: 65
+==>ACT: north
+==>OBSERVATION: The gravedigger nods as you pass.
+
+Inside Theater
+This is a movie theater unlike any you've ever seen! The seats are wide, deep and comfortable. The aisles are spotless. The air is clear of smoke, and the screen is dramatically large. A chill goes up your spine as you realize how alien your universe has become.
+
+There's a noisy movie playing on the screen. A dark corridor leads out to the lobby.
+
+The picture on the screen is fuzzy and hard to watch.
+===========
+==>STEP NUM: 66
+==>ACT: out
+==>OBSERVATION: Theater Lobby
+===========
+==>STEP NUM: 67
+==>ACT: out
+==>OBSERVATION: Are you sure you want to leave the movie theater? The gravedigger might not let you in again without another ticket!
+
+(Please type YES or NO.)
+===========
+==>STEP NUM: 68
+==>ACT: east
+==>OBSERVATION: Pleasure Wharf
+You're standing near the remains of the Pleasure Wharf. The Wharf extends eastward into Witchville Bay.
+
+To the south stands a ramshackle old building. Colorful lights, curious electronic sounds and a neon sign beckon you through the open entrance.
+
+A big mailbox is nearby.
+
+A voice behind you growls, "Mail!" You turn to face the sound, but there's nobody here except you.
+===========
+==>STEP NUM: 69
+==>ACT: south
+==>OBSERVATION: Video Arcade
+This old building is the home of a sleazy arcade, lined with coin-op video games. The machines are crowded with half-crazed, stunted humanoids, who pay no attention to you as they satisfy their thirst for electric violence.
+
+One machine in the corner appears to be deserted.
+
+A sign on the wall says, "All Games One Token."
+===========
+==>STEP NUM: 70
+==>ACT: south
+==>OBSERVATION: Vestibule
+You're standing in a dimly-lit vestibule just inside the tower's entrance. The drawbridge is opened across the moat to the north. A short corridor leads south, into the tower.
+
+"Turn back, brave Adventurer!"
+
+You stare in horror at the platypus chained to the floor. It's Princess Tasmania!
+===========
+==>STEP NUM: 71
+==>ACT: up
+==>OBSERVATION: Round Chamber
+You're in a round chamber at the very heart of the tower. The clammy stone walls are hung with a series of paintings, all the same size and identically framed. Years of neglect have blackened the art almost beyond recognition.
+
+In the corner is an open hatch. Peering downward, you see a ladder descending into gloom.
+
+A corridor disappears to the north, and a damp stairway winds upward into the tower.
+===========
+==>STEP NUM: 72
+==>ACT: up
+==>OBSERVATION: Fuzziness
+Everything around you appears blurred and fuzzy.
+===========
+==>STEP NUM: 73
+==>ACT: down
+==>OBSERVATION: Fuzziness
+Everything around you appears blurry and blurred.
+===========
+==>STEP NUM: 74
+==>ACT: north
+==>OBSERVATION: Vestibule
+You're standing in a dimly-lit vestibule just inside the tower's entrance. The drawbridge is opened across the moat to the north. A short corridor leads south, into the tower.
+===========
+==>STEP NUM: 75
+==>ACT: north
+==>OBSERVATION: Hilltop
+
+The moment you take your foot off the drawbridge it swings up over the moat and closes with a mighty thud.
+===========
+==>STEP NUM: 76
+==>ACT: east
+==>OBSERVATION: Outside Cottage
+You're outside the cottage of Miss Voss, the former town librarian. The road turns north toward the village, and bends upward to the summit of Post Office Hill.
+
+As you approach the cottage you are greeted by the biggest hellhound you've ever seen in your entire life. It charges across the street, roaring angrily and showing its sharp, bloody fangs.
+
+You can smell the hellhound's hot breath as it roars.
+===========
+==>STEP NUM: 77
+==>ACT: in
+==>OBSERVATION: The hellhound thumps its big tail happily as you pass.
+
+Cottage
+This is the cottage of Miss Voss, the former town librarian. The walls are lined with timeworn books and dusty, faded photographs. Looks like nobody's lived here for a long time.
+
+There's a dusty bookcase with a steel key on it near the open front door. Somebody has scrawled a message in the dust on the bookcase.
+===========
+==>STEP NUM: 78
+==>ACT: out
+==>OBSERVATION: Outside Cottage
+
+A happy hellhound is thumping its tail nearby.
+
+You can hear the tramp of marching boots to the north.
+===========
+==>STEP NUM: 79
+==>ACT: north
+==>OBSERVATION: The hellhound thumps its big tail happily as you pass.
+
+Rotary South
+This is the south side of the Witchville Rotary. A road branches south, towards Post Office Hill.
+
+The Witchville Public Library, once famous for its museum of local historic artifacts, stands in a pitiful state of disrepair.
+
+You can hear the tramp of marching boots to the east.
+===========
+==>STEP NUM: 80
+==>ACT: in
+==>OBSERVATION: Circulation Desk
+You're standing before a large desk at the library entrance. The top of the desk is almost hidden under a clutter of books, all grey with dust.
+
+A dark corridor leads south into darkness. The library door stands invitingly open.
+===========
+==>STEP NUM: 81
+==>ACT: south
+==>OBSERVATION: Museum
+Formerly a popular tourist attraction, the old Festeron Museum is in a sorry state. Many of the best exhibits have been carted away; the few remaining are sorely in need of renovation.
+
+Fortunately, one of your childhood favorites is still intact. It's a pair of enormous fossil mailboxes, their metal bones locked together in a pose of eternal combat.
+
+There's a glass display case in the corner. You can see a sculpture in the case.
+===========

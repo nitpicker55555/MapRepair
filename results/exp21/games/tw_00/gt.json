@@ -1,0 +1,103 @@
+{
+  "rooms": {
+    "r_0": {
+      "id": "r_0",
+      "name": "studio"
+    },
+    "r_1": {
+      "id": "r_1",
+      "name": "spare room"
+    },
+    "r_2": {
+      "id": "r_2",
+      "name": "cookhouse"
+    },
+    "r_3": {
+      "id": "r_3",
+      "name": "dish-pit"
+    },
+    "r_4": {
+      "id": "r_4",
+      "name": "cookery"
+    }
+  },
+  "edges": [
+    {
+      "src_name": "studio",
+      "dst_name": "spare room",
+      "src_id": "r_0",
+      "dst_id": "r_1",
+      "direction": "west"
+    },
+    {
+      "src_name": "studio",
+      "dst_name": "cookhouse",
+      "src_id": "r_0",
+      "dst_id": "r_2",
+      "direction": "south"
+    },
+    {
+      "src_name": "studio",
+      "dst_name": "cookery",
+      "src_id": "r_0",
+      "dst_id": "r_4",
+      "direction": "north"
+    },
+    {
+      "src_name": "spare room",
+      "dst_name": "dish-pit",
+      "src_id": "r_1",
+      "dst_id": "r_3",
+      "direction": "south"
+    },
+    {
+      "src_name": "spare room",
+      "dst_name": "studio",
+      "src_id": "r_1",
+      "dst_id": "r_0",
+      "direction": "east"
+    },
+    {
+      "src_name": "cookhouse",
+      "dst_name": "dish-pit",
+      "src_id": "r_2",
+      "dst_id": "r_3",
+      "direction": "west"
+    },
+    {
+      "src_name": "cookhouse",
+      "dst_name": "studio",
+      "src_id": "r_2",
+      "dst_id": "r_0",
+      "direction": "north"
+    },
+    {
+      "src_name": "dish-pit",
+      "dst_name": "spare room",
+      "src_id": "r_3",
+      "dst_id": "r_1",
+      "direction": "north"
+    },
+    {
+      "src_name": "dish-pit",
+      "dst_name": "cookhouse",
+      "src_id": "r_3",
+      "dst_id": "r_2",
+      "direction": "east"
+    },
+    {
+      "src_name": "cookery",
+      "dst_name": "studio",
+      "src_id": "r_4",
+      "dst_id": "r_0",
+      "direction": "south"
+    }
+  ],
+  "n_rooms": 5,
+  "n_edges": 10,
+  "walkthrough": [
+    "go north",
+    "go east",
+    "close case"
+  ]
+}

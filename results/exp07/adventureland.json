@@ -1,0 +1,16 @@
+{
+  "game": "adventureland",
+  "num_conflicts": 36,
+  "iterations": 4,
+  "success": false,
+  "remaining_conflicts": 19,
+  "pre_edge_recall": 0.5555555555555556,
+  "pre_strict_direction_match": 0.5555555555555556,
+  "pre_edge_direction_accuracy": 1.0,
+  "post_edge_recall": 0.5555555555555556,
+  "post_strict_direction_match": 0.4444444444444444,
+  "post_permissive_direction_match": 0.6666666666666666,
+  "post_edge_direction_accuracy": 0.8,
+  "edge_recall_delta": 0.0,
+  "strict_direction_delta": -0.11111111111111116
+}

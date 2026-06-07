@@ -1,0 +1,42 @@
+# cutthroat  model=gpt-4.1  n_steps=41
+step   0 bad movement output: {'is_movement': True, 'src_node': None, 'dst_node': 'upstairs hallway', 'action': 'north', 'seen_in_forward': 0, 'current_location': 'upstairs hallway', 'reasoning': "Observation states 'Upstairs Hallway', which matches a canonical location; action is compass direction."}
+step   1 bad movement output: {'is_movement': True, 'src_node': None, 'dst_node': 'red boar inn', 'action': 'north', 'seen_in_forward': 1, 'current_location': 'red boar inn', 'reasoning': "The observation begins with 'Red Boar Inn', which matches the canonical location 'red boar inn'."}
+step   2 bad movement output: {'is_movement': True, 'src_node': None, 'dst_node': 'wharf road (end of east/west road)', 'action': 'north', 'seen_in_forward': 2, 'current_location': 'wharf road (end of east/west road)', 'reasoning': "Observation heading matches 'Wharf Road' and describes it as the end of the road, which matches the canonical 'wharf road (end of east/west road)'."}
+step   3 bad movement output: {'is_movement': True, 'src_node': None, 'dst_node': 'wharf road (north to mcginty salvage)', 'action': 'east', 'seen_in_forward': 3, 'current_location': 'wharf road (north to mcginty salvage)', 'reasoning': "Observation describes being on Wharf Road with McGinty Salvage to the south, matching the canonical location 'wharf road (north to mcginty salvage)'."}
+step   4 bad movement output: {'is_movement': True, 'src_node': None, 'dst_node': 'wharf road (north to outfitters international former warehouse)', 'action': 'east', 'seen_in_forward': 4, 'current_location': 'wharf road (north to outfitters international former warehouse)', 'reasoning': "Observation mentions the wharf starting to the north and the former site of Outfitters International's warehouse to the south, matching the canonical room 'wharf road (north to outfitters international former warehouse)'."}
+step   5 bad movement output: {'is_movement': True, 'src_node': None, 'dst_node': 'wharf road (east end of east/west road)', 'action': 'east', 'seen_in_forward': 5, 'current_location': 'wharf road (east end of east/west road)', 'reasoning': "Observation describes the east/west Wharf Road with Outfitters International to the south, matching 'wharf road (east end of east/west road)' in the canonical list."}
+step   6 bad movement output: {'is_movement': True, 'src_node': None, 'dst_node': 'wharf road (east end of east/west road)', 'action': 'east', 'seen_in_forward': 6, 'current_location': 'wharf road (east end of east/west road)', 'reasoning': "Observation states 'You're on the east end of Wharf Road', matching the canonical location 'wharf road (east end of east/west road)'."}
+step   7 bad movement output: {'is_movement': True, 'src_node': None, 'dst_node': 'the shanty', 'action': 'south', 'seen_in_forward': 7, 'current_location': 'the shanty', 'reasoning': "Observation begins with 'The Shanty', which matches a canonical location; action is a compass direction."}
+step   8 MOVE 'the shanty' --[north]--> 'wharf road (east end of east/west road)'
+step   9 MOVE 'wharf road (east end of east/west road)' --[west]--> 'wharf road (end of east/west road)'
+step  10 MOVE 'wharf road (end of east/west road)' --[west]--> 'wharf road (east end of east/west road)'
+step  11 MOVE 'wharf road (east end of east/west road)' --[south]--> 'vacant lot'
+step  12 MOVE 'vacant lot' --[south]--> 'back alley (south to vacant lot)'
+step  13 MOVE 'back alley (south to vacant lot)' --[west]--> 'back alley (west end of east/west alley)'
+step  14 MOVE 'back alley (west end of east/west alley)' --[west]--> 'back alley (west end of east/west alley)'
+step  15 MOVE 'back alley (west end of east/west alley)' --[east]--> 'back alley (east end of east/west alley)'
+step  16 MOVE 'back alley (east end of east/west alley)' --[east]--> 'back alley (behind outfitters international)'
+step  17 MOVE 'back alley (behind outfitters international)' --[east]--> 'back alley (behind outfitters international)'
+step  18 MOVE 'back alley (behind outfitters international)' --[east]--> 'back alley (east end of east/west alley)'
+step  19 MOVE 'back alley (east end of east/west alley)' --[northeast]--> 'ocean road (north end of north/south road)'
+step  20 MOVE 'ocean road (north end of north/south road)' --[south]--> 'ocean road (halfway of north/south road)'
+step  21 MOVE 'ocean road (halfway of north/south road)' --[south]--> 'ocean road (south end of north/south road)'
+step  22 MOVE 'ocean road (south end of north/south road)' --[southwest]--> 'shore road (east end of east/west road)'
+step  23 MOVE 'shore road (east end of east/west road)' --[west]--> 'shore road (west end of east/west road)'
+step  24 MOVE 'shore road (west end of east/west road)' --[west]--> 'ferry landing'
+step  25 MOVE 'ferry landing' --[east]--> 'shore road (west end of east/west road)'
+step  26 MOVE 'shore road (west end of east/west road)' --[east]--> 'shore road (east end of east/west road)'
+step  27 MOVE 'shore road (east end of east/west road)' --[north]--> "mariners' trust"
+step  28 MOVE "mariners' trust" --[south]--> 'shore road'
+step  29 MOVE 'shore road' --[northeast]--> 'ocean road (halfway of north/south road)'
+step  30 MOVE 'ocean road (halfway of north/south road)' --[north]--> 'ocean road (north end of north/south road)'
+step  31 MOVE 'ocean road (north end of north/south road)' --[northwest]--> 'back alley (west end of east/west alley)'
+step  32 MOVE 'back alley (west end of east/west alley)' --[west]--> 'back alley (behind outfitters international)'
+step  33 MOVE 'back alley (behind outfitters international)' --[west]--> 'back alley (west end of east/west alley)'
+step  34 MOVE 'back alley (west end of east/west alley)' --[north]--> 'vacant lot'
+step  35 MOVE 'vacant lot' --[north]--> 'wharf road (north to mcginty salvage)'
+step  36 MOVE 'wharf road (north to mcginty salvage)' --[west]--> 'wharf road (end of east/west road)'
+step  37 MOVE 'wharf road (end of east/west road)' --[west]--> 'wharf road (east end of east/west road)'
+step  38 MOVE 'wharf road (east end of east/west road)' --[southwest]--> 'winding road (start of southwest-ward road)'
+step  39 MOVE 'winding road (start of southwest-ward road)' --[southwest]--> 'winding road (north to swamp)'
+step  40 MOVE 'winding road (north to swamp)' --[northwest]--> 'winding road (end at lighthouse)'

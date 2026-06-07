@@ -1,0 +1,18 @@
+# zenon  model=gpt-4.1  n_steps=17
+step   0 bad movement output: {'is_movement': True, 'src_node': None, 'dst_node': 'landing', 'action': 'south', 'seen_in_forward': 0, 'current_location': 'landing', 'reasoning': "The observation begins with 'Landing', which matches the canonical location 'landing', indicating arrival in that room after moving south."}
+step   1 bad movement output: {'is_movement': True, 'src_node': None, 'dst_node': 'corridor(south into a room and west to old cell)', 'action': 'east', 'seen_in_forward': 1, 'current_location': 'corridor(south into a room and west to old cell)', 'reasoning': "Observation describes a corridor leading south into a room and west to old cell; matches canonical 'corridor(south into a room and west to old cell)'."}
+step   2 MOVE 'corridor(south into a room and west to old cell)' --[south]--> 'armoury'
+step   3 MOVE 'armoury' --[north]--> 'corridor(south into a room and west to old cell)'
+step   4 MOVE 'corridor(south into a room and west to old cell)' --[west]--> 'landing'
+step   5 MOVE 'landing' --[west]--> 'corridor(east old cell and stretches further west)'
+step   6 MOVE 'corridor(east old cell and stretches further west)' --[west]--> 'corridor(south into a room and west to old cell)'
+step   7 MOVE 'corridor(south into a room and west to old cell)' --[south]--> 'control room'
+step   8 MOVE 'control room' --[north]--> 'corridor(east to old cell and north to hall)'
+step   9 MOVE 'corridor(east to old cell and north to hall)' --[north]--> 'hall'
+step  10 MOVE 'hall' --[north]--> 'lift(up button and a door to north)'
+step  11 MOVE 'lift(up button and a door to north)' --[down]--> 'lift(down button and a door to south)'
+step  12 MOVE 'lift(down button and a door to south)' --[north]--> 'hallway'
+step  13 MOVE 'hallway' --[north]--> 'office'
+step  14 MOVE 'office' --[east]--> 'bar'
+step  15 MOVE 'bar' --[west]--> 'office'
+step  16 MOVE 'office' --[west]--> "officer's room"

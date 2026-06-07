@@ -1,0 +1,16 @@
+{
+  "game": "ludicorp",
+  "num_conflicts": 2,
+  "iterations": 2,
+  "success": true,
+  "remaining_conflicts": 0,
+  "pre_edge_recall": 0.4418604651162791,
+  "pre_strict_direction_match": 0.4418604651162791,
+  "pre_edge_direction_accuracy": 1.0,
+  "post_edge_recall": 0.4418604651162791,
+  "post_strict_direction_match": 0.3953488372093023,
+  "post_permissive_direction_match": 0.813953488372093,
+  "post_edge_direction_accuracy": 0.8947368421052632,
+  "edge_recall_delta": 0.0,
+  "strict_direction_delta": -0.04651162790697677
+}

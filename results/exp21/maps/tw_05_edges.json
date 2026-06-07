@@ -1,0 +1,74 @@
+[
+  {
+    "src_node": "cookhouse",
+    "dst_node": "sauna",
+    "action": "south",
+    "step_num": 1,
+    "gt_src": "basement",
+    "gt_dst": "workshop"
+  },
+  {
+    "src_node": "sauna",
+    "dst_node": "cookhouse",
+    "action": "north",
+    "step_num": 2,
+    "gt_src": "workshop",
+    "gt_dst": "basement"
+  },
+  {
+    "src_node": "cookhouse",
+    "dst_node": "sauna",
+    "action": "south",
+    "step_num": 4,
+    "gt_src": "recreation zone",
+    "gt_dst": "basement"
+  },
+  {
+    "src_node": "sauna",
+    "dst_node": "kitchenette",
+    "action": "east",
+    "step_num": 5,
+    "gt_src": "basement",
+    "gt_dst": "sauna"
+  },
+  {
+    "src_node": "kitchenette",
+    "dst_node": "lounge",
+    "action": "north",
+    "step_num": 6,
+    "gt_src": "sauna",
+    "gt_dst": "cookhouse"
+  },
+  {
+    "src_node": "lounge",
+    "dst_node": "kitchenette",
+    "action": "south",
+    "step_num": 8,
+    "gt_src": "lounge",
+    "gt_dst": "kitchenette"
+  },
+  {
+    "src_node": "kitchenette",
+    "dst_node": "lounge",
+    "action": "north",
+    "step_num": 9,
+    "gt_src": "kitchenette",
+    "gt_dst": "lounge"
+  },
+  {
+    "src_node": "lounge",
+    "dst_node": "cookhouse",
+    "action": "west",
+    "step_num": 10,
+    "gt_src": "lounge",
+    "gt_dst": "cookhouse"
+  },
+  {
+    "src_node": "cookhouse",
+    "dst_node": "sauna",
+    "action": "south",
+    "step_num": 11,
+    "gt_src": "cookhouse",
+    "gt_dst": "sauna"
+  }
+]

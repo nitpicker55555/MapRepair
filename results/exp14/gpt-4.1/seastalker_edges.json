@@ -1,0 +1,56 @@
+[
+  {
+    "src_node": "north part",
+    "dst_node": "east part",
+    "action": "east",
+    "seen_in_forward": 1
+  },
+  {
+    "src_node": "east part",
+    "dst_node": "corridor",
+    "action": "east",
+    "seen_in_forward": 2
+  },
+  {
+    "src_node": "corridor",
+    "dst_node": "kemp's office",
+    "action": "east",
+    "seen_in_forward": 3
+  },
+  {
+    "src_node": "kemp's office",
+    "dst_node": "corridor",
+    "action": "west",
+    "seen_in_forward": 4
+  },
+  {
+    "src_node": "corridor",
+    "dst_node": "east part",
+    "action": "west",
+    "seen_in_forward": 5
+  },
+  {
+    "src_node": "east part",
+    "dst_node": "south part",
+    "action": "south",
+    "seen_in_forward": 6
+  },
+  {
+    "src_node": "south part",
+    "dst_node": "north walkway",
+    "action": "south",
+    "seen_in_forward": 7
+  },
+  {
+    "src_node": "north walkway",
+    "dst_node": "scimitar",
+    "action": "south",
+    "seen_in_forward": 8
+  },
+  {
+    "src_node": "scimitar",
+    "dst_node": "north walkway",
+    "action": "exit",
+    "seen_in_forward": 9
+  }
+]

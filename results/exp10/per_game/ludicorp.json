@@ -1,0 +1,139 @@
+{
+  "game": "ludicorp",
+  "num_llm_edges": 22,
+  "num_gt_edges": 43,
+  "num_conflicts": 2,
+  "type_distribution": {
+    "topology": 2
+  },
+  "root_cause_distribution": {
+    "overlap_mixed": 1,
+    "name_hallucination_caused_overlap": 1
+  },
+  "conflicts": [
+    {
+      "type": "topology",
+      "description": "position (-1, 0, 0) occupied by multiple rooms ['corner of the carpark', 'maintanence stairwell (top)']",
+      "involved_edges": [],
+      "involved_nodes": [
+        "corner of the carpark",
+        "maintanence stairwell (top)"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "the main carpark",
+            "corner of the carpark"
+          ],
+          "llm_dir": "southeast",
+          "in_gt": true,
+          "gt_dir": "southeast",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 3
+        },
+        {
+          "edge": [
+            "corner of the carpark",
+            "car"
+          ],
+          "llm_dir": "in",
+          "in_gt": false,
+          "gt_dir": "out",
+          "case": "swapped_src_dst",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 6
+        },
+        {
+          "edge": [
+            "some bushes",
+            "maintanence stairwell (top)"
+          ],
+          "llm_dir": "south",
+          "in_gt": true,
+          "gt_dir": "south",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 37
+        },
+        {
+          "edge": [
+            "maintanence stairwell (top)",
+            "maintanence stairwell (bottom)"
+          ],
+          "llm_dir": "down",
+          "in_gt": true,
+          "gt_dir": "down",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 38
+        }
+      ],
+      "case_counts": {
+        "correct": 3,
+        "swapped_src_dst": 1
+      },
+      "root_cause": "overlap_mixed"
+    },
+    {
+      "type": "topology",
+      "description": "position (-4, 2, 0) occupied by multiple rooms ['bike shed', 'storeroom']",
+      "involved_edges": [],
+      "involved_nodes": [
+        "bike shed",
+        "storeroom"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "west of office",
+            "bike shed"
+          ],
+          "llm_dir": "west",
+          "in_gt": true,
+          "gt_dir": "west",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 53
+        },
+        {
+          "edge": [
+            "delivery bay",
+            "storeroom"
+          ],
+          "llm_dir": "north",
+          "in_gt": true,
+          "gt_dir": "north",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 64
+        },
+        {
+          "edge": [
+            "storeroom",
+            "west end"
+          ],
+          "llm_dir": "north",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "dst_hallucinated",
+          "source_in_gt": true,
+          "target_in_gt": false,
+          "step": 67
+        }
+      ],
+      "case_counts": {
+        "correct": 2,
+        "dst_hallucinated": 1
+      },
+      "root_cause": "name_hallucination_caused_overlap"
+    }
+  ],
+  "walkthrough_steps_available": 71
+}

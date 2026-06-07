@@ -1,0 +1,18 @@
+{
+  "game": "karn",
+  "mode": "baseline",
+  "model": "gpt-4.1-mini",
+  "num_conflicts": 51,
+  "iterations": 25,
+  "success": false,
+  "remaining_conflicts": 51,
+  "pre_edge_recall": 0.42424242424242425,
+  "pre_strict_direction_match": 0.3939393939393939,
+  "pre_edge_direction_accuracy": 0.9285714285714286,
+  "post_edge_recall": 0.42424242424242425,
+  "post_strict_direction_match": 0.36363636363636365,
+  "post_permissive_direction_match": 0.696969696969697,
+  "post_edge_direction_accuracy": 0.8571428571428571,
+  "edge_recall_delta": 0.0,
+  "strict_direction_delta": -0.030303030303030276
+}

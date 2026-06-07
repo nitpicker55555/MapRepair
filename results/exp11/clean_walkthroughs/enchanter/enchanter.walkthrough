@@ -1,0 +1,671 @@
+===========
+==>STEP NUM: 0
+==>ACT: northeast
+==>OBSERVATION: Outside of Shack
+You are south of an old wooden shack, apparently deserted. The trail extends from northeast to southwest here, circling the Lonely Mountain, which lies to the southeast.
+The sun is rising over the lands to the east.
+===========
+==>STEP NUM: 1
+==>ACT: northeast
+==>OBSERVATION: Trail
+The trail turns a corner here, bending out of sight to the southeast and southwest. The ground is higher here than to the south, allowing you to make out the top of the Lonely Mountain, shrouded in clouds. No path from here leads up the mountain, however.
+===========
+==>STEP NUM: 2
+==>ACT: southeast
+==>OBSERVATION: Trail Head
+You are on the northeast side of the Lonely Mountain, walking a narrow path through rolling hills. On one side of the path is a sign and behind that, to the northeast, a winding path through the thick undergrowth. The trail continues to the southeast.
+===========
+==>STEP NUM: 3
+==>ACT: northeast
+==>OBSERVATION: Shady Brook
+The trail ends here. A ruined stone foundation marks the site of the Old Lingolf House, which presumably was a monument of some sort. The trail head is off to the southwest, and a small brook flows slowly by.
+The sun has now risen above the hills.
+===========
+==>STEP NUM: 4
+==>ACT: southwest
+==>OBSERVATION: Trail Head
+===========
+==>STEP NUM: 5
+==>ACT: southeast
+==>OBSERVATION: Eastern Fork
+You are at a fork in the road where paths to the northwest and southwest girdle the base of the Lonely Mountain and a smaller path winds its way to the east.
+===========
+==>STEP NUM: 6
+==>ACT: southwest
+==>OBSERVATION: Village Outskirts
+You are on a road which enters a small village to the southwest and comes to a fork to the northeast. The Lonely Mountain looms above but there is no path from here which ascends the mountain.
+===========
+==>STEP NUM: 7
+==>ACT: southwest
+==>OBSERVATION: Deserted Village
+This is the castle's village. Formerly, peasants lived here, going to their farm plots each day. Merchants and artisans made it a center of cultural activity. But now it's deserted. Or almost: there is smoke rising from a particularly decrepit hovel to the south. A path travels through the village from southwest to northeast, heading towards the castle, and a less-used trail heads north up the mountain.
+===========
+==>STEP NUM: 8
+==>ACT: south
+==>OBSERVATION: It is dark and smoky in here, but this is a place of great disorder, and its odor is indescribable. A pile of rags sits near a small pot which is bubbling and steaming over a tiny fire. The pile of rags sports a gnarled hand which busies itself with the noisome stew. A closer look reveals a withered crone at the other end of the hand.
+
+The creature looks you over keenly and speaks: "I should have thought they would send someone more ... more ..." She laughs in an unsettling way. "They've all left! A great storm is brewing in the east, my friend, and all have fled before it!" She starts to chuckle. "Take this and begone!" With a wave of her hand, you find yourself reeling out of the door of the hovel, holding some sort of scroll in your hand.
+===========
+==>STEP NUM: 9
+==>ACT: northeast
+==>OBSERVATION: Village Outskirts
+===========
+==>STEP NUM: 10
+==>ACT: northeast
+==>OBSERVATION: Eastern Fork
+===========
+==>STEP NUM: 11
+==>ACT: east
+==>OBSERVATION: Western Road
+You are on an east-west road, which wends its way through the dark, rolling hills of this land. To the west rises a high mountain, to the east stands a high castle with dark towers.
+===========
+==>STEP NUM: 12
+==>ACT: east
+==>OBSERVATION: Outside Gate
+You are outside the western entrance to the castle. To the east stands an iron gate which is closed and chained. A winding road starts here and proceeds to the west.
+===========
+==>STEP NUM: 13
+==>ACT: east
+==>OBSERVATION: As you pass through the gate, you feel that your mind is being probed. After a moment, it is released or, perhaps, discarded as uninteresting.
+
+Inside Gate
+You are just inside what appears to be the main entrance to the castle. An iron gate, standing wide open, looms to the west. Through it, a narrow road can be seen winding through low, smoky hills. Before you, to the east, is a huge open courtyard. To the north and the south are archways leading to the interior of the castle.
+===========
+==>STEP NUM: 14
+==>ACT: north
+==>OBSERVATION: Pebbled Path
+You are on a long pebbled path, stretching out to the north. To the south the path continues through an open arch into an open area.
+===========
+==>STEP NUM: 15
+==>ACT: north
+==>OBSERVATION: Tower
+This is the base of the northwest tower of the castle. A winding staircase leads up into the tower itself, and passages lead from here to the east and south.
+===========
+==>STEP NUM: 16
+==>ACT: up
+==>OBSERVATION: Jewel Room
+This fabulous room commands a magnificent view of the Lonely Mountain which lies to the north and west. The room itself is filled with beautiful chests and cabinets which once contained precious jewels and other objets d'art. These are empty. Winding stone stairs lead down to the base of the tower.
+There is an ornamented egg here, both beautiful and complex. It is carefully crafted and bears further examination.
+===========
+==>STEP NUM: 17
+==>ACT: down
+==>OBSERVATION: Tower
+===========
+==>STEP NUM: 18
+==>ACT: east
+==>OBSERVATION: Hall of Mirrors One
+This is the western end of the Hall of Mirrors. The hall itself is astounding and not a little bit confusing. To be sure, its northern wall is glass, but it does not seem to reflect anything within the hall. Rather, it seems to be a window on another world. This other world appears to be a large underground labyrinth, filled with tunnels, caves, and peculiar rock formations.
+===========
+==>STEP NUM: 19
+==>ACT: east
+==>OBSERVATION: Hall of Mirrors Two
+This is a spot within the long Hall of Mirrors. The hall itself is astounding and not a little bit confusing. To be sure, its northern wall is glass, but it does not seem to reflect anything within the hall. Rather, it seems to be a window on another world. This other world appears to be a large underground labyrinth, filled with tunnels, caves, and peculiar rock formations.
+Your mouth is getting rather dry.
+===========
+==>STEP NUM: 20
+==>ACT: east
+==>OBSERVATION: Hall of Mirrors Three
+This is a spot within the long Hall of Mirrors. The hall itself is astounding and not a little bit confusing. To be sure, its northern wall is glass, but it does not seem to reflect anything within the hall. Rather, it seems to be a window on another world. This other world appears to be a large underground labyrinth, filled with tunnels, caves, and peculiar rock formations.
+===========
+==>STEP NUM: 21
+==>ACT: east
+==>OBSERVATION: Hall of Mirrors Four
+This is the eastern end of the Hall of Mirrors. The hall itself is astounding and not a little bit confusing. To be sure, its northern wall is glass, but it does not seem to reflect anything within the hall. Rather, it seems to be a window on another world. This other world appears to be a large underground labyrinth, filled with tunnels, caves, and peculiar rock formations.
+===========
+==>STEP NUM: 22
+==>ACT: east
+==>OBSERVATION: North Gate
+This small open area stands at the old north gate of the castle, now badly rusted. Through the gate, a forest can be seen. To the west, a hall glows with light, and to the south, the dark castle can be reentered. A narrow passage to the east leads to the base of the northeast tower.
+===========
+==>STEP NUM: 23
+==>ACT: north
+==>OBSERVATION: Forest
+You are in a dark forest, just north of a rusted gate. Except to the east and south, the forest is thick all around you.
+Discarded beneath a nearby tree is a slightly crumpled scroll.
+===========
+==>STEP NUM: 24
+==>ACT: east
+==>OBSERVATION: Swamp
+You are in a thick forest shading into a deep and miasmic swamp. The ground is very wet and boggy here, and footing is treacherous. Lily pads cover the surface of the water, and frogs abound. Things look drier to the west.
+The sounds of frogs and other swamp dwellers fill the air.
+===========
+==>STEP NUM: 25
+==>ACT: west
+==>OBSERVATION: Forest
+You are very thirsty now. You'd better have a drink soon.
+===========
+==>STEP NUM: 26
+==>ACT: south
+==>OBSERVATION: North Gate
+===========
+==>STEP NUM: 27
+==>ACT: south
+==>OBSERVATION: Library
+This is a library, or rather it was until it was ransacked and despoiled. Most of the contents of the room have been burned in a huge bonfire in the center of the room. Hundreds of charred and empty tubes are scattered about, as if by someone searching, so ashes are strewn about. There are rat tracks in the ashes.
+To the south you can hear the sound of a group of low, guttural voices.
+Amid the tubes is an old and dusty book.
+===========
+==>STEP NUM: 28
+==>ACT: north
+==>OBSERVATION: North Gate
+===========
+==>STEP NUM: 29
+==>ACT: west
+==>OBSERVATION: Hall of Mirrors Four
+===========
+==>STEP NUM: 30
+==>ACT: west
+==>OBSERVATION: Hall of Mirrors Three
+===========
+==>STEP NUM: 31
+==>ACT: west
+==>OBSERVATION: Hall of Mirrors Two
+===========
+==>STEP NUM: 32
+==>ACT: west
+==>OBSERVATION: Hall of Mirrors One
+===========
+==>STEP NUM: 33
+==>ACT: west
+==>OBSERVATION: Tower
+===========
+==>STEP NUM: 34
+==>ACT: south
+==>OBSERVATION: Pebbled Path
+===========
+==>STEP NUM: 35
+==>ACT: south
+==>OBSERVATION: Inside Gate
+The sun starts to set behind the Lonely Mountain in the west.
+===========
+==>STEP NUM: 36
+==>ACT: south
+==>OBSERVATION: West Hall
+This narrow promenade stretches into darkness to the south and, through an archway, toward an open area to the north.
+===========
+==>STEP NUM: 37
+==>ACT: south
+==>OBSERVATION: Tower
+This dark and damp spot is at the base of the southwest tower of the castle. Two corridors lead off to the north and east. A winding staircase ascends into the tower.
+===========
+==>STEP NUM: 38
+==>ACT: up
+==>OBSERVATION: Bedroom
+The eyrie is a round bedroom high in the tower. Narrow windows overlook the outside. A stone stairway leads down.
+The darkening sky is lit by a waning moon.
+There is a fourposter feather bed here.
+===========
+==>STEP NUM: 39
+==>ACT: down
+==>OBSERVATION: Tower
+===========
+==>STEP NUM: 40
+==>ACT: east
+==>OBSERVATION: South Hall
+The damp corridor continues east and west from here. A dark and forbidding stairway leads down to the south. In addition, a narrow passage leads to the north.
+A gaunt, feral-looking dog carrying a well-chewed bone approaches, is surprised by your presence, growls and then turns tail.
+===========
+==>STEP NUM: 41
+==>ACT: south
+==>OBSERVATION: Dungeon
+A dank and forgotten pit contains the dungeons. There is a cell to the north, and a partly blocked passage leads even deeper into the earth. It looks as if there was once a mortared stone wall blocking this passage, but it has crumbled and collapsed, reopening the tunnel.
+===========
+==>STEP NUM: 42
+==>ACT: north
+==>OBSERVATION: Cell
+This is a damp and unhealthy dungeon cell with writing on the walls. The rusty door of the cell is open.
+===========
+==>STEP NUM: 43
+==>ACT: east
+==>OBSERVATION: Secret Passage
+This is a crudely carved secret passage. It appears to have been hollowed out by (perhaps) generations of prisoners. A passage leads west. A short, crudely hewn passage leads up.
+Lying on the ground, and slightly damaged, is a stained scroll.
+Lying near the door is a silver spoon, discarded by the prisoners as too soft to dig with. It is only slightly worn.
+===========
+==>STEP NUM: 44
+==>ACT: west
+==>OBSERVATION: Cell
+===========
+==>STEP NUM: 45
+==>ACT: south
+==>OBSERVATION: Dungeon
+===========
+==>STEP NUM: 46
+==>ACT: up
+==>OBSERVATION: South Hall
+===========
+==>STEP NUM: 47
+==>ACT: east
+==>OBSERVATION: Gallery
+The east-west corridor opens into a gallery. The walls are lined with portraits, some of apparently great value. All of the eyes seem to follow you as you pass, and the entire room is subtly disturbing.
+===========
+==>STEP NUM: 48
+==>ACT: east
+==>OBSERVATION: South Gate
+This interior courtyard stands at the southern entrance to the castle, where a small rusty gate is standing open and slowly swaying in a gentle sea breeze. Beyond the gate can be seen a small meadow and, beyond that, a white beach on a misty sea. Passages enter the castle proper to the north, east, and west.
+===========
+==>STEP NUM: 49
+==>ACT: south
+==>OBSERVATION: Meadow
+This is a meadow near the sea. There is a smell of salt in the air. Only heather and thistles grow here. To the north is a gate leading into the castle. A narrow path to the southeast leads to the shore of the Sea.
+Your mouth is getting rather dry.
+===========
+==>STEP NUM: 50
+==>ACT: southeast
+==>OBSERVATION: Beach
+This is a rocky beach along a grey and lifeless sea. There is dead seaweed covering many rocks, and listless waves barely stir the flotsam and jetsam here. There are many shells, but all are broken. A narrow path to the northwest leads into a meadow.
+Crawling slowly along the beach is an enormous turtle, his enamelled shell shining with all the colors of the rainbow.
+===========
+==>STEP NUM: 51
+==>ACT: northwest
+==>OBSERVATION: Meadow
+The turtle, at his own leisurely pace, follows you.
+===========
+==>STEP NUM: 52
+==>ACT: north
+==>OBSERVATION: South Gate
+The turtle, at his own leisurely pace, follows you.
+===========
+==>STEP NUM: 53
+==>ACT: east
+==>OBSERVATION: Tower
+This is the base of the southeast tower of the castle. From atop a winding staircase comes a loud crashing and screeching noise. To the west is a corridor and the southern gate of the castle.
+The turtle, at his own leisurely pace, follows you.
+===========
+==>STEP NUM: 54
+==>ACT: up
+==>OBSERVATION: Engine Room
+The room is filled with noise: crashing and smashing, gurgling of water, grinding of gears, and horrible screeching of metal. Huge devices of obscure purpose provide these effects. The most notable is a huge hammer that smashes continually against the stone floor: it makes any crossing of the room a dangerous enterprise. The whole construction brings to mind the words "Infernal Machine." Far off to the southeast is another room. You can barely make out something on the floor of that room. It might be a scroll, but from here you can't tell for sure.
+"Pretty steep stairs for a turtle, friend. But if you say so..."
+===========
+==>STEP NUM: 55
+==>ACT: down
+==>OBSERVATION: Tower
+"Crash!" A huge hammer smashes against the stone floor.
+===========
+==>STEP NUM: 56
+==>ACT: west
+==>OBSERVATION: South Gate
+===========
+==>STEP NUM: 57
+==>ACT: west
+==>OBSERVATION: Gallery
+===========
+==>STEP NUM: 58
+==>ACT: west
+==>OBSERVATION: South Hall
+===========
+==>STEP NUM: 59
+==>ACT: north
+==>OBSERVATION: Closet
+This small room must have been a closet of some sort. To the north is a passage leading out into a courtyard. Another exit is to the south.
+In the exact center of the room is a large, jewelled box. It is wrapped in tight coils of thin rope. You try to follow the strands with your eye, but become hopelessly lost in the jumble of thousands of loops and knots.
+===========
+==>STEP NUM: 60
+==>ACT: south
+==>OBSERVATION: South Hall
+===========
+==>STEP NUM: 61
+==>ACT: east
+==>OBSERVATION: Gallery
+There is a lighted portrait here.
+===========
+==>STEP NUM: 62
+==>ACT: east
+==>OBSERVATION: South Gate
+===========
+==>STEP NUM: 63
+==>ACT: north
+==>OBSERVATION: East Hall
+This short piece of corridor continues to the north and south.
+===========
+==>STEP NUM: 64
+==>ACT: north
+==>OBSERVATION: Banquet Hall
+A banquet has been set here for hundreds. Long benches fill the room, each covered with finest linen and set with golden cutlery and glittering crystal. Luscious food weighs down each table, and candles light the room with a festive glow. The room can be entered by a north-south corridor and a small opening to the east, from which an odd, acrid smell issues.
+To the north you can hear the sound of a group of low, guttural voices.
+===========
+==>STEP NUM: 65
+==>ACT: north
+==>OBSERVATION: Junction
+The corridor widens here to form a large hall. To the north and south are small passages, and to the east is what appears to be an enormous spiral staircase. A passage to the west leads into a courtyard. The walls here are scarred and black, and a strange heaviness hangs in the air.
+===========
+==>STEP NUM: 66
+==>ACT: down
+==>OBSERVATION: Temple
+===========
+==>STEP NUM: 67
+==>ACT: west
+==>OBSERVATION: Courtyard
+You are in the center of a large courtyard, which surrounds you. Everything around you is ashen and grey, and the air seems miasmic and oppressive. The dead grass seems to grab at your feet as you stand gazing around. To the east is a temple flanked by two smaller towers. Behind it can be seen the two eastern towers of the castle, shrouded in blood-red fog. Between them is a dark turret, black and ominous as night. It sends dark streams of smoke curling around everything near it. From the temple can be heard a mournful chant.
+===========
+==>STEP NUM: 68
+==>ACT: west
+==>OBSERVATION: Courtyard
+This is the westernmost point in a large open courtyard. The huge entrance gate to the castle looms ominously to the west. The courtyard widens as it proceeds to the east, where a large, ivy-covered temple stands. On either side of the temple are small towers. Far beyond the temple, high above, are two large towers marking the corners of the castle. A squat dark turret hunches between them, blackening the sky around it. A small path leads into the castle to the south.
+===========
+==>STEP NUM: 69
+==>ACT: south
+==>OBSERVATION: Closet
+In the exact center of the room is a large, jewelled box. It is wrapped in tight coils of thin rope. You try to follow the strands with your eye, but become hopelessly lost in the jumble of thousands of loops and knots.
+There is a spell book here.
+There is a loaf of bread here.
+There is a jug here.
+The jug contains:
+  A small quantity of water
+There is a battered lantern here (providing light).
+There is a beautiful, ornamented egg here.
+A scroll of old, brittle parchment is here.
+===========
+==>STEP NUM: 70
+==>ACT: south
+==>OBSERVATION: South Hall
+===========
+==>STEP NUM: 71
+==>ACT: west
+==>OBSERVATION: Tower
+===========
+==>STEP NUM: 72
+==>ACT: up
+==>OBSERVATION: Bedroom
+There is a fourposter feather bed here.
+===========
+==>STEP NUM: 73
+==>ACT: down
+==>OBSERVATION: Tower
+===========
+==>STEP NUM: 74
+==>ACT: north
+==>OBSERVATION: West Hall
+Your mouth is getting rather dry.
+===========
+==>STEP NUM: 75
+==>ACT: north
+==>OBSERVATION: Inside Gate
+The stars shine down on you from a clear, dark sky.
+===========
+==>STEP NUM: 76
+==>ACT: north
+==>OBSERVATION: Pebbled Path
+The stars shine down on you from a clear, dark sky.
+===========
+==>STEP NUM: 77
+==>ACT: north
+==>OBSERVATION: Tower
+===========
+==>STEP NUM: 78
+==>ACT: east
+==>OBSERVATION: Hall of Mirrors One
+===========
+==>STEP NUM: 79
+==>ACT: east
+==>OBSERVATION: Hall of Mirrors Two
+===========
+==>STEP NUM: 80
+==>ACT: east
+==>OBSERVATION: Hall of Mirrors Three
+===========
+==>STEP NUM: 81
+==>ACT: east
+==>OBSERVATION: Hall of Mirrors Four
+From the other side of the "mirror" a bedraggled adventurer comes into view, carrying a brass lantern and an elvish sword, which is glowing dimly. He stops and stares in your direction.
+===========
+==>STEP NUM: 82
+==>ACT: east
+==>OBSERVATION: The adventurer, proceeding cautiously, follows you. He seems to be paying particular attention to your possessions.
+
+Guarded Door
+A more incongruous place than this would be difficult to believe. The room itself is nothing more than a small room at the base of the northeast tower with a narrow passageway entering from the west. Standing in front of you to the north, however, is a door surpassing anything you could have imagined. For starters, its massive lock is wrapped in a dozen six-inch thick iron chains. In addition, a certain five-headed monster sporting razor-sharp spears for tongues seems to be imbedded within its heavy oak frame. One is almost embarrassed to mention the gargoyles spewing flame and sulphurous ash which ornament either side of the door, or the ninety-seven slimy groping tentacles which taunt you ever closer to certain death. A sign, floating serenely above the door and glowing hideously in purple letters, offers the following rude understatement: "Don't Bother".
+There is a bedraggled and weary adventurer standing here. He is carrying a brass lantern, and a sword. He seems pleased to see you and frequently smiles in your direction.
+The adventurer glances around the room in a businesslike way and makes a few notes on his map.
+The adventurer offers to relieve you of some of your possessions.
+===========
+==>STEP NUM: 83
+==>ACT: up
+==>OBSERVATION: Map Room
+This room in the high tower appears to be a map room, with hundreds of ancient maps covering the walls. A huge globe, made of gold, sits on a pedestal in the center of the room. Through the tower windows can be seen a vast forest stretching out to the northeast and the sea, covered in fog, to the east and south. Stairs to the south lead to the bottom of the tower.
+Lying on the ground is an old parchment map.
+Lying on the floor is a purple scroll.
+In one corner of the room is a badly worn pencil, inscribed with runes.
+===========
+==>STEP NUM: 84
+==>ACT: down
+==>OBSERVATION: Guarded Door
+There is a faintly glowing strong box here.
+===========
+==>STEP NUM: 85
+==>ACT: west
+==>OBSERVATION: North Gate
+There is a dusty book here.
+===========
+==>STEP NUM: 86
+==>ACT: west
+==>OBSERVATION: Hall of Mirrors Four
+===========
+==>STEP NUM: 87
+==>ACT: west
+==>OBSERVATION: Hall of Mirrors Three
+===========
+==>STEP NUM: 88
+==>ACT: west
+==>OBSERVATION: Hall of Mirrors Two
+===========
+==>STEP NUM: 89
+==>ACT: west
+==>OBSERVATION: Hall of Mirrors One
+===========
+==>STEP NUM: 90
+==>ACT: west
+==>OBSERVATION: Tower
+===========
+==>STEP NUM: 91
+==>ACT: south
+==>OBSERVATION: Pebbled Path
+===========
+==>STEP NUM: 92
+==>ACT: south
+==>OBSERVATION: Inside Gate
+Your stomach is starting to grumble.
+===========
+==>STEP NUM: 93
+==>ACT: south
+==>OBSERVATION: West Hall
+===========
+==>STEP NUM: 94
+==>ACT: south
+==>OBSERVATION: Tower
+===========
+==>STEP NUM: 95
+==>ACT: east
+==>OBSERVATION: South Hall
+===========
+==>STEP NUM: 96
+==>ACT: south
+==>OBSERVATION: Dungeon
+===========
+==>STEP NUM: 97
+==>ACT: down
+==>OBSERVATION: Translucent Room
+This is a peculiar room, whose cream-colored walls are thin and translucent.
+An exit is to the south and it is very strange indeed, perfectly round and black as pitch.
+===========
+==>STEP NUM: 98
+==>ACT: east
+==>OBSERVATION: Translucent Room
+This is a peculiar room, whose cream-colored walls are thin and translucent.
+Passages go to the west, southwest, and southeast and they are very strange indeed, perfectly round and black as pitch.
+===========
+==>STEP NUM: 99
+==>ACT: southeast
+==>OBSERVATION: Translucent Room
+This is a peculiar room, whose cream-colored walls are thin and translucent.
+Passages go to the northwest and southeast and they are very strange indeed, perfectly round and black as pitch.
+===========
+==>STEP NUM: 100
+==>ACT: southeast
+==>OBSERVATION: Translucent Room
+This is a peculiar room, whose cream-colored walls are thin and translucent.
+Passages go to the northwest and southwest and they are very strange indeed, perfectly round and black as pitch.
+===========
+==>STEP NUM: 101
+==>ACT: southwest
+==>OBSERVATION: Translucent Room
+This is a peculiar room, whose cream-colored walls are thin and translucent.
+An exit is to the northeast and it is very strange indeed, perfectly round and black as pitch.
+A scroll emanating power is here.
+===========
+==>STEP NUM: 102
+==>ACT: northeast
+==>OBSERVATION: Translucent Room
+===========
+==>STEP NUM: 103
+==>ACT: northwest
+==>OBSERVATION: Translucent Room
+===========
+==>STEP NUM: 104
+==>ACT: northwest
+==>OBSERVATION: Translucent Room
+===========
+==>STEP NUM: 105
+==>ACT: west
+==>OBSERVATION: You hear a horrible anguished scream through the walls of the cavern as the terror realizes that it is trapped and its scroll of power stolen!
+
+Translucent Room
+===========
+==>STEP NUM: 106
+==>ACT: up
+==>OBSERVATION: Dungeon
+===========
+==>STEP NUM: 107
+==>ACT: up
+==>OBSERVATION: South Hall
+===========
+==>STEP NUM: 108
+==>ACT: north
+==>OBSERVATION: Closet
+There is a sacrificial dagger here.
+A jewelled box is sitting on the ground.
+===========
+==>STEP NUM: 109
+==>ACT: north
+==>OBSERVATION: Courtyard
+Everything you see is grey and lifeless, as though covered with a veil of ash. Sound is muted and there is a faint acrid odor.
+This is the westernmost point in a large open courtyard. The huge entrance gate to the castle looms ominously to the west. The courtyard widens as it proceeds to the east, where a large, ivy-covered temple stands. On either side of the temple are small towers. Far beyond the temple, high above, are two large towers marking the corners of the castle. A squat dark turret hunches between them, blackening the sky around it. A small path leads into the castle to the south.
+The darkening sky is lit by a waning moon.
+===========
+==>STEP NUM: 110
+==>ACT: west
+==>OBSERVATION: Inside Gate
+The darkening sky is lit by a waning moon.
+===========
+==>STEP NUM: 111
+==>ACT: west
+==>OBSERVATION: Outside Gate
+The darkening sky is lit by a waning moon.
+===========
+==>STEP NUM: 112
+==>ACT: west
+==>OBSERVATION: Western Road
+The darkening sky is lit by a waning moon.
+Your mouth is getting rather dry.
+===========
+==>STEP NUM: 113
+==>ACT: west
+==>OBSERVATION: Eastern Fork
+The darkening sky is lit by a waning moon.
+===========
+==>STEP NUM: 114
+==>ACT: northwest
+==>OBSERVATION: Trail Head
+The darkening sky is lit by a waning moon.
+===========
+==>STEP NUM: 115
+==>ACT: northeast
+==>OBSERVATION: Shady Brook
+The darkening sky is lit by a waning moon.
+===========
+==>STEP NUM: 116
+==>ACT: southwest
+==>OBSERVATION: Trail Head
+The darkening sky is lit by a waning moon.
+===========
+==>STEP NUM: 117
+==>ACT: southeast
+==>OBSERVATION: Eastern Fork
+The darkening sky is lit by a waning moon.
+===========
+==>STEP NUM: 118
+==>ACT: east
+==>OBSERVATION: Western Road
+The darkening sky is lit by a waning moon.
+===========
+==>STEP NUM: 119
+==>ACT: east
+==>OBSERVATION: Outside Gate
+The darkening sky is lit by a waning moon.
+===========
+==>STEP NUM: 120
+==>ACT: east
+==>OBSERVATION: Inside Gate
+The darkening sky is lit by a waning moon.
+===========
+==>STEP NUM: 121
+==>ACT: south
+==>OBSERVATION: West Hall
+The darkened sky is now full of bright stars. It is night.
+Today seemed shorter than yesterday, somehow.
+===========
+==>STEP NUM: 122
+==>ACT: south
+==>OBSERVATION: Tower
+===========
+==>STEP NUM: 123
+==>ACT: east
+==>OBSERVATION: South Hall
+===========
+==>STEP NUM: 124
+==>ACT: east
+==>OBSERVATION: Gallery
+There is a lighted portrait here.
+Bats flutter by, red eyes glowing.
+===========
+==>STEP NUM: 125
+==>ACT: east
+==>OBSERVATION: South Gate
+===========
+==>STEP NUM: 126
+==>ACT: north
+==>OBSERVATION: East Hall
+Everything you see is grey and lifeless, as though covered with a veil of ash. Sound is muted and there is a faint acrid odor.
+This short piece of corridor continues to the north and south.
+===========
+==>STEP NUM: 127
+==>ACT: north
+==>OBSERVATION: Banquet Hall
+This desolate hall is nearly empty, save for a few long benches which are scattered throughout the room. The walls seem to be scorched, and everywhere are signs of decay. A sickening odor pervades the room, and wisps of acrid black smoke can be seen to the north. A wide passage leads south, and a small one opens to the east.
+To the north you can hear the sound of a group of low, guttural voices.
+===========
+==>STEP NUM: 128
+==>ACT: north
+==>OBSERVATION: Junction
+===========
+==>STEP NUM: 129
+==>ACT: east
+==>OBSERVATION: Landing
+Everything you see is grey and lifeless, as though covered with a veil of ash. Sound is muted and there is a faint acrid odor.
+The wall is cylindrical here, with exits east and west. The eastern one opens into a dark, enclosed space. The air is thick with acrid smoke, and black, greasy ashes mar the floor. The mortar and stones of the walls are stained and crumbly.
+===========
+==>STEP NUM: 130
+==>ACT: east
+==>OBSERVATION: Winding Stair
+This is a winding stair, stretching up and down out of sight. The walls are mossy and damp. An exit leads west to a landing.
+===========
+==>STEP NUM: 131
+==>ACT: east
+==>OBSERVATION: Effortlessly, you float eastward and settle to the ground.
+As you enter, you realize that this is Krill's secret chamber, protected by powerful illusions now broken by your skills. Before you stands Krill, engaged in the casting of some complex and horrific magic. Krill turns to face you, surprised and annoyed by your intrusion. You have seen him before: cloaked in black, he sacrificed you at the Altar before his hoard. His yellow eyes glisten and he breathes deeply. In a voice as deep as the great caverns of the earth, he speaks: "Fool! Parlor magician! You dare to defile my chamber with your worm-like presence. I shall not waste words with you. Goodbye, spell-monger!" Krill snaps his fingers loudly, and a giant dragon appears, breathing gouts of flame. He moves ever closer, red eyes bulging with malice!
+
+Warlock's Tower
+A dragon, spouting flame, approaches!
+The warlock Krill, robed in black, stands before you, in eager anticipation of your death.
+===========

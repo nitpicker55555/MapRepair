@@ -1,0 +1,63 @@
+{
+  "buckets": {
+    "CORRECT": 7,
+    "WRONG_DIRECTION": 0,
+    "WRONG_DST": 0,
+    "SPURIOUS_PAIR": 0,
+    "HALLUCINATED_DST": 0,
+    "HALLUCINATED_SRC": 0
+  },
+  "samples": {
+    "CORRECT": [
+      {
+        "src_node": "spare room",
+        "dst_node": "bedchamber",
+        "action": "north",
+        "step_num": 3,
+        "gt_src": "steam room",
+        "gt_dst": "workshop"
+      },
+      {
+        "src_node": "bedchamber",
+        "dst_node": "laundry place",
+        "action": "east",
+        "step_num": 4,
+        "gt_src": "workshop",
+        "gt_dst": "spare room"
+      },
+      {
+        "src_node": "laundry place",
+        "dst_node": "bar",
+        "action": "south",
+        "step_num": 7,
+        "gt_src": "laundry place",
+        "gt_dst": "bar"
+      },
+      {
+        "src_node": "bar",
+        "dst_node": "spare room",
+        "action": "west",
+        "step_num": 8,
+        "gt_src": "bar",
+        "gt_dst": "spare room"
+      },
+      {
+        "src_node": "spare room",
+        "dst_node": "workshop",
+        "action": "west",
+        "step_num": 9,
+        "gt_src": "spare room",
+        "gt_dst": "workshop"
+      }
+    ],
+    "WRONG_DIRECTION": [],
+    "WRONG_DST": [],
+    "SPURIOUS_PAIR": [],
+    "HALLUCINATED_DST": [],
+    "HALLUCINATED_SRC": []
+  },
+  "n_gt_edges": 16,
+  "n_pred_edges": 7,
+  "gt_edge_recall": 0.4375,
+  "gt_pair_recall": 0.4375
+}

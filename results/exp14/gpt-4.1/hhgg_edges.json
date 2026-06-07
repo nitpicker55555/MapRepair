@@ -1,0 +1,14 @@
+[
+  {
+    "src_node": "front porch",
+    "dst_node": "front of house",
+    "action": "south",
+    "seen_in_forward": 1
+  },
+  {
+    "src_node": "front of house",
+    "dst_node": "country lane",
+    "action": "exit",
+    "seen_in_forward": 2
+  }
+]

@@ -1,0 +1,237 @@
+===========
+==>STEP NUM: 0
+==>ACT: southwest
+==>OBSERVATION: You walk around to the front of the pizza parlor.
+
+Pizza Parlor
+You are standing in the middle of "Mr. Tasty's Pizza Parlor". The counter separating you from the back of the parlor stretches in front of you on the northeast corner of the room. To the south is an exit to the street.
+
+On the counter is a handwritten note.
+===========
+==>STEP NUM: 1
+==>ACT: south
+==>OBSERVATION: Street, by Pizza Parlor
+San Doppleton is where you live, work and play -- at least until summer. It has the typical California culture; which is to say, none. But at least it's just forty minutes' drive from Santa Barbara and the beach, so you can't complain much.
+
+You stand in the heart of San Doppleton's main drag, the business district. The street goes east and west. The sidewalk runs by a pizza parlor, with a sewer vent nearby.
+
+Two men bump into each other. They murmur apologies and go their separate ways.
+===========
+==>STEP NUM: 2
+==>ACT: west
+==>OBSERVATION: Street, Near Courthouse
+You are approaching the center of downtown San Doppleton. There is a courthouse to the south. The street runs east and west.
+===========
+==>STEP NUM: 3
+==>ACT: south
+==>OBSERVATION: Courthouse
+You are in a crowded courthouse.  The street is off to the north.
+
+The courtroom is currently abuzz with excitement as it seems that the pre-trial hearing of the infamous gangster, Guido "The Armadillo" Calzone is winding to a close. Guido and his hotshot lawyer sit placidly at their table, while the flustered young district attorney who is prosecuting the case seems like she's at her wits' end. At the moment, the D.A. stands at the front of the courtroom, arguing over a legal point with the judge.
+===========
+==>STEP NUM: 4
+==>ACT: north
+==>OBSERVATION: Jill is here.
+
+Jill approaches and shakes your hand warmly. "That was a brilliant work in there, kid. If it hadn't been for you, Guido might have escaped from jail."  Seeing your blank look, she says, "My name Jill Thompson. I'm San Doppleton's District Attorney. For the past four years, I've been pursuing this local mafia branch, trying to bring some serious legal action down on them. These guys seem to own everything in town, and they already know me by sight. So I can't find any more clues before the trial but you can. Please try dig up whatever information you can, I'll be up in my office if you need me. I work at Gunther & Associates. It's on the third floor of that tall building over there, you can't miss it."
+
+Jill walks away to the west.
+
+Street, Near Courthouse
+===========
+==>STEP NUM: 5
+==>ACT: west
+==>OBSERVATION: Downtown
+You are in downtown San Doppleton. The street coming from the east ends at a three-story office building to the west.
+
+A guy in a business suit walks past you.
+===========
+==>STEP NUM: 6
+==>ACT: west
+==>OBSERVATION: Office Building
+You are in an office building. The exit to the street is east. There is also a flight of stairs heading up to the north.
+
+There are fronds on either side of the exit on the east.
+===========
+==>STEP NUM: 7
+==>ACT: north
+==>OBSERVATION: The stairs angle up and back, and you emerge south.
+
+Office Building, Second Floor
+To the east you can see an office door labelled "Gunther & Associates"; other than that, the office doors on this floor are pretty unremarkable. The stairs go up to the south and down to the north.
+===========
+==>STEP NUM: 8
+==>ACT: east
+==>OBSERVATION: Law Office
+You are in a bustling law office. The east wall is dominated by a large window.
+
+Jill stands here.
+
+As you walk into the office, Jill spots you. "Hi!" she says. "Listen, Stan. I have reason to believe that the Mayor is tangled up in the mafia. I managed to use some connections to get this key. It unlocks the mayor's cabinet."  She hands you a key. "I'd use it myself, but I already have several eyes on me at all times. They know me."
+===========
+==>STEP NUM: 9
+==>ACT: west
+==>OBSERVATION: Office Building, Second Floor
+===========
+==>STEP NUM: 10
+==>ACT: south
+==>OBSERVATION: The stairs angle up and back, and you emerge north.
+
+Office Building, Third Floor
+To the east is a door labelled "John Winnick, Mayor of San Doppleton". The stairs go up to the north and down to the south.
+===========
+==>STEP NUM: 11
+==>ACT: east
+==>OBSERVATION: Mayor's Office
+You are in the mayor's office. To the east is a window overlooking a second-story drop. There is a glass box mounted on the north wall.
+
+You can see a file cabinet (which is closed) here.
+===========
+==>STEP NUM: 12
+==>ACT: west
+==>OBSERVATION: Office Building, Second Floor
+===========
+==>STEP NUM: 13
+==>ACT: north
+==>OBSERVATION: The stairs angle down and back, and you emerge south.
+
+Office Building
+
+There are fronds on either side of the exit on the east.
+===========
+==>STEP NUM: 14
+==>ACT: east
+==>OBSERVATION: Downtown
+
+A police car drives by. You press yourself against a wall until it goes by.
+===========
+==>STEP NUM: 15
+==>ACT: east
+==>OBSERVATION: Street, Near Courthouse
+===========
+==>STEP NUM: 16
+==>ACT: east
+==>OBSERVATION: Street, by Pizza Parlor
+===========
+==>STEP NUM: 17
+==>ACT: north
+==>OBSERVATION: Pizza Parlor
+
+On the counter are a small pizza box (which is closed) and a handwritten note.
+===========
+==>STEP NUM: 18
+==>ACT: south
+==>OBSERVATION: Street, by Pizza Parlor
+===========
+==>STEP NUM: 19
+==>ACT: east
+==>OBSERVATION: Street, by Department Store
+On this end of the street, a department store called Barkley's sits to the south.
+===========
+==>STEP NUM: 20
+==>ACT: south
+==>OBSERVATION: Clothing Department
+You are in the clothing department at Barkley's. There are many racks of clothes here. You may exit to the north. To the southwest lies the hardware department, and southeast is the cosmetics department.
+
+You can see a store clerk here.
+===========
+==>STEP NUM: 21
+==>ACT: southeast
+==>OBSERVATION: As you enter the cosmetics department, a big thug steps out of the shadows. Making a mocking bow in your direction, the thug says: "Greetings. I am Sammy 'The Inhospitable' Toriglioni, and I will be joining you for your dying pleasure this afternoon."  He pulls a gun out of his suit coat and bounces it lightly in one hand.
+
+Cosmetics Department
+The shelves are lined with bottles of perfume, cologne, hairspray, and other cosmetic paraphernalia. [You know, an adventure game just isn't complete if it doesn't use the word "paraphernalia."]  You can go northwest to the clothing department, or west to the hardware department.
+
+You can see a thug here.
+===========
+==>STEP NUM: 22
+==>ACT: northwest
+==>OBSERVATION: Doubled over in pain, the thug is powerless to stop your retreat.
+
+Clothing Department
+===========
+==>STEP NUM: 23
+==>ACT: north
+==>OBSERVATION: The clerk seems to have been knocked out and dragged somewhere by the thug on his entrance. You brazenly walk out with your shoplifted item.
+
+Street, by Department Store
+
+A police car drives by. You press yourself against a wall until it goes by.
+
+The ground trembles under your feet. It feels like an earthquake might be in progress.
+
+Okay, let's recap the story so far. Your afternoon got off to an interesting start when you foiled an escape attempt by Guido "The Armadillo" Calzone. This heroic-but-not-terribly-bright action brought down the wrath of the local mafia down on you, who tried to assassinate you inside a department store. They also left a "special delivery" for you which started an earthquake. You were also responsible for uncovering the illicit activities of the corrupt mayor, who then sent every cop and trooper in the area to take care of you. So, you're hounded by the police, wanted dead by the mob, and trying to cope with a massive earthquake.
+
+As you step outside, you can see that the people of the town have succumbed to the general chaos of the environment, and now the town of San Doppleton is marred by heavy rioting.
+===========
+==>STEP NUM: 24
+==>ACT: south
+==>OBSERVATION: Clothing Department
+===========
+==>STEP NUM: 25
+==>ACT: southwest
+==>OBSERVATION: Hardware Department
+You are in the hardware department at Barkley's. There are tools all over the place. You can go northeast to the clothing department, or east to the cosmetics department.
+ 
+The place is filled with debris from the riots. Lying on the ground you see a rope and a hammer which have been randomly flung off the shelves.
+===========
+==>STEP NUM: 26
+==>ACT: northeast
+==>OBSERVATION: Clothing Department
+===========
+==>STEP NUM: 27
+==>ACT: north
+==>OBSERVATION: Street, by Department Store
+
+Someone rushes out of Barkley's carrying a TV set.
+===========
+==>STEP NUM: 28
+==>ACT: west
+==>OBSERVATION: Street, by Pizza Parlor
+
+You lurch for a moment as the ground makes loud rumbling noises. Sounds like an earthquake is about to hit. A bad one.
+===========
+==>STEP NUM: 29
+==>ACT: west
+==>OBSERVATION: Street, Near Courthouse
+===========
+==>STEP NUM: 30
+==>ACT: west
+==>OBSERVATION: Downtown
+
+A security guard stands in front of the entrance to the government building, looking bored.
+
+A rioter throws a rock at the mayor's window. The rock bounces to the ground, barely missing you. Those windows are pretty durable.
+===========
+==>STEP NUM: 31
+==>ACT: west
+==>OBSERVATION: The guard steps aside and lets you pass.
+
+Office Building
+
+There are fronds on either side of the exit on the east.
+===========
+==>STEP NUM: 32
+==>ACT: north
+==>OBSERVATION: The stairs angle up and back, and you emerge south.
+Jill runs out of her office. "Stan!  Thank goodness you made it!  The mafia has just regrouped in the mayor's office to discuss their final plans for total citywide domination! Reinforcements from the state are on their way, but they're going to need some kind of diversion to get into the building without being caught by the mayor's troops!  Can you do that for us?"
+
+Of course you can; you're the hero. (A paper-thin excuse if you ever heard one, but you don't seem to have enough excitement in your life anyway.)
+
+Jill runs back into her office.
+
+Office Building, Second Floor
+===========
+==>STEP NUM: 33
+==>ACT: south
+==>OBSERVATION: The stairs angle up and back, and you emerge north.
+
+Office Building, Third Floor
+===========
+==>STEP NUM: 34
+==>ACT: north
+==>OBSERVATION: The stairs angle up and back, and you emerge south.
+
+Roof of Office Building
+You are on the roof of the government building. You can go back down the stairs to the north. There is a lightning rod sticking up.
+===========

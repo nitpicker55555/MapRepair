@@ -1,0 +1,924 @@
+{
+  "id": "night",
+  "dataset": "mango",
+  "n_rooms": 20,
+  "n_gt_edges": 32,
+  "n_llm_edges": 28,
+  "rooms": [
+    {
+      "id": "computer site",
+      "label": "computer site",
+      "description": ""
+    },
+    {
+      "id": "gnome's lair",
+      "label": "gnome's lair",
+      "description": ""
+    },
+    {
+      "id": "hall (1st floor, middle of north/south hall)",
+      "label": "hall (1st floor, middle of north/south hall)",
+      "description": ""
+    },
+    {
+      "id": "hall (1st floor, north end of north/south hall)",
+      "label": "hall (1st floor, north end of north/south hall)",
+      "description": ""
+    },
+    {
+      "id": "hall (2nd floor, middle of north/south hall)",
+      "label": "hall (2nd floor, middle of north/south hall)",
+      "description": ""
+    },
+    {
+      "id": "hall (3rd floor, middle of north/south hall)",
+      "label": "hall (3rd floor, middle of north/south hall)",
+      "description": ""
+    },
+    {
+      "id": "hall outside computer site",
+      "label": "hall outside computer site",
+      "description": ""
+    },
+    {
+      "id": "hall outside elevator (1st floor)",
+      "label": "hall outside elevator (1st floor)",
+      "description": ""
+    },
+    {
+      "id": "hall outside elevator (3rd floor)",
+      "label": "hall outside elevator (3rd floor)",
+      "description": ""
+    },
+    {
+      "id": "janitor's closet",
+      "label": "janitor's closet",
+      "description": ""
+    },
+    {
+      "id": "maze of twisty passages (stop 1)",
+      "label": "maze of twisty passages (stop 1)",
+      "description": ""
+    },
+    {
+      "id": "maze of twisty passages (stop 2)",
+      "label": "maze of twisty passages (stop 2)",
+      "description": ""
+    },
+    {
+      "id": "maze of twisty passages (stop 3)",
+      "label": "maze of twisty passages (stop 3)",
+      "description": ""
+    },
+    {
+      "id": "maze of twisty passages (stop 4)",
+      "label": "maze of twisty passages (stop 4)",
+      "description": ""
+    },
+    {
+      "id": "maze of twisty passages (stop 5)",
+      "label": "maze of twisty passages (stop 5)",
+      "description": ""
+    },
+    {
+      "id": "maze of twisty passages (stop 6)",
+      "label": "maze of twisty passages (stop 6)",
+      "description": ""
+    },
+    {
+      "id": "outside physics office",
+      "label": "outside physics office",
+      "description": ""
+    },
+    {
+      "id": "stairwell (first floor)",
+      "label": "stairwell (first floor)",
+      "description": ""
+    },
+    {
+      "id": "stairwell (second floor)",
+      "label": "stairwell (second floor)",
+      "description": ""
+    },
+    {
+      "id": "stairwell (third floor)",
+      "label": "stairwell (third floor)",
+      "description": ""
+    }
+  ],
+  "walkthrough": [],
+  "states": {
+    "gt": {
+      "edges": [
+        {
+          "src": "computer site",
+          "dst": "hall outside computer site",
+          "dir": "northeast"
+        },
+        {
+          "src": "hall outside computer site",
+          "dst": "hall (3rd floor, middle of north/south hall)",
+          "dir": "south"
+        },
+        {
+          "src": "hall outside computer site",
+          "dst": "stairwell (third floor)",
+          "dir": "west"
+        },
+        {
+          "src": "hall outside computer site",
+          "dst": "computer site",
+          "dir": "southwest"
+        },
+        {
+          "src": "hall (3rd floor, middle of north/south hall)",
+          "dst": "hall outside elevator (3rd floor)",
+          "dir": "east"
+        },
+        {
+          "src": "hall (3rd floor, middle of north/south hall)",
+          "dst": "hall outside computer site",
+          "dir": "north"
+        },
+        {
+          "src": "stairwell (third floor)",
+          "dst": "stairwell (second floor)",
+          "dir": "down"
+        },
+        {
+          "src": "stairwell (third floor)",
+          "dst": "hall outside computer site",
+          "dir": "east"
+        },
+        {
+          "src": "hall outside elevator (3rd floor)",
+          "dst": "hall (3rd floor, middle of north/south hall)",
+          "dir": "west"
+        },
+        {
+          "src": "stairwell (second floor)",
+          "dst": "stairwell (first floor)",
+          "dir": "down"
+        },
+        {
+          "src": "stairwell (second floor)",
+          "dst": "outside physics office",
+          "dir": "east"
+        },
+        {
+          "src": "stairwell (second floor)",
+          "dst": "stairwell (third floor)",
+          "dir": "up"
+        },
+        {
+          "src": "stairwell (first floor)",
+          "dst": "hall (1st floor, north end of north/south hall)",
+          "dir": "east"
+        },
+        {
+          "src": "stairwell (first floor)",
+          "dst": "stairwell (second floor)",
+          "dir": "up"
+        },
+        {
+          "src": "outside physics office",
+          "dst": "hall (2nd floor, middle of north/south hall)",
+          "dir": "south"
+        },
+        {
+          "src": "outside physics office",
+          "dst": "stairwell (second floor)",
+          "dir": "west"
+        },
+        {
+          "src": "hall (1st floor, north end of north/south hall)",
+          "dst": "hall (1st floor, middle of north/south hall)",
+          "dir": "south"
+        },
+        {
+          "src": "hall (1st floor, north end of north/south hall)",
+          "dst": "stairwell (first floor)",
+          "dir": "west"
+        },
+        {
+          "src": "hall (1st floor, middle of north/south hall)",
+          "dst": "hall outside elevator (1st floor)",
+          "dir": "east"
+        },
+        {
+          "src": "hall (1st floor, middle of north/south hall)",
+          "dst": "hall (1st floor, north end of north/south hall)",
+          "dir": "north"
+        },
+        {
+          "src": "hall outside elevator (1st floor)",
+          "dst": "janitor's closet",
+          "dir": "south"
+        },
+        {
+          "src": "hall outside elevator (1st floor)",
+          "dst": "hall (1st floor, middle of north/south hall)",
+          "dir": "west"
+        },
+        {
+          "src": "janitor's closet",
+          "dst": "hall outside elevator (1st floor)",
+          "dir": "north"
+        },
+        {
+          "src": "hall (2nd floor, middle of north/south hall)",
+          "dst": "maze of twisty passages (stop 1)",
+          "dir": "down"
+        },
+        {
+          "src": "hall (2nd floor, middle of north/south hall)",
+          "dst": "outside physics office",
+          "dir": "north"
+        },
+        {
+          "src": "maze of twisty passages (stop 1)",
+          "dst": "maze of twisty passages (stop 2)",
+          "dir": "east"
+        },
+        {
+          "src": "maze of twisty passages (stop 1)",
+          "dst": "hall (2nd floor, middle of north/south hall)",
+          "dir": "up"
+        },
+        {
+          "src": "maze of twisty passages (stop 2)",
+          "dst": "maze of twisty passages (stop 1)",
+          "dir": "west"
+        },
+        {
+          "src": "maze of twisty passages (stop 4)",
+          "dst": "maze of twisty passages (stop 3)",
+          "dir": "east"
+        },
+        {
+          "src": "maze of twisty passages (stop 6)",
+          "dst": "gnome's lair",
+          "dir": "east"
+        },
+        {
+          "src": "maze of twisty passages (stop 6)",
+          "dst": "maze of twisty passages (stop 5)",
+          "dir": "west"
+        },
+        {
+          "src": "gnome's lair",
+          "dst": "maze of twisty passages (stop 6)",
+          "dir": "west"
+        }
+      ]
+    },
+    "llm_built": {
+      "edges": [
+        {
+          "src": "hall outside computer site",
+          "dst": "hall (3rd floor, middle of north/south hall)",
+          "dir": "south",
+          "kind": "correct"
+        },
+        {
+          "src": "hall outside computer site",
+          "dst": "stairwell (third floor)",
+          "dir": "west",
+          "kind": "correct"
+        },
+        {
+          "src": "hall outside computer site",
+          "dst": "computer site",
+          "dir": "southwest",
+          "kind": "correct"
+        },
+        {
+          "src": "hall (3rd floor, middle of north/south hall)",
+          "dst": "hall outside computer site",
+          "dir": "north",
+          "kind": "correct"
+        },
+        {
+          "src": "hall (3rd floor, middle of north/south hall)",
+          "dst": "hall outside elevator (3rd floor)",
+          "dir": "east",
+          "kind": "correct"
+        },
+        {
+          "src": "hall outside elevator (3rd floor)",
+          "dst": "hall (3rd floor, middle of north/south hall)",
+          "dir": "west",
+          "kind": "correct"
+        },
+        {
+          "src": "stairwell (third floor)",
+          "dst": "hall outside computer site",
+          "dir": "east",
+          "kind": "correct"
+        },
+        {
+          "src": "stairwell (third floor)",
+          "dst": "stairwell (second floor)",
+          "dir": "down",
+          "kind": "correct"
+        },
+        {
+          "src": "stairwell (second floor)",
+          "dst": "stairwell (third floor)",
+          "dir": "up",
+          "kind": "correct"
+        },
+        {
+          "src": "stairwell (second floor)",
+          "dst": "stairwell (first floor)",
+          "dir": "down",
+          "kind": "correct"
+        },
+        {
+          "src": "stairwell (second floor)",
+          "dst": "outside physics office",
+          "dir": "east",
+          "kind": "correct"
+        },
+        {
+          "src": "stairwell (first floor)",
+          "dst": "stairwell (second floor)",
+          "dir": "up",
+          "kind": "correct"
+        },
+        {
+          "src": "stairwell (first floor)",
+          "dst": "hall (1st floor, north end of north/south hall)",
+          "dir": "east",
+          "kind": "correct"
+        },
+        {
+          "src": "hall (1st floor, north end of north/south hall)",
+          "dst": "hall (1st floor, middle of north/south hall)",
+          "dir": "south",
+          "kind": "correct"
+        },
+        {
+          "src": "hall (1st floor, north end of north/south hall)",
+          "dst": "outside physics office",
+          "dir": "north",
+          "kind": "spurious"
+        },
+        {
+          "src": "hall (1st floor, middle of north/south hall)",
+          "dst": "hall outside elevator (1st floor)",
+          "dir": "east",
+          "kind": "correct"
+        },
+        {
+          "src": "hall (1st floor, middle of north/south hall)",
+          "dst": "stairwell (first floor)",
+          "dir": "west",
+          "kind": "spurious"
+        },
+        {
+          "src": "hall outside elevator (1st floor)",
+          "dst": "janitor's closet",
+          "dir": "south",
+          "kind": "correct"
+        },
+        {
+          "src": "hall outside elevator (1st floor)",
+          "dst": "hall (1st floor, north end of north/south hall)",
+          "dir": "west",
+          "kind": "wrong_dst"
+        },
+        {
+          "src": "janitor's closet",
+          "dst": "hall outside elevator (1st floor)",
+          "dir": "north",
+          "kind": "correct"
+        },
+        {
+          "src": "outside physics office",
+          "dst": "stairwell (second floor)",
+          "dir": "west",
+          "kind": "correct"
+        },
+        {
+          "src": "outside physics office",
+          "dst": "hall (2nd floor, middle of north/south hall)",
+          "dir": "south",
+          "kind": "correct"
+        },
+        {
+          "src": "hall (2nd floor, middle of north/south hall)",
+          "dst": "maze of twisty passages (stop 1)",
+          "dir": "east",
+          "kind": "wrong_direction"
+        },
+        {
+          "src": "maze of twisty passages (stop 1)",
+          "dst": "maze of twisty passages (stop 5)",
+          "dir": "west",
+          "kind": "spurious"
+        },
+        {
+          "src": "maze of twisty passages (stop 5)",
+          "dst": "maze of twisty passages (stop 4)",
+          "dir": "west",
+          "kind": "spurious"
+        },
+        {
+          "src": "maze of twisty passages (stop 4)",
+          "dst": "maze of twisty passages (stop 5)",
+          "dir": "east",
+          "kind": "wrong_dst"
+        },
+        {
+          "src": "maze of twisty passages (stop 4)",
+          "dst": "hall (1st floor, north end of north/south hall)",
+          "dir": "up",
+          "kind": "spurious"
+        },
+        {
+          "src": "computer site",
+          "dst": "maze of twisty passages (stop 1)",
+          "dir": "down",
+          "kind": "spurious"
+        }
+      ],
+      "n_correct": 19,
+      "n_wrong_direction": 1,
+      "n_wrong_dst": 2,
+      "n_spurious": 6,
+      "n_hallucinated_dst": 0,
+      "n_hallucinated_src": 0,
+      "conflicts": [
+        {
+          "type": "direction",
+          "severity": "high",
+          "description": "node 'stairwell (first floor)' has multiple outgoing edges labelled 'east'",
+          "edges": [
+            [
+              "stairwell (first floor)",
+              "hall (1st floor, north end of north/south hall)"
+            ],
+            [
+              "stairwell (first floor)",
+              "hall (1st floor, middle of north/south hall)"
+            ]
+          ]
+        },
+        {
+          "type": "direction",
+          "severity": "high",
+          "description": "node 'hall outside elevator (1st floor)' has multiple outgoing edges labelled 'west'",
+          "edges": [
+            [
+              "hall outside elevator (1st floor)",
+              "hall (1st floor, middle of north/south hall)"
+            ],
+            [
+              "hall outside elevator (1st floor)",
+              "hall (1st floor, north end of north/south hall)"
+            ]
+          ]
+        },
+        {
+          "type": "direction",
+          "severity": "high",
+          "description": "node 'outside physics office' has multiple outgoing edges labelled 'south'",
+          "edges": [
+            [
+              "outside physics office",
+              "hall (2nd floor, middle of north/south hall)"
+            ],
+            [
+              "outside physics office",
+              "hall (1st floor, north end of north/south hall)"
+            ]
+          ]
+        },
+        {
+          "type": "direction",
+          "severity": "high",
+          "description": "node 'maze of twisty passages (stop 1)' has multiple outgoing edges labelled 'west'",
+          "edges": [
+            [
+              "maze of twisty passages (stop 1)",
+              "hall (2nd floor, middle of north/south hall)"
+            ],
+            [
+              "maze of twisty passages (stop 1)",
+              "maze of twisty passages (stop 5)"
+            ]
+          ]
+        },
+        {
+          "type": "topology",
+          "severity": "high",
+          "description": "position (0, 0, 0) occupied by multiple rooms ['computer site', 'hall (1st floor, middle of north/south hall)', 'hall (1st floor, north end of north/south hall)', 'hall (2nd floor, middle of north/south hall)']",
+          "edges": []
+        },
+        {
+          "type": "topology",
+          "severity": "high",
+          "description": "position (-1, 0, 1) occupied by multiple rooms ['computer site', 'stairwell (second floor)']",
+          "edges": []
+        },
+        {
+          "type": "topology",
+          "severity": "high",
+          "description": "position (2, 0, 0) occupied by multiple rooms ['computer site', 'hall outside elevator (3rd floor)']",
+          "edges": []
+        },
+        {
+          "type": "topology",
+          "severity": "high",
+          "description": "position (1, 0, 0) occupied by multiple rooms ['hall (3rd floor, middle of north/south hall)', 'hall outside elevator (1st floor)', 'maze of twisty passages (stop 1)']",
+          "edges": []
+        },
+        {
+          "type": "topology",
+          "severity": "high",
+          "description": "position (-1, 0, 0) occupied by multiple rooms ['hall outside elevator (1st floor)', 'maze of twisty passages (stop 1)', 'stairwell (first floor)']",
+          "edges": []
+        },
+        {
+          "type": "topology",
+          "severity": "high",
+          "description": "position (0, 0, -1) occupied by multiple rooms ['maze of twisty passages (stop 1)', 'maze of twisty passages (stop 4)']",
+          "edges": []
+        },
+        {
+          "type": "topology",
+          "severity": "high",
+          "description": "position (5, 0, -2) occupied by multiple rooms ['maze of twisty passages (stop 1)', 'stairwell (first floor)']",
+          "edges": []
+        },
+        {
+          "type": "topology",
+          "severity": "high",
+          "description": "position (2, 0, -1) occupied by multiple rooms ['maze of twisty passages (stop 1)', 'stairwell (first floor)']",
+          "edges": []
+        },
+        {
+          "type": "topology",
+          "severity": "high",
+          "description": "position (-2, 0, 0) occupied by multiple rooms ['hall (1st floor, middle of north/south hall)', 'hall (1st floor, north end of north/south hall)', 'hall (2nd floor, middle of north/south hall)', 'maze of twisty passages (stop 5)']",
+          "edges": []
+        },
+        {
+          "type": "topology",
+          "severity": "high",
+          "description": "position (4, 0, -2) occupied by multiple rooms ['hall (2nd floor, middle of north/south hall)', 'maze of twisty passages (stop 5)']",
+          "edges": []
+        },
+        {
+          "type": "topology",
+          "severity": "high",
+          "description": "position (1, 0, -1) occupied by multiple rooms ['hall (2nd floor, middle of north/south hall)', 'maze of twisty passages (stop 5)']",
+          "edges": []
+        },
+        {
+          "type": "topology",
+          "severity": "high",
+          "description": "position (-1, 0, -1) occupied by multiple rooms ['hall (2nd floor, middle of north/south hall)', 'maze of twisty passages (stop 5)']",
+          "edges": []
+        },
+        {
+          "type": "topology",
+          "severity": "high",
+          "description": "position (6, 0, -2) occupied by multiple rooms ['hall (1st floor, middle of north/south hall)', 'hall (1st floor, north end of north/south hall)', 'hall (2nd floor, middle of north/south hall)']",
+          "edges": []
+        },
+        {
+          "type": "topology",
+          "severity": "high",
+          "description": "position (3, 0, -1) occupied by multiple rooms ['hall (1st floor, middle of north/south hall)', 'hall (1st floor, north end of north/south hall)', 'hall (2nd floor, middle of north/south hall)']",
+          "edges": []
+        },
+        {
+          "type": "topology",
+          "severity": "high",
+          "description": "position (-3, 0, 0) occupied by multiple rooms ['maze of twisty passages (stop 4)', 'stairwell (first floor)']",
+          "edges": []
+        },
+        {
+          "type": "topology",
+          "severity": "high",
+          "description": "position (3, 1, -2) occupied by multiple rooms ['hall (1st floor, middle of north/south hall)', 'hall (1st floor, north end of north/south hall)']",
+          "edges": []
+        },
+        {
+          "type": "topology",
+          "severity": "high",
+          "description": "position (0, 1, -1) occupied by multiple rooms ['hall (1st floor, middle of north/south hall)', 'hall (1st floor, north end of north/south hall)']",
+          "edges": []
+        },
+        {
+          "type": "topology",
+          "severity": "high",
+          "description": "position (-1, 1, -1) occupied by multiple rooms ['outside physics office', 'stairwell (first floor)']",
+          "edges": []
+        },
+        {
+          "type": "topology",
+          "severity": "high",
+          "description": "position (-1, -1, 0) occupied by multiple rooms ['hall outside elevator (1st floor)', \"janitor's closet\", 'stairwell (first floor)']",
+          "edges": []
+        },
+        {
+          "type": "topology",
+          "severity": "high",
+          "description": "position (7, -1, -2) occupied by multiple rooms ['hall outside elevator (1st floor)', \"janitor's closet\"]",
+          "edges": []
+        },
+        {
+          "type": "topology",
+          "severity": "high",
+          "description": "position (4, -1, -1) occupied by multiple rooms ['hall outside elevator (1st floor)', \"janitor's closet\"]",
+          "edges": []
+        },
+        {
+          "type": "topology",
+          "severity": "high",
+          "description": "position (1, -1, 0) occupied by multiple rooms ['hall outside elevator (1st floor)', \"janitor's closet\"]",
+          "edges": []
+        },
+        {
+          "type": "topology",
+          "severity": "high",
+          "description": "position (0, 1, 0) occupied by multiple rooms ['outside physics office', 'stairwell (third floor)']",
+          "edges": []
+        },
+        {
+          "type": "naming",
+          "severity": "high",
+          "description": "node 'computer site' reachable at conflicting positions [(-1, 0, 1), (0, 0, 0), (2, 0, 0), (5, 0, -1)]",
+          "edges": []
+        },
+        {
+          "type": "naming",
+          "severity": "high",
+          "description": "node 'hall outside computer site' reachable at conflicting positions [(-2, 1, 1), (0, 1, 1), (1, 1, 0), (3, 1, 0), (6, 1, -1)]",
+          "edges": []
+        },
+        {
+          "type": "naming",
+          "severity": "high",
+          "description": "node 'maze of twisty passages (stop 1)' reachable at conflicting positions [(-1, 0, 0), (0, 0, -1), (1, 0, 0), (2, 0, -1), (5, 0, -2)]",
+          "edges": []
+        },
+        {
+          "type": "naming",
+          "severity": "high",
+          "description": "node 'hall (2nd floor, middle of north/south hall)' reachable at conflicting positions [(-2, 0, 0), (-1, 0, -1), (0, 0, 0), (1, 0, -1), (3, 0, -1), (4, 0, -2), (6, 0, -2)]",
+          "edges": []
+        },
+        {
+          "type": "naming",
+          "severity": "high",
+          "description": "node 'maze of twisty passages (stop 5)' reachable at conflicting positions [(-2, 0, 0), (-1, 0, -1), (1, 0, -1), (4, 0, -2), (7, 0, -3)]",
+          "edges": []
+        },
+        {
+          "type": "naming",
+          "severity": "high",
+          "description": "node 'maze of twisty passages (stop 4)' reachable at conflicting positions [(-3, 0, 0), (-2, 0, -1), (0, 0, -1), (3, 0, -2), (6, 0, -3)]",
+          "edges": []
+        },
+        {
+          "type": "naming",
+          "severity": "high",
+          "description": "node 'hall (1st floor, north end of north/south hall)' reachable at conflicting positions [(-2, 0, 0), (0, 0, 0), (0, 1, -1), (3, 0, -1), (3, 1, -2), (6, 0, -2)]",
+          "edges": []
+        },
+        {
+          "type": "naming",
+          "severity": "high",
+          "description": "node 'stairwell (first floor)' reachable at conflicting positions [(-3, -1, 0), (-3, 0, 0), (-3, 1, -1), (-1, -1, 0), (-1, 0, 0), (-1, 1, -1), (2, -1, -1), (2, 0, -1), (2, 1, -2), (5, -1, -2), (5, 0, -2), (5, 1, -3)]",
+          "edges": []
+        },
+        {
+          "type": "naming",
+          "severity": "high",
+          "description": "node 'hall (1st floor, middle of north/south hall)' reachable at conflicting positions [(-2, -1, 0), (-2, 0, 0), (0, -1, 0), (0, 0, 0), (0, 1, -1), (3, -1, -1), (3, 0, -1), (3, 1, -2), (6, -1, -2), (6, 0, -2)]",
+          "edges": []
+        },
+        {
+          "type": "naming",
+          "severity": "high",
+          "description": "node 'hall outside elevator (1st floor)' reachable at conflicting positions [(-1, -1, 0), (-1, 0, 0), (1, -1, 0), (1, 0, 0), (4, -1, -1), (4, 0, -1), (7, -1, -2), (7, 0, -2)]",
+          "edges": []
+        },
+        {
+          "type": "naming",
+          "severity": "high",
+          "description": "node 'outside physics office' reachable at conflicting positions [(-2, 1, 0), (-1, 1, -1), (0, 1, 0), (1, 1, -1), (3, 1, -1), (6, 1, -2)]",
+          "edges": []
+        },
+        {
+          "type": "naming",
+          "severity": "high",
+          "description": "node 'stairwell (second floor)' reachable at conflicting positions [(-3, 0, 1), (-3, 1, 0), (-1, 0, 1), (-1, 1, 0), (2, 1, -1), (5, 1, -2)]",
+          "edges": []
+        },
+        {
+          "type": "naming",
+          "severity": "high",
+          "description": "node 'hall (3rd floor, middle of north/south hall)' reachable at conflicting positions [(0, 0, 1), (1, 0, 0), (3, 0, 0), (6, 0, -1)]",
+          "edges": []
+        },
+        {
+          "type": "naming",
+          "severity": "high",
+          "description": "node 'stairwell (third floor)' reachable at conflicting positions [(-3, 1, 1), (-1, 1, 1), (0, 1, 0), (2, 1, 0), (5, 1, -1)]",
+          "edges": []
+        },
+        {
+          "type": "naming",
+          "severity": "high",
+          "description": "node \"janitor's closet\" reachable at conflicting positions [(-1, -1, 0), (1, -1, 0), (4, -1, -1), (7, -1, -2)]",
+          "edges": []
+        },
+        {
+          "type": "naming",
+          "severity": "high",
+          "description": "node 'hall outside elevator (3rd floor)' reachable at conflicting positions [(1, 0, 1), (2, 0, 0), (4, 0, 0), (7, 0, -1)]",
+          "edges": []
+        }
+      ]
+    },
+    "repaired": {
+      "edges": [
+        {
+          "src": "hall outside computer site",
+          "dst": "hall (3rd floor, middle of north/south hall)",
+          "dir": "south"
+        },
+        {
+          "src": "hall outside computer site",
+          "dst": "stairwell (third floor)",
+          "dir": "west"
+        },
+        {
+          "src": "hall outside computer site",
+          "dst": "computer site",
+          "dir": "southwest"
+        },
+        {
+          "src": "hall (3rd floor, middle of north/south hall)",
+          "dst": "hall outside computer site",
+          "dir": "north"
+        },
+        {
+          "src": "hall (3rd floor, middle of north/south hall)",
+          "dst": "hall outside elevator (3rd floor)",
+          "dir": "east"
+        },
+        {
+          "src": "hall outside elevator (3rd floor)",
+          "dst": "hall (3rd floor, middle of north/south hall)",
+          "dir": "west"
+        },
+        {
+          "src": "stairwell (third floor)",
+          "dst": "hall outside computer site",
+          "dir": "east"
+        },
+        {
+          "src": "stairwell (third floor)",
+          "dst": "stairwell (second floor)",
+          "dir": "down"
+        },
+        {
+          "src": "stairwell (second floor)",
+          "dst": "stairwell (third floor)",
+          "dir": "up"
+        },
+        {
+          "src": "stairwell (second floor)",
+          "dst": "stairwell (first floor)",
+          "dir": "down"
+        },
+        {
+          "src": "stairwell (second floor)",
+          "dst": "outside physics office",
+          "dir": "east"
+        },
+        {
+          "src": "stairwell (first floor)",
+          "dst": "stairwell (second floor)",
+          "dir": "up"
+        },
+        {
+          "src": "hall (1st floor, north end of north/south hall)",
+          "dst": "hall (1st floor, middle of north/south hall)",
+          "dir": "south"
+        },
+        {
+          "src": "hall (1st floor, north end of north/south hall)",
+          "dst": "outside physics office",
+          "dir": "north"
+        },
+        {
+          "src": "hall (1st floor, middle of north/south hall)",
+          "dst": "hall outside elevator (1st floor)",
+          "dir": "east"
+        },
+        {
+          "src": "hall (1st floor, middle of north/south hall)",
+          "dst": "stairwell (first floor)",
+          "dir": "west"
+        },
+        {
+          "src": "hall outside elevator (1st floor)",
+          "dst": "janitor's closet",
+          "dir": "south"
+        },
+        {
+          "src": "janitor's closet",
+          "dst": "hall outside elevator (1st floor)",
+          "dir": "north"
+        },
+        {
+          "src": "outside physics office",
+          "dst": "stairwell (second floor)",
+          "dir": "west"
+        },
+        {
+          "src": "hall (2nd floor, middle of north/south hall)",
+          "dst": "maze of twisty passages (stop 1)",
+          "dir": "east"
+        },
+        {
+          "src": "maze of twisty passages (stop 5)",
+          "dst": "maze of twisty passages (stop 4)",
+          "dir": "west"
+        },
+        {
+          "src": "maze of twisty passages (stop 4)",
+          "dst": "hall (1st floor, north end of north/south hall)",
+          "dir": "up"
+        },
+        {
+          "src": "computer site",
+          "dst": "maze of twisty passages (stop 1)",
+          "dir": "down"
+        }
+      ],
+      "actions": [
+        {
+          "kind": "remove_edge",
+          "target": [
+            "hall outside elevator (1st floor)",
+            "hall (1st floor, north end of north/south hall)"
+          ],
+          "new_dir": null,
+          "reason": "remove fallback"
+        },
+        {
+          "kind": "remove_edge",
+          "target": [
+            "maze of twisty passages (stop 1)",
+            "maze of twisty passages (stop 5)"
+          ],
+          "new_dir": null,
+          "reason": "remove fallback"
+        },
+        {
+          "kind": "remove_edge",
+          "target": [
+            "outside physics office",
+            "hall (2nd floor, middle of north/south hall)"
+          ],
+          "new_dir": null,
+          "reason": "remove fallback"
+        },
+        {
+          "kind": "remove_edge",
+          "target": [
+            "stairwell (first floor)",
+            "hall (1st floor, north end of north/south hall)"
+          ],
+          "new_dir": null,
+          "reason": "remove fallback"
+        },
+        {
+          "kind": "remove_edge",
+          "target": [
+            "maze of twisty passages (stop 4)",
+            "maze of twisty passages (stop 5)"
+          ],
+          "new_dir": null,
+          "reason": "remove fallback"
+        },
+        {
+          "kind": "skip",
+          "target": null,
+          "new_dir": null,
+          "reason": "no candidates"
+        }
+      ],
+      "n_conflicts_before": 43,
+      "n_conflicts_after": 15
+    }
+  }
+}

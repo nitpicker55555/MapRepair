@@ -1,0 +1,24 @@
+# reverb  model=gpt-4.1  n_steps=23
+step   0 bad movement output: {'is_movement': True, 'src_node': None, 'dst_node': 'pizza parlor', 'action': 'southwest', 'seen_in_forward': 0, 'current_location': 'pizza parlor', 'reasoning': "Observation states arrival in 'Mr. Tasty's Pizza Parlor', matching canonical 'pizza parlor'."}
+step   1 bad movement output: {'is_movement': True, 'src_node': None, 'dst_node': 'street, by pizza parlor', 'action': 'south', 'seen_in_forward': 1, 'current_location': 'street, by pizza parlor', 'reasoning': "Observation explicitly names 'Street, by Pizza Parlor', matching the canonical location list."}
+step   2 bad movement output: {'is_movement': True, 'src_node': None, 'dst_node': 'street, near courthouse', 'action': 'west', 'seen_in_forward': 2, 'current_location': 'street, near courthouse', 'reasoning': "Observation heading matches canonical room 'street, near courthouse'; action is compass direction."}
+step   3 MOVE 'street, near courthouse' --[south]--> 'courthouse'
+step   4 MOVE 'courthouse' --[north]--> 'street, near courthouse'
+step   5 MOVE 'street, near courthouse' --[west]--> 'downtown'
+step   6 MOVE 'downtown' --[west]--> 'office building'
+step   7 MOVE 'office building' --[east]--> 'law office'
+step   8 MOVE 'law office' --[west]--> 'second floor'
+step   9 MOVE 'second floor' --[east]--> "mayor's office"
+step  10 MOVE "mayor's office" --[east]--> 'downtown'
+step  11 MOVE 'downtown' --[east]--> 'street, near courthouse'
+step  12 MOVE 'street, near courthouse' --[east]--> 'street, by pizza parlor'
+step  13 MOVE 'street, by pizza parlor' --[north]--> 'pizza parlor'
+step  14 MOVE 'pizza parlor' --[east]--> 'street, by department store'
+step  15 MOVE 'street, by department store' --[south]--> 'clothing department'
+step  16 MOVE 'clothing department' --[southeast]--> 'cosmetics department'
+step  17 MOVE 'cosmetics department' --[northwest]--> 'clothing department'
+step  18 MOVE 'clothing department' --[north]--> 'street, by department store'
+step  19 MOVE 'street, by department store' --[southwest]--> 'hardware department'
+step  20 MOVE 'hardware department' --[northeast]--> 'clothing department'
+step  21 MOVE 'clothing department' --[west]--> 'street, by pizza parlor'
+step  22 MOVE 'street, by pizza parlor' --[north]--> 'roof of office building'

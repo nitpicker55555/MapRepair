@@ -1,0 +1,56 @@
+[
+  {
+    "src_node": "pocket valley",
+    "dst_node": "crest of hill",
+    "action": "north",
+    "seen_in_forward": 2
+  },
+  {
+    "src_node": "crest of hill",
+    "dst_node": "cave mouth",
+    "action": "northwest",
+    "seen_in_forward": 3
+  },
+  {
+    "src_node": "cave mouth",
+    "dst_node": "gorse bushes",
+    "action": "north",
+    "seen_in_forward": 4
+  },
+  {
+    "src_node": "gorse bushes",
+    "dst_node": "cave mouth",
+    "action": "south",
+    "seen_in_forward": 5
+  },
+  {
+    "src_node": "cave mouth",
+    "dst_node": "inside cave",
+    "action": "west",
+    "seen_in_forward": 6
+  },
+  {
+    "src_node": "inside cave",
+    "dst_node": "cave mouth",
+    "action": "east",
+    "seen_in_forward": 7
+  },
+  {
+    "src_node": "cave mouth",
+    "dst_node": "crest of hill",
+    "action": "southeast",
+    "seen_in_forward": 8
+  },
+  {
+    "src_node": "crest of hill",
+    "dst_node": "edge of chasm",
+    "action": "south",
+    "seen_in_forward": 9
+  },
+  {
+    "src_node": "edge of chasm",
+    "dst_node": "outside temple",
+    "action": "east",
+    "seen_in_forward": 10
+  }
+]

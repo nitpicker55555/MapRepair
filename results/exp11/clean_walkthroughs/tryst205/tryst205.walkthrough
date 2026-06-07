@@ -1,0 +1,1240 @@
+===========
+==>STEP NUM: 0
+==>ACT: north
+==>OBSERVATION: Master Bedroom
+While considerably better than your children's rooms, your room is also a little bit on the messy side. There is a king-size bed here with mountains of assorted pillows. A masterfully finished dresser graces the south wall. To the south is the hallway and a bathroom is off to the west.
+
+You can see a little gnome here.
+===========
+==>STEP NUM: 1
+==>ACT: west
+==>OBSERVATION: Master Bathroom
+Beautiful plants hang down from the ceiling and ceramic cherubims watch your every move in this small area off of the master bedroom to the east. To the south is a spacious walk-in closet with mirrored doors.
+
+The closet door is closed.
+
+You can also see a little gnome here.
+===========
+==>STEP NUM: 2
+==>ACT: east
+==>OBSERVATION: Master Bedroom
+===========
+==>STEP NUM: 3
+==>ACT: south
+==>OBSERVATION: Upstairs Hallway
+
+You can see a little toy car here.
+===========
+==>STEP NUM: 4
+==>ACT: east
+==>OBSERVATION: Kids' Bathroom
+No surprises here. Towels everywhere, water on the floor, even a couple of toys to boot. The hallway is just a couple of steps to the west.
+
+There is a pinkish shower curtain here.
+===========
+==>STEP NUM: 5
+==>ACT: west
+==>OBSERVATION: Upstairs Hallway
+
+You can see a little toy car here.
+===========
+==>STEP NUM: 6
+==>ACT: northeast
+==>OBSERVATION: Mark's Room
+Although you just finished cleaning this room an hour ago, it now looks like it hasn't been cleaned in about three weeks. The bed looks like it has been jumped on by an entire preschool. Dirty clothes are thoughtfully sprinkled across the floor, interspersed with assorted toys and food items. You can exit this mess to the south.
+
+Somehow, someone has lost their gum and thoroughly ground it into the carpet.
+
+You can also see a bench here.
+===========
+==>STEP NUM: 7
+==>ACT: south
+==>OBSERVATION: Upstairs Hallway
+
+You can see a little toy car here.
+===========
+==>STEP NUM: 8
+==>ACT: exit
+==>OBSERVATION: You get off the bench.
+
+Upstairs Hallway
+
+You can see a bench and a little toy car here.
+===========
+==>STEP NUM: 9
+==>ACT: south
+==>OBSERVATION: Kati's Room
+Kati has done a marvelous job at totally trashing this room since this morning. You swear there once was a bed in here but all you can see is a mountain of clothing in front of the closet. The hallway is to the north.
+
+[Your score has just gone up by five points.]
+===========
+==>STEP NUM: 10
+==>ACT: north
+==>OBSERVATION: Upstairs Hallway
+
+You can see a wire key, a bench and a little toy car here.
+===========
+==>STEP NUM: 11
+==>ACT: northeast
+==>OBSERVATION: Mark's Room
+
+Somehow, someone has lost their gum and thoroughly ground it into the carpet.
+===========
+==>STEP NUM: 12
+==>ACT: south
+==>OBSERVATION: Upstairs Hallway
+
+You can see a wire key, a bench and a little toy car here.
+===========
+==>STEP NUM: 13
+==>ACT: northeast
+==>OBSERVATION: Mark's Room
+
+You can see Mark and a blue ice pack here.
+===========
+==>STEP NUM: 14
+==>ACT: south
+==>OBSERVATION: Upstairs Hallway
+
+You can see a wire key, a bench and a little toy car here.
+===========
+==>STEP NUM: 15
+==>ACT: north
+==>OBSERVATION: Master Bedroom
+===========
+==>STEP NUM: 16
+==>ACT: west
+==>OBSERVATION: Master Bathroom
+
+The closet door is closed.
+===========
+==>STEP NUM: 17
+==>ACT: south
+==>OBSERVATION: Master Closet
+Well as far as closets go, this one is filled floor to ceiling with various clothing articles, shoes, and sundry. You can leave this Mecca for moths to the north.
+
+The closet door is open.
+===========
+==>STEP NUM: 18
+==>ACT: down
+==>OBSERVATION: Secret Cellar
+This creepy cellar looks like it predates your house by about a hundred years or so. Cold stone walls provide a framework for countless spiderwebs along with dried insects and other debris. No doors or other exits are evident except for the weathered ladder leading to the trap door in the ceiling, which is the sole source of light for this room. The dust-covered floor reveals a fresh set of small boot prints. Oddly, the trail of boot prints stops dead center in the middle of the room.
+
+You can see a green gumball here.
+===========
+==>STEP NUM: 19
+==>ACT: west
+==>OBSERVATION: Shady Path
+A well-traveled path from the west branches south and continues east here under the refreshing shade of the bordering oaks. The sloping path leading south appears somewhat muddy but the footing does not appear to be too difficult.
+===========
+==>STEP NUM: 20
+==>ACT: south
+==>OBSERVATION: Beaver Dam
+A small stream flowing from the west is only slightly hampered here by a deteriorating beaver dam which has formed a large deep pool of crystal clear water. Chokecherry bushes line the perimeter of the pool confining access to the pool to the area in which you are standing. The air is thick with mosquitos and gnats.
+
+There is a flat-faced rock here, protruding just above the surface of the pool.
+
+On the chokecherry bushes is a small bunch of berries.
+
+The mosquitos and gnats start to eat you alive, forcing you to leave while you still can.
+
+Shady Path
+A well-traveled path from the west branches south and continues east here under the refreshing shade of the bordering oaks. The sloping path leading south appears somewhat muddy but the footing does not appear to be too difficult.
+===========
+==>STEP NUM: 21
+==>ACT: west
+==>OBSERVATION: Trail
+This northeast-southwest trail has all the appearances of being a main thoroughfare prior to becoming overrun with weeds and brush. A narrow footpath leads off to the east through the brush.
+===========
+==>STEP NUM: 22
+==>ACT: northeast
+==>OBSERVATION: Blind Canyon
+The trail winds its way from the southwest through a shadowy canyon formed in the cleft of two large hills. You cannot help but feel confined and vulnerable by the sheer walls of this gorge and limited visibility in front of you and behind. The trail continues to the north.
+===========
+==>STEP NUM: 23
+==>ACT: north
+==>OBSERVATION: Track Crossing
+A set of well-worn railroad tracks crosses the north-south trail here. The wooden ties have all but disintegrated and the rails are thick with bright red rust. The weed ridden-tracks run east-west.
+===========
+==>STEP NUM: 24
+==>ACT: north
+==>OBSERVATION: Dusty Road
+The trail here turns to fine dust with only a trace of vegetation. The wind is howling from the west, blowing dust, sand, and tumbleweeds everywhere. A brief respite in the blowing debris allows you to see the trail continuing north and an overgrown path going up to the east.
+===========
+==>STEP NUM: 25
+==>ACT: north
+==>OBSERVATION: Deadeye Gulch
+You are at the outskirts of what you would guess is a small town. Tumbleweeds and debris litter the trail giving all appearances that this place is deserted. The majority of buildings and other structures are to the west while a large barn-like building is due north. There is a faded sign just off to the side of the trail.
+===========
+==>STEP NUM: 26
+==>ACT: west
+==>OBSERVATION: East Main Street
+You are at the east end of Deadeye Gulch on a street which is thick with dried grass and weeds. The remains of hitching posts and water troughs line the crumbling wooden sidewalks. Most of the buildings here have collapsed from aging timbers and a few appear as if they were burned down to their foundations. A couple of structures, however, have withstood the elements. To the north, there is a bank judging from the declaration as to such in the windows. To the south, there is a saloon.
+===========
+==>STEP NUM: 27
+==>ACT: west
+==>OBSERVATION: West Main Street
+Most of the buildings on this end of town have given up the ghost and are but piles of broken lumber, tarpaper and other debris. One structure, to the north, seems to have fared considerably better than its neighbor to the south. The street narrows to the west where it appears to pick up a trail leading out of town. Back to the east is the center of town.
+===========
+==>STEP NUM: 28
+==>ACT: north
+==>OBSERVATION: General Store
+The musty smell of rotting wood greets your arrival at this rather dark dry goods store. An empty wood and glass counter parallel to the east wall displays mere remnants of the grains, sugar, fruit, and candy once plentiful in each of the adjacent bins. The shelves behind the counter are now only a repository for dust and a framework for countless cobwebs. The wooden floorboards, once sanded and polished, are now buckled and decrepit. A pair of broken doors leads out to the south and an open screen door leads to the west.
+
+One of the floorboards squeaks when you step on it.
+
+On the shelves are a stack of gum base and a box (which is closed).
+===========
+==>STEP NUM: 29
+==>ACT: west
+==>OBSERVATION: Garden
+This small fenced-in area was once a garden, probably for the private use of the store's proprietor. Weeds now blanket the dark soil where once beans, carrots, potatoes, and the like thrived in the hot summer. In one corner of the garden, however, a single corn stalk has made its way skyward supported by the fence. A screen door to the east leads back into the store.
+===========
+==>STEP NUM: 30
+==>ACT: east
+==>OBSERVATION: General Store
+
+One of the floorboards squeaks when you step on it.
+
+On the shelves are a stack of gum base and a box (in which is a dozen or so sugar cubes).
+
+You can also see a match here.
+===========
+==>STEP NUM: 31
+==>ACT: south
+==>OBSERVATION: West Main Street
+===========
+==>STEP NUM: 32
+==>ACT: south
+==>OBSERVATION: You can't, since the jail door is in the way.
+===========
+==>STEP NUM: 33
+==>ACT: west
+==>OBSERVATION: Unattended Trees
+The east-west trail here is lined by scraggly sycamore trees that look more dead than alive. Even the few birds' nests tucked away in the upper branches look poorly constructed and uninhabitable.
+===========
+==>STEP NUM: 34
+==>ACT: up
+==>OBSERVATION: After selecting a promising candidate, you carefully scale the trunk. After a few moments you find yourself at...
+
+Tree Top
+The upper branches of this tree are almost totally bare of leaves. One branch within reach supports a deserted bird's nest which looks a whisper away from nonexistence. Further travel up the tree does not look promising since, basically, there is no more tree.
+===========
+==>STEP NUM: 35
+==>ACT: down
+==>OBSERVATION: Unattended Trees
+===========
+==>STEP NUM: 36
+==>ACT: east
+==>OBSERVATION: West Main Street
+===========
+==>STEP NUM: 37
+==>ACT: east
+==>OBSERVATION: East Main Street
+===========
+==>STEP NUM: 38
+==>ACT: north
+==>OBSERVATION: Bank
+Abandoned teller windows line the west wall of this former financial hub of the Deadeye community. Not unlike everything else in town, it too has fallen into disrepair. To the north you can make out an open vault and to the south lies Main Street.
+
+There is a rusted pan lying over in the corner.
+===========
+==>STEP NUM: 39
+==>ACT: north
+==>OBSERVATION: Vault
+This red brick enclosure has been picked clean of its valuables, bringing to mind the adage "A Day Late, and a Dollar Short." A large wooden table dominates the center of the room supporting some type of mechanical contraption. The rest of the bank lies to the south.
+===========
+==>STEP NUM: 40
+==>ACT: south
+==>OBSERVATION: Bank
+
+There is a hole in one of the floorboards.
+===========
+==>STEP NUM: 41
+==>ACT: south
+==>OBSERVATION: East Main Street
+===========
+==>STEP NUM: 42
+==>ACT: south
+==>OBSERVATION: Saloon
+This old beer hall served its last cold one many summers past. The rosewood bar stretches from wall to wall and, surprisingly, the wall-length mirror in back of the bar is still intact. The brass foot rail at the base of the bar is worn flat on the top from the countless patrons whose hard-earned wages were quickly converted into good times and song. Swinging doors lead back to the street to the north.
+
+You can see a table, a slot machine and a tray (which is empty) here.
+===========
+==>STEP NUM: 43
+==>ACT: north
+==>OBSERVATION: East Main Street
+===========
+==>STEP NUM: 44
+==>ACT: east
+==>OBSERVATION: Deadeye Gulch
+===========
+==>STEP NUM: 45
+==>ACT: south
+==>OBSERVATION: Dusty Road
+===========
+==>STEP NUM: 46
+==>ACT: south
+==>OBSERVATION: Track Crossing
+===========
+==>STEP NUM: 47
+==>ACT: south
+==>OBSERVATION: Blind Canyon
+===========
+==>STEP NUM: 48
+==>ACT: southwest
+==>OBSERVATION: Trail
+===========
+==>STEP NUM: 49
+==>ACT: southwest
+==>OBSERVATION: Clear Creek
+A briskly moving stream widens here and is shallow enough to cross without difficulty. Along one bank where the water slows to a crawl a deposit of black magnetite can be seen. The trail continues to the northeast and up a small ridge to the southwest.
+===========
+==>STEP NUM: 50
+==>ACT: southwest
+==>OBSERVATION: Trail
+The main trail turns from northeast to south here, traversing a small grassy ridge.
+===========
+==>STEP NUM: 51
+==>ACT: south
+==>OBSERVATION: Trail
+It is difficult to discern the trail here due to the thick sagebrush. The vegetation does thin a bit to the southeast and southwest, and a clear path leads north.
+
+You can see a sprig of sage here.
+===========
+==>STEP NUM: 52
+==>ACT: north
+==>OBSERVATION: Trail
+===========
+==>STEP NUM: 53
+==>ACT: northeast
+==>OBSERVATION: Clear Creek
+
+You can see a pan (which is empty) here.
+===========
+==>STEP NUM: 54
+==>ACT: northeast
+==>OBSERVATION: Trail
+===========
+==>STEP NUM: 55
+==>ACT: northeast
+==>OBSERVATION: Blind Canyon
+===========
+==>STEP NUM: 56
+==>ACT: north
+==>OBSERVATION: Track Crossing
+===========
+==>STEP NUM: 57
+==>ACT: north
+==>OBSERVATION: Dusty Road
+===========
+==>STEP NUM: 58
+==>ACT: north
+==>OBSERVATION: Deadeye Gulch
+===========
+==>STEP NUM: 59
+==>ACT: west
+==>OBSERVATION: East Main Street
+===========
+==>STEP NUM: 60
+==>ACT: north
+==>OBSERVATION: Bank
+
+There is a hole in one of the floorboards.
+===========
+==>STEP NUM: 61
+==>ACT: north
+==>OBSERVATION: Vault
+
+You can see a green note here.
+===========
+==>STEP NUM: 62
+==>ACT: south
+==>OBSERVATION: Bank
+
+There is a hole in one of the floorboards.
+===========
+==>STEP NUM: 63
+==>ACT: south
+==>OBSERVATION: East Main Street
+===========
+==>STEP NUM: 64
+==>ACT: south
+==>OBSERVATION: Saloon
+
+You can see a crumpled note, a table, a slot machine and a tray (which is empty) here.
+===========
+==>STEP NUM: 65
+==>ACT: north
+==>OBSERVATION: East Main Street
+===========
+==>STEP NUM: 66
+==>ACT: east
+==>OBSERVATION: Deadeye Gulch
+===========
+==>STEP NUM: 67
+==>ACT: north
+==>OBSERVATION: Outside Livery
+You are just outside a large barn-like structure that appears to be the local livery. The aging structure looks fairly sound except that the roof is starting to sag in areas. Just north is an oddly colored entrance to the building. The rest of Deadeye is to the southwest and there is a clearing to the south.
+===========
+==>STEP NUM: 68
+==>ACT: north
+==>OBSERVATION: You can't, since the livery door is in the way.
+===========
+==>STEP NUM: 69
+==>ACT: north
+==>OBSERVATION: Livery Stable
+This dilapidated building has long fallen into disrepair. It is surprisingly bright in here as light filters through large gaping holes in the roof. Numerous stalls line the walls presumably for horses or other livestock. A wooden ladder provides access to a hayloft to the north while large sliding doors, long off their rails, provide an egress to the east. You can leave the building by heading south.
+===========
+==>STEP NUM: 70
+==>ACT: exit
+==>OBSERVATION: You get out of the horse stall.
+
+Livery Stable
+===========
+==>STEP NUM: 71
+==>ACT: up
+==>OBSERVATION: Hayloft
+The floorboards of the loft creak and sag with your weight but seem to be holding firm, at least for now. Only a few clumps of straw remain where there were once probably dozens of hay bales. The heat up here is nearly unbearable and perspiration begins to run down your face. The only way off of the loft is to impose yourself on the weathered ladder once again.
+
+You can see a pitchfork here.
+===========
+==>STEP NUM: 72
+==>ACT: down
+==>OBSERVATION: Livery Stable
+===========
+==>STEP NUM: 73
+==>ACT: east
+==>OBSERVATION: Corral
+All is not so 'O.K.' with this corral as most of the wooden fences have given away to the ravages of time and the elements. Tall range grass has overtaken the ground and the air is alive with the sounds of grasshoppers, crickets and the like.
+===========
+==>STEP NUM: 74
+==>ACT: west
+==>OBSERVATION: Livery Stable
+===========
+==>STEP NUM: 75
+==>ACT: south
+==>OBSERVATION: Outside Livery
+===========
+==>STEP NUM: 76
+==>ACT: south
+==>OBSERVATION: Deadeye Gulch
+===========
+==>STEP NUM: 77
+==>ACT: west
+==>OBSERVATION: East Main Street
+===========
+==>STEP NUM: 78
+==>ACT: east
+==>OBSERVATION: Deadeye Gulch
+===========
+==>STEP NUM: 79
+==>ACT: south
+==>OBSERVATION: Dusty Road
+===========
+==>STEP NUM: 80
+==>ACT: east
+==>OBSERVATION: Boot Hill
+You are standing atop a large knoll which apparently served as a cemetery at some point in time. Remains of a picket fence lie strewn about the hillside and most of the gravestones have disintegrated beyond recognition. One granite marker at the head of a grassless plot, however, remains intact.
+===========
+==>STEP NUM: 81
+==>ACT: west
+==>OBSERVATION: The massive bird takes to the air and disappears to the north.
+
+Dusty Road
+===========
+==>STEP NUM: 82
+==>ACT: north
+==>OBSERVATION: Deadeye Gulch
+===========
+==>STEP NUM: 83
+==>ACT: west
+==>OBSERVATION: East Main Street
+===========
+==>STEP NUM: 84
+==>ACT: west
+==>OBSERVATION: West Main Street
+===========
+==>STEP NUM: 85
+==>ACT: west
+==>OBSERVATION: Unattended Trees
+===========
+==>STEP NUM: 86
+==>ACT: west
+==>OBSERVATION: Spoon in the Road
+
+The trail continues east-west here, but two side trails duck away up to the northwest and down to the southwest somewhat forming a fork.
+
+There is something shiny here half-buried in the dirt.
+===========
+==>STEP NUM: 87
+==>ACT: northwest
+==>OBSERVATION: Bottom of Crow Hill
+A rather tall hill sprouts out of the landscape here, casting a deep shadow to the east. A well-traveled path leads up the hill to the northeast and a grassy trail leads off to the southeast. There is a sign lying in the dirt.
+===========
+==>STEP NUM: 88
+==>ACT: northeast
+==>OBSERVATION: Top of Crow Hill
+The whole valley is revealed to you as you approach the summit. To the east, you see the largely decaying town of Deadeye Gulch, and just further, the small knoll known as Boot Hill. To the south, the dusty valley floor unfolds, divided by a small tree-lined creek. Large snowy mountains abut the hill to the north while endless badlands reach out seemingly forever to the west. The main trail continues around the hill to the west and down to the southwest, whereas a faint side trail heads towards the crest to the north.
+===========
+==>STEP NUM: 89
+==>ACT: north
+==>OBSERVATION: As you proceed up the hill, your bones start to hurt and you feel like you're....
+
+Over the Hill
+"I'm too old for this nonsense" is your first thought after a brief journey over the crest of the hill to this dirt outcropping on the north side. Momentarily ignoring your aching joints and brief memory lapses, you spot a trail heading south up the hill. Oddly, the trail shows signs of fresh footprints.
+
+You can see a lantern here.
+===========
+==>STEP NUM: 90
+==>ACT: south
+==>OBSERVATION: As you return back, the spring returns to your step and you again feel like your youthful self again.
+
+Top of Crow Hill
+===========
+==>STEP NUM: 91
+==>ACT: west
+==>OBSERVATION: Burned Down Shack
+Wisps of steam rise off of the charred timbers of what was once a fair-sized building. Small flames flare up occasionally producing a deep crackling sound. Paper-thin pieces of ash float hither and yon. An odd-shaped sign lies on the ground.
+
+George is here staring at the charred remains of his gum factory.
+
+There is a brass key hanging on George's belt.
+
+You can also see a leather-bound book, a cauldron (in which is some metallic flakes) and a burned sketch here.
+===========
+==>STEP NUM: 92
+==>ACT: east
+==>OBSERVATION: Top of Crow Hill
+===========
+==>STEP NUM: 93
+==>ACT: southwest
+==>OBSERVATION: Bottom of Crow Hill
+===========
+==>STEP NUM: 94
+==>ACT: southeast
+==>OBSERVATION: Fork in the Road
+===========
+==>STEP NUM: 95
+==>ACT: east
+==>OBSERVATION: Unattended Trees
+===========
+==>STEP NUM: 96
+==>ACT: east
+==>OBSERVATION: West Main Street
+===========
+==>STEP NUM: 97
+==>ACT: east
+==>OBSERVATION: East Main Street
+===========
+==>STEP NUM: 98
+==>ACT: south
+==>OBSERVATION: Saloon
+
+You can see a piece of gauzy cloth, a cork, a crumpled note, a table, a slot machine and a tray (which is empty) here.
+===========
+==>STEP NUM: 99
+==>ACT: north
+==>OBSERVATION: A big burly man bursts through the swinging doors and yells, "What the hell ya think yer doin' missy sittin' at mah table? Hey barkeep, I should shoot yer ears off for lettin' this wench clutter up mah place here!"
+
+Saloon
+The ol' saloon is quieter than a church. Patrons and dance girls line the walls to avoid being in the line of fire. The barkeep is huddled behind the bar occasionally peeking out to view the situation. The rest of the hired help is nowhere to be seen.
+
+You can see Black Thad McGee and a table here.
+===========
+==>STEP NUM: 100
+==>ACT: east
+==>OBSERVATION: Storage Room
+This area was probably used as a storage area for the bar prior to the acquisition of the huge mirror. The rest of the saloon lies to the west.
+
+You can see a dull knife here.
+===========
+==>STEP NUM: 101
+==>ACT: west
+==>OBSERVATION: Saloon
+
+You can see shards of glass, a piece of gauzy cloth, a crumpled note, a table, a slot machine and a tray (which is empty) here.
+===========
+==>STEP NUM: 102
+==>ACT: north
+==>OBSERVATION: East Main Street
+
+You can see a match, a pitchfork, a tin (which is closed) and a lantern here.
+===========
+==>STEP NUM: 103
+==>ACT: east
+==>OBSERVATION: Deadeye Gulch
+===========
+==>STEP NUM: 104
+==>ACT: south
+==>OBSERVATION: Dusty Road
+===========
+==>STEP NUM: 105
+==>ACT: south
+==>OBSERVATION: Track Crossing
+===========
+==>STEP NUM: 106
+==>ACT: south
+==>OBSERVATION: Blind Canyon
+===========
+==>STEP NUM: 107
+==>ACT: southwest
+==>OBSERVATION: Trail
+===========
+==>STEP NUM: 108
+==>ACT: east
+==>OBSERVATION: Shady Path
+===========
+==>STEP NUM: 109
+==>ACT: south
+==>OBSERVATION: Beaver Dam
+
+There is a flat-faced rock here, protruding just above the surface of the pool.
+
+On the chokecherry bushes is a small bunch of berries.
+
+The mosquitos and gnats don't want anything to do with that smelly stuff you're wearing.
+
+[Your score has just gone up by ten points.]
+===========
+==>STEP NUM: 110
+==>ACT: north
+==>OBSERVATION: Shady Path
+===========
+==>STEP NUM: 111
+==>ACT: west
+==>OBSERVATION: Trail
+The balm has worn out.
+===========
+==>STEP NUM: 112
+==>ACT: southwest
+==>OBSERVATION: Clear Creek
+
+You can see a pan (which is empty) here.
+===========
+==>STEP NUM: 113
+==>ACT: southwest
+==>OBSERVATION: Trail
+===========
+==>STEP NUM: 114
+==>ACT: south
+==>OBSERVATION: Trail
+===========
+==>STEP NUM: 115
+==>ACT: southeast
+==>OBSERVATION: End of the Trail
+The main trail surrenders here to thick brush and thicket making further progress impossible. A faded sign is nailed to a huge willow tree whose long narrow branches just touch the ground. You can pick up the main trail to the northwest.
+===========
+==>STEP NUM: 116
+==>ACT: northwest
+==>OBSERVATION: Trail
+===========
+==>STEP NUM: 117
+==>ACT: north
+==>OBSERVATION: Trail
+===========
+==>STEP NUM: 118
+==>ACT: northeast
+==>OBSERVATION: Clear Creek
+
+You can see a pan (which is empty) here.
+===========
+==>STEP NUM: 119
+==>ACT: northeast
+==>OBSERVATION: Trail
+===========
+==>STEP NUM: 120
+==>ACT: northeast
+==>OBSERVATION: Blind Canyon
+===========
+==>STEP NUM: 121
+==>ACT: north
+==>OBSERVATION: Track Crossing
+===========
+==>STEP NUM: 122
+==>ACT: north
+==>OBSERVATION: Dusty Road
+===========
+==>STEP NUM: 123
+==>ACT: north
+==>OBSERVATION: Deadeye Gulch
+===========
+==>STEP NUM: 124
+==>ACT: west
+==>OBSERVATION: East Main Street
+
+You can see a match, a pitchfork and a lantern here.
+===========
+==>STEP NUM: 125
+==>ACT: west
+==>OBSERVATION: West Main Street
+===========
+==>STEP NUM: 126
+==>ACT: north
+==>OBSERVATION: General Store
+
+One of the floorboards squeaks when you step on it.
+
+On the shelves are a stack of gum base and a box (in which is a dozen or so sugar cubes).
+
+You can also see a match here.
+===========
+==>STEP NUM: 127
+==>ACT: south
+==>OBSERVATION: West Main Street
+===========
+==>STEP NUM: 128
+==>ACT: east
+==>OBSERVATION: East Main Street
+
+You can see a match, a pitchfork and a lantern here.
+===========
+==>STEP NUM: 129
+==>ACT: north
+==>OBSERVATION: Bank
+
+There is a hole in one of the floorboards.
+===========
+==>STEP NUM: 130
+==>ACT: south
+==>OBSERVATION: East Main Street
+
+You can see a match, a pitchfork and a lantern here.
+===========
+==>STEP NUM: 131
+==>ACT: west
+==>OBSERVATION: West Main Street
+===========
+==>STEP NUM: 132
+==>ACT: west
+==>OBSERVATION: Unattended Trees
+===========
+==>STEP NUM: 133
+==>ACT: west
+==>OBSERVATION: Fork in the Road
+===========
+==>STEP NUM: 134
+==>ACT: southwest
+==>OBSERVATION: Cactus Patch
+The path here follows the bottom of a deep ravine, but more notably, is thickly covered with long-needle cacti. To the south, the path widens at the base of a large hill. To the northeast, the path heads towards a grove of trees.
+
+[Your score has just gone up by five points.]
+===========
+==>STEP NUM: 135
+==>ACT: south
+==>OBSERVATION: Outside Mine Entrance
+The north-south path widens at the base of a steep rocky hill where an apparently large mining operation once stood. Another trail heads off to the east. Narrow gauge tracks come down a small knoll to the wide entrance carved into the hill. The entrance has been boarded over with thick timber and bears the notice "KEEP OUT" in crudely painted red letters. There is sign at the top of the entrance.
+
+An ore car rests on the tracks at the top of the knoll. The car is tied by rope to a timber header at the end of the tracks.
+===========
+==>STEP NUM: 136
+==>ACT: east
+==>OBSERVATION: Oil Patch
+The path winds through thick bramble to a secluded clearing. In the middle of the clearing is a tall wooden derrick. Various debris is scattered around the derrick, including a bent-up green and white sign.
+===========
+==>STEP NUM: 137
+==>ACT: up
+==>OBSERVATION: Just Off the Ground, On the Derrick
+You are standing on a slat on the south face of the derrick just a few feet off the ground. Inscribed in one of the support beams just off to your left is the following:
+
+"I go around in circles,
+But always straight ahead
+Never complain,
+No matter where I am led.
+What am I?"
+===========
+==>STEP NUM: 138
+==>ACT: up
+==>OBSERVATION: The structure seems to have stiffened up a bit, permitting further exploration.
+
+About Half Way Up, On the Derrick
+You are standing on a slat on the south face of the derrick halfway between the top and the base. Scrawled on one of the cross members is the following:
+
+"My life can be measured in hours,
+I serve by being devoured.
+Thin, I am quick
+Fat, I am slow
+Wind is my foe.
+What am I?"
+
+You can see a nail (on which is a ship wheel) here.
+===========
+==>STEP NUM: 139
+==>ACT: up
+==>OBSERVATION: The structure seems to have stiffened up a bit, permitting further exploration.
+
+Almost to the Top, On the Derrick
+You are just a few feet from the top of the derrick. One of the adjacent slats has the following painted on it:
+
+"I'm Black, I'm Brown,
+Yellow and Clear;
+I'm often found
+Amongst the Gears.
+
+Found Above
+And in the Ground,
+I can ease a
+Grating Sound.
+What am I?"
+
+There is a candle here wedged between a couple of pieces of wood.
+===========
+==>STEP NUM: 140
+==>ACT: up
+==>OBSERVATION: The structure seems to have stiffened up a bit, permitting further exploration.
+
+Platform, On the Derrick
+You are on a narrow platform at the very top of the oil derrick. The platform is spotted with a number of bird droppings. The view from here is mostly obstructed by trees, but you can make out the hill with the mine to the west.
+
+You can see a rusted oil can here.
+
+High overhead, a Tombstone Jay circles the derrick with a bright yellow object grasped in its talons.
+===========
+==>STEP NUM: 141
+==>ACT: down
+==>OBSERVATION: Almost to the Top, On the Derrick
+
+There is a candle here wedged between a couple of pieces of wood.
+===========
+==>STEP NUM: 142
+==>ACT: down
+==>OBSERVATION: About Half Way Up, On the Derrick
+
+You can see a nail (on which is a ship wheel) here.
+===========
+==>STEP NUM: 143
+==>ACT: down
+==>OBSERVATION: Just Off the Ground, On the Derrick
+===========
+==>STEP NUM: 144
+==>ACT: down
+==>OBSERVATION: Oil Patch
+===========
+==>STEP NUM: 145
+==>ACT: west
+==>OBSERVATION: Outside Mine Entrance
+
+An ore car rests on the tracks at the top of the knoll. The car is tied by rope to a timber header at the end of the tracks.
+===========
+==>STEP NUM: 146
+==>ACT: west
+==>OBSERVATION: Mine Shaft
+You are in a dark mine shaft. The tracks coming from the entrance to the east end here. On the tracks, you see an ore car. Up high in the roof of the shaft, there is a narrow dark opening. You can proceed west to go deeper into the mine or exit the mine to the east.
+
+On the tracks you see an ore car.
+
+There is an ever-so-slight breeze in here.
+===========
+==>STEP NUM: 147
+==>ACT: west
+==>OBSERVATION: Mine Shaft
+You are in a mine shaft with many intersecting tunnels.
+
+The candle flame flickers towards the east.
+===========
+==>STEP NUM: 148
+==>ACT: west
+==>OBSERVATION: Mine Shaft
+You are in a mine shaft with many intersecting tunnels.
+
+The candle flame swirls from the northeast to the east.
+===========
+==>STEP NUM: 149
+==>ACT: northeast
+==>OBSERVATION: Mine Shaft
+The shaft narrows here to a mere crawlway. There is a small crack in one of the walls.
+
+The candle flame flickers towards the southwest.
+===========
+==>STEP NUM: 150
+==>ACT: northeast
+==>OBSERVATION: Mine Shaft
+You are in a mine shaft with many intersecting tunnels.
+
+The candle flame swirls from the west to the southwest.
+===========
+==>STEP NUM: 151
+==>ACT: west
+==>OBSERVATION: Mine Shaft
+You are in a mine shaft with many intersecting tunnels.
+
+The candle flame flickers towards the east.
+===========
+==>STEP NUM: 152
+==>ACT: west
+==>OBSERVATION: Vent Room
+The mine shaft opens here into a large chamber. Light streams in from a three-foot hole in the ceiling. Presumably, the hole was chiseled in the rock as a vent for the mine system. You can see the mine shaft to the east.
+
+Someone has abandoned an old accordion here.
+
+The candle aimlessly flickers about.
+===========
+==>STEP NUM: 153
+==>ACT: east
+==>OBSERVATION: Mine Shaft
+
+The candle flame flickers towards the east.
+===========
+==>STEP NUM: 154
+==>ACT: east
+==>OBSERVATION: Mine Shaft
+
+The candle flame swirls from the west to the southwest.
+===========
+==>STEP NUM: 155
+==>ACT: southwest
+==>OBSERVATION: Mine Shaft
+
+The candle flame flickers towards the southwest.
+===========
+==>STEP NUM: 156
+==>ACT: southwest
+==>OBSERVATION: Mine Shaft
+
+The candle flame swirls from the northeast to the east.
+===========
+==>STEP NUM: 157
+==>ACT: east
+==>OBSERVATION: Mine Shaft
+
+The candle flame flickers towards the east.
+===========
+==>STEP NUM: 158
+==>ACT: east
+==>OBSERVATION: Mine Shaft
+
+On the tracks you see an ore car.
+
+You can also see a lantern here.
+
+The candle flame flickers towards the east.
+===========
+==>STEP NUM: 159
+==>ACT: east
+==>OBSERVATION: Outside Mine Entrance
+
+You can see a sharp knife here.
+===========
+==>STEP NUM: 160
+==>ACT: east
+==>OBSERVATION: Oil Patch
+===========
+==>STEP NUM: 161
+==>ACT: up
+==>OBSERVATION: Just Off the Ground, On the Derrick
+===========
+==>STEP NUM: 162
+==>ACT: up
+==>OBSERVATION: The structure seems to have stiffened up a bit, permitting further exploration.
+
+About Half Way Up, On the Derrick
+
+You can see a nail here.
+===========
+==>STEP NUM: 163
+==>ACT: up
+==>OBSERVATION: The structure seems to have stiffened up a bit, permitting further exploration.
+
+Almost to the Top, On the Derrick
+===========
+==>STEP NUM: 164
+==>ACT: up
+==>OBSERVATION: The structure seems to have stiffened up a bit, permitting further exploration.
+
+Platform, On the Derrick
+
+High overhead, a Tombstone Jay circles the derrick with a bright yellow object grasped in its talons.
+===========
+==>STEP NUM: 165
+==>ACT: down
+==>OBSERVATION: Almost to the Top, On the Derrick
+===========
+==>STEP NUM: 166
+==>ACT: down
+==>OBSERVATION: About Half Way Up, On the Derrick
+
+You can see a nail here.
+===========
+==>STEP NUM: 167
+==>ACT: down
+==>OBSERVATION: Just Off the Ground, On the Derrick
+===========
+==>STEP NUM: 168
+==>ACT: down
+==>OBSERVATION: Oil Patch
+
+You can see a small rock here.
+===========
+==>STEP NUM: 169
+==>ACT: west
+==>OBSERVATION: Outside Mine Entrance
+
+You can see a sharp knife here.
+===========
+==>STEP NUM: 170
+==>ACT: north
+==>OBSERVATION: Cactus Patch
+===========
+==>STEP NUM: 171
+==>ACT: northeast
+==>OBSERVATION: Fork in the Road
+===========
+==>STEP NUM: 172
+==>ACT: northwest
+==>OBSERVATION: Bottom of Crow Hill
+===========
+==>STEP NUM: 173
+==>ACT: northeast
+==>OBSERVATION: Top of Crow Hill
+===========
+==>STEP NUM: 174
+==>ACT: west
+==>OBSERVATION: Burned Down Shack
+
+George is here staring at the charred remains of his gum factory.
+
+There is a brass key hanging on George's belt.
+
+You can also see a silver spoon, a leather-bound book, a cauldron (which is empty) and a burned sketch here.
+===========
+==>STEP NUM: 175
+==>ACT: east
+==>OBSERVATION: Top of Crow Hill
+
+You are invisible.
+===========
+==>STEP NUM: 176
+==>ACT: southwest
+==>OBSERVATION: Bottom of Crow Hill
+
+You are invisible.
+===========
+==>STEP NUM: 177
+==>ACT: southeast
+==>OBSERVATION: Fork in the Road
+
+You can see a pair of old cowboy boots here.
+
+You are invisible.
+===========
+==>STEP NUM: 178
+==>ACT: east
+==>OBSERVATION: Unattended Trees
+
+You are invisible.
+===========
+==>STEP NUM: 179
+==>ACT: east
+==>OBSERVATION: West Main Street
+
+You are invisible.
+===========
+==>STEP NUM: 180
+==>ACT: east
+==>OBSERVATION: East Main Street
+
+You are invisible.
+===========
+==>STEP NUM: 181
+==>ACT: east
+==>OBSERVATION: Deadeye Gulch
+
+You are invisible.
+===========
+==>STEP NUM: 182
+==>ACT: south
+==>OBSERVATION: Suddenly, a rather soiled if not rotting individual comes up from behind and grabs you by the ear. He pulls hard, dragging you through town, and lectures,
+
+"Dadgummit anyhow! You folks think you can come into town and shoot up the place, gamble til dawn, and swear any damn where ya please. Just cause I'm dead don't mean there ain't no law in this town."
+
+The bootless man loses about half a dozen heavily yellowed teeth during this brief oration as well as two fingers off of his left hand. A large red worm crawls out of his right ear, meanders down his shriveled neck and nestles in the tattered clothing around his tarnished badge.
+
+"Ya just can't trust folks anymore to follow the laws. Hell, just because yer six feet under, folks don't have no respect fer ya."
+
+The stench of the little man becomes almost overwhelming as he finally approaches his destination. He unlocks the jail door and flings you into the cell.
+
+"Now, you be mindin' yerself or I'll be stringin' ya to a tree!"
+
+The sheriff strolls off in the direction of Boot Hill, losing part of his nose in the process.
+
+Jail
+This small jail was not designed for the comfort of its occupants. It is impossible to stand without hunching over and you can touch any two walls at the same time. The only relief from the crumbling stucco walls is the iron-barred door to the north.
+
+One of the bars must have fallen off of the door and onto the floor of the jail.
+
+You are invisible.
+===========
+==>STEP NUM: 183
+==>ACT: north
+==>OBSERVATION: West Main Street
+===========
+==>STEP NUM: 184
+==>ACT: east
+==>OBSERVATION: East Main Street
+===========
+==>STEP NUM: 185
+==>ACT: east
+==>OBSERVATION: Deadeye Gulch
+===========
+==>STEP NUM: 186
+==>ACT: south
+==>OBSERVATION: Dusty Road
+===========
+==>STEP NUM: 187
+==>ACT: south
+==>OBSERVATION: Track Crossing
+===========
+==>STEP NUM: 188
+==>ACT: west
+==>OBSERVATION: Broken Track
+The heat is stifling at this barren strip of track seemingly in the middle of nowhere. Even the ever present weeds have given up this area as hopeless and only a few cacti have managed to gain a foothold in the constantly shifting sand. One of the rails has become dislodged, forming a six-inch gap on one side of the tracks.
+===========
+==>STEP NUM: 189
+==>ACT: east
+==>OBSERVATION: Track Crossing
+===========
+==>STEP NUM: 190
+==>ACT: east
+==>OBSERVATION: Train Track
+The tracks continue east-west here through thick scrub brush and an occasional patch of cactus. There is a short section of track running parallel to, and eventually joining, the main track to form a spur.
+
+There is a huge clump of tumbleweeds on the track spur.
+===========
+==>STEP NUM: 191
+==>ACT: exit
+==>OBSERVATION: You get out of the handcar.
+
+End of the Line
+
+There is a rusted old handcar on the track spur.
+===========
+==>STEP NUM: 192
+==>ACT: south
+==>OBSERVATION: Inside Sod Shack
+The inside of the shack smells quite musty and there is dust everywhere. Narrow shafts of light from the decaying roof highlight the dark dirt floor. There is a door to the north.
+
+You can see a metal strongbox (which is closed) here.
+===========
+==>STEP NUM: 193
+==>ACT: north
+==>OBSERVATION: End of the Line
+
+There is a rusted old handcar on the track spur.
+
+On the peg is a ship wheel.
+===========
+==>STEP NUM: 194
+==>ACT: exit
+==>OBSERVATION: You get out of the handcar.
+
+Track Crossing
+
+There is a rusted old handcar on the track spur.
+===========
+==>STEP NUM: 195
+==>ACT: south
+==>OBSERVATION: Blind Canyon
+===========
+==>STEP NUM: 196
+==>ACT: southwest
+==>OBSERVATION: Trail
+===========
+==>STEP NUM: 197
+==>ACT: southwest
+==>OBSERVATION: Clear Creek
+
+You can see a pan (which is empty) here.
+===========
+==>STEP NUM: 198
+==>ACT: southwest
+==>OBSERVATION: Trail
+===========
+==>STEP NUM: 199
+==>ACT: south
+==>OBSERVATION: Trail
+===========
+==>STEP NUM: 200
+==>ACT: southwest
+==>OBSERVATION: Box Canyon
+The trail descends here into a deep canyon cut into the surrounding sandstone. It is cooler here as most of the sunlight is blocked by the high walls. The path through the canyon proceeds to the west, where you see a large stone outcropping, and rises sharply to the northeast.
+===========
+==>STEP NUM: 201
+==>ACT: west
+==>OBSERVATION: Hole in the Wall
+The far end of the canyon ends abruptly at this solid wall of sandstone which ascends over fifty feet from where you are standing. The trail winds around some scrub brush to a pile of rocks which rests against the face of the wall.
+===========
+==>STEP NUM: 202
+==>ACT: west
+==>OBSERVATION: Under a curtain of invisibility, you gingerly sneak past the brown bear. The bear startles and angrily smells the air but doesn't strike.
+
+You wander into the tunnel to find a light at the other end through some brambles and thicket. Progressing through the thicket, you find yourself in bright sunshine, but perhaps a little lighter for the effort. Also, your brown friend seems to have followed you.
+Dry Streambed
+Water hasn't found its way down this rocky streambed for years by the looks of all the weeds and wildflowers growing between the rocks. A grove of gatewood trees with thick underbrush prevents any further progress west. There is a tunnel to the east with thick bramble at the entrance, and the path heading north along the streambed.
+
+You can see a brown bear here.
+
+The bear stares at you with a look of annoyance.
+
+[Your score has just gone up by five points.]
+===========
+==>STEP NUM: 203
+==>ACT: north
+==>OBSERVATION: Rotted Tree
+Progress up the stream bed is slow due to the large rocks and tall weeds. A large gatewood tree has fallen here and is well along its return to the elements. The path follows the streambed to the south and continues north to a small structure.
+===========
+==>STEP NUM: 204
+==>ACT: north
+==>OBSERVATION: Outside Old Shack
+The streambed turn east here and vanishes into the thick bushes and weeds. To the west is an old run-down shack which looks several years past its prime. There is a hitching post just outside the door.
+
+There is a horse here tied to the hitching post.
+
+On the horse are a blanket and a pair of saddlebags (which is closed).
+===========
+==>STEP NUM: 205
+==>ACT: west
+==>OBSERVATION: Biscuit Residence
+The "Biscuit Residence" would hardly constitute a walk-in closet by your standards, but what it lacks in size is more than made up for by the charming decor of splintered wood, dense cobwebs, and the occasional trail of mouse droppings. There is a small wood stove nestled in one of the corners, whereas in the opposite corner is a couple of bedrolls, saddles and other supplies. There are a table and a couple of chairs in the center of the room. In front of the stove, you can just make out a good-sized rectangular cutout in the wood floor.
+
+Sitting at the table are two rugged-looking gnomish cowboys playing cards.
+
+You are invisible.
+
+[Your score has just gone up by ten points.]
+===========
+==>STEP NUM: 206
+==>ACT: east
+==>OBSERVATION: Outside Old Shack
+
+There is a horse here tied to the hitching post.
+
+On the horse is a pair of saddlebags (which is closed).
+
+You are starting to return to your normal opaqueness.
+
+Suddenly, you feel a little heavier on your feet.
+===========
+==>STEP NUM: 207
+==>ACT: west
+==>OBSERVATION: Biscuit Residence
+
+Sitting at the table are two rugged-looking gnomish cowboys playing cards.
+
+On the cutout is a blanket.
+
+You can also see a green apple and a gold watch here.
+
+The two cowboys talk quietly as they continue the game.
+
+You are invisible.
+===========
+==>STEP NUM: 208
+==>ACT: east
+==>OBSERVATION: Outside Old Shack
+
+There is a horse here tied to the hitching post.
+
+On the horse is a pair of saddlebags (which is closed).
+
+You are invisible.
+===========

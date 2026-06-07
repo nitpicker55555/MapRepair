@@ -1,0 +1,16 @@
+{
+  "game": "awaken",
+  "num_conflicts": 35,
+  "iterations": 3,
+  "success": false,
+  "remaining_conflicts": 23,
+  "pre_edge_recall": 0.5416666666666666,
+  "pre_strict_direction_match": 0.5416666666666666,
+  "pre_edge_direction_accuracy": 1.0,
+  "post_edge_recall": 0.5416666666666666,
+  "post_strict_direction_match": 0.5,
+  "post_permissive_direction_match": 0.875,
+  "post_edge_direction_accuracy": 0.9230769230769231,
+  "edge_recall_delta": 0.0,
+  "strict_direction_delta": -0.04166666666666663
+}

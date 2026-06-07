@@ -1,0 +1,10 @@
+# tryst205  model=gpt-4.1  n_steps=9  (exp14 bootstrap-fixed)
+step   0 BOOTSTRAP seed current_loc='master bedroom' (src missing, dst valid)
+step   1 MOVE 'master bedroom' --[west]--> 'master bathroom'
+step   2 MOVE 'master bathroom' --[east]--> 'master bedroom'
+step   3 MOVE 'master bedroom' --[south]--> 'upstairs hallway'
+step   4 MOVE 'upstairs hallway' --[east]--> "kids' bathroom"
+step   5 MOVE "kids' bathroom" --[west]--> 'upstairs hallway'
+step   6 bad movement output (kept loc): {'is_movement': True, 'src_node': 'upstairs hallway', 'dst_node': 'upstairs hallway', 'action': 'exit', 'seen_in_forward': 6, 'current_location': 'upstairs hallway', 'reasoning': "The observation states 'Upstairs Hallway', which matches a canonical location; action 'exit' leads to the same room."}
+step   7 MOVE 'upstairs hallway' --[south]--> "kati's room"
+step   8 MOVE "kati's room" --[north]--> 'upstairs hallway'

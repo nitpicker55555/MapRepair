@@ -1,0 +1,16 @@
+{
+  "game": "ballyhoo",
+  "num_conflicts": 34,
+  "iterations": 4,
+  "success": false,
+  "remaining_conflicts": 26,
+  "pre_edge_recall": 0.5151515151515151,
+  "pre_strict_direction_match": 0.5151515151515151,
+  "pre_edge_direction_accuracy": 1.0,
+  "post_edge_recall": 0.5151515151515151,
+  "post_strict_direction_match": 0.3939393939393939,
+  "post_permissive_direction_match": 0.7575757575757576,
+  "post_edge_direction_accuracy": 0.7647058823529411,
+  "edge_recall_delta": 0.0,
+  "strict_direction_delta": -0.12121212121212122
+}

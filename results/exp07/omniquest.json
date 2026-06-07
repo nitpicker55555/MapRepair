@@ -1,0 +1,16 @@
+{
+  "game": "omniquest",
+  "num_conflicts": 65,
+  "iterations": 8,
+  "success": false,
+  "remaining_conflicts": 21,
+  "pre_edge_recall": 0.47368421052631576,
+  "pre_strict_direction_match": 0.47368421052631576,
+  "pre_edge_direction_accuracy": 1.0,
+  "post_edge_recall": 0.47368421052631576,
+  "post_strict_direction_match": 0.38596491228070173,
+  "post_permissive_direction_match": 0.7543859649122807,
+  "post_edge_direction_accuracy": 0.8148148148148148,
+  "edge_recall_delta": 0.0,
+  "strict_direction_delta": -0.08771929824561403
+}

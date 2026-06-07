@@ -1,0 +1,8 @@
+# partyfoul  model=gpt-4.1  n_steps=7
+step   0 bad movement output: {'is_movement': True, 'src_node': None, 'dst_node': 'guest room', 'action': 'west', 'seen_in_forward': 0, 'current_location': 'guest room', 'reasoning': 'The observation explicitly states arrival in the guest room, which matches the canonical list.'}
+step   1 MOVE 'guest room' --[east]--> 'living room'
+step   2 MOVE 'living room' --[north]--> 'den'
+step   3 MOVE 'den' --[west]--> 'kitchen'
+step   4 MOVE 'kitchen' --[east]--> 'den'
+step   5 MOVE 'den' --[south]--> 'living room'
+step   6 MOVE 'living room' --[northwest]--> 'kitchen'

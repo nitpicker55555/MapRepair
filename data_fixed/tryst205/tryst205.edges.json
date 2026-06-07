@@ -1,0 +1,101 @@
+[
+    {
+        "src_node": "upstairs hallway",
+        "dst_node": "master bedroom",
+        "action": "north",
+        "seen_in_forward": 4,
+        "seen_in_reversed": 20,
+        "edge_min_step": 4,
+        "seen_in_forward_answerable": 4,
+        "seen_in_reversed_answerable": 20,
+        "edge_min_step_answerable": 4
+    },
+    {
+        "src_node": "upstairs hallway",
+        "dst_node": "kids' bathroom",
+        "action": "east",
+        "seen_in_forward": 21,
+        "seen_in_reversed": 29,
+        "edge_min_step": 21,
+        "seen_in_forward_answerable": 21,
+        "seen_in_reversed_answerable": 29,
+        "edge_min_step_answerable": 21
+    },
+    {
+        "src_node": "upstairs hallway",
+        "dst_node": "kati's room",
+        "action": "south",
+        "seen_in_forward": 40,
+        "seen_in_reversed": 45,
+        "edge_min_step": 40,
+        "seen_in_forward_answerable": 40,
+        "seen_in_reversed_answerable": 45,
+        "edge_min_step_answerable": 40
+    },
+    {
+        "src_node": "master bedroom",
+        "dst_node": "master bathroom",
+        "action": "west",
+        "seen_in_forward": 10,
+        "seen_in_reversed": 15,
+        "edge_min_step": 10,
+        "seen_in_forward_answerable": 10,
+        "seen_in_reversed_answerable": 15,
+        "edge_min_step_answerable": 10
+    },
+    {
+        "src_node": "master bedroom",
+        "dst_node": "upstairs hallway",
+        "action": "south",
+        "seen_in_forward": 20,
+        "seen_in_reversed": 4,
+        "edge_min_step": 4,
+        "seen_in_forward_answerable": 20,
+        "seen_in_reversed_answerable": 4,
+        "edge_min_step_answerable": 4
+    },
+    {
+        "src_node": "master bathroom",
+        "dst_node": "master bedroom",
+        "action": "east",
+        "seen_in_forward": 15,
+        "seen_in_reversed": 10,
+        "edge_min_step": 10,
+        "seen_in_forward_answerable": 15,
+        "seen_in_reversed_answerable": 10,
+        "edge_min_step_answerable": 10
+    },
+    {
+        "src_node": "kids' bathroom",
+        "dst_node": "upstairs hallway",
+        "action": "west",
+        "seen_in_forward": 29,
+        "seen_in_reversed": 21,
+        "edge_min_step": 21,
+        "seen_in_forward_answerable": 29,
+        "seen_in_reversed_answerable": 21,
+        "edge_min_step_answerable": 21
+    },
+    {
+        "src_node": "on bench",
+        "dst_node": "upstairs hallway",
+        "action": "exit",
+        "seen_in_forward": 36,
+        "seen_in_reversed": 9999,
+        "edge_min_step": 36,
+        "seen_in_forward_answerable": 36,
+        "seen_in_reversed_answerable": 9999,
+        "edge_min_step_answerable": 36
+    },
+    {
+        "src_node": "kati's room",
+        "dst_node": "upstairs hallway",
+        "action": "north",
+        "seen_in_forward": 45,
+        "seen_in_reversed": 40,
+        "edge_min_step": 40,
+        "seen_in_forward_answerable": 45,
+        "seen_in_reversed_answerable": 40,
+        "edge_min_step_answerable": 40
+    }
+]

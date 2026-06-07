@@ -1,0 +1,12 @@
+# balances  model=gpt-4.1  n_steps=11  (exp14 bootstrap-fixed)
+step   0 BOOTSTRAP seed current_loc='grasslands, near hut' (src missing, dst valid)
+step   1 MOVE 'grasslands, near hut' --[north]--> 'pocket valley'
+step   2 MOVE 'pocket valley' --[north]--> 'crest of hill'
+step   3 MOVE 'crest of hill' --[northwest]--> 'cave mouth'
+step   4 MOVE 'cave mouth' --[north]--> 'gorse bushes'
+step   5 MOVE 'gorse bushes' --[south]--> 'cave mouth'
+step   6 MOVE 'cave mouth' --[west]--> 'inside cave'
+step   7 MOVE 'inside cave' --[east]--> 'cave mouth'
+step   8 MOVE 'cave mouth' --[southeast]--> 'crest of hill'
+step   9 MOVE 'crest of hill' --[south]--> 'edge of chasm'
+step  10 MOVE 'edge of chasm' --[east]--> 'outside temple'

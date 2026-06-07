@@ -1,0 +1,10 @@
+# tryst205  model=gpt-4.1  n_steps=9
+step   0 bad movement output: {'is_movement': True, 'src_node': None, 'dst_node': 'master bedroom', 'action': 'north', 'seen_in_forward': 0, 'current_location': 'master bedroom', 'reasoning': "The observation begins with 'Master Bedroom', which matches a canonical location, indicating arrival in that room after moving north."}
+step   1 bad movement output: {'is_movement': True, 'src_node': None, 'dst_node': 'master bathroom', 'action': 'west', 'seen_in_forward': 1, 'current_location': 'master bathroom', 'reasoning': "Observation begins with 'Master Bathroom', which matches the canonical location 'master bathroom'."}
+step   2 MOVE 'master bathroom' --[east]--> 'master bedroom'
+step   3 MOVE 'master bedroom' --[south]--> 'upstairs hallway'
+step   4 MOVE 'upstairs hallway' --[east]--> "kids' bathroom"
+step   5 MOVE "kids' bathroom" --[west]--> 'upstairs hallway'
+step   6 MOVE 'upstairs hallway' --[exit]--> 'upstairs hallway'
+step   7 MOVE 'upstairs hallway' --[south]--> "kati's room"
+step   8 MOVE "kati's room" --[north]--> 'upstairs hallway'

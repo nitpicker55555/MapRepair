@@ -1,0 +1,7 @@
+# moonlit  model=gpt-4.1  n_steps=6  (exp14 bootstrap-fixed)
+step   0 BOOTSTRAP seed current_loc='shadow armory' (src missing, dst valid)
+step   1 MOVE 'shadow armory' --[north]--> 'undying garden'
+step   2 MOVE 'undying garden' --[south]--> 'shadow armory'
+step   3 MOVE 'shadow armory' --[up]--> 'moonlit chamber'
+step   4 MOVE 'moonlit chamber' --[west]--> 'skeletal banquet'
+step   5 MOVE 'skeletal banquet' --[down]--> 'hall of hawks'

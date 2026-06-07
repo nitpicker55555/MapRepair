@@ -1,0 +1,5 @@
+# 905  model=gpt-4.1  n_steps=4  (exp14 bootstrap-fixed)
+step   0 BOOTSTRAP seed current_loc='bathroom' (src missing, dst valid)
+step   1 MOVE 'bathroom' --[north]--> 'bedroom'
+step   2 MOVE 'bedroom' --[east]--> 'living room'
+step   3 MOVE 'living room' --[south]--> 'driveway'

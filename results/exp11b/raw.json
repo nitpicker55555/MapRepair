@@ -1,0 +1,1129 @@
+[
+  {
+    "game": "905",
+    "src_step_count": 23,
+    "kept_step_count": 4,
+    "dropped_breakdown": {
+      "non_canonical_action": 19,
+      "failed_move_obs": 0,
+      "destination_not_in_locations": 0
+    },
+    "num_canonical_locations": 5,
+    "num_gt_edges": 6,
+    "num_gt_step_indices": 4,
+    "preserved_step_indices": 4,
+    "missing_step_indices": [],
+    "coverage_pct": 100.0
+  },
+  {
+    "game": "advent",
+    "src_step_count": 278,
+    "kept_step_count": 90,
+    "dropped_breakdown": {
+      "non_canonical_action": 113,
+      "failed_move_obs": 1,
+      "destination_not_in_locations": 74
+    },
+    "num_canonical_locations": 31,
+    "num_gt_edges": 51,
+    "num_gt_step_indices": 41,
+    "preserved_step_indices": 39,
+    "missing_step_indices": [
+      10,
+      12
+    ],
+    "coverage_pct": 95.1219512195122
+  },
+  {
+    "game": "adventureland",
+    "src_step_count": 171,
+    "kept_step_count": 67,
+    "dropped_breakdown": {
+      "non_canonical_action": 82,
+      "failed_move_obs": 0,
+      "destination_not_in_locations": 22
+    },
+    "num_canonical_locations": 18,
+    "num_gt_edges": 28,
+    "num_gt_step_indices": 23,
+    "preserved_step_indices": 16,
+    "missing_step_indices": [
+      34,
+      40,
+      41,
+      43,
+      44,
+      48,
+      49
+    ],
+    "coverage_pct": 69.56521739130434
+  },
+  {
+    "game": "afflicted",
+    "src_step_count": 99,
+    "kept_step_count": 39,
+    "dropped_breakdown": {
+      "non_canonical_action": 50,
+      "failed_move_obs": 0,
+      "destination_not_in_locations": 10
+    },
+    "num_canonical_locations": 11,
+    "num_gt_edges": 20,
+    "num_gt_step_indices": 19,
+    "preserved_step_indices": 13,
+    "missing_step_indices": [
+      7,
+      23,
+      27,
+      31,
+      39,
+      66
+    ],
+    "coverage_pct": 68.42105263157895
+  },
+  {
+    "game": "anchor",
+    "src_step_count": 532,
+    "kept_step_count": 87,
+    "dropped_breakdown": {
+      "non_canonical_action": 281,
+      "failed_move_obs": 0,
+      "destination_not_in_locations": 164
+    },
+    "num_canonical_locations": 25,
+    "num_gt_edges": 42,
+    "num_gt_step_indices": 30,
+    "preserved_step_indices": 23,
+    "missing_step_indices": [
+      4,
+      11,
+      15,
+      18,
+      25,
+      28,
+      64
+    ],
+    "coverage_pct": 76.66666666666667
+  },
+  {
+    "game": "awaken",
+    "src_step_count": 58,
+    "kept_step_count": 24,
+    "dropped_breakdown": {
+      "non_canonical_action": 31,
+      "failed_move_obs": 0,
+      "destination_not_in_locations": 3
+    },
+    "num_canonical_locations": 15,
+    "num_gt_edges": 24,
+    "num_gt_step_indices": 22,
+    "preserved_step_indices": 21,
+    "missing_step_indices": [
+      1
+    ],
+    "coverage_pct": 95.45454545454545
+  },
+  {
+    "game": "balances",
+    "src_step_count": 123,
+    "kept_step_count": 16,
+    "dropped_breakdown": {
+      "non_canonical_action": 106,
+      "failed_move_obs": 0,
+      "destination_not_in_locations": 1
+    },
+    "num_canonical_locations": 11,
+    "num_gt_edges": 13,
+    "num_gt_step_indices": 11,
+    "preserved_step_indices": 10,
+    "missing_step_indices": [
+      31
+    ],
+    "coverage_pct": 90.9090909090909
+  },
+  {
+    "game": "ballyhoo",
+    "src_step_count": 417,
+    "kept_step_count": 99,
+    "dropped_breakdown": {
+      "non_canonical_action": 194,
+      "failed_move_obs": 0,
+      "destination_not_in_locations": 124
+    },
+    "num_canonical_locations": 17,
+    "num_gt_edges": 33,
+    "num_gt_step_indices": 26,
+    "preserved_step_indices": 16,
+    "missing_step_indices": [
+      1,
+      17,
+      18,
+      23,
+      25,
+      30,
+      32,
+      41,
+      45,
+      63
+    ],
+    "coverage_pct": 61.53846153846154
+  },
+  {
+    "game": "curses",
+    "src_step_count": 817,
+    "kept_step_count": 69,
+    "dropped_breakdown": {
+      "non_canonical_action": 458,
+      "failed_move_obs": 0,
+      "destination_not_in_locations": 290
+    },
+    "num_canonical_locations": 14,
+    "num_gt_edges": 26,
+    "num_gt_step_indices": 25,
+    "preserved_step_indices": 25,
+    "missing_step_indices": [],
+    "coverage_pct": 100.0
+  },
+  {
+    "game": "cutthroat",
+    "src_step_count": 337,
+    "kept_step_count": 17,
+    "dropped_breakdown": {
+      "non_canonical_action": 156,
+      "failed_move_obs": 0,
+      "destination_not_in_locations": 164
+    },
+    "num_canonical_locations": 25,
+    "num_gt_edges": 49,
+    "num_gt_step_indices": 41,
+    "preserved_step_indices": 7,
+    "missing_step_indices": [
+      15,
+      16,
+      17,
+      18,
+      19,
+      28,
+      29,
+      30,
+      32,
+      33
+    ],
+    "coverage_pct": 17.073170731707318
+  },
+  {
+    "game": "deephome",
+    "src_step_count": 328,
+    "kept_step_count": 89,
+    "dropped_breakdown": {
+      "non_canonical_action": 132,
+      "failed_move_obs": 0,
+      "destination_not_in_locations": 107
+    },
+    "num_canonical_locations": 27,
+    "num_gt_edges": 46,
+    "num_gt_step_indices": 42,
+    "preserved_step_indices": 38,
+    "missing_step_indices": [
+      11,
+      40,
+      43,
+      58
+    ],
+    "coverage_pct": 90.47619047619048
+  },
+  {
+    "game": "detective",
+    "src_step_count": 52,
+    "kept_step_count": 0,
+    "dropped_breakdown": {
+      "non_canonical_action": 10,
+      "failed_move_obs": 2,
+      "destination_not_in_locations": 40
+    },
+    "num_canonical_locations": 32,
+    "num_gt_edges": 39,
+    "num_gt_step_indices": 36,
+    "preserved_step_indices": 0,
+    "missing_step_indices": [
+      5,
+      7,
+      8,
+      11,
+      13,
+      14,
+      17,
+      18,
+      19,
+      20
+    ],
+    "coverage_pct": 0.0
+  },
+  {
+    "game": "dragon",
+    "src_step_count": 102,
+    "kept_step_count": 40,
+    "dropped_breakdown": {
+      "non_canonical_action": 50,
+      "failed_move_obs": 0,
+      "destination_not_in_locations": 12
+    },
+    "num_canonical_locations": 21,
+    "num_gt_edges": 42,
+    "num_gt_step_indices": 32,
+    "preserved_step_indices": 30,
+    "missing_step_indices": [
+      23,
+      45
+    ],
+    "coverage_pct": 93.75
+  },
+  {
+    "game": "enchanter",
+    "src_step_count": 266,
+    "kept_step_count": 68,
+    "dropped_breakdown": {
+      "non_canonical_action": 134,
+      "failed_move_obs": 0,
+      "destination_not_in_locations": 64
+    },
+    "num_canonical_locations": 23,
+    "num_gt_edges": 39,
+    "num_gt_step_indices": 28,
+    "preserved_step_indices": 27,
+    "missing_step_indices": [
+      25
+    ],
+    "coverage_pct": 96.42857142857143
+  },
+  {
+    "game": "enter",
+    "src_step_count": 103,
+    "kept_step_count": 35,
+    "dropped_breakdown": {
+      "non_canonical_action": 61,
+      "failed_move_obs": 0,
+      "destination_not_in_locations": 7
+    },
+    "num_canonical_locations": 14,
+    "num_gt_edges": 26,
+    "num_gt_step_indices": 23,
+    "preserved_step_indices": 23,
+    "missing_step_indices": [],
+    "coverage_pct": 100.0
+  },
+  {
+    "game": "gold",
+    "src_step_count": 346,
+    "kept_step_count": 109,
+    "dropped_breakdown": {
+      "non_canonical_action": 218,
+      "failed_move_obs": 0,
+      "destination_not_in_locations": 19
+    },
+    "num_canonical_locations": 15,
+    "num_gt_edges": 22,
+    "num_gt_step_indices": 22,
+    "preserved_step_indices": 20,
+    "missing_step_indices": [
+      5,
+      59
+    ],
+    "coverage_pct": 90.9090909090909
+  },
+  {
+    "game": "hhgg",
+    "src_step_count": 362,
+    "kept_step_count": 6,
+    "dropped_breakdown": {
+      "non_canonical_action": 317,
+      "failed_move_obs": 2,
+      "destination_not_in_locations": 37
+    },
+    "num_canonical_locations": 9,
+    "num_gt_edges": 4,
+    "num_gt_step_indices": 3,
+    "preserved_step_indices": 2,
+    "missing_step_indices": [
+      8
+    ],
+    "coverage_pct": 66.66666666666667
+  },
+  {
+    "game": "hollywood",
+    "src_step_count": 398,
+    "kept_step_count": 39,
+    "dropped_breakdown": {
+      "non_canonical_action": 167,
+      "failed_move_obs": 2,
+      "destination_not_in_locations": 190
+    },
+    "num_canonical_locations": 12,
+    "num_gt_edges": 22,
+    "num_gt_step_indices": 18,
+    "preserved_step_indices": 16,
+    "missing_step_indices": [
+      1,
+      5
+    ],
+    "coverage_pct": 88.88888888888889
+  },
+  {
+    "game": "huntdark",
+    "src_step_count": 68,
+    "kept_step_count": 2,
+    "dropped_breakdown": {
+      "non_canonical_action": 63,
+      "failed_move_obs": 0,
+      "destination_not_in_locations": 3
+    },
+    "num_canonical_locations": 12,
+    "num_gt_edges": 6,
+    "num_gt_step_indices": 4,
+    "preserved_step_indices": 2,
+    "missing_step_indices": [
+      7,
+      54
+    ],
+    "coverage_pct": 50.0
+  },
+  {
+    "game": "infidel",
+    "src_step_count": 251,
+    "kept_step_count": 22,
+    "dropped_breakdown": {
+      "non_canonical_action": 145,
+      "failed_move_obs": 0,
+      "destination_not_in_locations": 84
+    },
+    "num_canonical_locations": 24,
+    "num_gt_edges": 48,
+    "num_gt_step_indices": 29,
+    "preserved_step_indices": 17,
+    "missing_step_indices": [
+      38,
+      39,
+      60,
+      61,
+      62,
+      63,
+      64,
+      65,
+      66,
+      67
+    ],
+    "coverage_pct": 58.62068965517241
+  },
+  {
+    "game": "inhumane",
+    "src_step_count": 123,
+    "kept_step_count": 35,
+    "dropped_breakdown": {
+      "non_canonical_action": 52,
+      "failed_move_obs": 0,
+      "destination_not_in_locations": 36
+    },
+    "num_canonical_locations": 30,
+    "num_gt_edges": 50,
+    "num_gt_step_indices": 30,
+    "preserved_step_indices": 19,
+    "missing_step_indices": [
+      7,
+      19,
+      22,
+      24,
+      32,
+      34,
+      35,
+      43,
+      56,
+      63
+    ],
+    "coverage_pct": 63.333333333333336
+  },
+  {
+    "game": "jewel",
+    "src_step_count": 224,
+    "kept_step_count": 38,
+    "dropped_breakdown": {
+      "non_canonical_action": 158,
+      "failed_move_obs": 0,
+      "destination_not_in_locations": 28
+    },
+    "num_canonical_locations": 17,
+    "num_gt_edges": 31,
+    "num_gt_step_indices": 28,
+    "preserved_step_indices": 26,
+    "missing_step_indices": [
+      8,
+      14
+    ],
+    "coverage_pct": 92.85714285714286
+  },
+  {
+    "game": "karn",
+    "src_step_count": 363,
+    "kept_step_count": 63,
+    "dropped_breakdown": {
+      "non_canonical_action": 233,
+      "failed_move_obs": 0,
+      "destination_not_in_locations": 67
+    },
+    "num_canonical_locations": 19,
+    "num_gt_edges": 33,
+    "num_gt_step_indices": 26,
+    "preserved_step_indices": 11,
+    "missing_step_indices": [
+      24,
+      25,
+      26,
+      31,
+      32,
+      38,
+      39,
+      40,
+      41,
+      43
+    ],
+    "coverage_pct": 42.30769230769231
+  },
+  {
+    "game": "library",
+    "src_step_count": 53,
+    "kept_step_count": 12,
+    "dropped_breakdown": {
+      "non_canonical_action": 38,
+      "failed_move_obs": 0,
+      "destination_not_in_locations": 3
+    },
+    "num_canonical_locations": 7,
+    "num_gt_edges": 12,
+    "num_gt_step_indices": 12,
+    "preserved_step_indices": 11,
+    "missing_step_indices": [
+      7
+    ],
+    "coverage_pct": 91.66666666666667
+  },
+  {
+    "game": "loose",
+    "src_step_count": 51,
+    "kept_step_count": 18,
+    "dropped_breakdown": {
+      "non_canonical_action": 25,
+      "failed_move_obs": 0,
+      "destination_not_in_locations": 8
+    },
+    "num_canonical_locations": 12,
+    "num_gt_edges": 21,
+    "num_gt_step_indices": 18,
+    "preserved_step_indices": 13,
+    "missing_step_indices": [
+      1,
+      15,
+      19,
+      24,
+      25
+    ],
+    "coverage_pct": 72.22222222222223
+  },
+  {
+    "game": "lostpig",
+    "src_step_count": 147,
+    "kept_step_count": 14,
+    "dropped_breakdown": {
+      "non_canonical_action": 121,
+      "failed_move_obs": 0,
+      "destination_not_in_locations": 12
+    },
+    "num_canonical_locations": 7,
+    "num_gt_edges": 11,
+    "num_gt_step_indices": 7,
+    "preserved_step_indices": 3,
+    "missing_step_indices": [
+      7,
+      23,
+      31,
+      51
+    ],
+    "coverage_pct": 42.857142857142854
+  },
+  {
+    "game": "ludicorp",
+    "src_step_count": 365,
+    "kept_step_count": 50,
+    "dropped_breakdown": {
+      "non_canonical_action": 140,
+      "failed_move_obs": 0,
+      "destination_not_in_locations": 175
+    },
+    "num_canonical_locations": 23,
+    "num_gt_edges": 43,
+    "num_gt_step_indices": 37,
+    "preserved_step_indices": 37,
+    "missing_step_indices": [],
+    "coverage_pct": 100.0
+  },
+  {
+    "game": "lurking",
+    "src_step_count": 295,
+    "kept_step_count": 36,
+    "dropped_breakdown": {
+      "non_canonical_action": 157,
+      "failed_move_obs": 2,
+      "destination_not_in_locations": 100
+    },
+    "num_canonical_locations": 16,
+    "num_gt_edges": 26,
+    "num_gt_step_indices": 18,
+    "preserved_step_indices": 15,
+    "missing_step_indices": [
+      57,
+      66,
+      68
+    ],
+    "coverage_pct": 83.33333333333333
+  },
+  {
+    "game": "moonlit",
+    "src_step_count": 60,
+    "kept_step_count": 8,
+    "dropped_breakdown": {
+      "non_canonical_action": 48,
+      "failed_move_obs": 0,
+      "destination_not_in_locations": 4
+    },
+    "num_canonical_locations": 6,
+    "num_gt_edges": 8,
+    "num_gt_step_indices": 6,
+    "preserved_step_indices": 5,
+    "missing_step_indices": [
+      11
+    ],
+    "coverage_pct": 83.33333333333333
+  },
+  {
+    "game": "murdac",
+    "src_step_count": 305,
+    "kept_step_count": 0,
+    "dropped_breakdown": {
+      "non_canonical_action": 92,
+      "failed_move_obs": 19,
+      "destination_not_in_locations": 194
+    },
+    "num_canonical_locations": 30,
+    "num_gt_edges": 48,
+    "num_gt_step_indices": 39,
+    "preserved_step_indices": 0,
+    "missing_step_indices": [
+      4,
+      5,
+      6,
+      8,
+      10,
+      11,
+      12,
+      15,
+      17,
+      19
+    ],
+    "coverage_pct": 0.0
+  },
+  {
+    "game": "night",
+    "src_step_count": 91,
+    "kept_step_count": 23,
+    "dropped_breakdown": {
+      "non_canonical_action": 40,
+      "failed_move_obs": 0,
+      "destination_not_in_locations": 28
+    },
+    "num_canonical_locations": 20,
+    "num_gt_edges": 32,
+    "num_gt_step_indices": 31,
+    "preserved_step_indices": 14,
+    "missing_step_indices": [
+      2,
+      3,
+      7,
+      12,
+      13,
+      14,
+      18,
+      19,
+      20,
+      24
+    ],
+    "coverage_pct": 45.16129032258065
+  },
+  {
+    "game": "omniquest",
+    "src_step_count": 79,
+    "kept_step_count": 42,
+    "dropped_breakdown": {
+      "non_canonical_action": 32,
+      "failed_move_obs": 0,
+      "destination_not_in_locations": 5
+    },
+    "num_canonical_locations": 29,
+    "num_gt_edges": 57,
+    "num_gt_step_indices": 40,
+    "preserved_step_indices": 38,
+    "missing_step_indices": [
+      4,
+      7
+    ],
+    "coverage_pct": 95.0
+  },
+  {
+    "game": "partyfoul",
+    "src_step_count": 57,
+    "kept_step_count": 11,
+    "dropped_breakdown": {
+      "non_canonical_action": 42,
+      "failed_move_obs": 0,
+      "destination_not_in_locations": 4
+    },
+    "num_canonical_locations": 4,
+    "num_gt_edges": 7,
+    "num_gt_step_indices": 7,
+    "preserved_step_indices": 4,
+    "missing_step_indices": [
+      5,
+      9,
+      12
+    ],
+    "coverage_pct": 57.142857142857146
+  },
+  {
+    "game": "pentari",
+    "src_step_count": 50,
+    "kept_step_count": 28,
+    "dropped_breakdown": {
+      "non_canonical_action": 22,
+      "failed_move_obs": 0,
+      "destination_not_in_locations": 0
+    },
+    "num_canonical_locations": 18,
+    "num_gt_edges": 26,
+    "num_gt_step_indices": 22,
+    "preserved_step_indices": 22,
+    "missing_step_indices": [],
+    "coverage_pct": 100.0
+  },
+  {
+    "game": "planetfall",
+    "src_step_count": 400,
+    "kept_step_count": 82,
+    "dropped_breakdown": {
+      "non_canonical_action": 211,
+      "failed_move_obs": 0,
+      "destination_not_in_locations": 107
+    },
+    "num_canonical_locations": 23,
+    "num_gt_edges": 40,
+    "num_gt_step_indices": 29,
+    "preserved_step_indices": 26,
+    "missing_step_indices": [
+      34,
+      48,
+      65
+    ],
+    "coverage_pct": 89.65517241379311
+  },
+  {
+    "game": "plundered",
+    "src_step_count": 190,
+    "kept_step_count": 20,
+    "dropped_breakdown": {
+      "non_canonical_action": 104,
+      "failed_move_obs": 0,
+      "destination_not_in_locations": 66
+    },
+    "num_canonical_locations": 22,
+    "num_gt_edges": 30,
+    "num_gt_step_indices": 24,
+    "preserved_step_indices": 17,
+    "missing_step_indices": [
+      18,
+      29,
+      37,
+      39,
+      44,
+      50,
+      52
+    ],
+    "coverage_pct": 70.83333333333333
+  },
+  {
+    "game": "reverb",
+    "src_step_count": 75,
+    "kept_step_count": 23,
+    "dropped_breakdown": {
+      "non_canonical_action": 40,
+      "failed_move_obs": 0,
+      "destination_not_in_locations": 12
+    },
+    "num_canonical_locations": 17,
+    "num_gt_edges": 25,
+    "num_gt_step_indices": 23,
+    "preserved_step_indices": 17,
+    "missing_step_indices": [
+      4,
+      14,
+      45,
+      49,
+      50,
+      67
+    ],
+    "coverage_pct": 73.91304347826087
+  },
+  {
+    "game": "seastalker",
+    "src_step_count": 205,
+    "kept_step_count": 0,
+    "dropped_breakdown": {
+      "non_canonical_action": 115,
+      "failed_move_obs": 1,
+      "destination_not_in_locations": 89
+    },
+    "num_canonical_locations": 10,
+    "num_gt_edges": 12,
+    "num_gt_step_indices": 10,
+    "preserved_step_indices": 0,
+    "missing_step_indices": [
+      10,
+      13,
+      15,
+      18,
+      20,
+      21,
+      22,
+      23,
+      27,
+      34
+    ],
+    "coverage_pct": 0.0
+  },
+  {
+    "game": "sherlock",
+    "src_step_count": 340,
+    "kept_step_count": 0,
+    "dropped_breakdown": {
+      "non_canonical_action": 226,
+      "failed_move_obs": 0,
+      "destination_not_in_locations": 114
+    },
+    "num_canonical_locations": 18,
+    "num_gt_edges": 29,
+    "num_gt_step_indices": 24,
+    "preserved_step_indices": 0,
+    "missing_step_indices": [
+      2,
+      3,
+      13,
+      15,
+      16,
+      17,
+      18,
+      20,
+      22,
+      24
+    ],
+    "coverage_pct": 0.0
+  },
+  {
+    "game": "snacktime",
+    "src_step_count": 35,
+    "kept_step_count": 7,
+    "dropped_breakdown": {
+      "non_canonical_action": 27,
+      "failed_move_obs": 0,
+      "destination_not_in_locations": 1
+    },
+    "num_canonical_locations": 4,
+    "num_gt_edges": 5,
+    "num_gt_step_indices": 5,
+    "preserved_step_indices": 4,
+    "missing_step_indices": [
+      21
+    ],
+    "coverage_pct": 80.0
+  },
+  {
+    "game": "sorcerer",
+    "src_step_count": 255,
+    "kept_step_count": 33,
+    "dropped_breakdown": {
+      "non_canonical_action": 123,
+      "failed_move_obs": 0,
+      "destination_not_in_locations": 99
+    },
+    "num_canonical_locations": 27,
+    "num_gt_edges": 43,
+    "num_gt_step_indices": 29,
+    "preserved_step_indices": 23,
+    "missing_step_indices": [
+      4,
+      15,
+      16,
+      39,
+      67,
+      68
+    ],
+    "coverage_pct": 79.3103448275862
+  },
+  {
+    "game": "spellbrkr",
+    "src_step_count": 413,
+    "kept_step_count": 10,
+    "dropped_breakdown": {
+      "non_canonical_action": 333,
+      "failed_move_obs": 0,
+      "destination_not_in_locations": 70
+    },
+    "num_canonical_locations": 20,
+    "num_gt_edges": 24,
+    "num_gt_step_indices": 16,
+    "preserved_step_indices": 8,
+    "missing_step_indices": [
+      16,
+      28,
+      38,
+      47,
+      48,
+      49,
+      64,
+      69
+    ],
+    "coverage_pct": 50.0
+  },
+  {
+    "game": "spirit",
+    "src_step_count": 1265,
+    "kept_step_count": 61,
+    "dropped_breakdown": {
+      "non_canonical_action": 683,
+      "failed_move_obs": 4,
+      "destination_not_in_locations": 517
+    },
+    "num_canonical_locations": 22,
+    "num_gt_edges": 40,
+    "num_gt_step_indices": 37,
+    "preserved_step_indices": 37,
+    "missing_step_indices": [],
+    "coverage_pct": 100.0
+  },
+  {
+    "game": "temple",
+    "src_step_count": 182,
+    "kept_step_count": 30,
+    "dropped_breakdown": {
+      "non_canonical_action": 112,
+      "failed_move_obs": 0,
+      "destination_not_in_locations": 40
+    },
+    "num_canonical_locations": 19,
+    "num_gt_edges": 32,
+    "num_gt_step_indices": 22,
+    "preserved_step_indices": 12,
+    "missing_step_indices": [
+      6,
+      18,
+      34,
+      36,
+      51,
+      53,
+      61,
+      64,
+      67,
+      68
+    ],
+    "coverage_pct": 54.54545454545455
+  },
+  {
+    "game": "trinity",
+    "src_step_count": 611,
+    "kept_step_count": 31,
+    "dropped_breakdown": {
+      "non_canonical_action": 364,
+      "failed_move_obs": 0,
+      "destination_not_in_locations": 216
+    },
+    "num_canonical_locations": 17,
+    "num_gt_edges": 20,
+    "num_gt_step_indices": 11,
+    "preserved_step_indices": 5,
+    "missing_step_indices": [
+      5,
+      24,
+      48,
+      59,
+      69,
+      70
+    ],
+    "coverage_pct": 45.45454545454545
+  },
+  {
+    "game": "tryst205",
+    "src_step_count": 519,
+    "kept_step_count": 16,
+    "dropped_breakdown": {
+      "non_canonical_action": 310,
+      "failed_move_obs": 2,
+      "destination_not_in_locations": 191
+    },
+    "num_canonical_locations": 9,
+    "num_gt_edges": 9,
+    "num_gt_step_indices": 9,
+    "preserved_step_indices": 8,
+    "missing_step_indices": [
+      36
+    ],
+    "coverage_pct": 88.88888888888889
+  },
+  {
+    "game": "wishbringer",
+    "src_step_count": 185,
+    "kept_step_count": 40,
+    "dropped_breakdown": {
+      "non_canonical_action": 103,
+      "failed_move_obs": 0,
+      "destination_not_in_locations": 42
+    },
+    "num_canonical_locations": 21,
+    "num_gt_edges": 37,
+    "num_gt_step_indices": 28,
+    "preserved_step_indices": 21,
+    "missing_step_indices": [
+      4,
+      6,
+      13,
+      15,
+      19,
+      30,
+      36
+    ],
+    "coverage_pct": 75.0
+  },
+  {
+    "game": "yomomma",
+    "src_step_count": 99,
+    "kept_step_count": 26,
+    "dropped_breakdown": {
+      "non_canonical_action": 69,
+      "failed_move_obs": 1,
+      "destination_not_in_locations": 3
+    },
+    "num_canonical_locations": 9,
+    "num_gt_edges": 19,
+    "num_gt_step_indices": 16,
+    "preserved_step_indices": 15,
+    "missing_step_indices": [
+      9
+    ],
+    "coverage_pct": 93.75
+  },
+  {
+    "game": "zenon",
+    "src_step_count": 84,
+    "kept_step_count": 14,
+    "dropped_breakdown": {
+      "non_canonical_action": 58,
+      "failed_move_obs": 0,
+      "destination_not_in_locations": 12
+    },
+    "num_canonical_locations": 14,
+    "num_gt_edges": 26,
+    "num_gt_step_indices": 17,
+    "preserved_step_indices": 10,
+    "missing_step_indices": [
+      16,
+      22,
+      24,
+      25,
+      35,
+      38,
+      39
+    ],
+    "coverage_pct": 58.8235294117647
+  },
+  {
+    "game": "zork1",
+    "src_step_count": 397,
+    "kept_step_count": 105,
+    "dropped_breakdown": {
+      "non_canonical_action": 161,
+      "failed_move_obs": 0,
+      "destination_not_in_locations": 131
+    },
+    "num_canonical_locations": 19,
+    "num_gt_edges": 29,
+    "num_gt_step_indices": 22,
+    "preserved_step_indices": 20,
+    "missing_step_indices": [
+      15,
+      25
+    ],
+    "coverage_pct": 90.9090909090909
+  },
+  {
+    "game": "zork2",
+    "src_step_count": 297,
+    "kept_step_count": 63,
+    "dropped_breakdown": {
+      "non_canonical_action": 139,
+      "failed_move_obs": 3,
+      "destination_not_in_locations": 92
+    },
+    "num_canonical_locations": 22,
+    "num_gt_edges": 38,
+    "num_gt_step_indices": 35,
+    "preserved_step_indices": 32,
+    "missing_step_indices": [
+      5,
+      14,
+      20
+    ],
+    "coverage_pct": 91.42857142857143
+  },
+  {
+    "game": "zork3",
+    "src_step_count": 274,
+    "kept_step_count": 42,
+    "dropped_breakdown": {
+      "non_canonical_action": 140,
+      "failed_move_obs": 2,
+      "destination_not_in_locations": 90
+    },
+    "num_canonical_locations": 23,
+    "num_gt_edges": 38,
+    "num_gt_step_indices": 27,
+    "preserved_step_indices": 24,
+    "missing_step_indices": [
+      2,
+      46,
+      48
+    ],
+    "coverage_pct": 88.88888888888889
+  },
+  {
+    "game": "ztuu",
+    "src_step_count": 85,
+    "kept_step_count": 30,
+    "dropped_breakdown": {
+      "non_canonical_action": 51,
+      "failed_move_obs": 0,
+      "destination_not_in_locations": 4
+    },
+    "num_canonical_locations": 15,
+    "num_gt_edges": 26,
+    "num_gt_step_indices": 26,
+    "preserved_step_indices": 24,
+    "missing_step_indices": [
+      1,
+      19
+    ],
+    "coverage_pct": 92.3076923076923
+  }
+]

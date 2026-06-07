@@ -1,0 +1,16 @@
+{
+  "game": "advent",
+  "num_conflicts": 69,
+  "iterations": 11,
+  "success": false,
+  "remaining_conflicts": 35,
+  "pre_edge_recall": 0.5098039215686274,
+  "pre_strict_direction_match": 0.5098039215686274,
+  "pre_edge_direction_accuracy": 1.0,
+  "post_edge_recall": 0.5098039215686274,
+  "post_strict_direction_match": 0.35294117647058826,
+  "post_permissive_direction_match": 0.6274509803921569,
+  "post_edge_direction_accuracy": 0.6923076923076923,
+  "edge_recall_delta": 0.0,
+  "strict_direction_delta": -0.15686274509803916
+}

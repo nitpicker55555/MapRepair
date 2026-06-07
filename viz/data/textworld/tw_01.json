@@ -1,0 +1,539 @@
+{
+  "id": "tw_01",
+  "dataset": "textworld",
+  "n_rooms": 7,
+  "n_edges": 16,
+  "rooms": [
+    {
+      "id": "bar",
+      "label": "bar",
+      "description": "You arrive in a bar. An ordinary kind of place. You need an unblocked exit? You should try going north. You don't like doors? Why not try going west, that entranceway is unguarded."
+    },
+    {
+      "id": "bedchamber",
+      "label": "bedchamber",
+      "description": "You have entered the most normal of all possible bedchambers. You see a lockedan openeda closed spherical chest. The spherical chest contains . What a letdown! The spherical chest is empty! There is an unblocked exit to the east. You need an unguarded exit? You should try going south. You don't like"
+    },
+    {
+      "id": "kitchen",
+      "label": "kitchen",
+      "description": "You are in a kitchen. An usual kind of place. You need an unblocked exit? You should try going east. There is an unguarded exit to the south."
+    },
+    {
+      "id": "laundry place",
+      "label": "laundry place",
+      "description": "You've entered a laundry place. There is an unguarded exit to the south. There is an unblocked exit to the west."
+    },
+    {
+      "id": "spare room",
+      "label": "spare room",
+      "description": "You've just sauntered into a spare room. You need an unguarded exit? You should try going east. There is an unblocked exit to the north. You don't like doors? Why not try going west, that entranceway is unblocked."
+    },
+    {
+      "id": "steam room",
+      "label": "steam room",
+      "description": "You find yourself in a steam room. An ordinary one. You don't like doors? Why not try going north, that entranceway is unguarded."
+    },
+    {
+      "id": "workshop",
+      "label": "workshop",
+      "description": "You are in a workshop. A typical one. There is an unblocked exit to the east. There is an exit to the north. Don't worry, it is unblocked. There is an exit to the south. Don't worry, it is unblocked."
+    }
+  ],
+  "walkthrough": [],
+  "states": {
+    "gt": {
+      "edges": [
+        {
+          "src": "bedchamber",
+          "dst": "kitchen",
+          "dir": "west"
+        },
+        {
+          "src": "bedchamber",
+          "dst": "spare room",
+          "dir": "south"
+        },
+        {
+          "src": "bedchamber",
+          "dst": "laundry place",
+          "dir": "east"
+        },
+        {
+          "src": "kitchen",
+          "dst": "workshop",
+          "dir": "south"
+        },
+        {
+          "src": "kitchen",
+          "dst": "bedchamber",
+          "dir": "east"
+        },
+        {
+          "src": "spare room",
+          "dst": "workshop",
+          "dir": "west"
+        },
+        {
+          "src": "spare room",
+          "dst": "bedchamber",
+          "dir": "north"
+        },
+        {
+          "src": "spare room",
+          "dst": "bar",
+          "dir": "east"
+        },
+        {
+          "src": "laundry place",
+          "dst": "bedchamber",
+          "dir": "west"
+        },
+        {
+          "src": "laundry place",
+          "dst": "bar",
+          "dir": "south"
+        },
+        {
+          "src": "workshop",
+          "dst": "steam room",
+          "dir": "south"
+        },
+        {
+          "src": "workshop",
+          "dst": "kitchen",
+          "dir": "north"
+        },
+        {
+          "src": "workshop",
+          "dst": "spare room",
+          "dir": "east"
+        },
+        {
+          "src": "bar",
+          "dst": "spare room",
+          "dir": "west"
+        },
+        {
+          "src": "bar",
+          "dst": "laundry place",
+          "dir": "north"
+        },
+        {
+          "src": "steam room",
+          "dst": "workshop",
+          "dir": "north"
+        }
+      ]
+    },
+    "noised": {
+      "edges": [
+        {
+          "src": "bedchamber",
+          "dst": "kitchen",
+          "dir": "west"
+        },
+        {
+          "src": "bedchamber",
+          "dst": "spare room",
+          "dir": "south"
+        },
+        {
+          "src": "bedchamber",
+          "dst": "steam room",
+          "dir": "east"
+        },
+        {
+          "src": "kitchen",
+          "dst": "workshop",
+          "dir": "south"
+        },
+        {
+          "src": "kitchen",
+          "dst": "bedchamber",
+          "dir": "east"
+        },
+        {
+          "src": "spare room",
+          "dst": "workshop",
+          "dir": "west"
+        },
+        {
+          "src": "spare room",
+          "dst": "bedchamber",
+          "dir": "north"
+        },
+        {
+          "src": "spare room",
+          "dst": "bar",
+          "dir": "east"
+        },
+        {
+          "src": "spare room",
+          "dst": "steam room",
+          "dir": "east"
+        },
+        {
+          "src": "workshop",
+          "dst": "steam room",
+          "dir": "south"
+        },
+        {
+          "src": "workshop",
+          "dst": "kitchen",
+          "dir": "west"
+        },
+        {
+          "src": "workshop",
+          "dst": "spare room",
+          "dir": "east"
+        },
+        {
+          "src": "workshop",
+          "dst": "bedchamber",
+          "dir": "north"
+        },
+        {
+          "src": "bar",
+          "dst": "spare room",
+          "dir": "west"
+        },
+        {
+          "src": "bar",
+          "dst": "steam room",
+          "dir": "north"
+        },
+        {
+          "src": "steam room",
+          "dst": "workshop",
+          "dir": "north"
+        },
+        {
+          "src": "steam room",
+          "dst": "bedchamber",
+          "dir": "west"
+        },
+        {
+          "src": "steam room",
+          "dst": "bar",
+          "dir": "south"
+        }
+      ],
+      "noise_records": [
+        {
+          "type": "N5_collapse_fallback",
+          "src": "laundry place",
+          "dst": "steam room",
+          "direction": null,
+          "note": "no prefix match available"
+        },
+        {
+          "type": "N1_direction",
+          "src": "spare room",
+          "dst": "steam room",
+          "direction": "east",
+          "note": ""
+        },
+        {
+          "type": "N1_direction",
+          "src": "workshop",
+          "dst": "bedchamber",
+          "direction": "north",
+          "note": ""
+        },
+        {
+          "type": "N2_topology",
+          "src": "workshop",
+          "dst": "kitchen",
+          "direction": "west",
+          "note": ""
+        }
+      ],
+      "noise_summary": {
+        "N5_collapse_fallback": 1,
+        "N1_direction": 2,
+        "N2_topology": 1
+      },
+      "conflicts": [
+        {
+          "type": "direction",
+          "severity": "high",
+          "description": "node 'spare room' has multiple outgoing edges labelled 'east'",
+          "edges": [
+            [
+              "spare room",
+              "bar"
+            ],
+            [
+              "spare room",
+              "steam room"
+            ]
+          ]
+        },
+        {
+          "type": "topology",
+          "severity": "high",
+          "description": "reverse direction mismatch: kitchen--[south]-->workshop but workshop--[west]-->kitchen (expected north)",
+          "edges": [
+            [
+              "kitchen",
+              "workshop"
+            ],
+            [
+              "workshop",
+              "kitchen"
+            ]
+          ]
+        },
+        {
+          "type": "topology",
+          "severity": "high",
+          "description": "position (-1, 0, 0) occupied by multiple rooms ['bar', 'spare room', 'steam room']",
+          "edges": []
+        },
+        {
+          "type": "topology",
+          "severity": "high",
+          "description": "position (1, 2, 0) occupied by multiple rooms ['bar', 'spare room', 'steam room']",
+          "edges": []
+        },
+        {
+          "type": "topology",
+          "severity": "high",
+          "description": "position (0, 2, 0) occupied by multiple rooms ['bar', 'spare room', 'steam room', 'workshop']",
+          "edges": []
+        },
+        {
+          "type": "topology",
+          "severity": "high",
+          "description": "position (0, 0, 0) occupied by multiple rooms ['bar', 'steam room']",
+          "edges": []
+        },
+        {
+          "type": "topology",
+          "severity": "high",
+          "description": "position (-2, 0, 0) occupied by multiple rooms ['bedchamber', 'spare room', 'workshop']",
+          "edges": []
+        },
+        {
+          "type": "topology",
+          "severity": "high",
+          "description": "position (-1, 2, 0) occupied by multiple rooms ['bedchamber', 'kitchen', 'spare room', 'workshop']",
+          "edges": []
+        },
+        {
+          "type": "topology",
+          "severity": "high",
+          "description": "position (0, 4, 0) occupied by multiple rooms ['spare room', 'workshop']",
+          "edges": []
+        },
+        {
+          "type": "topology",
+          "severity": "high",
+          "description": "position (0, 3, 0) occupied by multiple rooms ['bedchamber', 'steam room']",
+          "edges": []
+        },
+        {
+          "type": "topology",
+          "severity": "high",
+          "description": "position (-1, 1, 0) occupied by multiple rooms ['bedchamber', 'steam room']",
+          "edges": []
+        },
+        {
+          "type": "topology",
+          "severity": "high",
+          "description": "position (-3, -1, 0) occupied by multiple rooms ['bedchamber', 'workshop']",
+          "edges": []
+        },
+        {
+          "type": "topology",
+          "severity": "high",
+          "description": "position (-3, 0, 0) occupied by multiple rooms ['kitchen', 'workshop']",
+          "edges": []
+        },
+        {
+          "type": "topology",
+          "severity": "high",
+          "description": "position (-2, 1, 0) occupied by multiple rooms ['bedchamber', 'kitchen', 'workshop']",
+          "edges": []
+        },
+        {
+          "type": "topology",
+          "severity": "high",
+          "description": "position (-2, 2, 0) occupied by multiple rooms ['kitchen', 'workshop']",
+          "edges": []
+        },
+        {
+          "type": "naming",
+          "severity": "high",
+          "description": "node 'bar' reachable at conflicting positions [(-2, -2, 0), (-1, 0, 0), (0, 0, 0), (0, 2, 0), (1, 2, 0)]",
+          "edges": []
+        },
+        {
+          "type": "naming",
+          "severity": "high",
+          "description": "node 'spare room' reachable at conflicting positions [(-2, 0, 0), (-1, 0, 0), (-1, 2, 0), (0, 2, 0), (0, 4, 0), (1, 2, 0), (1, 4, 0)]",
+          "edges": []
+        },
+        {
+          "type": "naming",
+          "severity": "high",
+          "description": "node 'steam room' reachable at conflicting positions [(-2, -1, 0), (-1, 0, 0), (-1, 1, 0), (0, 0, 0), (0, 1, 0), (0, 2, 0), (0, 3, 0), (1, 2, 0), (1, 3, 0), (1, 5, 0)]",
+          "edges": []
+        },
+        {
+          "type": "naming",
+          "severity": "high",
+          "description": "node 'workshop' reachable at conflicting positions [(-3, -1, 0), (-3, 0, 0), (-2, 0, 0), (-2, 1, 0), (-2, 2, 0), (-1, 2, 0), (0, 2, 0), (0, 4, 0)]",
+          "edges": []
+        },
+        {
+          "type": "naming",
+          "severity": "high",
+          "description": "node 'bedchamber' reachable at conflicting positions [(-3, -1, 0), (-2, 0, 0), (-2, 1, 0), (-1, 1, 0), (-1, 2, 0), (-1, 3, 0), (0, 3, 0), (0, 5, 0)]",
+          "edges": []
+        },
+        {
+          "type": "naming",
+          "severity": "high",
+          "description": "node 'kitchen' reachable at conflicting positions [(-3, 0, 0), (-3, 1, 0), (-2, 1, 0), (-2, 2, 0), (-2, 3, 0), (-1, 2, 0), (-1, 4, 0), (-1, 5, 0)]",
+          "edges": []
+        }
+      ]
+    },
+    "repaired": {
+      "edges": [
+        {
+          "src": "bedchamber",
+          "dst": "kitchen",
+          "dir": "west"
+        },
+        {
+          "src": "bedchamber",
+          "dst": "spare room",
+          "dir": "south"
+        },
+        {
+          "src": "bedchamber",
+          "dst": "steam room",
+          "dir": "east"
+        },
+        {
+          "src": "kitchen",
+          "dst": "bedchamber",
+          "dir": "east"
+        },
+        {
+          "src": "spare room",
+          "dst": "workshop",
+          "dir": "west"
+        },
+        {
+          "src": "spare room",
+          "dst": "bedchamber",
+          "dir": "north"
+        },
+        {
+          "src": "spare room",
+          "dst": "steam room",
+          "dir": "east"
+        },
+        {
+          "src": "workshop",
+          "dst": "steam room",
+          "dir": "south"
+        },
+        {
+          "src": "workshop",
+          "dst": "spare room",
+          "dir": "east"
+        },
+        {
+          "src": "workshop",
+          "dst": "bedchamber",
+          "dir": "north"
+        },
+        {
+          "src": "bar",
+          "dst": "spare room",
+          "dir": "west"
+        },
+        {
+          "src": "bar",
+          "dst": "steam room",
+          "dir": "south"
+        },
+        {
+          "src": "steam room",
+          "dst": "workshop",
+          "dir": "north"
+        },
+        {
+          "src": "steam room",
+          "dst": "bedchamber",
+          "dir": "west"
+        },
+        {
+          "src": "steam room",
+          "dst": "bar",
+          "dir": "up"
+        }
+      ],
+      "actions": [
+        {
+          "kind": "remove_edge",
+          "target": [
+            "kitchen",
+            "workshop"
+          ],
+          "new_dir": null,
+          "reason": "remove fallback"
+        },
+        {
+          "kind": "remove_edge",
+          "target": [
+            "spare room",
+            "bar"
+          ],
+          "new_dir": null,
+          "reason": "remove fallback"
+        },
+        {
+          "kind": "remove_edge",
+          "target": [
+            "workshop",
+            "kitchen"
+          ],
+          "new_dir": null,
+          "reason": "remove fallback"
+        },
+        {
+          "kind": "modify_edge",
+          "target": [
+            "bar",
+            "steam room"
+          ],
+          "new_dir": "south",
+          "reason": "rotate to free direction south"
+        },
+        {
+          "kind": "modify_edge",
+          "target": [
+            "steam room",
+            "bar"
+          ],
+          "new_dir": "up",
+          "reason": "rotate to free direction up"
+        },
+        {
+          "kind": "skip",
+          "target": null,
+          "new_dir": null,
+          "reason": "exhausted candidates"
+        }
+      ],
+      "n_conflicts_before": 21,
+      "n_conflicts_after": 11
+    }
+  }
+}

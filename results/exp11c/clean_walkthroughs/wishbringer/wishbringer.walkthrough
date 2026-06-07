@@ -1,0 +1,220 @@
+===========
+==>STEP NUM: 0
+==>ACT: south
+==>OBSERVATION: Post Office
+This is the lobby of the Festeron Post Office. The walls are lined with small, private mailboxes and wanted posters. A service counter runs along the entire length of the room.
+
+Your boss, Mr. Crisp, is behind the service counter reading other people's postcards.
+
+Mr. Crisp hides the postcards away as you enter. "Where have you been?" he barks angrily. "Daydreaming again, eh? I've been looking everywhere for you!"
+
+(Your score just went up by 1 point! Your total score is 1 out of 100.)
+
+What next?
+===========
+==>STEP NUM: 1
+==>ACT: north
+==>OBSERVATION: As you leave the Post Office, somebody slams and locks the door behind you.
+
+Hilltop
+
+What next?
+===========
+==>STEP NUM: 2
+==>ACT: west
+==>OBSERVATION: Outside Cemetery
+You're standing next to an open iron gate that leads west into the Festeron Cemetery. A road runs east to the top of Post Office Hill.
+
+What next?
+===========
+==>STEP NUM: 3
+==>ACT: west
+==>OBSERVATION: The cemetery is a fearful place. Are you sure you want to go in there?
+
+(Please type YES or NO.)
+===========
+==>STEP NUM: 4
+==>ACT: north
+==>OBSERVATION: Spooky Copse
+A copse of willow trees makes this part of the cemetery look really spooky. Narrow lanes wander south and west.
+
+There's an open grave nearby, freshly dug, with a tombstone erected next to it.
+
+An old gravedigger is resting under a willow tree.
+
+The gravedigger nods a greeting as you approach.
+
+What next?
+===========
+==>STEP NUM: 5
+==>ACT: west
+==>OBSERVATION: Twilight Glen
+The trees here are so thick, it's almost too dark to see! You can make out an open iron gate to the north, and a narrow lane between the tombstones winds off to the east.
+
+There must have been a burial here recently. Somebody left their umbrella leaning up against a tombstone.
+
+The gravedigger follows behind you. "What's your hurry?" he complains.
+
+Throwing a shovel over his shoulder, the gravedigger ambles through the iron gate and locks it. "Keep out of the cemetery after Dark," he tells you with a sly wink.
+
+You can hear him chuckling as he disappears to the north.
+
+What next?
+===========
+==>STEP NUM: 6
+==>ACT: east
+==>OBSERVATION: Spooky Copse
+
+What next?
+===========
+==>STEP NUM: 7
+==>ACT: down
+==>OBSERVATION: Open Grave
+You're at the bottom of an open grave, surrounded by six-foot walls of dirt.
+
+There's an old bone here.
+
+(You won't see the "What next?" prompt any more.)
+===========
+==>STEP NUM: 8
+==>ACT: up
+==>OBSERVATION: With great difficulty, you manage to climb out of the open grave.
+
+Spooky Copse
+===========
+==>STEP NUM: 9
+==>ACT: south
+==>OBSERVATION: Creepy Corner
+===========
+==>STEP NUM: 10
+==>ACT: east
+==>OBSERVATION: Whew! That cemetery sure is spooky.
+
+Outside Cemetery
+===========
+==>STEP NUM: 11
+==>ACT: east
+==>OBSERVATION: Hilltop
+===========
+==>STEP NUM: 12
+==>ACT: east
+==>OBSERVATION: Outside Cottage
+You're outside the cottage of Miss Voss, the town librarian. The road turns north toward the village, and bends upward to the summit of Post Office Hill.
+
+As you approach the cottage you are greeted by the tiniest poodle you've ever seen in your entire life. It charges across the street, yapping angrily and showing its sharp little teeth.
+
+You can smell the poodle's hot breath as it yaps.
+===========
+==>STEP NUM: 13
+==>ACT: north
+==>OBSERVATION: The poodle yaps a threat as you back away.
+
+Rotary South
+This is the south side of the Festeron Rotary. A road branches south, towards Post Office Hill.
+
+The Festeron Public Library, famous for its museum of local historic artifacts, stands proudly on the nearby corner.
+
+Miss Voss, the town librarian, is locking the library door as you approach. "Just the person I was looking for!" she exclaims, smiling brightly.
+===========
+==>STEP NUM: 14
+==>ACT: north
+==>OBSERVATION: Park
+You're standing in a circular park, surrounded by the Festeron Rotary. Walks converge from four directions on a shallow marble fountain, filled with sparkling water.
+
+A statue stands in the middle of the fountain.
+===========
+==>STEP NUM: 15
+==>ACT: north
+==>OBSERVATION: Rotary North
+This is the northern side of the Festeron Rotary. A road leads north, towards the river.
+
+On the corner stands a quaint village church. Its little white steeple is straight out of a country postcard. The church door stands invitingly open.
+===========
+==>STEP NUM: 16
+==>ACT: north
+==>OBSERVATION: South of Bridge
+This is the south side of a covered bridge that spans the Festeron River. Paths lead off to the east and west, and a road leads south to the village.
+===========
+==>STEP NUM: 17
+==>ACT: north
+==>OBSERVATION: Bridge
+You're on a covered bridge that spans the Festeron River. A sign hangs on an arch overhead.
+===========
+==>STEP NUM: 18
+==>ACT: north
+==>OBSERVATION: North of Bridge
+This is the north side of the Festeron Bridge. Sheer cliff walls rise abruptly to the north and west. A path wanders east along the shore of the river.
+===========
+==>STEP NUM: 19
+==>ACT: east
+==>OBSERVATION: Cliff Bottom
+You're at the bottom of a cliff that rises up from the north bank of the river. A steep trail winds upward.
+
+A gnarled tree trunk stands nearby, a lone branch its only adornment.
+===========
+==>STEP NUM: 20
+==>ACT: up
+==>OBSERVATION: (The trail you're climbing is narrow and twisty. It's a good idea to draw a map as you go up.)
+
+Steep Trail
+A steep, rocky trail winds west and downward.
+===========
+==>STEP NUM: 21
+==>ACT: up
+==>OBSERVATION: (Your score just went up by 1 point! Your total score is 15 out of 100.)
+
+Cliff Edge
+You're standing high on a rocky cliff, at the top of a steep trail leading downward. Looking southwest, you can see the shadow of Post Office Hill creeping across the village as the sun sinks into a bank of clouds.
+
+The peaceful scenery is disturbed by a tiny figure emerging from the distant Post Office. It stares in your direction for a few moments, checks its wrist and shakes a threatening little fist at you.
+
+A little old-fashioned store stands nearby. Its brightly painted shutters and thatched roof remind you of something out of a fairy tale. A curiously painted sign over the front door reads, "Ye Olde Magick Shoppe."
+===========
+==>STEP NUM: 22
+==>ACT: in
+==>OBSERVATION: Magick Shoppe
+You're in the front showroom of the Magick Shoppe.
+
+Every inch of wall space is crowded with magic tricks, puzzles and mystical paraphernalia. A glass case offers a selection of obscene jokes and naughty birthday cards.
+
+In the corner stands an ancient grandfather clock, its dial ornamented with a smiling crescent moon and other celestial symbols.
+
+The front door of the Magick Shoppe is wide open. At the west end of the room, you can see another exit concealed by a curtain.
+
+A sudden gust of wind slams the Magick Shoppe door closed. A concealed bell tinkles merrily.
+
+"Just a moment!" cries a voice behind the curtain.
+===========
+==>STEP NUM: 23
+==>ACT: west
+==>OBSERVATION: North of Bridge
+This is the north side of the Witchville Bridge. Sheer cliff walls rise abruptly to the north and west. A path wanders east along the shore of the river.
+
+A rickety toll gate has been thrown up across the entrance to the covered bridge. A handpainted sign is nailed to the middle of the closed gate.
+
+Standing near the toll gate is an ugly, gnomelike creature. A less original story would probably refer to it as a troll.
+===========
+==>STEP NUM: 24
+==>ACT: south
+==>OBSERVATION: Bridge
+You're on a covered bridge that spans the Witchville River. A sign hangs on an arch overhead.
+===========
+==>STEP NUM: 25
+==>ACT: south
+==>OBSERVATION: South of Bridge
+This is the south side of a covered bridge that spans the Witchville River. Paths lead off to the east and west, and a road leads south to the village.
+===========
+==>STEP NUM: 26
+==>ACT: west
+==>OBSERVATION: River Outlet
+This is where the lake empties into the Witchville River. A road leads south along the edge of the lake, and bends east to follow the river bank. A narrow trail leads upward to the top of Lookout Hill.
+===========
+==>STEP NUM: 27
+==>ACT: south
+==>OBSERVATION: Lake Edge
+You're on the sandy shore of the lake. A road heads east towards the village, and another runs north along the edge of the lake. Looking south, you can see a closed iron gate leading into the Witchville Cemetery.
+
+Misty Island, its outline shrouded in fog, is visible far across the water.
+
+You can see a narrow pit near the edge of the lake. Animal tracks are visible in the sand next to the pit.
+===========

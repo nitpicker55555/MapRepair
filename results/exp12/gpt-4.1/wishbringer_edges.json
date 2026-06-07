@@ -1,0 +1,158 @@
+[
+  {
+    "src_node": "hilltop",
+    "dst_node": "outside cemetery",
+    "action": "west",
+    "seen_in_forward": 2
+  },
+  {
+    "src_node": "outside cemetery",
+    "dst_node": "open grave",
+    "action": "west",
+    "seen_in_forward": 3
+  },
+  {
+    "src_node": "open grave",
+    "dst_node": "spooky copse",
+    "action": "north",
+    "seen_in_forward": 4
+  },
+  {
+    "src_node": "spooky copse",
+    "dst_node": "twilight glen",
+    "action": "west",
+    "seen_in_forward": 5
+  },
+  {
+    "src_node": "twilight glen",
+    "dst_node": "spooky copse",
+    "action": "east",
+    "seen_in_forward": 6
+  },
+  {
+    "src_node": "spooky copse",
+    "dst_node": "open grave",
+    "action": "down",
+    "seen_in_forward": 7
+  },
+  {
+    "src_node": "open grave",
+    "dst_node": "spooky copse",
+    "action": "up",
+    "seen_in_forward": 8
+  },
+  {
+    "src_node": "spooky copse",
+    "dst_node": "creepy corner",
+    "action": "south",
+    "seen_in_forward": 9
+  },
+  {
+    "src_node": "creepy corner",
+    "dst_node": "outside cemetery",
+    "action": "east",
+    "seen_in_forward": 10
+  },
+  {
+    "src_node": "outside cemetery",
+    "dst_node": "hilltop",
+    "action": "east",
+    "seen_in_forward": 11
+  },
+  {
+    "src_node": "hilltop",
+    "dst_node": "outside cottage",
+    "action": "east",
+    "seen_in_forward": 12
+  },
+  {
+    "src_node": "outside cottage",
+    "dst_node": "rotary south",
+    "action": "north",
+    "seen_in_forward": 13
+  },
+  {
+    "src_node": "rotary south",
+    "dst_node": "park",
+    "action": "north",
+    "seen_in_forward": 14
+  },
+  {
+    "src_node": "park",
+    "dst_node": "rotary north",
+    "action": "north",
+    "seen_in_forward": 15
+  },
+  {
+    "src_node": "rotary north",
+    "dst_node": "south of bridge",
+    "action": "north",
+    "seen_in_forward": 16
+  },
+  {
+    "src_node": "south of bridge",
+    "dst_node": "bridge",
+    "action": "north",
+    "seen_in_forward": 17
+  },
+  {
+    "src_node": "bridge",
+    "dst_node": "north of bridge",
+    "action": "north",
+    "seen_in_forward": 18
+  },
+  {
+    "src_node": "north of bridge",
+    "dst_node": "cliff bottom",
+    "action": "east",
+    "seen_in_forward": 19
+  },
+  {
+    "src_node": "cliff bottom",
+    "dst_node": "steep trail",
+    "action": "up",
+    "seen_in_forward": 20
+  },
+  {
+    "src_node": "steep trail",
+    "dst_node": "cliff edge",
+    "action": "up",
+    "seen_in_forward": 21
+  },
+  {
+    "src_node": "cliff edge",
+    "dst_node": "magick shoppe",
+    "action": "in",
+    "seen_in_forward": 22
+  },
+  {
+    "src_node": "magick shoppe",
+    "dst_node": "north of bridge",
+    "action": "west",
+    "seen_in_forward": 23
+  },
+  {
+    "src_node": "north of bridge",
+    "dst_node": "bridge",
+    "action": "south",
+    "seen_in_forward": 24
+  },
+  {
+    "src_node": "bridge",
+    "dst_node": "south of bridge",
+    "action": "south",
+    "seen_in_forward": 25
+  },
+  {
+    "src_node": "south of bridge",
+    "dst_node": "river outlet",
+    "action": "west",
+    "seen_in_forward": 26
+  },
+  {
+    "src_node": "river outlet",
+    "dst_node": "lake edge",
+    "action": "south",
+    "seen_in_forward": 27
+  }
+]

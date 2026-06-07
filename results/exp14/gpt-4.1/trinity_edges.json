@@ -1,0 +1,62 @@
+[
+  {
+    "src_node": "flower walk",
+    "dst_node": "the wabe",
+    "action": "northwest",
+    "seen_in_forward": 1
+  },
+  {
+    "src_node": "the wabe",
+    "dst_node": "broad walk",
+    "action": "northwest",
+    "seen_in_forward": 2
+  },
+  {
+    "src_node": "broad walk",
+    "dst_node": "round pond",
+    "action": "east",
+    "seen_in_forward": 3
+  },
+  {
+    "src_node": "round pond",
+    "dst_node": "black lion gate",
+    "action": "northwest",
+    "seen_in_forward": 4
+  },
+  {
+    "src_node": "black lion gate",
+    "dst_node": "wading",
+    "action": "east",
+    "seen_in_forward": 5
+  },
+  {
+    "src_node": "wading",
+    "dst_node": "summit",
+    "action": "north",
+    "seen_in_forward": 6
+  },
+  {
+    "src_node": "summit",
+    "dst_node": "south bog",
+    "action": "northeast",
+    "seen_in_forward": 7
+  },
+  {
+    "src_node": "south bog",
+    "dst_node": "bottom of stairs",
+    "action": "east",
+    "seen_in_forward": 8
+  },
+  {
+    "src_node": "bottom of stairs",
+    "dst_node": "halfway up",
+    "action": "up",
+    "seen_in_forward": 9
+  },
+  {
+    "src_node": "halfway up",
+    "dst_node": "vertex",
+    "action": "up",
+    "seen_in_forward": 10
+  }
+]

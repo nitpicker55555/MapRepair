@@ -1,0 +1,18 @@
+# zenon  model=gpt-4.1  n_steps=17  (exp14 bootstrap-fixed)
+step   0 BOOTSTRAP seed current_loc='landing' (src missing, dst valid)
+step   1 MOVE 'landing' --[east]--> 'corridor(east old cell and stretches further west)'
+step   2 MOVE 'corridor(east old cell and stretches further west)' --[south]--> 'armoury'
+step   3 MOVE 'armoury' --[north]--> 'corridor(south into a room and west to old cell)'
+step   4 MOVE 'corridor(south into a room and west to old cell)' --[west]--> 'landing'
+step   5 MOVE 'landing' --[west]--> 'corridor(east old cell and stretches further west)'
+step   6 MOVE 'corridor(east old cell and stretches further west)' --[west]--> 'corridor(south into a room and west to old cell)'
+step   7 MOVE 'corridor(south into a room and west to old cell)' --[south]--> 'control room'
+step   8 MOVE 'control room' --[north]--> 'corridor(south into a room and west to old cell)'
+step   9 MOVE 'corridor(south into a room and west to old cell)' --[north]--> 'hall'
+step  10 MOVE 'hall' --[north]--> 'lift(up button and a door to north)'
+step  11 MOVE 'lift(up button and a door to north)' --[down]--> 'lift(down button and a door to south)'
+step  12 MOVE 'lift(down button and a door to south)' --[north]--> 'hallway'
+step  13 MOVE 'hallway' --[north]--> 'office'
+step  14 MOVE 'office' --[east]--> 'bar'
+step  15 MOVE 'bar' --[west]--> 'office'
+step  16 MOVE 'office' --[west]--> "officer's room"

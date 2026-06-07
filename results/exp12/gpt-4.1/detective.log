@@ -1,0 +1,37 @@
+# detective  model=gpt-4.1  n_steps=36
+step   0 bad movement output: {'is_movement': True, 'src_node': None, 'dst_node': 'closet', 'action': 'west', 'seen_in_forward': 0, 'current_location': 'closet', 'reasoning': "Observation header is 'Closet', matching canonical location; action is compass direction."}
+step   1 bad movement output: {'is_movement': True, 'src_node': None, 'dst_node': "chief's office", 'action': 'east', 'seen_in_forward': 1, 'current_location': "chief's office", 'reasoning': "Observation explicitly states arrival in 'Chief's office', which matches a canonical location."}
+step   2 bad movement output: {'is_movement': True, 'src_node': None, 'dst_node': 'outside (dead end to east)', 'action': 'north', 'seen_in_forward': 2, 'current_location': 'outside (dead end to east)', 'reasoning': "Observation indicates arrival 'outside' with a dead end to the east, matching canonical 'outside (dead end to east)'."}
+step   3 bad movement output: {'is_movement': True, 'src_node': None, 'dst_node': 'living room', 'action': 'east', 'seen_in_forward': 3, 'current_location': 'living room', 'reasoning': "The observation explicitly states arrival in the 'living room', which matches a canonical location. The action 'east' is a compass direction, so this is a movement edge."}
+step   4 bad movement output: {'is_movement': True, 'src_node': None, 'dst_node': "mayor's house (scene of crime)", 'action': 'west', 'seen_in_forward': 4, 'current_location': "mayor's house (scene of crime)", 'reasoning': "Observation header is '<< Mayor's house >>' and description matches the canonical 'mayor's house (scene of crime)'."}
+step   5 MOVE "mayor's house (scene of crime)" --[west]--> 'dining room'
+step   6 MOVE 'dining room' --[east]--> "mayor's house (scene of crime)"
+step   7 MOVE "mayor's house (scene of crime)" --[north]--> "upstairs hallway (mayer's house)"
+step   8 MOVE "upstairs hallway (mayer's house)" --[north]--> "hallway (mayer's house, east/west intersect, exit to north)"
+step   9 MOVE "hallway (mayer's house, east/west intersect, exit to north)" --[west]--> 'hallway (mayer\'s house, "guests" door to east)'
+step  10 MOVE 'hallway (mayer\'s house, "guests" door to east)' --[north]--> "hallway (mayer's house, east/west intersect, exit to north)"
+step  11 MOVE "hallway (mayer's house, east/west intersect, exit to north)" --[north]--> 'outside (restaurant to north, mayer home to east)'
+step  12 MOVE 'outside (restaurant to north, mayer home to east)' --[west]--> 'bedroom'
+step  13 MOVE 'bedroom' --[east]--> 'hallway (15th floor, room 19-22)'
+step  14 MOVE 'hallway (15th floor, room 19-22)' --[north]--> 'outside (holiday inn to north, doughnut king to east, the wall to west)'
+step  15 MOVE 'outside (holiday inn to north, doughnut king to east, the wall to west)' --[east]--> 'video store'
+step  16 MOVE 'video store' --[east]--> 'outside (video store to east)'
+step  17 MOVE 'outside (video store to east)' --[south]--> 'mcdonalds'
+step  18 MOVE 'mcdonalds' --[north]--> 'outside (holiday inn to north, doughnut king to east, the wall to west)'
+step  19 MOVE 'outside (holiday inn to north, doughnut king to east, the wall to west)' --[north]--> 'outside (north end, east only available)'
+step  20 MOVE 'outside (north end, east only available)' --[east]--> 'music store'
+step  21 MOVE 'music store' --[north]--> 'back of music store'
+step  22 MOVE 'back of music store' --[north]--> 'alley'
+step  23 MOVE 'alley' --[north]--> 'police station'
+step  24 MOVE 'police station' --[north]--> 'outside (holiday inn to north, doughnut king to east, the wall to west)'
+step  25 MOVE 'outside (holiday inn to north, doughnut king to east, the wall to west)' --[east]--> 'doughnut king'
+step  26 MOVE 'doughnut king' --[west]--> 'outside (holiday inn to north, doughnut king to east, the wall to west)'
+step  27 MOVE 'outside (holiday inn to north, doughnut king to east, the wall to west)' --[west]--> 'the wall'
+step  28 MOVE 'the wall' --[east]--> 'outside (holiday inn to north, doughnut king to east, the wall to west)'
+step  29 MOVE 'outside (holiday inn to north, doughnut king to east, the wall to west)' --[north]--> 'holiday inn'
+step  30 MOVE 'holiday inn' --[north]--> 'holiday inn 15th floor'
+step  31 MOVE 'holiday inn 15th floor' --[west]--> 'hallway (15th floor, room 1-7)'
+step  32 MOVE 'hallway (15th floor, room 1-7)' --[north]--> 'hallway (15th floor, room 19-22)'
+step  33 MOVE 'hallway (15th floor, room 19-22)' --[west]--> 'hallway (15th floor, room 19-22)'
+step  34 MOVE 'hallway (15th floor, room 19-22)' --[north]--> 'hallway (sauna to west, pool a to east)'
+step  35 MOVE 'hallway (sauna to west, pool a to east)' --[north]--> 'room # 30'

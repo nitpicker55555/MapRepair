@@ -1,0 +1,83 @@
+===========
+==>STEP NUM: 0
+==>ACT: east
+==>OBSERVATION: Lobby
+This is the entrance to the library. The circulation desk dominates the room, seemingly cobbled together over the course of several generations from an assortment of desks and tables. A pair of security gates stands before the front doors to prevent people from stealing books. A card catalog lurks in a dark and dusty corner of the room, seemingly cringing away from the harsh flourescent light. Glass doors to the west lead to the book stacks; an archway to the northwest is labelled "Duplicating Services"; a door to the north bears a sign marked "Private" in large friendly letters; and the exit is to the east
+
+You can see a circulation desk attendant here.
+===========
+==>STEP NUM: 1
+==>ACT: north
+==>OBSERVATION: Ground Floor Stairwell
+Grungy stairs lead upwards, to the second level. A damaged picture hangs on the wall. The door to the ground floor shelving area is to the south.
+===========
+==>STEP NUM: 2
+==>ACT: up
+==>OBSERVATION: Second Floor Stairwell
+Grungy stairs lead downwards. The lights are dim, and a painting hangs on the wall. A door to the south appears to open into a room of shelves.
+===========
+==>STEP NUM: 3
+==>ACT: south
+==>OBSERVATION: Second Floor Stacks
+You are in a maze of twisty shelves, all alike.
+
+(Well, okay, not really)
+
+This cavernous room is filled with shelves as far as the eye can see. A doorway to the east is labelled "Computer Room", and the stairwell lies to the north.
+
+A heavy wooden door bars the way to the rare books room. A sign indicates that the key may be obtained from the circulation desk.
+===========
+==>STEP NUM: 4
+==>ACT: south
+==>OBSERVATION: Rare Books Room
+The shelves are nearly bare, although there is a complete set of the "New Zork Times", a box labeled "Avalon", and several biographies of various computer game authors. The door out is to the north
+
+You can see a biography of Graham Nelson here.
+===========
+==>STEP NUM: 5
+==>ACT: north
+==>OBSERVATION: Second Floor Stacks
+This cavernous room is filled with shelves as far as the eye can see. A doorway to the east is labelled "Computer Room", and the stairwell lies to the north.
+
+The door stands open.
+===========
+==>STEP NUM: 6
+==>ACT: east
+==>OBSERVATION: Computer Lab
+This entire room hums with the combined output of several dozen computers. All of them are hopelessly out of date, but at least they're still good for word processing.
+
+A bank of printers on one side of the room frantically churns out paper.
+
+You can see a technician here.
+===========
+==>STEP NUM: 7
+==>ACT: west
+==>OBSERVATION: Second Floor Stacks
+This cavernous room is filled with shelves as far as the eye can see. A doorway to the east is labelled "Computer Room", and the stairwell lies to the north.
+
+A heavy wooden door bars the way to the rare books room.
+===========
+==>STEP NUM: 8
+==>ACT: north
+==>OBSERVATION: Second Floor Stairwell
+Grungy stairs lead downwards. The lights are dim, and a painting hangs on the wall. A door to the south appears to open into a room of shelves.
+===========
+==>STEP NUM: 9
+==>ACT: down
+==>OBSERVATION: Ground Floor Stairwell
+Grungy stairs lead upwards, to the second level. A damaged picture hangs on the wall. The door to the ground floor shelving area is to the south.
+===========
+==>STEP NUM: 10
+==>ACT: south
+==>OBSERVATION: Ground Floor Stacks
+This cavernous room is lit with flickering flourescent lighting which makes the ceiling look even lower than it really is. It is filled with half-empty shelves, upon which rest the dusty boxes of many early games. To one side sits a massive, ancient desk, its surface cluttered with paperwork. A sign on the wall indicates that this is the reference desk, which would make the prim young woman sitting behind it the reference librarian. A doorway to the north is labelled "Stairs", and glass doors lead east to the lobby.
+
+You can see a reference librarian here.
+===========
+==>STEP NUM: 11
+==>ACT: east
+==>OBSERVATION: Lobby
+This is the entrance to the library. The circulation desk dominates the room, seemingly cobbled together over the course of several generations from an assortment of desks and tables. A pair of security gates stands before the front doors to prevent people from stealing books. A card catalog lurks in a dark and dusty corner of the room, seemingly cringing away from the harsh flourescent light. Glass doors to the west lead to the book stacks; an archway to the northwest is labelled "Duplicating Services"; a door to the north bears a sign marked "Private" in large friendly letters; and the exit is to the east
+
+You can see a technician and a circulation desk attendant here.
+===========

@@ -1,0 +1,5 @@
+# huntdark  model=gpt-4.1  n_steps=4  (exp14 bootstrap-fixed)
+step   0 BOOTSTRAP seed current_loc='tight crawl' (src missing, dst valid)
+step   1 MOVE 'tight crawl' --[up]--> 'cramped cavern'
+step   2 MOVE 'cramped cavern' --[up]--> 'small cave'
+step   3 MOVE 'small cave' --[up]--> 'base of canyon'

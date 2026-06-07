@@ -1,0 +1,4247 @@
+{
+  "game": "karn",
+  "num_llm_edges": 24,
+  "num_gt_edges": 33,
+  "num_conflicts": 51,
+  "type_distribution": {
+    "direction": 5,
+    "topology": 26,
+    "naming": 20
+  },
+  "root_cause_distribution": {
+    "name_hallucination": 4,
+    "real_vs_hallucinated": 1,
+    "all_hallucinated_edges": 1,
+    "name_hallucination_caused_overlap": 8,
+    "wrong_direction_caused_overlap": 11,
+    "overlap_mixed": 2,
+    "false_positive_overlap": 5,
+    "naming_collision_on_correct_subgraph": 11,
+    "real_name_corrupted_by_neighbour_error": 6,
+    "naming_mixed": 2
+  },
+  "conflicts": [
+    {
+      "type": "direction",
+      "description": "node 'rocky clearing' has multiple outgoing edges labelled 'northwest'",
+      "involved_edges": [
+        [
+          "rocky clearing",
+          "mountain trail"
+        ],
+        [
+          "rocky clearing",
+          "mountain trail (carved steps to the south)"
+        ]
+      ],
+      "involved_nodes": [
+        "rocky clearing",
+        "mountain trail",
+        "mountain trail (carved steps to the south)"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "rocky clearing",
+            "mountain trail"
+          ],
+          "llm_dir": "northwest",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "dst_hallucinated",
+          "source_in_gt": true,
+          "target_in_gt": false,
+          "step": null
+        },
+        {
+          "edge": [
+            "rocky clearing",
+            "mountain trail (carved steps to the south)"
+          ],
+          "llm_dir": "northwest",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": null
+        }
+      ],
+      "case_counts": {
+        "dst_hallucinated": 1,
+        "hallucinated_edge": 1
+      },
+      "root_cause": "name_hallucination"
+    },
+    {
+      "type": "direction",
+      "description": "node 'ruins' has multiple outgoing edges labelled 'down'",
+      "involved_edges": [
+        [
+          "ruins",
+          "mountain trail (up northeast, clearing to southeast, stoney trail leads west)"
+        ],
+        [
+          "ruins",
+          "mountain trail (carved steps to the south)"
+        ]
+      ],
+      "involved_nodes": [
+        "ruins",
+        "mountain trail (up northeast, clearing to southeast, stoney trail leads west)",
+        "mountain trail (carved steps to the south)"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "ruins",
+            "mountain trail (up northeast, clearing to southeast, stoney trail leads west)"
+          ],
+          "llm_dir": "down",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": null
+        },
+        {
+          "edge": [
+            "ruins",
+            "mountain trail (carved steps to the south)"
+          ],
+          "llm_dir": "down",
+          "in_gt": true,
+          "gt_dir": "down",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 30
+        }
+      ],
+      "case_counts": {
+        "hallucinated_edge": 1,
+        "correct": 1
+      },
+      "root_cause": "real_vs_hallucinated"
+    },
+    {
+      "type": "direction",
+      "description": "node 'mountain trail (carved steps to the south)' has multiple outgoing edges labelled 'northeast'",
+      "involved_edges": [
+        [
+          "mountain trail (carved steps to the south)",
+          "mountain trail (cleft to northwest, down southwest, down east)"
+        ],
+        [
+          "mountain trail (carved steps to the south)",
+          "mountain trail"
+        ]
+      ],
+      "involved_nodes": [
+        "mountain trail (carved steps to the south)",
+        "mountain trail (cleft to northwest, down southwest, down east)",
+        "mountain trail"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "mountain trail (carved steps to the south)",
+            "mountain trail (cleft to northwest, down southwest, down east)"
+          ],
+          "llm_dir": "northeast",
+          "in_gt": true,
+          "gt_dir": "northeast",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 31
+        },
+        {
+          "edge": [
+            "mountain trail (carved steps to the south)",
+            "mountain trail"
+          ],
+          "llm_dir": "northeast",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "dst_hallucinated",
+          "source_in_gt": true,
+          "target_in_gt": false,
+          "step": null
+        }
+      ],
+      "case_counts": {
+        "correct": 1,
+        "dst_hallucinated": 1
+      },
+      "root_cause": "name_hallucination"
+    },
+    {
+      "type": "direction",
+      "description": "node 'mountain trail (carved steps to the south)' has multiple outgoing edges labelled 'west'",
+      "involved_edges": [
+        [
+          "mountain trail (carved steps to the south)",
+          "mountain trail (blackened tree beside trail)"
+        ],
+        [
+          "mountain trail (carved steps to the south)",
+          "mountain trail (up northeast, clearing to southeast, stoney trail leads west)"
+        ]
+      ],
+      "involved_nodes": [
+        "mountain trail (carved steps to the south)",
+        "mountain trail (blackened tree beside trail)",
+        "mountain trail (up northeast, clearing to southeast, stoney trail leads west)"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "mountain trail (carved steps to the south)",
+            "mountain trail (blackened tree beside trail)"
+          ],
+          "llm_dir": "west",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 39
+        },
+        {
+          "edge": [
+            "mountain trail (carved steps to the south)",
+            "mountain trail (up northeast, clearing to southeast, stoney trail leads west)"
+          ],
+          "llm_dir": "west",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 63
+        }
+      ],
+      "case_counts": {
+        "hallucinated_edge": 2
+      },
+      "root_cause": "all_hallucinated_edges"
+    },
+    {
+      "type": "direction",
+      "description": "node 'narrow cleft' has multiple outgoing edges labelled 'southeast'",
+      "involved_edges": [
+        [
+          "narrow cleft",
+          "mountain trail (cleft to northwest, down southwest, down east)"
+        ],
+        [
+          "narrow cleft",
+          "mountain trail"
+        ]
+      ],
+      "involved_nodes": [
+        "narrow cleft",
+        "mountain trail (cleft to northwest, down southwest, down east)",
+        "mountain trail"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "narrow cleft",
+            "mountain trail (cleft to northwest, down southwest, down east)"
+          ],
+          "llm_dir": "southeast",
+          "in_gt": true,
+          "gt_dir": "southeast",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": null
+        },
+        {
+          "edge": [
+            "narrow cleft",
+            "mountain trail"
+          ],
+          "llm_dir": "southeast",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "dst_hallucinated",
+          "source_in_gt": true,
+          "target_in_gt": false,
+          "step": 37
+        }
+      ],
+      "case_counts": {
+        "correct": 1,
+        "dst_hallucinated": 1
+      },
+      "root_cause": "name_hallucination"
+    },
+    {
+      "type": "topology",
+      "description": "position (0, 0, 0) occupied by multiple rooms ['bottom of cliff', 'narrow cleft']",
+      "involved_edges": [],
+      "involved_nodes": [
+        "bottom of cliff",
+        "narrow cleft"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "narrow cleft",
+            "bottom of cliff"
+          ],
+          "llm_dir": "west",
+          "in_gt": true,
+          "gt_dir": "west",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 33
+        },
+        {
+          "edge": [
+            "mountain trail (cleft to northwest, down southwest, down east)",
+            "narrow cleft"
+          ],
+          "llm_dir": "northwest",
+          "in_gt": true,
+          "gt_dir": "northwest",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 32
+        },
+        {
+          "edge": [
+            "narrow cleft",
+            "mountain trail"
+          ],
+          "llm_dir": "southeast",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "dst_hallucinated",
+          "source_in_gt": true,
+          "target_in_gt": false,
+          "step": 37
+        }
+      ],
+      "case_counts": {
+        "correct": 2,
+        "dst_hallucinated": 1
+      },
+      "root_cause": "name_hallucination_caused_overlap"
+    },
+    {
+      "type": "topology",
+      "description": "position (1, 1, 0) occupied by multiple rooms ['bottom of cliff', 'narrow cleft']",
+      "involved_edges": [],
+      "involved_nodes": [
+        "bottom of cliff",
+        "narrow cleft"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "narrow cleft",
+            "bottom of cliff"
+          ],
+          "llm_dir": "west",
+          "in_gt": true,
+          "gt_dir": "west",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 33
+        },
+        {
+          "edge": [
+            "mountain trail (cleft to northwest, down southwest, down east)",
+            "narrow cleft"
+          ],
+          "llm_dir": "northwest",
+          "in_gt": true,
+          "gt_dir": "northwest",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 32
+        },
+        {
+          "edge": [
+            "narrow cleft",
+            "mountain trail"
+          ],
+          "llm_dir": "southeast",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "dst_hallucinated",
+          "source_in_gt": true,
+          "target_in_gt": false,
+          "step": 37
+        }
+      ],
+      "case_counts": {
+        "correct": 2,
+        "dst_hallucinated": 1
+      },
+      "root_cause": "name_hallucination_caused_overlap"
+    },
+    {
+      "type": "topology",
+      "description": "position (1, 0, 0) occupied by multiple rooms ['mountain trail (up west, down east)', 'narrow cleft']",
+      "involved_edges": [],
+      "involved_nodes": [
+        "mountain trail (up west, down east)",
+        "narrow cleft"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "mountain trail (blackened tree beside trail)",
+            "mountain trail (up west, down east)"
+          ],
+          "llm_dir": "west",
+          "in_gt": true,
+          "gt_dir": "west",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 60
+        },
+        {
+          "edge": [
+            "mountain trail (cleft to northwest, down southwest, down east)",
+            "narrow cleft"
+          ],
+          "llm_dir": "northwest",
+          "in_gt": true,
+          "gt_dir": "northwest",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 32
+        },
+        {
+          "edge": [
+            "narrow cleft",
+            "bottom of cliff"
+          ],
+          "llm_dir": "west",
+          "in_gt": true,
+          "gt_dir": "west",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 33
+        },
+        {
+          "edge": [
+            "narrow cleft",
+            "mountain trail"
+          ],
+          "llm_dir": "southeast",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "dst_hallucinated",
+          "source_in_gt": true,
+          "target_in_gt": false,
+          "step": 37
+        }
+      ],
+      "case_counts": {
+        "correct": 3,
+        "dst_hallucinated": 1
+      },
+      "root_cause": "name_hallucination_caused_overlap"
+    },
+    {
+      "type": "topology",
+      "description": "position (2, -1, 0) occupied by multiple rooms ['mountain trail', 'mountain trail (carved steps to the south)', 'mountain trail (cleft to northwest, down southwest, down east)', 'mountain trail (up northeast, clearing to southeast, stoney trail leads west)']",
+      "involved_edges": [],
+      "involved_nodes": [
+        "mountain trail",
+        "mountain trail (carved steps to the south)",
+        "mountain trail (cleft to northwest, down southwest, down east)",
+        "mountain trail (up northeast, clearing to southeast, stoney trail leads west)"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "narrow cleft",
+            "mountain trail"
+          ],
+          "llm_dir": "southeast",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "dst_hallucinated",
+          "source_in_gt": true,
+          "target_in_gt": false,
+          "step": 37
+        },
+        {
+          "edge": [
+            "mountain trail (blackened tree beside trail)",
+            "mountain trail"
+          ],
+          "llm_dir": "southwest",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "dst_hallucinated",
+          "source_in_gt": true,
+          "target_in_gt": false,
+          "step": 40
+        },
+        {
+          "edge": [
+            "mountain trail",
+            "mountain trail (carved steps to the south)"
+          ],
+          "llm_dir": "southwest",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "src_hallucinated",
+          "source_in_gt": false,
+          "target_in_gt": true,
+          "step": 38
+        },
+        {
+          "edge": [
+            "mountain trail",
+            "rocky clearing"
+          ],
+          "llm_dir": "southeast",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "src_hallucinated",
+          "source_in_gt": false,
+          "target_in_gt": true,
+          "step": 41
+        },
+        {
+          "edge": [
+            "ruins",
+            "mountain trail (carved steps to the south)"
+          ],
+          "llm_dir": "down",
+          "in_gt": true,
+          "gt_dir": "down",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 30
+        },
+        {
+          "edge": [
+            "mountain trail (carved steps to the south)",
+            "mountain trail (cleft to northwest, down southwest, down east)"
+          ],
+          "llm_dir": "northeast",
+          "in_gt": true,
+          "gt_dir": "northeast",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 31
+        },
+        {
+          "edge": [
+            "mountain trail (carved steps to the south)",
+            "mountain trail (blackened tree beside trail)"
+          ],
+          "llm_dir": "west",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 39
+        },
+        {
+          "edge": [
+            "mountain trail (carved steps to the south)",
+            "mountain trail (up northeast, clearing to southeast, stoney trail leads west)"
+          ],
+          "llm_dir": "west",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 63
+        },
+        {
+          "edge": [
+            "mountain trail (carved steps to the south)",
+            "rocky clearing"
+          ],
+          "llm_dir": "southeast",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 65
+        },
+        {
+          "edge": [
+            "mountain trail (cleft to northwest, down southwest, down east)",
+            "narrow cleft"
+          ],
+          "llm_dir": "northwest",
+          "in_gt": true,
+          "gt_dir": "northwest",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 32
+        },
+        {
+          "edge": [
+            "mountain trail (up east, down southwest)",
+            "mountain trail (up northeast, clearing to southeast, stoney trail leads west)"
+          ],
+          "llm_dir": "east",
+          "in_gt": true,
+          "gt_dir": "southwest",
+          "case": "wrong_direction",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 25
+        },
+        {
+          "edge": [
+            "mountain trail (up northeast, clearing to southeast, stoney trail leads west)",
+            "ruins"
+          ],
+          "llm_dir": "up",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 26
+        }
+      ],
+      "case_counts": {
+        "dst_hallucinated": 2,
+        "src_hallucinated": 2,
+        "correct": 3,
+        "hallucinated_edge": 4,
+        "wrong_direction": 1
+      },
+      "root_cause": "wrong_direction_caused_overlap"
+    },
+    {
+      "type": "topology",
+      "description": "position (1, -1, 0) occupied by multiple rooms ['mountain trail', 'mountain trail (blackened tree beside trail)', 'mountain trail (carved steps to the south)', 'mountain trail (cleft to northwest, down southwest, down east)', 'mountain trail (up northeast, clearing to southeast, stoney trail leads west)']",
+      "involved_edges": [],
+      "involved_nodes": [
+        "mountain trail",
+        "mountain trail (blackened tree beside trail)",
+        "mountain trail (carved steps to the south)",
+        "mountain trail (cleft to northwest, down southwest, down east)",
+        "mountain trail (up northeast, clearing to southeast, stoney trail leads west)"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "narrow cleft",
+            "mountain trail"
+          ],
+          "llm_dir": "southeast",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "dst_hallucinated",
+          "source_in_gt": true,
+          "target_in_gt": false,
+          "step": 37
+        },
+        {
+          "edge": [
+            "mountain trail (blackened tree beside trail)",
+            "mountain trail"
+          ],
+          "llm_dir": "southwest",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "dst_hallucinated",
+          "source_in_gt": true,
+          "target_in_gt": false,
+          "step": 40
+        },
+        {
+          "edge": [
+            "mountain trail",
+            "mountain trail (carved steps to the south)"
+          ],
+          "llm_dir": "southwest",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "src_hallucinated",
+          "source_in_gt": false,
+          "target_in_gt": true,
+          "step": 38
+        },
+        {
+          "edge": [
+            "mountain trail",
+            "rocky clearing"
+          ],
+          "llm_dir": "southeast",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "src_hallucinated",
+          "source_in_gt": false,
+          "target_in_gt": true,
+          "step": 41
+        },
+        {
+          "edge": [
+            "mountain trail (carved steps to the south)",
+            "mountain trail (blackened tree beside trail)"
+          ],
+          "llm_dir": "west",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 39
+        },
+        {
+          "edge": [
+            "plain",
+            "mountain trail (blackened tree beside trail)"
+          ],
+          "llm_dir": "northwest",
+          "in_gt": true,
+          "gt_dir": "northwest",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 56
+        },
+        {
+          "edge": [
+            "mountain trail (blackened tree beside trail)",
+            "mountain trail (up west, down east)"
+          ],
+          "llm_dir": "west",
+          "in_gt": true,
+          "gt_dir": "west",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 60
+        },
+        {
+          "edge": [
+            "ruins",
+            "mountain trail (carved steps to the south)"
+          ],
+          "llm_dir": "down",
+          "in_gt": true,
+          "gt_dir": "down",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 30
+        },
+        {
+          "edge": [
+            "mountain trail (carved steps to the south)",
+            "mountain trail (cleft to northwest, down southwest, down east)"
+          ],
+          "llm_dir": "northeast",
+          "in_gt": true,
+          "gt_dir": "northeast",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 31
+        },
+        {
+          "edge": [
+            "mountain trail (carved steps to the south)",
+            "mountain trail (up northeast, clearing to southeast, stoney trail leads west)"
+          ],
+          "llm_dir": "west",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 63
+        },
+        {
+          "edge": [
+            "mountain trail (carved steps to the south)",
+            "rocky clearing"
+          ],
+          "llm_dir": "southeast",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 65
+        },
+        {
+          "edge": [
+            "mountain trail (cleft to northwest, down southwest, down east)",
+            "narrow cleft"
+          ],
+          "llm_dir": "northwest",
+          "in_gt": true,
+          "gt_dir": "northwest",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 32
+        },
+        {
+          "edge": [
+            "mountain trail (up east, down southwest)",
+            "mountain trail (up northeast, clearing to southeast, stoney trail leads west)"
+          ],
+          "llm_dir": "east",
+          "in_gt": true,
+          "gt_dir": "southwest",
+          "case": "wrong_direction",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 25
+        },
+        {
+          "edge": [
+            "mountain trail (up northeast, clearing to southeast, stoney trail leads west)",
+            "ruins"
+          ],
+          "llm_dir": "up",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 26
+        }
+      ],
+      "case_counts": {
+        "dst_hallucinated": 2,
+        "src_hallucinated": 2,
+        "hallucinated_edge": 4,
+        "correct": 5,
+        "wrong_direction": 1
+      },
+      "root_cause": "wrong_direction_caused_overlap"
+    },
+    {
+      "type": "topology",
+      "description": "position (3, 0, 0) occupied by multiple rooms ['mountain trail', 'mountain trail (blackened tree beside trail)', 'mountain trail (carved steps to the south)', 'mountain trail (cleft to northwest, down southwest, down east)']",
+      "involved_edges": [],
+      "involved_nodes": [
+        "mountain trail",
+        "mountain trail (blackened tree beside trail)",
+        "mountain trail (carved steps to the south)",
+        "mountain trail (cleft to northwest, down southwest, down east)"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "narrow cleft",
+            "mountain trail"
+          ],
+          "llm_dir": "southeast",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "dst_hallucinated",
+          "source_in_gt": true,
+          "target_in_gt": false,
+          "step": 37
+        },
+        {
+          "edge": [
+            "mountain trail (blackened tree beside trail)",
+            "mountain trail"
+          ],
+          "llm_dir": "southwest",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "dst_hallucinated",
+          "source_in_gt": true,
+          "target_in_gt": false,
+          "step": 40
+        },
+        {
+          "edge": [
+            "mountain trail",
+            "mountain trail (carved steps to the south)"
+          ],
+          "llm_dir": "southwest",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "src_hallucinated",
+          "source_in_gt": false,
+          "target_in_gt": true,
+          "step": 38
+        },
+        {
+          "edge": [
+            "mountain trail",
+            "rocky clearing"
+          ],
+          "llm_dir": "southeast",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "src_hallucinated",
+          "source_in_gt": false,
+          "target_in_gt": true,
+          "step": 41
+        },
+        {
+          "edge": [
+            "mountain trail (carved steps to the south)",
+            "mountain trail (blackened tree beside trail)"
+          ],
+          "llm_dir": "west",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 39
+        },
+        {
+          "edge": [
+            "plain",
+            "mountain trail (blackened tree beside trail)"
+          ],
+          "llm_dir": "northwest",
+          "in_gt": true,
+          "gt_dir": "northwest",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 56
+        },
+        {
+          "edge": [
+            "mountain trail (blackened tree beside trail)",
+            "mountain trail (up west, down east)"
+          ],
+          "llm_dir": "west",
+          "in_gt": true,
+          "gt_dir": "west",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 60
+        },
+        {
+          "edge": [
+            "ruins",
+            "mountain trail (carved steps to the south)"
+          ],
+          "llm_dir": "down",
+          "in_gt": true,
+          "gt_dir": "down",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 30
+        },
+        {
+          "edge": [
+            "mountain trail (carved steps to the south)",
+            "mountain trail (cleft to northwest, down southwest, down east)"
+          ],
+          "llm_dir": "northeast",
+          "in_gt": true,
+          "gt_dir": "northeast",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 31
+        },
+        {
+          "edge": [
+            "mountain trail (carved steps to the south)",
+            "mountain trail (up northeast, clearing to southeast, stoney trail leads west)"
+          ],
+          "llm_dir": "west",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 63
+        },
+        {
+          "edge": [
+            "mountain trail (carved steps to the south)",
+            "rocky clearing"
+          ],
+          "llm_dir": "southeast",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 65
+        },
+        {
+          "edge": [
+            "mountain trail (cleft to northwest, down southwest, down east)",
+            "narrow cleft"
+          ],
+          "llm_dir": "northwest",
+          "in_gt": true,
+          "gt_dir": "northwest",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 32
+        }
+      ],
+      "case_counts": {
+        "dst_hallucinated": 2,
+        "src_hallucinated": 2,
+        "hallucinated_edge": 3,
+        "correct": 5
+      },
+      "root_cause": "name_hallucination_caused_overlap"
+    },
+    {
+      "type": "topology",
+      "description": "position (2, 0, 0) occupied by multiple rooms ['mountain trail', 'mountain trail (blackened tree beside trail)', 'mountain trail (carved steps to the south)', 'mountain trail (cleft to northwest, down southwest, down east)', 'mountain trail (up west, down east)']",
+      "involved_edges": [],
+      "involved_nodes": [
+        "mountain trail",
+        "mountain trail (blackened tree beside trail)",
+        "mountain trail (carved steps to the south)",
+        "mountain trail (cleft to northwest, down southwest, down east)",
+        "mountain trail (up west, down east)"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "narrow cleft",
+            "mountain trail"
+          ],
+          "llm_dir": "southeast",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "dst_hallucinated",
+          "source_in_gt": true,
+          "target_in_gt": false,
+          "step": 37
+        },
+        {
+          "edge": [
+            "mountain trail (blackened tree beside trail)",
+            "mountain trail"
+          ],
+          "llm_dir": "southwest",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "dst_hallucinated",
+          "source_in_gt": true,
+          "target_in_gt": false,
+          "step": 40
+        },
+        {
+          "edge": [
+            "mountain trail",
+            "mountain trail (carved steps to the south)"
+          ],
+          "llm_dir": "southwest",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "src_hallucinated",
+          "source_in_gt": false,
+          "target_in_gt": true,
+          "step": 38
+        },
+        {
+          "edge": [
+            "mountain trail",
+            "rocky clearing"
+          ],
+          "llm_dir": "southeast",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "src_hallucinated",
+          "source_in_gt": false,
+          "target_in_gt": true,
+          "step": 41
+        },
+        {
+          "edge": [
+            "mountain trail (carved steps to the south)",
+            "mountain trail (blackened tree beside trail)"
+          ],
+          "llm_dir": "west",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 39
+        },
+        {
+          "edge": [
+            "plain",
+            "mountain trail (blackened tree beside trail)"
+          ],
+          "llm_dir": "northwest",
+          "in_gt": true,
+          "gt_dir": "northwest",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 56
+        },
+        {
+          "edge": [
+            "mountain trail (blackened tree beside trail)",
+            "mountain trail (up west, down east)"
+          ],
+          "llm_dir": "west",
+          "in_gt": true,
+          "gt_dir": "west",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 60
+        },
+        {
+          "edge": [
+            "ruins",
+            "mountain trail (carved steps to the south)"
+          ],
+          "llm_dir": "down",
+          "in_gt": true,
+          "gt_dir": "down",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 30
+        },
+        {
+          "edge": [
+            "mountain trail (carved steps to the south)",
+            "mountain trail (cleft to northwest, down southwest, down east)"
+          ],
+          "llm_dir": "northeast",
+          "in_gt": true,
+          "gt_dir": "northeast",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 31
+        },
+        {
+          "edge": [
+            "mountain trail (carved steps to the south)",
+            "mountain trail (up northeast, clearing to southeast, stoney trail leads west)"
+          ],
+          "llm_dir": "west",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 63
+        },
+        {
+          "edge": [
+            "mountain trail (carved steps to the south)",
+            "rocky clearing"
+          ],
+          "llm_dir": "southeast",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 65
+        },
+        {
+          "edge": [
+            "mountain trail (cleft to northwest, down southwest, down east)",
+            "narrow cleft"
+          ],
+          "llm_dir": "northwest",
+          "in_gt": true,
+          "gt_dir": "northwest",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 32
+        }
+      ],
+      "case_counts": {
+        "dst_hallucinated": 2,
+        "src_hallucinated": 2,
+        "hallucinated_edge": 3,
+        "correct": 5
+      },
+      "root_cause": "name_hallucination_caused_overlap"
+    },
+    {
+      "type": "topology",
+      "description": "position (-1, -2, 0) occupied by multiple rooms ['mountain trail', 'mountain trail (blackened tree beside trail)', 'mountain trail (up northeast, clearing to southeast, stoney trail leads west)', 'rocky clearing']",
+      "involved_edges": [],
+      "involved_nodes": [
+        "mountain trail",
+        "mountain trail (blackened tree beside trail)",
+        "mountain trail (up northeast, clearing to southeast, stoney trail leads west)",
+        "rocky clearing"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "narrow cleft",
+            "mountain trail"
+          ],
+          "llm_dir": "southeast",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "dst_hallucinated",
+          "source_in_gt": true,
+          "target_in_gt": false,
+          "step": 37
+        },
+        {
+          "edge": [
+            "mountain trail (blackened tree beside trail)",
+            "mountain trail"
+          ],
+          "llm_dir": "southwest",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "dst_hallucinated",
+          "source_in_gt": true,
+          "target_in_gt": false,
+          "step": 40
+        },
+        {
+          "edge": [
+            "mountain trail",
+            "mountain trail (carved steps to the south)"
+          ],
+          "llm_dir": "southwest",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "src_hallucinated",
+          "source_in_gt": false,
+          "target_in_gt": true,
+          "step": 38
+        },
+        {
+          "edge": [
+            "mountain trail",
+            "rocky clearing"
+          ],
+          "llm_dir": "southeast",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "src_hallucinated",
+          "source_in_gt": false,
+          "target_in_gt": true,
+          "step": 41
+        },
+        {
+          "edge": [
+            "mountain trail (carved steps to the south)",
+            "mountain trail (blackened tree beside trail)"
+          ],
+          "llm_dir": "west",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 39
+        },
+        {
+          "edge": [
+            "plain",
+            "mountain trail (blackened tree beside trail)"
+          ],
+          "llm_dir": "northwest",
+          "in_gt": true,
+          "gt_dir": "northwest",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 56
+        },
+        {
+          "edge": [
+            "mountain trail (blackened tree beside trail)",
+            "mountain trail (up west, down east)"
+          ],
+          "llm_dir": "west",
+          "in_gt": true,
+          "gt_dir": "west",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 60
+        },
+        {
+          "edge": [
+            "mountain trail (up east, down southwest)",
+            "mountain trail (up northeast, clearing to southeast, stoney trail leads west)"
+          ],
+          "llm_dir": "east",
+          "in_gt": true,
+          "gt_dir": "southwest",
+          "case": "wrong_direction",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 25
+        },
+        {
+          "edge": [
+            "mountain trail (carved steps to the south)",
+            "mountain trail (up northeast, clearing to southeast, stoney trail leads west)"
+          ],
+          "llm_dir": "west",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 63
+        },
+        {
+          "edge": [
+            "mountain trail (up northeast, clearing to southeast, stoney trail leads west)",
+            "ruins"
+          ],
+          "llm_dir": "up",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 26
+        },
+        {
+          "edge": [
+            "console room",
+            "rocky clearing"
+          ],
+          "llm_dir": "northwest",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 23
+        },
+        {
+          "edge": [
+            "mountain trail (carved steps to the south)",
+            "rocky clearing"
+          ],
+          "llm_dir": "southeast",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 65
+        },
+        {
+          "edge": [
+            "rocky clearing",
+            "mountain trail (up east, down southwest)"
+          ],
+          "llm_dir": "northeast",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 24
+        },
+        {
+          "edge": [
+            "rocky clearing",
+            "rocky trail (clearing to west)"
+          ],
+          "llm_dir": "east",
+          "in_gt": true,
+          "gt_dir": "east",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 42
+        }
+      ],
+      "case_counts": {
+        "dst_hallucinated": 2,
+        "src_hallucinated": 2,
+        "hallucinated_edge": 6,
+        "correct": 3,
+        "wrong_direction": 1
+      },
+      "root_cause": "wrong_direction_caused_overlap"
+    },
+    {
+      "type": "topology",
+      "description": "position (0, -2, 0) occupied by multiple rooms ['mountain trail', 'mountain trail (blackened tree beside trail)', 'mountain trail (carved steps to the south)', 'mountain trail (up northeast, clearing to southeast, stoney trail leads west)']",
+      "involved_edges": [],
+      "involved_nodes": [
+        "mountain trail",
+        "mountain trail (blackened tree beside trail)",
+        "mountain trail (carved steps to the south)",
+        "mountain trail (up northeast, clearing to southeast, stoney trail leads west)"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "narrow cleft",
+            "mountain trail"
+          ],
+          "llm_dir": "southeast",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "dst_hallucinated",
+          "source_in_gt": true,
+          "target_in_gt": false,
+          "step": 37
+        },
+        {
+          "edge": [
+            "mountain trail (blackened tree beside trail)",
+            "mountain trail"
+          ],
+          "llm_dir": "southwest",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "dst_hallucinated",
+          "source_in_gt": true,
+          "target_in_gt": false,
+          "step": 40
+        },
+        {
+          "edge": [
+            "mountain trail",
+            "mountain trail (carved steps to the south)"
+          ],
+          "llm_dir": "southwest",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "src_hallucinated",
+          "source_in_gt": false,
+          "target_in_gt": true,
+          "step": 38
+        },
+        {
+          "edge": [
+            "mountain trail",
+            "rocky clearing"
+          ],
+          "llm_dir": "southeast",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "src_hallucinated",
+          "source_in_gt": false,
+          "target_in_gt": true,
+          "step": 41
+        },
+        {
+          "edge": [
+            "mountain trail (carved steps to the south)",
+            "mountain trail (blackened tree beside trail)"
+          ],
+          "llm_dir": "west",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 39
+        },
+        {
+          "edge": [
+            "plain",
+            "mountain trail (blackened tree beside trail)"
+          ],
+          "llm_dir": "northwest",
+          "in_gt": true,
+          "gt_dir": "northwest",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 56
+        },
+        {
+          "edge": [
+            "mountain trail (blackened tree beside trail)",
+            "mountain trail (up west, down east)"
+          ],
+          "llm_dir": "west",
+          "in_gt": true,
+          "gt_dir": "west",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 60
+        },
+        {
+          "edge": [
+            "ruins",
+            "mountain trail (carved steps to the south)"
+          ],
+          "llm_dir": "down",
+          "in_gt": true,
+          "gt_dir": "down",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 30
+        },
+        {
+          "edge": [
+            "mountain trail (carved steps to the south)",
+            "mountain trail (cleft to northwest, down southwest, down east)"
+          ],
+          "llm_dir": "northeast",
+          "in_gt": true,
+          "gt_dir": "northeast",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 31
+        },
+        {
+          "edge": [
+            "mountain trail (carved steps to the south)",
+            "mountain trail (up northeast, clearing to southeast, stoney trail leads west)"
+          ],
+          "llm_dir": "west",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 63
+        },
+        {
+          "edge": [
+            "mountain trail (carved steps to the south)",
+            "rocky clearing"
+          ],
+          "llm_dir": "southeast",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 65
+        },
+        {
+          "edge": [
+            "mountain trail (up east, down southwest)",
+            "mountain trail (up northeast, clearing to southeast, stoney trail leads west)"
+          ],
+          "llm_dir": "east",
+          "in_gt": true,
+          "gt_dir": "southwest",
+          "case": "wrong_direction",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 25
+        },
+        {
+          "edge": [
+            "mountain trail (up northeast, clearing to southeast, stoney trail leads west)",
+            "ruins"
+          ],
+          "llm_dir": "up",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 26
+        }
+      ],
+      "case_counts": {
+        "dst_hallucinated": 2,
+        "src_hallucinated": 2,
+        "hallucinated_edge": 4,
+        "correct": 4,
+        "wrong_direction": 1
+      },
+      "root_cause": "wrong_direction_caused_overlap"
+    },
+    {
+      "type": "topology",
+      "description": "position (3, -2, 0) occupied by multiple rooms ['mountain trail (carved steps to the south)', 'mountain trail (up northeast, clearing to southeast, stoney trail leads west)', 'rocky clearing', 'rocky trail (clearing to west)']",
+      "involved_edges": [],
+      "involved_nodes": [
+        "mountain trail (carved steps to the south)",
+        "mountain trail (up northeast, clearing to southeast, stoney trail leads west)",
+        "rocky clearing",
+        "rocky trail (clearing to west)"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "ruins",
+            "mountain trail (carved steps to the south)"
+          ],
+          "llm_dir": "down",
+          "in_gt": true,
+          "gt_dir": "down",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 30
+        },
+        {
+          "edge": [
+            "mountain trail",
+            "mountain trail (carved steps to the south)"
+          ],
+          "llm_dir": "southwest",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "src_hallucinated",
+          "source_in_gt": false,
+          "target_in_gt": true,
+          "step": 38
+        },
+        {
+          "edge": [
+            "mountain trail (carved steps to the south)",
+            "mountain trail (cleft to northwest, down southwest, down east)"
+          ],
+          "llm_dir": "northeast",
+          "in_gt": true,
+          "gt_dir": "northeast",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 31
+        },
+        {
+          "edge": [
+            "mountain trail (carved steps to the south)",
+            "mountain trail (blackened tree beside trail)"
+          ],
+          "llm_dir": "west",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 39
+        },
+        {
+          "edge": [
+            "mountain trail (carved steps to the south)",
+            "mountain trail (up northeast, clearing to southeast, stoney trail leads west)"
+          ],
+          "llm_dir": "west",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 63
+        },
+        {
+          "edge": [
+            "mountain trail (carved steps to the south)",
+            "rocky clearing"
+          ],
+          "llm_dir": "southeast",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 65
+        },
+        {
+          "edge": [
+            "mountain trail (up east, down southwest)",
+            "mountain trail (up northeast, clearing to southeast, stoney trail leads west)"
+          ],
+          "llm_dir": "east",
+          "in_gt": true,
+          "gt_dir": "southwest",
+          "case": "wrong_direction",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 25
+        },
+        {
+          "edge": [
+            "mountain trail (up northeast, clearing to southeast, stoney trail leads west)",
+            "ruins"
+          ],
+          "llm_dir": "up",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 26
+        },
+        {
+          "edge": [
+            "console room",
+            "rocky clearing"
+          ],
+          "llm_dir": "northwest",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 23
+        },
+        {
+          "edge": [
+            "mountain trail",
+            "rocky clearing"
+          ],
+          "llm_dir": "southeast",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "src_hallucinated",
+          "source_in_gt": false,
+          "target_in_gt": true,
+          "step": 41
+        },
+        {
+          "edge": [
+            "rocky clearing",
+            "mountain trail (up east, down southwest)"
+          ],
+          "llm_dir": "northeast",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 24
+        },
+        {
+          "edge": [
+            "rocky clearing",
+            "rocky trail (clearing to west)"
+          ],
+          "llm_dir": "east",
+          "in_gt": true,
+          "gt_dir": "east",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 42
+        },
+        {
+          "edge": [
+            "rocky trail (clearing to west)",
+            "rocky trail (trail widens eastward and narrows northwest)"
+          ],
+          "llm_dir": "southeast",
+          "in_gt": true,
+          "gt_dir": "southeast",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 43
+        }
+      ],
+      "case_counts": {
+        "correct": 4,
+        "src_hallucinated": 2,
+        "hallucinated_edge": 6,
+        "wrong_direction": 1
+      },
+      "root_cause": "wrong_direction_caused_overlap"
+    },
+    {
+      "type": "topology",
+      "description": "position (4, 0, 0) occupied by multiple rooms ['mountain trail (carved steps to the south)', 'mountain trail (up east, down southwest)']",
+      "involved_edges": [],
+      "involved_nodes": [
+        "mountain trail (carved steps to the south)",
+        "mountain trail (up east, down southwest)"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "ruins",
+            "mountain trail (carved steps to the south)"
+          ],
+          "llm_dir": "down",
+          "in_gt": true,
+          "gt_dir": "down",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 30
+        },
+        {
+          "edge": [
+            "mountain trail",
+            "mountain trail (carved steps to the south)"
+          ],
+          "llm_dir": "southwest",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "src_hallucinated",
+          "source_in_gt": false,
+          "target_in_gt": true,
+          "step": 38
+        },
+        {
+          "edge": [
+            "mountain trail (carved steps to the south)",
+            "mountain trail (cleft to northwest, down southwest, down east)"
+          ],
+          "llm_dir": "northeast",
+          "in_gt": true,
+          "gt_dir": "northeast",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 31
+        },
+        {
+          "edge": [
+            "mountain trail (carved steps to the south)",
+            "mountain trail (blackened tree beside trail)"
+          ],
+          "llm_dir": "west",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 39
+        },
+        {
+          "edge": [
+            "mountain trail (carved steps to the south)",
+            "mountain trail (up northeast, clearing to southeast, stoney trail leads west)"
+          ],
+          "llm_dir": "west",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 63
+        },
+        {
+          "edge": [
+            "mountain trail (carved steps to the south)",
+            "rocky clearing"
+          ],
+          "llm_dir": "southeast",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 65
+        },
+        {
+          "edge": [
+            "rocky clearing",
+            "mountain trail (up east, down southwest)"
+          ],
+          "llm_dir": "northeast",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 24
+        },
+        {
+          "edge": [
+            "mountain trail (up east, down southwest)",
+            "mountain trail (up northeast, clearing to southeast, stoney trail leads west)"
+          ],
+          "llm_dir": "east",
+          "in_gt": true,
+          "gt_dir": "southwest",
+          "case": "wrong_direction",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 25
+        }
+      ],
+      "case_counts": {
+        "correct": 2,
+        "src_hallucinated": 1,
+        "hallucinated_edge": 4,
+        "wrong_direction": 1
+      },
+      "root_cause": "wrong_direction_caused_overlap"
+    },
+    {
+      "type": "topology",
+      "description": "position (4, -2, 0) occupied by multiple rooms ['console room', 'mountain trail (carved steps to the south)', 'rocky trail (clearing to west)']",
+      "involved_edges": [],
+      "involved_nodes": [
+        "console room",
+        "mountain trail (carved steps to the south)",
+        "rocky trail (clearing to west)"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "console room",
+            "corridor"
+          ],
+          "llm_dir": "east",
+          "in_gt": true,
+          "gt_dir": "east",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 6
+        },
+        {
+          "edge": [
+            "console room",
+            "rocky clearing"
+          ],
+          "llm_dir": "northwest",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 23
+        },
+        {
+          "edge": [
+            "ruins",
+            "mountain trail (carved steps to the south)"
+          ],
+          "llm_dir": "down",
+          "in_gt": true,
+          "gt_dir": "down",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 30
+        },
+        {
+          "edge": [
+            "mountain trail",
+            "mountain trail (carved steps to the south)"
+          ],
+          "llm_dir": "southwest",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "src_hallucinated",
+          "source_in_gt": false,
+          "target_in_gt": true,
+          "step": 38
+        },
+        {
+          "edge": [
+            "mountain trail (carved steps to the south)",
+            "mountain trail (cleft to northwest, down southwest, down east)"
+          ],
+          "llm_dir": "northeast",
+          "in_gt": true,
+          "gt_dir": "northeast",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 31
+        },
+        {
+          "edge": [
+            "mountain trail (carved steps to the south)",
+            "mountain trail (blackened tree beside trail)"
+          ],
+          "llm_dir": "west",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 39
+        },
+        {
+          "edge": [
+            "mountain trail (carved steps to the south)",
+            "mountain trail (up northeast, clearing to southeast, stoney trail leads west)"
+          ],
+          "llm_dir": "west",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 63
+        },
+        {
+          "edge": [
+            "mountain trail (carved steps to the south)",
+            "rocky clearing"
+          ],
+          "llm_dir": "southeast",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 65
+        },
+        {
+          "edge": [
+            "rocky clearing",
+            "rocky trail (clearing to west)"
+          ],
+          "llm_dir": "east",
+          "in_gt": true,
+          "gt_dir": "east",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 42
+        },
+        {
+          "edge": [
+            "rocky trail (clearing to west)",
+            "rocky trail (trail widens eastward and narrows northwest)"
+          ],
+          "llm_dir": "southeast",
+          "in_gt": true,
+          "gt_dir": "southeast",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 43
+        }
+      ],
+      "case_counts": {
+        "correct": 5,
+        "hallucinated_edge": 4,
+        "src_hallucinated": 1
+      },
+      "root_cause": "name_hallucination_caused_overlap"
+    },
+    {
+      "type": "topology",
+      "description": "position (1, -2, 0) occupied by multiple rooms ['mountain trail (carved steps to the south)', 'plain']",
+      "involved_edges": [],
+      "involved_nodes": [
+        "mountain trail (carved steps to the south)",
+        "plain"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "ruins",
+            "mountain trail (carved steps to the south)"
+          ],
+          "llm_dir": "down",
+          "in_gt": true,
+          "gt_dir": "down",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 30
+        },
+        {
+          "edge": [
+            "mountain trail",
+            "mountain trail (carved steps to the south)"
+          ],
+          "llm_dir": "southwest",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "src_hallucinated",
+          "source_in_gt": false,
+          "target_in_gt": true,
+          "step": 38
+        },
+        {
+          "edge": [
+            "mountain trail (carved steps to the south)",
+            "mountain trail (cleft to northwest, down southwest, down east)"
+          ],
+          "llm_dir": "northeast",
+          "in_gt": true,
+          "gt_dir": "northeast",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 31
+        },
+        {
+          "edge": [
+            "mountain trail (carved steps to the south)",
+            "mountain trail (blackened tree beside trail)"
+          ],
+          "llm_dir": "west",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 39
+        },
+        {
+          "edge": [
+            "mountain trail (carved steps to the south)",
+            "mountain trail (up northeast, clearing to southeast, stoney trail leads west)"
+          ],
+          "llm_dir": "west",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 63
+        },
+        {
+          "edge": [
+            "mountain trail (carved steps to the south)",
+            "rocky clearing"
+          ],
+          "llm_dir": "southeast",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 65
+        },
+        {
+          "edge": [
+            "on top of the saucer",
+            "plain"
+          ],
+          "llm_dir": "down",
+          "in_gt": true,
+          "gt_dir": "down",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 53
+        },
+        {
+          "edge": [
+            "plain",
+            "mountain trail (blackened tree beside trail)"
+          ],
+          "llm_dir": "northwest",
+          "in_gt": true,
+          "gt_dir": "northwest",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 56
+        }
+      ],
+      "case_counts": {
+        "correct": 4,
+        "src_hallucinated": 1,
+        "hallucinated_edge": 3
+      },
+      "root_cause": "name_hallucination_caused_overlap"
+    },
+    {
+      "type": "topology",
+      "description": "position (0, -1, 0) occupied by multiple rooms ['mountain trail (blackened tree beside trail)', 'mountain trail (up east, down southwest)', 'mountain trail (up northeast, clearing to southeast, stoney trail leads west)', 'mountain trail (up west, down east)']",
+      "involved_edges": [],
+      "involved_nodes": [
+        "mountain trail (blackened tree beside trail)",
+        "mountain trail (up east, down southwest)",
+        "mountain trail (up northeast, clearing to southeast, stoney trail leads west)",
+        "mountain trail (up west, down east)"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "mountain trail (carved steps to the south)",
+            "mountain trail (blackened tree beside trail)"
+          ],
+          "llm_dir": "west",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 39
+        },
+        {
+          "edge": [
+            "plain",
+            "mountain trail (blackened tree beside trail)"
+          ],
+          "llm_dir": "northwest",
+          "in_gt": true,
+          "gt_dir": "northwest",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 56
+        },
+        {
+          "edge": [
+            "mountain trail (blackened tree beside trail)",
+            "mountain trail"
+          ],
+          "llm_dir": "southwest",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "dst_hallucinated",
+          "source_in_gt": true,
+          "target_in_gt": false,
+          "step": 40
+        },
+        {
+          "edge": [
+            "mountain trail (blackened tree beside trail)",
+            "mountain trail (up west, down east)"
+          ],
+          "llm_dir": "west",
+          "in_gt": true,
+          "gt_dir": "west",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 60
+        },
+        {
+          "edge": [
+            "rocky clearing",
+            "mountain trail (up east, down southwest)"
+          ],
+          "llm_dir": "northeast",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 24
+        },
+        {
+          "edge": [
+            "mountain trail (up east, down southwest)",
+            "mountain trail (up northeast, clearing to southeast, stoney trail leads west)"
+          ],
+          "llm_dir": "east",
+          "in_gt": true,
+          "gt_dir": "southwest",
+          "case": "wrong_direction",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 25
+        },
+        {
+          "edge": [
+            "mountain trail (carved steps to the south)",
+            "mountain trail (up northeast, clearing to southeast, stoney trail leads west)"
+          ],
+          "llm_dir": "west",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 63
+        },
+        {
+          "edge": [
+            "mountain trail (up northeast, clearing to southeast, stoney trail leads west)",
+            "ruins"
+          ],
+          "llm_dir": "up",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 26
+        }
+      ],
+      "case_counts": {
+        "hallucinated_edge": 4,
+        "correct": 2,
+        "dst_hallucinated": 1,
+        "wrong_direction": 1
+      },
+      "root_cause": "wrong_direction_caused_overlap"
+    },
+    {
+      "type": "topology",
+      "description": "position (2, -2, 0) occupied by multiple rooms ['mountain trail (up east, down southwest)', 'plain', 'rocky clearing']",
+      "involved_edges": [],
+      "involved_nodes": [
+        "mountain trail (up east, down southwest)",
+        "plain",
+        "rocky clearing"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "rocky clearing",
+            "mountain trail (up east, down southwest)"
+          ],
+          "llm_dir": "northeast",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 24
+        },
+        {
+          "edge": [
+            "mountain trail (up east, down southwest)",
+            "mountain trail (up northeast, clearing to southeast, stoney trail leads west)"
+          ],
+          "llm_dir": "east",
+          "in_gt": true,
+          "gt_dir": "southwest",
+          "case": "wrong_direction",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 25
+        },
+        {
+          "edge": [
+            "on top of the saucer",
+            "plain"
+          ],
+          "llm_dir": "down",
+          "in_gt": true,
+          "gt_dir": "down",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 53
+        },
+        {
+          "edge": [
+            "plain",
+            "mountain trail (blackened tree beside trail)"
+          ],
+          "llm_dir": "northwest",
+          "in_gt": true,
+          "gt_dir": "northwest",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 56
+        },
+        {
+          "edge": [
+            "console room",
+            "rocky clearing"
+          ],
+          "llm_dir": "northwest",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 23
+        },
+        {
+          "edge": [
+            "mountain trail",
+            "rocky clearing"
+          ],
+          "llm_dir": "southeast",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "src_hallucinated",
+          "source_in_gt": false,
+          "target_in_gt": true,
+          "step": 41
+        },
+        {
+          "edge": [
+            "mountain trail (carved steps to the south)",
+            "rocky clearing"
+          ],
+          "llm_dir": "southeast",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 65
+        },
+        {
+          "edge": [
+            "rocky clearing",
+            "rocky trail (clearing to west)"
+          ],
+          "llm_dir": "east",
+          "in_gt": true,
+          "gt_dir": "east",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 42
+        }
+      ],
+      "case_counts": {
+        "hallucinated_edge": 3,
+        "wrong_direction": 1,
+        "correct": 3,
+        "src_hallucinated": 1
+      },
+      "root_cause": "wrong_direction_caused_overlap"
+    },
+    {
+      "type": "topology",
+      "description": "position (2, -3, 0) occupied by multiple rooms ['rocky clearing', 'rocky trail (clearing to west)']",
+      "involved_edges": [],
+      "involved_nodes": [
+        "rocky clearing",
+        "rocky trail (clearing to west)"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "console room",
+            "rocky clearing"
+          ],
+          "llm_dir": "northwest",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 23
+        },
+        {
+          "edge": [
+            "mountain trail",
+            "rocky clearing"
+          ],
+          "llm_dir": "southeast",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "src_hallucinated",
+          "source_in_gt": false,
+          "target_in_gt": true,
+          "step": 41
+        },
+        {
+          "edge": [
+            "mountain trail (carved steps to the south)",
+            "rocky clearing"
+          ],
+          "llm_dir": "southeast",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 65
+        },
+        {
+          "edge": [
+            "rocky clearing",
+            "mountain trail (up east, down southwest)"
+          ],
+          "llm_dir": "northeast",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 24
+        },
+        {
+          "edge": [
+            "rocky clearing",
+            "rocky trail (clearing to west)"
+          ],
+          "llm_dir": "east",
+          "in_gt": true,
+          "gt_dir": "east",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 42
+        },
+        {
+          "edge": [
+            "rocky trail (clearing to west)",
+            "rocky trail (trail widens eastward and narrows northwest)"
+          ],
+          "llm_dir": "southeast",
+          "in_gt": true,
+          "gt_dir": "southeast",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 43
+        }
+      ],
+      "case_counts": {
+        "hallucinated_edge": 3,
+        "src_hallucinated": 1,
+        "correct": 2
+      },
+      "root_cause": "name_hallucination_caused_overlap"
+    },
+    {
+      "type": "topology",
+      "description": "position (3, -1, 0) occupied by multiple rooms ['mountain trail (up east, down southwest)', 'plain', 'rocky clearing']",
+      "involved_edges": [],
+      "involved_nodes": [
+        "mountain trail (up east, down southwest)",
+        "plain",
+        "rocky clearing"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "rocky clearing",
+            "mountain trail (up east, down southwest)"
+          ],
+          "llm_dir": "northeast",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 24
+        },
+        {
+          "edge": [
+            "mountain trail (up east, down southwest)",
+            "mountain trail (up northeast, clearing to southeast, stoney trail leads west)"
+          ],
+          "llm_dir": "east",
+          "in_gt": true,
+          "gt_dir": "southwest",
+          "case": "wrong_direction",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 25
+        },
+        {
+          "edge": [
+            "on top of the saucer",
+            "plain"
+          ],
+          "llm_dir": "down",
+          "in_gt": true,
+          "gt_dir": "down",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 53
+        },
+        {
+          "edge": [
+            "plain",
+            "mountain trail (blackened tree beside trail)"
+          ],
+          "llm_dir": "northwest",
+          "in_gt": true,
+          "gt_dir": "northwest",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 56
+        },
+        {
+          "edge": [
+            "console room",
+            "rocky clearing"
+          ],
+          "llm_dir": "northwest",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 23
+        },
+        {
+          "edge": [
+            "mountain trail",
+            "rocky clearing"
+          ],
+          "llm_dir": "southeast",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "src_hallucinated",
+          "source_in_gt": false,
+          "target_in_gt": true,
+          "step": 41
+        },
+        {
+          "edge": [
+            "mountain trail (carved steps to the south)",
+            "rocky clearing"
+          ],
+          "llm_dir": "southeast",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 65
+        },
+        {
+          "edge": [
+            "rocky clearing",
+            "rocky trail (clearing to west)"
+          ],
+          "llm_dir": "east",
+          "in_gt": true,
+          "gt_dir": "east",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 42
+        }
+      ],
+      "case_counts": {
+        "hallucinated_edge": 3,
+        "wrong_direction": 1,
+        "correct": 3,
+        "src_hallucinated": 1
+      },
+      "root_cause": "wrong_direction_caused_overlap"
+    },
+    {
+      "type": "topology",
+      "description": "position (4, -1, 0) occupied by multiple rooms ['mountain trail (up east, down southwest)', 'mountain trail (up northeast, clearing to southeast, stoney trail leads west)', 'plain', 'rocky clearing', 'rocky trail (clearing to west)']",
+      "involved_edges": [],
+      "involved_nodes": [
+        "mountain trail (up east, down southwest)",
+        "mountain trail (up northeast, clearing to southeast, stoney trail leads west)",
+        "plain",
+        "rocky clearing",
+        "rocky trail (clearing to west)"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "rocky clearing",
+            "mountain trail (up east, down southwest)"
+          ],
+          "llm_dir": "northeast",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 24
+        },
+        {
+          "edge": [
+            "mountain trail (up east, down southwest)",
+            "mountain trail (up northeast, clearing to southeast, stoney trail leads west)"
+          ],
+          "llm_dir": "east",
+          "in_gt": true,
+          "gt_dir": "southwest",
+          "case": "wrong_direction",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 25
+        },
+        {
+          "edge": [
+            "mountain trail (carved steps to the south)",
+            "mountain trail (up northeast, clearing to southeast, stoney trail leads west)"
+          ],
+          "llm_dir": "west",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 63
+        },
+        {
+          "edge": [
+            "mountain trail (up northeast, clearing to southeast, stoney trail leads west)",
+            "ruins"
+          ],
+          "llm_dir": "up",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 26
+        },
+        {
+          "edge": [
+            "on top of the saucer",
+            "plain"
+          ],
+          "llm_dir": "down",
+          "in_gt": true,
+          "gt_dir": "down",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 53
+        },
+        {
+          "edge": [
+            "plain",
+            "mountain trail (blackened tree beside trail)"
+          ],
+          "llm_dir": "northwest",
+          "in_gt": true,
+          "gt_dir": "northwest",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 56
+        },
+        {
+          "edge": [
+            "console room",
+            "rocky clearing"
+          ],
+          "llm_dir": "northwest",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 23
+        },
+        {
+          "edge": [
+            "mountain trail",
+            "rocky clearing"
+          ],
+          "llm_dir": "southeast",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "src_hallucinated",
+          "source_in_gt": false,
+          "target_in_gt": true,
+          "step": 41
+        },
+        {
+          "edge": [
+            "mountain trail (carved steps to the south)",
+            "rocky clearing"
+          ],
+          "llm_dir": "southeast",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 65
+        },
+        {
+          "edge": [
+            "rocky clearing",
+            "rocky trail (clearing to west)"
+          ],
+          "llm_dir": "east",
+          "in_gt": true,
+          "gt_dir": "east",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 42
+        },
+        {
+          "edge": [
+            "rocky trail (clearing to west)",
+            "rocky trail (trail widens eastward and narrows northwest)"
+          ],
+          "llm_dir": "southeast",
+          "in_gt": true,
+          "gt_dir": "southeast",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 43
+        }
+      ],
+      "case_counts": {
+        "hallucinated_edge": 5,
+        "wrong_direction": 1,
+        "correct": 4,
+        "src_hallucinated": 1
+      },
+      "root_cause": "wrong_direction_caused_overlap"
+    },
+    {
+      "type": "topology",
+      "description": "position (4, -3, 0) occupied by multiple rooms ['console room', 'corridor', 'ledge', 'rocky trail (trail widens eastward and narrows northwest)']",
+      "involved_edges": [],
+      "involved_nodes": [
+        "console room",
+        "corridor",
+        "ledge",
+        "rocky trail (trail widens eastward and narrows northwest)"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "console room",
+            "corridor"
+          ],
+          "llm_dir": "east",
+          "in_gt": true,
+          "gt_dir": "east",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 6
+        },
+        {
+          "edge": [
+            "console room",
+            "rocky clearing"
+          ],
+          "llm_dir": "northwest",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 23
+        },
+        {
+          "edge": [
+            "corridor",
+            "workshop"
+          ],
+          "llm_dir": "south",
+          "in_gt": true,
+          "gt_dir": "south",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 8
+        },
+        {
+          "edge": [
+            "lakeside",
+            "ledge"
+          ],
+          "llm_dir": "north",
+          "in_gt": true,
+          "gt_dir": "north",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 45
+        },
+        {
+          "edge": [
+            "rocky trail (clearing to west)",
+            "rocky trail (trail widens eastward and narrows northwest)"
+          ],
+          "llm_dir": "southeast",
+          "in_gt": true,
+          "gt_dir": "southeast",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 43
+        },
+        {
+          "edge": [
+            "rocky trail (trail widens eastward and narrows northwest)",
+            "lakeside"
+          ],
+          "llm_dir": "east",
+          "in_gt": true,
+          "gt_dir": "east",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 44
+        }
+      ],
+      "case_counts": {
+        "correct": 5,
+        "hallucinated_edge": 1
+      },
+      "root_cause": "overlap_mixed"
+    },
+    {
+      "type": "topology",
+      "description": "position (-1, -1, 0) occupied by multiple rooms ['mountain trail (up east, down southwest)', 'mountain trail (up west, down east)']",
+      "involved_edges": [],
+      "involved_nodes": [
+        "mountain trail (up east, down southwest)",
+        "mountain trail (up west, down east)"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "rocky clearing",
+            "mountain trail (up east, down southwest)"
+          ],
+          "llm_dir": "northeast",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 24
+        },
+        {
+          "edge": [
+            "mountain trail (up east, down southwest)",
+            "mountain trail (up northeast, clearing to southeast, stoney trail leads west)"
+          ],
+          "llm_dir": "east",
+          "in_gt": true,
+          "gt_dir": "southwest",
+          "case": "wrong_direction",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 25
+        },
+        {
+          "edge": [
+            "mountain trail (blackened tree beside trail)",
+            "mountain trail (up west, down east)"
+          ],
+          "llm_dir": "west",
+          "in_gt": true,
+          "gt_dir": "west",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 60
+        }
+      ],
+      "case_counts": {
+        "hallucinated_edge": 1,
+        "wrong_direction": 1,
+        "correct": 1
+      },
+      "root_cause": "wrong_direction_caused_overlap"
+    },
+    {
+      "type": "topology",
+      "description": "position (1, -2, 1) occupied by multiple rooms ['on top of the saucer', 'ruins']",
+      "involved_edges": [],
+      "involved_nodes": [
+        "on top of the saucer",
+        "ruins"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "on top of the saucer",
+            "plain"
+          ],
+          "llm_dir": "down",
+          "in_gt": true,
+          "gt_dir": "down",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 53
+        },
+        {
+          "edge": [
+            "mountain trail (up northeast, clearing to southeast, stoney trail leads west)",
+            "ruins"
+          ],
+          "llm_dir": "up",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 26
+        },
+        {
+          "edge": [
+            "ruins",
+            "mountain trail (carved steps to the south)"
+          ],
+          "llm_dir": "down",
+          "in_gt": true,
+          "gt_dir": "down",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 30
+        }
+      ],
+      "case_counts": {
+        "correct": 2,
+        "hallucinated_edge": 1
+      },
+      "root_cause": "overlap_mixed"
+    },
+    {
+      "type": "topology",
+      "description": "position (5, -3, 0) occupied by multiple rooms ['corridor', 'lakeside', 'rocky trail (trail widens eastward and narrows northwest)', 'workshop']",
+      "involved_edges": [],
+      "involved_nodes": [
+        "corridor",
+        "lakeside",
+        "rocky trail (trail widens eastward and narrows northwest)",
+        "workshop"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "console room",
+            "corridor"
+          ],
+          "llm_dir": "east",
+          "in_gt": true,
+          "gt_dir": "east",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 6
+        },
+        {
+          "edge": [
+            "corridor",
+            "workshop"
+          ],
+          "llm_dir": "south",
+          "in_gt": true,
+          "gt_dir": "south",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 8
+        },
+        {
+          "edge": [
+            "rocky trail (trail widens eastward and narrows northwest)",
+            "lakeside"
+          ],
+          "llm_dir": "east",
+          "in_gt": true,
+          "gt_dir": "east",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 44
+        },
+        {
+          "edge": [
+            "lakeside",
+            "ledge"
+          ],
+          "llm_dir": "north",
+          "in_gt": true,
+          "gt_dir": "north",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 45
+        },
+        {
+          "edge": [
+            "rocky trail (clearing to west)",
+            "rocky trail (trail widens eastward and narrows northwest)"
+          ],
+          "llm_dir": "southeast",
+          "in_gt": true,
+          "gt_dir": "southeast",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 43
+        }
+      ],
+      "case_counts": {
+        "correct": 5
+      },
+      "root_cause": "false_positive_overlap"
+    },
+    {
+      "type": "topology",
+      "description": "position (5, -2, 0) occupied by multiple rooms ['corridor', 'ledge', 'rocky trail (trail widens eastward and narrows northwest)']",
+      "involved_edges": [],
+      "involved_nodes": [
+        "corridor",
+        "ledge",
+        "rocky trail (trail widens eastward and narrows northwest)"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "console room",
+            "corridor"
+          ],
+          "llm_dir": "east",
+          "in_gt": true,
+          "gt_dir": "east",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 6
+        },
+        {
+          "edge": [
+            "corridor",
+            "workshop"
+          ],
+          "llm_dir": "south",
+          "in_gt": true,
+          "gt_dir": "south",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 8
+        },
+        {
+          "edge": [
+            "lakeside",
+            "ledge"
+          ],
+          "llm_dir": "north",
+          "in_gt": true,
+          "gt_dir": "north",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 45
+        },
+        {
+          "edge": [
+            "rocky trail (clearing to west)",
+            "rocky trail (trail widens eastward and narrows northwest)"
+          ],
+          "llm_dir": "southeast",
+          "in_gt": true,
+          "gt_dir": "southeast",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 43
+        },
+        {
+          "edge": [
+            "rocky trail (trail widens eastward and narrows northwest)",
+            "lakeside"
+          ],
+          "llm_dir": "east",
+          "in_gt": true,
+          "gt_dir": "east",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 44
+        }
+      ],
+      "case_counts": {
+        "correct": 5
+      },
+      "root_cause": "false_positive_overlap"
+    },
+    {
+      "type": "topology",
+      "description": "position (3, -4, 0) occupied by multiple rooms ['corridor', 'rocky trail (trail widens eastward and narrows northwest)']",
+      "involved_edges": [],
+      "involved_nodes": [
+        "corridor",
+        "rocky trail (trail widens eastward and narrows northwest)"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "console room",
+            "corridor"
+          ],
+          "llm_dir": "east",
+          "in_gt": true,
+          "gt_dir": "east",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 6
+        },
+        {
+          "edge": [
+            "corridor",
+            "workshop"
+          ],
+          "llm_dir": "south",
+          "in_gt": true,
+          "gt_dir": "south",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 8
+        },
+        {
+          "edge": [
+            "rocky trail (clearing to west)",
+            "rocky trail (trail widens eastward and narrows northwest)"
+          ],
+          "llm_dir": "southeast",
+          "in_gt": true,
+          "gt_dir": "southeast",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 43
+        },
+        {
+          "edge": [
+            "rocky trail (trail widens eastward and narrows northwest)",
+            "lakeside"
+          ],
+          "llm_dir": "east",
+          "in_gt": true,
+          "gt_dir": "east",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 44
+        }
+      ],
+      "case_counts": {
+        "correct": 4
+      },
+      "root_cause": "false_positive_overlap"
+    },
+    {
+      "type": "topology",
+      "description": "position (6, -2, 0) occupied by multiple rooms ['lakeside', 'ledge']",
+      "involved_edges": [],
+      "involved_nodes": [
+        "lakeside",
+        "ledge"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "rocky trail (trail widens eastward and narrows northwest)",
+            "lakeside"
+          ],
+          "llm_dir": "east",
+          "in_gt": true,
+          "gt_dir": "east",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 44
+        },
+        {
+          "edge": [
+            "lakeside",
+            "ledge"
+          ],
+          "llm_dir": "north",
+          "in_gt": true,
+          "gt_dir": "north",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 45
+        }
+      ],
+      "case_counts": {
+        "correct": 2
+      },
+      "root_cause": "false_positive_overlap"
+    },
+    {
+      "type": "topology",
+      "description": "position (4, -4, 0) occupied by multiple rooms ['lakeside', 'workshop']",
+      "involved_edges": [],
+      "involved_nodes": [
+        "lakeside",
+        "workshop"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "rocky trail (trail widens eastward and narrows northwest)",
+            "lakeside"
+          ],
+          "llm_dir": "east",
+          "in_gt": true,
+          "gt_dir": "east",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 44
+        },
+        {
+          "edge": [
+            "lakeside",
+            "ledge"
+          ],
+          "llm_dir": "north",
+          "in_gt": true,
+          "gt_dir": "north",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 45
+        },
+        {
+          "edge": [
+            "corridor",
+            "workshop"
+          ],
+          "llm_dir": "south",
+          "in_gt": true,
+          "gt_dir": "south",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 8
+        }
+      ],
+      "case_counts": {
+        "correct": 3
+      },
+      "root_cause": "false_positive_overlap"
+    },
+    {
+      "type": "naming",
+      "description": "node 'bottom of cliff' reachable at conflicting positions [(-1, 0, 0), (0, 0, 0), (0, 1, 0), (1, 1, 0)]",
+      "involved_edges": [],
+      "involved_nodes": [
+        "bottom of cliff"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "narrow cleft",
+            "bottom of cliff"
+          ],
+          "llm_dir": "west",
+          "in_gt": true,
+          "gt_dir": "west",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 33
+        }
+      ],
+      "case_counts": {
+        "correct": 1
+      },
+      "root_cause": "naming_collision_on_correct_subgraph"
+    },
+    {
+      "type": "naming",
+      "description": "node 'narrow cleft' reachable at conflicting positions [(0, 0, 0), (1, 0, 0), (1, 1, 0), (2, 1, 0)]",
+      "involved_edges": [],
+      "involved_nodes": [
+        "narrow cleft"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "mountain trail (cleft to northwest, down southwest, down east)",
+            "narrow cleft"
+          ],
+          "llm_dir": "northwest",
+          "in_gt": true,
+          "gt_dir": "northwest",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 32
+        },
+        {
+          "edge": [
+            "narrow cleft",
+            "bottom of cliff"
+          ],
+          "llm_dir": "west",
+          "in_gt": true,
+          "gt_dir": "west",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 33
+        },
+        {
+          "edge": [
+            "narrow cleft",
+            "mountain trail"
+          ],
+          "llm_dir": "southeast",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "dst_hallucinated",
+          "source_in_gt": true,
+          "target_in_gt": false,
+          "step": 37
+        }
+      ],
+      "case_counts": {
+        "correct": 2,
+        "dst_hallucinated": 1
+      },
+      "root_cause": "real_name_corrupted_by_neighbour_error"
+    },
+    {
+      "type": "naming",
+      "description": "node 'mountain trail (cleft to northwest, down southwest, down east)' reachable at conflicting positions [(1, -1, 0), (2, -1, 0), (2, 0, 0), (3, 0, 0)]",
+      "involved_edges": [],
+      "involved_nodes": [
+        "mountain trail (cleft to northwest, down southwest, down east)"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "mountain trail (carved steps to the south)",
+            "mountain trail (cleft to northwest, down southwest, down east)"
+          ],
+          "llm_dir": "northeast",
+          "in_gt": true,
+          "gt_dir": "northeast",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 31
+        },
+        {
+          "edge": [
+            "mountain trail (cleft to northwest, down southwest, down east)",
+            "narrow cleft"
+          ],
+          "llm_dir": "northwest",
+          "in_gt": true,
+          "gt_dir": "northwest",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 32
+        }
+      ],
+      "case_counts": {
+        "correct": 2
+      },
+      "root_cause": "naming_collision_on_correct_subgraph"
+    },
+    {
+      "type": "naming",
+      "description": "node 'mountain trail' reachable at conflicting positions [(-1, -2, 0), (0, -2, 0), (1, -1, 0), (2, -1, 0), (2, 0, 0), (3, 0, 0)]",
+      "involved_edges": [],
+      "involved_nodes": [
+        "mountain trail"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "narrow cleft",
+            "mountain trail"
+          ],
+          "llm_dir": "southeast",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "dst_hallucinated",
+          "source_in_gt": true,
+          "target_in_gt": false,
+          "step": 37
+        },
+        {
+          "edge": [
+            "mountain trail (blackened tree beside trail)",
+            "mountain trail"
+          ],
+          "llm_dir": "southwest",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "dst_hallucinated",
+          "source_in_gt": true,
+          "target_in_gt": false,
+          "step": 40
+        },
+        {
+          "edge": [
+            "mountain trail",
+            "mountain trail (carved steps to the south)"
+          ],
+          "llm_dir": "southwest",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "src_hallucinated",
+          "source_in_gt": false,
+          "target_in_gt": true,
+          "step": 38
+        },
+        {
+          "edge": [
+            "mountain trail",
+            "rocky clearing"
+          ],
+          "llm_dir": "southeast",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "src_hallucinated",
+          "source_in_gt": false,
+          "target_in_gt": true,
+          "step": 41
+        }
+      ],
+      "case_counts": {
+        "dst_hallucinated": 2,
+        "src_hallucinated": 2
+      },
+      "root_cause": "name_hallucination"
+    },
+    {
+      "type": "naming",
+      "description": "node 'mountain trail (carved steps to the south)' reachable at conflicting positions [(0, -2, 0), (1, -2, 0), (1, -1, 0), (2, -1, 0), (2, 0, 0), (3, -2, 0), (3, 0, 0), (4, -2, 0), (4, 0, 0)]",
+      "involved_edges": [],
+      "involved_nodes": [
+        "mountain trail (carved steps to the south)"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "ruins",
+            "mountain trail (carved steps to the south)"
+          ],
+          "llm_dir": "down",
+          "in_gt": true,
+          "gt_dir": "down",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 30
+        },
+        {
+          "edge": [
+            "mountain trail",
+            "mountain trail (carved steps to the south)"
+          ],
+          "llm_dir": "southwest",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "src_hallucinated",
+          "source_in_gt": false,
+          "target_in_gt": true,
+          "step": 38
+        },
+        {
+          "edge": [
+            "mountain trail (carved steps to the south)",
+            "mountain trail (cleft to northwest, down southwest, down east)"
+          ],
+          "llm_dir": "northeast",
+          "in_gt": true,
+          "gt_dir": "northeast",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 31
+        },
+        {
+          "edge": [
+            "mountain trail (carved steps to the south)",
+            "mountain trail (blackened tree beside trail)"
+          ],
+          "llm_dir": "west",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 39
+        },
+        {
+          "edge": [
+            "mountain trail (carved steps to the south)",
+            "mountain trail (up northeast, clearing to southeast, stoney trail leads west)"
+          ],
+          "llm_dir": "west",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 63
+        },
+        {
+          "edge": [
+            "mountain trail (carved steps to the south)",
+            "rocky clearing"
+          ],
+          "llm_dir": "southeast",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 65
+        }
+      ],
+      "case_counts": {
+        "correct": 2,
+        "src_hallucinated": 1,
+        "hallucinated_edge": 3
+      },
+      "root_cause": "real_name_corrupted_by_neighbour_error"
+    },
+    {
+      "type": "naming",
+      "description": "node 'mountain trail (blackened tree beside trail)' reachable at conflicting positions [(-1, -2, 0), (0, -2, 0), (0, -1, 0), (1, -1, 0), (2, 0, 0), (3, 0, 0), (3, 1, 0), (4, 1, 0)]",
+      "involved_edges": [],
+      "involved_nodes": [
+        "mountain trail (blackened tree beside trail)"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "mountain trail (carved steps to the south)",
+            "mountain trail (blackened tree beside trail)"
+          ],
+          "llm_dir": "west",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 39
+        },
+        {
+          "edge": [
+            "plain",
+            "mountain trail (blackened tree beside trail)"
+          ],
+          "llm_dir": "northwest",
+          "in_gt": true,
+          "gt_dir": "northwest",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 56
+        },
+        {
+          "edge": [
+            "mountain trail (blackened tree beside trail)",
+            "mountain trail"
+          ],
+          "llm_dir": "southwest",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "dst_hallucinated",
+          "source_in_gt": true,
+          "target_in_gt": false,
+          "step": 40
+        },
+        {
+          "edge": [
+            "mountain trail (blackened tree beside trail)",
+            "mountain trail (up west, down east)"
+          ],
+          "llm_dir": "west",
+          "in_gt": true,
+          "gt_dir": "west",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 60
+        }
+      ],
+      "case_counts": {
+        "hallucinated_edge": 1,
+        "correct": 2,
+        "dst_hallucinated": 1
+      },
+      "root_cause": "real_name_corrupted_by_neighbour_error"
+    },
+    {
+      "type": "naming",
+      "description": "node 'rocky clearing' reachable at conflicting positions [(-1, -2, 0), (1, -3, 0), (2, -3, 0), (2, -2, 0), (3, -2, 0), (3, -1, 0), (4, -1, 0)]",
+      "involved_edges": [],
+      "involved_nodes": [
+        "rocky clearing"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "console room",
+            "rocky clearing"
+          ],
+          "llm_dir": "northwest",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 23
+        },
+        {
+          "edge": [
+            "mountain trail",
+            "rocky clearing"
+          ],
+          "llm_dir": "southeast",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "src_hallucinated",
+          "source_in_gt": false,
+          "target_in_gt": true,
+          "step": 41
+        },
+        {
+          "edge": [
+            "mountain trail (carved steps to the south)",
+            "rocky clearing"
+          ],
+          "llm_dir": "southeast",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 65
+        },
+        {
+          "edge": [
+            "rocky clearing",
+            "mountain trail (up east, down southwest)"
+          ],
+          "llm_dir": "northeast",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 24
+        },
+        {
+          "edge": [
+            "rocky clearing",
+            "rocky trail (clearing to west)"
+          ],
+          "llm_dir": "east",
+          "in_gt": true,
+          "gt_dir": "east",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 42
+        }
+      ],
+      "case_counts": {
+        "hallucinated_edge": 3,
+        "src_hallucinated": 1,
+        "correct": 1
+      },
+      "root_cause": "real_name_corrupted_by_neighbour_error"
+    },
+    {
+      "type": "naming",
+      "description": "node 'console room' reachable at conflicting positions [(2, -4, 0), (3, -3, 0), (4, -3, 0), (4, -2, 0)]",
+      "involved_edges": [],
+      "involved_nodes": [
+        "console room"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "console room",
+            "corridor"
+          ],
+          "llm_dir": "east",
+          "in_gt": true,
+          "gt_dir": "east",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 6
+        },
+        {
+          "edge": [
+            "console room",
+            "rocky clearing"
+          ],
+          "llm_dir": "northwest",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 23
+        }
+      ],
+      "case_counts": {
+        "correct": 1,
+        "hallucinated_edge": 1
+      },
+      "root_cause": "real_name_corrupted_by_neighbour_error"
+    },
+    {
+      "type": "naming",
+      "description": "node 'mountain trail (up east, down southwest)' reachable at conflicting positions [(-2, -2, 0), (-1, -1, 0), (0, -1, 0), (2, -2, 0), (3, -1, 0), (4, -1, 0), (4, 0, 0)]",
+      "involved_edges": [],
+      "involved_nodes": [
+        "mountain trail (up east, down southwest)"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "rocky clearing",
+            "mountain trail (up east, down southwest)"
+          ],
+          "llm_dir": "northeast",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 24
+        },
+        {
+          "edge": [
+            "mountain trail (up east, down southwest)",
+            "mountain trail (up northeast, clearing to southeast, stoney trail leads west)"
+          ],
+          "llm_dir": "east",
+          "in_gt": true,
+          "gt_dir": "southwest",
+          "case": "wrong_direction",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 25
+        }
+      ],
+      "case_counts": {
+        "hallucinated_edge": 1,
+        "wrong_direction": 1
+      },
+      "root_cause": "naming_mixed"
+    },
+    {
+      "type": "naming",
+      "description": "node 'rocky trail (clearing to west)' reachable at conflicting positions [(2, -3, 0), (3, -2, 0), (4, -2, 0), (4, -1, 0)]",
+      "involved_edges": [],
+      "involved_nodes": [
+        "rocky trail (clearing to west)"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "rocky clearing",
+            "rocky trail (clearing to west)"
+          ],
+          "llm_dir": "east",
+          "in_gt": true,
+          "gt_dir": "east",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 42
+        },
+        {
+          "edge": [
+            "rocky trail (clearing to west)",
+            "rocky trail (trail widens eastward and narrows northwest)"
+          ],
+          "llm_dir": "southeast",
+          "in_gt": true,
+          "gt_dir": "southeast",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 43
+        }
+      ],
+      "case_counts": {
+        "correct": 2
+      },
+      "root_cause": "naming_collision_on_correct_subgraph"
+    },
+    {
+      "type": "naming",
+      "description": "node 'ruins' reachable at conflicting positions [(-1, -2, 1), (0, -2, 1), (0, -1, 1), (1, -2, 1), (1, -1, 1), (2, -1, 1), (3, -2, 1)]",
+      "involved_edges": [],
+      "involved_nodes": [
+        "ruins"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "mountain trail (up northeast, clearing to southeast, stoney trail leads west)",
+            "ruins"
+          ],
+          "llm_dir": "up",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 26
+        },
+        {
+          "edge": [
+            "ruins",
+            "mountain trail (carved steps to the south)"
+          ],
+          "llm_dir": "down",
+          "in_gt": true,
+          "gt_dir": "down",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 30
+        }
+      ],
+      "case_counts": {
+        "hallucinated_edge": 1,
+        "correct": 1
+      },
+      "root_cause": "real_name_corrupted_by_neighbour_error"
+    },
+    {
+      "type": "naming",
+      "description": "node 'mountain trail (up northeast, clearing to southeast, stoney trail leads west)' reachable at conflicting positions [(-1, -2, 0), (0, -2, 0), (0, -1, 0), (1, -1, 0), (2, -1, 0), (3, -2, 0), (4, -1, 0), (5, -1, 0)]",
+      "involved_edges": [],
+      "involved_nodes": [
+        "mountain trail (up northeast, clearing to southeast, stoney trail leads west)"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "mountain trail (up east, down southwest)",
+            "mountain trail (up northeast, clearing to southeast, stoney trail leads west)"
+          ],
+          "llm_dir": "east",
+          "in_gt": true,
+          "gt_dir": "southwest",
+          "case": "wrong_direction",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 25
+        },
+        {
+          "edge": [
+            "mountain trail (carved steps to the south)",
+            "mountain trail (up northeast, clearing to southeast, stoney trail leads west)"
+          ],
+          "llm_dir": "west",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 63
+        },
+        {
+          "edge": [
+            "mountain trail (up northeast, clearing to southeast, stoney trail leads west)",
+            "ruins"
+          ],
+          "llm_dir": "up",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 26
+        }
+      ],
+      "case_counts": {
+        "wrong_direction": 1,
+        "hallucinated_edge": 2
+      },
+      "root_cause": "naming_mixed"
+    },
+    {
+      "type": "naming",
+      "description": "node 'rocky trail (trail widens eastward and narrows northwest)' reachable at conflicting positions [(3, -4, 0), (4, -3, 0), (5, -3, 0), (5, -2, 0)]",
+      "involved_edges": [],
+      "involved_nodes": [
+        "rocky trail (trail widens eastward and narrows northwest)"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "rocky trail (clearing to west)",
+            "rocky trail (trail widens eastward and narrows northwest)"
+          ],
+          "llm_dir": "southeast",
+          "in_gt": true,
+          "gt_dir": "southeast",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 43
+        },
+        {
+          "edge": [
+            "rocky trail (trail widens eastward and narrows northwest)",
+            "lakeside"
+          ],
+          "llm_dir": "east",
+          "in_gt": true,
+          "gt_dir": "east",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 44
+        }
+      ],
+      "case_counts": {
+        "correct": 2
+      },
+      "root_cause": "naming_collision_on_correct_subgraph"
+    },
+    {
+      "type": "naming",
+      "description": "node 'lakeside' reachable at conflicting positions [(4, -4, 0), (5, -3, 0), (6, -3, 0), (6, -2, 0)]",
+      "involved_edges": [],
+      "involved_nodes": [
+        "lakeside"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "rocky trail (trail widens eastward and narrows northwest)",
+            "lakeside"
+          ],
+          "llm_dir": "east",
+          "in_gt": true,
+          "gt_dir": "east",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 44
+        },
+        {
+          "edge": [
+            "lakeside",
+            "ledge"
+          ],
+          "llm_dir": "north",
+          "in_gt": true,
+          "gt_dir": "north",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 45
+        }
+      ],
+      "case_counts": {
+        "correct": 2
+      },
+      "root_cause": "naming_collision_on_correct_subgraph"
+    },
+    {
+      "type": "naming",
+      "description": "node 'ledge' reachable at conflicting positions [(4, -3, 0), (5, -2, 0), (6, -2, 0), (6, -1, 0)]",
+      "involved_edges": [],
+      "involved_nodes": [
+        "ledge"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "lakeside",
+            "ledge"
+          ],
+          "llm_dir": "north",
+          "in_gt": true,
+          "gt_dir": "north",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 45
+        }
+      ],
+      "case_counts": {
+        "correct": 1
+      },
+      "root_cause": "naming_collision_on_correct_subgraph"
+    },
+    {
+      "type": "naming",
+      "description": "node 'plain' reachable at conflicting positions [(1, -2, 0), (2, -2, 0), (3, -1, 0), (4, -1, 0)]",
+      "involved_edges": [],
+      "involved_nodes": [
+        "plain"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "on top of the saucer",
+            "plain"
+          ],
+          "llm_dir": "down",
+          "in_gt": true,
+          "gt_dir": "down",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 53
+        },
+        {
+          "edge": [
+            "plain",
+            "mountain trail (blackened tree beside trail)"
+          ],
+          "llm_dir": "northwest",
+          "in_gt": true,
+          "gt_dir": "northwest",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 56
+        }
+      ],
+      "case_counts": {
+        "correct": 2
+      },
+      "root_cause": "naming_collision_on_correct_subgraph"
+    },
+    {
+      "type": "naming",
+      "description": "node 'mountain trail (up west, down east)' reachable at conflicting positions [(-1, -1, 0), (0, -1, 0), (1, 0, 0), (2, 0, 0)]",
+      "involved_edges": [],
+      "involved_nodes": [
+        "mountain trail (up west, down east)"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "mountain trail (blackened tree beside trail)",
+            "mountain trail (up west, down east)"
+          ],
+          "llm_dir": "west",
+          "in_gt": true,
+          "gt_dir": "west",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 60
+        }
+      ],
+      "case_counts": {
+        "correct": 1
+      },
+      "root_cause": "naming_collision_on_correct_subgraph"
+    },
+    {
+      "type": "naming",
+      "description": "node 'on top of the saucer' reachable at conflicting positions [(1, -2, 1), (2, -2, 1), (3, -1, 1), (4, -1, 1)]",
+      "involved_edges": [],
+      "involved_nodes": [
+        "on top of the saucer"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "on top of the saucer",
+            "plain"
+          ],
+          "llm_dir": "down",
+          "in_gt": true,
+          "gt_dir": "down",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 53
+        }
+      ],
+      "case_counts": {
+        "correct": 1
+      },
+      "root_cause": "naming_collision_on_correct_subgraph"
+    },
+    {
+      "type": "naming",
+      "description": "node 'corridor' reachable at conflicting positions [(3, -4, 0), (4, -3, 0), (5, -3, 0), (5, -2, 0)]",
+      "involved_edges": [],
+      "involved_nodes": [
+        "corridor"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "console room",
+            "corridor"
+          ],
+          "llm_dir": "east",
+          "in_gt": true,
+          "gt_dir": "east",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 6
+        },
+        {
+          "edge": [
+            "corridor",
+            "workshop"
+          ],
+          "llm_dir": "south",
+          "in_gt": true,
+          "gt_dir": "south",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 8
+        }
+      ],
+      "case_counts": {
+        "correct": 2
+      },
+      "root_cause": "naming_collision_on_correct_subgraph"
+    },
+    {
+      "type": "naming",
+      "description": "node 'workshop' reachable at conflicting positions [(3, -5, 0), (4, -4, 0), (5, -4, 0), (5, -3, 0)]",
+      "involved_edges": [],
+      "involved_nodes": [
+        "workshop"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "corridor",
+            "workshop"
+          ],
+          "llm_dir": "south",
+          "in_gt": true,
+          "gt_dir": "south",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 8
+        }
+      ],
+      "case_counts": {
+        "correct": 1
+      },
+      "root_cause": "naming_collision_on_correct_subgraph"
+    }
+  ],
+  "walkthrough_steps_available": 71
+}

@@ -1,0 +1,17 @@
+# spellbrkr  model=gpt-4.1  n_steps=16  (exp14 bootstrap-fixed)
+step   0 BOOTSTRAP seed current_loc='guild hall' (src missing, dst valid)
+step   1 MOVE 'guild hall' --[south]--> 'belwit square'
+step   2 MOVE 'belwit square' --[down]--> 'midair'
+step   3 MOVE 'midair' --[east]--> 'hall of stone'
+step   4 MOVE 'hall of stone' --[south]--> 'ruins room'
+step   5 MOVE 'ruins room' --[south]--> 'cliff middle'
+step   6 MOVE 'cliff middle' --[up]--> 'cliff top'
+step   7 MOVE 'cliff top' --[up]--> 'boulder(a long oblong boulder below you)'
+step   8 MOVE 'boulder(a long oblong boulder below you)' --[up]--> 'boulder(a nice oblong boulder above you and another large one below you)'
+step   9 MOVE 'boulder(a nice oblong boulder above you and another large one below you)' --[up]--> 'boulder(a long oblong boulder below you)'
+step  10 MOVE 'boulder(a long oblong boulder below you)' --[up]--> 'mountain top'
+step  11 MOVE 'mountain top' --[west]--> 'stone hut'
+step  12 MOVE 'stone hut' --[east]--> 'mountain top'
+step  13 MOVE 'mountain top' --[south]--> 'meadow'
+step  14 MOVE 'meadow' --[west]--> 'cave entrance'
+step  15 MOVE 'cave entrance' --[north]--> 'cave'

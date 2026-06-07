@@ -1,0 +1,1710 @@
+{
+  "game": "jewel",
+  "num_llm_edges": 17,
+  "num_gt_edges": 31,
+  "num_conflicts": 29,
+  "type_distribution": {
+    "direction": 2,
+    "topology": 11,
+    "naming": 16
+  },
+  "root_cause_distribution": {
+    "real_vs_hallucinated": 2,
+    "overlap_mixed": 6,
+    "false_positive_overlap": 5,
+    "naming_collision_on_correct_subgraph": 11,
+    "real_name_corrupted_by_neighbour_error": 4,
+    "naming_mixed": 1
+  },
+  "conflicts": [
+    {
+      "type": "direction",
+      "description": "node 'shaft base' has multiple outgoing edges labelled 'up'",
+      "involved_edges": [
+        [
+          "shaft base",
+          "top of the shaft"
+        ],
+        [
+          "shaft base",
+          "middle shaft"
+        ]
+      ],
+      "involved_nodes": [
+        "shaft base",
+        "top of the shaft",
+        "middle shaft"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "shaft base",
+            "top of the shaft"
+          ],
+          "llm_dir": "up",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 45
+        },
+        {
+          "edge": [
+            "shaft base",
+            "middle shaft"
+          ],
+          "llm_dir": "up",
+          "in_gt": true,
+          "gt_dir": "up",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": null
+        }
+      ],
+      "case_counts": {
+        "hallucinated_edge": 1,
+        "correct": 1
+      },
+      "root_cause": "real_vs_hallucinated"
+    },
+    {
+      "type": "direction",
+      "description": "node 'top of the shaft' has multiple outgoing edges labelled 'down'",
+      "involved_edges": [
+        [
+          "top of the shaft",
+          "shaft base"
+        ],
+        [
+          "top of the shaft",
+          "middle shaft"
+        ]
+      ],
+      "involved_nodes": [
+        "top of the shaft",
+        "shaft base",
+        "middle shaft"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "top of the shaft",
+            "shaft base"
+          ],
+          "llm_dir": "down",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": null
+        },
+        {
+          "edge": [
+            "top of the shaft",
+            "middle shaft"
+          ],
+          "llm_dir": "down",
+          "in_gt": true,
+          "gt_dir": "down",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 54
+        }
+      ],
+      "case_counts": {
+        "hallucinated_edge": 1,
+        "correct": 1
+      },
+      "root_cause": "real_vs_hallucinated"
+    },
+    {
+      "type": "topology",
+      "description": "position (-1, 1, 5) occupied by multiple rooms ['east-west passage', 'middle shaft', 'top of the shaft']",
+      "involved_edges": [],
+      "involved_nodes": [
+        "east-west passage",
+        "middle shaft",
+        "top of the shaft"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "cool cavern",
+            "east-west passage"
+          ],
+          "llm_dir": "west",
+          "in_gt": true,
+          "gt_dir": "west",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 17
+        },
+        {
+          "edge": [
+            "east-west passage",
+            "carved steps"
+          ],
+          "llm_dir": "west",
+          "in_gt": true,
+          "gt_dir": "west",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 18
+        },
+        {
+          "edge": [
+            "top of the shaft",
+            "middle shaft"
+          ],
+          "llm_dir": "down",
+          "in_gt": true,
+          "gt_dir": "down",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 54
+        },
+        {
+          "edge": [
+            "middle shaft",
+            "shaft base"
+          ],
+          "llm_dir": "down",
+          "in_gt": true,
+          "gt_dir": "down",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 55
+        },
+        {
+          "edge": [
+            "shaft base",
+            "top of the shaft"
+          ],
+          "llm_dir": "up",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 45
+        },
+        {
+          "edge": [
+            "top of the shaft",
+            "on the ledge"
+          ],
+          "llm_dir": "east",
+          "in_gt": true,
+          "gt_dir": "east",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 46
+        }
+      ],
+      "case_counts": {
+        "correct": 5,
+        "hallucinated_edge": 1
+      },
+      "root_cause": "overlap_mixed"
+    },
+    {
+      "type": "topology",
+      "description": "position (-4, 3, 7) occupied by multiple rooms ['moss-filled cave', 'narrow passage']",
+      "involved_edges": [],
+      "involved_nodes": [
+        "moss-filled cave",
+        "narrow passage"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "carved steps",
+            "moss-filled cave"
+          ],
+          "llm_dir": "north",
+          "in_gt": true,
+          "gt_dir": "north",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 19
+        },
+        {
+          "edge": [
+            "moss-filled cave",
+            "cleaning closet"
+          ],
+          "llm_dir": "down",
+          "in_gt": true,
+          "gt_dir": "down",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 26
+        },
+        {
+          "edge": [
+            "mineralized corridor",
+            "narrow passage"
+          ],
+          "llm_dir": "west",
+          "in_gt": true,
+          "gt_dir": "west",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 40
+        },
+        {
+          "edge": [
+            "narrow passage",
+            "gaseous geyser"
+          ],
+          "llm_dir": "west",
+          "in_gt": true,
+          "gt_dir": "west",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 41
+        }
+      ],
+      "case_counts": {
+        "correct": 4
+      },
+      "root_cause": "false_positive_overlap"
+    },
+    {
+      "type": "topology",
+      "description": "position (0, 1, 3) occupied by multiple rooms ['moss-filled cave', 'narrow passage', 'on the ledge']",
+      "involved_edges": [],
+      "involved_nodes": [
+        "moss-filled cave",
+        "narrow passage",
+        "on the ledge"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "carved steps",
+            "moss-filled cave"
+          ],
+          "llm_dir": "north",
+          "in_gt": true,
+          "gt_dir": "north",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 19
+        },
+        {
+          "edge": [
+            "moss-filled cave",
+            "cleaning closet"
+          ],
+          "llm_dir": "down",
+          "in_gt": true,
+          "gt_dir": "down",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 26
+        },
+        {
+          "edge": [
+            "mineralized corridor",
+            "narrow passage"
+          ],
+          "llm_dir": "west",
+          "in_gt": true,
+          "gt_dir": "west",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 40
+        },
+        {
+          "edge": [
+            "narrow passage",
+            "gaseous geyser"
+          ],
+          "llm_dir": "west",
+          "in_gt": true,
+          "gt_dir": "west",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 41
+        },
+        {
+          "edge": [
+            "top of the shaft",
+            "on the ledge"
+          ],
+          "llm_dir": "east",
+          "in_gt": true,
+          "gt_dir": "east",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 46
+        }
+      ],
+      "case_counts": {
+        "correct": 5
+      },
+      "root_cause": "false_positive_overlap"
+    },
+    {
+      "type": "topology",
+      "description": "position (0, 1, 0) occupied by multiple rooms ['moss-filled cave', 'narrow passage']",
+      "involved_edges": [],
+      "involved_nodes": [
+        "moss-filled cave",
+        "narrow passage"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "carved steps",
+            "moss-filled cave"
+          ],
+          "llm_dir": "north",
+          "in_gt": true,
+          "gt_dir": "north",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 19
+        },
+        {
+          "edge": [
+            "moss-filled cave",
+            "cleaning closet"
+          ],
+          "llm_dir": "down",
+          "in_gt": true,
+          "gt_dir": "down",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 26
+        },
+        {
+          "edge": [
+            "mineralized corridor",
+            "narrow passage"
+          ],
+          "llm_dir": "west",
+          "in_gt": true,
+          "gt_dir": "west",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 40
+        },
+        {
+          "edge": [
+            "narrow passage",
+            "gaseous geyser"
+          ],
+          "llm_dir": "west",
+          "in_gt": true,
+          "gt_dir": "west",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 41
+        }
+      ],
+      "case_counts": {
+        "correct": 4
+      },
+      "root_cause": "false_positive_overlap"
+    },
+    {
+      "type": "topology",
+      "description": "position (-2, 2, 5) occupied by multiple rooms ['moss-filled cave', 'narrow passage']",
+      "involved_edges": [],
+      "involved_nodes": [
+        "moss-filled cave",
+        "narrow passage"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "carved steps",
+            "moss-filled cave"
+          ],
+          "llm_dir": "north",
+          "in_gt": true,
+          "gt_dir": "north",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 19
+        },
+        {
+          "edge": [
+            "moss-filled cave",
+            "cleaning closet"
+          ],
+          "llm_dir": "down",
+          "in_gt": true,
+          "gt_dir": "down",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 26
+        },
+        {
+          "edge": [
+            "mineralized corridor",
+            "narrow passage"
+          ],
+          "llm_dir": "west",
+          "in_gt": true,
+          "gt_dir": "west",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 40
+        },
+        {
+          "edge": [
+            "narrow passage",
+            "gaseous geyser"
+          ],
+          "llm_dir": "west",
+          "in_gt": true,
+          "gt_dir": "west",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 41
+        }
+      ],
+      "case_counts": {
+        "correct": 4
+      },
+      "root_cause": "false_positive_overlap"
+    },
+    {
+      "type": "topology",
+      "description": "position (0, 1, 2) occupied by multiple rooms ['cleaning closet', 'narrow passage', 'on the ledge']",
+      "involved_edges": [],
+      "involved_nodes": [
+        "cleaning closet",
+        "narrow passage",
+        "on the ledge"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "moss-filled cave",
+            "cleaning closet"
+          ],
+          "llm_dir": "down",
+          "in_gt": true,
+          "gt_dir": "down",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 26
+        },
+        {
+          "edge": [
+            "mineralized corridor",
+            "narrow passage"
+          ],
+          "llm_dir": "west",
+          "in_gt": true,
+          "gt_dir": "west",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 40
+        },
+        {
+          "edge": [
+            "narrow passage",
+            "gaseous geyser"
+          ],
+          "llm_dir": "west",
+          "in_gt": true,
+          "gt_dir": "west",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 41
+        },
+        {
+          "edge": [
+            "top of the shaft",
+            "on the ledge"
+          ],
+          "llm_dir": "east",
+          "in_gt": true,
+          "gt_dir": "east",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 46
+        }
+      ],
+      "case_counts": {
+        "correct": 4
+      },
+      "root_cause": "false_positive_overlap"
+    },
+    {
+      "type": "topology",
+      "description": "position (0, 1, 5) occupied by multiple rooms ['cool cavern', 'on the ledge']",
+      "involved_edges": [],
+      "involved_nodes": [
+        "cool cavern",
+        "on the ledge"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "fifth layer dropoff",
+            "cool cavern"
+          ],
+          "llm_dir": "west",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 3
+        },
+        {
+          "edge": [
+            "cool cavern",
+            "mineralized corridor"
+          ],
+          "llm_dir": "northwest",
+          "in_gt": true,
+          "gt_dir": "northwest",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 4
+        },
+        {
+          "edge": [
+            "cool cavern",
+            "east-west passage"
+          ],
+          "llm_dir": "west",
+          "in_gt": true,
+          "gt_dir": "west",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 17
+        },
+        {
+          "edge": [
+            "top of the shaft",
+            "on the ledge"
+          ],
+          "llm_dir": "east",
+          "in_gt": true,
+          "gt_dir": "east",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 46
+        }
+      ],
+      "case_counts": {
+        "hallucinated_edge": 1,
+        "correct": 3
+      },
+      "root_cause": "overlap_mixed"
+    },
+    {
+      "type": "topology",
+      "description": "position (-1, 1, 2) occupied by multiple rooms ['gaseous geyser', 'middle shaft', 'shaft base', 'top of the shaft']",
+      "involved_edges": [],
+      "involved_nodes": [
+        "gaseous geyser",
+        "middle shaft",
+        "shaft base",
+        "top of the shaft"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "narrow passage",
+            "gaseous geyser"
+          ],
+          "llm_dir": "west",
+          "in_gt": true,
+          "gt_dir": "west",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 41
+        },
+        {
+          "edge": [
+            "gaseous geyser",
+            "shaft base"
+          ],
+          "llm_dir": "up",
+          "in_gt": false,
+          "gt_dir": "down",
+          "case": "swapped_src_dst",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 44
+        },
+        {
+          "edge": [
+            "gaseous geyser",
+            "quarry"
+          ],
+          "llm_dir": "west",
+          "in_gt": true,
+          "gt_dir": "west",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 66
+        },
+        {
+          "edge": [
+            "top of the shaft",
+            "middle shaft"
+          ],
+          "llm_dir": "down",
+          "in_gt": true,
+          "gt_dir": "down",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 54
+        },
+        {
+          "edge": [
+            "middle shaft",
+            "shaft base"
+          ],
+          "llm_dir": "down",
+          "in_gt": true,
+          "gt_dir": "down",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 55
+        },
+        {
+          "edge": [
+            "shaft base",
+            "top of the shaft"
+          ],
+          "llm_dir": "up",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 45
+        },
+        {
+          "edge": [
+            "top of the shaft",
+            "on the ledge"
+          ],
+          "llm_dir": "east",
+          "in_gt": true,
+          "gt_dir": "east",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 46
+        }
+      ],
+      "case_counts": {
+        "correct": 5,
+        "swapped_src_dst": 1,
+        "hallucinated_edge": 1
+      },
+      "root_cause": "overlap_mixed"
+    },
+    {
+      "type": "topology",
+      "description": "position (-1, 1, 3) occupied by multiple rooms ['gaseous geyser', 'middle shaft', 'shaft base', 'top of the shaft']",
+      "involved_edges": [],
+      "involved_nodes": [
+        "gaseous geyser",
+        "middle shaft",
+        "shaft base",
+        "top of the shaft"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "narrow passage",
+            "gaseous geyser"
+          ],
+          "llm_dir": "west",
+          "in_gt": true,
+          "gt_dir": "west",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 41
+        },
+        {
+          "edge": [
+            "gaseous geyser",
+            "shaft base"
+          ],
+          "llm_dir": "up",
+          "in_gt": false,
+          "gt_dir": "down",
+          "case": "swapped_src_dst",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 44
+        },
+        {
+          "edge": [
+            "gaseous geyser",
+            "quarry"
+          ],
+          "llm_dir": "west",
+          "in_gt": true,
+          "gt_dir": "west",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 66
+        },
+        {
+          "edge": [
+            "top of the shaft",
+            "middle shaft"
+          ],
+          "llm_dir": "down",
+          "in_gt": true,
+          "gt_dir": "down",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 54
+        },
+        {
+          "edge": [
+            "middle shaft",
+            "shaft base"
+          ],
+          "llm_dir": "down",
+          "in_gt": true,
+          "gt_dir": "down",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 55
+        },
+        {
+          "edge": [
+            "shaft base",
+            "top of the shaft"
+          ],
+          "llm_dir": "up",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 45
+        },
+        {
+          "edge": [
+            "top of the shaft",
+            "on the ledge"
+          ],
+          "llm_dir": "east",
+          "in_gt": true,
+          "gt_dir": "east",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 46
+        }
+      ],
+      "case_counts": {
+        "correct": 5,
+        "swapped_src_dst": 1,
+        "hallucinated_edge": 1
+      },
+      "root_cause": "overlap_mixed"
+    },
+    {
+      "type": "topology",
+      "description": "position (-1, 1, 1) occupied by multiple rooms ['gaseous geyser', 'middle shaft', 'shaft base']",
+      "involved_edges": [],
+      "involved_nodes": [
+        "gaseous geyser",
+        "middle shaft",
+        "shaft base"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "narrow passage",
+            "gaseous geyser"
+          ],
+          "llm_dir": "west",
+          "in_gt": true,
+          "gt_dir": "west",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 41
+        },
+        {
+          "edge": [
+            "gaseous geyser",
+            "shaft base"
+          ],
+          "llm_dir": "up",
+          "in_gt": false,
+          "gt_dir": "down",
+          "case": "swapped_src_dst",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 44
+        },
+        {
+          "edge": [
+            "gaseous geyser",
+            "quarry"
+          ],
+          "llm_dir": "west",
+          "in_gt": true,
+          "gt_dir": "west",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 66
+        },
+        {
+          "edge": [
+            "top of the shaft",
+            "middle shaft"
+          ],
+          "llm_dir": "down",
+          "in_gt": true,
+          "gt_dir": "down",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 54
+        },
+        {
+          "edge": [
+            "middle shaft",
+            "shaft base"
+          ],
+          "llm_dir": "down",
+          "in_gt": true,
+          "gt_dir": "down",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 55
+        },
+        {
+          "edge": [
+            "shaft base",
+            "top of the shaft"
+          ],
+          "llm_dir": "up",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 45
+        }
+      ],
+      "case_counts": {
+        "correct": 4,
+        "swapped_src_dst": 1,
+        "hallucinated_edge": 1
+      },
+      "root_cause": "overlap_mixed"
+    },
+    {
+      "type": "topology",
+      "description": "position (-1, 1, 4) occupied by multiple rooms ['middle shaft', 'shaft base', 'top of the shaft']",
+      "involved_edges": [],
+      "involved_nodes": [
+        "middle shaft",
+        "shaft base",
+        "top of the shaft"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "top of the shaft",
+            "middle shaft"
+          ],
+          "llm_dir": "down",
+          "in_gt": true,
+          "gt_dir": "down",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 54
+        },
+        {
+          "edge": [
+            "middle shaft",
+            "shaft base"
+          ],
+          "llm_dir": "down",
+          "in_gt": true,
+          "gt_dir": "down",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 55
+        },
+        {
+          "edge": [
+            "gaseous geyser",
+            "shaft base"
+          ],
+          "llm_dir": "up",
+          "in_gt": false,
+          "gt_dir": "down",
+          "case": "swapped_src_dst",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 44
+        },
+        {
+          "edge": [
+            "shaft base",
+            "top of the shaft"
+          ],
+          "llm_dir": "up",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 45
+        },
+        {
+          "edge": [
+            "top of the shaft",
+            "on the ledge"
+          ],
+          "llm_dir": "east",
+          "in_gt": true,
+          "gt_dir": "east",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 46
+        }
+      ],
+      "case_counts": {
+        "correct": 3,
+        "swapped_src_dst": 1,
+        "hallucinated_edge": 1
+      },
+      "root_cause": "overlap_mixed"
+    },
+    {
+      "type": "naming",
+      "description": "node 'carved steps' reachable at conflicting positions [(-4, 2, 7), (-2, 1, 5), (0, 0, 0), (0, 0, 3)]",
+      "involved_edges": [],
+      "involved_nodes": [
+        "carved steps"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "east-west passage",
+            "carved steps"
+          ],
+          "llm_dir": "west",
+          "in_gt": true,
+          "gt_dir": "west",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 18
+        },
+        {
+          "edge": [
+            "carved steps",
+            "moss-filled cave"
+          ],
+          "llm_dir": "north",
+          "in_gt": true,
+          "gt_dir": "north",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 19
+        },
+        {
+          "edge": [
+            "carved steps",
+            "lonely burial ground"
+          ],
+          "llm_dir": "south",
+          "in_gt": true,
+          "gt_dir": "south",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 30
+        }
+      ],
+      "case_counts": {
+        "correct": 3
+      },
+      "root_cause": "naming_collision_on_correct_subgraph"
+    },
+    {
+      "type": "naming",
+      "description": "node 'east-west passage' reachable at conflicting positions [(-3, 2, 7), (-1, 1, 5), (1, 0, 0), (1, 0, 3)]",
+      "involved_edges": [],
+      "involved_nodes": [
+        "east-west passage"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "cool cavern",
+            "east-west passage"
+          ],
+          "llm_dir": "west",
+          "in_gt": true,
+          "gt_dir": "west",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 17
+        },
+        {
+          "edge": [
+            "east-west passage",
+            "carved steps"
+          ],
+          "llm_dir": "west",
+          "in_gt": true,
+          "gt_dir": "west",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 18
+        }
+      ],
+      "case_counts": {
+        "correct": 2
+      },
+      "root_cause": "naming_collision_on_correct_subgraph"
+    },
+    {
+      "type": "naming",
+      "description": "node 'moss-filled cave' reachable at conflicting positions [(-4, 3, 7), (-2, 2, 5), (0, 1, 0), (0, 1, 3)]",
+      "involved_edges": [],
+      "involved_nodes": [
+        "moss-filled cave"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "carved steps",
+            "moss-filled cave"
+          ],
+          "llm_dir": "north",
+          "in_gt": true,
+          "gt_dir": "north",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 19
+        },
+        {
+          "edge": [
+            "moss-filled cave",
+            "cleaning closet"
+          ],
+          "llm_dir": "down",
+          "in_gt": true,
+          "gt_dir": "down",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 26
+        }
+      ],
+      "case_counts": {
+        "correct": 2
+      },
+      "root_cause": "naming_collision_on_correct_subgraph"
+    },
+    {
+      "type": "naming",
+      "description": "node 'lonely burial ground' reachable at conflicting positions [(-4, 1, 7), (-2, 0, 5), (0, -1, 0), (0, -1, 3)]",
+      "involved_edges": [],
+      "involved_nodes": [
+        "lonely burial ground"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "carved steps",
+            "lonely burial ground"
+          ],
+          "llm_dir": "south",
+          "in_gt": true,
+          "gt_dir": "south",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 30
+        }
+      ],
+      "case_counts": {
+        "correct": 1
+      },
+      "root_cause": "naming_collision_on_correct_subgraph"
+    },
+    {
+      "type": "naming",
+      "description": "node 'cleaning closet' reachable at conflicting positions [(-4, 3, 6), (-2, 2, 4), (0, 1, -1), (0, 1, 2)]",
+      "involved_edges": [],
+      "involved_nodes": [
+        "cleaning closet"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "moss-filled cave",
+            "cleaning closet"
+          ],
+          "llm_dir": "down",
+          "in_gt": true,
+          "gt_dir": "down",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 26
+        }
+      ],
+      "case_counts": {
+        "correct": 1
+      },
+      "root_cause": "naming_collision_on_correct_subgraph"
+    },
+    {
+      "type": "naming",
+      "description": "node 'cool cavern' reachable at conflicting positions [(-4, 3, 9), (-2, 2, 7), (0, 1, 5), (2, 0, 0), (2, 0, 3)]",
+      "involved_edges": [],
+      "involved_nodes": [
+        "cool cavern"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "fifth layer dropoff",
+            "cool cavern"
+          ],
+          "llm_dir": "west",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 3
+        },
+        {
+          "edge": [
+            "cool cavern",
+            "mineralized corridor"
+          ],
+          "llm_dir": "northwest",
+          "in_gt": true,
+          "gt_dir": "northwest",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 4
+        },
+        {
+          "edge": [
+            "cool cavern",
+            "east-west passage"
+          ],
+          "llm_dir": "west",
+          "in_gt": true,
+          "gt_dir": "west",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 17
+        }
+      ],
+      "case_counts": {
+        "hallucinated_edge": 1,
+        "correct": 2
+      },
+      "root_cause": "real_name_corrupted_by_neighbour_error"
+    },
+    {
+      "type": "naming",
+      "description": "node 'fifth layer dropoff' reachable at conflicting positions [(-3, 3, 9), (-1, 2, 7), (1, 1, 2), (1, 1, 5), (3, 0, 0), (3, 0, 3)]",
+      "involved_edges": [],
+      "involved_nodes": [
+        "fifth layer dropoff"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "tight fit",
+            "fifth layer dropoff"
+          ],
+          "llm_dir": "up",
+          "in_gt": true,
+          "gt_dir": "up",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 8
+        },
+        {
+          "edge": [
+            "fifth layer dropoff",
+            "cool cavern"
+          ],
+          "llm_dir": "west",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 3
+        }
+      ],
+      "case_counts": {
+        "correct": 1,
+        "hallucinated_edge": 1
+      },
+      "root_cause": "real_name_corrupted_by_neighbour_error"
+    },
+    {
+      "type": "naming",
+      "description": "node 'mineralized corridor' reachable at conflicting positions [(-3, 3, 7), (-1, 2, 5), (1, 1, 0), (1, 1, 3)]",
+      "involved_edges": [],
+      "involved_nodes": [
+        "mineralized corridor"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "cool cavern",
+            "mineralized corridor"
+          ],
+          "llm_dir": "northwest",
+          "in_gt": true,
+          "gt_dir": "northwest",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 4
+        },
+        {
+          "edge": [
+            "mineralized corridor",
+            "tight fit"
+          ],
+          "llm_dir": "up",
+          "in_gt": true,
+          "gt_dir": "up",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 7
+        },
+        {
+          "edge": [
+            "mineralized corridor",
+            "narrow passage"
+          ],
+          "llm_dir": "west",
+          "in_gt": true,
+          "gt_dir": "west",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 40
+        }
+      ],
+      "case_counts": {
+        "correct": 3
+      },
+      "root_cause": "naming_collision_on_correct_subgraph"
+    },
+    {
+      "type": "naming",
+      "description": "node 'tight fit' reachable at conflicting positions [(-3, 3, 8), (-1, 2, 6), (1, 1, 1), (1, 1, 4), (3, 0, -1)]",
+      "involved_edges": [],
+      "involved_nodes": [
+        "tight fit"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "mineralized corridor",
+            "tight fit"
+          ],
+          "llm_dir": "up",
+          "in_gt": true,
+          "gt_dir": "up",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 7
+        },
+        {
+          "edge": [
+            "tight fit",
+            "fifth layer dropoff"
+          ],
+          "llm_dir": "up",
+          "in_gt": true,
+          "gt_dir": "up",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 8
+        }
+      ],
+      "case_counts": {
+        "correct": 2
+      },
+      "root_cause": "naming_collision_on_correct_subgraph"
+    },
+    {
+      "type": "naming",
+      "description": "node 'narrow passage' reachable at conflicting positions [(-4, 3, 7), (-2, 2, 5), (0, 1, 0), (0, 1, 1), (0, 1, 2), (0, 1, 3)]",
+      "involved_edges": [],
+      "involved_nodes": [
+        "narrow passage"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "mineralized corridor",
+            "narrow passage"
+          ],
+          "llm_dir": "west",
+          "in_gt": true,
+          "gt_dir": "west",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 40
+        },
+        {
+          "edge": [
+            "narrow passage",
+            "gaseous geyser"
+          ],
+          "llm_dir": "west",
+          "in_gt": true,
+          "gt_dir": "west",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 41
+        }
+      ],
+      "case_counts": {
+        "correct": 2
+      },
+      "root_cause": "naming_collision_on_correct_subgraph"
+    },
+    {
+      "type": "naming",
+      "description": "node 'gaseous geyser' reachable at conflicting positions [(-5, 3, 7), (-3, 2, 5), (-1, 1, 0), (-1, 1, 1), (-1, 1, 2), (-1, 1, 3)]",
+      "involved_edges": [],
+      "involved_nodes": [
+        "gaseous geyser"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "narrow passage",
+            "gaseous geyser"
+          ],
+          "llm_dir": "west",
+          "in_gt": true,
+          "gt_dir": "west",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 41
+        },
+        {
+          "edge": [
+            "gaseous geyser",
+            "shaft base"
+          ],
+          "llm_dir": "up",
+          "in_gt": false,
+          "gt_dir": "down",
+          "case": "swapped_src_dst",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 44
+        },
+        {
+          "edge": [
+            "gaseous geyser",
+            "quarry"
+          ],
+          "llm_dir": "west",
+          "in_gt": true,
+          "gt_dir": "west",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 66
+        }
+      ],
+      "case_counts": {
+        "correct": 2,
+        "swapped_src_dst": 1
+      },
+      "root_cause": "naming_mixed"
+    },
+    {
+      "type": "naming",
+      "description": "node 'shaft base' reachable at conflicting positions [(-1, 1, 1), (-1, 1, 2), (-1, 1, 3), (-1, 1, 4)]",
+      "involved_edges": [],
+      "involved_nodes": [
+        "shaft base"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "gaseous geyser",
+            "shaft base"
+          ],
+          "llm_dir": "up",
+          "in_gt": false,
+          "gt_dir": "down",
+          "case": "swapped_src_dst",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 44
+        },
+        {
+          "edge": [
+            "middle shaft",
+            "shaft base"
+          ],
+          "llm_dir": "down",
+          "in_gt": true,
+          "gt_dir": "down",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 55
+        },
+        {
+          "edge": [
+            "shaft base",
+            "top of the shaft"
+          ],
+          "llm_dir": "up",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 45
+        }
+      ],
+      "case_counts": {
+        "swapped_src_dst": 1,
+        "correct": 1,
+        "hallucinated_edge": 1
+      },
+      "root_cause": "real_name_corrupted_by_neighbour_error"
+    },
+    {
+      "type": "naming",
+      "description": "node 'quarry' reachable at conflicting positions [(-2, 1, 0), (-2, 1, 1), (-2, 1, 2), (-2, 1, 3)]",
+      "involved_edges": [],
+      "involved_nodes": [
+        "quarry"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "gaseous geyser",
+            "quarry"
+          ],
+          "llm_dir": "west",
+          "in_gt": true,
+          "gt_dir": "west",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 66
+        }
+      ],
+      "case_counts": {
+        "correct": 1
+      },
+      "root_cause": "naming_collision_on_correct_subgraph"
+    },
+    {
+      "type": "naming",
+      "description": "node 'top of the shaft' reachable at conflicting positions [(-1, 1, 2), (-1, 1, 3), (-1, 1, 4), (-1, 1, 5), (-1, 1, 6)]",
+      "involved_edges": [],
+      "involved_nodes": [
+        "top of the shaft"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "shaft base",
+            "top of the shaft"
+          ],
+          "llm_dir": "up",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 45
+        },
+        {
+          "edge": [
+            "top of the shaft",
+            "on the ledge"
+          ],
+          "llm_dir": "east",
+          "in_gt": true,
+          "gt_dir": "east",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 46
+        },
+        {
+          "edge": [
+            "top of the shaft",
+            "middle shaft"
+          ],
+          "llm_dir": "down",
+          "in_gt": true,
+          "gt_dir": "down",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 54
+        }
+      ],
+      "case_counts": {
+        "hallucinated_edge": 1,
+        "correct": 2
+      },
+      "root_cause": "real_name_corrupted_by_neighbour_error"
+    },
+    {
+      "type": "naming",
+      "description": "node 'middle shaft' reachable at conflicting positions [(-1, 1, 1), (-1, 1, 2), (-1, 1, 3), (-1, 1, 4), (-1, 1, 5)]",
+      "involved_edges": [],
+      "involved_nodes": [
+        "middle shaft"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "top of the shaft",
+            "middle shaft"
+          ],
+          "llm_dir": "down",
+          "in_gt": true,
+          "gt_dir": "down",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 54
+        },
+        {
+          "edge": [
+            "middle shaft",
+            "shaft base"
+          ],
+          "llm_dir": "down",
+          "in_gt": true,
+          "gt_dir": "down",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 55
+        }
+      ],
+      "case_counts": {
+        "correct": 2
+      },
+      "root_cause": "naming_collision_on_correct_subgraph"
+    },
+    {
+      "type": "naming",
+      "description": "node 'on the ledge' reachable at conflicting positions [(0, 1, 2), (0, 1, 3), (0, 1, 4), (0, 1, 5)]",
+      "involved_edges": [],
+      "involved_nodes": [
+        "on the ledge"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "top of the shaft",
+            "on the ledge"
+          ],
+          "llm_dir": "east",
+          "in_gt": true,
+          "gt_dir": "east",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 46
+        }
+      ],
+      "case_counts": {
+        "correct": 1
+      },
+      "root_cause": "naming_collision_on_correct_subgraph"
+    }
+  ],
+  "walkthrough_steps_available": 71
+}

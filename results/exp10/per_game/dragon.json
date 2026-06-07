@@ -1,0 +1,3162 @@
+{
+  "game": "dragon",
+  "num_llm_edges": 24,
+  "num_gt_edges": 42,
+  "num_conflicts": 45,
+  "type_distribution": {
+    "direction": 2,
+    "topology": 22,
+    "naming": 21
+  },
+  "root_cause_distribution": {
+    "real_vs_hallucinated": 2,
+    "false_positive_overlap": 7,
+    "overlap_mixed": 15,
+    "naming_collision_on_correct_subgraph": 16,
+    "real_name_corrupted_by_neighbour_error": 5
+  },
+  "conflicts": [
+    {
+      "type": "direction",
+      "description": "node 'north end of a road' has multiple outgoing edges labelled 'south'",
+      "involved_edges": [
+        [
+          "north end of a road",
+          "south end of a road"
+        ],
+        [
+          "north end of a road",
+          "wasteland by a castle"
+        ]
+      ],
+      "involved_nodes": [
+        "north end of a road",
+        "south end of a road",
+        "wasteland by a castle"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "north end of a road",
+            "south end of a road"
+          ],
+          "llm_dir": "south",
+          "in_gt": true,
+          "gt_dir": "south",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 13
+        },
+        {
+          "edge": [
+            "north end of a road",
+            "wasteland by a castle"
+          ],
+          "llm_dir": "south",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": null
+        }
+      ],
+      "case_counts": {
+        "correct": 1,
+        "hallucinated_edge": 1
+      },
+      "root_cause": "real_vs_hallucinated"
+    },
+    {
+      "type": "direction",
+      "description": "node 'wasteland by a castle' has multiple outgoing edges labelled 'north'",
+      "involved_edges": [
+        [
+          "wasteland by a castle",
+          "castle forge"
+        ],
+        [
+          "wasteland by a castle",
+          "north end of a road"
+        ]
+      ],
+      "involved_nodes": [
+        "wasteland by a castle",
+        "castle forge",
+        "north end of a road"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "wasteland by a castle",
+            "castle forge"
+          ],
+          "llm_dir": "north",
+          "in_gt": true,
+          "gt_dir": "north",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 15
+        },
+        {
+          "edge": [
+            "wasteland by a castle",
+            "north end of a road"
+          ],
+          "llm_dir": "north",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 53
+        }
+      ],
+      "case_counts": {
+        "correct": 1,
+        "hallucinated_edge": 1
+      },
+      "root_cause": "real_vs_hallucinated"
+    },
+    {
+      "type": "topology",
+      "description": "position (0, 0, 0) occupied by multiple rooms ['abandoned inn', 'swampy ground']",
+      "involved_edges": [],
+      "involved_nodes": [
+        "abandoned inn",
+        "swampy ground"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "rocky mountains",
+            "abandoned inn"
+          ],
+          "llm_dir": "south",
+          "in_gt": true,
+          "gt_dir": "south",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 1
+        },
+        {
+          "edge": [
+            "abandoned inn",
+            "inside the inn"
+          ],
+          "llm_dir": "east",
+          "in_gt": true,
+          "gt_dir": "east",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 2
+        },
+        {
+          "edge": [
+            "abandoned inn",
+            "swampy ground"
+          ],
+          "llm_dir": "west",
+          "in_gt": true,
+          "gt_dir": "west",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 9
+        },
+        {
+          "edge": [
+            "swampy ground",
+            "north end of a road"
+          ],
+          "llm_dir": "west",
+          "in_gt": true,
+          "gt_dir": "west",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 12
+        },
+        {
+          "edge": [
+            "swampy ground",
+            "cave entrance"
+          ],
+          "llm_dir": "south",
+          "in_gt": true,
+          "gt_dir": "south",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 21
+        }
+      ],
+      "case_counts": {
+        "correct": 5
+      },
+      "root_cause": "false_positive_overlap"
+    },
+    {
+      "type": "topology",
+      "description": "position (-3, -3, -1) occupied by multiple rooms ['abandoned inn', 'castle forge', 'north end of a road', 'swampy ground']",
+      "involved_edges": [],
+      "involved_nodes": [
+        "abandoned inn",
+        "castle forge",
+        "north end of a road",
+        "swampy ground"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "rocky mountains",
+            "abandoned inn"
+          ],
+          "llm_dir": "south",
+          "in_gt": true,
+          "gt_dir": "south",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 1
+        },
+        {
+          "edge": [
+            "abandoned inn",
+            "inside the inn"
+          ],
+          "llm_dir": "east",
+          "in_gt": true,
+          "gt_dir": "east",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 2
+        },
+        {
+          "edge": [
+            "abandoned inn",
+            "swampy ground"
+          ],
+          "llm_dir": "west",
+          "in_gt": true,
+          "gt_dir": "west",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 9
+        },
+        {
+          "edge": [
+            "wasteland by a castle",
+            "castle forge"
+          ],
+          "llm_dir": "north",
+          "in_gt": true,
+          "gt_dir": "north",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 15
+        },
+        {
+          "edge": [
+            "castle forge",
+            "forbidding castle"
+          ],
+          "llm_dir": "north",
+          "in_gt": true,
+          "gt_dir": "north",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 39
+        },
+        {
+          "edge": [
+            "swampy ground",
+            "north end of a road"
+          ],
+          "llm_dir": "west",
+          "in_gt": true,
+          "gt_dir": "west",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 12
+        },
+        {
+          "edge": [
+            "wasteland by a castle",
+            "north end of a road"
+          ],
+          "llm_dir": "north",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 53
+        },
+        {
+          "edge": [
+            "north end of a road",
+            "south end of a road"
+          ],
+          "llm_dir": "south",
+          "in_gt": true,
+          "gt_dir": "south",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 13
+        },
+        {
+          "edge": [
+            "swampy ground",
+            "cave entrance"
+          ],
+          "llm_dir": "south",
+          "in_gt": true,
+          "gt_dir": "south",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 21
+        }
+      ],
+      "case_counts": {
+        "correct": 8,
+        "hallucinated_edge": 1
+      },
+      "root_cause": "overlap_mixed"
+    },
+    {
+      "type": "topology",
+      "description": "position (-1, -3, -1) occupied by multiple rooms ['abandoned inn', 'inside the inn']",
+      "involved_edges": [],
+      "involved_nodes": [
+        "abandoned inn",
+        "inside the inn"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "rocky mountains",
+            "abandoned inn"
+          ],
+          "llm_dir": "south",
+          "in_gt": true,
+          "gt_dir": "south",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 1
+        },
+        {
+          "edge": [
+            "abandoned inn",
+            "inside the inn"
+          ],
+          "llm_dir": "east",
+          "in_gt": true,
+          "gt_dir": "east",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 2
+        },
+        {
+          "edge": [
+            "abandoned inn",
+            "swampy ground"
+          ],
+          "llm_dir": "west",
+          "in_gt": true,
+          "gt_dir": "west",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 9
+        },
+        {
+          "edge": [
+            "inside the inn",
+            "inn cellar"
+          ],
+          "llm_dir": "down",
+          "in_gt": true,
+          "gt_dir": "down",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 3
+        }
+      ],
+      "case_counts": {
+        "correct": 4
+      },
+      "root_cause": "false_positive_overlap"
+    },
+    {
+      "type": "topology",
+      "description": "position (-2, -3, -1) occupied by multiple rooms ['abandoned inn', 'inside the inn', 'north end of a road', 'swampy ground']",
+      "involved_edges": [],
+      "involved_nodes": [
+        "abandoned inn",
+        "inside the inn",
+        "north end of a road",
+        "swampy ground"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "rocky mountains",
+            "abandoned inn"
+          ],
+          "llm_dir": "south",
+          "in_gt": true,
+          "gt_dir": "south",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 1
+        },
+        {
+          "edge": [
+            "abandoned inn",
+            "inside the inn"
+          ],
+          "llm_dir": "east",
+          "in_gt": true,
+          "gt_dir": "east",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 2
+        },
+        {
+          "edge": [
+            "abandoned inn",
+            "swampy ground"
+          ],
+          "llm_dir": "west",
+          "in_gt": true,
+          "gt_dir": "west",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 9
+        },
+        {
+          "edge": [
+            "inside the inn",
+            "inn cellar"
+          ],
+          "llm_dir": "down",
+          "in_gt": true,
+          "gt_dir": "down",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 3
+        },
+        {
+          "edge": [
+            "swampy ground",
+            "north end of a road"
+          ],
+          "llm_dir": "west",
+          "in_gt": true,
+          "gt_dir": "west",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 12
+        },
+        {
+          "edge": [
+            "wasteland by a castle",
+            "north end of a road"
+          ],
+          "llm_dir": "north",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 53
+        },
+        {
+          "edge": [
+            "north end of a road",
+            "south end of a road"
+          ],
+          "llm_dir": "south",
+          "in_gt": true,
+          "gt_dir": "south",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 13
+        },
+        {
+          "edge": [
+            "swampy ground",
+            "cave entrance"
+          ],
+          "llm_dir": "south",
+          "in_gt": true,
+          "gt_dir": "south",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 21
+        }
+      ],
+      "case_counts": {
+        "correct": 7,
+        "hallucinated_edge": 1
+      },
+      "root_cause": "overlap_mixed"
+    },
+    {
+      "type": "topology",
+      "description": "position (-3, -2, -1) occupied by multiple rooms ['forbidding castle', 'rocky mountains']",
+      "involved_edges": [],
+      "involved_nodes": [
+        "forbidding castle",
+        "rocky mountains"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "castle forge",
+            "forbidding castle"
+          ],
+          "llm_dir": "north",
+          "in_gt": true,
+          "gt_dir": "north",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 39
+        },
+        {
+          "edge": [
+            "forbidding castle",
+            "castle hallway"
+          ],
+          "llm_dir": "north",
+          "in_gt": true,
+          "gt_dir": "north",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 43
+        },
+        {
+          "edge": [
+            "rocky mountains",
+            "abandoned inn"
+          ],
+          "llm_dir": "south",
+          "in_gt": true,
+          "gt_dir": "south",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 1
+        }
+      ],
+      "case_counts": {
+        "correct": 3
+      },
+      "root_cause": "false_positive_overlap"
+    },
+    {
+      "type": "topology",
+      "description": "position (-1, 0, 0) occupied by multiple rooms ['north end of a road', 'swampy ground']",
+      "involved_edges": [],
+      "involved_nodes": [
+        "north end of a road",
+        "swampy ground"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "swampy ground",
+            "north end of a road"
+          ],
+          "llm_dir": "west",
+          "in_gt": true,
+          "gt_dir": "west",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 12
+        },
+        {
+          "edge": [
+            "wasteland by a castle",
+            "north end of a road"
+          ],
+          "llm_dir": "north",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 53
+        },
+        {
+          "edge": [
+            "north end of a road",
+            "south end of a road"
+          ],
+          "llm_dir": "south",
+          "in_gt": true,
+          "gt_dir": "south",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 13
+        },
+        {
+          "edge": [
+            "abandoned inn",
+            "swampy ground"
+          ],
+          "llm_dir": "west",
+          "in_gt": true,
+          "gt_dir": "west",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 9
+        },
+        {
+          "edge": [
+            "swampy ground",
+            "cave entrance"
+          ],
+          "llm_dir": "south",
+          "in_gt": true,
+          "gt_dir": "south",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 21
+        }
+      ],
+      "case_counts": {
+        "correct": 4,
+        "hallucinated_edge": 1
+      },
+      "root_cause": "overlap_mixed"
+    },
+    {
+      "type": "topology",
+      "description": "position (-4, -3, -1) occupied by multiple rooms ['castle forge', 'north end of a road', 'swampy ground']",
+      "involved_edges": [],
+      "involved_nodes": [
+        "castle forge",
+        "north end of a road",
+        "swampy ground"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "wasteland by a castle",
+            "castle forge"
+          ],
+          "llm_dir": "north",
+          "in_gt": true,
+          "gt_dir": "north",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 15
+        },
+        {
+          "edge": [
+            "castle forge",
+            "forbidding castle"
+          ],
+          "llm_dir": "north",
+          "in_gt": true,
+          "gt_dir": "north",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 39
+        },
+        {
+          "edge": [
+            "swampy ground",
+            "north end of a road"
+          ],
+          "llm_dir": "west",
+          "in_gt": true,
+          "gt_dir": "west",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 12
+        },
+        {
+          "edge": [
+            "wasteland by a castle",
+            "north end of a road"
+          ],
+          "llm_dir": "north",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 53
+        },
+        {
+          "edge": [
+            "north end of a road",
+            "south end of a road"
+          ],
+          "llm_dir": "south",
+          "in_gt": true,
+          "gt_dir": "south",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 13
+        },
+        {
+          "edge": [
+            "abandoned inn",
+            "swampy ground"
+          ],
+          "llm_dir": "west",
+          "in_gt": true,
+          "gt_dir": "west",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 9
+        },
+        {
+          "edge": [
+            "swampy ground",
+            "cave entrance"
+          ],
+          "llm_dir": "south",
+          "in_gt": true,
+          "gt_dir": "south",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 21
+        }
+      ],
+      "case_counts": {
+        "correct": 6,
+        "hallucinated_edge": 1
+      },
+      "root_cause": "overlap_mixed"
+    },
+    {
+      "type": "topology",
+      "description": "position (-2, 0, 0) occupied by multiple rooms ['castle forge', 'north end of a road']",
+      "involved_edges": [],
+      "involved_nodes": [
+        "castle forge",
+        "north end of a road"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "wasteland by a castle",
+            "castle forge"
+          ],
+          "llm_dir": "north",
+          "in_gt": true,
+          "gt_dir": "north",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 15
+        },
+        {
+          "edge": [
+            "castle forge",
+            "forbidding castle"
+          ],
+          "llm_dir": "north",
+          "in_gt": true,
+          "gt_dir": "north",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 39
+        },
+        {
+          "edge": [
+            "swampy ground",
+            "north end of a road"
+          ],
+          "llm_dir": "west",
+          "in_gt": true,
+          "gt_dir": "west",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 12
+        },
+        {
+          "edge": [
+            "wasteland by a castle",
+            "north end of a road"
+          ],
+          "llm_dir": "north",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 53
+        },
+        {
+          "edge": [
+            "north end of a road",
+            "south end of a road"
+          ],
+          "llm_dir": "south",
+          "in_gt": true,
+          "gt_dir": "south",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 13
+        }
+      ],
+      "case_counts": {
+        "correct": 4,
+        "hallucinated_edge": 1
+      },
+      "root_cause": "overlap_mixed"
+    },
+    {
+      "type": "topology",
+      "description": "position (-5, -3, -1) occupied by multiple rooms ['castle forge', 'north end of a road']",
+      "involved_edges": [],
+      "involved_nodes": [
+        "castle forge",
+        "north end of a road"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "wasteland by a castle",
+            "castle forge"
+          ],
+          "llm_dir": "north",
+          "in_gt": true,
+          "gt_dir": "north",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 15
+        },
+        {
+          "edge": [
+            "castle forge",
+            "forbidding castle"
+          ],
+          "llm_dir": "north",
+          "in_gt": true,
+          "gt_dir": "north",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 39
+        },
+        {
+          "edge": [
+            "swampy ground",
+            "north end of a road"
+          ],
+          "llm_dir": "west",
+          "in_gt": true,
+          "gt_dir": "west",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 12
+        },
+        {
+          "edge": [
+            "wasteland by a castle",
+            "north end of a road"
+          ],
+          "llm_dir": "north",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 53
+        },
+        {
+          "edge": [
+            "north end of a road",
+            "south end of a road"
+          ],
+          "llm_dir": "south",
+          "in_gt": true,
+          "gt_dir": "south",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 13
+        }
+      ],
+      "case_counts": {
+        "correct": 4,
+        "hallucinated_edge": 1
+      },
+      "root_cause": "overlap_mixed"
+    },
+    {
+      "type": "topology",
+      "description": "position (-3, -4, -1) occupied by multiple rooms ['cave entrance', 'south end of a road', 'wasteland by a castle']",
+      "involved_edges": [],
+      "involved_nodes": [
+        "cave entrance",
+        "south end of a road",
+        "wasteland by a castle"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "swampy ground",
+            "cave entrance"
+          ],
+          "llm_dir": "south",
+          "in_gt": true,
+          "gt_dir": "south",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 21
+        },
+        {
+          "edge": [
+            "cave entrance",
+            "cottage"
+          ],
+          "llm_dir": "south",
+          "in_gt": true,
+          "gt_dir": "south",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 22
+        },
+        {
+          "edge": [
+            "north end of a road",
+            "south end of a road"
+          ],
+          "llm_dir": "south",
+          "in_gt": true,
+          "gt_dir": "south",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 13
+        },
+        {
+          "edge": [
+            "south end of a road",
+            "wasteland by a castle"
+          ],
+          "llm_dir": "west",
+          "in_gt": true,
+          "gt_dir": "west",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 14
+        },
+        {
+          "edge": [
+            "south end of a road",
+            "lake in the forest"
+          ],
+          "llm_dir": "south",
+          "in_gt": true,
+          "gt_dir": "south",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 58
+        },
+        {
+          "edge": [
+            "pebbled beach",
+            "wasteland by a castle"
+          ],
+          "llm_dir": "north",
+          "in_gt": true,
+          "gt_dir": "north",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 37
+        },
+        {
+          "edge": [
+            "top of a tower",
+            "wasteland by a castle"
+          ],
+          "llm_dir": "east",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 51
+        },
+        {
+          "edge": [
+            "wasteland by a castle",
+            "castle forge"
+          ],
+          "llm_dir": "north",
+          "in_gt": true,
+          "gt_dir": "north",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 15
+        },
+        {
+          "edge": [
+            "wasteland by a castle",
+            "north end of a road"
+          ],
+          "llm_dir": "north",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 53
+        }
+      ],
+      "case_counts": {
+        "correct": 7,
+        "hallucinated_edge": 2
+      },
+      "root_cause": "overlap_mixed"
+    },
+    {
+      "type": "topology",
+      "description": "position (-1, -1, 0) occupied by multiple rooms ['cave entrance', 'south end of a road', 'wasteland by a castle']",
+      "involved_edges": [],
+      "involved_nodes": [
+        "cave entrance",
+        "south end of a road",
+        "wasteland by a castle"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "swampy ground",
+            "cave entrance"
+          ],
+          "llm_dir": "south",
+          "in_gt": true,
+          "gt_dir": "south",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 21
+        },
+        {
+          "edge": [
+            "cave entrance",
+            "cottage"
+          ],
+          "llm_dir": "south",
+          "in_gt": true,
+          "gt_dir": "south",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 22
+        },
+        {
+          "edge": [
+            "north end of a road",
+            "south end of a road"
+          ],
+          "llm_dir": "south",
+          "in_gt": true,
+          "gt_dir": "south",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 13
+        },
+        {
+          "edge": [
+            "south end of a road",
+            "wasteland by a castle"
+          ],
+          "llm_dir": "west",
+          "in_gt": true,
+          "gt_dir": "west",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 14
+        },
+        {
+          "edge": [
+            "south end of a road",
+            "lake in the forest"
+          ],
+          "llm_dir": "south",
+          "in_gt": true,
+          "gt_dir": "south",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 58
+        },
+        {
+          "edge": [
+            "pebbled beach",
+            "wasteland by a castle"
+          ],
+          "llm_dir": "north",
+          "in_gt": true,
+          "gt_dir": "north",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 37
+        },
+        {
+          "edge": [
+            "top of a tower",
+            "wasteland by a castle"
+          ],
+          "llm_dir": "east",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 51
+        },
+        {
+          "edge": [
+            "wasteland by a castle",
+            "castle forge"
+          ],
+          "llm_dir": "north",
+          "in_gt": true,
+          "gt_dir": "north",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 15
+        },
+        {
+          "edge": [
+            "wasteland by a castle",
+            "north end of a road"
+          ],
+          "llm_dir": "north",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 53
+        }
+      ],
+      "case_counts": {
+        "correct": 7,
+        "hallucinated_edge": 2
+      },
+      "root_cause": "overlap_mixed"
+    },
+    {
+      "type": "topology",
+      "description": "position (-2, -4, -1) occupied by multiple rooms ['cave entrance', 'south end of a road']",
+      "involved_edges": [],
+      "involved_nodes": [
+        "cave entrance",
+        "south end of a road"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "swampy ground",
+            "cave entrance"
+          ],
+          "llm_dir": "south",
+          "in_gt": true,
+          "gt_dir": "south",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 21
+        },
+        {
+          "edge": [
+            "cave entrance",
+            "cottage"
+          ],
+          "llm_dir": "south",
+          "in_gt": true,
+          "gt_dir": "south",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 22
+        },
+        {
+          "edge": [
+            "north end of a road",
+            "south end of a road"
+          ],
+          "llm_dir": "south",
+          "in_gt": true,
+          "gt_dir": "south",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 13
+        },
+        {
+          "edge": [
+            "south end of a road",
+            "wasteland by a castle"
+          ],
+          "llm_dir": "west",
+          "in_gt": true,
+          "gt_dir": "west",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 14
+        },
+        {
+          "edge": [
+            "south end of a road",
+            "lake in the forest"
+          ],
+          "llm_dir": "south",
+          "in_gt": true,
+          "gt_dir": "south",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 58
+        }
+      ],
+      "case_counts": {
+        "correct": 5
+      },
+      "root_cause": "false_positive_overlap"
+    },
+    {
+      "type": "topology",
+      "description": "position (-4, -4, -1) occupied by multiple rooms ['cave entrance', 'south end of a road', 'top of a tower', 'wasteland by a castle']",
+      "involved_edges": [],
+      "involved_nodes": [
+        "cave entrance",
+        "south end of a road",
+        "top of a tower",
+        "wasteland by a castle"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "swampy ground",
+            "cave entrance"
+          ],
+          "llm_dir": "south",
+          "in_gt": true,
+          "gt_dir": "south",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 21
+        },
+        {
+          "edge": [
+            "cave entrance",
+            "cottage"
+          ],
+          "llm_dir": "south",
+          "in_gt": true,
+          "gt_dir": "south",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 22
+        },
+        {
+          "edge": [
+            "north end of a road",
+            "south end of a road"
+          ],
+          "llm_dir": "south",
+          "in_gt": true,
+          "gt_dir": "south",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 13
+        },
+        {
+          "edge": [
+            "south end of a road",
+            "wasteland by a castle"
+          ],
+          "llm_dir": "west",
+          "in_gt": true,
+          "gt_dir": "west",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 14
+        },
+        {
+          "edge": [
+            "south end of a road",
+            "lake in the forest"
+          ],
+          "llm_dir": "south",
+          "in_gt": true,
+          "gt_dir": "south",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 58
+        },
+        {
+          "edge": [
+            "castle hallway",
+            "top of a tower"
+          ],
+          "llm_dir": "up",
+          "in_gt": true,
+          "gt_dir": "up",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 44
+        },
+        {
+          "edge": [
+            "top of a tower",
+            "wasteland by a castle"
+          ],
+          "llm_dir": "east",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 51
+        },
+        {
+          "edge": [
+            "pebbled beach",
+            "wasteland by a castle"
+          ],
+          "llm_dir": "north",
+          "in_gt": true,
+          "gt_dir": "north",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 37
+        },
+        {
+          "edge": [
+            "wasteland by a castle",
+            "castle forge"
+          ],
+          "llm_dir": "north",
+          "in_gt": true,
+          "gt_dir": "north",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 15
+        },
+        {
+          "edge": [
+            "wasteland by a castle",
+            "north end of a road"
+          ],
+          "llm_dir": "north",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 53
+        }
+      ],
+      "case_counts": {
+        "correct": 8,
+        "hallucinated_edge": 2
+      },
+      "root_cause": "overlap_mixed"
+    },
+    {
+      "type": "topology",
+      "description": "position (-2, -5, -1) occupied by multiple rooms ['cottage', 'inside a cottage', 'lake in the forest']",
+      "involved_edges": [],
+      "involved_nodes": [
+        "cottage",
+        "inside a cottage",
+        "lake in the forest"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "cave entrance",
+            "cottage"
+          ],
+          "llm_dir": "south",
+          "in_gt": true,
+          "gt_dir": "south",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 22
+        },
+        {
+          "edge": [
+            "cottage",
+            "inside a cottage"
+          ],
+          "llm_dir": "east",
+          "in_gt": true,
+          "gt_dir": "east",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 23
+        },
+        {
+          "edge": [
+            "inside a cottage",
+            "forest pathway"
+          ],
+          "llm_dir": "south",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 27
+        },
+        {
+          "edge": [
+            "tree stump",
+            "lake in the forest"
+          ],
+          "llm_dir": "north",
+          "in_gt": true,
+          "gt_dir": "north",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 29
+        },
+        {
+          "edge": [
+            "south end of a road",
+            "lake in the forest"
+          ],
+          "llm_dir": "south",
+          "in_gt": true,
+          "gt_dir": "south",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 58
+        },
+        {
+          "edge": [
+            "lake in the forest",
+            "pebbled beach"
+          ],
+          "llm_dir": "west",
+          "in_gt": true,
+          "gt_dir": "west",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 30
+        }
+      ],
+      "case_counts": {
+        "correct": 5,
+        "hallucinated_edge": 1
+      },
+      "root_cause": "overlap_mixed"
+    },
+    {
+      "type": "topology",
+      "description": "position (-1, -2, 0) occupied by multiple rooms ['cottage', 'lake in the forest']",
+      "involved_edges": [],
+      "involved_nodes": [
+        "cottage",
+        "lake in the forest"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "cave entrance",
+            "cottage"
+          ],
+          "llm_dir": "south",
+          "in_gt": true,
+          "gt_dir": "south",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 22
+        },
+        {
+          "edge": [
+            "cottage",
+            "inside a cottage"
+          ],
+          "llm_dir": "east",
+          "in_gt": true,
+          "gt_dir": "east",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 23
+        },
+        {
+          "edge": [
+            "tree stump",
+            "lake in the forest"
+          ],
+          "llm_dir": "north",
+          "in_gt": true,
+          "gt_dir": "north",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 29
+        },
+        {
+          "edge": [
+            "south end of a road",
+            "lake in the forest"
+          ],
+          "llm_dir": "south",
+          "in_gt": true,
+          "gt_dir": "south",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 58
+        },
+        {
+          "edge": [
+            "lake in the forest",
+            "pebbled beach"
+          ],
+          "llm_dir": "west",
+          "in_gt": true,
+          "gt_dir": "west",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 30
+        }
+      ],
+      "case_counts": {
+        "correct": 5
+      },
+      "root_cause": "false_positive_overlap"
+    },
+    {
+      "type": "topology",
+      "description": "position (-4, -5, -1) occupied by multiple rooms ['cottage', 'lake in the forest', 'pebbled beach']",
+      "involved_edges": [],
+      "involved_nodes": [
+        "cottage",
+        "lake in the forest",
+        "pebbled beach"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "cave entrance",
+            "cottage"
+          ],
+          "llm_dir": "south",
+          "in_gt": true,
+          "gt_dir": "south",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 22
+        },
+        {
+          "edge": [
+            "cottage",
+            "inside a cottage"
+          ],
+          "llm_dir": "east",
+          "in_gt": true,
+          "gt_dir": "east",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 23
+        },
+        {
+          "edge": [
+            "tree stump",
+            "lake in the forest"
+          ],
+          "llm_dir": "north",
+          "in_gt": true,
+          "gt_dir": "north",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 29
+        },
+        {
+          "edge": [
+            "south end of a road",
+            "lake in the forest"
+          ],
+          "llm_dir": "south",
+          "in_gt": true,
+          "gt_dir": "south",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 58
+        },
+        {
+          "edge": [
+            "lake in the forest",
+            "pebbled beach"
+          ],
+          "llm_dir": "west",
+          "in_gt": true,
+          "gt_dir": "west",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 30
+        },
+        {
+          "edge": [
+            "pebbled beach",
+            "beside a ruined lighthouse"
+          ],
+          "llm_dir": "south",
+          "in_gt": true,
+          "gt_dir": "south",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 31
+        },
+        {
+          "edge": [
+            "pebbled beach",
+            "wasteland by a castle"
+          ],
+          "llm_dir": "north",
+          "in_gt": true,
+          "gt_dir": "north",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 37
+        }
+      ],
+      "case_counts": {
+        "correct": 7
+      },
+      "root_cause": "false_positive_overlap"
+    },
+    {
+      "type": "topology",
+      "description": "position (-3, -5, -1) occupied by multiple rooms ['cottage', 'inside a cottage', 'lake in the forest', 'pebbled beach']",
+      "involved_edges": [],
+      "involved_nodes": [
+        "cottage",
+        "inside a cottage",
+        "lake in the forest",
+        "pebbled beach"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "cave entrance",
+            "cottage"
+          ],
+          "llm_dir": "south",
+          "in_gt": true,
+          "gt_dir": "south",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 22
+        },
+        {
+          "edge": [
+            "cottage",
+            "inside a cottage"
+          ],
+          "llm_dir": "east",
+          "in_gt": true,
+          "gt_dir": "east",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 23
+        },
+        {
+          "edge": [
+            "inside a cottage",
+            "forest pathway"
+          ],
+          "llm_dir": "south",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 27
+        },
+        {
+          "edge": [
+            "tree stump",
+            "lake in the forest"
+          ],
+          "llm_dir": "north",
+          "in_gt": true,
+          "gt_dir": "north",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 29
+        },
+        {
+          "edge": [
+            "south end of a road",
+            "lake in the forest"
+          ],
+          "llm_dir": "south",
+          "in_gt": true,
+          "gt_dir": "south",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 58
+        },
+        {
+          "edge": [
+            "lake in the forest",
+            "pebbled beach"
+          ],
+          "llm_dir": "west",
+          "in_gt": true,
+          "gt_dir": "west",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 30
+        },
+        {
+          "edge": [
+            "pebbled beach",
+            "beside a ruined lighthouse"
+          ],
+          "llm_dir": "south",
+          "in_gt": true,
+          "gt_dir": "south",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 31
+        },
+        {
+          "edge": [
+            "pebbled beach",
+            "wasteland by a castle"
+          ],
+          "llm_dir": "north",
+          "in_gt": true,
+          "gt_dir": "north",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 37
+        }
+      ],
+      "case_counts": {
+        "correct": 7,
+        "hallucinated_edge": 1
+      },
+      "root_cause": "overlap_mixed"
+    },
+    {
+      "type": "topology",
+      "description": "position (-3, -6, -1) occupied by multiple rooms ['beside a ruined lighthouse', 'forest pathway', 'tree stump']",
+      "involved_edges": [],
+      "involved_nodes": [
+        "beside a ruined lighthouse",
+        "forest pathway",
+        "tree stump"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "pebbled beach",
+            "beside a ruined lighthouse"
+          ],
+          "llm_dir": "south",
+          "in_gt": true,
+          "gt_dir": "south",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 31
+        },
+        {
+          "edge": [
+            "beside a ruined lighthouse",
+            "inside the lighthouse ruins"
+          ],
+          "llm_dir": "south",
+          "in_gt": true,
+          "gt_dir": "south",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 32
+        },
+        {
+          "edge": [
+            "inside a cottage",
+            "forest pathway"
+          ],
+          "llm_dir": "south",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 27
+        },
+        {
+          "edge": [
+            "forest pathway",
+            "tree stump"
+          ],
+          "llm_dir": "west",
+          "in_gt": true,
+          "gt_dir": "west",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 28
+        },
+        {
+          "edge": [
+            "tree stump",
+            "lake in the forest"
+          ],
+          "llm_dir": "north",
+          "in_gt": true,
+          "gt_dir": "north",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 29
+        }
+      ],
+      "case_counts": {
+        "correct": 4,
+        "hallucinated_edge": 1
+      },
+      "root_cause": "overlap_mixed"
+    },
+    {
+      "type": "topology",
+      "description": "position (-2, -6, -1) occupied by multiple rooms ['forest pathway', 'tree stump']",
+      "involved_edges": [],
+      "involved_nodes": [
+        "forest pathway",
+        "tree stump"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "inside a cottage",
+            "forest pathway"
+          ],
+          "llm_dir": "south",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 27
+        },
+        {
+          "edge": [
+            "forest pathway",
+            "tree stump"
+          ],
+          "llm_dir": "west",
+          "in_gt": true,
+          "gt_dir": "west",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 28
+        },
+        {
+          "edge": [
+            "tree stump",
+            "lake in the forest"
+          ],
+          "llm_dir": "north",
+          "in_gt": true,
+          "gt_dir": "north",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 29
+        }
+      ],
+      "case_counts": {
+        "hallucinated_edge": 1,
+        "correct": 2
+      },
+      "root_cause": "overlap_mixed"
+    },
+    {
+      "type": "topology",
+      "description": "position (-4, -6, -1) occupied by multiple rooms ['beside a ruined lighthouse', 'tree stump']",
+      "involved_edges": [],
+      "involved_nodes": [
+        "beside a ruined lighthouse",
+        "tree stump"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "pebbled beach",
+            "beside a ruined lighthouse"
+          ],
+          "llm_dir": "south",
+          "in_gt": true,
+          "gt_dir": "south",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 31
+        },
+        {
+          "edge": [
+            "beside a ruined lighthouse",
+            "inside the lighthouse ruins"
+          ],
+          "llm_dir": "south",
+          "in_gt": true,
+          "gt_dir": "south",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 32
+        },
+        {
+          "edge": [
+            "forest pathway",
+            "tree stump"
+          ],
+          "llm_dir": "west",
+          "in_gt": true,
+          "gt_dir": "west",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 28
+        },
+        {
+          "edge": [
+            "tree stump",
+            "lake in the forest"
+          ],
+          "llm_dir": "north",
+          "in_gt": true,
+          "gt_dir": "north",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 29
+        }
+      ],
+      "case_counts": {
+        "correct": 4
+      },
+      "root_cause": "false_positive_overlap"
+    },
+    {
+      "type": "topology",
+      "description": "position (-2, -1, 0) occupied by multiple rooms ['south end of a road', 'wasteland by a castle']",
+      "involved_edges": [],
+      "involved_nodes": [
+        "south end of a road",
+        "wasteland by a castle"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "north end of a road",
+            "south end of a road"
+          ],
+          "llm_dir": "south",
+          "in_gt": true,
+          "gt_dir": "south",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 13
+        },
+        {
+          "edge": [
+            "south end of a road",
+            "wasteland by a castle"
+          ],
+          "llm_dir": "west",
+          "in_gt": true,
+          "gt_dir": "west",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 14
+        },
+        {
+          "edge": [
+            "south end of a road",
+            "lake in the forest"
+          ],
+          "llm_dir": "south",
+          "in_gt": true,
+          "gt_dir": "south",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 58
+        },
+        {
+          "edge": [
+            "pebbled beach",
+            "wasteland by a castle"
+          ],
+          "llm_dir": "north",
+          "in_gt": true,
+          "gt_dir": "north",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 37
+        },
+        {
+          "edge": [
+            "top of a tower",
+            "wasteland by a castle"
+          ],
+          "llm_dir": "east",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 51
+        },
+        {
+          "edge": [
+            "wasteland by a castle",
+            "castle forge"
+          ],
+          "llm_dir": "north",
+          "in_gt": true,
+          "gt_dir": "north",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 15
+        },
+        {
+          "edge": [
+            "wasteland by a castle",
+            "north end of a road"
+          ],
+          "llm_dir": "north",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 53
+        }
+      ],
+      "case_counts": {
+        "correct": 5,
+        "hallucinated_edge": 2
+      },
+      "root_cause": "overlap_mixed"
+    },
+    {
+      "type": "topology",
+      "description": "position (-5, -4, -1) occupied by multiple rooms ['top of a tower', 'wasteland by a castle']",
+      "involved_edges": [],
+      "involved_nodes": [
+        "top of a tower",
+        "wasteland by a castle"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "castle hallway",
+            "top of a tower"
+          ],
+          "llm_dir": "up",
+          "in_gt": true,
+          "gt_dir": "up",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 44
+        },
+        {
+          "edge": [
+            "top of a tower",
+            "wasteland by a castle"
+          ],
+          "llm_dir": "east",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 51
+        },
+        {
+          "edge": [
+            "south end of a road",
+            "wasteland by a castle"
+          ],
+          "llm_dir": "west",
+          "in_gt": true,
+          "gt_dir": "west",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 14
+        },
+        {
+          "edge": [
+            "pebbled beach",
+            "wasteland by a castle"
+          ],
+          "llm_dir": "north",
+          "in_gt": true,
+          "gt_dir": "north",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 37
+        },
+        {
+          "edge": [
+            "wasteland by a castle",
+            "castle forge"
+          ],
+          "llm_dir": "north",
+          "in_gt": true,
+          "gt_dir": "north",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 15
+        },
+        {
+          "edge": [
+            "wasteland by a castle",
+            "north end of a road"
+          ],
+          "llm_dir": "north",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 53
+        }
+      ],
+      "case_counts": {
+        "correct": 4,
+        "hallucinated_edge": 2
+      },
+      "root_cause": "overlap_mixed"
+    },
+    {
+      "type": "naming",
+      "description": "node 'abandoned inn' reachable at conflicting positions [(-3, -3, -1), (-2, -3, -1), (-1, -3, -1), (0, 0, 0)]",
+      "involved_edges": [],
+      "involved_nodes": [
+        "abandoned inn"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "rocky mountains",
+            "abandoned inn"
+          ],
+          "llm_dir": "south",
+          "in_gt": true,
+          "gt_dir": "south",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 1
+        },
+        {
+          "edge": [
+            "abandoned inn",
+            "inside the inn"
+          ],
+          "llm_dir": "east",
+          "in_gt": true,
+          "gt_dir": "east",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 2
+        },
+        {
+          "edge": [
+            "abandoned inn",
+            "swampy ground"
+          ],
+          "llm_dir": "west",
+          "in_gt": true,
+          "gt_dir": "west",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 9
+        }
+      ],
+      "case_counts": {
+        "correct": 3
+      },
+      "root_cause": "naming_collision_on_correct_subgraph"
+    },
+    {
+      "type": "naming",
+      "description": "node 'rocky mountains' reachable at conflicting positions [(-3, -2, -1), (-2, -2, -1), (-1, -2, -1), (0, 1, 0)]",
+      "involved_edges": [],
+      "involved_nodes": [
+        "rocky mountains"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "rocky mountains",
+            "abandoned inn"
+          ],
+          "llm_dir": "south",
+          "in_gt": true,
+          "gt_dir": "south",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 1
+        }
+      ],
+      "case_counts": {
+        "correct": 1
+      },
+      "root_cause": "naming_collision_on_correct_subgraph"
+    },
+    {
+      "type": "naming",
+      "description": "node 'inside the inn' reachable at conflicting positions [(-2, -3, -1), (-1, -3, -1), (0, -3, -1), (1, 0, 0)]",
+      "involved_edges": [],
+      "involved_nodes": [
+        "inside the inn"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "abandoned inn",
+            "inside the inn"
+          ],
+          "llm_dir": "east",
+          "in_gt": true,
+          "gt_dir": "east",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 2
+        },
+        {
+          "edge": [
+            "inside the inn",
+            "inn cellar"
+          ],
+          "llm_dir": "down",
+          "in_gt": true,
+          "gt_dir": "down",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 3
+        }
+      ],
+      "case_counts": {
+        "correct": 2
+      },
+      "root_cause": "naming_collision_on_correct_subgraph"
+    },
+    {
+      "type": "naming",
+      "description": "node 'swampy ground' reachable at conflicting positions [(-4, -3, -1), (-3, -3, -1), (-2, -3, -1), (-1, 0, 0), (0, 0, 0)]",
+      "involved_edges": [],
+      "involved_nodes": [
+        "swampy ground"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "abandoned inn",
+            "swampy ground"
+          ],
+          "llm_dir": "west",
+          "in_gt": true,
+          "gt_dir": "west",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 9
+        },
+        {
+          "edge": [
+            "swampy ground",
+            "north end of a road"
+          ],
+          "llm_dir": "west",
+          "in_gt": true,
+          "gt_dir": "west",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 12
+        },
+        {
+          "edge": [
+            "swampy ground",
+            "cave entrance"
+          ],
+          "llm_dir": "south",
+          "in_gt": true,
+          "gt_dir": "south",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 21
+        }
+      ],
+      "case_counts": {
+        "correct": 3
+      },
+      "root_cause": "naming_collision_on_correct_subgraph"
+    },
+    {
+      "type": "naming",
+      "description": "node 'north end of a road' reachable at conflicting positions [(-5, -3, -1), (-4, -3, -1), (-3, -3, -1), (-2, -3, -1), (-2, 0, 0), (-1, 0, 0)]",
+      "involved_edges": [],
+      "involved_nodes": [
+        "north end of a road"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "swampy ground",
+            "north end of a road"
+          ],
+          "llm_dir": "west",
+          "in_gt": true,
+          "gt_dir": "west",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 12
+        },
+        {
+          "edge": [
+            "wasteland by a castle",
+            "north end of a road"
+          ],
+          "llm_dir": "north",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 53
+        },
+        {
+          "edge": [
+            "north end of a road",
+            "south end of a road"
+          ],
+          "llm_dir": "south",
+          "in_gt": true,
+          "gt_dir": "south",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 13
+        }
+      ],
+      "case_counts": {
+        "correct": 2,
+        "hallucinated_edge": 1
+      },
+      "root_cause": "real_name_corrupted_by_neighbour_error"
+    },
+    {
+      "type": "naming",
+      "description": "node 'cave entrance' reachable at conflicting positions [(-4, -4, -1), (-3, -4, -1), (-2, -4, -1), (-1, -1, 0)]",
+      "involved_edges": [],
+      "involved_nodes": [
+        "cave entrance"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "swampy ground",
+            "cave entrance"
+          ],
+          "llm_dir": "south",
+          "in_gt": true,
+          "gt_dir": "south",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 21
+        },
+        {
+          "edge": [
+            "cave entrance",
+            "cottage"
+          ],
+          "llm_dir": "south",
+          "in_gt": true,
+          "gt_dir": "south",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 22
+        }
+      ],
+      "case_counts": {
+        "correct": 2
+      },
+      "root_cause": "naming_collision_on_correct_subgraph"
+    },
+    {
+      "type": "naming",
+      "description": "node 'cottage' reachable at conflicting positions [(-4, -5, -1), (-3, -5, -1), (-2, -5, -1), (-1, -2, 0)]",
+      "involved_edges": [],
+      "involved_nodes": [
+        "cottage"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "cave entrance",
+            "cottage"
+          ],
+          "llm_dir": "south",
+          "in_gt": true,
+          "gt_dir": "south",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 22
+        },
+        {
+          "edge": [
+            "cottage",
+            "inside a cottage"
+          ],
+          "llm_dir": "east",
+          "in_gt": true,
+          "gt_dir": "east",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 23
+        }
+      ],
+      "case_counts": {
+        "correct": 2
+      },
+      "root_cause": "naming_collision_on_correct_subgraph"
+    },
+    {
+      "type": "naming",
+      "description": "node 'inside a cottage' reachable at conflicting positions [(-3, -5, -1), (-2, -5, -1), (-1, -5, -1), (0, -2, 0)]",
+      "involved_edges": [],
+      "involved_nodes": [
+        "inside a cottage"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "cottage",
+            "inside a cottage"
+          ],
+          "llm_dir": "east",
+          "in_gt": true,
+          "gt_dir": "east",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 23
+        },
+        {
+          "edge": [
+            "inside a cottage",
+            "forest pathway"
+          ],
+          "llm_dir": "south",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 27
+        }
+      ],
+      "case_counts": {
+        "correct": 1,
+        "hallucinated_edge": 1
+      },
+      "root_cause": "real_name_corrupted_by_neighbour_error"
+    },
+    {
+      "type": "naming",
+      "description": "node 'forest pathway' reachable at conflicting positions [(-3, -6, -1), (-2, -6, -1), (-1, -6, -1), (0, -3, 0)]",
+      "involved_edges": [],
+      "involved_nodes": [
+        "forest pathway"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "inside a cottage",
+            "forest pathway"
+          ],
+          "llm_dir": "south",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 27
+        },
+        {
+          "edge": [
+            "forest pathway",
+            "tree stump"
+          ],
+          "llm_dir": "west",
+          "in_gt": true,
+          "gt_dir": "west",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 28
+        }
+      ],
+      "case_counts": {
+        "hallucinated_edge": 1,
+        "correct": 1
+      },
+      "root_cause": "real_name_corrupted_by_neighbour_error"
+    },
+    {
+      "type": "naming",
+      "description": "node 'tree stump' reachable at conflicting positions [(-4, -6, -1), (-3, -6, -1), (-2, -6, -1), (-1, -3, 0)]",
+      "involved_edges": [],
+      "involved_nodes": [
+        "tree stump"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "forest pathway",
+            "tree stump"
+          ],
+          "llm_dir": "west",
+          "in_gt": true,
+          "gt_dir": "west",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 28
+        },
+        {
+          "edge": [
+            "tree stump",
+            "lake in the forest"
+          ],
+          "llm_dir": "north",
+          "in_gt": true,
+          "gt_dir": "north",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 29
+        }
+      ],
+      "case_counts": {
+        "correct": 2
+      },
+      "root_cause": "naming_collision_on_correct_subgraph"
+    },
+    {
+      "type": "naming",
+      "description": "node 'lake in the forest' reachable at conflicting positions [(-4, -5, -1), (-3, -5, -1), (-2, -5, -1), (-1, -2, 0)]",
+      "involved_edges": [],
+      "involved_nodes": [
+        "lake in the forest"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "tree stump",
+            "lake in the forest"
+          ],
+          "llm_dir": "north",
+          "in_gt": true,
+          "gt_dir": "north",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 29
+        },
+        {
+          "edge": [
+            "south end of a road",
+            "lake in the forest"
+          ],
+          "llm_dir": "south",
+          "in_gt": true,
+          "gt_dir": "south",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 58
+        },
+        {
+          "edge": [
+            "lake in the forest",
+            "pebbled beach"
+          ],
+          "llm_dir": "west",
+          "in_gt": true,
+          "gt_dir": "west",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 30
+        }
+      ],
+      "case_counts": {
+        "correct": 3
+      },
+      "root_cause": "naming_collision_on_correct_subgraph"
+    },
+    {
+      "type": "naming",
+      "description": "node 'pebbled beach' reachable at conflicting positions [(-5, -5, -1), (-4, -5, -1), (-3, -5, -1), (-2, -2, 0)]",
+      "involved_edges": [],
+      "involved_nodes": [
+        "pebbled beach"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "lake in the forest",
+            "pebbled beach"
+          ],
+          "llm_dir": "west",
+          "in_gt": true,
+          "gt_dir": "west",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 30
+        },
+        {
+          "edge": [
+            "pebbled beach",
+            "beside a ruined lighthouse"
+          ],
+          "llm_dir": "south",
+          "in_gt": true,
+          "gt_dir": "south",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 31
+        },
+        {
+          "edge": [
+            "pebbled beach",
+            "wasteland by a castle"
+          ],
+          "llm_dir": "north",
+          "in_gt": true,
+          "gt_dir": "north",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 37
+        }
+      ],
+      "case_counts": {
+        "correct": 3
+      },
+      "root_cause": "naming_collision_on_correct_subgraph"
+    },
+    {
+      "type": "naming",
+      "description": "node 'south end of a road' reachable at conflicting positions [(-4, -4, -1), (-3, -4, -1), (-2, -4, -1), (-2, -1, 0), (-1, -1, 0)]",
+      "involved_edges": [],
+      "involved_nodes": [
+        "south end of a road"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "north end of a road",
+            "south end of a road"
+          ],
+          "llm_dir": "south",
+          "in_gt": true,
+          "gt_dir": "south",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 13
+        },
+        {
+          "edge": [
+            "south end of a road",
+            "wasteland by a castle"
+          ],
+          "llm_dir": "west",
+          "in_gt": true,
+          "gt_dir": "west",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 14
+        },
+        {
+          "edge": [
+            "south end of a road",
+            "lake in the forest"
+          ],
+          "llm_dir": "south",
+          "in_gt": true,
+          "gt_dir": "south",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 58
+        }
+      ],
+      "case_counts": {
+        "correct": 3
+      },
+      "root_cause": "naming_collision_on_correct_subgraph"
+    },
+    {
+      "type": "naming",
+      "description": "node 'wasteland by a castle' reachable at conflicting positions [(-6, -7, -2), (-5, -4, -1), (-4, -4, -1), (-4, -1, 0), (-3, -4, -1), (-2, -1, 0), (-1, -1, 0)]",
+      "involved_edges": [],
+      "involved_nodes": [
+        "wasteland by a castle"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "south end of a road",
+            "wasteland by a castle"
+          ],
+          "llm_dir": "west",
+          "in_gt": true,
+          "gt_dir": "west",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 14
+        },
+        {
+          "edge": [
+            "pebbled beach",
+            "wasteland by a castle"
+          ],
+          "llm_dir": "north",
+          "in_gt": true,
+          "gt_dir": "north",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 37
+        },
+        {
+          "edge": [
+            "top of a tower",
+            "wasteland by a castle"
+          ],
+          "llm_dir": "east",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 51
+        },
+        {
+          "edge": [
+            "wasteland by a castle",
+            "castle forge"
+          ],
+          "llm_dir": "north",
+          "in_gt": true,
+          "gt_dir": "north",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 15
+        },
+        {
+          "edge": [
+            "wasteland by a castle",
+            "north end of a road"
+          ],
+          "llm_dir": "north",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 53
+        }
+      ],
+      "case_counts": {
+        "correct": 3,
+        "hallucinated_edge": 2
+      },
+      "root_cause": "real_name_corrupted_by_neighbour_error"
+    },
+    {
+      "type": "naming",
+      "description": "node 'castle forge' reachable at conflicting positions [(-6, -6, -2), (-5, -3, -1), (-4, -6, -2), (-4, -3, -1), (-3, -3, -1), (-2, 0, 0)]",
+      "involved_edges": [],
+      "involved_nodes": [
+        "castle forge"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "wasteland by a castle",
+            "castle forge"
+          ],
+          "llm_dir": "north",
+          "in_gt": true,
+          "gt_dir": "north",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 15
+        },
+        {
+          "edge": [
+            "castle forge",
+            "forbidding castle"
+          ],
+          "llm_dir": "north",
+          "in_gt": true,
+          "gt_dir": "north",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 39
+        }
+      ],
+      "case_counts": {
+        "correct": 2
+      },
+      "root_cause": "naming_collision_on_correct_subgraph"
+    },
+    {
+      "type": "naming",
+      "description": "node 'top of a tower' reachable at conflicting positions [(-6, -4, -1), (-5, -4, -1), (-5, -1, 0), (-4, -4, -1), (-3, -1, 0)]",
+      "involved_edges": [],
+      "involved_nodes": [
+        "top of a tower"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "castle hallway",
+            "top of a tower"
+          ],
+          "llm_dir": "up",
+          "in_gt": true,
+          "gt_dir": "up",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 44
+        },
+        {
+          "edge": [
+            "top of a tower",
+            "wasteland by a castle"
+          ],
+          "llm_dir": "east",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 51
+        }
+      ],
+      "case_counts": {
+        "correct": 1,
+        "hallucinated_edge": 1
+      },
+      "root_cause": "real_name_corrupted_by_neighbour_error"
+    },
+    {
+      "type": "naming",
+      "description": "node 'castle hallway' reachable at conflicting positions [(-6, -4, -2), (-5, -1, -1), (-4, -4, -2), (-3, -1, -1)]",
+      "involved_edges": [],
+      "involved_nodes": [
+        "castle hallway"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "forbidding castle",
+            "castle hallway"
+          ],
+          "llm_dir": "north",
+          "in_gt": true,
+          "gt_dir": "north",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 43
+        },
+        {
+          "edge": [
+            "castle hallway",
+            "top of a tower"
+          ],
+          "llm_dir": "up",
+          "in_gt": true,
+          "gt_dir": "up",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 44
+        }
+      ],
+      "case_counts": {
+        "correct": 2
+      },
+      "root_cause": "naming_collision_on_correct_subgraph"
+    },
+    {
+      "type": "naming",
+      "description": "node 'forbidding castle' reachable at conflicting positions [(-6, -5, -2), (-5, -2, -1), (-4, -5, -2), (-3, -2, -1), (-2, 1, 0)]",
+      "involved_edges": [],
+      "involved_nodes": [
+        "forbidding castle"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "castle forge",
+            "forbidding castle"
+          ],
+          "llm_dir": "north",
+          "in_gt": true,
+          "gt_dir": "north",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 39
+        },
+        {
+          "edge": [
+            "forbidding castle",
+            "castle hallway"
+          ],
+          "llm_dir": "north",
+          "in_gt": true,
+          "gt_dir": "north",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 43
+        }
+      ],
+      "case_counts": {
+        "correct": 2
+      },
+      "root_cause": "naming_collision_on_correct_subgraph"
+    },
+    {
+      "type": "naming",
+      "description": "node 'beside a ruined lighthouse' reachable at conflicting positions [(-5, -6, -1), (-4, -6, -1), (-3, -6, -1), (-2, -3, 0)]",
+      "involved_edges": [],
+      "involved_nodes": [
+        "beside a ruined lighthouse"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "pebbled beach",
+            "beside a ruined lighthouse"
+          ],
+          "llm_dir": "south",
+          "in_gt": true,
+          "gt_dir": "south",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 31
+        },
+        {
+          "edge": [
+            "beside a ruined lighthouse",
+            "inside the lighthouse ruins"
+          ],
+          "llm_dir": "south",
+          "in_gt": true,
+          "gt_dir": "south",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 32
+        }
+      ],
+      "case_counts": {
+        "correct": 2
+      },
+      "root_cause": "naming_collision_on_correct_subgraph"
+    },
+    {
+      "type": "naming",
+      "description": "node 'inside the lighthouse ruins' reachable at conflicting positions [(-5, -7, -1), (-4, -7, -1), (-3, -7, -1), (-2, -4, 0)]",
+      "involved_edges": [],
+      "involved_nodes": [
+        "inside the lighthouse ruins"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "beside a ruined lighthouse",
+            "inside the lighthouse ruins"
+          ],
+          "llm_dir": "south",
+          "in_gt": true,
+          "gt_dir": "south",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 32
+        }
+      ],
+      "case_counts": {
+        "correct": 1
+      },
+      "root_cause": "naming_collision_on_correct_subgraph"
+    },
+    {
+      "type": "naming",
+      "description": "node 'inn cellar' reachable at conflicting positions [(-2, -3, -2), (-1, -3, -2), (0, -3, -2), (1, 0, -1)]",
+      "involved_edges": [],
+      "involved_nodes": [
+        "inn cellar"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "inside the inn",
+            "inn cellar"
+          ],
+          "llm_dir": "down",
+          "in_gt": true,
+          "gt_dir": "down",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 3
+        }
+      ],
+      "case_counts": {
+        "correct": 1
+      },
+      "root_cause": "naming_collision_on_correct_subgraph"
+    }
+  ],
+  "walkthrough_steps_available": 71
+}

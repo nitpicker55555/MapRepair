@@ -1,0 +1,89 @@
+{
+  "rooms": {
+    "r_2": {
+      "id": "r_2",
+      "name": "study"
+    },
+    "r_0": {
+      "id": "r_0",
+      "name": "kitchenette"
+    },
+    "r_4": {
+      "id": "r_4",
+      "name": "cookhouse"
+    },
+    "r_3": {
+      "id": "r_3",
+      "name": "chamber"
+    },
+    "r_1": {
+      "id": "r_1",
+      "name": "bedroom"
+    }
+  },
+  "edges": [
+    {
+      "src_name": "study",
+      "dst_name": "kitchenette",
+      "src_id": "r_2",
+      "dst_id": "r_0",
+      "direction": "west"
+    },
+    {
+      "src_name": "study",
+      "dst_name": "chamber",
+      "src_id": "r_2",
+      "dst_id": "r_3",
+      "direction": "south"
+    },
+    {
+      "src_name": "kitchenette",
+      "dst_name": "bedroom",
+      "src_id": "r_0",
+      "dst_id": "r_1",
+      "direction": "south"
+    },
+    {
+      "src_name": "kitchenette",
+      "dst_name": "study",
+      "src_id": "r_0",
+      "dst_id": "r_2",
+      "direction": "east"
+    },
+    {
+      "src_name": "cookhouse",
+      "dst_name": "chamber",
+      "src_id": "r_4",
+      "dst_id": "r_3",
+      "direction": "west"
+    },
+    {
+      "src_name": "chamber",
+      "dst_name": "study",
+      "src_id": "r_3",
+      "dst_id": "r_2",
+      "direction": "north"
+    },
+    {
+      "src_name": "chamber",
+      "dst_name": "cookhouse",
+      "src_id": "r_3",
+      "dst_id": "r_4",
+      "direction": "east"
+    },
+    {
+      "src_name": "bedroom",
+      "dst_name": "kitchenette",
+      "src_id": "r_1",
+      "dst_id": "r_0",
+      "direction": "north"
+    }
+  ],
+  "n_rooms": 5,
+  "n_edges": 8,
+  "walkthrough": [
+    "go east",
+    "take backup calendar",
+    "insert backup calendar into display"
+  ]
+}

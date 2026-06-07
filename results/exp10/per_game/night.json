@@ -1,0 +1,3511 @@
+{
+  "game": "night",
+  "num_llm_edges": 21,
+  "num_gt_edges": 32,
+  "num_conflicts": 45,
+  "type_distribution": {
+    "direction": 5,
+    "topology": 22,
+    "naming": 18
+  },
+  "root_cause_distribution": {
+    "real_vs_hallucinated": 2,
+    "direction_mixed": 2,
+    "src_dst_swap": 1,
+    "false_positive_overlap": 6,
+    "overlap_mixed": 8,
+    "wrong_direction_caused_overlap": 8,
+    "naming_collision_on_correct_subgraph": 11,
+    "real_name_corrupted_by_neighbour_error": 3,
+    "naming_mixed": 4
+  },
+  "conflicts": [
+    {
+      "type": "direction",
+      "description": "node 'hall (1st floor, middle of north/south hall)' has multiple outgoing edges labelled 'east'",
+      "involved_edges": [
+        [
+          "hall (1st floor, middle of north/south hall)",
+          "hall outside elevator (1st floor)"
+        ],
+        [
+          "hall (1st floor, middle of north/south hall)",
+          "maze of twisty passages (stop 1)"
+        ]
+      ],
+      "involved_nodes": [
+        "hall (1st floor, middle of north/south hall)",
+        "hall outside elevator (1st floor)",
+        "maze of twisty passages (stop 1)"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "hall (1st floor, middle of north/south hall)",
+            "hall outside elevator (1st floor)"
+          ],
+          "llm_dir": "east",
+          "in_gt": true,
+          "gt_dir": "east",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 14
+        },
+        {
+          "edge": [
+            "hall (1st floor, middle of north/south hall)",
+            "maze of twisty passages (stop 1)"
+          ],
+          "llm_dir": "east",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 29
+        }
+      ],
+      "case_counts": {
+        "correct": 1,
+        "hallucinated_edge": 1
+      },
+      "root_cause": "real_vs_hallucinated"
+    },
+    {
+      "type": "direction",
+      "description": "node 'outside physics office' has multiple outgoing edges labelled 'south'",
+      "involved_edges": [
+        [
+          "outside physics office",
+          "hall (2nd floor, middle of north/south hall)"
+        ],
+        [
+          "outside physics office",
+          "maze of twisty passages (stop 2)"
+        ]
+      ],
+      "involved_nodes": [
+        "outside physics office",
+        "hall (2nd floor, middle of north/south hall)",
+        "maze of twisty passages (stop 2)"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "outside physics office",
+            "hall (2nd floor, middle of north/south hall)"
+          ],
+          "llm_dir": "south",
+          "in_gt": true,
+          "gt_dir": "south",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 24
+        },
+        {
+          "edge": [
+            "outside physics office",
+            "maze of twisty passages (stop 2)"
+          ],
+          "llm_dir": "south",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": null
+        }
+      ],
+      "case_counts": {
+        "correct": 1,
+        "hallucinated_edge": 1
+      },
+      "root_cause": "real_vs_hallucinated"
+    },
+    {
+      "type": "direction",
+      "description": "node 'maze of twisty passages (stop 1)' has multiple outgoing edges labelled 'west'",
+      "involved_edges": [
+        [
+          "maze of twisty passages (stop 1)",
+          "hall (1st floor, middle of north/south hall)"
+        ],
+        [
+          "maze of twisty passages (stop 1)",
+          "maze of twisty passages (stop 2)"
+        ]
+      ],
+      "involved_nodes": [
+        "maze of twisty passages (stop 1)",
+        "hall (1st floor, middle of north/south hall)",
+        "maze of twisty passages (stop 2)"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "maze of twisty passages (stop 1)",
+            "hall (1st floor, middle of north/south hall)"
+          ],
+          "llm_dir": "west",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": null
+        },
+        {
+          "edge": [
+            "maze of twisty passages (stop 1)",
+            "maze of twisty passages (stop 2)"
+          ],
+          "llm_dir": "west",
+          "in_gt": true,
+          "gt_dir": "east",
+          "case": "wrong_direction",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 70
+        }
+      ],
+      "case_counts": {
+        "hallucinated_edge": 1,
+        "wrong_direction": 1
+      },
+      "root_cause": "direction_mixed"
+    },
+    {
+      "type": "direction",
+      "description": "node 'maze of twisty passages (stop 3)' has multiple outgoing edges labelled 'west'",
+      "involved_edges": [
+        [
+          "maze of twisty passages (stop 3)",
+          "maze of twisty passages (stop 2)"
+        ],
+        [
+          "maze of twisty passages (stop 3)",
+          "maze of twisty passages (stop 4)"
+        ]
+      ],
+      "involved_nodes": [
+        "maze of twisty passages (stop 3)",
+        "maze of twisty passages (stop 2)",
+        "maze of twisty passages (stop 4)"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "maze of twisty passages (stop 3)",
+            "maze of twisty passages (stop 2)"
+          ],
+          "llm_dir": "west",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 34
+        },
+        {
+          "edge": [
+            "maze of twisty passages (stop 3)",
+            "maze of twisty passages (stop 4)"
+          ],
+          "llm_dir": "west",
+          "in_gt": false,
+          "gt_dir": "east",
+          "case": "swapped_src_dst",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 37
+        }
+      ],
+      "case_counts": {
+        "hallucinated_edge": 1,
+        "swapped_src_dst": 1
+      },
+      "root_cause": "src_dst_swap"
+    },
+    {
+      "type": "direction",
+      "description": "node 'maze of twisty passages (stop 2)' has multiple outgoing edges labelled 'east'",
+      "involved_edges": [
+        [
+          "maze of twisty passages (stop 2)",
+          "maze of twisty passages (stop 3)"
+        ],
+        [
+          "maze of twisty passages (stop 2)",
+          "maze of twisty passages (stop 4)"
+        ],
+        [
+          "maze of twisty passages (stop 2)",
+          "maze of twisty passages (stop 1)"
+        ]
+      ],
+      "involved_nodes": [
+        "maze of twisty passages (stop 2)",
+        "maze of twisty passages (stop 3)",
+        "maze of twisty passages (stop 4)",
+        "maze of twisty passages (stop 1)"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "maze of twisty passages (stop 2)",
+            "maze of twisty passages (stop 3)"
+          ],
+          "llm_dir": "east",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": null
+        },
+        {
+          "edge": [
+            "maze of twisty passages (stop 2)",
+            "maze of twisty passages (stop 4)"
+          ],
+          "llm_dir": "east",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": null
+        },
+        {
+          "edge": [
+            "maze of twisty passages (stop 2)",
+            "maze of twisty passages (stop 1)"
+          ],
+          "llm_dir": "east",
+          "in_gt": true,
+          "gt_dir": "west",
+          "case": "wrong_direction",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": null
+        }
+      ],
+      "case_counts": {
+        "hallucinated_edge": 2,
+        "wrong_direction": 1
+      },
+      "root_cause": "direction_mixed"
+    },
+    {
+      "type": "topology",
+      "description": "position (2, 1, 1) occupied by multiple rooms ['hall outside computer site', 'stairwell (first floor)', 'stairwell (second floor)']",
+      "involved_edges": [],
+      "involved_nodes": [
+        "hall outside computer site",
+        "stairwell (first floor)",
+        "stairwell (second floor)"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "computer site",
+            "hall outside computer site"
+          ],
+          "llm_dir": "northeast",
+          "in_gt": true,
+          "gt_dir": "northeast",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 1
+        },
+        {
+          "edge": [
+            "hall outside computer site",
+            "hall (3rd floor, middle of north/south hall)"
+          ],
+          "llm_dir": "south",
+          "in_gt": true,
+          "gt_dir": "south",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 2
+        },
+        {
+          "edge": [
+            "hall outside computer site",
+            "stairwell (third floor)"
+          ],
+          "llm_dir": "west",
+          "in_gt": true,
+          "gt_dir": "west",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 9
+        },
+        {
+          "edge": [
+            "stairwell (second floor)",
+            "stairwell (first floor)"
+          ],
+          "llm_dir": "down",
+          "in_gt": true,
+          "gt_dir": "down",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 11
+        },
+        {
+          "edge": [
+            "stairwell (first floor)",
+            "hall (1st floor, north end of north/south hall)"
+          ],
+          "llm_dir": "east",
+          "in_gt": true,
+          "gt_dir": "east",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 12
+        },
+        {
+          "edge": [
+            "stairwell (third floor)",
+            "stairwell (second floor)"
+          ],
+          "llm_dir": "down",
+          "in_gt": true,
+          "gt_dir": "down",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 10
+        },
+        {
+          "edge": [
+            "stairwell (second floor)",
+            "outside physics office"
+          ],
+          "llm_dir": "east",
+          "in_gt": true,
+          "gt_dir": "east",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 23
+        }
+      ],
+      "case_counts": {
+        "correct": 7
+      },
+      "root_cause": "false_positive_overlap"
+    },
+    {
+      "type": "topology",
+      "description": "position (3, 1, 2) occupied by multiple rooms ['hall outside computer site', 'stairwell (first floor)', 'stairwell (second floor)']",
+      "involved_edges": [],
+      "involved_nodes": [
+        "hall outside computer site",
+        "stairwell (first floor)",
+        "stairwell (second floor)"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "computer site",
+            "hall outside computer site"
+          ],
+          "llm_dir": "northeast",
+          "in_gt": true,
+          "gt_dir": "northeast",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 1
+        },
+        {
+          "edge": [
+            "hall outside computer site",
+            "hall (3rd floor, middle of north/south hall)"
+          ],
+          "llm_dir": "south",
+          "in_gt": true,
+          "gt_dir": "south",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 2
+        },
+        {
+          "edge": [
+            "hall outside computer site",
+            "stairwell (third floor)"
+          ],
+          "llm_dir": "west",
+          "in_gt": true,
+          "gt_dir": "west",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 9
+        },
+        {
+          "edge": [
+            "stairwell (second floor)",
+            "stairwell (first floor)"
+          ],
+          "llm_dir": "down",
+          "in_gt": true,
+          "gt_dir": "down",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 11
+        },
+        {
+          "edge": [
+            "stairwell (first floor)",
+            "hall (1st floor, north end of north/south hall)"
+          ],
+          "llm_dir": "east",
+          "in_gt": true,
+          "gt_dir": "east",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 12
+        },
+        {
+          "edge": [
+            "stairwell (third floor)",
+            "stairwell (second floor)"
+          ],
+          "llm_dir": "down",
+          "in_gt": true,
+          "gt_dir": "down",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 10
+        },
+        {
+          "edge": [
+            "stairwell (second floor)",
+            "outside physics office"
+          ],
+          "llm_dir": "east",
+          "in_gt": true,
+          "gt_dir": "east",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 23
+        }
+      ],
+      "case_counts": {
+        "correct": 7
+      },
+      "root_cause": "false_positive_overlap"
+    },
+    {
+      "type": "topology",
+      "description": "position (1, 1, 0) occupied by multiple rooms ['hall outside computer site', 'stairwell (first floor)', 'stairwell (second floor)']",
+      "involved_edges": [],
+      "involved_nodes": [
+        "hall outside computer site",
+        "stairwell (first floor)",
+        "stairwell (second floor)"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "computer site",
+            "hall outside computer site"
+          ],
+          "llm_dir": "northeast",
+          "in_gt": true,
+          "gt_dir": "northeast",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 1
+        },
+        {
+          "edge": [
+            "hall outside computer site",
+            "hall (3rd floor, middle of north/south hall)"
+          ],
+          "llm_dir": "south",
+          "in_gt": true,
+          "gt_dir": "south",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 2
+        },
+        {
+          "edge": [
+            "hall outside computer site",
+            "stairwell (third floor)"
+          ],
+          "llm_dir": "west",
+          "in_gt": true,
+          "gt_dir": "west",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 9
+        },
+        {
+          "edge": [
+            "stairwell (second floor)",
+            "stairwell (first floor)"
+          ],
+          "llm_dir": "down",
+          "in_gt": true,
+          "gt_dir": "down",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 11
+        },
+        {
+          "edge": [
+            "stairwell (first floor)",
+            "hall (1st floor, north end of north/south hall)"
+          ],
+          "llm_dir": "east",
+          "in_gt": true,
+          "gt_dir": "east",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 12
+        },
+        {
+          "edge": [
+            "stairwell (third floor)",
+            "stairwell (second floor)"
+          ],
+          "llm_dir": "down",
+          "in_gt": true,
+          "gt_dir": "down",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 10
+        },
+        {
+          "edge": [
+            "stairwell (second floor)",
+            "outside physics office"
+          ],
+          "llm_dir": "east",
+          "in_gt": true,
+          "gt_dir": "east",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 23
+        }
+      ],
+      "case_counts": {
+        "correct": 7
+      },
+      "root_cause": "false_positive_overlap"
+    },
+    {
+      "type": "topology",
+      "description": "position (3, 1, 3) occupied by multiple rooms ['stairwell (second floor)', 'stairwell (third floor)']",
+      "involved_edges": [],
+      "involved_nodes": [
+        "stairwell (second floor)",
+        "stairwell (third floor)"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "stairwell (third floor)",
+            "stairwell (second floor)"
+          ],
+          "llm_dir": "down",
+          "in_gt": true,
+          "gt_dir": "down",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 10
+        },
+        {
+          "edge": [
+            "stairwell (second floor)",
+            "stairwell (first floor)"
+          ],
+          "llm_dir": "down",
+          "in_gt": true,
+          "gt_dir": "down",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 11
+        },
+        {
+          "edge": [
+            "stairwell (second floor)",
+            "outside physics office"
+          ],
+          "llm_dir": "east",
+          "in_gt": true,
+          "gt_dir": "east",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 23
+        },
+        {
+          "edge": [
+            "hall outside computer site",
+            "stairwell (third floor)"
+          ],
+          "llm_dir": "west",
+          "in_gt": true,
+          "gt_dir": "west",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 9
+        }
+      ],
+      "case_counts": {
+        "correct": 4
+      },
+      "root_cause": "false_positive_overlap"
+    },
+    {
+      "type": "topology",
+      "description": "position (2, 1, 2) occupied by multiple rooms ['stairwell (second floor)', 'stairwell (third floor)']",
+      "involved_edges": [],
+      "involved_nodes": [
+        "stairwell (second floor)",
+        "stairwell (third floor)"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "stairwell (third floor)",
+            "stairwell (second floor)"
+          ],
+          "llm_dir": "down",
+          "in_gt": true,
+          "gt_dir": "down",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 10
+        },
+        {
+          "edge": [
+            "stairwell (second floor)",
+            "stairwell (first floor)"
+          ],
+          "llm_dir": "down",
+          "in_gt": true,
+          "gt_dir": "down",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 11
+        },
+        {
+          "edge": [
+            "stairwell (second floor)",
+            "outside physics office"
+          ],
+          "llm_dir": "east",
+          "in_gt": true,
+          "gt_dir": "east",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 23
+        },
+        {
+          "edge": [
+            "hall outside computer site",
+            "stairwell (third floor)"
+          ],
+          "llm_dir": "west",
+          "in_gt": true,
+          "gt_dir": "west",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 9
+        }
+      ],
+      "case_counts": {
+        "correct": 4
+      },
+      "root_cause": "false_positive_overlap"
+    },
+    {
+      "type": "topology",
+      "description": "position (2, 1, 0) occupied by multiple rooms ['hall (1st floor, north end of north/south hall)', 'outside physics office', 'stairwell (first floor)']",
+      "involved_edges": [],
+      "involved_nodes": [
+        "hall (1st floor, north end of north/south hall)",
+        "outside physics office",
+        "stairwell (first floor)"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "stairwell (first floor)",
+            "hall (1st floor, north end of north/south hall)"
+          ],
+          "llm_dir": "east",
+          "in_gt": true,
+          "gt_dir": "east",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 12
+        },
+        {
+          "edge": [
+            "hall (1st floor, north end of north/south hall)",
+            "hall (1st floor, middle of north/south hall)"
+          ],
+          "llm_dir": "south",
+          "in_gt": true,
+          "gt_dir": "south",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 13
+        },
+        {
+          "edge": [
+            "stairwell (second floor)",
+            "outside physics office"
+          ],
+          "llm_dir": "east",
+          "in_gt": true,
+          "gt_dir": "east",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 23
+        },
+        {
+          "edge": [
+            "maze of twisty passages (stop 2)",
+            "outside physics office"
+          ],
+          "llm_dir": "north",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 41
+        },
+        {
+          "edge": [
+            "outside physics office",
+            "hall (2nd floor, middle of north/south hall)"
+          ],
+          "llm_dir": "south",
+          "in_gt": true,
+          "gt_dir": "south",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 24
+        },
+        {
+          "edge": [
+            "stairwell (second floor)",
+            "stairwell (first floor)"
+          ],
+          "llm_dir": "down",
+          "in_gt": true,
+          "gt_dir": "down",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 11
+        }
+      ],
+      "case_counts": {
+        "correct": 5,
+        "hallucinated_edge": 1
+      },
+      "root_cause": "overlap_mixed"
+    },
+    {
+      "type": "topology",
+      "description": "position (1, 1, -1) occupied by multiple rooms ['hall (1st floor, north end of north/south hall)', 'outside physics office', 'stairwell (first floor)']",
+      "involved_edges": [],
+      "involved_nodes": [
+        "hall (1st floor, north end of north/south hall)",
+        "outside physics office",
+        "stairwell (first floor)"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "stairwell (first floor)",
+            "hall (1st floor, north end of north/south hall)"
+          ],
+          "llm_dir": "east",
+          "in_gt": true,
+          "gt_dir": "east",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 12
+        },
+        {
+          "edge": [
+            "hall (1st floor, north end of north/south hall)",
+            "hall (1st floor, middle of north/south hall)"
+          ],
+          "llm_dir": "south",
+          "in_gt": true,
+          "gt_dir": "south",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 13
+        },
+        {
+          "edge": [
+            "stairwell (second floor)",
+            "outside physics office"
+          ],
+          "llm_dir": "east",
+          "in_gt": true,
+          "gt_dir": "east",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 23
+        },
+        {
+          "edge": [
+            "maze of twisty passages (stop 2)",
+            "outside physics office"
+          ],
+          "llm_dir": "north",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 41
+        },
+        {
+          "edge": [
+            "outside physics office",
+            "hall (2nd floor, middle of north/south hall)"
+          ],
+          "llm_dir": "south",
+          "in_gt": true,
+          "gt_dir": "south",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 24
+        },
+        {
+          "edge": [
+            "stairwell (second floor)",
+            "stairwell (first floor)"
+          ],
+          "llm_dir": "down",
+          "in_gt": true,
+          "gt_dir": "down",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 11
+        }
+      ],
+      "case_counts": {
+        "correct": 5,
+        "hallucinated_edge": 1
+      },
+      "root_cause": "overlap_mixed"
+    },
+    {
+      "type": "topology",
+      "description": "position (3, 1, 1) occupied by multiple rooms ['hall (1st floor, north end of north/south hall)', 'outside physics office', 'stairwell (first floor)']",
+      "involved_edges": [],
+      "involved_nodes": [
+        "hall (1st floor, north end of north/south hall)",
+        "outside physics office",
+        "stairwell (first floor)"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "stairwell (first floor)",
+            "hall (1st floor, north end of north/south hall)"
+          ],
+          "llm_dir": "east",
+          "in_gt": true,
+          "gt_dir": "east",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 12
+        },
+        {
+          "edge": [
+            "hall (1st floor, north end of north/south hall)",
+            "hall (1st floor, middle of north/south hall)"
+          ],
+          "llm_dir": "south",
+          "in_gt": true,
+          "gt_dir": "south",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 13
+        },
+        {
+          "edge": [
+            "stairwell (second floor)",
+            "outside physics office"
+          ],
+          "llm_dir": "east",
+          "in_gt": true,
+          "gt_dir": "east",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 23
+        },
+        {
+          "edge": [
+            "maze of twisty passages (stop 2)",
+            "outside physics office"
+          ],
+          "llm_dir": "north",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 41
+        },
+        {
+          "edge": [
+            "outside physics office",
+            "hall (2nd floor, middle of north/south hall)"
+          ],
+          "llm_dir": "south",
+          "in_gt": true,
+          "gt_dir": "south",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 24
+        },
+        {
+          "edge": [
+            "stairwell (second floor)",
+            "stairwell (first floor)"
+          ],
+          "llm_dir": "down",
+          "in_gt": true,
+          "gt_dir": "down",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 11
+        }
+      ],
+      "case_counts": {
+        "correct": 5,
+        "hallucinated_edge": 1
+      },
+      "root_cause": "overlap_mixed"
+    },
+    {
+      "type": "topology",
+      "description": "position (4, 1, 2) occupied by multiple rooms ['hall (1st floor, north end of north/south hall)', 'outside physics office']",
+      "involved_edges": [],
+      "involved_nodes": [
+        "hall (1st floor, north end of north/south hall)",
+        "outside physics office"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "stairwell (first floor)",
+            "hall (1st floor, north end of north/south hall)"
+          ],
+          "llm_dir": "east",
+          "in_gt": true,
+          "gt_dir": "east",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 12
+        },
+        {
+          "edge": [
+            "hall (1st floor, north end of north/south hall)",
+            "hall (1st floor, middle of north/south hall)"
+          ],
+          "llm_dir": "south",
+          "in_gt": true,
+          "gt_dir": "south",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 13
+        },
+        {
+          "edge": [
+            "stairwell (second floor)",
+            "outside physics office"
+          ],
+          "llm_dir": "east",
+          "in_gt": true,
+          "gt_dir": "east",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 23
+        },
+        {
+          "edge": [
+            "maze of twisty passages (stop 2)",
+            "outside physics office"
+          ],
+          "llm_dir": "north",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 41
+        },
+        {
+          "edge": [
+            "outside physics office",
+            "hall (2nd floor, middle of north/south hall)"
+          ],
+          "llm_dir": "south",
+          "in_gt": true,
+          "gt_dir": "south",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 24
+        }
+      ],
+      "case_counts": {
+        "correct": 4,
+        "hallucinated_edge": 1
+      },
+      "root_cause": "overlap_mixed"
+    },
+    {
+      "type": "topology",
+      "description": "position (1, 0, -1) occupied by multiple rooms ['hall (1st floor, middle of north/south hall)', 'hall (2nd floor, middle of north/south hall)', 'maze of twisty passages (stop 2)', 'maze of twisty passages (stop 4)']",
+      "involved_edges": [],
+      "involved_nodes": [
+        "hall (1st floor, middle of north/south hall)",
+        "hall (2nd floor, middle of north/south hall)",
+        "maze of twisty passages (stop 2)",
+        "maze of twisty passages (stop 4)"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "hall (1st floor, north end of north/south hall)",
+            "hall (1st floor, middle of north/south hall)"
+          ],
+          "llm_dir": "south",
+          "in_gt": true,
+          "gt_dir": "south",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 13
+        },
+        {
+          "edge": [
+            "hall (1st floor, middle of north/south hall)",
+            "hall outside elevator (1st floor)"
+          ],
+          "llm_dir": "east",
+          "in_gt": true,
+          "gt_dir": "east",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 14
+        },
+        {
+          "edge": [
+            "hall (1st floor, middle of north/south hall)",
+            "maze of twisty passages (stop 1)"
+          ],
+          "llm_dir": "east",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 29
+        },
+        {
+          "edge": [
+            "outside physics office",
+            "hall (2nd floor, middle of north/south hall)"
+          ],
+          "llm_dir": "south",
+          "in_gt": true,
+          "gt_dir": "south",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 24
+        },
+        {
+          "edge": [
+            "hall (2nd floor, middle of north/south hall)",
+            "maze of twisty passages (stop 1)"
+          ],
+          "llm_dir": "down",
+          "in_gt": true,
+          "gt_dir": "down",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 56
+        },
+        {
+          "edge": [
+            "maze of twisty passages (stop 3)",
+            "maze of twisty passages (stop 2)"
+          ],
+          "llm_dir": "west",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 34
+        },
+        {
+          "edge": [
+            "maze of twisty passages (stop 4)",
+            "maze of twisty passages (stop 2)"
+          ],
+          "llm_dir": "west",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 39
+        },
+        {
+          "edge": [
+            "maze of twisty passages (stop 1)",
+            "maze of twisty passages (stop 2)"
+          ],
+          "llm_dir": "west",
+          "in_gt": true,
+          "gt_dir": "east",
+          "case": "wrong_direction",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 70
+        },
+        {
+          "edge": [
+            "maze of twisty passages (stop 2)",
+            "outside physics office"
+          ],
+          "llm_dir": "north",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 41
+        },
+        {
+          "edge": [
+            "maze of twisty passages (stop 2)",
+            "gnome's lair"
+          ],
+          "llm_dir": "out",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 66
+        },
+        {
+          "edge": [
+            "maze of twisty passages (stop 3)",
+            "maze of twisty passages (stop 4)"
+          ],
+          "llm_dir": "west",
+          "in_gt": false,
+          "gt_dir": "east",
+          "case": "swapped_src_dst",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 37
+        }
+      ],
+      "case_counts": {
+        "correct": 4,
+        "hallucinated_edge": 5,
+        "wrong_direction": 1,
+        "swapped_src_dst": 1
+      },
+      "root_cause": "wrong_direction_caused_overlap"
+    },
+    {
+      "type": "topology",
+      "description": "position (2, 0, 0) occupied by multiple rooms ['hall (1st floor, middle of north/south hall)', 'hall (2nd floor, middle of north/south hall)', 'hall outside elevator (3rd floor)', 'maze of twisty passages (stop 2)', 'maze of twisty passages (stop 4)']",
+      "involved_edges": [],
+      "involved_nodes": [
+        "hall (1st floor, middle of north/south hall)",
+        "hall (2nd floor, middle of north/south hall)",
+        "hall outside elevator (3rd floor)",
+        "maze of twisty passages (stop 2)",
+        "maze of twisty passages (stop 4)"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "hall (1st floor, north end of north/south hall)",
+            "hall (1st floor, middle of north/south hall)"
+          ],
+          "llm_dir": "south",
+          "in_gt": true,
+          "gt_dir": "south",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 13
+        },
+        {
+          "edge": [
+            "hall (1st floor, middle of north/south hall)",
+            "hall outside elevator (1st floor)"
+          ],
+          "llm_dir": "east",
+          "in_gt": true,
+          "gt_dir": "east",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 14
+        },
+        {
+          "edge": [
+            "hall (1st floor, middle of north/south hall)",
+            "maze of twisty passages (stop 1)"
+          ],
+          "llm_dir": "east",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 29
+        },
+        {
+          "edge": [
+            "outside physics office",
+            "hall (2nd floor, middle of north/south hall)"
+          ],
+          "llm_dir": "south",
+          "in_gt": true,
+          "gt_dir": "south",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 24
+        },
+        {
+          "edge": [
+            "hall (2nd floor, middle of north/south hall)",
+            "maze of twisty passages (stop 1)"
+          ],
+          "llm_dir": "down",
+          "in_gt": true,
+          "gt_dir": "down",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 56
+        },
+        {
+          "edge": [
+            "hall (3rd floor, middle of north/south hall)",
+            "hall outside elevator (3rd floor)"
+          ],
+          "llm_dir": "east",
+          "in_gt": true,
+          "gt_dir": "east",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 3
+        },
+        {
+          "edge": [
+            "maze of twisty passages (stop 3)",
+            "maze of twisty passages (stop 2)"
+          ],
+          "llm_dir": "west",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 34
+        },
+        {
+          "edge": [
+            "maze of twisty passages (stop 4)",
+            "maze of twisty passages (stop 2)"
+          ],
+          "llm_dir": "west",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 39
+        },
+        {
+          "edge": [
+            "maze of twisty passages (stop 1)",
+            "maze of twisty passages (stop 2)"
+          ],
+          "llm_dir": "west",
+          "in_gt": true,
+          "gt_dir": "east",
+          "case": "wrong_direction",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 70
+        },
+        {
+          "edge": [
+            "maze of twisty passages (stop 2)",
+            "outside physics office"
+          ],
+          "llm_dir": "north",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 41
+        },
+        {
+          "edge": [
+            "maze of twisty passages (stop 2)",
+            "gnome's lair"
+          ],
+          "llm_dir": "out",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 66
+        },
+        {
+          "edge": [
+            "maze of twisty passages (stop 3)",
+            "maze of twisty passages (stop 4)"
+          ],
+          "llm_dir": "west",
+          "in_gt": false,
+          "gt_dir": "east",
+          "case": "swapped_src_dst",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 37
+        }
+      ],
+      "case_counts": {
+        "correct": 5,
+        "hallucinated_edge": 5,
+        "wrong_direction": 1,
+        "swapped_src_dst": 1
+      },
+      "root_cause": "wrong_direction_caused_overlap"
+    },
+    {
+      "type": "topology",
+      "description": "position (5, 0, 3) occupied by multiple rooms ['hall (2nd floor, middle of north/south hall)', 'hall outside elevator (3rd floor)']",
+      "involved_edges": [],
+      "involved_nodes": [
+        "hall (2nd floor, middle of north/south hall)",
+        "hall outside elevator (3rd floor)"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "outside physics office",
+            "hall (2nd floor, middle of north/south hall)"
+          ],
+          "llm_dir": "south",
+          "in_gt": true,
+          "gt_dir": "south",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 24
+        },
+        {
+          "edge": [
+            "hall (2nd floor, middle of north/south hall)",
+            "maze of twisty passages (stop 1)"
+          ],
+          "llm_dir": "down",
+          "in_gt": true,
+          "gt_dir": "down",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 56
+        },
+        {
+          "edge": [
+            "hall (3rd floor, middle of north/south hall)",
+            "hall outside elevator (3rd floor)"
+          ],
+          "llm_dir": "east",
+          "in_gt": true,
+          "gt_dir": "east",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 3
+        }
+      ],
+      "case_counts": {
+        "correct": 3
+      },
+      "root_cause": "false_positive_overlap"
+    },
+    {
+      "type": "topology",
+      "description": "position (3, 0, 1) occupied by multiple rooms ['hall (1st floor, middle of north/south hall)', 'hall (2nd floor, middle of north/south hall)', 'hall outside elevator (3rd floor)', 'maze of twisty passages (stop 2)', 'maze of twisty passages (stop 4)']",
+      "involved_edges": [],
+      "involved_nodes": [
+        "hall (1st floor, middle of north/south hall)",
+        "hall (2nd floor, middle of north/south hall)",
+        "hall outside elevator (3rd floor)",
+        "maze of twisty passages (stop 2)",
+        "maze of twisty passages (stop 4)"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "hall (1st floor, north end of north/south hall)",
+            "hall (1st floor, middle of north/south hall)"
+          ],
+          "llm_dir": "south",
+          "in_gt": true,
+          "gt_dir": "south",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 13
+        },
+        {
+          "edge": [
+            "hall (1st floor, middle of north/south hall)",
+            "hall outside elevator (1st floor)"
+          ],
+          "llm_dir": "east",
+          "in_gt": true,
+          "gt_dir": "east",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 14
+        },
+        {
+          "edge": [
+            "hall (1st floor, middle of north/south hall)",
+            "maze of twisty passages (stop 1)"
+          ],
+          "llm_dir": "east",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 29
+        },
+        {
+          "edge": [
+            "outside physics office",
+            "hall (2nd floor, middle of north/south hall)"
+          ],
+          "llm_dir": "south",
+          "in_gt": true,
+          "gt_dir": "south",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 24
+        },
+        {
+          "edge": [
+            "hall (2nd floor, middle of north/south hall)",
+            "maze of twisty passages (stop 1)"
+          ],
+          "llm_dir": "down",
+          "in_gt": true,
+          "gt_dir": "down",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 56
+        },
+        {
+          "edge": [
+            "hall (3rd floor, middle of north/south hall)",
+            "hall outside elevator (3rd floor)"
+          ],
+          "llm_dir": "east",
+          "in_gt": true,
+          "gt_dir": "east",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 3
+        },
+        {
+          "edge": [
+            "maze of twisty passages (stop 3)",
+            "maze of twisty passages (stop 2)"
+          ],
+          "llm_dir": "west",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 34
+        },
+        {
+          "edge": [
+            "maze of twisty passages (stop 4)",
+            "maze of twisty passages (stop 2)"
+          ],
+          "llm_dir": "west",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 39
+        },
+        {
+          "edge": [
+            "maze of twisty passages (stop 1)",
+            "maze of twisty passages (stop 2)"
+          ],
+          "llm_dir": "west",
+          "in_gt": true,
+          "gt_dir": "east",
+          "case": "wrong_direction",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 70
+        },
+        {
+          "edge": [
+            "maze of twisty passages (stop 2)",
+            "outside physics office"
+          ],
+          "llm_dir": "north",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 41
+        },
+        {
+          "edge": [
+            "maze of twisty passages (stop 2)",
+            "gnome's lair"
+          ],
+          "llm_dir": "out",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 66
+        },
+        {
+          "edge": [
+            "maze of twisty passages (stop 3)",
+            "maze of twisty passages (stop 4)"
+          ],
+          "llm_dir": "west",
+          "in_gt": false,
+          "gt_dir": "east",
+          "case": "swapped_src_dst",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 37
+        }
+      ],
+      "case_counts": {
+        "correct": 5,
+        "hallucinated_edge": 5,
+        "wrong_direction": 1,
+        "swapped_src_dst": 1
+      },
+      "root_cause": "wrong_direction_caused_overlap"
+    },
+    {
+      "type": "topology",
+      "description": "position (4, 0, 2) occupied by multiple rooms ['hall (1st floor, middle of north/south hall)', 'hall (2nd floor, middle of north/south hall)', 'hall outside elevator (3rd floor)', 'maze of twisty passages (stop 2)', 'maze of twisty passages (stop 4)']",
+      "involved_edges": [],
+      "involved_nodes": [
+        "hall (1st floor, middle of north/south hall)",
+        "hall (2nd floor, middle of north/south hall)",
+        "hall outside elevator (3rd floor)",
+        "maze of twisty passages (stop 2)",
+        "maze of twisty passages (stop 4)"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "hall (1st floor, north end of north/south hall)",
+            "hall (1st floor, middle of north/south hall)"
+          ],
+          "llm_dir": "south",
+          "in_gt": true,
+          "gt_dir": "south",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 13
+        },
+        {
+          "edge": [
+            "hall (1st floor, middle of north/south hall)",
+            "hall outside elevator (1st floor)"
+          ],
+          "llm_dir": "east",
+          "in_gt": true,
+          "gt_dir": "east",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 14
+        },
+        {
+          "edge": [
+            "hall (1st floor, middle of north/south hall)",
+            "maze of twisty passages (stop 1)"
+          ],
+          "llm_dir": "east",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 29
+        },
+        {
+          "edge": [
+            "outside physics office",
+            "hall (2nd floor, middle of north/south hall)"
+          ],
+          "llm_dir": "south",
+          "in_gt": true,
+          "gt_dir": "south",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 24
+        },
+        {
+          "edge": [
+            "hall (2nd floor, middle of north/south hall)",
+            "maze of twisty passages (stop 1)"
+          ],
+          "llm_dir": "down",
+          "in_gt": true,
+          "gt_dir": "down",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 56
+        },
+        {
+          "edge": [
+            "hall (3rd floor, middle of north/south hall)",
+            "hall outside elevator (3rd floor)"
+          ],
+          "llm_dir": "east",
+          "in_gt": true,
+          "gt_dir": "east",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 3
+        },
+        {
+          "edge": [
+            "maze of twisty passages (stop 3)",
+            "maze of twisty passages (stop 2)"
+          ],
+          "llm_dir": "west",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 34
+        },
+        {
+          "edge": [
+            "maze of twisty passages (stop 4)",
+            "maze of twisty passages (stop 2)"
+          ],
+          "llm_dir": "west",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 39
+        },
+        {
+          "edge": [
+            "maze of twisty passages (stop 1)",
+            "maze of twisty passages (stop 2)"
+          ],
+          "llm_dir": "west",
+          "in_gt": true,
+          "gt_dir": "east",
+          "case": "wrong_direction",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 70
+        },
+        {
+          "edge": [
+            "maze of twisty passages (stop 2)",
+            "outside physics office"
+          ],
+          "llm_dir": "north",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 41
+        },
+        {
+          "edge": [
+            "maze of twisty passages (stop 2)",
+            "gnome's lair"
+          ],
+          "llm_dir": "out",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 66
+        },
+        {
+          "edge": [
+            "maze of twisty passages (stop 3)",
+            "maze of twisty passages (stop 4)"
+          ],
+          "llm_dir": "west",
+          "in_gt": false,
+          "gt_dir": "east",
+          "case": "swapped_src_dst",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 37
+        }
+      ],
+      "case_counts": {
+        "correct": 5,
+        "hallucinated_edge": 5,
+        "wrong_direction": 1,
+        "swapped_src_dst": 1
+      },
+      "root_cause": "wrong_direction_caused_overlap"
+    },
+    {
+      "type": "topology",
+      "description": "position (5, 0, 2) occupied by multiple rooms ['hall outside elevator (1st floor)', 'maze of twisty passages (stop 1)', 'maze of twisty passages (stop 3)', 'maze of twisty passages (stop 4)']",
+      "involved_edges": [],
+      "involved_nodes": [
+        "hall outside elevator (1st floor)",
+        "maze of twisty passages (stop 1)",
+        "maze of twisty passages (stop 3)",
+        "maze of twisty passages (stop 4)"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "hall (1st floor, middle of north/south hall)",
+            "hall outside elevator (1st floor)"
+          ],
+          "llm_dir": "east",
+          "in_gt": true,
+          "gt_dir": "east",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 14
+        },
+        {
+          "edge": [
+            "hall outside elevator (1st floor)",
+            "janitor's closet"
+          ],
+          "llm_dir": "south",
+          "in_gt": true,
+          "gt_dir": "south",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 16
+        },
+        {
+          "edge": [
+            "hall (1st floor, middle of north/south hall)",
+            "maze of twisty passages (stop 1)"
+          ],
+          "llm_dir": "east",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 29
+        },
+        {
+          "edge": [
+            "hall (2nd floor, middle of north/south hall)",
+            "maze of twisty passages (stop 1)"
+          ],
+          "llm_dir": "down",
+          "in_gt": true,
+          "gt_dir": "down",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 56
+        },
+        {
+          "edge": [
+            "gnome's lair",
+            "maze of twisty passages (stop 1)"
+          ],
+          "llm_dir": "west",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 69
+        },
+        {
+          "edge": [
+            "maze of twisty passages (stop 1)",
+            "maze of twisty passages (stop 2)"
+          ],
+          "llm_dir": "west",
+          "in_gt": true,
+          "gt_dir": "east",
+          "case": "wrong_direction",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 70
+        },
+        {
+          "edge": [
+            "maze of twisty passages (stop 3)",
+            "maze of twisty passages (stop 2)"
+          ],
+          "llm_dir": "west",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 34
+        },
+        {
+          "edge": [
+            "maze of twisty passages (stop 3)",
+            "maze of twisty passages (stop 4)"
+          ],
+          "llm_dir": "west",
+          "in_gt": false,
+          "gt_dir": "east",
+          "case": "swapped_src_dst",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 37
+        },
+        {
+          "edge": [
+            "maze of twisty passages (stop 4)",
+            "maze of twisty passages (stop 2)"
+          ],
+          "llm_dir": "west",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 39
+        }
+      ],
+      "case_counts": {
+        "correct": 3,
+        "hallucinated_edge": 4,
+        "wrong_direction": 1,
+        "swapped_src_dst": 1
+      },
+      "root_cause": "wrong_direction_caused_overlap"
+    },
+    {
+      "type": "topology",
+      "description": "position (3, 0, 0) occupied by multiple rooms ['hall outside elevator (1st floor)', 'maze of twisty passages (stop 1)', 'maze of twisty passages (stop 3)', 'maze of twisty passages (stop 4)']",
+      "involved_edges": [],
+      "involved_nodes": [
+        "hall outside elevator (1st floor)",
+        "maze of twisty passages (stop 1)",
+        "maze of twisty passages (stop 3)",
+        "maze of twisty passages (stop 4)"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "hall (1st floor, middle of north/south hall)",
+            "hall outside elevator (1st floor)"
+          ],
+          "llm_dir": "east",
+          "in_gt": true,
+          "gt_dir": "east",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 14
+        },
+        {
+          "edge": [
+            "hall outside elevator (1st floor)",
+            "janitor's closet"
+          ],
+          "llm_dir": "south",
+          "in_gt": true,
+          "gt_dir": "south",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 16
+        },
+        {
+          "edge": [
+            "hall (1st floor, middle of north/south hall)",
+            "maze of twisty passages (stop 1)"
+          ],
+          "llm_dir": "east",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 29
+        },
+        {
+          "edge": [
+            "hall (2nd floor, middle of north/south hall)",
+            "maze of twisty passages (stop 1)"
+          ],
+          "llm_dir": "down",
+          "in_gt": true,
+          "gt_dir": "down",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 56
+        },
+        {
+          "edge": [
+            "gnome's lair",
+            "maze of twisty passages (stop 1)"
+          ],
+          "llm_dir": "west",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 69
+        },
+        {
+          "edge": [
+            "maze of twisty passages (stop 1)",
+            "maze of twisty passages (stop 2)"
+          ],
+          "llm_dir": "west",
+          "in_gt": true,
+          "gt_dir": "east",
+          "case": "wrong_direction",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 70
+        },
+        {
+          "edge": [
+            "maze of twisty passages (stop 3)",
+            "maze of twisty passages (stop 2)"
+          ],
+          "llm_dir": "west",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 34
+        },
+        {
+          "edge": [
+            "maze of twisty passages (stop 3)",
+            "maze of twisty passages (stop 4)"
+          ],
+          "llm_dir": "west",
+          "in_gt": false,
+          "gt_dir": "east",
+          "case": "swapped_src_dst",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 37
+        },
+        {
+          "edge": [
+            "maze of twisty passages (stop 4)",
+            "maze of twisty passages (stop 2)"
+          ],
+          "llm_dir": "west",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 39
+        }
+      ],
+      "case_counts": {
+        "correct": 3,
+        "hallucinated_edge": 4,
+        "wrong_direction": 1,
+        "swapped_src_dst": 1
+      },
+      "root_cause": "wrong_direction_caused_overlap"
+    },
+    {
+      "type": "topology",
+      "description": "position (4, 0, 1) occupied by multiple rooms ['hall (1st floor, middle of north/south hall)', 'hall outside elevator (1st floor)', 'maze of twisty passages (stop 1)', 'maze of twisty passages (stop 3)', 'maze of twisty passages (stop 4)']",
+      "involved_edges": [],
+      "involved_nodes": [
+        "hall (1st floor, middle of north/south hall)",
+        "hall outside elevator (1st floor)",
+        "maze of twisty passages (stop 1)",
+        "maze of twisty passages (stop 3)",
+        "maze of twisty passages (stop 4)"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "hall (1st floor, north end of north/south hall)",
+            "hall (1st floor, middle of north/south hall)"
+          ],
+          "llm_dir": "south",
+          "in_gt": true,
+          "gt_dir": "south",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 13
+        },
+        {
+          "edge": [
+            "hall (1st floor, middle of north/south hall)",
+            "hall outside elevator (1st floor)"
+          ],
+          "llm_dir": "east",
+          "in_gt": true,
+          "gt_dir": "east",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 14
+        },
+        {
+          "edge": [
+            "hall (1st floor, middle of north/south hall)",
+            "maze of twisty passages (stop 1)"
+          ],
+          "llm_dir": "east",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 29
+        },
+        {
+          "edge": [
+            "hall outside elevator (1st floor)",
+            "janitor's closet"
+          ],
+          "llm_dir": "south",
+          "in_gt": true,
+          "gt_dir": "south",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 16
+        },
+        {
+          "edge": [
+            "hall (2nd floor, middle of north/south hall)",
+            "maze of twisty passages (stop 1)"
+          ],
+          "llm_dir": "down",
+          "in_gt": true,
+          "gt_dir": "down",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 56
+        },
+        {
+          "edge": [
+            "gnome's lair",
+            "maze of twisty passages (stop 1)"
+          ],
+          "llm_dir": "west",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 69
+        },
+        {
+          "edge": [
+            "maze of twisty passages (stop 1)",
+            "maze of twisty passages (stop 2)"
+          ],
+          "llm_dir": "west",
+          "in_gt": true,
+          "gt_dir": "east",
+          "case": "wrong_direction",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 70
+        },
+        {
+          "edge": [
+            "maze of twisty passages (stop 3)",
+            "maze of twisty passages (stop 2)"
+          ],
+          "llm_dir": "west",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 34
+        },
+        {
+          "edge": [
+            "maze of twisty passages (stop 3)",
+            "maze of twisty passages (stop 4)"
+          ],
+          "llm_dir": "west",
+          "in_gt": false,
+          "gt_dir": "east",
+          "case": "swapped_src_dst",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 37
+        },
+        {
+          "edge": [
+            "maze of twisty passages (stop 4)",
+            "maze of twisty passages (stop 2)"
+          ],
+          "llm_dir": "west",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 39
+        }
+      ],
+      "case_counts": {
+        "correct": 4,
+        "hallucinated_edge": 4,
+        "wrong_direction": 1,
+        "swapped_src_dst": 1
+      },
+      "root_cause": "wrong_direction_caused_overlap"
+    },
+    {
+      "type": "topology",
+      "description": "position (2, 0, -1) occupied by multiple rooms ['hall outside elevator (1st floor)', 'maze of twisty passages (stop 1)', 'maze of twisty passages (stop 3)', 'maze of twisty passages (stop 4)']",
+      "involved_edges": [],
+      "involved_nodes": [
+        "hall outside elevator (1st floor)",
+        "maze of twisty passages (stop 1)",
+        "maze of twisty passages (stop 3)",
+        "maze of twisty passages (stop 4)"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "hall (1st floor, middle of north/south hall)",
+            "hall outside elevator (1st floor)"
+          ],
+          "llm_dir": "east",
+          "in_gt": true,
+          "gt_dir": "east",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 14
+        },
+        {
+          "edge": [
+            "hall outside elevator (1st floor)",
+            "janitor's closet"
+          ],
+          "llm_dir": "south",
+          "in_gt": true,
+          "gt_dir": "south",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 16
+        },
+        {
+          "edge": [
+            "hall (1st floor, middle of north/south hall)",
+            "maze of twisty passages (stop 1)"
+          ],
+          "llm_dir": "east",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 29
+        },
+        {
+          "edge": [
+            "hall (2nd floor, middle of north/south hall)",
+            "maze of twisty passages (stop 1)"
+          ],
+          "llm_dir": "down",
+          "in_gt": true,
+          "gt_dir": "down",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 56
+        },
+        {
+          "edge": [
+            "gnome's lair",
+            "maze of twisty passages (stop 1)"
+          ],
+          "llm_dir": "west",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 69
+        },
+        {
+          "edge": [
+            "maze of twisty passages (stop 1)",
+            "maze of twisty passages (stop 2)"
+          ],
+          "llm_dir": "west",
+          "in_gt": true,
+          "gt_dir": "east",
+          "case": "wrong_direction",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 70
+        },
+        {
+          "edge": [
+            "maze of twisty passages (stop 3)",
+            "maze of twisty passages (stop 2)"
+          ],
+          "llm_dir": "west",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 34
+        },
+        {
+          "edge": [
+            "maze of twisty passages (stop 3)",
+            "maze of twisty passages (stop 4)"
+          ],
+          "llm_dir": "west",
+          "in_gt": false,
+          "gt_dir": "east",
+          "case": "swapped_src_dst",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 37
+        },
+        {
+          "edge": [
+            "maze of twisty passages (stop 4)",
+            "maze of twisty passages (stop 2)"
+          ],
+          "llm_dir": "west",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 39
+        }
+      ],
+      "case_counts": {
+        "correct": 3,
+        "hallucinated_edge": 4,
+        "wrong_direction": 1,
+        "swapped_src_dst": 1
+      },
+      "root_cause": "wrong_direction_caused_overlap"
+    },
+    {
+      "type": "topology",
+      "description": "position (5, 0, 1) occupied by multiple rooms [\"gnome's lair\", 'maze of twisty passages (stop 3)']",
+      "involved_edges": [],
+      "involved_nodes": [
+        "gnome's lair",
+        "maze of twisty passages (stop 3)"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "maze of twisty passages (stop 2)",
+            "gnome's lair"
+          ],
+          "llm_dir": "out",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 66
+        },
+        {
+          "edge": [
+            "gnome's lair",
+            "maze of twisty passages (stop 1)"
+          ],
+          "llm_dir": "west",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 69
+        },
+        {
+          "edge": [
+            "maze of twisty passages (stop 3)",
+            "maze of twisty passages (stop 2)"
+          ],
+          "llm_dir": "west",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 34
+        },
+        {
+          "edge": [
+            "maze of twisty passages (stop 3)",
+            "maze of twisty passages (stop 4)"
+          ],
+          "llm_dir": "west",
+          "in_gt": false,
+          "gt_dir": "east",
+          "case": "swapped_src_dst",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 37
+        }
+      ],
+      "case_counts": {
+        "hallucinated_edge": 3,
+        "swapped_src_dst": 1
+      },
+      "root_cause": "overlap_mixed"
+    },
+    {
+      "type": "topology",
+      "description": "position (4, 0, 0) occupied by multiple rooms [\"gnome's lair\", 'maze of twisty passages (stop 3)']",
+      "involved_edges": [],
+      "involved_nodes": [
+        "gnome's lair",
+        "maze of twisty passages (stop 3)"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "maze of twisty passages (stop 2)",
+            "gnome's lair"
+          ],
+          "llm_dir": "out",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 66
+        },
+        {
+          "edge": [
+            "gnome's lair",
+            "maze of twisty passages (stop 1)"
+          ],
+          "llm_dir": "west",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 69
+        },
+        {
+          "edge": [
+            "maze of twisty passages (stop 3)",
+            "maze of twisty passages (stop 2)"
+          ],
+          "llm_dir": "west",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 34
+        },
+        {
+          "edge": [
+            "maze of twisty passages (stop 3)",
+            "maze of twisty passages (stop 4)"
+          ],
+          "llm_dir": "west",
+          "in_gt": false,
+          "gt_dir": "east",
+          "case": "swapped_src_dst",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 37
+        }
+      ],
+      "case_counts": {
+        "hallucinated_edge": 3,
+        "swapped_src_dst": 1
+      },
+      "root_cause": "overlap_mixed"
+    },
+    {
+      "type": "topology",
+      "description": "position (6, 0, 2) occupied by multiple rooms [\"gnome's lair\", 'maze of twisty passages (stop 3)']",
+      "involved_edges": [],
+      "involved_nodes": [
+        "gnome's lair",
+        "maze of twisty passages (stop 3)"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "maze of twisty passages (stop 2)",
+            "gnome's lair"
+          ],
+          "llm_dir": "out",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 66
+        },
+        {
+          "edge": [
+            "gnome's lair",
+            "maze of twisty passages (stop 1)"
+          ],
+          "llm_dir": "west",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 69
+        },
+        {
+          "edge": [
+            "maze of twisty passages (stop 3)",
+            "maze of twisty passages (stop 2)"
+          ],
+          "llm_dir": "west",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 34
+        },
+        {
+          "edge": [
+            "maze of twisty passages (stop 3)",
+            "maze of twisty passages (stop 4)"
+          ],
+          "llm_dir": "west",
+          "in_gt": false,
+          "gt_dir": "east",
+          "case": "swapped_src_dst",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 37
+        }
+      ],
+      "case_counts": {
+        "hallucinated_edge": 3,
+        "swapped_src_dst": 1
+      },
+      "root_cause": "overlap_mixed"
+    },
+    {
+      "type": "topology",
+      "description": "position (3, 0, -1) occupied by multiple rooms [\"gnome's lair\", 'maze of twisty passages (stop 3)']",
+      "involved_edges": [],
+      "involved_nodes": [
+        "gnome's lair",
+        "maze of twisty passages (stop 3)"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "maze of twisty passages (stop 2)",
+            "gnome's lair"
+          ],
+          "llm_dir": "out",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 66
+        },
+        {
+          "edge": [
+            "gnome's lair",
+            "maze of twisty passages (stop 1)"
+          ],
+          "llm_dir": "west",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 69
+        },
+        {
+          "edge": [
+            "maze of twisty passages (stop 3)",
+            "maze of twisty passages (stop 2)"
+          ],
+          "llm_dir": "west",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 34
+        },
+        {
+          "edge": [
+            "maze of twisty passages (stop 3)",
+            "maze of twisty passages (stop 4)"
+          ],
+          "llm_dir": "west",
+          "in_gt": false,
+          "gt_dir": "east",
+          "case": "swapped_src_dst",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 37
+        }
+      ],
+      "case_counts": {
+        "hallucinated_edge": 3,
+        "swapped_src_dst": 1
+      },
+      "root_cause": "overlap_mixed"
+    },
+    {
+      "type": "naming",
+      "description": "node 'computer site' reachable at conflicting positions [(0, 0, 0), (1, 0, 1), (2, 0, 2), (3, 0, 3)]",
+      "involved_edges": [],
+      "involved_nodes": [
+        "computer site"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "computer site",
+            "hall outside computer site"
+          ],
+          "llm_dir": "northeast",
+          "in_gt": true,
+          "gt_dir": "northeast",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 1
+        }
+      ],
+      "case_counts": {
+        "correct": 1
+      },
+      "root_cause": "naming_collision_on_correct_subgraph"
+    },
+    {
+      "type": "naming",
+      "description": "node 'hall outside computer site' reachable at conflicting positions [(1, 1, 0), (2, 1, 1), (3, 1, 2), (4, 1, 3)]",
+      "involved_edges": [],
+      "involved_nodes": [
+        "hall outside computer site"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "computer site",
+            "hall outside computer site"
+          ],
+          "llm_dir": "northeast",
+          "in_gt": true,
+          "gt_dir": "northeast",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 1
+        },
+        {
+          "edge": [
+            "hall outside computer site",
+            "hall (3rd floor, middle of north/south hall)"
+          ],
+          "llm_dir": "south",
+          "in_gt": true,
+          "gt_dir": "south",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 2
+        },
+        {
+          "edge": [
+            "hall outside computer site",
+            "stairwell (third floor)"
+          ],
+          "llm_dir": "west",
+          "in_gt": true,
+          "gt_dir": "west",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 9
+        }
+      ],
+      "case_counts": {
+        "correct": 3
+      },
+      "root_cause": "naming_collision_on_correct_subgraph"
+    },
+    {
+      "type": "naming",
+      "description": "node 'hall (3rd floor, middle of north/south hall)' reachable at conflicting positions [(1, 0, 0), (2, 0, 1), (3, 0, 2), (4, 0, 3)]",
+      "involved_edges": [],
+      "involved_nodes": [
+        "hall (3rd floor, middle of north/south hall)"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "hall outside computer site",
+            "hall (3rd floor, middle of north/south hall)"
+          ],
+          "llm_dir": "south",
+          "in_gt": true,
+          "gt_dir": "south",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 2
+        },
+        {
+          "edge": [
+            "hall (3rd floor, middle of north/south hall)",
+            "hall outside elevator (3rd floor)"
+          ],
+          "llm_dir": "east",
+          "in_gt": true,
+          "gt_dir": "east",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 3
+        }
+      ],
+      "case_counts": {
+        "correct": 2
+      },
+      "root_cause": "naming_collision_on_correct_subgraph"
+    },
+    {
+      "type": "naming",
+      "description": "node 'stairwell (third floor)' reachable at conflicting positions [(0, 1, 0), (1, 1, 1), (2, 1, 2), (3, 1, 3)]",
+      "involved_edges": [],
+      "involved_nodes": [
+        "stairwell (third floor)"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "hall outside computer site",
+            "stairwell (third floor)"
+          ],
+          "llm_dir": "west",
+          "in_gt": true,
+          "gt_dir": "west",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 9
+        },
+        {
+          "edge": [
+            "stairwell (third floor)",
+            "stairwell (second floor)"
+          ],
+          "llm_dir": "down",
+          "in_gt": true,
+          "gt_dir": "down",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 10
+        }
+      ],
+      "case_counts": {
+        "correct": 2
+      },
+      "root_cause": "naming_collision_on_correct_subgraph"
+    },
+    {
+      "type": "naming",
+      "description": "node 'stairwell (second floor)' reachable at conflicting positions [(0, 1, -1), (1, 1, 0), (2, 1, 1), (2, 1, 2), (3, 1, 2), (3, 1, 3)]",
+      "involved_edges": [],
+      "involved_nodes": [
+        "stairwell (second floor)"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "stairwell (third floor)",
+            "stairwell (second floor)"
+          ],
+          "llm_dir": "down",
+          "in_gt": true,
+          "gt_dir": "down",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 10
+        },
+        {
+          "edge": [
+            "stairwell (second floor)",
+            "stairwell (first floor)"
+          ],
+          "llm_dir": "down",
+          "in_gt": true,
+          "gt_dir": "down",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 11
+        },
+        {
+          "edge": [
+            "stairwell (second floor)",
+            "outside physics office"
+          ],
+          "llm_dir": "east",
+          "in_gt": true,
+          "gt_dir": "east",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 23
+        }
+      ],
+      "case_counts": {
+        "correct": 3
+      },
+      "root_cause": "naming_collision_on_correct_subgraph"
+    },
+    {
+      "type": "naming",
+      "description": "node 'stairwell (first floor)' reachable at conflicting positions [(0, 1, -2), (1, 1, -1), (1, 1, 0), (2, 1, 0), (2, 1, 1), (3, 1, 1), (3, 1, 2)]",
+      "involved_edges": [],
+      "involved_nodes": [
+        "stairwell (first floor)"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "stairwell (second floor)",
+            "stairwell (first floor)"
+          ],
+          "llm_dir": "down",
+          "in_gt": true,
+          "gt_dir": "down",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 11
+        },
+        {
+          "edge": [
+            "stairwell (first floor)",
+            "hall (1st floor, north end of north/south hall)"
+          ],
+          "llm_dir": "east",
+          "in_gt": true,
+          "gt_dir": "east",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 12
+        }
+      ],
+      "case_counts": {
+        "correct": 2
+      },
+      "root_cause": "naming_collision_on_correct_subgraph"
+    },
+    {
+      "type": "naming",
+      "description": "node 'outside physics office' reachable at conflicting positions [(1, 1, -1), (2, 1, 0), (3, 1, 1), (4, 1, 2)]",
+      "involved_edges": [],
+      "involved_nodes": [
+        "outside physics office"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "stairwell (second floor)",
+            "outside physics office"
+          ],
+          "llm_dir": "east",
+          "in_gt": true,
+          "gt_dir": "east",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 23
+        },
+        {
+          "edge": [
+            "maze of twisty passages (stop 2)",
+            "outside physics office"
+          ],
+          "llm_dir": "north",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 41
+        },
+        {
+          "edge": [
+            "outside physics office",
+            "hall (2nd floor, middle of north/south hall)"
+          ],
+          "llm_dir": "south",
+          "in_gt": true,
+          "gt_dir": "south",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 24
+        }
+      ],
+      "case_counts": {
+        "correct": 2,
+        "hallucinated_edge": 1
+      },
+      "root_cause": "real_name_corrupted_by_neighbour_error"
+    },
+    {
+      "type": "naming",
+      "description": "node 'hall (2nd floor, middle of north/south hall)' reachable at conflicting positions [(1, 0, -1), (2, 0, 0), (3, 0, 1), (4, 0, 2), (5, 0, 3)]",
+      "involved_edges": [],
+      "involved_nodes": [
+        "hall (2nd floor, middle of north/south hall)"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "outside physics office",
+            "hall (2nd floor, middle of north/south hall)"
+          ],
+          "llm_dir": "south",
+          "in_gt": true,
+          "gt_dir": "south",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 24
+        },
+        {
+          "edge": [
+            "hall (2nd floor, middle of north/south hall)",
+            "maze of twisty passages (stop 1)"
+          ],
+          "llm_dir": "down",
+          "in_gt": true,
+          "gt_dir": "down",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 56
+        }
+      ],
+      "case_counts": {
+        "correct": 2
+      },
+      "root_cause": "naming_collision_on_correct_subgraph"
+    },
+    {
+      "type": "naming",
+      "description": "node 'maze of twisty passages (stop 2)' reachable at conflicting positions [(1, 0, -1), (2, 0, 0), (3, 0, 1), (4, 0, 2)]",
+      "involved_edges": [],
+      "involved_nodes": [
+        "maze of twisty passages (stop 2)"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "maze of twisty passages (stop 3)",
+            "maze of twisty passages (stop 2)"
+          ],
+          "llm_dir": "west",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 34
+        },
+        {
+          "edge": [
+            "maze of twisty passages (stop 4)",
+            "maze of twisty passages (stop 2)"
+          ],
+          "llm_dir": "west",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 39
+        },
+        {
+          "edge": [
+            "maze of twisty passages (stop 1)",
+            "maze of twisty passages (stop 2)"
+          ],
+          "llm_dir": "west",
+          "in_gt": true,
+          "gt_dir": "east",
+          "case": "wrong_direction",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 70
+        },
+        {
+          "edge": [
+            "maze of twisty passages (stop 2)",
+            "outside physics office"
+          ],
+          "llm_dir": "north",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 41
+        },
+        {
+          "edge": [
+            "maze of twisty passages (stop 2)",
+            "gnome's lair"
+          ],
+          "llm_dir": "out",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 66
+        }
+      ],
+      "case_counts": {
+        "hallucinated_edge": 4,
+        "wrong_direction": 1
+      },
+      "root_cause": "naming_mixed"
+    },
+    {
+      "type": "naming",
+      "description": "node 'maze of twisty passages (stop 3)' reachable at conflicting positions [(2, 0, -1), (3, 0, -1), (3, 0, 0), (4, 0, 0), (4, 0, 1), (5, 0, 1), (5, 0, 2), (6, 0, 2)]",
+      "involved_edges": [],
+      "involved_nodes": [
+        "maze of twisty passages (stop 3)"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "maze of twisty passages (stop 3)",
+            "maze of twisty passages (stop 2)"
+          ],
+          "llm_dir": "west",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 34
+        },
+        {
+          "edge": [
+            "maze of twisty passages (stop 3)",
+            "maze of twisty passages (stop 4)"
+          ],
+          "llm_dir": "west",
+          "in_gt": false,
+          "gt_dir": "east",
+          "case": "swapped_src_dst",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 37
+        }
+      ],
+      "case_counts": {
+        "hallucinated_edge": 1,
+        "swapped_src_dst": 1
+      },
+      "root_cause": "naming_mixed"
+    },
+    {
+      "type": "naming",
+      "description": "node 'maze of twisty passages (stop 4)' reachable at conflicting positions [(1, 0, -1), (2, 0, -1), (2, 0, 0), (3, 0, 0), (3, 0, 1), (4, 0, 1), (4, 0, 2), (5, 0, 2)]",
+      "involved_edges": [],
+      "involved_nodes": [
+        "maze of twisty passages (stop 4)"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "maze of twisty passages (stop 3)",
+            "maze of twisty passages (stop 4)"
+          ],
+          "llm_dir": "west",
+          "in_gt": false,
+          "gt_dir": "east",
+          "case": "swapped_src_dst",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 37
+        },
+        {
+          "edge": [
+            "maze of twisty passages (stop 4)",
+            "maze of twisty passages (stop 2)"
+          ],
+          "llm_dir": "west",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 39
+        }
+      ],
+      "case_counts": {
+        "swapped_src_dst": 1,
+        "hallucinated_edge": 1
+      },
+      "root_cause": "naming_mixed"
+    },
+    {
+      "type": "naming",
+      "description": "node 'maze of twisty passages (stop 1)' reachable at conflicting positions [(1, 0, -2), (2, 0, -1), (3, 0, 0), (4, 0, 1), (5, 0, 2)]",
+      "involved_edges": [],
+      "involved_nodes": [
+        "maze of twisty passages (stop 1)"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "hall (1st floor, middle of north/south hall)",
+            "maze of twisty passages (stop 1)"
+          ],
+          "llm_dir": "east",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 29
+        },
+        {
+          "edge": [
+            "hall (2nd floor, middle of north/south hall)",
+            "maze of twisty passages (stop 1)"
+          ],
+          "llm_dir": "down",
+          "in_gt": true,
+          "gt_dir": "down",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 56
+        },
+        {
+          "edge": [
+            "gnome's lair",
+            "maze of twisty passages (stop 1)"
+          ],
+          "llm_dir": "west",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 69
+        },
+        {
+          "edge": [
+            "maze of twisty passages (stop 1)",
+            "maze of twisty passages (stop 2)"
+          ],
+          "llm_dir": "west",
+          "in_gt": true,
+          "gt_dir": "east",
+          "case": "wrong_direction",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 70
+        }
+      ],
+      "case_counts": {
+        "hallucinated_edge": 2,
+        "correct": 1,
+        "wrong_direction": 1
+      },
+      "root_cause": "real_name_corrupted_by_neighbour_error"
+    },
+    {
+      "type": "naming",
+      "description": "node 'hall (1st floor, middle of north/south hall)' reachable at conflicting positions [(1, 0, -1), (2, 0, 0), (3, 0, 1), (4, 0, 1), (4, 0, 2)]",
+      "involved_edges": [],
+      "involved_nodes": [
+        "hall (1st floor, middle of north/south hall)"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "hall (1st floor, north end of north/south hall)",
+            "hall (1st floor, middle of north/south hall)"
+          ],
+          "llm_dir": "south",
+          "in_gt": true,
+          "gt_dir": "south",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 13
+        },
+        {
+          "edge": [
+            "hall (1st floor, middle of north/south hall)",
+            "hall outside elevator (1st floor)"
+          ],
+          "llm_dir": "east",
+          "in_gt": true,
+          "gt_dir": "east",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 14
+        },
+        {
+          "edge": [
+            "hall (1st floor, middle of north/south hall)",
+            "maze of twisty passages (stop 1)"
+          ],
+          "llm_dir": "east",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 29
+        }
+      ],
+      "case_counts": {
+        "correct": 2,
+        "hallucinated_edge": 1
+      },
+      "root_cause": "real_name_corrupted_by_neighbour_error"
+    },
+    {
+      "type": "naming",
+      "description": "node \"gnome's lair\" reachable at conflicting positions [(3, 0, -1), (4, 0, 0), (5, 0, 1), (6, 0, 2)]",
+      "involved_edges": [],
+      "involved_nodes": [
+        "gnome's lair"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "maze of twisty passages (stop 2)",
+            "gnome's lair"
+          ],
+          "llm_dir": "out",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 66
+        },
+        {
+          "edge": [
+            "gnome's lair",
+            "maze of twisty passages (stop 1)"
+          ],
+          "llm_dir": "west",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 69
+        }
+      ],
+      "case_counts": {
+        "hallucinated_edge": 2
+      },
+      "root_cause": "naming_mixed"
+    },
+    {
+      "type": "naming",
+      "description": "node 'hall (1st floor, north end of north/south hall)' reachable at conflicting positions [(1, 1, -2), (1, 1, -1), (2, 1, 0), (3, 1, 1), (4, 1, 1), (4, 1, 2)]",
+      "involved_edges": [],
+      "involved_nodes": [
+        "hall (1st floor, north end of north/south hall)"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "stairwell (first floor)",
+            "hall (1st floor, north end of north/south hall)"
+          ],
+          "llm_dir": "east",
+          "in_gt": true,
+          "gt_dir": "east",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 12
+        },
+        {
+          "edge": [
+            "hall (1st floor, north end of north/south hall)",
+            "hall (1st floor, middle of north/south hall)"
+          ],
+          "llm_dir": "south",
+          "in_gt": true,
+          "gt_dir": "south",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 13
+        }
+      ],
+      "case_counts": {
+        "correct": 2
+      },
+      "root_cause": "naming_collision_on_correct_subgraph"
+    },
+    {
+      "type": "naming",
+      "description": "node 'hall outside elevator (1st floor)' reachable at conflicting positions [(2, 0, -1), (3, 0, 0), (4, 0, 1), (5, 0, 2)]",
+      "involved_edges": [],
+      "involved_nodes": [
+        "hall outside elevator (1st floor)"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "hall (1st floor, middle of north/south hall)",
+            "hall outside elevator (1st floor)"
+          ],
+          "llm_dir": "east",
+          "in_gt": true,
+          "gt_dir": "east",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 14
+        },
+        {
+          "edge": [
+            "hall outside elevator (1st floor)",
+            "janitor's closet"
+          ],
+          "llm_dir": "south",
+          "in_gt": true,
+          "gt_dir": "south",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 16
+        }
+      ],
+      "case_counts": {
+        "correct": 2
+      },
+      "root_cause": "naming_collision_on_correct_subgraph"
+    },
+    {
+      "type": "naming",
+      "description": "node \"janitor's closet\" reachable at conflicting positions [(2, -1, -1), (3, -1, 0), (4, -1, 1), (5, -1, 2)]",
+      "involved_edges": [],
+      "involved_nodes": [
+        "janitor's closet"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "hall outside elevator (1st floor)",
+            "janitor's closet"
+          ],
+          "llm_dir": "south",
+          "in_gt": true,
+          "gt_dir": "south",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 16
+        }
+      ],
+      "case_counts": {
+        "correct": 1
+      },
+      "root_cause": "naming_collision_on_correct_subgraph"
+    },
+    {
+      "type": "naming",
+      "description": "node 'hall outside elevator (3rd floor)' reachable at conflicting positions [(2, 0, 0), (3, 0, 1), (4, 0, 2), (5, 0, 3)]",
+      "involved_edges": [],
+      "involved_nodes": [
+        "hall outside elevator (3rd floor)"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "hall (3rd floor, middle of north/south hall)",
+            "hall outside elevator (3rd floor)"
+          ],
+          "llm_dir": "east",
+          "in_gt": true,
+          "gt_dir": "east",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 3
+        }
+      ],
+      "case_counts": {
+        "correct": 1
+      },
+      "root_cause": "naming_collision_on_correct_subgraph"
+    }
+  ],
+  "walkthrough_steps_available": 71
+}

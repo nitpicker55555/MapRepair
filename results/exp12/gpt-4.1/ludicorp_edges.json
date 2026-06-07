@@ -1,0 +1,212 @@
+[
+  {
+    "src_node": "corner of the carpark",
+    "dst_node": "corner of the carpark",
+    "action": "out",
+    "seen_in_forward": 2
+  },
+  {
+    "src_node": "corner of the carpark",
+    "dst_node": "the main carpark",
+    "action": "northwest",
+    "seen_in_forward": 3
+  },
+  {
+    "src_node": "the main carpark",
+    "dst_node": "front of the office",
+    "action": "north",
+    "seen_in_forward": 4
+  },
+  {
+    "src_node": "front of the office",
+    "dst_node": "east of office",
+    "action": "east",
+    "seen_in_forward": 5
+  },
+  {
+    "src_node": "east of office",
+    "dst_node": "damp corner",
+    "action": "east",
+    "seen_in_forward": 6
+  },
+  {
+    "src_node": "damp corner",
+    "dst_node": "storage shed door",
+    "action": "south",
+    "seen_in_forward": 7
+  },
+  {
+    "src_node": "storage shed door",
+    "dst_node": "storage shed",
+    "action": "east",
+    "seen_in_forward": 8
+  },
+  {
+    "src_node": "storage shed",
+    "dst_node": "storage shed door",
+    "action": "west",
+    "seen_in_forward": 9
+  },
+  {
+    "src_node": "storage shed door",
+    "dst_node": "abandoned well",
+    "action": "south",
+    "seen_in_forward": 10
+  },
+  {
+    "src_node": "abandoned well",
+    "dst_node": "bottom of the well",
+    "action": "down",
+    "seen_in_forward": 11
+  },
+  {
+    "src_node": "bottom of the well",
+    "dst_node": "abandoned well",
+    "action": "up",
+    "seen_in_forward": 12
+  },
+  {
+    "src_node": "abandoned well",
+    "dst_node": "storage shed door",
+    "action": "north",
+    "seen_in_forward": 13
+  },
+  {
+    "src_node": "storage shed door",
+    "dst_node": "damp corner",
+    "action": "north",
+    "seen_in_forward": 14
+  },
+  {
+    "src_node": "damp corner",
+    "dst_node": "east of office",
+    "action": "west",
+    "seen_in_forward": 15
+  },
+  {
+    "src_node": "east of office",
+    "dst_node": "some bushes",
+    "action": "south",
+    "seen_in_forward": 16
+  },
+  {
+    "src_node": "some bushes",
+    "dst_node": "maintanence stairwell (top)",
+    "action": "south",
+    "seen_in_forward": 17
+  },
+  {
+    "src_node": "maintanence stairwell (top)",
+    "dst_node": "maintanence stairwell (bottom)",
+    "action": "down",
+    "seen_in_forward": 18
+  },
+  {
+    "src_node": "maintanence stairwell (bottom)",
+    "dst_node": "generator room",
+    "action": "northeast",
+    "seen_in_forward": 19
+  },
+  {
+    "src_node": "generator room",
+    "dst_node": "maintanence stairwell (bottom)",
+    "action": "southwest",
+    "seen_in_forward": 20
+  },
+  {
+    "src_node": "maintanence stairwell (bottom)",
+    "dst_node": "maintanence stairwell (top)",
+    "action": "up",
+    "seen_in_forward": 21
+  },
+  {
+    "src_node": "maintanence stairwell (top)",
+    "dst_node": "some bushes",
+    "action": "north",
+    "seen_in_forward": 22
+  },
+  {
+    "src_node": "some bushes",
+    "dst_node": "east of office",
+    "action": "north",
+    "seen_in_forward": 23
+  },
+  {
+    "src_node": "east of office",
+    "dst_node": "front of the office",
+    "action": "west",
+    "seen_in_forward": 24
+  },
+  {
+    "src_node": "front of the office",
+    "dst_node": "main entrance",
+    "action": "north",
+    "seen_in_forward": 25
+  },
+  {
+    "src_node": "main entrance",
+    "dst_node": "front of the office",
+    "action": "south",
+    "seen_in_forward": 26
+  },
+  {
+    "src_node": "front of the office",
+    "dst_node": "west of office",
+    "action": "west",
+    "seen_in_forward": 27
+  },
+  {
+    "src_node": "west of office",
+    "dst_node": "bike shed",
+    "action": "west",
+    "seen_in_forward": 28
+  },
+  {
+    "src_node": "bike shed",
+    "dst_node": "west of office",
+    "action": "east",
+    "seen_in_forward": 29
+  },
+  {
+    "src_node": "west of office",
+    "dst_node": "front of the office",
+    "action": "east",
+    "seen_in_forward": 30
+  },
+  {
+    "src_node": "front of the office",
+    "dst_node": "the delivery bay gateway",
+    "action": "west",
+    "seen_in_forward": 31
+  },
+  {
+    "src_node": "the delivery bay gateway",
+    "dst_node": "delivery bay",
+    "action": "west",
+    "seen_in_forward": 32
+  },
+  {
+    "src_node": "delivery bay",
+    "dst_node": "storeroom",
+    "action": "north",
+    "seen_in_forward": 33
+  },
+  {
+    "src_node": "storeroom",
+    "dst_node": "west end",
+    "action": "north",
+    "seen_in_forward": 34
+  },
+  {
+    "src_node": "west end",
+    "dst_node": "north-south corridoor",
+    "action": "north",
+    "seen_in_forward": 35
+  },
+  {
+    "src_node": "north-south corridoor",
+    "dst_node": "vault door",
+    "action": "north",
+    "seen_in_forward": 36
+  }
+]

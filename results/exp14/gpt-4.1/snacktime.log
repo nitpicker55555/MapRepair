@@ -1,0 +1,6 @@
+# snacktime  model=gpt-4.1  n_steps=5  (exp14 bootstrap-fixed)
+step   0 BOOTSTRAP seed current_loc='food room' (src missing, dst valid)
+step   1 MOVE 'food room' --[east]--> 'sitting room (on the long soft thing)'
+step   2 MOVE 'sitting room (on the long soft thing)' --[down]--> 'sitting room'
+step   3 MOVE 'sitting room' --[north]--> 'sleeping room'
+step   4 MOVE 'sleeping room' --[south]--> 'sitting room'

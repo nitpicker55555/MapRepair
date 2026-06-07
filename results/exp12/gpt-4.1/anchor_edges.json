@@ -1,0 +1,164 @@
+[
+  {
+    "src_node": "office",
+    "dst_node": "file room",
+    "action": "east",
+    "seen_in_forward": 3
+  },
+  {
+    "src_node": "file room",
+    "dst_node": "outside the real estate office",
+    "action": "west",
+    "seen_in_forward": 4
+  },
+  {
+    "src_node": "outside the real estate office",
+    "dst_node": "narrow street",
+    "action": "west",
+    "seen_in_forward": 5
+  },
+  {
+    "src_node": "narrow street",
+    "dst_node": "junction",
+    "action": "west",
+    "seen_in_forward": 6
+  },
+  {
+    "src_node": "junction",
+    "dst_node": "university court",
+    "action": "northwest",
+    "seen_in_forward": 7
+  },
+  {
+    "src_node": "university court",
+    "dst_node": "library",
+    "action": "west",
+    "seen_in_forward": 8
+  },
+  {
+    "src_node": "library",
+    "dst_node": "university court",
+    "action": "east",
+    "seen_in_forward": 9
+  },
+  {
+    "src_node": "university court",
+    "dst_node": "junction",
+    "action": "southeast",
+    "seen_in_forward": 10
+  },
+  {
+    "src_node": "junction",
+    "dst_node": "narrow street",
+    "action": "east",
+    "seen_in_forward": 11
+  },
+  {
+    "src_node": "narrow street",
+    "dst_node": "whateley bridge",
+    "action": "south",
+    "seen_in_forward": 12
+  },
+  {
+    "src_node": "whateley bridge",
+    "dst_node": "town square",
+    "action": "south",
+    "seen_in_forward": 13
+  },
+  {
+    "src_node": "town square",
+    "dst_node": "riverwalk",
+    "action": "east",
+    "seen_in_forward": 14
+  },
+  {
+    "src_node": "riverwalk",
+    "dst_node": "chilly avenue",
+    "action": "south",
+    "seen_in_forward": 15
+  },
+  {
+    "src_node": "chilly avenue",
+    "dst_node": "scenic view",
+    "action": "southwest",
+    "seen_in_forward": 16
+  },
+  {
+    "src_node": "scenic view",
+    "dst_node": "outside the house",
+    "action": "northwest",
+    "seen_in_forward": 17
+  },
+  {
+    "src_node": "outside the house",
+    "dst_node": "foyer",
+    "action": "north",
+    "seen_in_forward": 18
+  },
+  {
+    "src_node": "foyer",
+    "dst_node": "upstairs landing",
+    "action": "up",
+    "seen_in_forward": 19
+  },
+  {
+    "src_node": "upstairs landing",
+    "dst_node": "master bedroom",
+    "action": "north",
+    "seen_in_forward": 20
+  },
+  {
+    "src_node": "master bedroom",
+    "dst_node": "bathroom",
+    "action": "west",
+    "seen_in_forward": 21
+  },
+  {
+    "src_node": "bathroom",
+    "dst_node": "master bedroom",
+    "action": "east",
+    "seen_in_forward": 22
+  },
+  {
+    "src_node": "master bedroom",
+    "dst_node": "upstairs landing",
+    "action": "south",
+    "seen_in_forward": 23
+  },
+  {
+    "src_node": "upstairs landing",
+    "dst_node": "foyer",
+    "action": "down",
+    "seen_in_forward": 24
+  },
+  {
+    "src_node": "foyer",
+    "dst_node": "dining room",
+    "action": "west",
+    "seen_in_forward": 25
+  },
+  {
+    "src_node": "dining room",
+    "dst_node": "kitchen",
+    "action": "north",
+    "seen_in_forward": 26
+  },
+  {
+    "src_node": "kitchen",
+    "dst_node": "pantry",
+    "action": "northwest",
+    "seen_in_forward": 27
+  },
+  {
+    "src_node": "pantry",
+    "dst_node": "cellar",
+    "action": "down",
+    "seen_in_forward": 28
+  },
+  {
+    "src_node": "cellar",
+    "dst_node": "storage",
+    "action": "south",
+    "seen_in_forward": 29
+  }
+]

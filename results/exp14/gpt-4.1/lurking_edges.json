@@ -1,0 +1,104 @@
+[
+  {
+    "src_node": "second floor",
+    "dst_node": "kitchen",
+    "action": "west",
+    "seen_in_forward": 1
+  },
+  {
+    "src_node": "kitchen",
+    "dst_node": "second floor",
+    "action": "east",
+    "seen_in_forward": 2
+  },
+  {
+    "src_node": "second floor",
+    "dst_node": "terminal room",
+    "action": "north",
+    "seen_in_forward": 3
+  },
+  {
+    "src_node": "terminal room",
+    "dst_node": "basalt bowl",
+    "action": "down",
+    "seen_in_forward": 4
+  },
+  {
+    "src_node": "basalt bowl",
+    "dst_node": "elevator",
+    "action": "south",
+    "seen_in_forward": 5
+  },
+  {
+    "src_node": "elevator",
+    "dst_node": "second floor",
+    "action": "north",
+    "seen_in_forward": 6
+  },
+  {
+    "src_node": "second floor",
+    "dst_node": "computer center",
+    "action": "down",
+    "seen_in_forward": 7
+  },
+  {
+    "src_node": "computer center",
+    "dst_node": "basement",
+    "action": "down",
+    "seen_in_forward": 8
+  },
+  {
+    "src_node": "basement",
+    "dst_node": "temporary basement",
+    "action": "east",
+    "seen_in_forward": 9
+  },
+  {
+    "src_node": "temporary basement",
+    "dst_node": "basement",
+    "action": "up",
+    "seen_in_forward": 10
+  },
+  {
+    "src_node": "basement",
+    "dst_node": "temporary basement",
+    "action": "down",
+    "seen_in_forward": 11
+  },
+  {
+    "src_node": "temporary basement",
+    "dst_node": "basement",
+    "action": "west",
+    "seen_in_forward": 12
+  },
+  {
+    "src_node": "basement",
+    "dst_node": "aero basement",
+    "action": "west",
+    "seen_in_forward": 13
+  },
+  {
+    "src_node": "aero basement",
+    "dst_node": "stairway",
+    "action": "west",
+    "seen_in_forward": 14
+  },
+  {
+    "src_node": "stairway",
+    "dst_node": "aero lobby",
+    "action": "up",
+    "seen_in_forward": 15
+  },
+  {
+    "src_node": "aero lobby",
+    "dst_node": "infinite corridor (west end of east/west corridor)",
+    "action": "south",
+    "seen_in_forward": 16
+  },
+  {
+    "src_node": "infinite corridor (west end of east/west corridor)",
+    "dst_node": "infinite corridor (middle of east/west corridor)",
+    "action": "east",
+    "seen_in_forward": 17
+  }
+]

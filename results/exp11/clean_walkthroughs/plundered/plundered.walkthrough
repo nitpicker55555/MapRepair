@@ -1,0 +1,511 @@
+===========
+==>STEP NUM: 0
+==>ACT: north
+==>OBSERVATION: The large cupboard is not flush against the doorsill. You squeeze through the opening between cupboard and wall.
+
+Landing
+   You are on the landing of a steep stairway heading up and down. A large cupboard against the aft wall blocks the doorway to the captain's quarters.
+===========
+==>STEP NUM: 1
+==>ACT: in
+==>OBSERVATION: Sleeping Cupboard
+   The bed is softer than it looks, plumped up with fresh straw. A soft, if somewhat cramped, bunk for the tall bulk of Jamison. The cupboard opens to the fore.
+   Kicked into a far corner is a pile of clothes.
+===========
+==>STEP NUM: 2
+==>ACT: out
+==>OBSERVATION: Landing
+===========
+==>STEP NUM: 3
+==>ACT: down
+==>OBSERVATION: Aft Hold
+   This is a gloomy, damp area at the bottom of the Helena Louise. To the fore there seems to be a little more light, or you can climb up some steep stairs.
+===========
+==>STEP NUM: 4
+==>ACT: north
+==>OBSERVATION: You hear a scuffling noise ahead, and scraping up near the ceiling. You would think it was caused by rats, but for the definite curse you heard before all the movement.
+
+Hold
+   Steep stairs lead up in the dimness to a canvas hatch above. Rats' scratchings counterpoint the lullaby of bilge water sloshing in the bulkheads, punctuated by footsteps slapping the deck overhead. You may move fore or aft.
+   Behind a high fence, decorated by a sign, are stacked the food and ammunition supplies; casks of rum, water, flour and salt meat interspersed with kegs of gunpowder and shot. A closed gate is the only way in.
+===========
+==>STEP NUM: 5
+==>ACT: north
+==>OBSERVATION: Crew's Quarters
+   The crew sleeps, in shifts, in this cramped space under the forecastle. A breeze blows in on a moonbeam through a grate in the ceiling. A low doorsill is abaft.
+   This area must also serve as sickroom. Strewn about the floor are various powders and spills of malodorous potions. In one corner, a large blood stain indicates an amputation; in another is the smear of a leech, dropped off a bloodletting.
+   A small bottle has been dropped nearby.
+   A chipped piece of mirror sits propped on a shoulder-high timber.
+===========
+==>STEP NUM: 6
+==>ACT: south
+==>OBSERVATION: Hold
+   You gradually notice a familiar, worrying smell, sniff, and identify it as smoke. A tiny glow of fire creeps across a stretch of floor -- inside the cage full of ammunition.
+===========
+==>STEP NUM: 7
+==>ACT: south
+==>OBSERVATION: Aft Hold
+===========
+==>STEP NUM: 8
+==>ACT: up
+==>OBSERVATION: Landing
+===========
+==>STEP NUM: 9
+==>ACT: south
+==>OBSERVATION: You squeeze through the opening between cupboard and wall.
+
+Captain's Quarters
+===========
+==>STEP NUM: 10
+==>ACT: south
+==>OBSERVATION: You climb onto the ledge. The ladder drifts within reach.
+===========
+==>STEP NUM: 11
+==>ACT: up
+==>OBSERVATION: You climb up the ladder.
+   All air is driven out of you as the ladder slams into the stern.
+   The reefs seem a little larger than you thought before.
+===========
+==>STEP NUM: 12
+==>ACT: up
+==>OBSERVATION: You climb up the ladder, passing the halfway point.
+   Rebounding, the ladder twists you around to face the Helena Louise.
+===========
+==>STEP NUM: 13
+==>ACT: up
+==>OBSERVATION: You climb up the ladder.
+   The ladder swings back towards the Helena Louise.
+===========
+==>STEP NUM: 14
+==>ACT: up
+==>OBSERVATION: You heave yourself over the stern rail and sink breathless to the deck of the Helena Louise.
+
+Poop
+   From this platform deck you can see the whole of the two-masted ship, shadowy forms moving about here and there. A railing protects you from stepping off the deck in any direction but to the fore. A rope ladder is tied to the railing at the stern of the ship.
+   The reefs seem a little larger than you thought before.
+===========
+==>STEP NUM: 15
+==>ACT: north
+==>OBSERVATION: Quarterdeck
+   No torches are lit, or needed on this moonlit night, except in the deep shadows cast by the huge navigation wheel. Men move about to the fore, talking quietly. Under the stairs aft to the poop is a barred door.
+   The reefs seem a little larger than you thought before.
+   Abaft the wheel sits a large pyramid of casks, held in place by a heavy rope.
+   Cannon line the deck, aimed at open sea and the island.
+===========
+==>STEP NUM: 16
+==>ACT: north
+==>OBSERVATION: Main Deck
+   It is a deceptively quiet evening on the ship, the pirates singing low shanties as they repair cannon, twist ropes and sharpen daggers. The mainmast casts an inky shadow over the canvas screening the hatch. A tangled mass of rigging hangs down from the mast, like many rope ladders woven together.
+   The reefs seem a little larger than you thought before.
+   Two large barrels stand near the stair to the foredeck.
+===========
+==>STEP NUM: 17
+==>ACT: down
+==>OBSERVATION: You glance around to see that no one is watching, and duck through the open corner of the canvas hatch.
+
+Hold
+   A tiny glow of fire creeps across a stretch of floor -- inside the cage full of ammunition.
+===========
+==>STEP NUM: 18
+==>ACT: up
+==>OBSERVATION: You slip lithely through the canvas hatch.
+
+Main Deck
+===========
+==>STEP NUM: 19
+==>ACT: north
+==>OBSERVATION: Forecastle
+   Higher than all but the poop deck, this end of the ship commands a good view of the island; the "crow's nest," swinging above in the heights of the foremast, would command a better. A tangled mass of rigging hangs down from the mast, like many rope ladders woven together.
+   Imbedded in the deck is a grated air hole to the crew's quarters below. You can go aft, or forward through a break in the ubiquitous railing.
+   Odors of old grease and char waft from a little shack perched behind the mast.
+   The reefs seem a little larger than you thought before.
+   You can see a mooring winch here.
+===========
+==>STEP NUM: 20
+==>ACT: in
+==>OBSERVATION: Galley
+   This tiny kitchen smells of old stew and yeast. A low door to starboard shows the way out.
+   A dagger is driven into the wooden floorboards.
+   An entirely bald man sits here, carving into his peg leg.
+   The man looks you over sharply, then winks an eye. "Hullo, boy -- Sam, I'll call you. Nervous about Cap'n? He'll come to no harm. And if there is trouble, he only has to signal from that seaward winder of the house -- ye can see it from the crow's nest -- and we'll be there in a jiffy. Me and my peg are to stay aboard and guard y--, the Cap'n's young lady."
+===========
+==>STEP NUM: 21
+==>ACT: out
+==>OBSERVATION: Forecastle
+   You can see a mooring winch here.
+===========
+==>STEP NUM: 22
+==>ACT: south
+==>OBSERVATION: Main Deck
+===========
+==>STEP NUM: 23
+==>ACT: south
+==>OBSERVATION: Quarterdeck
+   Abaft the wheel sits a large pyramid of casks, held in place by a heavy rope.
+   Cannon line the deck, aimed at open sea and the island.
+===========
+==>STEP NUM: 24
+==>ACT: west
+==>OBSERVATION: Beach
+   This is a tiny beach, at the base of vine-covered cliffs. To the east, the Helena Louise floats serenely on the lagoon.
+   Immediately north of you, a rocky staircase is hewn into the cliff.
+===========
+==>STEP NUM: 25
+==>ACT: north
+==>OBSERVATION: Lawn
+   Jungle looms around this clipped lawn, a path meandering westward into the dense undergrowth. To the east is a folly entangled in blooming jasmine. The way to the beach is obscure, but visible to the southeast. Behind the folly a thorny hedge blocks the cliff view of the sea.
+   Music and voices float from the veranda to the north.
+   Two men stand whispering in the shadows. You catch an occasional word, "Davis dead... girl... Falcon on Sinistra." The men separate, the well-dressed one going into the ballroom as the other slinks into the bushes. You see his face. Crulley!
+===========
+==>STEP NUM: 26
+==>ACT: west
+==>OBSERVATION: Forest
+   Buried in the subtropical undergrowth, you lose all sense of being on someone's private estate; jungle seems to extend for miles on all sides of you. A footworn path curves from east to north here, and the vegetation lessens to the northeast.
+===========
+==>STEP NUM: 27
+==>ACT: north
+==>OBSERVATION: Trade Entrance
+   You are on a well-trampled lawn at the side of the house, one low doorway leading in to the east. Gravelled paths lead north and south into the undergrowth.
+===========
+==>STEP NUM: 28
+==>ACT: east
+==>OBSERVATION: Kitchen
+   A firepit in the floor smokes badly, fogging up the depths of this large kitchen, somehow not escaping through either the south or west doors.
+   A blond woman huddles alone by the fire, as if cold.
+   The woman smiles uncertainly, then rushes over. "Are you come from the village, boy? Dost know Lord Dimsford?" She sighs at your surprise. "So he sent you -- I am his Lucy. It's been so long since I've seen him. Lafond caught me eavesdropping and now I can't leave the grounds."
+===========
+==>STEP NUM: 29
+==>ACT: west
+==>OBSERVATION: "Don't forget -- tell Dimsford," Lucy calls after you.
+
+Trade Entrance
+===========
+==>STEP NUM: 30
+==>ACT: south
+==>OBSERVATION: Forest
+===========
+==>STEP NUM: 31
+==>ACT: northeast
+==>OBSERVATION: Clearing
+   You are in a small clearing under the western side of the house. Heavy vines creep up the wall past a second floor window, open to the night air. Southwest is an opening in the bushes.
+===========
+==>STEP NUM: 32
+==>ACT: up
+==>OBSERVATION: You take a firm grasp on a particularly thick tendril, jerk once to secure it, and scamper up the wall like some huge tropical spider. It is easy to climb through the window.
+
+Bedroom
+   Lit only with moonlight through the open window, tonight this room is serving as a ladies' dressing room. An exit lies to the north.
+   Draped across the bed is a lovely cream colored watered silk gown. It looks about your size.
+===========
+==>STEP NUM: 33
+==>ACT: north
+==>OBSERVATION: Upstairs Hall
+   You stand in a carpeted hallway, leading east to a stair landing. Rooms lie north and south of you.
+===========
+==>STEP NUM: 34
+==>ACT: east
+==>OBSERVATION: Stair Landing
+   The east-west hallway opens here to curve into a grand staircase sweeping down to the foyer.
+===========
+==>STEP NUM: 35
+==>ACT: down
+==>OBSERVATION: Foyer
+   A grandiose staircase splits and twists up to the next floor here, framing the entrance south to the ballroom. Long hallways lead east and west; cool night air drifts in through the front door, north of you.
+   The butler stands near the entrance to the ballroom.
+===========
+==>STEP NUM: 36
+==>ACT: south
+==>OBSERVATION: The sea of spectators parts to admit you, murmuring approval.
+
+Ballroom
+   Lafond's party is well attended: you can hardly move for the crush. However, the room is oddly silent, no talk interrupting the musical efforts of the musicians to the west. Despite the heat, no one ventures south to the veranda, nor through the opening east. The foyer is north of you.
+   Captain Jamison moves up to you, saying, "May I have this dance?" He doesn't await an answer, sweeping you out onto the dance floor.
+===========
+==>STEP NUM: 37
+==>ACT: east
+==>OBSERVATION: Supper Room
+   One long table set across the north entrance indicates that supper was served here earlier. West of you is the ballroom.
+===========
+==>STEP NUM: 38
+==>ACT: north
+==>OBSERVATION: You scuttle underneath the long table.
+
+East Hallway
+   The carpeted hallway turns from west to north here, extending into the east wing. A long table blocks the way south.
+===========
+==>STEP NUM: 39
+==>ACT: north
+==>OBSERVATION: Library
+   Everything in this private office is larger than life. A huge portrait decorates the north side, and black drapes mask the east wall. Bookshelves tower over a cherry desk, and a massive wooden globe squats in a corner. Music wafts distantly from the ballroom across the hall to the south.
+   An expensive hat is hanging on a knob.
+===========
+==>STEP NUM: 40
+==>ACT: north
+==>OBSERVATION: For safety's sake, you leave the hat on its knob. Best not to show that you've been wandering.
+   You move beyond the portrait into the flickering torchlight.
+
+Stairwell
+   Cool salt air, blowing past a torch on a spiral staircase below you, ruffles your hair and circles south into the library.
+===========
+==>STEP NUM: 41
+==>ACT: down
+==>OBSERVATION: Bottom of Stairwell
+   Flickering torchlight lights the bottom of a spiral staircase. A draft blows from the east; a passage leads south.
+===========
+==>STEP NUM: 42
+==>ACT: east
+==>OBSERVATION: North Passage
+   A strong wet breeze blows from a low doorway to the east. A circle of light leads west. The passageway continues south.
+===========
+==>STEP NUM: 43
+==>ACT: east
+==>OBSERVATION: Guard's Bunkroom
+   Once a cell, now, with the door missing, made into a guard's bunkroom, this room is distinctly uncomfortable. Gasps of air are forced through a crack in the seaward wall of the room. The way out is west of you.
+   A powder horn hangs on a long strap from the wall.
+   A canvas cot is shoved against a wall. Sitting on the cot is a large key.
+===========
+==>STEP NUM: 44
+==>ACT: west
+==>OBSERVATION: North Passage
+===========
+==>STEP NUM: 45
+==>ACT: west
+==>OBSERVATION: Bottom of Stairwell
+===========
+==>STEP NUM: 46
+==>ACT: south
+==>OBSERVATION: Anteroom
+   Two exits lead from this cavernous room, north and south. The walls drip with wet, forming a huge pool on the floor.
+   A crocodile lies half in the pool, gazing at you, with baleful eyes, jaws wide open. Dagger-sharp teeth glint in the torchlight.
+===========
+==>STEP NUM: 47
+==>ACT: south
+==>OBSERVATION: You edge past the reptile.
+
+Dungeon
+   You sense, rather than see, the rusty skeletons of old cages and torture devices that line the walls of this cavernous room. One flaming torch, high on a wall, casts mad licks of light into the darkness. Passages lead north and west. Set deep in the rocky floor is a closed trapdoor.
+   A pair of manacles hangs from iron chains attached high on the wall.
+===========
+==>STEP NUM: 48
+==>ACT: west
+==>OBSERVATION: Corner
+   This short passage turns from east to north to stop abruptly at an iron door.
+===========
+==>STEP NUM: 49
+==>ACT: north
+==>OBSERVATION: Cell
+   Hewn from dense rock, the cell is a stagnant burrow. Except for the tiniest glow of light from the torch two rooms away, it is pitch black.
+   As you enter, a tall bony man moves out of the darkness. "Papa," you cry, rushing into his arms.
+   "Why, hullo, my dear." He hugs you tightly. "Nick certainly took his time about fetching you."
+===========
+==>STEP NUM: 50
+==>ACT: south
+==>OBSERVATION: Corner
+   Papa enters just a few steps behind you.
+===========
+==>STEP NUM: 51
+==>ACT: east
+==>OBSERVATION: Dungeon
+   Papa follows you.
+===========
+==>STEP NUM: 52
+==>ACT: north
+==>OBSERVATION: Anteroom
+   The crocodile lies half in the pool, sleeping.
+   Papa mutters something to himself. You hear an occasional "Zounds!"
+   Your father stops, smiling at the crocodile, "Hello, chum, how are you?" He bends over the creature, and scratches its bumpy snout, muttering, "Never seen you sleep like this before." It stirs to life as your father walks over to you by the north entrance. The reptile, waking, lunges after him, choking on its chain.
+===========
+==>STEP NUM: 53
+==>ACT: north
+==>OBSERVATION: Bottom of Stairwell
+   Papa follows you.
+===========
+==>STEP NUM: 54
+==>ACT: up
+==>OBSERVATION: Stairwell
+   Papa enters just a few steps behind you.
+===========
+==>STEP NUM: 55
+==>ACT: south
+==>OBSERVATION: You move beyond the portrait into the library.
+
+Library
+   An expensive hat is hanging on a knob.
+   Papa mutters something to himself. You hear an occasional "Zounds!"
+   "A window!" your father exclaims. "I shall creep out to the kitchen. Get the Falcon." He climbs out the window.
+===========
+==>STEP NUM: 56
+==>ACT: south
+==>OBSERVATION: East Hallway
+===========
+==>STEP NUM: 57
+==>ACT: west
+==>OBSERVATION: Foyer
+   The butler stands near the entrance to the ballroom.
+===========
+==>STEP NUM: 58
+==>ACT: south
+==>OBSERVATION: The sea of spectators parts to admit you, murmuring approval.
+
+Ballroom
+   A fashionably bewigged man stalks up to you and bows deeply. "Will you dance?" he asks, with a light French accent. "Not that you have much choice. If you turn me down, your father dies."
+===========
+==>STEP NUM: 59
+==>ACT: north
+==>OBSERVATION: "How dare you walk away!" Lafond grips your arm, so you may not leave the floor.
+   "So you know I am not your father's friend," Lafond says, offering a hand for the promenade. "Unfortunately, you are in my power, the Falcon is with my dragoons and I am still King of these waters." A gold ring flashes on his hand. It seems vaguely familiar.
+===========
+==>STEP NUM: 60
+==>ACT: north
+==>OBSERVATION: Foyer
+===========
+==>STEP NUM: 61
+==>ACT: up
+==>OBSERVATION: Stair Landing
+===========
+==>STEP NUM: 62
+==>ACT: east
+==>OBSERVATION: Upstairs Hall
+   You stand in a carpeted hallway, leading west to a stair landing. To the north is an ornately carved door. From the south comes the impression of light and air.
+===========
+==>STEP NUM: 63
+==>ACT: north
+==>OBSERVATION: "Welcome, ma petite." Lafond bows you in.
+
+Lafond's Bedroom
+   Lafond is leering, lip curled.
+   A lace-covered table crouches beside a wing-backed chair in one corner. Sitting on the table is a green goblet, a blue goblet and a flagon.
+   "Have some wine." Lafond pours wine into two glasses, giving a blue one to you. "Drink this down. We have a long night ahead of us." He drains his own.
+===========
+==>STEP NUM: 64
+==>ACT: south
+==>OBSERVATION: You run out -- into the butler's barrel chest and leering grin. You return to the bedroom, the butler following. "The governor said you were not to leave this room."
+===========
+==>STEP NUM: 65
+==>ACT: south
+==>OBSERVATION: You creep over the prostrate butler.
+
+Upstairs Hall
+===========
+==>STEP NUM: 66
+==>ACT: west
+==>OBSERVATION: Stair Landing
+===========
+==>STEP NUM: 67
+==>ACT: down
+==>OBSERVATION: Foyer
+   Cookie rushes up to you, looking worried. "Miss, we must find the Cap'n. Have ye any idea where to look?"
+===========
+==>STEP NUM: 68
+==>ACT: east
+==>OBSERVATION: East Hallway
+   Cookie pegs after you.
+   Cookie grins broadly, "I knew we could depend on you, lass. Lead on!"
+===========
+==>STEP NUM: 69
+==>ACT: north
+==>OBSERVATION: Library
+   An expensive hat is hanging on a knob.
+   Cookie pegs after you.
+===========
+==>STEP NUM: 70
+==>ACT: north
+==>OBSERVATION: You move beyond the portrait into the flickering torchlight.
+
+Stairwell
+   Cookie pegs after you.
+===========
+==>STEP NUM: 71
+==>ACT: down
+==>OBSERVATION: Bottom of Stairwell
+   Cookie pegs after you.
+===========
+==>STEP NUM: 72
+==>ACT: south
+==>OBSERVATION: Anteroom
+   The crocodile lies half in the pool, gazing at you, with baleful eyes, jaws wide open. Dagger-sharp teeth glint in the torchlight.
+   Cookie pegs after you.
+   Cookie rushes at the crocodile, crying, "I'll take care of this monster, sweetheart. You run by and do what you must do." He dives headlong into the pool.
+===========
+==>STEP NUM: 73
+==>ACT: south
+==>OBSERVATION: A whip cracks the air. "Flogs me, will ye, Cap'n? Taste it yourself, har." Jamison groans, half conscious. You rush in.
+
+Dungeon
+   You sense, rather than see, the rusty skeletons of old cages and torture devices that line the walls of this cavernous room. One flaming torch, high on a wall, casts mad licks of light into the darkness. Passages lead north and west. Set deep in the rocky floor is an open trapdoor.
+   Nicholas is spread-eagled against the wall, shackled in the pair of manacles.
+   A rapier lies in the half-dark of a corner.
+   Crulley steps leering out of the shadows and cracks the whip near you, hopping you towards the open trapdoor. "Come to hit me agin, are ye?"
+===========
+==>STEP NUM: 74
+==>ACT: north
+==>OBSERVATION: Anteroom
+   The pool is roily with the writhing bodies of Cookie and the crocodile.
+===========
+==>STEP NUM: 75
+==>ACT: north
+==>OBSERVATION: "I ain't goin' to fight this beast if you're headin' back upstairs." Cookie follows you.
+
+Bottom of Stairwell
+   Cookie pegs after you.
+===========
+==>STEP NUM: 76
+==>ACT: up
+==>OBSERVATION: Stairwell
+   Cookie pegs after you.
+===========
+==>STEP NUM: 77
+==>ACT: south
+==>OBSERVATION: You move beyond the portrait into the library.
+
+Library
+   An expensive hat is hanging on a knob.
+   Cookie pegs after you.
+   Cookie cocks his head. "What is that noise? Is Cap'n duelling Lafond? There's no chance he could win as beaten as he is!" Cookie races out towards the ballroom.
+   Swords engage and disengage.
+===========
+==>STEP NUM: 78
+==>ACT: south
+==>OBSERVATION: East Hallway
+   "You must ... pay ... for your actions!" Nicholas gasps.
+===========
+==>STEP NUM: 79
+==>ACT: west
+==>OBSERVATION: Foyer
+   You hear a piece of furniture being knocked over.
+===========
+==>STEP NUM: 80
+==>ACT: up
+==>OBSERVATION: Stair Landing
+   Lafond's voice is cold, lazy, "You will die, you know, Jamison."
+===========
+==>STEP NUM: 81
+==>ACT: east
+==>OBSERVATION: Upstairs Hall
+   You hear metal scrape metal. A woman gasps.
+===========
+==>STEP NUM: 82
+==>ACT: south
+==>OBSERVATION: Gallery
+   You are on a wide balcony overlooking the ballroom. A hallway lies to the north.
+   Down on the dance floor the dancers are pressed in a wide circle around Nicholas and Lafond. Cookie stands anxiously in the door to the veranda, near your father and Lucy.
+   A chandelier is held above the dance floor by a rope and pulley system, so that the servants can lower it to light and snuff its candles. Several feet of rope hang down from the pulley, the excess tied around the railing.
+   Nicholas and Lafond circle each other intently, the one breathing hard, the other casual, sword tips almost touching. Jamison has lost copious amounts of blood and is no match for Lafond, cool and competent.
+Rapiers click and slide. "Bad parry, Captain," Lafond says.
+===========
+==>STEP NUM: 83
+==>ACT: south
+==>OBSERVATION: Veranda
+   Steps lead south from this white marble veranda to a clipped lawn. To the north the wreckage left by the duel is visible in the ballroom.
+===========
+==>STEP NUM: 84
+==>ACT: south
+==>OBSERVATION: Lawn
+===========
+==>STEP NUM: 85
+==>ACT: south
+==>OBSERVATION: Beach
+   Cookie, Lucy and your father are moving towards the skiff.
+   Nicholas stands alone at one edge of the beach. He has a rapier.
+   You splash into the rising surf and pain needles up your leg. Blood swirls out from your shoe in the shallow water, flowing over a small pointed stone.
+===========

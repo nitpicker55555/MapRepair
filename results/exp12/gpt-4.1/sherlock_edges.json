@@ -1,0 +1,134 @@
+[
+  {
+    "src_node": "holmes's study",
+    "dst_node": "holmes's bedroom",
+    "action": "west",
+    "seen_in_forward": 2
+  },
+  {
+    "src_node": "holmes's bedroom",
+    "dst_node": "holmes's study",
+    "action": "east",
+    "seen_in_forward": 3
+  },
+  {
+    "src_node": "holmes's study",
+    "dst_node": "vestibule",
+    "action": "south",
+    "seen_in_forward": 4
+  },
+  {
+    "src_node": "vestibule",
+    "dst_node": "entry hall",
+    "action": "down",
+    "seen_in_forward": 5
+  },
+  {
+    "src_node": "entry hall",
+    "dst_node": "parlour",
+    "action": "north",
+    "seen_in_forward": 6
+  },
+  {
+    "src_node": "parlour",
+    "dst_node": "entry hall",
+    "action": "south",
+    "seen_in_forward": 7
+  },
+  {
+    "src_node": "entry hall",
+    "dst_node": "221-b baker street",
+    "action": "east",
+    "seen_in_forward": 8
+  },
+  {
+    "src_node": "221-b baker street",
+    "dst_node": "york place",
+    "action": "north",
+    "seen_in_forward": 9
+  },
+  {
+    "src_node": "york place",
+    "dst_node": "marylebone road",
+    "action": "east",
+    "seen_in_forward": 10
+  },
+  {
+    "src_node": "marylebone road",
+    "dst_node": "madame tussaud's",
+    "action": "north",
+    "seen_in_forward": 11
+  },
+  {
+    "src_node": "madame tussaud's",
+    "dst_node": "chamber of horrors",
+    "action": "west",
+    "seen_in_forward": 12
+  },
+  {
+    "src_node": "chamber of horrors",
+    "dst_node": "madame tussaud's",
+    "action": "east",
+    "seen_in_forward": 13
+  },
+  {
+    "src_node": "madame tussaud's",
+    "dst_node": "marylebone road",
+    "action": "south",
+    "seen_in_forward": 14
+  },
+  {
+    "src_node": "marylebone road",
+    "dst_node": "parliament square",
+    "action": "east",
+    "seen_in_forward": 15
+  },
+  {
+    "src_node": "parliament square",
+    "dst_node": "scotland yard",
+    "action": "east",
+    "seen_in_forward": 16
+  },
+  {
+    "src_node": "scotland yard",
+    "dst_node": "the black museum",
+    "action": "down",
+    "seen_in_forward": 17
+  },
+  {
+    "src_node": "the black museum",
+    "dst_node": "scotland yard",
+    "action": "up",
+    "seen_in_forward": 18
+  },
+  {
+    "src_node": "scotland yard",
+    "dst_node": "whitehall",
+    "action": "west",
+    "seen_in_forward": 19
+  },
+  {
+    "src_node": "whitehall",
+    "dst_node": "parliament square",
+    "action": "south",
+    "seen_in_forward": 20
+  },
+  {
+    "src_node": "parliament square",
+    "dst_node": "birdcage walk",
+    "action": "west",
+    "seen_in_forward": 21
+  },
+  {
+    "src_node": "birdcage walk",
+    "dst_node": "parliament square",
+    "action": "east",
+    "seen_in_forward": 22
+  },
+  {
+    "src_node": "parliament square",
+    "dst_node": "houses of parliament",
+    "action": "southeast",
+    "seen_in_forward": 23
+  }
+]

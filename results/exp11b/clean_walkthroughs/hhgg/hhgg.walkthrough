@@ -1,0 +1,40 @@
+===========
+==>STEP NUM: 0
+==>ACT: south
+==>OBSERVATION: Front of House
+You can enter your home to the north. A path leads around it to the northeast and northwest, and a country lane is visible to the south. All that lies between your home and the huge yellow bulldozer bearing down on it is a few yards of mud.
+
+Mr. Prosser, from the local council, is standing on the other side of the bulldozer. He seems to be wearing a digital watch. He looks startled to see you emerge, and yells at you to get out of the way.
+The bulldozer rumbles slowly toward your home.
+===========
+==>STEP NUM: 1
+==>ACT: exit
+==>OBSERVATION: Country Lane
+You see the huge bulldozer heaving itself among the cloud of brick dust which is all that remains of your home. As you start up the lane, a small dog runs up to you, yapping.
+
+Ford hurries after you.
+===========
+==>STEP NUM: 2
+==>ACT: north
+==>OBSERVATION: Front of House
+Before you is the house of your friend, Arthur Dent, who is lying in front of a bulldozer; you have no idea why. You have no idea about most things about Arthur, even why you regard him as a friend, but you do, and must therefore return his towel before you leave.
+
+Nearby stands an impatient man. There seems to be a bit of an atmosphere.
+===========
+==>STEP NUM: 3
+==>ACT: south
+==>OBSERVATION: Country Lane
+Arthur follows you.
+===========
+==>STEP NUM: 4
+==>ACT: west
+==>OBSERVATION: Pub
+There is a barman serving at the bar.
+Behind the bar is a shelf. It is full of the sort of items you find on shelves behind bars in pubs.
+Arthur follows you.
+===========
+==>STEP NUM: 5
+==>ACT: east
+==>OBSERVATION: Country Lane
+You run up the lane after Arthur. You pass a serene dog. Fate cannot harm him, he has dined today.
+===========

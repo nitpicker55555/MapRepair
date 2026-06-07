@@ -1,0 +1,188 @@
+[
+  {
+    "src_node": "abandoned inn",
+    "dst_node": "inside the inn",
+    "action": "east",
+    "seen_in_forward": 1
+  },
+  {
+    "src_node": "inside the inn",
+    "dst_node": "inn cellar",
+    "action": "down",
+    "seen_in_forward": 2
+  },
+  {
+    "src_node": "inn cellar",
+    "dst_node": "inside the inn",
+    "action": "up",
+    "seen_in_forward": 3
+  },
+  {
+    "src_node": "inside the inn",
+    "dst_node": "abandoned inn",
+    "action": "west",
+    "seen_in_forward": 4
+  },
+  {
+    "src_node": "abandoned inn",
+    "dst_node": "swampy ground",
+    "action": "west",
+    "seen_in_forward": 5
+  },
+  {
+    "src_node": "swampy ground",
+    "dst_node": "north end of a road",
+    "action": "west",
+    "seen_in_forward": 6
+  },
+  {
+    "src_node": "north end of a road",
+    "dst_node": "south end of a road",
+    "action": "south",
+    "seen_in_forward": 7
+  },
+  {
+    "src_node": "south end of a road",
+    "dst_node": "wasteland by a castle",
+    "action": "west",
+    "seen_in_forward": 8
+  },
+  {
+    "src_node": "wasteland by a castle",
+    "dst_node": "castle forge",
+    "action": "north",
+    "seen_in_forward": 9
+  },
+  {
+    "src_node": "castle forge",
+    "dst_node": "wasteland by a castle",
+    "action": "south",
+    "seen_in_forward": 10
+  },
+  {
+    "src_node": "wasteland by a castle",
+    "dst_node": "south end of a road",
+    "action": "east",
+    "seen_in_forward": 11
+  },
+  {
+    "src_node": "south end of a road",
+    "dst_node": "north end of a road",
+    "action": "north",
+    "seen_in_forward": 12
+  },
+  {
+    "src_node": "north end of a road",
+    "dst_node": "swampy ground",
+    "action": "east",
+    "seen_in_forward": 13
+  },
+  {
+    "src_node": "swampy ground",
+    "dst_node": "cave entrance",
+    "action": "south",
+    "seen_in_forward": 14
+  },
+  {
+    "src_node": "cave entrance",
+    "dst_node": "cottage",
+    "action": "south",
+    "seen_in_forward": 15
+  },
+  {
+    "src_node": "cottage",
+    "dst_node": "inside a cottage",
+    "action": "east",
+    "seen_in_forward": 16
+  },
+  {
+    "src_node": "inside a cottage",
+    "dst_node": "forest pathway",
+    "action": "south",
+    "seen_in_forward": 17
+  },
+  {
+    "src_node": "forest pathway",
+    "dst_node": "tree stump",
+    "action": "west",
+    "seen_in_forward": 18
+  },
+  {
+    "src_node": "tree stump",
+    "dst_node": "lake in the forest",
+    "action": "north",
+    "seen_in_forward": 19
+  },
+  {
+    "src_node": "lake in the forest",
+    "dst_node": "pebbled beach",
+    "action": "west",
+    "seen_in_forward": 20
+  },
+  {
+    "src_node": "pebbled beach",
+    "dst_node": "beside a ruined lighthouse",
+    "action": "south",
+    "seen_in_forward": 21
+  },
+  {
+    "src_node": "beside a ruined lighthouse",
+    "dst_node": "inside the lighthouse ruins",
+    "action": "south",
+    "seen_in_forward": 22
+  },
+  {
+    "src_node": "inside the lighthouse ruins",
+    "dst_node": "beside a ruined lighthouse",
+    "action": "north",
+    "seen_in_forward": 23
+  },
+  {
+    "src_node": "beside a ruined lighthouse",
+    "dst_node": "pebbled beach",
+    "action": "north",
+    "seen_in_forward": 24
+  },
+  {
+    "src_node": "pebbled beach",
+    "dst_node": "wasteland by a castle",
+    "action": "north",
+    "seen_in_forward": 25
+  },
+  {
+    "src_node": "wasteland by a castle",
+    "dst_node": "forbidding castle",
+    "action": "north",
+    "seen_in_forward": 26
+  },
+  {
+    "src_node": "forbidding castle",
+    "dst_node": "castle hallway",
+    "action": "north",
+    "seen_in_forward": 27
+  },
+  {
+    "src_node": "castle hallway",
+    "dst_node": "top of a tower",
+    "action": "up",
+    "seen_in_forward": 28
+  },
+  {
+    "src_node": "top of a tower",
+    "dst_node": "lake in the forest",
+    "action": "south",
+    "seen_in_forward": 29
+  },
+  {
+    "src_node": "lake in the forest",
+    "dst_node": "tree stump",
+    "action": "south",
+    "seen_in_forward": 30
+  },
+  {
+    "src_node": "tree stump",
+    "dst_node": "forest pathway",
+    "action": "east",
+    "seen_in_forward": 31
+  }
+]

@@ -1,0 +1,98 @@
+[
+  {
+    "src_node": "landing",
+    "dst_node": "corridor(east old cell and stretches further west)",
+    "action": "east",
+    "seen_in_forward": 1
+  },
+  {
+    "src_node": "corridor(east old cell and stretches further west)",
+    "dst_node": "armoury",
+    "action": "south",
+    "seen_in_forward": 2
+  },
+  {
+    "src_node": "armoury",
+    "dst_node": "corridor(south into a room and west to old cell)",
+    "action": "north",
+    "seen_in_forward": 3
+  },
+  {
+    "src_node": "corridor(south into a room and west to old cell)",
+    "dst_node": "landing",
+    "action": "west",
+    "seen_in_forward": 4
+  },
+  {
+    "src_node": "landing",
+    "dst_node": "corridor(east old cell and stretches further west)",
+    "action": "west",
+    "seen_in_forward": 5
+  },
+  {
+    "src_node": "corridor(east old cell and stretches further west)",
+    "dst_node": "corridor(south into a room and west to old cell)",
+    "action": "west",
+    "seen_in_forward": 6
+  },
+  {
+    "src_node": "corridor(south into a room and west to old cell)",
+    "dst_node": "control room",
+    "action": "south",
+    "seen_in_forward": 7
+  },
+  {
+    "src_node": "control room",
+    "dst_node": "corridor(south into a room and west to old cell)",
+    "action": "north",
+    "seen_in_forward": 8
+  },
+  {
+    "src_node": "corridor(south into a room and west to old cell)",
+    "dst_node": "hall",
+    "action": "north",
+    "seen_in_forward": 9
+  },
+  {
+    "src_node": "hall",
+    "dst_node": "lift(up button and a door to north)",
+    "action": "north",
+    "seen_in_forward": 10
+  },
+  {
+    "src_node": "lift(up button and a door to north)",
+    "dst_node": "lift(down button and a door to south)",
+    "action": "down",
+    "seen_in_forward": 11
+  },
+  {
+    "src_node": "lift(down button and a door to south)",
+    "dst_node": "hallway",
+    "action": "north",
+    "seen_in_forward": 12
+  },
+  {
+    "src_node": "hallway",
+    "dst_node": "office",
+    "action": "north",
+    "seen_in_forward": 13
+  },
+  {
+    "src_node": "office",
+    "dst_node": "bar",
+    "action": "east",
+    "seen_in_forward": 14
+  },
+  {
+    "src_node": "bar",
+    "dst_node": "office",
+    "action": "west",
+    "seen_in_forward": 15
+  },
+  {
+    "src_node": "office",
+    "dst_node": "officer's room",
+    "action": "west",
+    "seen_in_forward": 16
+  }
+]

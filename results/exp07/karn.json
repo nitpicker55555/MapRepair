@@ -1,0 +1,16 @@
+{
+  "game": "karn",
+  "num_conflicts": 51,
+  "iterations": 16,
+  "success": false,
+  "remaining_conflicts": 18,
+  "pre_edge_recall": 0.42424242424242425,
+  "pre_strict_direction_match": 0.3939393939393939,
+  "pre_edge_direction_accuracy": 0.9285714285714286,
+  "post_edge_recall": 0.42424242424242425,
+  "post_strict_direction_match": 0.2727272727272727,
+  "post_permissive_direction_match": 0.5151515151515151,
+  "post_edge_direction_accuracy": 0.6428571428571429,
+  "edge_recall_delta": 0.0,
+  "strict_direction_delta": -0.12121212121212122
+}

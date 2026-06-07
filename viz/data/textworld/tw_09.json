@@ -1,0 +1,408 @@
+{
+  "id": "tw_09",
+  "dataset": "textworld",
+  "n_rooms": 7,
+  "n_edges": 14,
+  "rooms": [
+    {
+      "id": "attic",
+      "label": "attic",
+      "description": "You've fallen into an usual room. Your mind races to think of what kind of room would be usual. And then it hits you. Of course. You're in the attic. You begin looking for stuff. You can make out a lockedan openeda closed spherical safe. The spherical safe contains . The spherical safe is empty, wha"
+    },
+    {
+      "id": "basement",
+      "label": "basement",
+      "description": "You find yourself in a basement. An ordinary kind of place. You decide to just list off a complete list of everything you see in the room, because hey, why not? There is an opena closed gateway leading south. You don't like doors? Why not try going east, that entranceway is unguarded. There is an un"
+    },
+    {
+      "id": "bedchamber",
+      "label": "bedchamber",
+      "description": "You've entered a bedchamber. You don't like doors? Why not try going north, that entranceway is unblocked. You don't like doors? Why not try going west, that entranceway is unguarded."
+    },
+    {
+      "id": "chamber",
+      "label": "chamber",
+      "description": "Well how about that, you are in a place we're calling a chamber. You try to gain information on your surroundings by using a technique you call 'looking.' There is an unguarded exit to the east. There is an exit to the north. Don't worry, it is unguarded."
+    },
+    {
+      "id": "kitchenette",
+      "label": "kitchenette",
+      "description": "You find yourself in a kitchenette. An usual kind of place. You start to take note of what's in the room. You don't like doors? Why not try going east, that entranceway is unblocked."
+    },
+    {
+      "id": "spare room",
+      "label": "spare room",
+      "description": "You've just walked into a spare room. You can make out a cabinet. You idly wonder how they came up with the name TextWorld for this place. It's pretty fitting. The cabinet contains . The cabinet is empty, what a horrible day! You don't like doors? Why not try going east, that entranceway is unblocke"
+    },
+    {
+      "id": "steam room",
+      "label": "steam room",
+      "description": "You're now in a steam room. You don't like doors? Why not try going west, that entranceway is unblocked."
+    }
+  ],
+  "walkthrough": [],
+  "states": {
+    "gt": {
+      "edges": [
+        {
+          "src": "attic",
+          "dst": "spare room",
+          "dir": "west"
+        },
+        {
+          "src": "attic",
+          "dst": "bedchamber",
+          "dir": "south"
+        },
+        {
+          "src": "attic",
+          "dst": "basement",
+          "dir": "north"
+        },
+        {
+          "src": "spare room",
+          "dst": "chamber",
+          "dir": "south"
+        },
+        {
+          "src": "spare room",
+          "dst": "attic",
+          "dir": "east"
+        },
+        {
+          "src": "bedchamber",
+          "dst": "chamber",
+          "dir": "west"
+        },
+        {
+          "src": "bedchamber",
+          "dst": "attic",
+          "dir": "north"
+        },
+        {
+          "src": "basement",
+          "dst": "kitchenette",
+          "dir": "west"
+        },
+        {
+          "src": "basement",
+          "dst": "attic",
+          "dir": "south"
+        },
+        {
+          "src": "basement",
+          "dst": "steam room",
+          "dir": "east"
+        },
+        {
+          "src": "chamber",
+          "dst": "spare room",
+          "dir": "north"
+        },
+        {
+          "src": "chamber",
+          "dst": "bedchamber",
+          "dir": "east"
+        },
+        {
+          "src": "kitchenette",
+          "dst": "basement",
+          "dir": "east"
+        },
+        {
+          "src": "steam room",
+          "dst": "basement",
+          "dir": "west"
+        }
+      ]
+    },
+    "noised": {
+      "edges": [
+        {
+          "src": "attic",
+          "dst": "spare room",
+          "dir": "west"
+        },
+        {
+          "src": "attic",
+          "dst": "bedchamber",
+          "dir": "south"
+        },
+        {
+          "src": "attic",
+          "dst": "steam room",
+          "dir": "east"
+        },
+        {
+          "src": "spare room",
+          "dst": "chamber",
+          "dir": "south"
+        },
+        {
+          "src": "spare room",
+          "dst": "attic",
+          "dir": "east"
+        },
+        {
+          "src": "bedchamber",
+          "dst": "chamber",
+          "dir": "west"
+        },
+        {
+          "src": "bedchamber",
+          "dst": "attic",
+          "dir": "north"
+        },
+        {
+          "src": "bedchamber",
+          "dst": "kitchenette",
+          "dir": "north"
+        },
+        {
+          "src": "chamber",
+          "dst": "spare room",
+          "dir": "north"
+        },
+        {
+          "src": "chamber",
+          "dst": "bedchamber",
+          "dir": "east"
+        },
+        {
+          "src": "kitchenette",
+          "dst": "steam room",
+          "dir": "east"
+        },
+        {
+          "src": "steam room",
+          "dst": "kitchenette",
+          "dir": "west"
+        },
+        {
+          "src": "steam room",
+          "dst": "attic",
+          "dir": "south"
+        }
+      ],
+      "noise_records": [
+        {
+          "type": "N5_collapse_fallback",
+          "src": "basement",
+          "dst": "steam room",
+          "direction": null,
+          "note": "no prefix match available"
+        },
+        {
+          "type": "N1_direction",
+          "src": "bedchamber",
+          "dst": "kitchenette",
+          "direction": "north",
+          "note": ""
+        },
+        {
+          "type": "N2_topology",
+          "src": "attic",
+          "dst": "steam room",
+          "direction": "east",
+          "note": ""
+        }
+      ],
+      "noise_summary": {
+        "N5_collapse_fallback": 1,
+        "N1_direction": 1,
+        "N2_topology": 1
+      },
+      "conflicts": [
+        {
+          "type": "direction",
+          "severity": "high",
+          "description": "node 'bedchamber' has multiple outgoing edges labelled 'north'",
+          "edges": [
+            [
+              "bedchamber",
+              "attic"
+            ],
+            [
+              "bedchamber",
+              "kitchenette"
+            ]
+          ]
+        },
+        {
+          "type": "topology",
+          "severity": "high",
+          "description": "reverse direction mismatch: attic--[east]-->steam room but steam room--[south]-->attic (expected west)",
+          "edges": [
+            [
+              "attic",
+              "steam room"
+            ],
+            [
+              "steam room",
+              "attic"
+            ]
+          ]
+        },
+        {
+          "type": "topology",
+          "severity": "high",
+          "description": "position (2, -2, 0) occupied by multiple rooms ['attic', 'kitchenette']",
+          "edges": []
+        },
+        {
+          "type": "topology",
+          "severity": "high",
+          "description": "position (3, -3, 0) occupied by multiple rooms ['attic', 'kitchenette']",
+          "edges": []
+        },
+        {
+          "type": "topology",
+          "severity": "high",
+          "description": "position (1, -1, 0) occupied by multiple rooms ['attic', 'kitchenette']",
+          "edges": []
+        },
+        {
+          "type": "topology",
+          "severity": "high",
+          "description": "position (0, 0, 0) occupied by multiple rooms ['attic', 'kitchenette']",
+          "edges": []
+        },
+        {
+          "type": "topology",
+          "severity": "high",
+          "description": "position (1, -2, 0) occupied by multiple rooms ['bedchamber', 'spare room']",
+          "edges": []
+        },
+        {
+          "type": "topology",
+          "severity": "high",
+          "description": "position (0, -1, 0) occupied by multiple rooms ['bedchamber', 'spare room']",
+          "edges": []
+        },
+        {
+          "type": "topology",
+          "severity": "high",
+          "description": "position (2, -3, 0) occupied by multiple rooms ['bedchamber', 'spare room']",
+          "edges": []
+        },
+        {
+          "type": "naming",
+          "severity": "high",
+          "description": "node 'attic' reachable at conflicting positions [(0, 0, 0), (1, -1, 0), (2, -2, 0), (3, -3, 0), (4, -4, 0)]",
+          "edges": []
+        },
+        {
+          "type": "naming",
+          "severity": "high",
+          "description": "node 'spare room' reachable at conflicting positions [(-1, 0, 0), (0, -1, 0), (1, -2, 0), (2, -3, 0)]",
+          "edges": []
+        },
+        {
+          "type": "naming",
+          "severity": "high",
+          "description": "node 'bedchamber' reachable at conflicting positions [(0, -1, 0), (1, -2, 0), (2, -3, 0), (3, -4, 0)]",
+          "edges": []
+        },
+        {
+          "type": "naming",
+          "severity": "high",
+          "description": "node 'steam room' reachable at conflicting positions [(1, 0, 0), (2, -1, 0), (3, -2, 0), (4, -3, 0)]",
+          "edges": []
+        },
+        {
+          "type": "naming",
+          "severity": "high",
+          "description": "node 'kitchenette' reachable at conflicting positions [(0, 0, 0), (1, -1, 0), (2, -2, 0), (3, -3, 0)]",
+          "edges": []
+        },
+        {
+          "type": "naming",
+          "severity": "high",
+          "description": "node 'chamber' reachable at conflicting positions [(-1, -1, 0), (0, -2, 0), (1, -3, 0), (2, -4, 0)]",
+          "edges": []
+        }
+      ]
+    },
+    "repaired": {
+      "edges": [
+        {
+          "src": "attic",
+          "dst": "spare room",
+          "dir": "west"
+        },
+        {
+          "src": "attic",
+          "dst": "bedchamber",
+          "dir": "south"
+        },
+        {
+          "src": "spare room",
+          "dst": "chamber",
+          "dir": "south"
+        },
+        {
+          "src": "spare room",
+          "dst": "attic",
+          "dir": "east"
+        },
+        {
+          "src": "bedchamber",
+          "dst": "chamber",
+          "dir": "west"
+        },
+        {
+          "src": "bedchamber",
+          "dst": "attic",
+          "dir": "north"
+        },
+        {
+          "src": "chamber",
+          "dst": "spare room",
+          "dir": "north"
+        },
+        {
+          "src": "chamber",
+          "dst": "bedchamber",
+          "dir": "east"
+        },
+        {
+          "src": "kitchenette",
+          "dst": "steam room",
+          "dir": "east"
+        },
+        {
+          "src": "steam room",
+          "dst": "kitchenette",
+          "dir": "west"
+        },
+        {
+          "src": "steam room",
+          "dst": "attic",
+          "dir": "south"
+        }
+      ],
+      "actions": [
+        {
+          "kind": "remove_edge",
+          "target": [
+            "attic",
+            "steam room"
+          ],
+          "new_dir": null,
+          "reason": "remove fallback"
+        },
+        {
+          "kind": "remove_edge",
+          "target": [
+            "bedchamber",
+            "kitchenette"
+          ],
+          "new_dir": null,
+          "reason": "remove fallback"
+        }
+      ],
+      "n_conflicts_before": 15,
+      "n_conflicts_after": 0
+    }
+  }
+}

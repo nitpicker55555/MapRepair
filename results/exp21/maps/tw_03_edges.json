@@ -1,0 +1,66 @@
+[
+  {
+    "src_node": "pantry",
+    "dst_node": "cookhouse",
+    "action": "south",
+    "step_num": 2,
+    "gt_src": "pantry",
+    "gt_dst": "cookhouse"
+  },
+  {
+    "src_node": "cookhouse",
+    "dst_node": "parlor",
+    "action": "east",
+    "step_num": 5,
+    "gt_src": "kitchenette",
+    "gt_dst": "cellar"
+  },
+  {
+    "src_node": "parlor",
+    "dst_node": "cookhouse",
+    "action": "west",
+    "step_num": 6,
+    "gt_src": "cellar",
+    "gt_dst": "kitchenette"
+  },
+  {
+    "src_node": "cookhouse",
+    "dst_node": "pantry",
+    "action": "north",
+    "step_num": 7,
+    "gt_src": "kitchenette",
+    "gt_dst": "bedchamber"
+  },
+  {
+    "src_node": "pantry",
+    "dst_node": "shower",
+    "action": "east",
+    "step_num": 9,
+    "gt_src": "cookhouse",
+    "gt_dst": "parlor"
+  },
+  {
+    "src_node": "shower",
+    "dst_node": "pantry",
+    "action": "west",
+    "step_num": 10,
+    "gt_src": "parlor",
+    "gt_dst": "cookhouse"
+  },
+  {
+    "src_node": "pantry",
+    "dst_node": "shower",
+    "action": "east",
+    "step_num": 12,
+    "gt_src": "pantry",
+    "gt_dst": "shower"
+  },
+  {
+    "src_node": "shower",
+    "dst_node": "cookery",
+    "action": "east",
+    "step_num": 13,
+    "gt_src": "shower",
+    "gt_dst": "cookery"
+  }
+]

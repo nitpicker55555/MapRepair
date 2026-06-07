@@ -1,0 +1,1266 @@
+{
+  "game": "deephome",
+  "num_llm_edges": 26,
+  "num_gt_edges": 46,
+  "num_conflicts": 20,
+  "type_distribution": {
+    "direction": 1,
+    "topology": 12,
+    "naming": 7
+  },
+  "root_cause_distribution": {
+    "real_vs_hallucinated": 1,
+    "false_positive_overlap": 2,
+    "overlap_mixed": 10,
+    "naming_collision_on_correct_subgraph": 4,
+    "real_name_corrupted_by_neighbour_error": 3
+  },
+  "conflicts": [
+    {
+      "type": "direction",
+      "description": "node 'training grounds' has multiple outgoing edges labelled 'northeast'",
+      "involved_edges": [
+        [
+          "training grounds",
+          "railway station (soldiers' barracks)"
+        ],
+        [
+          "training grounds",
+          "soldiers' barracks"
+        ]
+      ],
+      "involved_nodes": [
+        "training grounds",
+        "railway station (soldiers' barracks)",
+        "soldiers' barracks"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "training grounds",
+            "railway station (soldiers' barracks)"
+          ],
+          "llm_dir": "northeast",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": null
+        },
+        {
+          "edge": [
+            "training grounds",
+            "soldiers' barracks"
+          ],
+          "llm_dir": "northeast",
+          "in_gt": true,
+          "gt_dir": "northeast",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 64
+        }
+      ],
+      "case_counts": {
+        "hallucinated_edge": 1,
+        "correct": 1
+      },
+      "root_cause": "real_vs_hallucinated"
+    },
+    {
+      "type": "topology",
+      "description": "position (0, 0, 0) occupied by multiple rooms ['armory', 'city generator']",
+      "involved_edges": [],
+      "involved_nodes": [
+        "armory",
+        "city generator"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "soldiers' barracks",
+            "armory"
+          ],
+          "llm_dir": "west",
+          "in_gt": true,
+          "gt_dir": "west",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 65
+        },
+        {
+          "edge": [
+            "extreme south main street",
+            "city generator"
+          ],
+          "llm_dir": "east",
+          "in_gt": true,
+          "gt_dir": "east",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 29
+        }
+      ],
+      "case_counts": {
+        "correct": 2
+      },
+      "root_cause": "false_positive_overlap"
+    },
+    {
+      "type": "topology",
+      "description": "position (-1, -2, 0) occupied by multiple rooms ['ore mines', 'waterfall']",
+      "involved_edges": [],
+      "involved_nodes": [
+        "ore mines",
+        "waterfall"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "mining center",
+            "ore mines"
+          ],
+          "llm_dir": "south",
+          "in_gt": true,
+          "gt_dir": "south",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 21
+        },
+        {
+          "edge": [
+            "training grounds",
+            "waterfall"
+          ],
+          "llm_dir": "southwest",
+          "in_gt": true,
+          "gt_dir": "southwest",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 61
+        }
+      ],
+      "case_counts": {
+        "correct": 2
+      },
+      "root_cause": "false_positive_overlap"
+    },
+    {
+      "type": "topology",
+      "description": "position (0, -1, 0) occupied by multiple rooms ['coal mines', 'training grounds']",
+      "involved_edges": [],
+      "involved_nodes": [
+        "coal mines",
+        "training grounds"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "mining center",
+            "coal mines"
+          ],
+          "llm_dir": "east",
+          "in_gt": true,
+          "gt_dir": "east",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 24
+        },
+        {
+          "edge": [
+            "railway station (soldiers' barracks)",
+            "training grounds"
+          ],
+          "llm_dir": "southwest",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 60
+        },
+        {
+          "edge": [
+            "training grounds",
+            "waterfall"
+          ],
+          "llm_dir": "southwest",
+          "in_gt": true,
+          "gt_dir": "southwest",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 61
+        },
+        {
+          "edge": [
+            "training grounds",
+            "soldiers' barracks"
+          ],
+          "llm_dir": "northeast",
+          "in_gt": true,
+          "gt_dir": "northeast",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 64
+        }
+      ],
+      "case_counts": {
+        "correct": 3,
+        "hallucinated_edge": 1
+      },
+      "root_cause": "overlap_mixed"
+    },
+    {
+      "type": "topology",
+      "description": "position (1, 0, 0) occupied by multiple rooms ['armory', \"railway station (soldiers' barracks)\", \"soldiers' barracks\"]",
+      "involved_edges": [],
+      "involved_nodes": [
+        "armory",
+        "railway station (soldiers' barracks)",
+        "soldiers' barracks"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "soldiers' barracks",
+            "armory"
+          ],
+          "llm_dir": "west",
+          "in_gt": true,
+          "gt_dir": "west",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 65
+        },
+        {
+          "edge": [
+            "railcar",
+            "railway station (soldiers' barracks)"
+          ],
+          "llm_dir": "west",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 59
+        },
+        {
+          "edge": [
+            "soldiers' barracks",
+            "railway station (soldiers' barracks)"
+          ],
+          "llm_dir": "east",
+          "in_gt": true,
+          "gt_dir": "east",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 69
+        },
+        {
+          "edge": [
+            "railway station (soldiers' barracks)",
+            "training grounds"
+          ],
+          "llm_dir": "southwest",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 60
+        },
+        {
+          "edge": [
+            "training grounds",
+            "soldiers' barracks"
+          ],
+          "llm_dir": "northeast",
+          "in_gt": true,
+          "gt_dir": "northeast",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 64
+        },
+        {
+          "edge": [
+            "soldiers' barracks",
+            "mess hall"
+          ],
+          "llm_dir": "south",
+          "in_gt": true,
+          "gt_dir": "south",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 67
+        }
+      ],
+      "case_counts": {
+        "correct": 4,
+        "hallucinated_edge": 2
+      },
+      "root_cause": "overlap_mixed"
+    },
+    {
+      "type": "topology",
+      "description": "position (3, 0, 0) occupied by multiple rooms ['armory', 'railcar', \"railway station (soldiers' barracks)\", \"soldiers' barracks\"]",
+      "involved_edges": [],
+      "involved_nodes": [
+        "armory",
+        "railcar",
+        "railway station (soldiers' barracks)",
+        "soldiers' barracks"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "soldiers' barracks",
+            "armory"
+          ],
+          "llm_dir": "west",
+          "in_gt": true,
+          "gt_dir": "west",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 65
+        },
+        {
+          "edge": [
+            "railcar",
+            "railway station (smithy court)"
+          ],
+          "llm_dir": "out",
+          "in_gt": true,
+          "gt_dir": "out",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 42
+        },
+        {
+          "edge": [
+            "railcar",
+            "railway station (soldiers' barracks)"
+          ],
+          "llm_dir": "west",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 59
+        },
+        {
+          "edge": [
+            "soldiers' barracks",
+            "railway station (soldiers' barracks)"
+          ],
+          "llm_dir": "east",
+          "in_gt": true,
+          "gt_dir": "east",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 69
+        },
+        {
+          "edge": [
+            "railway station (soldiers' barracks)",
+            "training grounds"
+          ],
+          "llm_dir": "southwest",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 60
+        },
+        {
+          "edge": [
+            "training grounds",
+            "soldiers' barracks"
+          ],
+          "llm_dir": "northeast",
+          "in_gt": true,
+          "gt_dir": "northeast",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 64
+        },
+        {
+          "edge": [
+            "soldiers' barracks",
+            "mess hall"
+          ],
+          "llm_dir": "south",
+          "in_gt": true,
+          "gt_dir": "south",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 67
+        }
+      ],
+      "case_counts": {
+        "correct": 5,
+        "hallucinated_edge": 2
+      },
+      "root_cause": "overlap_mixed"
+    },
+    {
+      "type": "topology",
+      "description": "position (2, 0, 0) occupied by multiple rooms ['armory', \"railway station (soldiers' barracks)\", \"soldiers' barracks\"]",
+      "involved_edges": [],
+      "involved_nodes": [
+        "armory",
+        "railway station (soldiers' barracks)",
+        "soldiers' barracks"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "soldiers' barracks",
+            "armory"
+          ],
+          "llm_dir": "west",
+          "in_gt": true,
+          "gt_dir": "west",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 65
+        },
+        {
+          "edge": [
+            "railcar",
+            "railway station (soldiers' barracks)"
+          ],
+          "llm_dir": "west",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 59
+        },
+        {
+          "edge": [
+            "soldiers' barracks",
+            "railway station (soldiers' barracks)"
+          ],
+          "llm_dir": "east",
+          "in_gt": true,
+          "gt_dir": "east",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 69
+        },
+        {
+          "edge": [
+            "railway station (soldiers' barracks)",
+            "training grounds"
+          ],
+          "llm_dir": "southwest",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 60
+        },
+        {
+          "edge": [
+            "training grounds",
+            "soldiers' barracks"
+          ],
+          "llm_dir": "northeast",
+          "in_gt": true,
+          "gt_dir": "northeast",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 64
+        },
+        {
+          "edge": [
+            "soldiers' barracks",
+            "mess hall"
+          ],
+          "llm_dir": "south",
+          "in_gt": true,
+          "gt_dir": "south",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 67
+        }
+      ],
+      "case_counts": {
+        "correct": 4,
+        "hallucinated_edge": 2
+      },
+      "root_cause": "overlap_mixed"
+    },
+    {
+      "type": "topology",
+      "description": "position (4, 0, 0) occupied by multiple rooms ['railcar', \"railway station (soldiers' barracks)\", \"soldiers' barracks\"]",
+      "involved_edges": [],
+      "involved_nodes": [
+        "railcar",
+        "railway station (soldiers' barracks)",
+        "soldiers' barracks"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "railcar",
+            "railway station (smithy court)"
+          ],
+          "llm_dir": "out",
+          "in_gt": true,
+          "gt_dir": "out",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 42
+        },
+        {
+          "edge": [
+            "railcar",
+            "railway station (soldiers' barracks)"
+          ],
+          "llm_dir": "west",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 59
+        },
+        {
+          "edge": [
+            "soldiers' barracks",
+            "railway station (soldiers' barracks)"
+          ],
+          "llm_dir": "east",
+          "in_gt": true,
+          "gt_dir": "east",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 69
+        },
+        {
+          "edge": [
+            "railway station (soldiers' barracks)",
+            "training grounds"
+          ],
+          "llm_dir": "southwest",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 60
+        },
+        {
+          "edge": [
+            "training grounds",
+            "soldiers' barracks"
+          ],
+          "llm_dir": "northeast",
+          "in_gt": true,
+          "gt_dir": "northeast",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 64
+        },
+        {
+          "edge": [
+            "soldiers' barracks",
+            "armory"
+          ],
+          "llm_dir": "west",
+          "in_gt": true,
+          "gt_dir": "west",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 65
+        },
+        {
+          "edge": [
+            "soldiers' barracks",
+            "mess hall"
+          ],
+          "llm_dir": "south",
+          "in_gt": true,
+          "gt_dir": "south",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 67
+        }
+      ],
+      "case_counts": {
+        "correct": 5,
+        "hallucinated_edge": 2
+      },
+      "root_cause": "overlap_mixed"
+    },
+    {
+      "type": "topology",
+      "description": "position (2, -1, 0) occupied by multiple rooms ['mess hall', 'training grounds']",
+      "involved_edges": [],
+      "involved_nodes": [
+        "mess hall",
+        "training grounds"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "soldiers' barracks",
+            "mess hall"
+          ],
+          "llm_dir": "south",
+          "in_gt": true,
+          "gt_dir": "south",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 67
+        },
+        {
+          "edge": [
+            "railway station (soldiers' barracks)",
+            "training grounds"
+          ],
+          "llm_dir": "southwest",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 60
+        },
+        {
+          "edge": [
+            "training grounds",
+            "waterfall"
+          ],
+          "llm_dir": "southwest",
+          "in_gt": true,
+          "gt_dir": "southwest",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 61
+        },
+        {
+          "edge": [
+            "training grounds",
+            "soldiers' barracks"
+          ],
+          "llm_dir": "northeast",
+          "in_gt": true,
+          "gt_dir": "northeast",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 64
+        }
+      ],
+      "case_counts": {
+        "correct": 3,
+        "hallucinated_edge": 1
+      },
+      "root_cause": "overlap_mixed"
+    },
+    {
+      "type": "topology",
+      "description": "position (3, -1, 0) occupied by multiple rooms ['mess hall', 'training grounds']",
+      "involved_edges": [],
+      "involved_nodes": [
+        "mess hall",
+        "training grounds"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "soldiers' barracks",
+            "mess hall"
+          ],
+          "llm_dir": "south",
+          "in_gt": true,
+          "gt_dir": "south",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 67
+        },
+        {
+          "edge": [
+            "railway station (soldiers' barracks)",
+            "training grounds"
+          ],
+          "llm_dir": "southwest",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 60
+        },
+        {
+          "edge": [
+            "training grounds",
+            "waterfall"
+          ],
+          "llm_dir": "southwest",
+          "in_gt": true,
+          "gt_dir": "southwest",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 61
+        },
+        {
+          "edge": [
+            "training grounds",
+            "soldiers' barracks"
+          ],
+          "llm_dir": "northeast",
+          "in_gt": true,
+          "gt_dir": "northeast",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 64
+        }
+      ],
+      "case_counts": {
+        "correct": 3,
+        "hallucinated_edge": 1
+      },
+      "root_cause": "overlap_mixed"
+    },
+    {
+      "type": "topology",
+      "description": "position (4, -1, 0) occupied by multiple rooms ['mess hall', 'training grounds']",
+      "involved_edges": [],
+      "involved_nodes": [
+        "mess hall",
+        "training grounds"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "soldiers' barracks",
+            "mess hall"
+          ],
+          "llm_dir": "south",
+          "in_gt": true,
+          "gt_dir": "south",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 67
+        },
+        {
+          "edge": [
+            "railway station (soldiers' barracks)",
+            "training grounds"
+          ],
+          "llm_dir": "southwest",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 60
+        },
+        {
+          "edge": [
+            "training grounds",
+            "waterfall"
+          ],
+          "llm_dir": "southwest",
+          "in_gt": true,
+          "gt_dir": "southwest",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 61
+        },
+        {
+          "edge": [
+            "training grounds",
+            "soldiers' barracks"
+          ],
+          "llm_dir": "northeast",
+          "in_gt": true,
+          "gt_dir": "northeast",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 64
+        }
+      ],
+      "case_counts": {
+        "correct": 3,
+        "hallucinated_edge": 1
+      },
+      "root_cause": "overlap_mixed"
+    },
+    {
+      "type": "topology",
+      "description": "position (1, -1, 0) occupied by multiple rooms ['mess hall', 'training grounds']",
+      "involved_edges": [],
+      "involved_nodes": [
+        "mess hall",
+        "training grounds"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "soldiers' barracks",
+            "mess hall"
+          ],
+          "llm_dir": "south",
+          "in_gt": true,
+          "gt_dir": "south",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 67
+        },
+        {
+          "edge": [
+            "railway station (soldiers' barracks)",
+            "training grounds"
+          ],
+          "llm_dir": "southwest",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 60
+        },
+        {
+          "edge": [
+            "training grounds",
+            "waterfall"
+          ],
+          "llm_dir": "southwest",
+          "in_gt": true,
+          "gt_dir": "southwest",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 61
+        },
+        {
+          "edge": [
+            "training grounds",
+            "soldiers' barracks"
+          ],
+          "llm_dir": "northeast",
+          "in_gt": true,
+          "gt_dir": "northeast",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 64
+        }
+      ],
+      "case_counts": {
+        "correct": 3,
+        "hallucinated_edge": 1
+      },
+      "root_cause": "overlap_mixed"
+    },
+    {
+      "type": "topology",
+      "description": "position (5, 0, 0) occupied by multiple rooms ['railcar', \"railway station (soldiers' barracks)\"]",
+      "involved_edges": [],
+      "involved_nodes": [
+        "railcar",
+        "railway station (soldiers' barracks)"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "railcar",
+            "railway station (smithy court)"
+          ],
+          "llm_dir": "out",
+          "in_gt": true,
+          "gt_dir": "out",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 42
+        },
+        {
+          "edge": [
+            "railcar",
+            "railway station (soldiers' barracks)"
+          ],
+          "llm_dir": "west",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 59
+        },
+        {
+          "edge": [
+            "soldiers' barracks",
+            "railway station (soldiers' barracks)"
+          ],
+          "llm_dir": "east",
+          "in_gt": true,
+          "gt_dir": "east",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 69
+        },
+        {
+          "edge": [
+            "railway station (soldiers' barracks)",
+            "training grounds"
+          ],
+          "llm_dir": "southwest",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 60
+        }
+      ],
+      "case_counts": {
+        "correct": 2,
+        "hallucinated_edge": 2
+      },
+      "root_cause": "overlap_mixed"
+    },
+    {
+      "type": "naming",
+      "description": "node 'armory' reachable at conflicting positions [(0, 0, 0), (1, 0, 0), (2, 0, 0), (3, 0, 0)]",
+      "involved_edges": [],
+      "involved_nodes": [
+        "armory"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "soldiers' barracks",
+            "armory"
+          ],
+          "llm_dir": "west",
+          "in_gt": true,
+          "gt_dir": "west",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 65
+        }
+      ],
+      "case_counts": {
+        "correct": 1
+      },
+      "root_cause": "naming_collision_on_correct_subgraph"
+    },
+    {
+      "type": "naming",
+      "description": "node \"soldiers' barracks\" reachable at conflicting positions [(1, 0, 0), (2, 0, 0), (3, 0, 0), (4, 0, 0)]",
+      "involved_edges": [],
+      "involved_nodes": [
+        "soldiers' barracks"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "training grounds",
+            "soldiers' barracks"
+          ],
+          "llm_dir": "northeast",
+          "in_gt": true,
+          "gt_dir": "northeast",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 64
+        },
+        {
+          "edge": [
+            "soldiers' barracks",
+            "armory"
+          ],
+          "llm_dir": "west",
+          "in_gt": true,
+          "gt_dir": "west",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 65
+        },
+        {
+          "edge": [
+            "soldiers' barracks",
+            "mess hall"
+          ],
+          "llm_dir": "south",
+          "in_gt": true,
+          "gt_dir": "south",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 67
+        },
+        {
+          "edge": [
+            "soldiers' barracks",
+            "railway station (soldiers' barracks)"
+          ],
+          "llm_dir": "east",
+          "in_gt": true,
+          "gt_dir": "east",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 69
+        }
+      ],
+      "case_counts": {
+        "correct": 4
+      },
+      "root_cause": "naming_collision_on_correct_subgraph"
+    },
+    {
+      "type": "naming",
+      "description": "node 'training grounds' reachable at conflicting positions [(0, -1, 0), (1, -1, 0), (2, -1, 0), (3, -1, 0), (4, -1, 0)]",
+      "involved_edges": [],
+      "involved_nodes": [
+        "training grounds"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "railway station (soldiers' barracks)",
+            "training grounds"
+          ],
+          "llm_dir": "southwest",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 60
+        },
+        {
+          "edge": [
+            "training grounds",
+            "waterfall"
+          ],
+          "llm_dir": "southwest",
+          "in_gt": true,
+          "gt_dir": "southwest",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 61
+        },
+        {
+          "edge": [
+            "training grounds",
+            "soldiers' barracks"
+          ],
+          "llm_dir": "northeast",
+          "in_gt": true,
+          "gt_dir": "northeast",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 64
+        }
+      ],
+      "case_counts": {
+        "hallucinated_edge": 1,
+        "correct": 2
+      },
+      "root_cause": "real_name_corrupted_by_neighbour_error"
+    },
+    {
+      "type": "naming",
+      "description": "node 'mess hall' reachable at conflicting positions [(1, -1, 0), (2, -1, 0), (3, -1, 0), (4, -1, 0)]",
+      "involved_edges": [],
+      "involved_nodes": [
+        "mess hall"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "soldiers' barracks",
+            "mess hall"
+          ],
+          "llm_dir": "south",
+          "in_gt": true,
+          "gt_dir": "south",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 67
+        }
+      ],
+      "case_counts": {
+        "correct": 1
+      },
+      "root_cause": "naming_collision_on_correct_subgraph"
+    },
+    {
+      "type": "naming",
+      "description": "node \"railway station (soldiers' barracks)\" reachable at conflicting positions [(1, 0, 0), (2, 0, 0), (3, 0, 0), (4, 0, 0), (5, 0, 0)]",
+      "involved_edges": [],
+      "involved_nodes": [
+        "railway station (soldiers' barracks)"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "railcar",
+            "railway station (soldiers' barracks)"
+          ],
+          "llm_dir": "west",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 59
+        },
+        {
+          "edge": [
+            "soldiers' barracks",
+            "railway station (soldiers' barracks)"
+          ],
+          "llm_dir": "east",
+          "in_gt": true,
+          "gt_dir": "east",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 69
+        },
+        {
+          "edge": [
+            "railway station (soldiers' barracks)",
+            "training grounds"
+          ],
+          "llm_dir": "southwest",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 60
+        }
+      ],
+      "case_counts": {
+        "hallucinated_edge": 2,
+        "correct": 1
+      },
+      "root_cause": "real_name_corrupted_by_neighbour_error"
+    },
+    {
+      "type": "naming",
+      "description": "node 'railcar' reachable at conflicting positions [(3, 0, 0), (4, 0, 0), (5, 0, 0), (6, 0, 0)]",
+      "involved_edges": [],
+      "involved_nodes": [
+        "railcar"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "railcar",
+            "railway station (smithy court)"
+          ],
+          "llm_dir": "out",
+          "in_gt": true,
+          "gt_dir": "out",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 42
+        },
+        {
+          "edge": [
+            "railcar",
+            "railway station (soldiers' barracks)"
+          ],
+          "llm_dir": "west",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 59
+        }
+      ],
+      "case_counts": {
+        "correct": 1,
+        "hallucinated_edge": 1
+      },
+      "root_cause": "real_name_corrupted_by_neighbour_error"
+    },
+    {
+      "type": "naming",
+      "description": "node 'waterfall' reachable at conflicting positions [(-1, -2, 0), (0, -2, 0), (1, -2, 0), (2, -2, 0)]",
+      "involved_edges": [],
+      "involved_nodes": [
+        "waterfall"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "training grounds",
+            "waterfall"
+          ],
+          "llm_dir": "southwest",
+          "in_gt": true,
+          "gt_dir": "southwest",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 61
+        }
+      ],
+      "case_counts": {
+        "correct": 1
+      },
+      "root_cause": "naming_collision_on_correct_subgraph"
+    }
+  ],
+  "walkthrough_steps_available": 71
+}

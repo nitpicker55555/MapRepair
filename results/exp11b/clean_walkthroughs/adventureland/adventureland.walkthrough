@@ -1,0 +1,562 @@
+===========
+==>STEP NUM: 0
+==>ACT: east
+==>OBSERVATION: Meadow
+You're in a sunny meadow.
+
+Obvious exits: North, South, East, West.
+
+You can also see: sleeping Dragon - sign reads- IN SOME CASES MUD IS GOOD, IN OTHERS...
+===========
+==>STEP NUM: 1
+==>ACT: north
+==>OBSERVATION: Lakeside
+You're on the shore of a lake.
+
+Obvious exits: North, South, West, Down.
+
+You can also see: water - *GOLDEN FISH* - rusty axe (magic word- BUNYON -on it) - sign reads- NO SWIMMING ALLOWED
+===========
+==>STEP NUM: 2
+==>ACT: down
+==>OBSERVATION: Bog
+You're in a quick-sand bog.
+
+Obvious exits: none!
+
+You can also see: *SMALL STATUE OF A BLUE OX*
+===========
+==>STEP NUM: 3
+==>ACT: south
+==>OBSERVATION: Lakeside
+
+You can see a *GOLDEN FISH* and a sign reads- NO SWIMMING ALLOWED here.
+===========
+==>STEP NUM: 4
+==>ACT: west
+==>OBSERVATION: Dismal Swamp
+You're in a dismal swamp.
+
+Obvious exits: North, South, East, West, Up.
+
+You can also see: cypress tree - evil smelling mud - swamp gas - floating patch of oily slime - chiggers
+===========
+==>STEP NUM: 5
+==>ACT: west
+==>OBSERVATION: Grove
+You're in a hidden grove.
+
+Obvious exits: North, East, West.
+
+You can also see: rusty axe (magic word- BUNYON -on it) - *SMALL STATUE OF A BLUE OX* - *JEWELLED FRUIT* - sign reads- PAUL'S PLACE
+===========
+==>STEP NUM: 6
+==>ACT: east
+==>OBSERVATION: Dismal Swamp
+You're in a dismal swamp.
+
+Obvious exits: North, South, East, West, Up.
+
+You can also see: cypress tree - evil smelling mud - swamp gas - floating patch of oily slime - chiggers
+===========
+==>STEP NUM: 7
+==>ACT: down
+==>OBSERVATION: Dismal Swamp
+You're in a dismal swamp.
+
+Obvious exits: North, South, East, West, Up.
+
+You can also see: cypress tree - evil smelling mud - swamp gas - floating patch of oily slime - chiggers
+===========
+==>STEP NUM: 8
+==>ACT: down
+==>OBSERVATION: Root Chamber
+You're in a root chamber under the stump.
+
+Obvious exits: Up, Down.
+
+You can also see: dark hole - *POT OF RUBIES*
+===========
+==>STEP NUM: 9
+==>ACT: up
+==>OBSERVATION: Inside Stump
+You're in a large hollow damp stump in the swamp.
+
+Obvious exits: North, South, East, West, Up, Down.
+
+You can also see: *SMALL STATUE OF A BLUE OX* - *JEWELLED FRUIT* - sign reads- LEAVE TREASURE HERE - (say 'SCORE')
+===========
+==>STEP NUM: 10
+==>ACT: down
+==>OBSERVATION: Root Chamber
+You're in a root chamber under the stump.
+
+Obvious exits: Up, Down.
+
+You can also see: dark hole
+===========
+==>STEP NUM: 11
+==>ACT: down
+==>OBSERVATION: Hole
+You're in a semi-dark hole by the root chamber.
+
+Obvious exits: Up, Down.
+
+You can also see: locked door
+===========
+==>STEP NUM: 12
+==>ACT: down
+==>OBSERVATION: Cavern
+You're in a large cavern.
+
+Obvious exits: North, South, West, Up, Down.
+===========
+==>STEP NUM: 13
+==>ACT: south
+==>OBSERVATION: Anteroom
+You're in a royal anteroom.
+
+Obvious exits: North, Up.
+
+You can also see: empty wine bladder
+===========
+==>STEP NUM: 14
+==>ACT: north
+==>OBSERVATION: Cavern
+You're in a large cavern.
+
+Obvious exits: North, South, West, Up, Down.
+===========
+==>STEP NUM: 15
+==>ACT: down
+==>OBSERVATION: Chasm
+You're in a bottom of a chasm. Above 2 ledges. One has a bricked up window.
+
+Obvious exits: Up.
+
+You can also see: *GOLDEN NET* - sign reads- MAGIC WORD IS AWAY. X LA -(rest of sign is missing) - stream of lava
+===========
+==>STEP NUM: 16
+==>ACT: south
+==>OBSERVATION: Dismal Swamp
+You're in a dismal swamp.
+
+Obvious exits: North, South, East, West.
+
+You can also see: rusty axe (magic word- BUNYON -on it) - hollow stump and remains of a felled tree - evil smelling mud - swamp gas - floating patch of oily slime - chiggers
+===========
+==>STEP NUM: 17
+==>ACT: north
+==>OBSERVATION: Meadow
+You're in a sunny meadow.
+
+Obvious exits: North, South, East, West.
+
+You can also see: sleeping Dragon - sign reads- IN SOME CASES MUD IS GOOD, IN OTHERS...
+===========
+==>STEP NUM: 18
+==>ACT: east
+==>OBSERVATION: Lakeside
+You're on the shore of a lake.
+
+Obvious exits: North, South, West, Down.
+
+You can also see: water - *GOLDEN FISH* - sign reads- NO SWIMMING ALLOWED
+===========
+==>STEP NUM: 19
+==>ACT: south
+==>OBSERVATION: Lakeside
+
+You can see a sign reads- NO SWIMMING ALLOWED here.
+===========
+==>STEP NUM: 20
+==>ACT: west
+==>OBSERVATION: Dismal Swamp
+You're in a dismal swamp.
+
+Obvious exits: North, South, East, West.
+
+You can also see: empty wine bladder - flint and steel - rusty axe (magic word- BUNYON -on it) - hollow stump and remains of a felled tree - swamp gas - floating patch of oily slime - chiggers
+===========
+==>STEP NUM: 21
+==>ACT: up
+==>OBSERVATION: Dismal Swamp
+You're in a dismal swamp.
+
+Obvious exits: North, South, East, West.
+
+You can also see: empty wine bladder - flint and steel - rusty axe (magic word- BUNYON -on it) - hollow stump and remains of a felled tree - swamp gas - floating patch of oily slime - chiggers
+===========
+==>STEP NUM: 22
+==>ACT: down
+==>OBSERVATION: Root Chamber
+You're in a root chamber under the stump.
+
+Obvious exits: Up, Down.
+
+You can also see: dark hole
+===========
+==>STEP NUM: 23
+==>ACT: down
+==>OBSERVATION: Hole
+You're in a semi-dark hole by the root chamber.
+
+Obvious exits: Up, Down.
+
+You can also see: ring of skeleton keys - open door with a hallway beyond
+===========
+==>STEP NUM: 24
+==>ACT: down
+==>OBSERVATION: Cavern
+You're in a large cavern.
+
+Obvious exits: North, South, West, Up, Down.
+===========
+==>STEP NUM: 25
+==>ACT: south
+==>OBSERVATION: Anteroom
+You're in a royal anteroom.
+
+Obvious exits: North, Up.
+===========
+==>STEP NUM: 26
+==>ACT: down
+==>OBSERVATION: Anteroom
+You're in a royal anteroom.
+
+Obvious exits: North, Up.
+===========
+==>STEP NUM: 27
+==>ACT: north
+==>OBSERVATION: Cavern
+You're in a large cavern.
+
+Obvious exits: North, South, West, Up, Down.
+===========
+==>STEP NUM: 28
+==>ACT: up
+==>OBSERVATION: Hall
+You're in a long down-sloping hall.
+
+Obvious exits: Up, Down.
+===========
+==>STEP NUM: 29
+==>ACT: up
+==>OBSERVATION: Hole
+You're in a semi-dark hole by the root chamber.
+
+Obvious exits: Up, Down.
+
+You can also see: ring of skeleton keys - open door with a hallway beyond
+===========
+==>STEP NUM: 30
+==>ACT: up
+==>OBSERVATION: Root Chamber
+You're in a root chamber under the stump.
+
+Obvious exits: Up, Down.
+
+You can also see: dark hole
+===========
+==>STEP NUM: 31
+==>ACT: up
+==>OBSERVATION: Inside Stump
+You're in a large hollow damp stump in the swamp.
+
+Obvious exits: North, South, East, West, Up, Down.
+
+You can also see: evil smelling mud - *GOLDEN NET* - *GOLDEN FISH* - *POT OF RUBIES* - *SMALL STATUE OF A BLUE OX* - *JEWELLED FRUIT* - sign reads- LEAVE TREASURE HERE - (say 'SCORE')
+===========
+==>STEP NUM: 32
+==>ACT: down
+==>OBSERVATION: Root Chamber
+You're in a root chamber under the stump.
+
+Obvious exits: Up, Down.
+
+You can also see: dark hole
+===========
+==>STEP NUM: 33
+==>ACT: down
+==>OBSERVATION: Hole
+You're in a semi-dark hole by the root chamber.
+
+Obvious exits: Up, Down.
+
+You can also see: ring of skeleton keys - open door with a hallway beyond
+===========
+==>STEP NUM: 34
+==>ACT: down
+==>OBSERVATION: Hall
+You're in a long down-sloping hall.
+
+Obvious exits: Up, Down.
+===========
+==>STEP NUM: 35
+==>ACT: down
+==>OBSERVATION: Cavern
+You're in a large cavern.
+
+Obvious exits: North, South, West, Up, Down.
+===========
+==>STEP NUM: 36
+==>ACT: south
+==>OBSERVATION: Anteroom
+You're in a royal anteroom.
+
+Obvious exits: North, Up.
+===========
+==>STEP NUM: 37
+==>ACT: down
+==>OBSERVATION: Anteroom
+You're in a royal anteroom.
+
+Obvious exits: North, Up.
+===========
+==>STEP NUM: 38
+==>ACT: north
+==>OBSERVATION: Cavern
+You're in a large cavern.
+
+Obvious exits: North, South, West, Up, Down.
+===========
+==>STEP NUM: 39
+==>ACT: down
+==>OBSERVATION: Chasm
+You're in a bottom of a chasm. Above 2 ledges. One has a bricked up window.
+
+Obvious exits: Up.
+
+You can also see: dead bear - sign reads- MAGIC WORD IS AWAY. X LA -(rest of sign is missing) - stream of lava
+===========
+==>STEP NUM: 40
+==>ACT: east
+==>OBSERVATION: Lakeside
+You're on the shore of a lake.
+
+Obvious exits: North, South, West, Down.
+
+You can also see: water - sign reads- NO SWIMMING ALLOWED
+===========
+==>STEP NUM: 41
+==>ACT: west
+==>OBSERVATION: Dismal Swamp
+You're in a dismal swamp.
+
+Obvious exits: North, South, East, West.
+
+You can also see: rusty axe (magic word- BUNYON -on it) - hollow stump and remains of a felled tree - swamp gas - floating patch of oily slime - chiggers
+===========
+==>STEP NUM: 42
+==>ACT: south
+==>OBSERVATION: Dismal Swamp
+
+You can see a rusty axe (magic word- BUNYON -on it), a hollow stump and remains of a felled tree, some swamp gas, a floating patch of oily slime and a swarm of chiggers here.
+===========
+==>STEP NUM: 43
+==>ACT: down
+==>OBSERVATION: Root Chamber
+You're in a root chamber under the stump.
+
+Obvious exits: Up, Down.
+
+You can also see: dark hole
+===========
+==>STEP NUM: 44
+==>ACT: down
+==>OBSERVATION: Hole
+You're in a semi-dark hole by the root chamber.
+
+Obvious exits: Up, Down.
+
+You can also see: ring of skeleton keys - open door with a hallway beyond
+===========
+==>STEP NUM: 45
+==>ACT: down
+==>OBSERVATION: Cavern
+You're in a large cavern.
+
+Obvious exits: North, South, West, Up, Down.
+===========
+==>STEP NUM: 46
+==>ACT: south
+==>OBSERVATION: Cavern
+You're in a large cavern.
+
+Obvious exits: North, South, West, Up, Down.
+===========
+==>STEP NUM: 47
+==>ACT: up
+==>OBSERVATION: Hall
+You're in a long down-sloping hall.
+
+Obvious exits: Up, Down.
+===========
+==>STEP NUM: 48
+==>ACT: up
+==>OBSERVATION: Hole
+You're in a semi-dark hole by the root chamber.
+
+Obvious exits: Up, Down.
+
+You can also see: ring of skeleton keys - open door with a hallway beyond
+
+The bees in the bottle all suffocated.
+===========
+==>STEP NUM: 49
+==>ACT: up
+==>OBSERVATION: Root Chamber
+You're in a root chamber under the stump.
+
+Obvious exits: Up, Down.
+
+You can also see: dark hole
+===========
+==>STEP NUM: 50
+==>ACT: up
+==>OBSERVATION: Inside Stump
+You're in a large hollow damp stump in the swamp.
+
+Obvious exits: North, South, East, West, Up, Down.
+
+You can also see: *MAGIC MIRROR* - *THICK PERSIAN RUG* - *FIRESTONE* (cold now) - *GOLD CROWN* - *GOLDEN NET* - *GOLDEN FISH* - *POT OF RUBIES* - *SMALL STATUE OF A BLUE OX* - *JEWELLED FRUIT* - sign reads- LEAVE TREASURE HERE - (say 'SCORE')
+===========
+==>STEP NUM: 51
+==>ACT: up
+==>OBSERVATION: Dismal Swamp
+You're in a dismal swamp.
+
+Obvious exits: North, South, East, West.
+
+You can also see: evil smelling mud - rusty axe (magic word- BUNYON -on it) - hollow stump and remains of a felled tree - swamp gas - floating patch of oily slime - chiggers
+===========
+==>STEP NUM: 52
+==>ACT: north
+==>OBSERVATION: Meadow
+You're in a sunny meadow.
+
+Obvious exits: North, South, East, West.
+
+You can also see: sleeping Dragon - sign reads- IN SOME CASES MUD IS GOOD, IN OTHERS...
+===========
+==>STEP NUM: 53
+==>ACT: east
+==>OBSERVATION: Lakeside
+You're on the shore of a lake.
+
+Obvious exits: North, South, West, Down.
+
+You can also see: water - sign reads- NO SWIMMING ALLOWED
+===========
+==>STEP NUM: 54
+==>ACT: west
+==>OBSERVATION: Dismal Swamp
+You're in a dismal swamp.
+
+Obvious exits: North, South, East, West.
+
+You can also see: evil smelling mud - rusty axe (magic word- BUNYON -on it) - hollow stump and remains of a felled tree - swamp gas - floating patch of oily slime - chiggers
+===========
+==>STEP NUM: 55
+==>ACT: down
+==>OBSERVATION: Root Chamber
+You're in a root chamber under the stump.
+
+Obvious exits: Up, Down.
+
+You can also see: dark hole
+===========
+==>STEP NUM: 56
+==>ACT: down
+==>OBSERVATION: Hole
+You're in a semi-dark hole by the root chamber.
+
+Obvious exits: Up, Down.
+
+You can also see: ring of skeleton keys - open door with a hallway beyond
+===========
+==>STEP NUM: 57
+==>ACT: down
+==>OBSERVATION: Hall
+You're in a long down-sloping hall.
+
+Obvious exits: Up, Down.
+===========
+==>STEP NUM: 58
+==>ACT: down
+==>OBSERVATION: Cavern
+You're in a large cavern.
+
+Obvious exits: North, South, West, Up, Down.
+===========
+==>STEP NUM: 59
+==>ACT: south
+==>OBSERVATION: Cavern
+You're in a large cavern.
+
+Obvious exits: North, South, West, Up, Down.
+===========
+==>STEP NUM: 60
+==>ACT: up
+==>OBSERVATION: Hall
+You're in a long down-sloping hall.
+
+Obvious exits: Up, Down.
+===========
+==>STEP NUM: 61
+==>ACT: up
+==>OBSERVATION: Hole
+You're in a semi-dark hole by the root chamber.
+
+Obvious exits: Up, Down.
+
+You can also see: ring of skeleton keys - open door with a hallway beyond
+===========
+==>STEP NUM: 62
+==>ACT: up
+==>OBSERVATION: Root Chamber
+You're in a root chamber under the stump.
+
+Obvious exits: Up, Down.
+
+You can also see: dark hole
+===========
+==>STEP NUM: 63
+==>ACT: up
+==>OBSERVATION: Inside Stump
+You're in a large hollow damp stump in the swamp.
+
+Obvious exits: North, South, East, West, Up, Down.
+
+You can also see: *MAGIC MIRROR* - *THICK PERSIAN RUG* - *FIRESTONE* (cold now) - *GOLD CROWN* - *GOLDEN NET* - *GOLDEN FISH* - *POT OF RUBIES* - *SMALL STATUE OF A BLUE OX* - *JEWELLED FRUIT* - sign reads- LEAVE TREASURE HERE - (say 'SCORE')
+===========
+==>STEP NUM: 64
+==>ACT: north
+==>OBSERVATION: Dismal Swamp
+You're in a dismal swamp.
+
+Obvious exits: North, South, East, West.
+
+You can also see: evil smelling mud - rusty axe (magic word- BUNYON -on it) - hollow stump and remains of a felled tree - swamp gas - floating patch of oily slime - chiggers
+
+You're bitten by chiggers.
+===========
+==>STEP NUM: 65
+==>ACT: north
+==>OBSERVATION: Meadow
+You're in a sunny meadow.
+
+Obvious exits: North, South, East, West.
+
+You can also see: sleeping Dragon - sign reads- IN SOME CASES MUD IS GOOD, IN OTHERS...
+===========
+==>STEP NUM: 66
+==>ACT: south
+==>OBSERVATION: Dismal Swamp
+You're in a dismal swamp.
+
+Obvious exits: North, South, East, West.
+
+You can also see: evil smelling mud - rusty axe (magic word- BUNYON -on it) - hollow stump and remains of a felled tree - swamp gas - floating patch of oily slime - chiggers
+Your lamp is getting dim.
+===========

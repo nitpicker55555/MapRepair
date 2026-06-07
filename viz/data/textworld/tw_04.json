@@ -1,0 +1,283 @@
+{
+  "id": "tw_04",
+  "dataset": "textworld",
+  "n_rooms": 5,
+  "n_edges": 8,
+  "rooms": [
+    {
+      "id": "bedroom",
+      "label": "bedroom",
+      "description": "You are in a bedroom. A standard one. You need an unguarded exit? You should try going north."
+    },
+    {
+      "id": "chamber",
+      "label": "chamber",
+      "description": "Guess what, you are in the place we're calling the chamber. You can make out a coffer. The coffer contains . The coffer is empty, what a horrible day! There is an opena closed gate leading north. There is an unblocked exit to the east."
+    },
+    {
+      "id": "cookhouse",
+      "label": "cookhouse",
+      "description": "Fancy seeing you here. Here, by the way, being the cookhouse. There is an exit to the west. Don't worry, it is unblocked."
+    },
+    {
+      "id": "kitchenette",
+      "label": "kitchenette",
+      "description": "You are in a kitchenette. A normal one. You make out a board. You see on the board.The board appears to be empty. This always happens! There is an opena closed gateway leading east. There is an exit to the south. Don't worry, it is unguarded."
+    },
+    {
+      "id": "study",
+      "label": "study",
+      "description": "You are in a study. A normal kind of place. You make out a lockedan openeda closed display in the corner. The display contains . Something scurries by right in the corner of your eye. Probably nothing. The display is empty! What a waste of a day! There is an opena closed gate leading south. There is"
+    }
+  ],
+  "walkthrough": [],
+  "states": {
+    "gt": {
+      "edges": [
+        {
+          "src": "study",
+          "dst": "kitchenette",
+          "dir": "west"
+        },
+        {
+          "src": "study",
+          "dst": "chamber",
+          "dir": "south"
+        },
+        {
+          "src": "kitchenette",
+          "dst": "bedroom",
+          "dir": "south"
+        },
+        {
+          "src": "kitchenette",
+          "dst": "study",
+          "dir": "east"
+        },
+        {
+          "src": "chamber",
+          "dst": "study",
+          "dir": "north"
+        },
+        {
+          "src": "chamber",
+          "dst": "cookhouse",
+          "dir": "east"
+        },
+        {
+          "src": "bedroom",
+          "dst": "kitchenette",
+          "dir": "north"
+        },
+        {
+          "src": "cookhouse",
+          "dst": "chamber",
+          "dir": "west"
+        }
+      ]
+    },
+    "noised": {
+      "edges": [
+        {
+          "src": "study",
+          "dst": "kitchenette",
+          "dir": "west"
+        },
+        {
+          "src": "study",
+          "dst": "chamber",
+          "dir": "south"
+        },
+        {
+          "src": "kitchenette",
+          "dst": "bedroom",
+          "dir": "south"
+        },
+        {
+          "src": "kitchenette",
+          "dst": "study",
+          "dir": "east"
+        },
+        {
+          "src": "kitchenette",
+          "dst": "chamber",
+          "dir": "east"
+        },
+        {
+          "src": "chamber",
+          "dst": "study",
+          "dir": "north"
+        },
+        {
+          "src": "chamber",
+          "dst": "bedroom",
+          "dir": "east"
+        },
+        {
+          "src": "bedroom",
+          "dst": "kitchenette",
+          "dir": "north"
+        },
+        {
+          "src": "bedroom",
+          "dst": "chamber",
+          "dir": "west"
+        }
+      ],
+      "noise_records": [
+        {
+          "type": "N5_collapse_fallback",
+          "src": "cookhouse",
+          "dst": "bedroom",
+          "direction": null,
+          "note": "no prefix match available"
+        },
+        {
+          "type": "N1_direction",
+          "src": "kitchenette",
+          "dst": "chamber",
+          "direction": "east",
+          "note": ""
+        }
+      ],
+      "noise_summary": {
+        "N5_collapse_fallback": 1,
+        "N1_direction": 1
+      },
+      "conflicts": [
+        {
+          "type": "direction",
+          "severity": "high",
+          "description": "node 'kitchenette' has multiple outgoing edges labelled 'east'",
+          "edges": [
+            [
+              "kitchenette",
+              "study"
+            ],
+            [
+              "kitchenette",
+              "chamber"
+            ]
+          ]
+        },
+        {
+          "type": "topology",
+          "severity": "high",
+          "description": "position (0, 1, 0) occupied by multiple rooms ['bedroom', 'kitchenette']",
+          "edges": []
+        },
+        {
+          "type": "topology",
+          "severity": "high",
+          "description": "position (3, 3, 0) occupied by multiple rooms ['chamber', 'study']",
+          "edges": []
+        },
+        {
+          "type": "topology",
+          "severity": "high",
+          "description": "position (1, 1, 0) occupied by multiple rooms ['chamber', 'study']",
+          "edges": []
+        },
+        {
+          "type": "topology",
+          "severity": "high",
+          "description": "position (-1, 1, 0) occupied by multiple rooms ['chamber', 'study']",
+          "edges": []
+        },
+        {
+          "type": "topology",
+          "severity": "high",
+          "description": "position (1, 2, 0) occupied by multiple rooms ['chamber', 'study']",
+          "edges": []
+        },
+        {
+          "type": "naming",
+          "severity": "high",
+          "description": "node 'bedroom' reachable at conflicting positions [(-2, 0, 0), (0, 0, 0), (0, 1, 0), (2, 2, 0), (4, 3, 0)]",
+          "edges": []
+        },
+        {
+          "type": "naming",
+          "severity": "high",
+          "description": "node 'kitchenette' reachable at conflicting positions [(-2, 1, 0), (-2, 2, 0), (0, 1, 0), (0, 2, 0), (0, 3, 0), (2, 3, 0)]",
+          "edges": []
+        },
+        {
+          "type": "naming",
+          "severity": "high",
+          "description": "node 'chamber' reachable at conflicting positions [(-3, 0, 0), (-1, 0, 0), (-1, 1, 0), (1, 1, 0), (1, 2, 0), (3, 3, 0)]",
+          "edges": []
+        },
+        {
+          "type": "naming",
+          "severity": "high",
+          "description": "node 'study' reachable at conflicting positions [(-1, 1, 0), (-1, 2, 0), (1, 1, 0), (1, 2, 0), (1, 3, 0), (3, 3, 0), (3, 4, 0)]",
+          "edges": []
+        }
+      ]
+    },
+    "repaired": {
+      "edges": [
+        {
+          "src": "study",
+          "dst": "kitchenette",
+          "dir": "west"
+        },
+        {
+          "src": "study",
+          "dst": "chamber",
+          "dir": "south"
+        },
+        {
+          "src": "kitchenette",
+          "dst": "bedroom",
+          "dir": "south"
+        },
+        {
+          "src": "kitchenette",
+          "dst": "study",
+          "dir": "east"
+        },
+        {
+          "src": "chamber",
+          "dst": "study",
+          "dir": "north"
+        },
+        {
+          "src": "chamber",
+          "dst": "bedroom",
+          "dir": "east"
+        },
+        {
+          "src": "bedroom",
+          "dst": "kitchenette",
+          "dir": "north"
+        },
+        {
+          "src": "bedroom",
+          "dst": "chamber",
+          "dir": "west"
+        }
+      ],
+      "actions": [
+        {
+          "kind": "remove_edge",
+          "target": [
+            "kitchenette",
+            "chamber"
+          ],
+          "new_dir": null,
+          "reason": "remove fallback"
+        },
+        {
+          "kind": "skip",
+          "target": null,
+          "new_dir": null,
+          "reason": "no candidates"
+        }
+      ],
+      "n_conflicts_before": 10,
+      "n_conflicts_after": 4
+    }
+  }
+}

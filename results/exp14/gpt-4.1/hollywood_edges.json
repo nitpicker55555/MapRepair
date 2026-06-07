@@ -1,0 +1,104 @@
+[
+  {
+    "src_node": "front porch",
+    "dst_node": "foyer",
+    "action": "north",
+    "seen_in_forward": 1
+  },
+  {
+    "src_node": "foyer",
+    "dst_node": "game room",
+    "action": "north",
+    "seen_in_forward": 2
+  },
+  {
+    "src_node": "game room",
+    "dst_node": "short hall",
+    "action": "east",
+    "seen_in_forward": 3
+  },
+  {
+    "src_node": "short hall",
+    "dst_node": "screening room",
+    "action": "east",
+    "seen_in_forward": 4
+  },
+  {
+    "src_node": "screening room",
+    "dst_node": "projection booth",
+    "action": "south",
+    "seen_in_forward": 5
+  },
+  {
+    "src_node": "projection booth",
+    "dst_node": "screening room",
+    "action": "north",
+    "seen_in_forward": 6
+  },
+  {
+    "src_node": "screening room",
+    "dst_node": "short hall",
+    "action": "west",
+    "seen_in_forward": 7
+  },
+  {
+    "src_node": "short hall",
+    "dst_node": "game room",
+    "action": "west",
+    "seen_in_forward": 8
+  },
+  {
+    "src_node": "game room",
+    "dst_node": "foyer",
+    "action": "south",
+    "seen_in_forward": 9
+  },
+  {
+    "src_node": "foyer",
+    "dst_node": "living room",
+    "action": "west",
+    "seen_in_forward": 10
+  },
+  {
+    "src_node": "living room",
+    "dst_node": "foyer",
+    "action": "east",
+    "seen_in_forward": 11
+  },
+  {
+    "src_node": "foyer",
+    "dst_node": "hallway",
+    "action": "east",
+    "seen_in_forward": 12
+  },
+  {
+    "src_node": "hallway",
+    "dst_node": "parlor",
+    "action": "east",
+    "seen_in_forward": 13
+  },
+  {
+    "src_node": "parlor",
+    "dst_node": "crawl space, north",
+    "action": "down",
+    "seen_in_forward": 14
+  },
+  {
+    "src_node": "crawl space, north",
+    "dst_node": "crawl space, south",
+    "action": "south",
+    "seen_in_forward": 15
+  },
+  {
+    "src_node": "crawl space, south",
+    "dst_node": "crawl space, north",
+    "action": "north",
+    "seen_in_forward": 16
+  },
+  {
+    "src_node": "crawl space, north",
+    "dst_node": "parlor",
+    "action": "up",
+    "seen_in_forward": 17
+  }
+]

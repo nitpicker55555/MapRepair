@@ -1,0 +1,16 @@
+{
+  "game": "balances",
+  "num_conflicts": 25,
+  "iterations": 5,
+  "success": true,
+  "remaining_conflicts": 0,
+  "pre_edge_recall": 0.46153846153846156,
+  "pre_strict_direction_match": 0.46153846153846156,
+  "pre_edge_direction_accuracy": 1.0,
+  "post_edge_recall": 0.46153846153846156,
+  "post_strict_direction_match": 0.3076923076923077,
+  "post_permissive_direction_match": 0.5384615384615384,
+  "post_edge_direction_accuracy": 0.6666666666666666,
+  "edge_recall_delta": 0.0,
+  "strict_direction_delta": -0.15384615384615385
+}

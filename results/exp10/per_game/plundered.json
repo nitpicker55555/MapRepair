@@ -1,0 +1,1490 @@
+{
+  "game": "plundered",
+  "num_llm_edges": 20,
+  "num_gt_edges": 30,
+  "num_conflicts": 24,
+  "type_distribution": {
+    "direction": 1,
+    "topology": 11,
+    "naming": 12
+  },
+  "root_cause_distribution": {
+    "name_hallucination": 2,
+    "false_positive_overlap": 2,
+    "name_hallucination_caused_overlap": 9,
+    "naming_collision_on_correct_subgraph": 8,
+    "real_name_corrupted_by_neighbour_error": 3
+  },
+  "conflicts": [
+    {
+      "type": "direction",
+      "description": "node 'landing' has multiple outgoing edges labelled 'south'",
+      "involved_edges": [
+        [
+          "landing",
+          "on the bed"
+        ],
+        [
+          "landing",
+          "captain's quarters"
+        ]
+      ],
+      "involved_nodes": [
+        "landing",
+        "on the bed",
+        "captain's quarters"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "landing",
+            "on the bed"
+          ],
+          "llm_dir": "south",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "dst_hallucinated",
+          "source_in_gt": true,
+          "target_in_gt": false,
+          "step": null
+        },
+        {
+          "edge": [
+            "landing",
+            "captain's quarters"
+          ],
+          "llm_dir": "south",
+          "in_gt": true,
+          "gt_dir": "south",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 33
+        }
+      ],
+      "case_counts": {
+        "dst_hallucinated": 1,
+        "correct": 1
+      },
+      "root_cause": "name_hallucination"
+    },
+    {
+      "type": "topology",
+      "description": "position (0, 0, 0) occupied by multiple rooms ['aft hold', 'beach']",
+      "involved_edges": [],
+      "involved_nodes": [
+        "aft hold",
+        "beach"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "landing",
+            "aft hold"
+          ],
+          "llm_dir": "down",
+          "in_gt": true,
+          "gt_dir": "down",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 24
+        },
+        {
+          "edge": [
+            "aft hold",
+            "hold"
+          ],
+          "llm_dir": "north",
+          "in_gt": true,
+          "gt_dir": "north",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 25
+        },
+        {
+          "edge": [
+            "shallows",
+            "beach"
+          ],
+          "llm_dir": "west",
+          "in_gt": true,
+          "gt_dir": "west",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 61
+        },
+        {
+          "edge": [
+            "beach",
+            "lawn"
+          ],
+          "llm_dir": "north",
+          "in_gt": true,
+          "gt_dir": "north",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 62
+        }
+      ],
+      "case_counts": {
+        "correct": 4
+      },
+      "root_cause": "false_positive_overlap"
+    },
+    {
+      "type": "topology",
+      "description": "position (0, 0, 1) occupied by multiple rooms ['landing', 'quarterdeck']",
+      "involved_edges": [],
+      "involved_nodes": [
+        "landing",
+        "quarterdeck"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "on the bed",
+            "landing"
+          ],
+          "llm_dir": "north",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "src_hallucinated",
+          "source_in_gt": false,
+          "target_in_gt": true,
+          "step": 14
+        },
+        {
+          "edge": [
+            "landing",
+            "sleeping cupboard"
+          ],
+          "llm_dir": "in",
+          "in_gt": true,
+          "gt_dir": "in",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 16
+        },
+        {
+          "edge": [
+            "landing",
+            "aft hold"
+          ],
+          "llm_dir": "down",
+          "in_gt": true,
+          "gt_dir": "down",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 24
+        },
+        {
+          "edge": [
+            "landing",
+            "captain's quarters"
+          ],
+          "llm_dir": "south",
+          "in_gt": true,
+          "gt_dir": "south",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 33
+        },
+        {
+          "edge": [
+            "poop deck",
+            "quarterdeck"
+          ],
+          "llm_dir": "north",
+          "in_gt": true,
+          "gt_dir": "north",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 40
+        },
+        {
+          "edge": [
+            "quarterdeck",
+            "main deck"
+          ],
+          "llm_dir": "north",
+          "in_gt": true,
+          "gt_dir": "north",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 41
+        }
+      ],
+      "case_counts": {
+        "src_hallucinated": 1,
+        "correct": 5
+      },
+      "root_cause": "name_hallucination_caused_overlap"
+    },
+    {
+      "type": "topology",
+      "description": "position (0, 2, -3) occupied by multiple rooms ['landing', 'quarterdeck']",
+      "involved_edges": [],
+      "involved_nodes": [
+        "landing",
+        "quarterdeck"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "on the bed",
+            "landing"
+          ],
+          "llm_dir": "north",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "src_hallucinated",
+          "source_in_gt": false,
+          "target_in_gt": true,
+          "step": 14
+        },
+        {
+          "edge": [
+            "landing",
+            "sleeping cupboard"
+          ],
+          "llm_dir": "in",
+          "in_gt": true,
+          "gt_dir": "in",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 16
+        },
+        {
+          "edge": [
+            "landing",
+            "aft hold"
+          ],
+          "llm_dir": "down",
+          "in_gt": true,
+          "gt_dir": "down",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 24
+        },
+        {
+          "edge": [
+            "landing",
+            "captain's quarters"
+          ],
+          "llm_dir": "south",
+          "in_gt": true,
+          "gt_dir": "south",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 33
+        },
+        {
+          "edge": [
+            "poop deck",
+            "quarterdeck"
+          ],
+          "llm_dir": "north",
+          "in_gt": true,
+          "gt_dir": "north",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 40
+        },
+        {
+          "edge": [
+            "quarterdeck",
+            "main deck"
+          ],
+          "llm_dir": "north",
+          "in_gt": true,
+          "gt_dir": "north",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 41
+        }
+      ],
+      "case_counts": {
+        "src_hallucinated": 1,
+        "correct": 5
+      },
+      "root_cause": "name_hallucination_caused_overlap"
+    },
+    {
+      "type": "topology",
+      "description": "position (0, 3, -5) occupied by multiple rooms ['landing', 'quarterdeck']",
+      "involved_edges": [],
+      "involved_nodes": [
+        "landing",
+        "quarterdeck"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "on the bed",
+            "landing"
+          ],
+          "llm_dir": "north",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "src_hallucinated",
+          "source_in_gt": false,
+          "target_in_gt": true,
+          "step": 14
+        },
+        {
+          "edge": [
+            "landing",
+            "sleeping cupboard"
+          ],
+          "llm_dir": "in",
+          "in_gt": true,
+          "gt_dir": "in",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 16
+        },
+        {
+          "edge": [
+            "landing",
+            "aft hold"
+          ],
+          "llm_dir": "down",
+          "in_gt": true,
+          "gt_dir": "down",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 24
+        },
+        {
+          "edge": [
+            "landing",
+            "captain's quarters"
+          ],
+          "llm_dir": "south",
+          "in_gt": true,
+          "gt_dir": "south",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 33
+        },
+        {
+          "edge": [
+            "poop deck",
+            "quarterdeck"
+          ],
+          "llm_dir": "north",
+          "in_gt": true,
+          "gt_dir": "north",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 40
+        },
+        {
+          "edge": [
+            "quarterdeck",
+            "main deck"
+          ],
+          "llm_dir": "north",
+          "in_gt": true,
+          "gt_dir": "north",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 41
+        }
+      ],
+      "case_counts": {
+        "src_hallucinated": 1,
+        "correct": 5
+      },
+      "root_cause": "name_hallucination_caused_overlap"
+    },
+    {
+      "type": "topology",
+      "description": "position (0, 1, -1) occupied by multiple rooms ['landing', 'quarterdeck']",
+      "involved_edges": [],
+      "involved_nodes": [
+        "landing",
+        "quarterdeck"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "on the bed",
+            "landing"
+          ],
+          "llm_dir": "north",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "src_hallucinated",
+          "source_in_gt": false,
+          "target_in_gt": true,
+          "step": 14
+        },
+        {
+          "edge": [
+            "landing",
+            "sleeping cupboard"
+          ],
+          "llm_dir": "in",
+          "in_gt": true,
+          "gt_dir": "in",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 16
+        },
+        {
+          "edge": [
+            "landing",
+            "aft hold"
+          ],
+          "llm_dir": "down",
+          "in_gt": true,
+          "gt_dir": "down",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 24
+        },
+        {
+          "edge": [
+            "landing",
+            "captain's quarters"
+          ],
+          "llm_dir": "south",
+          "in_gt": true,
+          "gt_dir": "south",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 33
+        },
+        {
+          "edge": [
+            "poop deck",
+            "quarterdeck"
+          ],
+          "llm_dir": "north",
+          "in_gt": true,
+          "gt_dir": "north",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 40
+        },
+        {
+          "edge": [
+            "quarterdeck",
+            "main deck"
+          ],
+          "llm_dir": "north",
+          "in_gt": true,
+          "gt_dir": "north",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 41
+        }
+      ],
+      "case_counts": {
+        "src_hallucinated": 1,
+        "correct": 5
+      },
+      "root_cause": "name_hallucination_caused_overlap"
+    },
+    {
+      "type": "topology",
+      "description": "position (0, 1, 0) occupied by multiple rooms ['hold', 'lawn']",
+      "involved_edges": [],
+      "involved_nodes": [
+        "hold",
+        "lawn"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "aft hold",
+            "hold"
+          ],
+          "llm_dir": "north",
+          "in_gt": true,
+          "gt_dir": "north",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 25
+        },
+        {
+          "edge": [
+            "main deck",
+            "hold"
+          ],
+          "llm_dir": "down",
+          "in_gt": true,
+          "gt_dir": "down",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 45
+        },
+        {
+          "edge": [
+            "hold",
+            "crew's quarters"
+          ],
+          "llm_dir": "north",
+          "in_gt": true,
+          "gt_dir": "north",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 26
+        },
+        {
+          "edge": [
+            "beach",
+            "lawn"
+          ],
+          "llm_dir": "north",
+          "in_gt": true,
+          "gt_dir": "north",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 62
+        },
+        {
+          "edge": [
+            "lawn",
+            "forest"
+          ],
+          "llm_dir": "west",
+          "in_gt": true,
+          "gt_dir": "west",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 63
+        }
+      ],
+      "case_counts": {
+        "correct": 5
+      },
+      "root_cause": "false_positive_overlap"
+    },
+    {
+      "type": "topology",
+      "description": "position (0, 2, 0) occupied by multiple rooms ['clearing', \"crew's quarters\", 'kitchen']",
+      "involved_edges": [],
+      "involved_nodes": [
+        "clearing",
+        "crew's quarters",
+        "kitchen"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "forest",
+            "clearing"
+          ],
+          "llm_dir": "northeast",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "dst_hallucinated",
+          "source_in_gt": true,
+          "target_in_gt": false,
+          "step": 70
+        },
+        {
+          "edge": [
+            "hold",
+            "crew's quarters"
+          ],
+          "llm_dir": "north",
+          "in_gt": true,
+          "gt_dir": "north",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 26
+        },
+        {
+          "edge": [
+            "trade entrance",
+            "kitchen"
+          ],
+          "llm_dir": "east",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "both_names_hallucinated",
+          "source_in_gt": false,
+          "target_in_gt": false,
+          "step": 65
+        }
+      ],
+      "case_counts": {
+        "dst_hallucinated": 1,
+        "correct": 1,
+        "both_names_hallucinated": 1
+      },
+      "root_cause": "name_hallucination_caused_overlap"
+    },
+    {
+      "type": "topology",
+      "description": "position (0, 0, -1) occupied by multiple rooms [\"captain's quarters\", 'on the bed', 'poop deck']",
+      "involved_edges": [],
+      "involved_nodes": [
+        "captain's quarters",
+        "on the bed",
+        "poop deck"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "landing",
+            "captain's quarters"
+          ],
+          "llm_dir": "south",
+          "in_gt": true,
+          "gt_dir": "south",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 33
+        },
+        {
+          "edge": [
+            "captain's quarters",
+            "the ledge"
+          ],
+          "llm_dir": "south",
+          "in_gt": true,
+          "gt_dir": "south",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 35
+        },
+        {
+          "edge": [
+            "on the bed",
+            "landing"
+          ],
+          "llm_dir": "north",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "src_hallucinated",
+          "source_in_gt": false,
+          "target_in_gt": true,
+          "step": 14
+        },
+        {
+          "edge": [
+            "on the ladder",
+            "poop deck"
+          ],
+          "llm_dir": "up",
+          "in_gt": true,
+          "gt_dir": "up",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 39
+        },
+        {
+          "edge": [
+            "poop deck",
+            "quarterdeck"
+          ],
+          "llm_dir": "north",
+          "in_gt": true,
+          "gt_dir": "north",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 40
+        }
+      ],
+      "case_counts": {
+        "correct": 4,
+        "src_hallucinated": 1
+      },
+      "root_cause": "name_hallucination_caused_overlap"
+    },
+    {
+      "type": "topology",
+      "description": "position (0, 1, -3) occupied by multiple rooms [\"captain's quarters\", 'on the bed', 'poop deck']",
+      "involved_edges": [],
+      "involved_nodes": [
+        "captain's quarters",
+        "on the bed",
+        "poop deck"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "landing",
+            "captain's quarters"
+          ],
+          "llm_dir": "south",
+          "in_gt": true,
+          "gt_dir": "south",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 33
+        },
+        {
+          "edge": [
+            "captain's quarters",
+            "the ledge"
+          ],
+          "llm_dir": "south",
+          "in_gt": true,
+          "gt_dir": "south",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 35
+        },
+        {
+          "edge": [
+            "on the bed",
+            "landing"
+          ],
+          "llm_dir": "north",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "src_hallucinated",
+          "source_in_gt": false,
+          "target_in_gt": true,
+          "step": 14
+        },
+        {
+          "edge": [
+            "on the ladder",
+            "poop deck"
+          ],
+          "llm_dir": "up",
+          "in_gt": true,
+          "gt_dir": "up",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 39
+        },
+        {
+          "edge": [
+            "poop deck",
+            "quarterdeck"
+          ],
+          "llm_dir": "north",
+          "in_gt": true,
+          "gt_dir": "north",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 40
+        }
+      ],
+      "case_counts": {
+        "correct": 4,
+        "src_hallucinated": 1
+      },
+      "root_cause": "name_hallucination_caused_overlap"
+    },
+    {
+      "type": "topology",
+      "description": "position (0, 2, -5) occupied by multiple rooms [\"captain's quarters\", 'on the bed', 'poop deck']",
+      "involved_edges": [],
+      "involved_nodes": [
+        "captain's quarters",
+        "on the bed",
+        "poop deck"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "landing",
+            "captain's quarters"
+          ],
+          "llm_dir": "south",
+          "in_gt": true,
+          "gt_dir": "south",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 33
+        },
+        {
+          "edge": [
+            "captain's quarters",
+            "the ledge"
+          ],
+          "llm_dir": "south",
+          "in_gt": true,
+          "gt_dir": "south",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 35
+        },
+        {
+          "edge": [
+            "on the bed",
+            "landing"
+          ],
+          "llm_dir": "north",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "src_hallucinated",
+          "source_in_gt": false,
+          "target_in_gt": true,
+          "step": 14
+        },
+        {
+          "edge": [
+            "on the ladder",
+            "poop deck"
+          ],
+          "llm_dir": "up",
+          "in_gt": true,
+          "gt_dir": "up",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 39
+        },
+        {
+          "edge": [
+            "poop deck",
+            "quarterdeck"
+          ],
+          "llm_dir": "north",
+          "in_gt": true,
+          "gt_dir": "north",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 40
+        }
+      ],
+      "case_counts": {
+        "correct": 4,
+        "src_hallucinated": 1
+      },
+      "root_cause": "name_hallucination_caused_overlap"
+    },
+    {
+      "type": "topology",
+      "description": "position (0, -1, 1) occupied by multiple rooms [\"captain's quarters\", 'on the bed', 'poop deck']",
+      "involved_edges": [],
+      "involved_nodes": [
+        "captain's quarters",
+        "on the bed",
+        "poop deck"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "landing",
+            "captain's quarters"
+          ],
+          "llm_dir": "south",
+          "in_gt": true,
+          "gt_dir": "south",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 33
+        },
+        {
+          "edge": [
+            "captain's quarters",
+            "the ledge"
+          ],
+          "llm_dir": "south",
+          "in_gt": true,
+          "gt_dir": "south",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 35
+        },
+        {
+          "edge": [
+            "on the bed",
+            "landing"
+          ],
+          "llm_dir": "north",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "src_hallucinated",
+          "source_in_gt": false,
+          "target_in_gt": true,
+          "step": 14
+        },
+        {
+          "edge": [
+            "on the ladder",
+            "poop deck"
+          ],
+          "llm_dir": "up",
+          "in_gt": true,
+          "gt_dir": "up",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 39
+        },
+        {
+          "edge": [
+            "poop deck",
+            "quarterdeck"
+          ],
+          "llm_dir": "north",
+          "in_gt": true,
+          "gt_dir": "north",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 40
+        }
+      ],
+      "case_counts": {
+        "correct": 4,
+        "src_hallucinated": 1
+      },
+      "root_cause": "name_hallucination_caused_overlap"
+    },
+    {
+      "type": "naming",
+      "description": "node 'aft hold' reachable at conflicting positions [(0, 0, 0), (0, 1, -2), (0, 2, -4), (0, 3, -6)]",
+      "involved_edges": [],
+      "involved_nodes": [
+        "aft hold"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "landing",
+            "aft hold"
+          ],
+          "llm_dir": "down",
+          "in_gt": true,
+          "gt_dir": "down",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 24
+        },
+        {
+          "edge": [
+            "aft hold",
+            "hold"
+          ],
+          "llm_dir": "north",
+          "in_gt": true,
+          "gt_dir": "north",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 25
+        }
+      ],
+      "case_counts": {
+        "correct": 2
+      },
+      "root_cause": "naming_collision_on_correct_subgraph"
+    },
+    {
+      "type": "naming",
+      "description": "node 'landing' reachable at conflicting positions [(0, 0, 1), (0, 1, -1), (0, 2, -3), (0, 3, -5), (0, 4, -7)]",
+      "involved_edges": [],
+      "involved_nodes": [
+        "landing"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "on the bed",
+            "landing"
+          ],
+          "llm_dir": "north",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "src_hallucinated",
+          "source_in_gt": false,
+          "target_in_gt": true,
+          "step": 14
+        },
+        {
+          "edge": [
+            "landing",
+            "sleeping cupboard"
+          ],
+          "llm_dir": "in",
+          "in_gt": true,
+          "gt_dir": "in",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 16
+        },
+        {
+          "edge": [
+            "landing",
+            "aft hold"
+          ],
+          "llm_dir": "down",
+          "in_gt": true,
+          "gt_dir": "down",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 24
+        },
+        {
+          "edge": [
+            "landing",
+            "captain's quarters"
+          ],
+          "llm_dir": "south",
+          "in_gt": true,
+          "gt_dir": "south",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 33
+        }
+      ],
+      "case_counts": {
+        "src_hallucinated": 1,
+        "correct": 3
+      },
+      "root_cause": "real_name_corrupted_by_neighbour_error"
+    },
+    {
+      "type": "naming",
+      "description": "node 'hold' reachable at conflicting positions [(0, 1, 0), (0, 2, -2), (0, 3, -4), (0, 4, -6)]",
+      "involved_edges": [],
+      "involved_nodes": [
+        "hold"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "aft hold",
+            "hold"
+          ],
+          "llm_dir": "north",
+          "in_gt": true,
+          "gt_dir": "north",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 25
+        },
+        {
+          "edge": [
+            "main deck",
+            "hold"
+          ],
+          "llm_dir": "down",
+          "in_gt": true,
+          "gt_dir": "down",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 45
+        },
+        {
+          "edge": [
+            "hold",
+            "crew's quarters"
+          ],
+          "llm_dir": "north",
+          "in_gt": true,
+          "gt_dir": "north",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 26
+        }
+      ],
+      "case_counts": {
+        "correct": 3
+      },
+      "root_cause": "naming_collision_on_correct_subgraph"
+    },
+    {
+      "type": "naming",
+      "description": "node \"crew's quarters\" reachable at conflicting positions [(0, 2, 0), (0, 3, -2), (0, 4, -4), (0, 5, -6)]",
+      "involved_edges": [],
+      "involved_nodes": [
+        "crew's quarters"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "hold",
+            "crew's quarters"
+          ],
+          "llm_dir": "north",
+          "in_gt": true,
+          "gt_dir": "north",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 26
+        }
+      ],
+      "case_counts": {
+        "correct": 1
+      },
+      "root_cause": "naming_collision_on_correct_subgraph"
+    },
+    {
+      "type": "naming",
+      "description": "node 'main deck' reachable at conflicting positions [(0, 1, 1), (0, 2, -1), (0, 3, -3), (0, 4, -5)]",
+      "involved_edges": [],
+      "involved_nodes": [
+        "main deck"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "quarterdeck",
+            "main deck"
+          ],
+          "llm_dir": "north",
+          "in_gt": true,
+          "gt_dir": "north",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 41
+        },
+        {
+          "edge": [
+            "main deck",
+            "hold"
+          ],
+          "llm_dir": "down",
+          "in_gt": true,
+          "gt_dir": "down",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 45
+        },
+        {
+          "edge": [
+            "main deck",
+            "forecastle"
+          ],
+          "llm_dir": "north",
+          "in_gt": true,
+          "gt_dir": "north",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 48
+        }
+      ],
+      "case_counts": {
+        "correct": 3
+      },
+      "root_cause": "naming_collision_on_correct_subgraph"
+    },
+    {
+      "type": "naming",
+      "description": "node 'quarterdeck' reachable at conflicting positions [(0, 0, 1), (0, 1, -1), (0, 2, -3), (0, 3, -5)]",
+      "involved_edges": [],
+      "involved_nodes": [
+        "quarterdeck"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "poop deck",
+            "quarterdeck"
+          ],
+          "llm_dir": "north",
+          "in_gt": true,
+          "gt_dir": "north",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 40
+        },
+        {
+          "edge": [
+            "quarterdeck",
+            "main deck"
+          ],
+          "llm_dir": "north",
+          "in_gt": true,
+          "gt_dir": "north",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 41
+        }
+      ],
+      "case_counts": {
+        "correct": 2
+      },
+      "root_cause": "naming_collision_on_correct_subgraph"
+    },
+    {
+      "type": "naming",
+      "description": "node 'forecastle' reachable at conflicting positions [(0, 2, 1), (0, 3, -1), (0, 4, -3), (0, 5, -5)]",
+      "involved_edges": [],
+      "involved_nodes": [
+        "forecastle"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "main deck",
+            "forecastle"
+          ],
+          "llm_dir": "north",
+          "in_gt": true,
+          "gt_dir": "north",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 48
+        },
+        {
+          "edge": [
+            "forecastle",
+            "galley"
+          ],
+          "llm_dir": "in",
+          "in_gt": true,
+          "gt_dir": "in",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 51
+        }
+      ],
+      "case_counts": {
+        "correct": 2
+      },
+      "root_cause": "naming_collision_on_correct_subgraph"
+    },
+    {
+      "type": "naming",
+      "description": "node 'poop deck' reachable at conflicting positions [(0, -1, 1), (0, 0, -1), (0, 1, -3), (0, 2, -5)]",
+      "involved_edges": [],
+      "involved_nodes": [
+        "poop deck"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "on the ladder",
+            "poop deck"
+          ],
+          "llm_dir": "up",
+          "in_gt": true,
+          "gt_dir": "up",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 39
+        },
+        {
+          "edge": [
+            "poop deck",
+            "quarterdeck"
+          ],
+          "llm_dir": "north",
+          "in_gt": true,
+          "gt_dir": "north",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 40
+        }
+      ],
+      "case_counts": {
+        "correct": 2
+      },
+      "root_cause": "naming_collision_on_correct_subgraph"
+    },
+    {
+      "type": "naming",
+      "description": "node 'on the ladder' reachable at conflicting positions [(0, -1, 0), (0, 0, -2), (0, 1, -4), (0, 2, -6)]",
+      "involved_edges": [],
+      "involved_nodes": [
+        "on the ladder"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "the ledge",
+            "on the ladder"
+          ],
+          "llm_dir": "up",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 36
+        },
+        {
+          "edge": [
+            "on the ladder",
+            "poop deck"
+          ],
+          "llm_dir": "up",
+          "in_gt": true,
+          "gt_dir": "up",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 39
+        }
+      ],
+      "case_counts": {
+        "hallucinated_edge": 1,
+        "correct": 1
+      },
+      "root_cause": "real_name_corrupted_by_neighbour_error"
+    },
+    {
+      "type": "naming",
+      "description": "node 'the ledge' reachable at conflicting positions [(0, -1, -1), (0, 0, -3), (0, 1, -5), (0, 2, -7)]",
+      "involved_edges": [],
+      "involved_nodes": [
+        "the ledge"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "captain's quarters",
+            "the ledge"
+          ],
+          "llm_dir": "south",
+          "in_gt": true,
+          "gt_dir": "south",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 35
+        },
+        {
+          "edge": [
+            "the ledge",
+            "on the ladder"
+          ],
+          "llm_dir": "up",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 36
+        }
+      ],
+      "case_counts": {
+        "correct": 1,
+        "hallucinated_edge": 1
+      },
+      "root_cause": "real_name_corrupted_by_neighbour_error"
+    },
+    {
+      "type": "naming",
+      "description": "node \"captain's quarters\" reachable at conflicting positions [(0, -1, 1), (0, 0, -1), (0, 1, -3), (0, 2, -5), (0, 3, -7)]",
+      "involved_edges": [],
+      "involved_nodes": [
+        "captain's quarters"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "landing",
+            "captain's quarters"
+          ],
+          "llm_dir": "south",
+          "in_gt": true,
+          "gt_dir": "south",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 33
+        },
+        {
+          "edge": [
+            "captain's quarters",
+            "the ledge"
+          ],
+          "llm_dir": "south",
+          "in_gt": true,
+          "gt_dir": "south",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 35
+        }
+      ],
+      "case_counts": {
+        "correct": 2
+      },
+      "root_cause": "naming_collision_on_correct_subgraph"
+    },
+    {
+      "type": "naming",
+      "description": "node 'on the bed' reachable at conflicting positions [(0, -1, 1), (0, 0, -1), (0, 1, -3), (0, 2, -5)]",
+      "involved_edges": [],
+      "involved_nodes": [
+        "on the bed"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "on the bed",
+            "landing"
+          ],
+          "llm_dir": "north",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "src_hallucinated",
+          "source_in_gt": false,
+          "target_in_gt": true,
+          "step": 14
+        }
+      ],
+      "case_counts": {
+        "src_hallucinated": 1
+      },
+      "root_cause": "name_hallucination"
+    }
+  ],
+  "walkthrough_steps_available": 71
+}

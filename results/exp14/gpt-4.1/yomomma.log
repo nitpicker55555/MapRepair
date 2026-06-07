@@ -1,0 +1,17 @@
+# yomomma  model=gpt-4.1  n_steps=16  (exp14 bootstrap-fixed)
+step   0 BOOTSTRAP seed current_loc='dance floor (center of the club)' (src missing, dst valid)
+step   1 MOVE 'dance floor (center of the club)' --[southeast]--> 'dark corner (se corner)'
+step   2 MOVE 'dark corner (se corner)' --[west]--> 'entrance (southern side)'
+step   3 MOVE 'entrance (southern side)' --[west]--> 'arcade corner (sw corner)'
+step   4 MOVE 'arcade corner (sw corner)' --[east]--> 'entrance (southern side)'
+step   5 MOVE 'entrance (southern side)' --[north]--> 'dance floor (center of the club)'
+step   6 MOVE 'dance floor (center of the club)' --[northeast]--> 'artist hangout (ne corner)'
+step   7 MOVE 'artist hangout (ne corner)' --[southwest]--> 'dance floor (center of the club)'
+step   8 MOVE 'dance floor (center of the club)' --[west]--> 'bar (western side)'
+step   9 MOVE 'bar (western side)' --[east]--> 'dance floor (center of the club)'
+step  10 MOVE 'dance floor (center of the club)' --[north]--> 'vip lounge (nw corner)'
+step  11 MOVE 'vip lounge (nw corner)' --[south]--> 'bar (western side)'
+step  12 MOVE 'bar (western side)' --[southeast]--> 'dance floor (center of the club)'
+step  13 MOVE 'dance floor (center of the club)' --[south]--> 'hall of fame (eastern side)'
+step  14 MOVE 'hall of fame (eastern side)' --[north]--> 'artist hangout (ne corner)'
+step  15 MOVE 'artist hangout (ne corner)' --[northwest]--> 'dance floor (center of the club)'

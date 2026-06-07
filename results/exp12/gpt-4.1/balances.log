@@ -1,0 +1,12 @@
+# balances  model=gpt-4.1  n_steps=11
+step   0 bad movement output: {'is_movement': True, 'src_node': None, 'dst_node': 'grasslands, near hut', 'action': 'out', 'seen_in_forward': 0, 'current_location': 'grasslands, near hut', 'reasoning': "The observation explicitly names 'Grasslands, near Hut', which matches the canonical location list; action 'out' indicates movement."}
+step   1 bad movement output: {'is_movement': True, 'src_node': None, 'dst_node': 'pocket valley', 'action': 'north', 'seen_in_forward': 1, 'current_location': 'pocket valley', 'reasoning': "The action is 'north', a canonical compass direction, and the observation explicitly names the destination as 'Pocket Valley', matching the canonical list."}
+step   2 MOVE 'pocket valley' --[north]--> 'crest of hill'
+step   3 MOVE 'crest of hill' --[northwest]--> 'cave mouth'
+step   4 MOVE 'cave mouth' --[north]--> 'gorse bushes'
+step   5 MOVE 'gorse bushes' --[south]--> 'cave mouth'
+step   6 MOVE 'cave mouth' --[west]--> 'inside cave'
+step   7 MOVE 'inside cave' --[east]--> 'cave mouth'
+step   8 MOVE 'cave mouth' --[southeast]--> 'crest of hill'
+step   9 MOVE 'crest of hill' --[south]--> 'edge of chasm'
+step  10 MOVE 'edge of chasm' --[east]--> 'outside temple'

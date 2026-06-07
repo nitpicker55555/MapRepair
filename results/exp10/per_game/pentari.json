@@ -1,0 +1,342 @@
+{
+  "game": "pentari",
+  "num_llm_edges": 16,
+  "num_gt_edges": 26,
+  "num_conflicts": 5,
+  "type_distribution": {
+    "direction": 2,
+    "topology": 3
+  },
+  "root_cause_distribution": {
+    "real_vs_hallucinated": 2,
+    "name_hallucination_caused_overlap": 2,
+    "overlap_mixed": 1
+  },
+  "conflicts": [
+    {
+      "type": "direction",
+      "description": "node 'castle entrance' has multiple outgoing edges labelled 'north'",
+      "involved_edges": [
+        [
+          "castle entrance",
+          "library"
+        ],
+        [
+          "castle entrance",
+          "castle"
+        ]
+      ],
+      "involved_nodes": [
+        "castle entrance",
+        "library",
+        "castle"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "castle entrance",
+            "library"
+          ],
+          "llm_dir": "north",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": null
+        },
+        {
+          "edge": [
+            "castle entrance",
+            "castle"
+          ],
+          "llm_dir": "north",
+          "in_gt": true,
+          "gt_dir": "north",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 7
+        }
+      ],
+      "case_counts": {
+        "hallucinated_edge": 1,
+        "correct": 1
+      },
+      "root_cause": "real_vs_hallucinated"
+    },
+    {
+      "type": "direction",
+      "description": "node 'armory' has multiple outgoing edges labelled 'east'",
+      "involved_edges": [
+        [
+          "armory",
+          "main hall"
+        ],
+        [
+          "armory",
+          "main hall, by the fireplace"
+        ]
+      ],
+      "involved_nodes": [
+        "armory",
+        "main hall",
+        "main hall, by the fireplace"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "armory",
+            "main hall"
+          ],
+          "llm_dir": "east",
+          "in_gt": true,
+          "gt_dir": "east",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": null
+        },
+        {
+          "edge": [
+            "armory",
+            "main hall, by the fireplace"
+          ],
+          "llm_dir": "east",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": null
+        }
+      ],
+      "case_counts": {
+        "correct": 1,
+        "hallucinated_edge": 1
+      },
+      "root_cause": "real_vs_hallucinated"
+    },
+    {
+      "type": "topology",
+      "description": "position (1, 0, 0) occupied by multiple rooms ['main hall', 'main hall, by the fireplace']",
+      "involved_edges": [],
+      "involved_nodes": [
+        "main hall",
+        "main hall, by the fireplace"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "castle",
+            "main hall"
+          ],
+          "llm_dir": "north",
+          "in_gt": true,
+          "gt_dir": "north",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 8
+        },
+        {
+          "edge": [
+            "main hall",
+            "by the fireplace"
+          ],
+          "llm_dir": "north",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "dst_hallucinated",
+          "source_in_gt": true,
+          "target_in_gt": false,
+          "step": 9
+        },
+        {
+          "edge": [
+            "main hall",
+            "spiral stairway"
+          ],
+          "llm_dir": "east",
+          "in_gt": true,
+          "gt_dir": "east",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 11
+        },
+        {
+          "edge": [
+            "main hall",
+            "armory"
+          ],
+          "llm_dir": "west",
+          "in_gt": true,
+          "gt_dir": "west",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 19
+        },
+        {
+          "edge": [
+            "by the fireplace (in the large fireplace)",
+            "main hall, by the fireplace"
+          ],
+          "llm_dir": "south",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "src_hallucinated",
+          "source_in_gt": false,
+          "target_in_gt": true,
+          "step": 36
+        },
+        {
+          "edge": [
+            "main hall, by the fireplace",
+            "armory"
+          ],
+          "llm_dir": "west",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 40
+        }
+      ],
+      "case_counts": {
+        "correct": 3,
+        "dst_hallucinated": 1,
+        "src_hallucinated": 1,
+        "hallucinated_edge": 1
+      },
+      "root_cause": "name_hallucination_caused_overlap"
+    },
+    {
+      "type": "topology",
+      "description": "position (1, 1, 0) occupied by multiple rooms ['by the fireplace', 'by the fireplace (in the large fireplace)']",
+      "involved_edges": [],
+      "involved_nodes": [
+        "by the fireplace",
+        "by the fireplace (in the large fireplace)"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "main hall",
+            "by the fireplace"
+          ],
+          "llm_dir": "north",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "dst_hallucinated",
+          "source_in_gt": true,
+          "target_in_gt": false,
+          "step": 9
+        },
+        {
+          "edge": [
+            "by the fireplace",
+            "by the fireplace (in the large fireplace)"
+          ],
+          "llm_dir": "enter",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "both_names_hallucinated",
+          "source_in_gt": false,
+          "target_in_gt": false,
+          "step": 34
+        },
+        {
+          "edge": [
+            "by the fireplace (in the large fireplace)",
+            "main hall, by the fireplace"
+          ],
+          "llm_dir": "south",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "src_hallucinated",
+          "source_in_gt": false,
+          "target_in_gt": true,
+          "step": 36
+        }
+      ],
+      "case_counts": {
+        "dst_hallucinated": 1,
+        "both_names_hallucinated": 1,
+        "src_hallucinated": 1
+      },
+      "root_cause": "name_hallucination_caused_overlap"
+    },
+    {
+      "type": "topology",
+      "description": "position (1, -1, 0) occupied by multiple rooms ['castle', 'library']",
+      "involved_edges": [],
+      "involved_nodes": [
+        "castle",
+        "library"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "castle entrance",
+            "castle"
+          ],
+          "llm_dir": "north",
+          "in_gt": true,
+          "gt_dir": "north",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 7
+        },
+        {
+          "edge": [
+            "castle",
+            "main hall"
+          ],
+          "llm_dir": "north",
+          "in_gt": true,
+          "gt_dir": "north",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 8
+        },
+        {
+          "edge": [
+            "the charlie company barracks (in the pentarian transporter)",
+            "library"
+          ],
+          "llm_dir": "east",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 4
+        },
+        {
+          "edge": [
+            "library",
+            "castle entrance"
+          ],
+          "llm_dir": "south",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 5
+        }
+      ],
+      "case_counts": {
+        "correct": 2,
+        "hallucinated_edge": 2
+      },
+      "root_cause": "overlap_mixed"
+    }
+  ],
+  "walkthrough_steps_available": 45
+}

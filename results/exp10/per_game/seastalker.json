@@ -1,0 +1,69 @@
+{
+  "game": "seastalker",
+  "num_llm_edges": 8,
+  "num_gt_edges": 12,
+  "num_conflicts": 1,
+  "type_distribution": {
+    "topology": 1
+  },
+  "root_cause_distribution": {
+    "false_positive_overlap": 1
+  },
+  "conflicts": [
+    {
+      "type": "topology",
+      "description": "position (0, 0, 0) occupied by multiple rooms ['corridor', 'crawl space']",
+      "involved_edges": [],
+      "involved_nodes": [
+        "corridor",
+        "crawl space"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "east part",
+            "corridor"
+          ],
+          "llm_dir": "east",
+          "in_gt": true,
+          "gt_dir": "east",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 15
+        },
+        {
+          "edge": [
+            "corridor",
+            "kemp's office"
+          ],
+          "llm_dir": "east",
+          "in_gt": true,
+          "gt_dir": "east",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 18
+        },
+        {
+          "edge": [
+            "crawl space",
+            "scimitar"
+          ],
+          "llm_dir": "exit",
+          "in_gt": true,
+          "gt_dir": "exit",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 31
+        }
+      ],
+      "case_counts": {
+        "correct": 3
+      },
+      "root_cause": "false_positive_overlap"
+    }
+  ],
+  "walkthrough_steps_available": 71
+}

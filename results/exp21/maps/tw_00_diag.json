@@ -1,0 +1,63 @@
+{
+  "buckets": {
+    "CORRECT": 6,
+    "WRONG_DIRECTION": 0,
+    "WRONG_DST": 0,
+    "SPURIOUS_PAIR": 0,
+    "HALLUCINATED_DST": 0,
+    "HALLUCINATED_SRC": 0
+  },
+  "samples": {
+    "CORRECT": [
+      {
+        "src_node": "dish-pit",
+        "dst_node": "cookhouse",
+        "action": "east",
+        "step_num": 2,
+        "gt_src": "dish-pit",
+        "gt_dst": "cookhouse"
+      },
+      {
+        "src_node": "cookhouse",
+        "dst_node": "dish-pit",
+        "action": "west",
+        "step_num": 3,
+        "gt_src": "cookhouse",
+        "gt_dst": "dish-pit"
+      },
+      {
+        "src_node": "dish-pit",
+        "dst_node": "spare room",
+        "action": "north",
+        "step_num": 4,
+        "gt_src": "dish-pit",
+        "gt_dst": "spare room"
+      },
+      {
+        "src_node": "spare room",
+        "dst_node": "studio",
+        "action": "east",
+        "step_num": 5,
+        "gt_src": "spare room",
+        "gt_dst": "studio"
+      },
+      {
+        "src_node": "studio",
+        "dst_node": "cookery",
+        "action": "north",
+        "step_num": 6,
+        "gt_src": "studio",
+        "gt_dst": "cookery"
+      }
+    ],
+    "WRONG_DIRECTION": [],
+    "WRONG_DST": [],
+    "SPURIOUS_PAIR": [],
+    "HALLUCINATED_DST": [],
+    "HALLUCINATED_SRC": []
+  },
+  "n_gt_edges": 10,
+  "n_pred_edges": 6,
+  "gt_edge_recall": 0.6,
+  "gt_pair_recall": 0.6
+}

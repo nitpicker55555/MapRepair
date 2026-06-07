@@ -1,0 +1,10 @@
+{
+  "game": "spirit",
+  "num_llm_edges": 20,
+  "num_gt_edges": 40,
+  "num_conflicts": 0,
+  "type_distribution": {},
+  "root_cause_distribution": {},
+  "conflicts": [],
+  "walkthrough_steps_available": 71
+}

@@ -1,0 +1,128 @@
+[
+  {
+    "src_node": "study",
+    "dst_node": "hall",
+    "action": "down",
+    "seen_in_forward": 1
+  },
+  {
+    "src_node": "hall",
+    "dst_node": "study",
+    "action": "up",
+    "seen_in_forward": 2
+  },
+  {
+    "src_node": "study",
+    "dst_node": "storage",
+    "action": "south",
+    "seen_in_forward": 3
+  },
+  {
+    "src_node": "storage",
+    "dst_node": "study",
+    "action": "north",
+    "seen_in_forward": 4
+  },
+  {
+    "src_node": "study",
+    "dst_node": "before a dark tower",
+    "action": "south",
+    "seen_in_forward": 5
+  },
+  {
+    "src_node": "before a dark tower",
+    "dst_node": "public square",
+    "action": "southwest",
+    "seen_in_forward": 6
+  },
+  {
+    "src_node": "public square",
+    "dst_node": "road (east/west)",
+    "action": "west",
+    "seen_in_forward": 7
+  },
+  {
+    "src_node": "road (east/west)",
+    "dst_node": "a dark hallway",
+    "action": "north",
+    "seen_in_forward": 8
+  },
+  {
+    "src_node": "a dark hallway",
+    "dst_node": "library",
+    "action": "north",
+    "seen_in_forward": 9
+  },
+  {
+    "src_node": "library",
+    "dst_node": "a dark hallway",
+    "action": "south",
+    "seen_in_forward": 10
+  },
+  {
+    "src_node": "a dark hallway",
+    "dst_node": "road (north/south)",
+    "action": "south",
+    "seen_in_forward": 11
+  },
+  {
+    "src_node": "road (north/south)",
+    "dst_node": "crossroads",
+    "action": "west",
+    "seen_in_forward": 12
+  },
+  {
+    "src_node": "crossroads",
+    "dst_node": "road (north/south)",
+    "action": "north",
+    "seen_in_forward": 13
+  },
+  {
+    "src_node": "road (north/south)",
+    "dst_node": "crossroads",
+    "action": "south",
+    "seen_in_forward": 14
+  },
+  {
+    "src_node": "crossroads",
+    "dst_node": "dead end",
+    "action": "south",
+    "seen_in_forward": 15
+  },
+  {
+    "src_node": "dead end",
+    "dst_node": "stairs",
+    "action": "down",
+    "seen_in_forward": 16
+  },
+  {
+    "src_node": "stairs",
+    "dst_node": "corridor (near stairs)",
+    "action": "down",
+    "seen_in_forward": 17
+  },
+  {
+    "src_node": "corridor (near stairs)",
+    "dst_node": "corridor (north/south)",
+    "action": "north",
+    "seen_in_forward": 18
+  },
+  {
+    "src_node": "corridor (north/south)",
+    "dst_node": "chamber",
+    "action": "north",
+    "seen_in_forward": 19
+  },
+  {
+    "src_node": "chamber",
+    "dst_node": "corridor (east/west)",
+    "action": "east",
+    "seen_in_forward": 20
+  },
+  {
+    "src_node": "corridor (east/west)",
+    "dst_node": "rock chamber",
+    "action": "east",
+    "seen_in_forward": 21
+  }
+]

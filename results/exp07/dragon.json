@@ -1,0 +1,16 @@
+{
+  "game": "dragon",
+  "num_conflicts": 45,
+  "iterations": 8,
+  "success": false,
+  "remaining_conflicts": 22,
+  "pre_edge_recall": 0.5,
+  "pre_strict_direction_match": 0.5,
+  "pre_edge_direction_accuracy": 1.0,
+  "post_edge_recall": 0.5,
+  "post_strict_direction_match": 0.38095238095238093,
+  "post_permissive_direction_match": 0.7142857142857143,
+  "post_edge_direction_accuracy": 0.7619047619047619,
+  "edge_recall_delta": 0.0,
+  "strict_direction_delta": -0.11904761904761907
+}

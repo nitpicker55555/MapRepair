@@ -1,0 +1,20 @@
+[
+  {
+    "src_node": "tight crawl",
+    "dst_node": "cramped cavern",
+    "action": "up",
+    "seen_in_forward": 1
+  },
+  {
+    "src_node": "cramped cavern",
+    "dst_node": "small cave",
+    "action": "up",
+    "seen_in_forward": 2
+  },
+  {
+    "src_node": "small cave",
+    "dst_node": "base of canyon",
+    "action": "up",
+    "seen_in_forward": 3
+  }
+]

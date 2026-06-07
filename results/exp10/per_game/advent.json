@@ -1,0 +1,4149 @@
+{
+  "game": "advent",
+  "num_llm_edges": 34,
+  "num_gt_edges": 51,
+  "num_conflicts": 69,
+  "type_distribution": {
+    "direction": 2,
+    "topology": 34,
+    "naming": 33
+  },
+  "root_cause_distribution": {
+    "real_vs_hallucinated": 2,
+    "overlap_mixed": 5,
+    "false_positive_overlap": 15,
+    "name_hallucination_caused_overlap": 14,
+    "real_name_corrupted_by_neighbour_error": 8,
+    "naming_collision_on_correct_subgraph": 21,
+    "naming_mixed": 1,
+    "name_hallucination": 3
+  },
+  "conflicts": [
+    {
+      "type": "direction",
+      "description": "node 'hall of the mountain king' has multiple outgoing edges labelled 'north'",
+      "involved_edges": [
+        [
+          "hall of the mountain king",
+          "low n/s passage"
+        ],
+        [
+          "hall of the mountain king",
+          "at \"y2\""
+        ]
+      ],
+      "involved_nodes": [
+        "hall of the mountain king",
+        "low n/s passage",
+        "at \"y2\""
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "hall of the mountain king",
+            "low n/s passage"
+          ],
+          "llm_dir": "north",
+          "in_gt": true,
+          "gt_dir": "north",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 25
+        },
+        {
+          "edge": [
+            "hall of the mountain king",
+            "at \"y2\""
+          ],
+          "llm_dir": "north",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": null
+        }
+      ],
+      "case_counts": {
+        "correct": 1,
+        "hallucinated_edge": 1
+      },
+      "root_cause": "real_vs_hallucinated"
+    },
+    {
+      "type": "direction",
+      "description": "node 'at \"y2\"' has multiple outgoing edges labelled 'south'",
+      "involved_edges": [
+        [
+          "at \"y2\"",
+          "low n/s passage"
+        ],
+        [
+          "at \"y2\"",
+          "hall of the mountain king"
+        ]
+      ],
+      "involved_nodes": [
+        "at \"y2\"",
+        "low n/s passage",
+        "hall of the mountain king"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "at \"y2\"",
+            "low n/s passage"
+          ],
+          "llm_dir": "south",
+          "in_gt": true,
+          "gt_dir": "south",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": null
+        },
+        {
+          "edge": [
+            "at \"y2\"",
+            "hall of the mountain king"
+          ],
+          "llm_dir": "south",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 34
+        }
+      ],
+      "case_counts": {
+        "correct": 1,
+        "hallucinated_edge": 1
+      },
+      "root_cause": "real_vs_hallucinated"
+    },
+    {
+      "type": "topology",
+      "description": "position (2, 2, 1) occupied by multiple rooms ['alcove', 'misty cavern']",
+      "involved_edges": [],
+      "involved_nodes": [
+        "alcove",
+        "misty cavern"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "alcove",
+            "plover room"
+          ],
+          "llm_dir": "east",
+          "in_gt": true,
+          "gt_dir": "east",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 53
+        },
+        {
+          "edge": [
+            "alcove",
+            "misty cavern"
+          ],
+          "llm_dir": "south",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 57
+        },
+        {
+          "edge": [
+            "misty cavern",
+            "in swiss cheese room"
+          ],
+          "llm_dir": "southeast",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 59
+        }
+      ],
+      "case_counts": {
+        "correct": 1,
+        "hallucinated_edge": 2
+      },
+      "root_cause": "overlap_mixed"
+    },
+    {
+      "type": "topology",
+      "description": "position (1, 0, 0) occupied by multiple rooms ['in west pit', 'plover room']",
+      "involved_edges": [],
+      "involved_nodes": [
+        "in west pit",
+        "plover room"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "at west end of twopit room",
+            "in west pit"
+          ],
+          "llm_dir": "down",
+          "in_gt": true,
+          "gt_dir": "down",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 46
+        },
+        {
+          "edge": [
+            "alcove",
+            "plover room"
+          ],
+          "llm_dir": "east",
+          "in_gt": true,
+          "gt_dir": "east",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 53
+        }
+      ],
+      "case_counts": {
+        "correct": 2
+      },
+      "root_cause": "false_positive_overlap"
+    },
+    {
+      "type": "topology",
+      "description": "position (3, 2, 1) occupied by multiple rooms ['in west pit', 'plover room']",
+      "involved_edges": [],
+      "involved_nodes": [
+        "in west pit",
+        "plover room"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "at west end of twopit room",
+            "in west pit"
+          ],
+          "llm_dir": "down",
+          "in_gt": true,
+          "gt_dir": "down",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 46
+        },
+        {
+          "edge": [
+            "alcove",
+            "plover room"
+          ],
+          "llm_dir": "east",
+          "in_gt": true,
+          "gt_dir": "east",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 53
+        }
+      ],
+      "case_counts": {
+        "correct": 2
+      },
+      "root_cause": "false_positive_overlap"
+    },
+    {
+      "type": "topology",
+      "description": "position (2, 1, 1) occupied by multiple rooms ['at east end of twopit room', 'misty cavern']",
+      "involved_edges": [],
+      "involved_nodes": [
+        "at east end of twopit room",
+        "misty cavern"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "in swiss cheese room",
+            "at east end of twopit room"
+          ],
+          "llm_dir": "west",
+          "in_gt": true,
+          "gt_dir": "west",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 44
+        },
+        {
+          "edge": [
+            "at east end of twopit room",
+            "at west end of twopit room"
+          ],
+          "llm_dir": "west",
+          "in_gt": true,
+          "gt_dir": "west",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 45
+        },
+        {
+          "edge": [
+            "alcove",
+            "misty cavern"
+          ],
+          "llm_dir": "south",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 57
+        },
+        {
+          "edge": [
+            "misty cavern",
+            "in swiss cheese room"
+          ],
+          "llm_dir": "southeast",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 59
+        }
+      ],
+      "case_counts": {
+        "correct": 2,
+        "hallucinated_edge": 2
+      },
+      "root_cause": "overlap_mixed"
+    },
+    {
+      "type": "topology",
+      "description": "position (3, 0, 1) occupied by multiple rooms ['in swiss cheese room', 'in tall e/w canyon']",
+      "involved_edges": [],
+      "involved_nodes": [
+        "in swiss cheese room",
+        "in tall e/w canyon"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "in tall e/w canyon",
+            "in swiss cheese room"
+          ],
+          "llm_dir": "north",
+          "in_gt": true,
+          "gt_dir": "north",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 43
+        },
+        {
+          "edge": [
+            "misty cavern",
+            "in swiss cheese room"
+          ],
+          "llm_dir": "southeast",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 59
+        },
+        {
+          "edge": [
+            "in swiss cheese room",
+            "at east end of twopit room"
+          ],
+          "llm_dir": "west",
+          "in_gt": true,
+          "gt_dir": "west",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 44
+        },
+        {
+          "edge": [
+            "in swiss cheese room",
+            "in soft room"
+          ],
+          "llm_dir": "east",
+          "in_gt": true,
+          "gt_dir": "east",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 60
+        },
+        {
+          "edge": [
+            "in swiss cheese room",
+            "bedquilt"
+          ],
+          "llm_dir": "northeast",
+          "in_gt": true,
+          "gt_dir": "northeast",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 63
+        },
+        {
+          "edge": [
+            "n/s canyon",
+            "in tall e/w canyon"
+          ],
+          "llm_dir": "north",
+          "in_gt": true,
+          "gt_dir": "north",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 42
+        }
+      ],
+      "case_counts": {
+        "correct": 5,
+        "hallucinated_edge": 1
+      },
+      "root_cause": "overlap_mixed"
+    },
+    {
+      "type": "topology",
+      "description": "position (5, 2, 2) occupied by multiple rooms ['in dusty rock room', 'in swiss cheese room']",
+      "involved_edges": [],
+      "involved_nodes": [
+        "in dusty rock room",
+        "in swiss cheese room"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "at complex junction",
+            "in dusty rock room"
+          ],
+          "llm_dir": "up",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "dst_hallucinated",
+          "source_in_gt": true,
+          "target_in_gt": false,
+          "step": 65
+        },
+        {
+          "edge": [
+            "in dusty rock room",
+            "dirty passage"
+          ],
+          "llm_dir": "east",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "both_names_hallucinated",
+          "source_in_gt": false,
+          "target_in_gt": false,
+          "step": 66
+        },
+        {
+          "edge": [
+            "in tall e/w canyon",
+            "in swiss cheese room"
+          ],
+          "llm_dir": "north",
+          "in_gt": true,
+          "gt_dir": "north",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 43
+        },
+        {
+          "edge": [
+            "misty cavern",
+            "in swiss cheese room"
+          ],
+          "llm_dir": "southeast",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 59
+        },
+        {
+          "edge": [
+            "in swiss cheese room",
+            "at east end of twopit room"
+          ],
+          "llm_dir": "west",
+          "in_gt": true,
+          "gt_dir": "west",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 44
+        },
+        {
+          "edge": [
+            "in swiss cheese room",
+            "in soft room"
+          ],
+          "llm_dir": "east",
+          "in_gt": true,
+          "gt_dir": "east",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 60
+        },
+        {
+          "edge": [
+            "in swiss cheese room",
+            "bedquilt"
+          ],
+          "llm_dir": "northeast",
+          "in_gt": true,
+          "gt_dir": "northeast",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 63
+        }
+      ],
+      "case_counts": {
+        "dst_hallucinated": 1,
+        "both_names_hallucinated": 1,
+        "correct": 4,
+        "hallucinated_edge": 1
+      },
+      "root_cause": "name_hallucination_caused_overlap"
+    },
+    {
+      "type": "topology",
+      "description": "position (3, -1, 1) occupied by multiple rooms ['in dusty rock room', 'in tall e/w canyon', 'n/s canyon']",
+      "involved_edges": [],
+      "involved_nodes": [
+        "in dusty rock room",
+        "in tall e/w canyon",
+        "n/s canyon"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "at complex junction",
+            "in dusty rock room"
+          ],
+          "llm_dir": "up",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "dst_hallucinated",
+          "source_in_gt": true,
+          "target_in_gt": false,
+          "step": 65
+        },
+        {
+          "edge": [
+            "in dusty rock room",
+            "dirty passage"
+          ],
+          "llm_dir": "east",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "both_names_hallucinated",
+          "source_in_gt": false,
+          "target_in_gt": false,
+          "step": 66
+        },
+        {
+          "edge": [
+            "n/s canyon",
+            "in tall e/w canyon"
+          ],
+          "llm_dir": "north",
+          "in_gt": true,
+          "gt_dir": "north",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 42
+        },
+        {
+          "edge": [
+            "in tall e/w canyon",
+            "in swiss cheese room"
+          ],
+          "llm_dir": "north",
+          "in_gt": true,
+          "gt_dir": "north",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 43
+        },
+        {
+          "edge": [
+            "secret e/w canyon above tight canyon",
+            "n/s canyon"
+          ],
+          "llm_dir": "down",
+          "in_gt": true,
+          "gt_dir": "down",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 41
+        }
+      ],
+      "case_counts": {
+        "dst_hallucinated": 1,
+        "both_names_hallucinated": 1,
+        "correct": 3
+      },
+      "root_cause": "name_hallucination_caused_overlap"
+    },
+    {
+      "type": "topology",
+      "description": "position (5, 0, 2) occupied by multiple rooms ['below the grate', 'in tall e/w canyon', 'n/s canyon']",
+      "involved_edges": [],
+      "involved_nodes": [
+        "below the grate",
+        "in tall e/w canyon",
+        "n/s canyon"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "outside grate",
+            "below the grate"
+          ],
+          "llm_dir": "down",
+          "in_gt": true,
+          "gt_dir": "down",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 9
+        },
+        {
+          "edge": [
+            "below the grate",
+            "in cobble"
+          ],
+          "llm_dir": "west",
+          "in_gt": true,
+          "gt_dir": "west",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 10
+        },
+        {
+          "edge": [
+            "n/s canyon",
+            "in tall e/w canyon"
+          ],
+          "llm_dir": "north",
+          "in_gt": true,
+          "gt_dir": "north",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 42
+        },
+        {
+          "edge": [
+            "in tall e/w canyon",
+            "in swiss cheese room"
+          ],
+          "llm_dir": "north",
+          "in_gt": true,
+          "gt_dir": "north",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 43
+        },
+        {
+          "edge": [
+            "secret e/w canyon above tight canyon",
+            "n/s canyon"
+          ],
+          "llm_dir": "down",
+          "in_gt": true,
+          "gt_dir": "down",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 41
+        }
+      ],
+      "case_counts": {
+        "correct": 5
+      },
+      "root_cause": "false_positive_overlap"
+    },
+    {
+      "type": "topology",
+      "description": "position (5, 1, 2) occupied by multiple rooms ['below the grate', 'in dusty rock room', 'in tall e/w canyon']",
+      "involved_edges": [],
+      "involved_nodes": [
+        "below the grate",
+        "in dusty rock room",
+        "in tall e/w canyon"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "outside grate",
+            "below the grate"
+          ],
+          "llm_dir": "down",
+          "in_gt": true,
+          "gt_dir": "down",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 9
+        },
+        {
+          "edge": [
+            "below the grate",
+            "in cobble"
+          ],
+          "llm_dir": "west",
+          "in_gt": true,
+          "gt_dir": "west",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 10
+        },
+        {
+          "edge": [
+            "at complex junction",
+            "in dusty rock room"
+          ],
+          "llm_dir": "up",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "dst_hallucinated",
+          "source_in_gt": true,
+          "target_in_gt": false,
+          "step": 65
+        },
+        {
+          "edge": [
+            "in dusty rock room",
+            "dirty passage"
+          ],
+          "llm_dir": "east",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "both_names_hallucinated",
+          "source_in_gt": false,
+          "target_in_gt": false,
+          "step": 66
+        },
+        {
+          "edge": [
+            "n/s canyon",
+            "in tall e/w canyon"
+          ],
+          "llm_dir": "north",
+          "in_gt": true,
+          "gt_dir": "north",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 42
+        },
+        {
+          "edge": [
+            "in tall e/w canyon",
+            "in swiss cheese room"
+          ],
+          "llm_dir": "north",
+          "in_gt": true,
+          "gt_dir": "north",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 43
+        }
+      ],
+      "case_counts": {
+        "correct": 4,
+        "dst_hallucinated": 1,
+        "both_names_hallucinated": 1
+      },
+      "root_cause": "name_hallucination_caused_overlap"
+    },
+    {
+      "type": "topology",
+      "description": "position (4, 0, 1) occupied by multiple rooms ['dirty passage', 'in soft room']",
+      "involved_edges": [],
+      "involved_nodes": [
+        "dirty passage",
+        "in soft room"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "in dusty rock room",
+            "dirty passage"
+          ],
+          "llm_dir": "east",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "both_names_hallucinated",
+          "source_in_gt": false,
+          "target_in_gt": false,
+          "step": 66
+        },
+        {
+          "edge": [
+            "dirty passage",
+            "low n/s passage"
+          ],
+          "llm_dir": "up",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "src_hallucinated",
+          "source_in_gt": false,
+          "target_in_gt": true,
+          "step": 67
+        },
+        {
+          "edge": [
+            "in swiss cheese room",
+            "in soft room"
+          ],
+          "llm_dir": "east",
+          "in_gt": true,
+          "gt_dir": "east",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 60
+        }
+      ],
+      "case_counts": {
+        "both_names_hallucinated": 1,
+        "src_hallucinated": 1,
+        "correct": 1
+      },
+      "root_cause": "name_hallucination_caused_overlap"
+    },
+    {
+      "type": "topology",
+      "description": "position (4, 1, 1) occupied by multiple rooms ['bedquilt', 'in soft room']",
+      "involved_edges": [],
+      "involved_nodes": [
+        "bedquilt",
+        "in soft room"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "in swiss cheese room",
+            "bedquilt"
+          ],
+          "llm_dir": "northeast",
+          "in_gt": true,
+          "gt_dir": "northeast",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 63
+        },
+        {
+          "edge": [
+            "bedquilt",
+            "at complex junction"
+          ],
+          "llm_dir": "east",
+          "in_gt": true,
+          "gt_dir": "east",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 64
+        },
+        {
+          "edge": [
+            "in swiss cheese room",
+            "in soft room"
+          ],
+          "llm_dir": "east",
+          "in_gt": true,
+          "gt_dir": "east",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 60
+        }
+      ],
+      "case_counts": {
+        "correct": 3
+      },
+      "root_cause": "false_positive_overlap"
+    },
+    {
+      "type": "topology",
+      "description": "position (6, 2, 2) occupied by multiple rooms ['dirty passage', 'in soft room']",
+      "involved_edges": [],
+      "involved_nodes": [
+        "dirty passage",
+        "in soft room"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "in dusty rock room",
+            "dirty passage"
+          ],
+          "llm_dir": "east",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "both_names_hallucinated",
+          "source_in_gt": false,
+          "target_in_gt": false,
+          "step": 66
+        },
+        {
+          "edge": [
+            "dirty passage",
+            "low n/s passage"
+          ],
+          "llm_dir": "up",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "src_hallucinated",
+          "source_in_gt": false,
+          "target_in_gt": true,
+          "step": 67
+        },
+        {
+          "edge": [
+            "in swiss cheese room",
+            "in soft room"
+          ],
+          "llm_dir": "east",
+          "in_gt": true,
+          "gt_dir": "east",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 60
+        }
+      ],
+      "case_counts": {
+        "both_names_hallucinated": 1,
+        "src_hallucinated": 1,
+        "correct": 1
+      },
+      "root_cause": "name_hallucination_caused_overlap"
+    },
+    {
+      "type": "topology",
+      "description": "position (6, 2, 3) occupied by multiple rooms ['at \"y2\"', 'hall of the mountain king', 'inside building', 'low n/s passage']",
+      "involved_edges": [],
+      "involved_nodes": [
+        "at \"y2\"",
+        "hall of the mountain king",
+        "inside building",
+        "low n/s passage"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "low n/s passage",
+            "at \"y2\""
+          ],
+          "llm_dir": "north",
+          "in_gt": true,
+          "gt_dir": "north",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 28
+        },
+        {
+          "edge": [
+            "inside building",
+            "at \"y2\""
+          ],
+          "llm_dir": "south",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 33
+        },
+        {
+          "edge": [
+            "at \"y2\"",
+            "hall of the mountain king"
+          ],
+          "llm_dir": "south",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 34
+        },
+        {
+          "edge": [
+            "in hall of mists",
+            "hall of the mountain king"
+          ],
+          "llm_dir": "north",
+          "in_gt": true,
+          "gt_dir": "north",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 22
+        },
+        {
+          "edge": [
+            "hall of the mountain king",
+            "low n/s passage"
+          ],
+          "llm_dir": "north",
+          "in_gt": true,
+          "gt_dir": "north",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 25
+        },
+        {
+          "edge": [
+            "hall of the mountain king",
+            "secret e/w canyon above tight canyon"
+          ],
+          "llm_dir": "southwest",
+          "in_gt": true,
+          "gt_dir": "southwest",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 35
+        },
+        {
+          "edge": [
+            "end of road",
+            "inside building"
+          ],
+          "llm_dir": "east",
+          "in_gt": true,
+          "gt_dir": "east",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 1
+        },
+        {
+          "edge": [
+            "dirty passage",
+            "low n/s passage"
+          ],
+          "llm_dir": "up",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "src_hallucinated",
+          "source_in_gt": false,
+          "target_in_gt": true,
+          "step": 67
+        }
+      ],
+      "case_counts": {
+        "correct": 5,
+        "hallucinated_edge": 2,
+        "src_hallucinated": 1
+      },
+      "root_cause": "name_hallucination_caused_overlap"
+    },
+    {
+      "type": "topology",
+      "description": "position (4, -1, 2) occupied by multiple rooms ['at \"y2\"', 'hall of the mountain king', 'in cobble', 'low n/s passage']",
+      "involved_edges": [],
+      "involved_nodes": [
+        "at \"y2\"",
+        "hall of the mountain king",
+        "in cobble",
+        "low n/s passage"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "low n/s passage",
+            "at \"y2\""
+          ],
+          "llm_dir": "north",
+          "in_gt": true,
+          "gt_dir": "north",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 28
+        },
+        {
+          "edge": [
+            "inside building",
+            "at \"y2\""
+          ],
+          "llm_dir": "south",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 33
+        },
+        {
+          "edge": [
+            "at \"y2\"",
+            "hall of the mountain king"
+          ],
+          "llm_dir": "south",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 34
+        },
+        {
+          "edge": [
+            "in hall of mists",
+            "hall of the mountain king"
+          ],
+          "llm_dir": "north",
+          "in_gt": true,
+          "gt_dir": "north",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 22
+        },
+        {
+          "edge": [
+            "hall of the mountain king",
+            "low n/s passage"
+          ],
+          "llm_dir": "north",
+          "in_gt": true,
+          "gt_dir": "north",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 25
+        },
+        {
+          "edge": [
+            "hall of the mountain king",
+            "secret e/w canyon above tight canyon"
+          ],
+          "llm_dir": "southwest",
+          "in_gt": true,
+          "gt_dir": "southwest",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 35
+        },
+        {
+          "edge": [
+            "below the grate",
+            "in cobble"
+          ],
+          "llm_dir": "west",
+          "in_gt": true,
+          "gt_dir": "west",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 10
+        },
+        {
+          "edge": [
+            "in cobble",
+            "darkness"
+          ],
+          "llm_dir": "west",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "dst_hallucinated",
+          "source_in_gt": true,
+          "target_in_gt": false,
+          "step": 12
+        },
+        {
+          "edge": [
+            "dirty passage",
+            "low n/s passage"
+          ],
+          "llm_dir": "up",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "src_hallucinated",
+          "source_in_gt": false,
+          "target_in_gt": true,
+          "step": 67
+        }
+      ],
+      "case_counts": {
+        "correct": 5,
+        "hallucinated_edge": 2,
+        "dst_hallucinated": 1,
+        "src_hallucinated": 1
+      },
+      "root_cause": "name_hallucination_caused_overlap"
+    },
+    {
+      "type": "topology",
+      "description": "position (6, 1, 3) occupied by multiple rooms ['at \"y2\"', 'hall of the mountain king', 'low n/s passage']",
+      "involved_edges": [],
+      "involved_nodes": [
+        "at \"y2\"",
+        "hall of the mountain king",
+        "low n/s passage"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "low n/s passage",
+            "at \"y2\""
+          ],
+          "llm_dir": "north",
+          "in_gt": true,
+          "gt_dir": "north",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 28
+        },
+        {
+          "edge": [
+            "inside building",
+            "at \"y2\""
+          ],
+          "llm_dir": "south",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 33
+        },
+        {
+          "edge": [
+            "at \"y2\"",
+            "hall of the mountain king"
+          ],
+          "llm_dir": "south",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 34
+        },
+        {
+          "edge": [
+            "in hall of mists",
+            "hall of the mountain king"
+          ],
+          "llm_dir": "north",
+          "in_gt": true,
+          "gt_dir": "north",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 22
+        },
+        {
+          "edge": [
+            "hall of the mountain king",
+            "low n/s passage"
+          ],
+          "llm_dir": "north",
+          "in_gt": true,
+          "gt_dir": "north",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 25
+        },
+        {
+          "edge": [
+            "hall of the mountain king",
+            "secret e/w canyon above tight canyon"
+          ],
+          "llm_dir": "southwest",
+          "in_gt": true,
+          "gt_dir": "southwest",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 35
+        },
+        {
+          "edge": [
+            "dirty passage",
+            "low n/s passage"
+          ],
+          "llm_dir": "up",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "src_hallucinated",
+          "source_in_gt": false,
+          "target_in_gt": true,
+          "step": 67
+        }
+      ],
+      "case_counts": {
+        "correct": 4,
+        "hallucinated_edge": 2,
+        "src_hallucinated": 1
+      },
+      "root_cause": "name_hallucination_caused_overlap"
+    },
+    {
+      "type": "topology",
+      "description": "position (4, 0, 2) occupied by multiple rooms ['at \"y2\"', 'hall of the mountain king', 'in cobble', 'low n/s passage']",
+      "involved_edges": [],
+      "involved_nodes": [
+        "at \"y2\"",
+        "hall of the mountain king",
+        "in cobble",
+        "low n/s passage"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "low n/s passage",
+            "at \"y2\""
+          ],
+          "llm_dir": "north",
+          "in_gt": true,
+          "gt_dir": "north",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 28
+        },
+        {
+          "edge": [
+            "inside building",
+            "at \"y2\""
+          ],
+          "llm_dir": "south",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 33
+        },
+        {
+          "edge": [
+            "at \"y2\"",
+            "hall of the mountain king"
+          ],
+          "llm_dir": "south",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 34
+        },
+        {
+          "edge": [
+            "in hall of mists",
+            "hall of the mountain king"
+          ],
+          "llm_dir": "north",
+          "in_gt": true,
+          "gt_dir": "north",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 22
+        },
+        {
+          "edge": [
+            "hall of the mountain king",
+            "low n/s passage"
+          ],
+          "llm_dir": "north",
+          "in_gt": true,
+          "gt_dir": "north",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 25
+        },
+        {
+          "edge": [
+            "hall of the mountain king",
+            "secret e/w canyon above tight canyon"
+          ],
+          "llm_dir": "southwest",
+          "in_gt": true,
+          "gt_dir": "southwest",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 35
+        },
+        {
+          "edge": [
+            "below the grate",
+            "in cobble"
+          ],
+          "llm_dir": "west",
+          "in_gt": true,
+          "gt_dir": "west",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 10
+        },
+        {
+          "edge": [
+            "in cobble",
+            "darkness"
+          ],
+          "llm_dir": "west",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "dst_hallucinated",
+          "source_in_gt": true,
+          "target_in_gt": false,
+          "step": 12
+        },
+        {
+          "edge": [
+            "dirty passage",
+            "low n/s passage"
+          ],
+          "llm_dir": "up",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "src_hallucinated",
+          "source_in_gt": false,
+          "target_in_gt": true,
+          "step": 67
+        }
+      ],
+      "case_counts": {
+        "correct": 5,
+        "hallucinated_edge": 2,
+        "dst_hallucinated": 1,
+        "src_hallucinated": 1
+      },
+      "root_cause": "name_hallucination_caused_overlap"
+    },
+    {
+      "type": "topology",
+      "description": "position (6, 0, 3) occupied by multiple rooms ['hall of the mountain king', 'in hall of mists', 'low n/s passage']",
+      "involved_edges": [],
+      "involved_nodes": [
+        "hall of the mountain king",
+        "in hall of mists",
+        "low n/s passage"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "in hall of mists",
+            "hall of the mountain king"
+          ],
+          "llm_dir": "north",
+          "in_gt": true,
+          "gt_dir": "north",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 22
+        },
+        {
+          "edge": [
+            "at \"y2\"",
+            "hall of the mountain king"
+          ],
+          "llm_dir": "south",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 34
+        },
+        {
+          "edge": [
+            "hall of the mountain king",
+            "low n/s passage"
+          ],
+          "llm_dir": "north",
+          "in_gt": true,
+          "gt_dir": "north",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 25
+        },
+        {
+          "edge": [
+            "hall of the mountain king",
+            "secret e/w canyon above tight canyon"
+          ],
+          "llm_dir": "southwest",
+          "in_gt": true,
+          "gt_dir": "southwest",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 35
+        },
+        {
+          "edge": [
+            "at top of small pit",
+            "in hall of mists"
+          ],
+          "llm_dir": "down",
+          "in_gt": true,
+          "gt_dir": "down",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 18
+        },
+        {
+          "edge": [
+            "in hall of mists",
+            "low room"
+          ],
+          "llm_dir": "south",
+          "in_gt": true,
+          "gt_dir": "south",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 19
+        },
+        {
+          "edge": [
+            "dirty passage",
+            "low n/s passage"
+          ],
+          "llm_dir": "up",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "src_hallucinated",
+          "source_in_gt": false,
+          "target_in_gt": true,
+          "step": 67
+        },
+        {
+          "edge": [
+            "low n/s passage",
+            "at \"y2\""
+          ],
+          "llm_dir": "north",
+          "in_gt": true,
+          "gt_dir": "north",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 28
+        }
+      ],
+      "case_counts": {
+        "correct": 6,
+        "hallucinated_edge": 1,
+        "src_hallucinated": 1
+      },
+      "root_cause": "name_hallucination_caused_overlap"
+    },
+    {
+      "type": "topology",
+      "description": "position (4, -2, 2) occupied by multiple rooms ['hall of the mountain king', 'in hall of mists']",
+      "involved_edges": [],
+      "involved_nodes": [
+        "hall of the mountain king",
+        "in hall of mists"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "in hall of mists",
+            "hall of the mountain king"
+          ],
+          "llm_dir": "north",
+          "in_gt": true,
+          "gt_dir": "north",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 22
+        },
+        {
+          "edge": [
+            "at \"y2\"",
+            "hall of the mountain king"
+          ],
+          "llm_dir": "south",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 34
+        },
+        {
+          "edge": [
+            "hall of the mountain king",
+            "low n/s passage"
+          ],
+          "llm_dir": "north",
+          "in_gt": true,
+          "gt_dir": "north",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 25
+        },
+        {
+          "edge": [
+            "hall of the mountain king",
+            "secret e/w canyon above tight canyon"
+          ],
+          "llm_dir": "southwest",
+          "in_gt": true,
+          "gt_dir": "southwest",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 35
+        },
+        {
+          "edge": [
+            "at top of small pit",
+            "in hall of mists"
+          ],
+          "llm_dir": "down",
+          "in_gt": true,
+          "gt_dir": "down",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 18
+        },
+        {
+          "edge": [
+            "in hall of mists",
+            "low room"
+          ],
+          "llm_dir": "south",
+          "in_gt": true,
+          "gt_dir": "south",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 19
+        }
+      ],
+      "case_counts": {
+        "correct": 5,
+        "hallucinated_edge": 1
+      },
+      "root_cause": "overlap_mixed"
+    },
+    {
+      "type": "topology",
+      "description": "position (6, 3, 3) occupied by multiple rooms ['at \"y2\"', 'inside building']",
+      "involved_edges": [],
+      "involved_nodes": [
+        "at \"y2\"",
+        "inside building"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "low n/s passage",
+            "at \"y2\""
+          ],
+          "llm_dir": "north",
+          "in_gt": true,
+          "gt_dir": "north",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 28
+        },
+        {
+          "edge": [
+            "inside building",
+            "at \"y2\""
+          ],
+          "llm_dir": "south",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 33
+        },
+        {
+          "edge": [
+            "at \"y2\"",
+            "hall of the mountain king"
+          ],
+          "llm_dir": "south",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 34
+        },
+        {
+          "edge": [
+            "end of road",
+            "inside building"
+          ],
+          "llm_dir": "east",
+          "in_gt": true,
+          "gt_dir": "east",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 1
+        }
+      ],
+      "case_counts": {
+        "correct": 2,
+        "hallucinated_edge": 2
+      },
+      "root_cause": "overlap_mixed"
+    },
+    {
+      "type": "topology",
+      "description": "position (4, 1, 2) occupied by multiple rooms ['at \"y2\"', 'in cobble', 'inside building']",
+      "involved_edges": [],
+      "involved_nodes": [
+        "at \"y2\"",
+        "in cobble",
+        "inside building"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "low n/s passage",
+            "at \"y2\""
+          ],
+          "llm_dir": "north",
+          "in_gt": true,
+          "gt_dir": "north",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 28
+        },
+        {
+          "edge": [
+            "inside building",
+            "at \"y2\""
+          ],
+          "llm_dir": "south",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 33
+        },
+        {
+          "edge": [
+            "at \"y2\"",
+            "hall of the mountain king"
+          ],
+          "llm_dir": "south",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 34
+        },
+        {
+          "edge": [
+            "below the grate",
+            "in cobble"
+          ],
+          "llm_dir": "west",
+          "in_gt": true,
+          "gt_dir": "west",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 10
+        },
+        {
+          "edge": [
+            "in cobble",
+            "darkness"
+          ],
+          "llm_dir": "west",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "dst_hallucinated",
+          "source_in_gt": true,
+          "target_in_gt": false,
+          "step": 12
+        },
+        {
+          "edge": [
+            "end of road",
+            "inside building"
+          ],
+          "llm_dir": "east",
+          "in_gt": true,
+          "gt_dir": "east",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 1
+        }
+      ],
+      "case_counts": {
+        "correct": 3,
+        "hallucinated_edge": 2,
+        "dst_hallucinated": 1
+      },
+      "root_cause": "name_hallucination_caused_overlap"
+    },
+    {
+      "type": "topology",
+      "description": "position (4, -3, 2) occupied by multiple rooms ['in hall of mists', 'low room']",
+      "involved_edges": [],
+      "involved_nodes": [
+        "in hall of mists",
+        "low room"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "at top of small pit",
+            "in hall of mists"
+          ],
+          "llm_dir": "down",
+          "in_gt": true,
+          "gt_dir": "down",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 18
+        },
+        {
+          "edge": [
+            "in hall of mists",
+            "low room"
+          ],
+          "llm_dir": "south",
+          "in_gt": true,
+          "gt_dir": "south",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 19
+        },
+        {
+          "edge": [
+            "in hall of mists",
+            "hall of the mountain king"
+          ],
+          "llm_dir": "north",
+          "in_gt": true,
+          "gt_dir": "north",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 22
+        }
+      ],
+      "case_counts": {
+        "correct": 3
+      },
+      "root_cause": "false_positive_overlap"
+    },
+    {
+      "type": "topology",
+      "description": "position (6, -1, 3) occupied by multiple rooms ['in hall of mists', 'low room']",
+      "involved_edges": [],
+      "involved_nodes": [
+        "in hall of mists",
+        "low room"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "at top of small pit",
+            "in hall of mists"
+          ],
+          "llm_dir": "down",
+          "in_gt": true,
+          "gt_dir": "down",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 18
+        },
+        {
+          "edge": [
+            "in hall of mists",
+            "low room"
+          ],
+          "llm_dir": "south",
+          "in_gt": true,
+          "gt_dir": "south",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 19
+        },
+        {
+          "edge": [
+            "in hall of mists",
+            "hall of the mountain king"
+          ],
+          "llm_dir": "north",
+          "in_gt": true,
+          "gt_dir": "north",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 22
+        }
+      ],
+      "case_counts": {
+        "correct": 3
+      },
+      "root_cause": "false_positive_overlap"
+    },
+    {
+      "type": "topology",
+      "description": "position (5, -1, 3) occupied by multiple rooms ['outside grate', 'secret e/w canyon above tight canyon']",
+      "involved_edges": [],
+      "involved_nodes": [
+        "outside grate",
+        "secret e/w canyon above tight canyon"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "at slit in streambed",
+            "outside grate"
+          ],
+          "llm_dir": "south",
+          "in_gt": true,
+          "gt_dir": "south",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 6
+        },
+        {
+          "edge": [
+            "outside grate",
+            "below the grate"
+          ],
+          "llm_dir": "down",
+          "in_gt": true,
+          "gt_dir": "down",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 9
+        },
+        {
+          "edge": [
+            "hall of the mountain king",
+            "secret e/w canyon above tight canyon"
+          ],
+          "llm_dir": "southwest",
+          "in_gt": true,
+          "gt_dir": "southwest",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 35
+        },
+        {
+          "edge": [
+            "secret e/w canyon above tight canyon",
+            "secret canyon"
+          ],
+          "llm_dir": "west",
+          "in_gt": true,
+          "gt_dir": "west",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 36
+        },
+        {
+          "edge": [
+            "secret e/w canyon above tight canyon",
+            "n/s canyon"
+          ],
+          "llm_dir": "down",
+          "in_gt": true,
+          "gt_dir": "down",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 41
+        }
+      ],
+      "case_counts": {
+        "correct": 5
+      },
+      "root_cause": "false_positive_overlap"
+    },
+    {
+      "type": "topology",
+      "description": "position (3, -2, 2) occupied by multiple rooms ['outside grate', 'secret e/w canyon above tight canyon']",
+      "involved_edges": [],
+      "involved_nodes": [
+        "outside grate",
+        "secret e/w canyon above tight canyon"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "at slit in streambed",
+            "outside grate"
+          ],
+          "llm_dir": "south",
+          "in_gt": true,
+          "gt_dir": "south",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 6
+        },
+        {
+          "edge": [
+            "outside grate",
+            "below the grate"
+          ],
+          "llm_dir": "down",
+          "in_gt": true,
+          "gt_dir": "down",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 9
+        },
+        {
+          "edge": [
+            "hall of the mountain king",
+            "secret e/w canyon above tight canyon"
+          ],
+          "llm_dir": "southwest",
+          "in_gt": true,
+          "gt_dir": "southwest",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 35
+        },
+        {
+          "edge": [
+            "secret e/w canyon above tight canyon",
+            "secret canyon"
+          ],
+          "llm_dir": "west",
+          "in_gt": true,
+          "gt_dir": "west",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 36
+        },
+        {
+          "edge": [
+            "secret e/w canyon above tight canyon",
+            "n/s canyon"
+          ],
+          "llm_dir": "down",
+          "in_gt": true,
+          "gt_dir": "down",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 41
+        }
+      ],
+      "case_counts": {
+        "correct": 5
+      },
+      "root_cause": "false_positive_overlap"
+    },
+    {
+      "type": "topology",
+      "description": "position (5, 0, 3) occupied by multiple rooms ['at slit in streambed', 'outside grate', 'secret e/w canyon above tight canyon']",
+      "involved_edges": [],
+      "involved_nodes": [
+        "at slit in streambed",
+        "outside grate",
+        "secret e/w canyon above tight canyon"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "in a valley",
+            "at slit in streambed"
+          ],
+          "llm_dir": "south",
+          "in_gt": true,
+          "gt_dir": "south",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 5
+        },
+        {
+          "edge": [
+            "at slit in streambed",
+            "outside grate"
+          ],
+          "llm_dir": "south",
+          "in_gt": true,
+          "gt_dir": "south",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 6
+        },
+        {
+          "edge": [
+            "outside grate",
+            "below the grate"
+          ],
+          "llm_dir": "down",
+          "in_gt": true,
+          "gt_dir": "down",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 9
+        },
+        {
+          "edge": [
+            "hall of the mountain king",
+            "secret e/w canyon above tight canyon"
+          ],
+          "llm_dir": "southwest",
+          "in_gt": true,
+          "gt_dir": "southwest",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 35
+        },
+        {
+          "edge": [
+            "secret e/w canyon above tight canyon",
+            "secret canyon"
+          ],
+          "llm_dir": "west",
+          "in_gt": true,
+          "gt_dir": "west",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 36
+        },
+        {
+          "edge": [
+            "secret e/w canyon above tight canyon",
+            "n/s canyon"
+          ],
+          "llm_dir": "down",
+          "in_gt": true,
+          "gt_dir": "down",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 41
+        }
+      ],
+      "case_counts": {
+        "correct": 6
+      },
+      "root_cause": "false_positive_overlap"
+    },
+    {
+      "type": "topology",
+      "description": "position (3, -1, 2) occupied by multiple rooms ['at slit in streambed', 'darkness', 'secret e/w canyon above tight canyon']",
+      "involved_edges": [],
+      "involved_nodes": [
+        "at slit in streambed",
+        "darkness",
+        "secret e/w canyon above tight canyon"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "in a valley",
+            "at slit in streambed"
+          ],
+          "llm_dir": "south",
+          "in_gt": true,
+          "gt_dir": "south",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 5
+        },
+        {
+          "edge": [
+            "at slit in streambed",
+            "outside grate"
+          ],
+          "llm_dir": "south",
+          "in_gt": true,
+          "gt_dir": "south",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 6
+        },
+        {
+          "edge": [
+            "in cobble",
+            "darkness"
+          ],
+          "llm_dir": "west",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "dst_hallucinated",
+          "source_in_gt": true,
+          "target_in_gt": false,
+          "step": 12
+        },
+        {
+          "edge": [
+            "hall of the mountain king",
+            "secret e/w canyon above tight canyon"
+          ],
+          "llm_dir": "southwest",
+          "in_gt": true,
+          "gt_dir": "southwest",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 35
+        },
+        {
+          "edge": [
+            "secret e/w canyon above tight canyon",
+            "secret canyon"
+          ],
+          "llm_dir": "west",
+          "in_gt": true,
+          "gt_dir": "west",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 36
+        },
+        {
+          "edge": [
+            "secret e/w canyon above tight canyon",
+            "n/s canyon"
+          ],
+          "llm_dir": "down",
+          "in_gt": true,
+          "gt_dir": "down",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 41
+        }
+      ],
+      "case_counts": {
+        "correct": 5,
+        "dst_hallucinated": 1
+      },
+      "root_cause": "name_hallucination_caused_overlap"
+    },
+    {
+      "type": "topology",
+      "description": "position (3, -2, 1) occupied by multiple rooms ['below the grate', 'n/s canyon']",
+      "involved_edges": [],
+      "involved_nodes": [
+        "below the grate",
+        "n/s canyon"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "outside grate",
+            "below the grate"
+          ],
+          "llm_dir": "down",
+          "in_gt": true,
+          "gt_dir": "down",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 9
+        },
+        {
+          "edge": [
+            "below the grate",
+            "in cobble"
+          ],
+          "llm_dir": "west",
+          "in_gt": true,
+          "gt_dir": "west",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 10
+        },
+        {
+          "edge": [
+            "secret e/w canyon above tight canyon",
+            "n/s canyon"
+          ],
+          "llm_dir": "down",
+          "in_gt": true,
+          "gt_dir": "down",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 41
+        },
+        {
+          "edge": [
+            "n/s canyon",
+            "in tall e/w canyon"
+          ],
+          "llm_dir": "north",
+          "in_gt": true,
+          "gt_dir": "north",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 42
+        }
+      ],
+      "case_counts": {
+        "correct": 4
+      },
+      "root_cause": "false_positive_overlap"
+    },
+    {
+      "type": "topology",
+      "description": "position (5, -1, 2) occupied by multiple rooms ['below the grate', 'n/s canyon']",
+      "involved_edges": [],
+      "involved_nodes": [
+        "below the grate",
+        "n/s canyon"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "outside grate",
+            "below the grate"
+          ],
+          "llm_dir": "down",
+          "in_gt": true,
+          "gt_dir": "down",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 9
+        },
+        {
+          "edge": [
+            "below the grate",
+            "in cobble"
+          ],
+          "llm_dir": "west",
+          "in_gt": true,
+          "gt_dir": "west",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 10
+        },
+        {
+          "edge": [
+            "secret e/w canyon above tight canyon",
+            "n/s canyon"
+          ],
+          "llm_dir": "down",
+          "in_gt": true,
+          "gt_dir": "down",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 41
+        },
+        {
+          "edge": [
+            "n/s canyon",
+            "in tall e/w canyon"
+          ],
+          "llm_dir": "north",
+          "in_gt": true,
+          "gt_dir": "north",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 42
+        }
+      ],
+      "case_counts": {
+        "correct": 4
+      },
+      "root_cause": "false_positive_overlap"
+    },
+    {
+      "type": "topology",
+      "description": "position (5, 3, 3) occupied by multiple rooms ['end of road', 'in a valley']",
+      "involved_edges": [],
+      "involved_nodes": [
+        "end of road",
+        "in a valley"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "end of road",
+            "inside building"
+          ],
+          "llm_dir": "east",
+          "in_gt": true,
+          "gt_dir": "east",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 1
+        },
+        {
+          "edge": [
+            "end of road",
+            "in a valley"
+          ],
+          "llm_dir": "south",
+          "in_gt": true,
+          "gt_dir": "south",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 4
+        },
+        {
+          "edge": [
+            "in a valley",
+            "at slit in streambed"
+          ],
+          "llm_dir": "south",
+          "in_gt": true,
+          "gt_dir": "south",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 5
+        }
+      ],
+      "case_counts": {
+        "correct": 3
+      },
+      "root_cause": "false_positive_overlap"
+    },
+    {
+      "type": "topology",
+      "description": "position (3, 1, 2) occupied by multiple rooms ['darkness', 'end of road']",
+      "involved_edges": [],
+      "involved_nodes": [
+        "darkness",
+        "end of road"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "in cobble",
+            "darkness"
+          ],
+          "llm_dir": "west",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "dst_hallucinated",
+          "source_in_gt": true,
+          "target_in_gt": false,
+          "step": 12
+        },
+        {
+          "edge": [
+            "end of road",
+            "inside building"
+          ],
+          "llm_dir": "east",
+          "in_gt": true,
+          "gt_dir": "east",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 1
+        },
+        {
+          "edge": [
+            "end of road",
+            "in a valley"
+          ],
+          "llm_dir": "south",
+          "in_gt": true,
+          "gt_dir": "south",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 4
+        }
+      ],
+      "case_counts": {
+        "dst_hallucinated": 1,
+        "correct": 2
+      },
+      "root_cause": "name_hallucination_caused_overlap"
+    },
+    {
+      "type": "topology",
+      "description": "position (5, 2, 3) occupied by multiple rooms ['at slit in streambed', 'end of road', 'in a valley']",
+      "involved_edges": [],
+      "involved_nodes": [
+        "at slit in streambed",
+        "end of road",
+        "in a valley"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "in a valley",
+            "at slit in streambed"
+          ],
+          "llm_dir": "south",
+          "in_gt": true,
+          "gt_dir": "south",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 5
+        },
+        {
+          "edge": [
+            "at slit in streambed",
+            "outside grate"
+          ],
+          "llm_dir": "south",
+          "in_gt": true,
+          "gt_dir": "south",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 6
+        },
+        {
+          "edge": [
+            "end of road",
+            "inside building"
+          ],
+          "llm_dir": "east",
+          "in_gt": true,
+          "gt_dir": "east",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 1
+        },
+        {
+          "edge": [
+            "end of road",
+            "in a valley"
+          ],
+          "llm_dir": "south",
+          "in_gt": true,
+          "gt_dir": "south",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 4
+        }
+      ],
+      "case_counts": {
+        "correct": 4
+      },
+      "root_cause": "false_positive_overlap"
+    },
+    {
+      "type": "topology",
+      "description": "position (3, 0, 2) occupied by multiple rooms ['darkness', 'in a valley']",
+      "involved_edges": [],
+      "involved_nodes": [
+        "darkness",
+        "in a valley"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "in cobble",
+            "darkness"
+          ],
+          "llm_dir": "west",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "dst_hallucinated",
+          "source_in_gt": true,
+          "target_in_gt": false,
+          "step": 12
+        },
+        {
+          "edge": [
+            "end of road",
+            "in a valley"
+          ],
+          "llm_dir": "south",
+          "in_gt": true,
+          "gt_dir": "south",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 4
+        },
+        {
+          "edge": [
+            "in a valley",
+            "at slit in streambed"
+          ],
+          "llm_dir": "south",
+          "in_gt": true,
+          "gt_dir": "south",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 5
+        }
+      ],
+      "case_counts": {
+        "dst_hallucinated": 1,
+        "correct": 2
+      },
+      "root_cause": "name_hallucination_caused_overlap"
+    },
+    {
+      "type": "topology",
+      "description": "position (5, 1, 3) occupied by multiple rooms ['at slit in streambed', 'in a valley', 'outside grate']",
+      "involved_edges": [],
+      "involved_nodes": [
+        "at slit in streambed",
+        "in a valley",
+        "outside grate"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "in a valley",
+            "at slit in streambed"
+          ],
+          "llm_dir": "south",
+          "in_gt": true,
+          "gt_dir": "south",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 5
+        },
+        {
+          "edge": [
+            "at slit in streambed",
+            "outside grate"
+          ],
+          "llm_dir": "south",
+          "in_gt": true,
+          "gt_dir": "south",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 6
+        },
+        {
+          "edge": [
+            "end of road",
+            "in a valley"
+          ],
+          "llm_dir": "south",
+          "in_gt": true,
+          "gt_dir": "south",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 4
+        },
+        {
+          "edge": [
+            "outside grate",
+            "below the grate"
+          ],
+          "llm_dir": "down",
+          "in_gt": true,
+          "gt_dir": "down",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 9
+        }
+      ],
+      "case_counts": {
+        "correct": 4
+      },
+      "root_cause": "false_positive_overlap"
+    },
+    {
+      "type": "topology",
+      "description": "position (6, -2, 3) occupied by multiple rooms ['low room', 'sloping e/w canyon']",
+      "involved_edges": [],
+      "involved_nodes": [
+        "low room",
+        "sloping e/w canyon"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "in hall of mists",
+            "low room"
+          ],
+          "llm_dir": "south",
+          "in_gt": true,
+          "gt_dir": "south",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 19
+        },
+        {
+          "edge": [
+            "in debris room",
+            "sloping e/w canyon"
+          ],
+          "llm_dir": "west",
+          "in_gt": true,
+          "gt_dir": "west",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 14
+        },
+        {
+          "edge": [
+            "sloping e/w canyon",
+            "orange river chamber"
+          ],
+          "llm_dir": "west",
+          "in_gt": true,
+          "gt_dir": "west",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 15
+        }
+      ],
+      "case_counts": {
+        "correct": 3
+      },
+      "root_cause": "false_positive_overlap"
+    },
+    {
+      "type": "naming",
+      "description": "node 'alcove' reachable at conflicting positions [(0, 0, 0), (2, 2, 1), (2, 3, 1), (4, 4, 2)]",
+      "involved_edges": [],
+      "involved_nodes": [
+        "alcove"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "alcove",
+            "plover room"
+          ],
+          "llm_dir": "east",
+          "in_gt": true,
+          "gt_dir": "east",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 53
+        },
+        {
+          "edge": [
+            "alcove",
+            "misty cavern"
+          ],
+          "llm_dir": "south",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 57
+        }
+      ],
+      "case_counts": {
+        "correct": 1,
+        "hallucinated_edge": 1
+      },
+      "root_cause": "real_name_corrupted_by_neighbour_error"
+    },
+    {
+      "type": "naming",
+      "description": "node 'plover room' reachable at conflicting positions [(1, 0, 0), (3, 2, 1), (3, 3, 1), (5, 4, 2)]",
+      "involved_edges": [],
+      "involved_nodes": [
+        "plover room"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "alcove",
+            "plover room"
+          ],
+          "llm_dir": "east",
+          "in_gt": true,
+          "gt_dir": "east",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 53
+        }
+      ],
+      "case_counts": {
+        "correct": 1
+      },
+      "root_cause": "naming_collision_on_correct_subgraph"
+    },
+    {
+      "type": "naming",
+      "description": "node 'misty cavern' reachable at conflicting positions [(0, -1, 0), (2, 1, 1), (2, 2, 1), (4, 3, 2)]",
+      "involved_edges": [],
+      "involved_nodes": [
+        "misty cavern"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "alcove",
+            "misty cavern"
+          ],
+          "llm_dir": "south",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 57
+        },
+        {
+          "edge": [
+            "misty cavern",
+            "in swiss cheese room"
+          ],
+          "llm_dir": "southeast",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 59
+        }
+      ],
+      "case_counts": {
+        "hallucinated_edge": 2
+      },
+      "root_cause": "naming_mixed"
+    },
+    {
+      "type": "naming",
+      "description": "node 'in swiss cheese room' reachable at conflicting positions [(1, -2, 0), (3, 0, 1), (3, 1, 1), (5, 2, 2)]",
+      "involved_edges": [],
+      "involved_nodes": [
+        "in swiss cheese room"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "in tall e/w canyon",
+            "in swiss cheese room"
+          ],
+          "llm_dir": "north",
+          "in_gt": true,
+          "gt_dir": "north",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 43
+        },
+        {
+          "edge": [
+            "misty cavern",
+            "in swiss cheese room"
+          ],
+          "llm_dir": "southeast",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 59
+        },
+        {
+          "edge": [
+            "in swiss cheese room",
+            "at east end of twopit room"
+          ],
+          "llm_dir": "west",
+          "in_gt": true,
+          "gt_dir": "west",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 44
+        },
+        {
+          "edge": [
+            "in swiss cheese room",
+            "in soft room"
+          ],
+          "llm_dir": "east",
+          "in_gt": true,
+          "gt_dir": "east",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 60
+        },
+        {
+          "edge": [
+            "in swiss cheese room",
+            "bedquilt"
+          ],
+          "llm_dir": "northeast",
+          "in_gt": true,
+          "gt_dir": "northeast",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 63
+        }
+      ],
+      "case_counts": {
+        "correct": 4,
+        "hallucinated_edge": 1
+      },
+      "root_cause": "real_name_corrupted_by_neighbour_error"
+    },
+    {
+      "type": "naming",
+      "description": "node 'in tall e/w canyon' reachable at conflicting positions [(1, -3, 0), (3, -1, 1), (3, 0, 1), (5, 0, 2), (5, 1, 2)]",
+      "involved_edges": [],
+      "involved_nodes": [
+        "in tall e/w canyon"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "n/s canyon",
+            "in tall e/w canyon"
+          ],
+          "llm_dir": "north",
+          "in_gt": true,
+          "gt_dir": "north",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 42
+        },
+        {
+          "edge": [
+            "in tall e/w canyon",
+            "in swiss cheese room"
+          ],
+          "llm_dir": "north",
+          "in_gt": true,
+          "gt_dir": "north",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 43
+        }
+      ],
+      "case_counts": {
+        "correct": 2
+      },
+      "root_cause": "naming_collision_on_correct_subgraph"
+    },
+    {
+      "type": "naming",
+      "description": "node 'at east end of twopit room' reachable at conflicting positions [(0, -2, 0), (2, 0, 1), (2, 1, 1), (4, 2, 2)]",
+      "involved_edges": [],
+      "involved_nodes": [
+        "at east end of twopit room"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "in swiss cheese room",
+            "at east end of twopit room"
+          ],
+          "llm_dir": "west",
+          "in_gt": true,
+          "gt_dir": "west",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 44
+        },
+        {
+          "edge": [
+            "at east end of twopit room",
+            "at west end of twopit room"
+          ],
+          "llm_dir": "west",
+          "in_gt": true,
+          "gt_dir": "west",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 45
+        }
+      ],
+      "case_counts": {
+        "correct": 2
+      },
+      "root_cause": "naming_collision_on_correct_subgraph"
+    },
+    {
+      "type": "naming",
+      "description": "node 'in soft room' reachable at conflicting positions [(2, -2, 0), (4, 0, 1), (4, 1, 1), (6, 2, 2)]",
+      "involved_edges": [],
+      "involved_nodes": [
+        "in soft room"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "in swiss cheese room",
+            "in soft room"
+          ],
+          "llm_dir": "east",
+          "in_gt": true,
+          "gt_dir": "east",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 60
+        }
+      ],
+      "case_counts": {
+        "correct": 1
+      },
+      "root_cause": "naming_collision_on_correct_subgraph"
+    },
+    {
+      "type": "naming",
+      "description": "node 'bedquilt' reachable at conflicting positions [(2, -1, 0), (4, 1, 1), (4, 2, 1), (6, 3, 2)]",
+      "involved_edges": [],
+      "involved_nodes": [
+        "bedquilt"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "in swiss cheese room",
+            "bedquilt"
+          ],
+          "llm_dir": "northeast",
+          "in_gt": true,
+          "gt_dir": "northeast",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 63
+        },
+        {
+          "edge": [
+            "bedquilt",
+            "at complex junction"
+          ],
+          "llm_dir": "east",
+          "in_gt": true,
+          "gt_dir": "east",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 64
+        }
+      ],
+      "case_counts": {
+        "correct": 2
+      },
+      "root_cause": "naming_collision_on_correct_subgraph"
+    },
+    {
+      "type": "naming",
+      "description": "node 'at complex junction' reachable at conflicting positions [(3, -1, 0), (5, 1, 1), (5, 2, 1), (7, 3, 2)]",
+      "involved_edges": [],
+      "involved_nodes": [
+        "at complex junction"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "bedquilt",
+            "at complex junction"
+          ],
+          "llm_dir": "east",
+          "in_gt": true,
+          "gt_dir": "east",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 64
+        },
+        {
+          "edge": [
+            "at complex junction",
+            "in dusty rock room"
+          ],
+          "llm_dir": "up",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "dst_hallucinated",
+          "source_in_gt": true,
+          "target_in_gt": false,
+          "step": 65
+        }
+      ],
+      "case_counts": {
+        "correct": 1,
+        "dst_hallucinated": 1
+      },
+      "root_cause": "real_name_corrupted_by_neighbour_error"
+    },
+    {
+      "type": "naming",
+      "description": "node 'in dusty rock room' reachable at conflicting positions [(3, -1, 1), (5, 1, 2), (5, 2, 2), (7, 3, 3)]",
+      "involved_edges": [],
+      "involved_nodes": [
+        "in dusty rock room"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "at complex junction",
+            "in dusty rock room"
+          ],
+          "llm_dir": "up",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "dst_hallucinated",
+          "source_in_gt": true,
+          "target_in_gt": false,
+          "step": 65
+        },
+        {
+          "edge": [
+            "in dusty rock room",
+            "dirty passage"
+          ],
+          "llm_dir": "east",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "both_names_hallucinated",
+          "source_in_gt": false,
+          "target_in_gt": false,
+          "step": 66
+        }
+      ],
+      "case_counts": {
+        "dst_hallucinated": 1,
+        "both_names_hallucinated": 1
+      },
+      "root_cause": "name_hallucination"
+    },
+    {
+      "type": "naming",
+      "description": "node 'dirty passage' reachable at conflicting positions [(4, -1, 1), (4, 0, 1), (6, 1, 2), (6, 2, 2), (8, 3, 3)]",
+      "involved_edges": [],
+      "involved_nodes": [
+        "dirty passage"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "in dusty rock room",
+            "dirty passage"
+          ],
+          "llm_dir": "east",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "both_names_hallucinated",
+          "source_in_gt": false,
+          "target_in_gt": false,
+          "step": 66
+        },
+        {
+          "edge": [
+            "dirty passage",
+            "low n/s passage"
+          ],
+          "llm_dir": "up",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "src_hallucinated",
+          "source_in_gt": false,
+          "target_in_gt": true,
+          "step": 67
+        }
+      ],
+      "case_counts": {
+        "both_names_hallucinated": 1,
+        "src_hallucinated": 1
+      },
+      "root_cause": "name_hallucination"
+    },
+    {
+      "type": "naming",
+      "description": "node 'low n/s passage' reachable at conflicting positions [(4, -1, 2), (4, 0, 2), (6, 0, 3), (6, 1, 3), (6, 2, 3), (8, 3, 4)]",
+      "involved_edges": [],
+      "involved_nodes": [
+        "low n/s passage"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "hall of the mountain king",
+            "low n/s passage"
+          ],
+          "llm_dir": "north",
+          "in_gt": true,
+          "gt_dir": "north",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 25
+        },
+        {
+          "edge": [
+            "dirty passage",
+            "low n/s passage"
+          ],
+          "llm_dir": "up",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "src_hallucinated",
+          "source_in_gt": false,
+          "target_in_gt": true,
+          "step": 67
+        },
+        {
+          "edge": [
+            "low n/s passage",
+            "at \"y2\""
+          ],
+          "llm_dir": "north",
+          "in_gt": true,
+          "gt_dir": "north",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 28
+        }
+      ],
+      "case_counts": {
+        "correct": 2,
+        "src_hallucinated": 1
+      },
+      "root_cause": "real_name_corrupted_by_neighbour_error"
+    },
+    {
+      "type": "naming",
+      "description": "node 'hall of the mountain king' reachable at conflicting positions [(4, -2, 2), (4, -1, 2), (4, 0, 2), (6, 0, 3), (6, 1, 3), (6, 2, 3)]",
+      "involved_edges": [],
+      "involved_nodes": [
+        "hall of the mountain king"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "in hall of mists",
+            "hall of the mountain king"
+          ],
+          "llm_dir": "north",
+          "in_gt": true,
+          "gt_dir": "north",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 22
+        },
+        {
+          "edge": [
+            "at \"y2\"",
+            "hall of the mountain king"
+          ],
+          "llm_dir": "south",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 34
+        },
+        {
+          "edge": [
+            "hall of the mountain king",
+            "low n/s passage"
+          ],
+          "llm_dir": "north",
+          "in_gt": true,
+          "gt_dir": "north",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 25
+        },
+        {
+          "edge": [
+            "hall of the mountain king",
+            "secret e/w canyon above tight canyon"
+          ],
+          "llm_dir": "southwest",
+          "in_gt": true,
+          "gt_dir": "southwest",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 35
+        }
+      ],
+      "case_counts": {
+        "correct": 3,
+        "hallucinated_edge": 1
+      },
+      "root_cause": "real_name_corrupted_by_neighbour_error"
+    },
+    {
+      "type": "naming",
+      "description": "node 'at \"y2\"' reachable at conflicting positions [(4, -1, 2), (4, 0, 2), (4, 1, 2), (6, 1, 3), (6, 2, 3), (6, 3, 3)]",
+      "involved_edges": [],
+      "involved_nodes": [
+        "at \"y2\""
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "low n/s passage",
+            "at \"y2\""
+          ],
+          "llm_dir": "north",
+          "in_gt": true,
+          "gt_dir": "north",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 28
+        },
+        {
+          "edge": [
+            "inside building",
+            "at \"y2\""
+          ],
+          "llm_dir": "south",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 33
+        },
+        {
+          "edge": [
+            "at \"y2\"",
+            "hall of the mountain king"
+          ],
+          "llm_dir": "south",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 34
+        }
+      ],
+      "case_counts": {
+        "correct": 1,
+        "hallucinated_edge": 2
+      },
+      "root_cause": "real_name_corrupted_by_neighbour_error"
+    },
+    {
+      "type": "naming",
+      "description": "node 'inside building' reachable at conflicting positions [(4, 1, 2), (6, 2, 3), (6, 3, 3), (6, 4, 3)]",
+      "involved_edges": [],
+      "involved_nodes": [
+        "inside building"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "end of road",
+            "inside building"
+          ],
+          "llm_dir": "east",
+          "in_gt": true,
+          "gt_dir": "east",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 1
+        },
+        {
+          "edge": [
+            "inside building",
+            "at \"y2\""
+          ],
+          "llm_dir": "south",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 33
+        }
+      ],
+      "case_counts": {
+        "correct": 1,
+        "hallucinated_edge": 1
+      },
+      "root_cause": "real_name_corrupted_by_neighbour_error"
+    },
+    {
+      "type": "naming",
+      "description": "node 'in hall of mists' reachable at conflicting positions [(4, -3, 2), (4, -2, 2), (6, -1, 3), (6, 0, 3)]",
+      "involved_edges": [],
+      "involved_nodes": [
+        "in hall of mists"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "at top of small pit",
+            "in hall of mists"
+          ],
+          "llm_dir": "down",
+          "in_gt": true,
+          "gt_dir": "down",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 18
+        },
+        {
+          "edge": [
+            "in hall of mists",
+            "low room"
+          ],
+          "llm_dir": "south",
+          "in_gt": true,
+          "gt_dir": "south",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 19
+        },
+        {
+          "edge": [
+            "in hall of mists",
+            "hall of the mountain king"
+          ],
+          "llm_dir": "north",
+          "in_gt": true,
+          "gt_dir": "north",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 22
+        }
+      ],
+      "case_counts": {
+        "correct": 3
+      },
+      "root_cause": "naming_collision_on_correct_subgraph"
+    },
+    {
+      "type": "naming",
+      "description": "node 'secret e/w canyon above tight canyon' reachable at conflicting positions [(3, -3, 2), (3, -2, 2), (3, -1, 2), (5, -1, 3), (5, 0, 3)]",
+      "involved_edges": [],
+      "involved_nodes": [
+        "secret e/w canyon above tight canyon"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "hall of the mountain king",
+            "secret e/w canyon above tight canyon"
+          ],
+          "llm_dir": "southwest",
+          "in_gt": true,
+          "gt_dir": "southwest",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 35
+        },
+        {
+          "edge": [
+            "secret e/w canyon above tight canyon",
+            "secret canyon"
+          ],
+          "llm_dir": "west",
+          "in_gt": true,
+          "gt_dir": "west",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 36
+        },
+        {
+          "edge": [
+            "secret e/w canyon above tight canyon",
+            "n/s canyon"
+          ],
+          "llm_dir": "down",
+          "in_gt": true,
+          "gt_dir": "down",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 41
+        }
+      ],
+      "case_counts": {
+        "correct": 3
+      },
+      "root_cause": "naming_collision_on_correct_subgraph"
+    },
+    {
+      "type": "naming",
+      "description": "node 'secret canyon' reachable at conflicting positions [(2, -2, 2), (2, -1, 2), (4, -1, 3), (4, 0, 3)]",
+      "involved_edges": [],
+      "involved_nodes": [
+        "secret canyon"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "secret e/w canyon above tight canyon",
+            "secret canyon"
+          ],
+          "llm_dir": "west",
+          "in_gt": true,
+          "gt_dir": "west",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 36
+        }
+      ],
+      "case_counts": {
+        "correct": 1
+      },
+      "root_cause": "naming_collision_on_correct_subgraph"
+    },
+    {
+      "type": "naming",
+      "description": "node 'n/s canyon' reachable at conflicting positions [(1, -4, 0), (3, -2, 1), (3, -1, 1), (5, -1, 2), (5, 0, 2)]",
+      "involved_edges": [],
+      "involved_nodes": [
+        "n/s canyon"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "secret e/w canyon above tight canyon",
+            "n/s canyon"
+          ],
+          "llm_dir": "down",
+          "in_gt": true,
+          "gt_dir": "down",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 41
+        },
+        {
+          "edge": [
+            "n/s canyon",
+            "in tall e/w canyon"
+          ],
+          "llm_dir": "north",
+          "in_gt": true,
+          "gt_dir": "north",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 42
+        }
+      ],
+      "case_counts": {
+        "correct": 2
+      },
+      "root_cause": "naming_collision_on_correct_subgraph"
+    },
+    {
+      "type": "naming",
+      "description": "node 'at west end of twopit room' reachable at conflicting positions [(-1, -2, 0), (1, 0, 1), (1, 1, 1), (3, 2, 2)]",
+      "involved_edges": [],
+      "involved_nodes": [
+        "at west end of twopit room"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "at east end of twopit room",
+            "at west end of twopit room"
+          ],
+          "llm_dir": "west",
+          "in_gt": true,
+          "gt_dir": "west",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 45
+        },
+        {
+          "edge": [
+            "at west end of twopit room",
+            "in west pit"
+          ],
+          "llm_dir": "down",
+          "in_gt": true,
+          "gt_dir": "down",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 46
+        }
+      ],
+      "case_counts": {
+        "correct": 2
+      },
+      "root_cause": "naming_collision_on_correct_subgraph"
+    },
+    {
+      "type": "naming",
+      "description": "node 'in west pit' reachable at conflicting positions [(-1, -2, -1), (1, 0, 0), (1, 1, 0), (3, 2, 1)]",
+      "involved_edges": [],
+      "involved_nodes": [
+        "in west pit"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "at west end of twopit room",
+            "in west pit"
+          ],
+          "llm_dir": "down",
+          "in_gt": true,
+          "gt_dir": "down",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 46
+        }
+      ],
+      "case_counts": {
+        "correct": 1
+      },
+      "root_cause": "naming_collision_on_correct_subgraph"
+    },
+    {
+      "type": "naming",
+      "description": "node 'end of road' reachable at conflicting positions [(3, 1, 2), (5, 2, 3), (5, 3, 3), (5, 4, 3)]",
+      "involved_edges": [],
+      "involved_nodes": [
+        "end of road"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "end of road",
+            "inside building"
+          ],
+          "llm_dir": "east",
+          "in_gt": true,
+          "gt_dir": "east",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 1
+        },
+        {
+          "edge": [
+            "end of road",
+            "in a valley"
+          ],
+          "llm_dir": "south",
+          "in_gt": true,
+          "gt_dir": "south",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 4
+        }
+      ],
+      "case_counts": {
+        "correct": 2
+      },
+      "root_cause": "naming_collision_on_correct_subgraph"
+    },
+    {
+      "type": "naming",
+      "description": "node 'in a valley' reachable at conflicting positions [(3, 0, 2), (5, 1, 3), (5, 2, 3), (5, 3, 3)]",
+      "involved_edges": [],
+      "involved_nodes": [
+        "in a valley"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "end of road",
+            "in a valley"
+          ],
+          "llm_dir": "south",
+          "in_gt": true,
+          "gt_dir": "south",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 4
+        },
+        {
+          "edge": [
+            "in a valley",
+            "at slit in streambed"
+          ],
+          "llm_dir": "south",
+          "in_gt": true,
+          "gt_dir": "south",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 5
+        }
+      ],
+      "case_counts": {
+        "correct": 2
+      },
+      "root_cause": "naming_collision_on_correct_subgraph"
+    },
+    {
+      "type": "naming",
+      "description": "node 'at slit in streambed' reachable at conflicting positions [(3, -1, 2), (5, 0, 3), (5, 1, 3), (5, 2, 3)]",
+      "involved_edges": [],
+      "involved_nodes": [
+        "at slit in streambed"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "in a valley",
+            "at slit in streambed"
+          ],
+          "llm_dir": "south",
+          "in_gt": true,
+          "gt_dir": "south",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 5
+        },
+        {
+          "edge": [
+            "at slit in streambed",
+            "outside grate"
+          ],
+          "llm_dir": "south",
+          "in_gt": true,
+          "gt_dir": "south",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 6
+        }
+      ],
+      "case_counts": {
+        "correct": 2
+      },
+      "root_cause": "naming_collision_on_correct_subgraph"
+    },
+    {
+      "type": "naming",
+      "description": "node 'outside grate' reachable at conflicting positions [(3, -2, 2), (5, -1, 3), (5, 0, 3), (5, 1, 3)]",
+      "involved_edges": [],
+      "involved_nodes": [
+        "outside grate"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "at slit in streambed",
+            "outside grate"
+          ],
+          "llm_dir": "south",
+          "in_gt": true,
+          "gt_dir": "south",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 6
+        },
+        {
+          "edge": [
+            "outside grate",
+            "below the grate"
+          ],
+          "llm_dir": "down",
+          "in_gt": true,
+          "gt_dir": "down",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 9
+        }
+      ],
+      "case_counts": {
+        "correct": 2
+      },
+      "root_cause": "naming_collision_on_correct_subgraph"
+    },
+    {
+      "type": "naming",
+      "description": "node 'below the grate' reachable at conflicting positions [(3, -2, 1), (5, -1, 2), (5, 0, 2), (5, 1, 2)]",
+      "involved_edges": [],
+      "involved_nodes": [
+        "below the grate"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "outside grate",
+            "below the grate"
+          ],
+          "llm_dir": "down",
+          "in_gt": true,
+          "gt_dir": "down",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 9
+        },
+        {
+          "edge": [
+            "below the grate",
+            "in cobble"
+          ],
+          "llm_dir": "west",
+          "in_gt": true,
+          "gt_dir": "west",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 10
+        }
+      ],
+      "case_counts": {
+        "correct": 2
+      },
+      "root_cause": "naming_collision_on_correct_subgraph"
+    },
+    {
+      "type": "naming",
+      "description": "node 'in cobble' reachable at conflicting positions [(2, -2, 1), (4, -1, 2), (4, 0, 2), (4, 1, 2)]",
+      "involved_edges": [],
+      "involved_nodes": [
+        "in cobble"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "below the grate",
+            "in cobble"
+          ],
+          "llm_dir": "west",
+          "in_gt": true,
+          "gt_dir": "west",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 10
+        },
+        {
+          "edge": [
+            "in cobble",
+            "darkness"
+          ],
+          "llm_dir": "west",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "dst_hallucinated",
+          "source_in_gt": true,
+          "target_in_gt": false,
+          "step": 12
+        }
+      ],
+      "case_counts": {
+        "correct": 1,
+        "dst_hallucinated": 1
+      },
+      "root_cause": "real_name_corrupted_by_neighbour_error"
+    },
+    {
+      "type": "naming",
+      "description": "node 'darkness' reachable at conflicting positions [(1, -2, 1), (3, -1, 2), (3, 0, 2), (3, 1, 2)]",
+      "involved_edges": [],
+      "involved_nodes": [
+        "darkness"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "in cobble",
+            "darkness"
+          ],
+          "llm_dir": "west",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "dst_hallucinated",
+          "source_in_gt": true,
+          "target_in_gt": false,
+          "step": 12
+        }
+      ],
+      "case_counts": {
+        "dst_hallucinated": 1
+      },
+      "root_cause": "name_hallucination"
+    },
+    {
+      "type": "naming",
+      "description": "node 'at top of small pit' reachable at conflicting positions [(4, -3, 3), (4, -2, 3), (6, -1, 4), (6, 0, 4)]",
+      "involved_edges": [],
+      "involved_nodes": [
+        "at top of small pit"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "orange river chamber",
+            "at top of small pit"
+          ],
+          "llm_dir": "west",
+          "in_gt": true,
+          "gt_dir": "west",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 17
+        },
+        {
+          "edge": [
+            "at top of small pit",
+            "in hall of mists"
+          ],
+          "llm_dir": "down",
+          "in_gt": true,
+          "gt_dir": "down",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 18
+        }
+      ],
+      "case_counts": {
+        "correct": 2
+      },
+      "root_cause": "naming_collision_on_correct_subgraph"
+    },
+    {
+      "type": "naming",
+      "description": "node 'low room' reachable at conflicting positions [(4, -4, 2), (4, -3, 2), (6, -2, 3), (6, -1, 3)]",
+      "involved_edges": [],
+      "involved_nodes": [
+        "low room"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "in hall of mists",
+            "low room"
+          ],
+          "llm_dir": "south",
+          "in_gt": true,
+          "gt_dir": "south",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 19
+        }
+      ],
+      "case_counts": {
+        "correct": 1
+      },
+      "root_cause": "naming_collision_on_correct_subgraph"
+    },
+    {
+      "type": "naming",
+      "description": "node 'orange river chamber' reachable at conflicting positions [(5, -3, 3), (5, -2, 3), (7, -1, 4), (7, 0, 4)]",
+      "involved_edges": [],
+      "involved_nodes": [
+        "orange river chamber"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "sloping e/w canyon",
+            "orange river chamber"
+          ],
+          "llm_dir": "west",
+          "in_gt": true,
+          "gt_dir": "west",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 15
+        },
+        {
+          "edge": [
+            "orange river chamber",
+            "at top of small pit"
+          ],
+          "llm_dir": "west",
+          "in_gt": true,
+          "gt_dir": "west",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 17
+        }
+      ],
+      "case_counts": {
+        "correct": 2
+      },
+      "root_cause": "naming_collision_on_correct_subgraph"
+    },
+    {
+      "type": "naming",
+      "description": "node 'sloping e/w canyon' reachable at conflicting positions [(6, -3, 3), (6, -2, 3), (8, -1, 4), (8, 0, 4)]",
+      "involved_edges": [],
+      "involved_nodes": [
+        "sloping e/w canyon"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "in debris room",
+            "sloping e/w canyon"
+          ],
+          "llm_dir": "west",
+          "in_gt": true,
+          "gt_dir": "west",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 14
+        },
+        {
+          "edge": [
+            "sloping e/w canyon",
+            "orange river chamber"
+          ],
+          "llm_dir": "west",
+          "in_gt": true,
+          "gt_dir": "west",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 15
+        }
+      ],
+      "case_counts": {
+        "correct": 2
+      },
+      "root_cause": "naming_collision_on_correct_subgraph"
+    },
+    {
+      "type": "naming",
+      "description": "node 'in debris room' reachable at conflicting positions [(7, -3, 3), (7, -2, 3), (9, -1, 4), (9, 0, 4)]",
+      "involved_edges": [],
+      "involved_nodes": [
+        "in debris room"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "in debris room",
+            "sloping e/w canyon"
+          ],
+          "llm_dir": "west",
+          "in_gt": true,
+          "gt_dir": "west",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 14
+        }
+      ],
+      "case_counts": {
+        "correct": 1
+      },
+      "root_cause": "naming_collision_on_correct_subgraph"
+    }
+  ],
+  "walkthrough_steps_available": 71
+}

@@ -1,0 +1,11 @@
+# seastalker  model=gpt-4.1  n_steps=10
+step   0 bad movement output: {'is_movement': True, 'src_node': None, 'dst_node': 'north part', 'action': 'north', 'seen_in_forward': 0, 'current_location': 'north part', 'reasoning': "Observation explicitly states arrival in 'north part', which matches a canonical location."}
+step   1 bad movement output: {'is_movement': True, 'src_node': None, 'dst_node': 'east part', 'action': 'east', 'seen_in_forward': 1, 'current_location': 'east part', 'reasoning': "Observation begins with '(east part)', matching a canonical location, so the player moved to 'east part'."}
+step   2 MOVE 'east part' --[east]--> 'corridor'
+step   3 MOVE 'corridor' --[east]--> "kemp's office"
+step   4 MOVE "kemp's office" --[west]--> 'corridor'
+step   5 MOVE 'corridor' --[west]--> 'east part'
+step   6 MOVE 'east part' --[south]--> 'south part'
+step   7 MOVE 'south part' --[south]--> 'north walkway'
+step   8 MOVE 'north walkway' --[south]--> 'scimitar'
+step   9 MOVE 'scimitar' --[exit]--> 'north walkway'

@@ -1,0 +1,147 @@
+==>STEP NUM: 0
+==>ACT: west
+==>OBSERVATION: You can't go that way.
+
+
+-= Basement =-0/3
+===========
+==>STEP NUM: 1
+==>ACT: south
+==>OBSERVATION: You have to open the gateway first.
+
+
+-= Basement =-0/4
+===========
+==>STEP NUM: 2
+==>ACT: south
+==>OBSERVATION: You have to open the gateway first.
+
+
+-= Basement =-0/5
+===========
+==>STEP NUM: 3
+==>ACT: north
+==>OBSERVATION: -= Bar =-
+You find yourself in a bar. An usual one.
+
+
+
+There is an unguarded exit to the south.
+
+
+-= Bar =-0/6
+===========
+==>STEP NUM: 4
+==>ACT: east
+==>OBSERVATION: You can't go that way.
+
+
+-= Bar =-0/7
+===========
+==>STEP NUM: 5
+==>ACT: east
+==>OBSERVATION: You can't go that way.
+
+
+-= Bar =-0/8
+===========
+==>STEP NUM: 6
+==>ACT: north
+==>OBSERVATION: You can't go that way.
+
+
+-= Bar =-0/9
+===========
+==>STEP NUM: 7
+==>ACT: south
+==>OBSERVATION: -= Basement =-
+You are in a basement. An ordinary one. You begin to take stock of what's here.
+
+You hear a noise behind you and spin around, but you can't see anything other than a case. The case contains a TextWorld limited edition latchkey. You idly wonder how they came up with the name TextWorld for this place. It's pretty fitting.
+
+There is a closed gateway leading south. There is an open door leading east. You don't like doors? Why not try going north, that entranceway is unblocked.
+
+
+-= Basement =-0/10
+===========
+==>STEP NUM: 8
+==>ACT: west
+==>OBSERVATION: You can't go that way.
+
+
+-= Basement =-0/11
+===========
+==>STEP NUM: 9
+==>ACT: west
+==>OBSERVATION: You can't go that way.
+
+
+-= Basement =-0/12
+===========
+==>STEP NUM: 10
+==>ACT: north
+==>OBSERVATION: -= Bar =-
+You find yourself in a bar. An usual one.
+
+
+
+There is an unguarded exit to the south.
+
+
+-= Bar =-0/13
+===========
+==>STEP NUM: 11
+==>ACT: north
+==>OBSERVATION: You can't go that way.
+
+
+-= Bar =-0/14
+===========
+==>STEP NUM: 12
+==>ACT: south
+==>OBSERVATION: -= Basement =-
+You are in a basement. An ordinary one. You begin to take stock of what's here.
+
+You hear a noise behind you and spin around, but you can't see anything other than a case. The case contains a TextWorld limited edition latchkey. You idly wonder how they came up with the name TextWorld for this place. It's pretty fitting.
+
+There is a closed gateway leading south. There is an open door leading east. You don't like doors? Why not try going north, that entranceway is unblocked.
+
+
+-= Basement =-0/15
+===========
+==>STEP NUM: 13
+==>ACT: east
+==>OBSERVATION: -= Bedroom =-
+Of every bedroom you could have sauntered into, you had to come round an ordinary one.
+
+You can see a TextWorld limited edition chest.
+
+There is an open door leading west. You don't like doors? Why not try going north, that entranceway is unguarded.
+
+
+-= Bedroom =-0/16
+===========
+==>STEP NUM: 14
+==>ACT: north
+==>OBSERVATION: -= Sauna =-
+Look at you, bigshot, walking into a sauna like it isn't some huge deal. Okay, just remember what you're here to do, and everything will go great.
+
+
+
+There is an exit to the south. Don't worry, it is unguarded.
+
+
+-= Sauna =-0/17
+===========
+==>STEP NUM: 15
+==>ACT: south
+==>OBSERVATION: -= Bedroom =-
+Of every bedroom you could have sauntered into, you had to come round an ordinary one.
+
+You can see a TextWorld limited edition chest.
+
+There is an open door leading west. You don't like doors? Why not try going north, that entranceway is unguarded.
+
+
+-= Bedroom =-0/18
+===========

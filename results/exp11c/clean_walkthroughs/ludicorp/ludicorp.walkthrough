@@ -1,0 +1,180 @@
+===========
+==>STEP NUM: 0
+==>ACT: south
+==>OBSERVATION: The Main Carpark
+The carpark is large and mostly empty - perhaps the size of a football field. Surely there should be more cars here. You parked over in the south east corner. The office building lies to the north. Signs point at a delivery bay to the west.
+===========
+==>STEP NUM: 1
+==>ACT: southeast
+==>OBSERVATION: Corner Of the Carpark
+You're standing in the south east corner of the carpark.
+
+You can see your Car (which is closed) here.
+===========
+==>STEP NUM: 2
+==>ACT: out
+==>OBSERVATION: Corner Of the Carpark
+
+You can see your Car (which is empty) here.
+===========
+==>STEP NUM: 3
+==>ACT: northwest
+==>OBSERVATION: The Main Carpark
+===========
+==>STEP NUM: 4
+==>ACT: north
+==>OBSERVATION: Front Of The Office
+===========
+==>STEP NUM: 5
+==>ACT: east
+==>OBSERVATION: East Of Office
+You are standing to the east of the office building's facia. There are thick bushes to the south and a gravel path leads east to west.
+===========
+==>STEP NUM: 6
+==>ACT: east
+==>OBSERVATION: Damp Corner
+You are in a damp corner where the front of the office building meets a low brick building, with no windows, which runs south.
+===========
+==>STEP NUM: 7
+==>ACT: south
+==>OBSERVATION: Storage Shed Door
+The low building is a storage shed of some kind. You can enter the door to the east, or continue down the pathway which leads north to south down the edge of the building. Dense bushes lie to the west.
+===========
+==>STEP NUM: 8
+==>ACT: east
+==>OBSERVATION: Storage Shed
+You are standing is a huge storage shed. The door out leads west.
+
+You can see a Long Ladder, some Plant Pots, a Coil of wire and a Dragon Statue here.
+===========
+==>STEP NUM: 9
+==>ACT: west
+==>OBSERVATION: Storage Shed Door
+===========
+==>STEP NUM: 10
+==>ACT: south
+==>OBSERVATION: Abandoned Well
+At the end of the path lies a clearing in the bushes, containing an old abandoned well, covered in wild plants. You estimate it to be about 5 meters deep and about a meter in diameter. There are footprints in the dirt next to the well - someone has been here recently. The path leads north, between thick bushes.
+===========
+==>STEP NUM: 11
+==>ACT: down
+==>OBSERVATION: Bottom Of The Well
+You are lodged at the bottom of the well, your feet against one side and your back against the other. You can't help but think these stains will never come out. Yuck. Below you is a few inches of murky water.
+
+You can see a Fuse here.
+===========
+==>STEP NUM: 12
+==>ACT: up
+==>OBSERVATION: Abandoned Well
+===========
+==>STEP NUM: 13
+==>ACT: north
+==>OBSERVATION: Storage Shed Door
+===========
+==>STEP NUM: 14
+==>ACT: north
+==>OBSERVATION: Damp Corner
+===========
+==>STEP NUM: 15
+==>ACT: west
+==>OBSERVATION: East Of Office
+===========
+==>STEP NUM: 16
+==>ACT: south
+==>OBSERVATION: Some Bushes
+You are concealed in a thick clump of bushes. The office building is barely visible to the north.
+===========
+==>STEP NUM: 17
+==>ACT: south
+==>OBSERVATION: Maintanence Stairwell (Top)
+Secluded by thick bushes, you are standing at the top of a stone stairwell, set into the floor. It smells of damp, and moss grows on the steps.
+===========
+==>STEP NUM: 18
+==>ACT: down
+==>OBSERVATION: Maintanence Stairwell (Bottom)
+You are standing at the bottom of a stone stairwell. Moss grows all around you. A low passage leads north east.
+===========
+==>STEP NUM: 19
+==>ACT: northeast
+==>OBSERVATION: Generator Room
+You are in a concrete room with a low ceiling. Thick black cables run from ducts in the walls. There is a small yellow label on the duct. A low tunnel leads south west.
+
+There is a big diesel generator in the corner of the room, connected to the cables.
+===========
+==>STEP NUM: 20
+==>ACT: southwest
+==>OBSERVATION: Maintanence Stairwell (Bottom)
+===========
+==>STEP NUM: 21
+==>ACT: up
+==>OBSERVATION: Maintanence Stairwell (Top)
+===========
+==>STEP NUM: 22
+==>ACT: north
+==>OBSERVATION: Some Bushes
+===========
+==>STEP NUM: 23
+==>ACT: north
+==>OBSERVATION: East Of Office
+===========
+==>STEP NUM: 24
+==>ACT: west
+==>OBSERVATION: Front Of The Office
+===========
+==>STEP NUM: 25
+==>ACT: north
+==>OBSERVATION: Main Entrance
+The main entrance to the building is plush and opulent. And locked. The lights are off and the doors are securely locked. Through the toughened glass you can see a half finished cup of coffee (or perhaps tea - no accounting for taste) sitting on the receptionists desk. It looks like someone left in a hurry. The only way out is back south.
+===========
+==>STEP NUM: 26
+==>ACT: south
+==>OBSERVATION: Front Of The Office
+===========
+==>STEP NUM: 27
+==>ACT: west
+==>OBSERVATION: West Of Office
+You are standing to the west of the office building's facia. Thick bushes block your way to the south and a gravel path leads east to west.
+===========
+==>STEP NUM: 28
+==>ACT: west
+==>OBSERVATION: Bike Shed
+The bikeshed is big and dusty. Nobody actually rides a bike to work - that would be madness - but they have a bikeshed anyway. You suspect that employees come out here to smoke. Bushes block your passage to the south - the only path leads east.
+===========
+==>STEP NUM: 29
+==>ACT: east
+==>OBSERVATION: West Of Office
+===========
+==>STEP NUM: 30
+==>ACT: east
+==>OBSERVATION: Front Of The Office
+===========
+==>STEP NUM: 31
+==>ACT: west
+==>OBSERVATION: The Delivery Bay Gateway
+A large gate blocks the delivery bay to the west. There is some sort of control panel mounted by the side of the gate. The carpark lies to the east.
+===========
+==>STEP NUM: 32
+==>ACT: west
+==>OBSERVATION: Delivery Bay
+The delivery bay is empty and unlocked - the entrance into the building is open to the north. The gate to the carpark leads east.
+===========
+==>STEP NUM: 33
+==>ACT: north
+==>OBSERVATION: Storeroom
+The storeroom contains lots of huge boxes on palettes, wrapped in industrial strength clingfilm. To the south is the delivery bay. A door leads north, into the building.
+===========
+==>STEP NUM: 34
+==>ACT: north
+==>OBSERVATION: Long Corridor, West End
+You are at the west end of a very long east-west corridor. Doors lead north and south.
+===========
+==>STEP NUM: 35
+==>ACT: north
+==>OBSERVATION: North-South Corridoor
+You are in a narrow corridoor, running north to south.
+===========
+==>STEP NUM: 36
+==>ACT: north
+==>OBSERVATION: Vault Door
+You are standing in a well-lit room with a huge vault door in it. It is currently closed, blocking the way north. There is a small keypad to the side of the vault door. Doors lead south and east.
+===========

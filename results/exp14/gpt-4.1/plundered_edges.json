@@ -1,0 +1,140 @@
+[
+  {
+    "src_node": "landing",
+    "dst_node": "sleeping cupboard",
+    "action": "in",
+    "seen_in_forward": 1
+  },
+  {
+    "src_node": "sleeping cupboard",
+    "dst_node": "landing",
+    "action": "out",
+    "seen_in_forward": 2
+  },
+  {
+    "src_node": "landing",
+    "dst_node": "aft hold",
+    "action": "down",
+    "seen_in_forward": 3
+  },
+  {
+    "src_node": "aft hold",
+    "dst_node": "hold",
+    "action": "north",
+    "seen_in_forward": 4
+  },
+  {
+    "src_node": "hold",
+    "dst_node": "crew's quarters",
+    "action": "north",
+    "seen_in_forward": 5
+  },
+  {
+    "src_node": "crew's quarters",
+    "dst_node": "hold",
+    "action": "south",
+    "seen_in_forward": 6
+  },
+  {
+    "src_node": "hold",
+    "dst_node": "aft hold",
+    "action": "south",
+    "seen_in_forward": 7
+  },
+  {
+    "src_node": "aft hold",
+    "dst_node": "landing",
+    "action": "up",
+    "seen_in_forward": 8
+  },
+  {
+    "src_node": "landing",
+    "dst_node": "captain's quarters",
+    "action": "south",
+    "seen_in_forward": 9
+  },
+  {
+    "src_node": "captain's quarters",
+    "dst_node": "the ledge",
+    "action": "south",
+    "seen_in_forward": 10
+  },
+  {
+    "src_node": "the ledge",
+    "dst_node": "poop deck",
+    "action": "up",
+    "seen_in_forward": 11
+  },
+  {
+    "src_node": "poop deck",
+    "dst_node": "quarterdeck",
+    "action": "north",
+    "seen_in_forward": 12
+  },
+  {
+    "src_node": "quarterdeck",
+    "dst_node": "main deck",
+    "action": "north",
+    "seen_in_forward": 13
+  },
+  {
+    "src_node": "main deck",
+    "dst_node": "hold",
+    "action": "down",
+    "seen_in_forward": 14
+  },
+  {
+    "src_node": "hold",
+    "dst_node": "main deck",
+    "action": "up",
+    "seen_in_forward": 15
+  },
+  {
+    "src_node": "main deck",
+    "dst_node": "forecastle",
+    "action": "north",
+    "seen_in_forward": 16
+  },
+  {
+    "src_node": "forecastle",
+    "dst_node": "galley",
+    "action": "in",
+    "seen_in_forward": 17
+  },
+  {
+    "src_node": "galley",
+    "dst_node": "forecastle",
+    "action": "out",
+    "seen_in_forward": 18
+  },
+  {
+    "src_node": "forecastle",
+    "dst_node": "main deck",
+    "action": "south",
+    "seen_in_forward": 19
+  },
+  {
+    "src_node": "main deck",
+    "dst_node": "quarterdeck",
+    "action": "south",
+    "seen_in_forward": 20
+  },
+  {
+    "src_node": "quarterdeck",
+    "dst_node": "beach",
+    "action": "west",
+    "seen_in_forward": 21
+  },
+  {
+    "src_node": "beach",
+    "dst_node": "lawn",
+    "action": "north",
+    "seen_in_forward": 22
+  },
+  {
+    "src_node": "lawn",
+    "dst_node": "forest",
+    "action": "west",
+    "seen_in_forward": 23
+  }
+]

@@ -1,0 +1,38 @@
+[
+  {
+    "src_node": "guest room",
+    "dst_node": "living room",
+    "action": "east",
+    "seen_in_forward": 1
+  },
+  {
+    "src_node": "living room",
+    "dst_node": "den",
+    "action": "north",
+    "seen_in_forward": 2
+  },
+  {
+    "src_node": "den",
+    "dst_node": "kitchen",
+    "action": "west",
+    "seen_in_forward": 3
+  },
+  {
+    "src_node": "kitchen",
+    "dst_node": "den",
+    "action": "east",
+    "seen_in_forward": 4
+  },
+  {
+    "src_node": "den",
+    "dst_node": "living room",
+    "action": "south",
+    "seen_in_forward": 5
+  },
+  {
+    "src_node": "living room",
+    "dst_node": "kitchen",
+    "action": "northwest",
+    "seen_in_forward": 6
+  }
+]

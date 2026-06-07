@@ -1,0 +1,725 @@
+{
+  "id": "zork1",
+  "dataset": "mango",
+  "n_rooms": 18,
+  "n_gt_edges": 29,
+  "n_llm_edges": 21,
+  "rooms": [
+    {
+      "id": "altar",
+      "label": "altar",
+      "description": ""
+    },
+    {
+      "id": "attic",
+      "label": "attic",
+      "description": ""
+    },
+    {
+      "id": "behind house",
+      "label": "behind house",
+      "description": ""
+    },
+    {
+      "id": "cellar",
+      "label": "cellar",
+      "description": ""
+    },
+    {
+      "id": "dome room",
+      "label": "dome room",
+      "description": ""
+    },
+    {
+      "id": "east-west passage",
+      "label": "east-west passage",
+      "description": ""
+    },
+    {
+      "id": "engravings cave",
+      "label": "engravings cave",
+      "description": ""
+    },
+    {
+      "id": "forest",
+      "label": "forest",
+      "description": ""
+    },
+    {
+      "id": "forest path",
+      "label": "forest path",
+      "description": ""
+    },
+    {
+      "id": "kitchen",
+      "label": "kitchen",
+      "description": ""
+    },
+    {
+      "id": "living room",
+      "label": "living room",
+      "description": ""
+    },
+    {
+      "id": "north of house",
+      "label": "north of house",
+      "description": ""
+    },
+    {
+      "id": "round room",
+      "label": "round room",
+      "description": ""
+    },
+    {
+      "id": "temple",
+      "label": "temple",
+      "description": ""
+    },
+    {
+      "id": "the troll room",
+      "label": "the troll room",
+      "description": ""
+    },
+    {
+      "id": "torch room",
+      "label": "torch room",
+      "description": ""
+    },
+    {
+      "id": "up a tree",
+      "label": "up a tree",
+      "description": ""
+    },
+    {
+      "id": "west of house",
+      "label": "west of house",
+      "description": ""
+    }
+  ],
+  "walkthrough": [],
+  "states": {
+    "gt": {
+      "edges": [
+        {
+          "src": "west of house",
+          "dst": "north of house",
+          "dir": "north"
+        },
+        {
+          "src": "north of house",
+          "dst": "forest path",
+          "dir": "north"
+        },
+        {
+          "src": "forest path",
+          "dst": "up a tree",
+          "dir": "up"
+        },
+        {
+          "src": "forest path",
+          "dst": "north of house",
+          "dir": "south"
+        },
+        {
+          "src": "forest path",
+          "dst": "forest",
+          "dir": "west"
+        },
+        {
+          "src": "up a tree",
+          "dst": "forest path",
+          "dir": "down"
+        },
+        {
+          "src": "forest",
+          "dst": "forest path",
+          "dir": "east"
+        },
+        {
+          "src": "behind house",
+          "dst": "kitchen",
+          "dir": "west"
+        },
+        {
+          "src": "kitchen",
+          "dst": "living room",
+          "dir": "west"
+        },
+        {
+          "src": "kitchen",
+          "dst": "attic",
+          "dir": "up"
+        },
+        {
+          "src": "kitchen",
+          "dst": "behind house",
+          "dir": "east"
+        },
+        {
+          "src": "living room",
+          "dst": "kitchen",
+          "dir": "east"
+        },
+        {
+          "src": "living room",
+          "dst": "cellar",
+          "dir": "down"
+        },
+        {
+          "src": "attic",
+          "dst": "kitchen",
+          "dir": "down"
+        },
+        {
+          "src": "cellar",
+          "dst": "the troll room",
+          "dir": "north"
+        },
+        {
+          "src": "cellar",
+          "dst": "living room",
+          "dir": "up"
+        },
+        {
+          "src": "the troll room",
+          "dst": "east-west passage",
+          "dir": "east"
+        },
+        {
+          "src": "the troll room",
+          "dst": "cellar",
+          "dir": "south"
+        },
+        {
+          "src": "east-west passage",
+          "dst": "round room",
+          "dir": "east"
+        },
+        {
+          "src": "east-west passage",
+          "dst": "the troll room",
+          "dir": "west"
+        },
+        {
+          "src": "round room",
+          "dst": "engravings cave",
+          "dir": "southeast"
+        },
+        {
+          "src": "round room",
+          "dst": "east-west passage",
+          "dir": "west"
+        },
+        {
+          "src": "engravings cave",
+          "dst": "dome room",
+          "dir": "east"
+        },
+        {
+          "src": "engravings cave",
+          "dst": "round room",
+          "dir": "northwest"
+        },
+        {
+          "src": "dome room",
+          "dst": "torch room",
+          "dir": "down"
+        },
+        {
+          "src": "dome room",
+          "dst": "engravings cave",
+          "dir": "west"
+        },
+        {
+          "src": "torch room",
+          "dst": "temple",
+          "dir": "down"
+        },
+        {
+          "src": "temple",
+          "dst": "altar",
+          "dir": "south"
+        },
+        {
+          "src": "altar",
+          "dst": "temple",
+          "dir": "north"
+        }
+      ]
+    },
+    "llm_built": {
+      "edges": [
+        {
+          "src": "north of house",
+          "dst": "forest path",
+          "dir": "north",
+          "kind": "correct"
+        },
+        {
+          "src": "north of house",
+          "dst": "kitchen",
+          "dir": "west",
+          "kind": "spurious"
+        },
+        {
+          "src": "forest path",
+          "dst": "north of house",
+          "dir": "south",
+          "kind": "correct"
+        },
+        {
+          "src": "forest path",
+          "dst": "up a tree",
+          "dir": "up",
+          "kind": "correct"
+        },
+        {
+          "src": "forest path",
+          "dst": "cellar",
+          "dir": "down",
+          "kind": "spurious"
+        },
+        {
+          "src": "up a tree",
+          "dst": "forest path",
+          "dir": "down",
+          "kind": "correct"
+        },
+        {
+          "src": "kitchen",
+          "dst": "living room",
+          "dir": "west",
+          "kind": "correct"
+        },
+        {
+          "src": "kitchen",
+          "dst": "attic",
+          "dir": "up",
+          "kind": "correct"
+        },
+        {
+          "src": "kitchen",
+          "dst": "cellar",
+          "dir": "down",
+          "kind": "spurious"
+        },
+        {
+          "src": "living room",
+          "dst": "kitchen",
+          "dir": "east",
+          "kind": "correct"
+        },
+        {
+          "src": "attic",
+          "dst": "kitchen",
+          "dir": "down",
+          "kind": "correct"
+        },
+        {
+          "src": "cellar",
+          "dst": "the troll room",
+          "dir": "north",
+          "kind": "correct"
+        },
+        {
+          "src": "the troll room",
+          "dst": "east-west passage",
+          "dir": "east",
+          "kind": "correct"
+        },
+        {
+          "src": "east-west passage",
+          "dst": "round room",
+          "dir": "east",
+          "kind": "correct"
+        },
+        {
+          "src": "round room",
+          "dst": "engravings cave",
+          "dir": "southeast",
+          "kind": "correct"
+        },
+        {
+          "src": "engravings cave",
+          "dst": "dome room",
+          "dir": "east",
+          "kind": "correct"
+        },
+        {
+          "src": "dome room",
+          "dst": "torch room",
+          "dir": "down",
+          "kind": "correct"
+        },
+        {
+          "src": "torch room",
+          "dst": "temple",
+          "dir": "down",
+          "kind": "correct"
+        },
+        {
+          "src": "temple",
+          "dst": "altar",
+          "dir": "south",
+          "kind": "correct"
+        },
+        {
+          "src": "temple",
+          "dst": "forest path",
+          "dir": "east",
+          "kind": "spurious"
+        },
+        {
+          "src": "altar",
+          "dst": "temple",
+          "dir": "north",
+          "kind": "correct"
+        }
+      ],
+      "n_correct": 17,
+      "n_wrong_direction": 0,
+      "n_wrong_dst": 0,
+      "n_spurious": 4,
+      "n_hallucinated_dst": 0,
+      "n_hallucinated_src": 0,
+      "conflicts": [
+        {
+          "type": "direction",
+          "severity": "high",
+          "description": "node 'cellar' has multiple outgoing edges labelled 'up'",
+          "edges": [
+            [
+              "cellar",
+              "kitchen"
+            ],
+            [
+              "cellar",
+              "forest path"
+            ]
+          ]
+        },
+        {
+          "type": "topology",
+          "severity": "high",
+          "description": "position (5, 0, -3) occupied by multiple rooms ['altar', 'kitchen']",
+          "edges": []
+        },
+        {
+          "type": "topology",
+          "severity": "high",
+          "description": "position (0, 0, 0) occupied by multiple rooms ['altar', 'kitchen']",
+          "edges": []
+        },
+        {
+          "type": "topology",
+          "severity": "high",
+          "description": "position (15, 0, -9) occupied by multiple rooms ['altar', 'kitchen']",
+          "edges": []
+        },
+        {
+          "type": "topology",
+          "severity": "high",
+          "description": "position (10, 0, -6) occupied by multiple rooms ['altar', 'kitchen']",
+          "edges": []
+        },
+        {
+          "type": "topology",
+          "severity": "high",
+          "description": "position (5, 1, -3) occupied by multiple rooms ['living room', 'temple']",
+          "edges": []
+        },
+        {
+          "type": "topology",
+          "severity": "high",
+          "description": "position (10, 1, -6) occupied by multiple rooms ['living room', 'temple']",
+          "edges": []
+        },
+        {
+          "type": "topology",
+          "severity": "high",
+          "description": "position (0, 1, 0) occupied by multiple rooms ['living room', 'temple']",
+          "edges": []
+        },
+        {
+          "type": "topology",
+          "severity": "high",
+          "description": "position (15, 1, -9) occupied by multiple rooms ['living room', 'temple']",
+          "edges": []
+        },
+        {
+          "type": "topology",
+          "severity": "high",
+          "description": "position (11, 1, -6) occupied by multiple rooms ['forest path', 'kitchen']",
+          "edges": []
+        },
+        {
+          "type": "topology",
+          "severity": "high",
+          "description": "position (1, 1, 0) occupied by multiple rooms ['forest path', 'kitchen']",
+          "edges": []
+        },
+        {
+          "type": "topology",
+          "severity": "high",
+          "description": "position (16, 1, -9) occupied by multiple rooms ['forest path', 'kitchen']",
+          "edges": []
+        },
+        {
+          "type": "topology",
+          "severity": "high",
+          "description": "position (6, 1, -3) occupied by multiple rooms ['forest path', 'kitchen']",
+          "edges": []
+        },
+        {
+          "type": "topology",
+          "severity": "high",
+          "description": "position (11, 1, -5) occupied by multiple rooms ['attic', 'up a tree']",
+          "edges": []
+        },
+        {
+          "type": "topology",
+          "severity": "high",
+          "description": "position (1, 1, 1) occupied by multiple rooms ['attic', 'up a tree']",
+          "edges": []
+        },
+        {
+          "type": "topology",
+          "severity": "high",
+          "description": "position (16, 1, -8) occupied by multiple rooms ['attic', 'up a tree']",
+          "edges": []
+        },
+        {
+          "type": "topology",
+          "severity": "high",
+          "description": "position (6, 1, -2) occupied by multiple rooms ['attic', 'up a tree']",
+          "edges": []
+        },
+        {
+          "type": "naming",
+          "severity": "high",
+          "description": "node 'altar' reachable at conflicting positions [(0, 0, 0), (5, 0, -3), (10, 0, -6), (15, 0, -9)]",
+          "edges": []
+        },
+        {
+          "type": "naming",
+          "severity": "high",
+          "description": "node 'temple' reachable at conflicting positions [(0, 1, 0), (5, 1, -3), (10, 1, -6), (15, 1, -9)]",
+          "edges": []
+        },
+        {
+          "type": "naming",
+          "severity": "high",
+          "description": "node 'torch room' reachable at conflicting positions [(0, 1, 1), (5, 1, -2), (10, 1, -5), (15, 1, -8), (20, 1, -11)]",
+          "edges": []
+        },
+        {
+          "type": "naming",
+          "severity": "high",
+          "description": "node 'forest path' reachable at conflicting positions [(1, 1, 0), (6, 1, -3), (11, 1, -6), (16, 1, -9)]",
+          "edges": []
+        },
+        {
+          "type": "naming",
+          "severity": "high",
+          "description": "node 'north of house' reachable at conflicting positions [(1, 0, 0), (2, 1, 0), (6, 0, -3), (7, 1, -3), (11, 0, -6), (12, 1, -6), (16, 0, -9), (17, 1, -9)]",
+          "edges": []
+        },
+        {
+          "type": "naming",
+          "severity": "high",
+          "description": "node 'up a tree' reachable at conflicting positions [(1, 1, 1), (6, 1, -2), (11, 1, -5), (16, 1, -8)]",
+          "edges": []
+        },
+        {
+          "type": "naming",
+          "severity": "high",
+          "description": "node 'cellar' reachable at conflicting positions [(1, 1, -1), (6, 1, -4), (11, 1, -7), (16, 1, -10)]",
+          "edges": []
+        },
+        {
+          "type": "naming",
+          "severity": "high",
+          "description": "node 'kitchen' reachable at conflicting positions [(0, 0, 0), (1, 1, 0), (5, 0, -3), (6, 1, -3), (10, 0, -6), (11, 1, -6), (15, 0, -9), (16, 1, -9)]",
+          "edges": []
+        },
+        {
+          "type": "naming",
+          "severity": "high",
+          "description": "node 'the troll room' reachable at conflicting positions [(1, 2, -1), (6, 2, -4), (11, 2, -7), (16, 2, -10)]",
+          "edges": []
+        },
+        {
+          "type": "naming",
+          "severity": "high",
+          "description": "node 'east-west passage' reachable at conflicting positions [(2, 2, -1), (7, 2, -4), (12, 2, -7), (17, 2, -10)]",
+          "edges": []
+        },
+        {
+          "type": "naming",
+          "severity": "high",
+          "description": "node 'round room' reachable at conflicting positions [(3, 2, -1), (8, 2, -4), (13, 2, -7), (18, 2, -10)]",
+          "edges": []
+        },
+        {
+          "type": "naming",
+          "severity": "high",
+          "description": "node 'engravings cave' reachable at conflicting positions [(4, 1, -1), (9, 1, -4), (14, 1, -7), (19, 1, -10)]",
+          "edges": []
+        },
+        {
+          "type": "naming",
+          "severity": "high",
+          "description": "node 'dome room' reachable at conflicting positions [(0, 1, 2), (5, 1, -1), (10, 1, -4), (15, 1, -7), (20, 1, -10)]",
+          "edges": []
+        },
+        {
+          "type": "naming",
+          "severity": "high",
+          "description": "node 'living room' reachable at conflicting positions [(0, 1, 0), (5, 1, -3), (10, 1, -6), (15, 1, -9)]",
+          "edges": []
+        },
+        {
+          "type": "naming",
+          "severity": "high",
+          "description": "node 'attic' reachable at conflicting positions [(1, 1, 1), (6, 1, -2), (11, 1, -5), (16, 1, -8)]",
+          "edges": []
+        }
+      ]
+    },
+    "repaired": {
+      "edges": [
+        {
+          "src": "north of house",
+          "dst": "forest path",
+          "dir": "north"
+        },
+        {
+          "src": "forest path",
+          "dst": "north of house",
+          "dir": "south"
+        },
+        {
+          "src": "forest path",
+          "dst": "up a tree",
+          "dir": "up"
+        },
+        {
+          "src": "up a tree",
+          "dst": "forest path",
+          "dir": "down"
+        },
+        {
+          "src": "kitchen",
+          "dst": "living room",
+          "dir": "west"
+        },
+        {
+          "src": "kitchen",
+          "dst": "attic",
+          "dir": "up"
+        },
+        {
+          "src": "kitchen",
+          "dst": "cellar",
+          "dir": "down"
+        },
+        {
+          "src": "living room",
+          "dst": "kitchen",
+          "dir": "east"
+        },
+        {
+          "src": "attic",
+          "dst": "kitchen",
+          "dir": "down"
+        },
+        {
+          "src": "the troll room",
+          "dst": "east-west passage",
+          "dir": "east"
+        },
+        {
+          "src": "east-west passage",
+          "dst": "round room",
+          "dir": "east"
+        },
+        {
+          "src": "round room",
+          "dst": "engravings cave",
+          "dir": "southeast"
+        },
+        {
+          "src": "engravings cave",
+          "dst": "dome room",
+          "dir": "east"
+        },
+        {
+          "src": "dome room",
+          "dst": "torch room",
+          "dir": "down"
+        },
+        {
+          "src": "torch room",
+          "dst": "temple",
+          "dir": "down"
+        },
+        {
+          "src": "temple",
+          "dst": "altar",
+          "dir": "south"
+        },
+        {
+          "src": "altar",
+          "dst": "temple",
+          "dir": "north"
+        }
+      ],
+      "actions": [
+        {
+          "kind": "remove_edge",
+          "target": [
+            "temple",
+            "forest path"
+          ],
+          "new_dir": null,
+          "reason": "remove fallback"
+        },
+        {
+          "kind": "remove_edge",
+          "target": [
+            "cellar",
+            "the troll room"
+          ],
+          "new_dir": null,
+          "reason": "remove fallback"
+        },
+        {
+          "kind": "remove_edge",
+          "target": [
+            "north of house",
+            "kitchen"
+          ],
+          "new_dir": null,
+          "reason": "remove fallback"
+        },
+        {
+          "kind": "remove_edge",
+          "target": [
+            "forest path",
+            "cellar"
+          ],
+          "new_dir": null,
+          "reason": "remove fallback"
+        },
+        {
+          "kind": "skip",
+          "target": null,
+          "new_dir": null,
+          "reason": "no candidates"
+        }
+      ],
+      "n_conflicts_before": 32,
+      "n_conflicts_after": 1
+    }
+  }
+}

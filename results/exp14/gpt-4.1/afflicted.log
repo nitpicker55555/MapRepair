@@ -1,0 +1,20 @@
+# afflicted  model=gpt-4.1  n_steps=19  (exp14 bootstrap-fixed)
+step   0 BOOTSTRAP seed current_loc='19th street east' (src missing, dst valid)
+step   1 MOVE '19th street east' --[west]--> '19th street'
+step   2 MOVE '19th street' --[north]--> 'dining room'
+step   3 MOVE 'dining room' --[east]--> 'bar'
+step   4 MOVE 'bar' --[north]--> 'lavatory'
+step   5 MOVE 'lavatory' --[south]--> 'bar'
+step   6 MOVE 'bar' --[west]--> 'dining room'
+step   7 MOVE 'dining room' --[north]--> 'galley kitchen'
+step   8 MOVE 'galley kitchen' --[north]--> 'dish room'
+step   9 MOVE 'dish room' --[west]--> 'refrigerator'
+step  10 MOVE 'refrigerator' --[east]--> 'darkness'
+step  11 MOVE 'darkness' --[north]--> 'dish room'
+step  12 MOVE 'dish room' --[south]--> 'galley kitchen'
+step  13 bad movement output (kept loc): {'is_movement': True, 'src_node': 'galley kitchen', 'dst_node': 'galley kitchen', 'action': 'south', 'seen_in_forward': 13, 'current_location': 'galley kitchen', 'reasoning': "Observation matches canonical room 'galley kitchen', so player moved south back to this location."}
+step  14 MOVE 'galley kitchen' --[south]--> 'dining room'
+step  15 MOVE 'dining room' --[down]--> 'crypt'
+step  16 MOVE 'crypt' --[up]--> 'dish room'
+step  17 MOVE 'dish room' --[south]--> '19th street'
+step  18 MOVE '19th street' --[up]--> "nikolai's office"

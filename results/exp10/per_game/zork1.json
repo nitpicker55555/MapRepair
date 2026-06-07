@@ -1,0 +1,151 @@
+{
+  "game": "zork1",
+  "num_llm_edges": 19,
+  "num_gt_edges": 29,
+  "num_conflicts": 2,
+  "type_distribution": {
+    "direction": 1,
+    "topology": 1
+  },
+  "root_cause_distribution": {
+    "real_vs_hallucinated": 1,
+    "name_hallucination_caused_overlap": 1
+  },
+  "conflicts": [
+    {
+      "type": "direction",
+      "description": "node 'forest path' has multiple outgoing edges labelled 'west'",
+      "involved_edges": [
+        [
+          "forest path",
+          "temple"
+        ],
+        [
+          "forest path",
+          "forest"
+        ]
+      ],
+      "involved_nodes": [
+        "forest path",
+        "temple",
+        "forest"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "forest path",
+            "temple"
+          ],
+          "llm_dir": "west",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": null
+        },
+        {
+          "edge": [
+            "forest path",
+            "forest"
+          ],
+          "llm_dir": "west",
+          "in_gt": true,
+          "gt_dir": "west",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": null
+        }
+      ],
+      "case_counts": {
+        "hallucinated_edge": 1,
+        "correct": 1
+      },
+      "root_cause": "real_vs_hallucinated"
+    },
+    {
+      "type": "topology",
+      "description": "position (0, 1, 0) occupied by multiple rooms ['forest', 'temple']",
+      "involved_edges": [],
+      "involved_nodes": [
+        "forest",
+        "temple"
+      ],
+      "edge_records": [
+        {
+          "edge": [
+            "forest",
+            "forest path"
+          ],
+          "llm_dir": "east",
+          "in_gt": true,
+          "gt_dir": "east",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 70
+        },
+        {
+          "edge": [
+            "torch room",
+            "temple"
+          ],
+          "llm_dir": "down",
+          "in_gt": true,
+          "gt_dir": "down",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 37
+        },
+        {
+          "edge": [
+            "temple",
+            "altar"
+          ],
+          "llm_dir": "south",
+          "in_gt": true,
+          "gt_dir": "south",
+          "case": "correct",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 38
+        },
+        {
+          "edge": [
+            "temple",
+            "egyptian room"
+          ],
+          "llm_dir": "in",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "dst_hallucinated",
+          "source_in_gt": true,
+          "target_in_gt": false,
+          "step": 45
+        },
+        {
+          "edge": [
+            "temple",
+            "forest path"
+          ],
+          "llm_dir": "east",
+          "in_gt": false,
+          "gt_dir": null,
+          "case": "hallucinated_edge",
+          "source_in_gt": true,
+          "target_in_gt": true,
+          "step": 48
+        }
+      ],
+      "case_counts": {
+        "correct": 3,
+        "dst_hallucinated": 1,
+        "hallucinated_edge": 1
+      },
+      "root_cause": "name_hallucination_caused_overlap"
+    }
+  ],
+  "walkthrough_steps_available": 71
+}

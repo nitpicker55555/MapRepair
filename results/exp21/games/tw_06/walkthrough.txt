@@ -1,0 +1,112 @@
+==>STEP NUM: 0
+==>ACT: west
+==>OBSERVATION: You can't go that way.
+
+
+-= Recreation Zone =-0/3
+===========
+==>STEP NUM: 1
+==>ACT: east
+==>OBSERVATION: You can't go that way.
+
+
+-= Recreation Zone =-0/4
+===========
+==>STEP NUM: 2
+==>ACT: south
+==>OBSERVATION: You have to open the hatch first.
+
+
+-= Recreation Zone =-0/5
+===========
+==>STEP NUM: 3
+==>ACT: south
+==>OBSERVATION: You have to open the hatch first.
+
+
+-= Recreation Zone =-0/6
+===========
+==>STEP NUM: 4
+==>ACT: east
+==>OBSERVATION: You can't go that way.
+
+
+-= Recreation Zone =-0/7
+===========
+==>STEP NUM: 5
+==>ACT: north
+==>OBSERVATION: You have to open the passageway first.
+
+
+-= Recreation Zone =-0/8
+===========
+==>STEP NUM: 6
+==>ACT: north
+==>OBSERVATION: You have to open the passageway first.
+
+
+-= Recreation Zone =-0/9
+===========
+==>STEP NUM: 7
+==>ACT: south
+==>OBSERVATION: You have to open the hatch first.
+
+
+-= Recreation Zone =-0/10
+===========
+==>STEP NUM: 8
+==>ACT: south
+==>OBSERVATION: You have to open the hatch first.
+
+
+-= Recreation Zone =-0/11
+===========
+==>STEP NUM: 9
+==>ACT: west
+==>OBSERVATION: You can't go that way.
+
+
+-= Recreation Zone =-0/12
+===========
+==>STEP NUM: 10
+==>ACT: north
+==>OBSERVATION: You have to open the passageway first.
+
+
+-= Recreation Zone =-0/13
+===========
+==>STEP NUM: 11
+==>ACT: north
+==>OBSERVATION: You have to open the passageway first.
+
+
+-= Recreation Zone =-0/14
+===========
+==>STEP NUM: 12
+==>ACT: north
+==>OBSERVATION: You have to open the passageway first.
+
+
+-= Recreation Zone =-0/15
+===========
+==>STEP NUM: 13
+==>ACT: east
+==>OBSERVATION: You can't go that way.
+
+
+-= Recreation Zone =-0/16
+===========
+==>STEP NUM: 14
+==>ACT: west
+==>OBSERVATION: You can't go that way.
+
+
+-= Recreation Zone =-0/17
+===========
+==>STEP NUM: 15
+==>ACT: south
+==>OBSERVATION: You have to open the hatch first.
+
+
+-= Recreation Zone =-0/18
+===========

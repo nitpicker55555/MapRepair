@@ -1,0 +1,795 @@
+===========
+==>STEP NUM: 0
+==>ACT: south
+==>OBSERVATION: On a path in the forest
+I'm on a path winding through the Enchanted Forest. The path winds its way from the north towards the west. In every other direction there are dark, sinister looking trees that wave their branches at me in an anthropomorphic kind of way. Ooh, I'm soooo scared!
+===========
+==>STEP NUM: 1
+==>ACT: west
+==>OBSERVATION: As I head off along the path a pathetic, mangey looking wolf jumps out from behind a bush and slobbers at me in what he probably hopes is a menacing way.
+   'I am the Big Bad Wolf!' says he. Then, after an awkward pause he adds 'well, what are you waiting for? Aren't you going to ask me the way to Grandma's house?' He looks at me quizzically for a moment and then slaps his forehead.
+   'My humblest apologies!' he says. 'You are not the young woman I seek. She of the crimson shawl must needs be elsewhere!' He darts back into the forest.
+
+
+At a fork in the path
+I'm at a fork in the path. Not the kind of fork you eat with, the sort where the path forks; you know, like a fork. To the north the path widens into a clearing. To the west it disappears into the forest.
+===========
+==>STEP NUM: 2
+==>ACT: north
+==>OBSERVATION: In a clearing in the forest
+I'm in a clearing. There is a teeny tiny cottage here complete with a thatched roof and leaded windows. It's just like something out of a fairy tale, funnily enough, except for the large hand-painted sign designed to deter trespassers. Just to the north is the front porch. A little path lined by rows of white-painted stones leads around the side of the house to the west.
+===========
+==>STEP NUM: 3
+==>ACT: north
+==>OBSERVATION: On the porch
+I'm standing on the porch of the Three Bears' cottage. It would be quite pretty in a rustic sort of way had someone not seen fit to paint it gold. The front door is closed.  Just south of me is the clearing in the forest.
+A battered old dustbin sits to one side of the porch.
+
+I can also see a milkbottle (in which is a crumpled note) here.
+===========
+==>STEP NUM: 4
+==>ACT: south
+==>OBSERVATION: In a clearing in the forest
+===========
+==>STEP NUM: 5
+==>ACT: west
+==>OBSERVATION: In the garden
+I'm in a little garden alongside the cottage. There's a vegetable plot in a sunny spot by the wall and on the other side of the garden a somewhat neglected ornamental pond. There's obviously been some attempt at landscaping but the effect is less Capability Brown and more incapable bruin. A ramshackle potting shed completes the image of horticultural incompetence. To the north, an overgrown pergola leads into a meadow.
+===========
+==>STEP NUM: 6
+==>ACT: north
+==>OBSERVATION: In a small meadow
+I'm in a small meadow at the back of the cottage, separated from the forest by a rickety fence. In the middle of the meadow is what appears to be a homemade wind turbine! To the south, through the tangled pergola, is the garden.
+Daisy the cow is standing here, chewing disinterestedly on a mouthful of hay.
+===========
+==>STEP NUM: 7
+==>ACT: south
+==>OBSERVATION: In the garden
+In the plot is an overripe pumpkin.
+Daisy the cow walks towards me from the north.
+===========
+==>STEP NUM: 8
+==>ACT: east
+==>OBSERVATION: In a clearing in the forest
+Daisy the cow walks towards me from the west.
+===========
+==>STEP NUM: 9
+==>ACT: south
+==>OBSERVATION: At a fork in the path
+Daisy the cow walks towards me from the north.
+===========
+==>STEP NUM: 10
+==>ACT: east
+==>OBSERVATION: On a path in the forest
+Daisy the cow walks towards me from the west.
+===========
+==>STEP NUM: 11
+==>ACT: north
+==>OBSERVATION: In the enchanted forest
+An old pedlar is sitting on a log here, tending to his bunions.
+Daisy the cow walks towards me from the south.
+
+
+'Ah, now there's a lovely specimen!' says the Pedlar, getting up from his log and feeling Daisy's knees. He seems satisfied. 'all present and correct! Here you go love - you'll be cured in no time!' He opens his suitcase and hands me a small packet, then leads Daisy off into the forest.
+
+[My score has just gone up by three points.]
+===========
+==>STEP NUM: 12
+==>ACT: south
+==>OBSERVATION: On a path in the forest
+===========
+==>STEP NUM: 13
+==>ACT: west
+==>OBSERVATION: At a fork in the path
+===========
+==>STEP NUM: 14
+==>ACT: north
+==>OBSERVATION: In a clearing in the forest
+===========
+==>STEP NUM: 15
+==>ACT: west
+==>OBSERVATION: In the garden
+In the plot is an overripe pumpkin.
+===========
+==>STEP NUM: 16
+==>ACT: in
+==>OBSERVATION: In the potting shed
+I'm in the potting shed, a ramshackle structure that was obviously cobbled together in five minutes some idle Sunday afternoon.  I didn't know bears had green fingers. In fact I didn't know they had fingers at all. Plant pots of all sizes are scattered about the shed untidily and the whole place is festooned with cobwebs.
+In the corner is an old metal trunk marked 'FISHING TACKLE.'
+
+I can also see a pair of secateurs and a ratty old paintbrush here.
+===========
+==>STEP NUM: 17
+==>ACT: out
+==>OBSERVATION: In the garden
+In the plot is an overripe pumpkin.
+===========
+==>STEP NUM: 18
+==>ACT: north
+==>OBSERVATION: In the pantry
+I'm in the pantry, a small claustrophobic room which smells faintly of cinammon, honey and the mouse droppings that are liberally sprinkled across the tiled floor. There is an upright freezer in the corner and some sturdy shelves stacked high with box after box of McScottie's porridge oats. The kitchen lies to the south.
+
+On the shelf is a matchbox.
+
+Over in the corner of the pantry, underneath the shelves is a mousetrap.
+===========
+==>STEP NUM: 19
+==>ACT: south
+==>OBSERVATION: In the kitchen
+
+On the dining table are a spoon, a large bowl of hot porridge, a medium-sized bowl of cold porridge and a tiny little bowl of just-right porridge.
+===========
+==>STEP NUM: 20
+==>ACT: east
+==>OBSERVATION: In the hall
+My first impression upon entering the entrance hall of the Three Bears' cottage is of hundreds of eyes staring glassily down at me from every corner. Virtually every forest creature from the tiniest shrew to the largest moose is represented in a macabre collection of hunting trophies. And not just forest creatures either; I'd swear that some of these heads are human! On one wall is a full length portrait of the bear clan. A narrow staircase leads upwards, and there are doors to the north and west. Completing the morbid ambiance is a motheaten bearskin rug.
+
+
+'Ding-Dong!' The doorbell rings. A booming voice can be heard from the direction of the front door: 'Little pigs, little pigs, LET ME IN, or I'll huff and I'll puff and I'll BLOW YOUR HOUSE IN!'
+===========
+==>STEP NUM: 21
+==>ACT: up
+==>OBSERVATION: In the bedroom
+I'm in the Three Bears' bedroom, a small attic room with steeply sloping walls. They have the weirdest sleeping arrangements. There's a tiny little bed, a medium-sized bed and a huge bed. A narrow staircase leads down to the hall.
+The Big Bad Wolf is here, doing his best to look mean and dangerous.
+A tiny dormer window looks out onto the clearing.
+For some unaccountable reason, Sleeping Beauty is lying fast asleep on the tiny little bed.
+===========
+==>STEP NUM: 22
+==>ACT: down
+==>OBSERVATION: 'Well,' says the wolf, 'it was nice talking to you, but I really must be off. Those piggies won't get eaten all by themselves.'
+
+In the hall
+===========
+==>STEP NUM: 23
+==>ACT: north
+==>OBSERVATION: In the sitting room
+From its floral carpet to its lovingly dusted knick-knacks, The Three Bears' sitting room is a chintzy abomination of taste, the sort of room that would make any sane bear want to go back and live in a cave. Three chairs are arranged around a small coffee table; a large chair, a medium-sized chair and a tiny little chair.
+
+On the small coffee table is a copy of 'Hail!' magazine.
+===========
+==>STEP NUM: 24
+==>ACT: south
+==>OBSERVATION: In the hall
+The Big Bad Wolf prowls into the room from above.
+===========
+==>STEP NUM: 25
+==>ACT: west
+==>OBSERVATION: In the kitchen
+
+On the dining table are a spoon, a large bowl of hot porridge, a medium-sized bowl of cold porridge and a tiny little bowl of just-right porridge.
+===========
+==>STEP NUM: 26
+==>ACT: north
+==>OBSERVATION: In the pantry
+
+On the shelf is a matchbox.
+
+Over in the corner of the pantry, underneath the shelves is a mousetrap.
+===========
+==>STEP NUM: 27
+==>ACT: south
+==>OBSERVATION: In the kitchen
+
+On the dining table are a spoon, a large bowl of hot porridge, a medium-sized bowl of cold porridge and a tiny little bowl of just-right porridge.
+===========
+==>STEP NUM: 28
+==>ACT: east
+==>OBSERVATION: In the hall
+The Big Bad Wolf is here, doing his best to look mean and dangerous.
+'Here, piggy piggy piggy!' says the wolf, wandering off upwards.
+===========
+==>STEP NUM: 29
+==>ACT: north
+==>OBSERVATION: In the sitting room
+
+On the small coffee table is a copy of 'Hail!' magazine.
+
+I can see a pair of secateurs here.
+===========
+==>STEP NUM: 30
+==>ACT: south
+==>OBSERVATION: In the hall
+===========
+==>STEP NUM: 31
+==>ACT: west
+==>OBSERVATION: In the kitchen
+
+On the dining table are a spoon, a large bowl of hot porridge, a medium-sized bowl of cold porridge and a tiny little bowl of just-right porridge.
+===========
+==>STEP NUM: 32
+==>ACT: north
+==>OBSERVATION: In the pantry
+
+Over in the corner of the pantry, underneath the shelves is a mousetrap.
+===========
+==>STEP NUM: 33
+==>ACT: south
+==>OBSERVATION: In the kitchen
+
+On the dining table are a spoon, a large bowl of hot porridge, a medium-sized bowl of cold porridge and a tiny little bowl of just-right porridge.
+===========
+==>STEP NUM: 34
+==>ACT: east
+==>OBSERVATION: In the hall
+===========
+==>STEP NUM: 35
+==>ACT: up
+==>OBSERVATION: In the bedroom
+The Big Bad Wolf is here, doing his best to look mean and dangerous.
+A tiny dormer window looks out onto the clearing.
+For some unaccountable reason, Sleeping Beauty is lying fast asleep on the tiny little bed.
+===========
+==>STEP NUM: 36
+==>ACT: down
+==>OBSERVATION: 'Hideous.' says the wolf, shaking his head in disbelief. 'I wouldn't use that curtain material for dusters.'
+
+In the hall
+The Big Bad Wolf follows me.
+===========
+==>STEP NUM: 37
+==>ACT: out
+==>OBSERVATION: On the porch
+A battered old dustbin sits to one side of the porch.
+The Big Bad Wolf follows me.
+'Ah, my natural habitat!' says the wolf, 'There really is nothing quite like the forest!'
+===========
+==>STEP NUM: 38
+==>ACT: south
+==>OBSERVATION: In a clearing in the forest
+The Big Bad Wolf follows me.
+===========
+==>STEP NUM: 39
+==>ACT: west
+==>OBSERVATION: In the garden
+In the plot is an overripe pumpkin.
+
+I can also see a broken bottle, a small packet (which is empty), a trowel and a crumpled note here.
+The Big Bad Wolf follows me.
+===========
+==>STEP NUM: 40
+==>ACT: north
+==>OBSERVATION: In a small meadow
+The Big Bad Wolf follows me.
+===========
+==>STEP NUM: 41
+==>ACT: south
+==>OBSERVATION: In the garden
+In the plot is an overripe pumpkin.
+
+I can also see a broken bottle, a small packet (which is empty), a trowel and a crumpled note here.
+===========
+==>STEP NUM: 42
+==>ACT: east
+==>OBSERVATION: In a clearing in the forest
+===========
+==>STEP NUM: 43
+==>ACT: north
+==>OBSERVATION: On the porch
+A battered old dustbin sits to one side of the porch.
+===========
+==>STEP NUM: 44
+==>ACT: in
+==>OBSERVATION: In the hall
+===========
+==>STEP NUM: 45
+==>ACT: west
+==>OBSERVATION: In the kitchen
+
+On the dining table are a spoon, a large bowl of hot porridge, a medium-sized bowl of cold porridge and a tiny little bowl of just-right porridge.
+===========
+==>STEP NUM: 46
+==>ACT: north
+==>OBSERVATION: In the pantry
+
+Over in the corner of the pantry, underneath the shelves is a mousetrap.
+===========
+==>STEP NUM: 47
+==>ACT: south
+==>OBSERVATION: In the kitchen
+
+On the dining table are a spoon, a large bowl of hot porridge, a medium-sized bowl of cold porridge and a tiny little bowl of just-right porridge.
+===========
+==>STEP NUM: 48
+==>ACT: east
+==>OBSERVATION: In the hall
+
+I can see a matchbox here.
+===========
+==>STEP NUM: 49
+==>ACT: down
+==>OBSERVATION: In the cellar
+I'm in a dingy cellar with bare brick walls and the musty smell of a laundry room. There is an old upright washing machine in the corner and a fusebox on the wall. Steps lead up to the trapdoor in the ceiling. A battered old wardrobe stands against the western wall of the cellar.
+===========
+==>STEP NUM: 50
+==>ACT: up
+==>OBSERVATION: In the hall
+
+I can see a matchbox here.
+===========
+==>STEP NUM: 51
+==>ACT: west
+==>OBSERVATION: In the kitchen
+
+On the dining table are a spoon, a large bowl of hot porridge, a medium-sized bowl of cold porridge and a tiny little bowl of just-right porridge.
+===========
+==>STEP NUM: 52
+==>ACT: east
+==>OBSERVATION: In the hall
+
+I can see a matchbox here.
+===========
+==>STEP NUM: 53
+==>ACT: down
+==>OBSERVATION: In the cellar
+
+I can see an old brass key here.
+===========
+==>STEP NUM: 54
+==>ACT: up
+==>OBSERVATION: In the hall
+
+I can see a matchbox here.
+===========
+==>STEP NUM: 55
+==>ACT: north
+==>OBSERVATION: In the sitting room
+
+On the small coffee table is a copy of 'Hail!' magazine.
+
+I can see a pair of secateurs here.
+===========
+==>STEP NUM: 56
+==>ACT: out
+==>OBSERVATION: In the sitting room
+
+On the small coffee table is a copy of 'Hail!' magazine.
+
+I can see a pair of secateurs here.
+===========
+==>STEP NUM: 57
+==>ACT: south
+==>OBSERVATION: In the hall
+
+I can see a matchbox here.
+===========
+==>STEP NUM: 58
+==>ACT: down
+==>OBSERVATION: In the cellar
+
+I can see an old brass key here.
+===========
+==>STEP NUM: 59
+==>ACT: west
+==>OBSERVATION: In a dark passage
+I'm in a dark passage carved into the rock. It curves around to the north.
+===========
+==>STEP NUM: 60
+==>ACT: north
+==>OBSERVATION: In a dungeon
+This seems to be a small annex to the main part of the cellar. Everything about the decor of this place says 'dungeon' to me, from the guttering torches to the ragrolled paint effect on the walls that's meant to look like ancient stonework. Unfortunately the rotting skeleton manacled to the wall is only too real. A sign on the wall opposite the skeleton says 'When we say NO TRESPASSERS we mean NO TRESPASSERS!' Something for the bears' victims to think about while they languish in this dump. The passage leads south back to the cellar.
+===========
+==>STEP NUM: 61
+==>ACT: south
+==>OBSERVATION: In a dark passage
+===========
+==>STEP NUM: 62
+==>ACT: east
+==>OBSERVATION: In the cellar
+
+I can see an old brass key here.
+===========
+==>STEP NUM: 63
+==>ACT: up
+==>OBSERVATION: In the hall
+
+I can see a matchbox here.
+===========
+==>STEP NUM: 64
+==>ACT: north
+==>OBSERVATION: In the sitting room
+
+On the small coffee table is a copy of 'Hail!' magazine.
+
+I can see a pair of secateurs here.
+===========
+==>STEP NUM: 65
+==>ACT: south
+==>OBSERVATION: In the hall
+
+I can see a matchbox here.
+===========
+==>STEP NUM: 66
+==>ACT: down
+==>OBSERVATION: In the cellar
+===========
+==>STEP NUM: 67
+==>ACT: up
+==>OBSERVATION: In the hall
+
+I can see a matchbox here.
+===========
+==>STEP NUM: 68
+==>ACT: north
+==>OBSERVATION: In the sitting room
+
+On the small coffee table is a copy of 'Hail!' magazine.
+
+I can see a spoon, an antimacassar and an old brass key here.
+===========
+==>STEP NUM: 69
+==>ACT: south
+==>OBSERVATION: In the hall
+
+I can see a matchbox here.
+===========
+==>STEP NUM: 70
+==>ACT: out
+==>OBSERVATION: On the porch
+A battered old dustbin sits to one side of the porch.
+===========
+==>STEP NUM: 71
+==>ACT: south
+==>OBSERVATION: In a clearing in the forest
+===========
+==>STEP NUM: 72
+==>ACT: west
+==>OBSERVATION: In the garden
+In the plot is an overripe pumpkin.
+
+I can also see a broken bottle, a small packet (which is empty), a trowel and a crumpled note here.
+===========
+==>STEP NUM: 73
+==>ACT: down
+==>OBSERVATION: In the garden
+In the plot is an overripe pumpkin.
+
+I can also see a broken bottle, a small packet (which is empty), a trowel and a crumpled note here.
+===========
+==>STEP NUM: 74
+==>ACT: east
+==>OBSERVATION: In a clearing in the forest
+===========
+==>STEP NUM: 75
+==>ACT: north
+==>OBSERVATION: On the porch
+A battered old dustbin sits to one side of the porch.
+===========
+==>STEP NUM: 76
+==>ACT: in
+==>OBSERVATION: In the hall
+
+I can see a matchbox here.
+===========
+==>STEP NUM: 77
+==>ACT: north
+==>OBSERVATION: In the sitting room
+
+On the small coffee table is a copy of 'Hail!' magazine.
+
+I can see a spoon, an antimacassar and an old brass key here.
+===========
+==>STEP NUM: 78
+==>ACT: south
+==>OBSERVATION: In the hall
+
+I can see a matchbox here.
+===========
+==>STEP NUM: 79
+==>ACT: out
+==>OBSERVATION: On the porch
+A battered old dustbin sits to one side of the porch.
+
+I can also see a package (which is closed) here.
+===========
+==>STEP NUM: 80
+==>ACT: in
+==>OBSERVATION: In the hall
+
+I can see a matchbox here.
+===========
+==>STEP NUM: 81
+==>ACT: west
+==>OBSERVATION: In the kitchen
+
+On the dining table are a large bowl (which is empty), a medium-sized bowl (which is empty) and a tiny little bowl (which is empty).
+
+I can see a gigantic bowl (which is empty) here.
+===========
+==>STEP NUM: 82
+==>ACT: east
+==>OBSERVATION: In the hall
+
+I can see a matchbox here.
+===========
+==>STEP NUM: 83
+==>ACT: north
+==>OBSERVATION: In the sitting room
+
+On the small coffee table is a copy of 'Hail!' magazine.
+
+I can see a spoon, an antimacassar and an old brass key here.
+===========
+==>STEP NUM: 84
+==>ACT: south
+==>OBSERVATION: In the hall
+
+I can see a matchbox here.
+===========
+==>STEP NUM: 85
+==>ACT: down
+==>OBSERVATION: In the cellar
+===========
+==>STEP NUM: 86
+==>ACT: up
+==>OBSERVATION: In the hall
+
+I can see a matchbox here.
+===========
+==>STEP NUM: 87
+==>ACT: north
+==>OBSERVATION: In the sitting room
+
+On the small coffee table is a copy of 'Hail!' magazine.
+
+I can see a spoon, an antimacassar and an old brass key here.
+===========
+==>STEP NUM: 88
+==>ACT: south
+==>OBSERVATION: In the hall
+
+I can see a matchbox here.
+===========
+==>STEP NUM: 89
+==>ACT: down
+==>OBSERVATION: In the cellar
+===========
+==>STEP NUM: 90
+==>ACT: up
+==>OBSERVATION: In the hall
+
+I can see a matchbox here.
+===========
+==>STEP NUM: 91
+==>ACT: north
+==>OBSERVATION: In the sitting room
+
+On the small coffee table is a copy of 'Hail!' magazine.
+
+I can see a spoon, an antimacassar and an old brass key here.
+===========
+==>STEP NUM: 92
+==>ACT: west
+==>OBSERVATION: In Papa Bear's workshop
+This must be where Papa Bear does all his D.I.Y. It's a small but tidy workshop with a bench and an old filing cabinet in the corner. Pinned to the walls are what appear to be the blueprints for various devices.
+
+On the bench are a wrench and a tin of gold paint.
+Sitting in the middle of the floor is a huge wooden crate, stencilled with the words: "DANGER: PROTOTYPE!"
+===========
+==>STEP NUM: 93
+==>ACT: east
+==>OBSERVATION: In a cave
+
+I can see an empty beer can and a TV remote control here.
+===========
+==>STEP NUM: 94
+==>ACT: south
+==>OBSERVATION: In the hall
+
+I can see a leaflet, a pair of very thick spectacles and a matchbox here.
+===========
+==>STEP NUM: 95
+==>ACT: up
+==>OBSERVATION: In the bedroom
+A tiny dormer window looks out onto the clearing.
+For some unaccountable reason, Sleeping Beauty is lying fast asleep on the tiny little bed.
+===========
+==>STEP NUM: 96
+==>ACT: down
+==>OBSERVATION: In the hall
+
+I can see a leaflet, a pair of very thick spectacles and a matchbox here.
+===========
+==>STEP NUM: 97
+==>ACT: west
+==>OBSERVATION: In the kitchen
+
+On the dining table are a large bowl (which is empty), a medium-sized bowl (which is empty) and a tiny little bowl (which is empty).
+
+I can see a gigantic bowl (which is empty) here.
+===========
+==>STEP NUM: 98
+==>ACT: east
+==>OBSERVATION: In the hall
+
+I can see a leaflet, a pair of very thick spectacles and a matchbox here.
+===========
+==>STEP NUM: 99
+==>ACT: out
+==>OBSERVATION: On the porch
+A battered old dustbin sits to one side of the porch.
+
+I can also see a package (which is empty) and a pair of secateurs here.
+===========
+==>STEP NUM: 100
+==>ACT: south
+==>OBSERVATION: In a clearing in the forest
+===========
+==>STEP NUM: 101
+==>ACT: west
+==>OBSERVATION: In the garden
+In the plot is an overripe pumpkin.
+
+I can also see a broken bottle, a small packet (which is empty), a trowel and a crumpled note here.
+===========
+==>STEP NUM: 102
+==>ACT: east
+==>OBSERVATION: In a clearing in the forest
+===========
+==>STEP NUM: 103
+==>ACT: north
+==>OBSERVATION: On the porch
+A battered old dustbin sits to one side of the porch.
+
+I can also see a package (which is empty) and a pair of secateurs here.
+===========
+==>STEP NUM: 104
+==>ACT: in
+==>OBSERVATION: In the hall
+
+I can see a leaflet, a pair of very thick spectacles and a matchbox here.
+===========
+==>STEP NUM: 105
+==>ACT: up
+==>OBSERVATION: In the bedroom
+A tiny dormer window looks out onto the clearing.
+For some unaccountable reason, Sleeping Beauty is lying fast asleep on the tiny little bed.
+
+I can also see a rather thin blanket and my Fairy Godmother here.
+===========
+==>STEP NUM: 106
+==>ACT: down
+==>OBSERVATION: In the hall
+
+I can see a leaflet, a pair of very thick spectacles and a matchbox here.
+===========
+==>STEP NUM: 107
+==>ACT: out
+==>OBSERVATION: On the porch
+A battered old dustbin sits to one side of the porch.
+
+I can also see a package (which is empty) and a pair of secateurs here.
+===========
+==>STEP NUM: 108
+==>ACT: south
+==>OBSERVATION: In a clearing in the forest
+===========
+==>STEP NUM: 109
+==>ACT: west
+==>OBSERVATION: In the garden
+In the plot is an overripe pumpkin.
+
+I can also see a golden ball, a broken bottle, a small packet (which is empty), a trowel and a crumpled note here.
+===========
+==>STEP NUM: 110
+==>ACT: east
+==>OBSERVATION: In a clearing in the forest
+===========
+==>STEP NUM: 111
+==>ACT: north
+==>OBSERVATION: On the porch
+A battered old dustbin sits to one side of the porch.
+
+I can also see a package (which is empty) and a pair of secateurs here.
+===========
+==>STEP NUM: 112
+==>ACT: in
+==>OBSERVATION: In the hall
+
+I can see a leaflet, a pair of very thick spectacles and a matchbox here.
+===========
+==>STEP NUM: 113
+==>ACT: up
+==>OBSERVATION: In the bedroom
+A tiny dormer window looks out onto the clearing.
+
+I can also see a rather thin blanket and my Fairy Godmother here.
+===========
+==>STEP NUM: 114
+==>ACT: down
+==>OBSERVATION: In the hall
+
+I can see a leaflet, a pair of very thick spectacles and a matchbox here.
+===========
+==>STEP NUM: 115
+==>ACT: west
+==>OBSERVATION: In the kitchen
+
+On the dining table are a large bowl (which is empty), a medium-sized bowl (which is empty) and a tiny little bowl (which is empty).
+
+I can see a gigantic bowl (which is empty) here.
+===========
+==>STEP NUM: 116
+==>ACT: north
+==>OBSERVATION: In the pantry
+
+Over in the corner of the pantry, underneath the shelves is a mousetrap.
+
+I can also see a carton of porridge oats (which is empty) here.
+===========
+==>STEP NUM: 117
+==>ACT: south
+==>OBSERVATION: In the kitchen
+
+On the dining table are a large bowl (which is empty), a medium-sized bowl (which is empty) and a tiny little bowl (which is empty).
+
+I can see a gigantic bowl (which is empty) here.
+===========
+==>STEP NUM: 118
+==>ACT: east
+==>OBSERVATION: In the hall
+
+I can see a leaflet, a pair of very thick spectacles and a matchbox here.
+===========
+==>STEP NUM: 119
+==>ACT: up
+==>OBSERVATION: In the bedroom
+A tiny dormer window looks out onto the clearing.
+
+I can also see a rather thin blanket and my Fairy Godmother here.
+===========
+==>STEP NUM: 120
+==>ACT: down
+==>OBSERVATION: In the hall
+
+I can see a leaflet, a pair of very thick spectacles and a matchbox here.
+===========
+==>STEP NUM: 121
+==>ACT: north
+==>OBSERVATION: In the sitting room
+
+On the small coffee table is a copy of 'Hail!' magazine.
+
+I can see a spoon, an antimacassar and an old brass key here.
+===========
+==>STEP NUM: 122
+==>ACT: west
+==>OBSERVATION: In Papa Bear's workshop
+Sitting amidst the wreckage of the crate is a magic porridge pot.
+===========
+==>STEP NUM: 123
+==>ACT: east
+==>OBSERVATION: In a cave
+
+I can see an empty beer can and a TV remote control here.
+===========
+==>STEP NUM: 124
+==>ACT: south
+==>OBSERVATION: In the hall
+
+I can see a leaflet, a pair of very thick spectacles and a matchbox here.
+===========
+==>STEP NUM: 125
+==>ACT: down
+==>OBSERVATION: In the cellar
+The magic porridge pot is sitting in the middle of the room.
+
+I can also see my underwear and a "distressed" Laura Ashley dress here.
+===========
+==>STEP NUM: 126
+==>ACT: up
+==>OBSERVATION: I scramble up the rickety steps just in time - a moment later the lower part of the staircase is smashed to splinters by a wave of bubbling porridge. I look back to see the cellar completely submerged in boiling oatmeal.
+
+
+In the hall
+
+I can see a leaflet, a pair of very thick spectacles and a matchbox here.
+===========
+==>STEP NUM: 127
+==>ACT: up
+==>OBSERVATION: In the bedroom
+Lying in the middle of the floor with all four legs pointing heavenward is a dead coach horse.
+A tiny dormer window looks out onto the clearing.
+
+I can also see a rather thin blanket here.
+===========

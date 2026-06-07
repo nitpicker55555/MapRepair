@@ -1,0 +1,44 @@
+[
+  {
+    "src_node": "master bedroom",
+    "dst_node": "master bathroom",
+    "action": "west",
+    "seen_in_forward": 1
+  },
+  {
+    "src_node": "master bathroom",
+    "dst_node": "master bedroom",
+    "action": "east",
+    "seen_in_forward": 2
+  },
+  {
+    "src_node": "master bedroom",
+    "dst_node": "upstairs hallway",
+    "action": "south",
+    "seen_in_forward": 3
+  },
+  {
+    "src_node": "upstairs hallway",
+    "dst_node": "kids' bathroom",
+    "action": "east",
+    "seen_in_forward": 4
+  },
+  {
+    "src_node": "kids' bathroom",
+    "dst_node": "upstairs hallway",
+    "action": "west",
+    "seen_in_forward": 5
+  },
+  {
+    "src_node": "upstairs hallway",
+    "dst_node": "kati's room",
+    "action": "south",
+    "seen_in_forward": 7
+  },
+  {
+    "src_node": "kati's room",
+    "dst_node": "upstairs hallway",
+    "action": "north",
+    "seen_in_forward": 8
+  }
+]

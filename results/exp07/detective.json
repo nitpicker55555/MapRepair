@@ -1,0 +1,16 @@
+{
+  "game": "detective",
+  "num_conflicts": 72,
+  "iterations": 14,
+  "success": false,
+  "remaining_conflicts": 30,
+  "pre_edge_recall": 0.46153846153846156,
+  "pre_strict_direction_match": 0.46153846153846156,
+  "pre_edge_direction_accuracy": 1.0,
+  "post_edge_recall": 0.46153846153846156,
+  "post_strict_direction_match": 0.41025641025641024,
+  "post_permissive_direction_match": 0.5384615384615384,
+  "post_edge_direction_accuracy": 0.8888888888888888,
+  "edge_recall_delta": 0.0,
+  "strict_direction_delta": -0.05128205128205132
+}

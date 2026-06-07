@@ -1,0 +1,806 @@
+{
+  "id": "ludicorp",
+  "dataset": "mango",
+  "n_rooms": 23,
+  "n_gt_edges": 43,
+  "n_llm_edges": 35,
+  "rooms": [
+    {
+      "id": "abandoned well",
+      "label": "abandoned well",
+      "description": ""
+    },
+    {
+      "id": "bike shed",
+      "label": "bike shed",
+      "description": ""
+    },
+    {
+      "id": "bottom of the well",
+      "label": "bottom of the well",
+      "description": ""
+    },
+    {
+      "id": "car",
+      "label": "car",
+      "description": ""
+    },
+    {
+      "id": "corner of the carpark",
+      "label": "corner of the carpark",
+      "description": ""
+    },
+    {
+      "id": "damp corner",
+      "label": "damp corner",
+      "description": ""
+    },
+    {
+      "id": "delivery bay",
+      "label": "delivery bay",
+      "description": ""
+    },
+    {
+      "id": "east of office",
+      "label": "east of office",
+      "description": ""
+    },
+    {
+      "id": "front of the office",
+      "label": "front of the office",
+      "description": ""
+    },
+    {
+      "id": "generator room",
+      "label": "generator room",
+      "description": ""
+    },
+    {
+      "id": "long corridor, west end",
+      "label": "long corridor, west end",
+      "description": ""
+    },
+    {
+      "id": "main entrance",
+      "label": "main entrance",
+      "description": ""
+    },
+    {
+      "id": "maintanence stairwell (bottom)",
+      "label": "maintanence stairwell (bottom)",
+      "description": ""
+    },
+    {
+      "id": "maintanence stairwell (top)",
+      "label": "maintanence stairwell (top)",
+      "description": ""
+    },
+    {
+      "id": "north-south corridoor",
+      "label": "north-south corridoor",
+      "description": ""
+    },
+    {
+      "id": "some bushes",
+      "label": "some bushes",
+      "description": ""
+    },
+    {
+      "id": "storage shed",
+      "label": "storage shed",
+      "description": ""
+    },
+    {
+      "id": "storage shed door",
+      "label": "storage shed door",
+      "description": ""
+    },
+    {
+      "id": "storeroom",
+      "label": "storeroom",
+      "description": ""
+    },
+    {
+      "id": "the delivery bay gateway",
+      "label": "the delivery bay gateway",
+      "description": ""
+    },
+    {
+      "id": "the main carpark",
+      "label": "the main carpark",
+      "description": ""
+    },
+    {
+      "id": "vault door",
+      "label": "vault door",
+      "description": ""
+    },
+    {
+      "id": "west end",
+      "label": "west end",
+      "description": ""
+    },
+    {
+      "id": "west of office",
+      "label": "west of office",
+      "description": ""
+    }
+  ],
+  "walkthrough": [],
+  "states": {
+    "gt": {
+      "edges": [
+        {
+          "src": "front of the office",
+          "dst": "the main carpark",
+          "dir": "south"
+        },
+        {
+          "src": "front of the office",
+          "dst": "east of office",
+          "dir": "east"
+        },
+        {
+          "src": "front of the office",
+          "dst": "main entrance",
+          "dir": "north"
+        },
+        {
+          "src": "front of the office",
+          "dst": "west of office",
+          "dir": "west"
+        },
+        {
+          "src": "the main carpark",
+          "dst": "corner of the carpark",
+          "dir": "southeast"
+        },
+        {
+          "src": "the main carpark",
+          "dst": "front of the office",
+          "dir": "north"
+        },
+        {
+          "src": "the main carpark",
+          "dst": "the delivery bay gateway",
+          "dir": "west"
+        },
+        {
+          "src": "east of office",
+          "dst": "damp corner",
+          "dir": "east"
+        },
+        {
+          "src": "east of office",
+          "dst": "some bushes",
+          "dir": "south"
+        },
+        {
+          "src": "east of office",
+          "dst": "front of the office",
+          "dir": "west"
+        },
+        {
+          "src": "main entrance",
+          "dst": "front of the office",
+          "dir": "south"
+        },
+        {
+          "src": "west of office",
+          "dst": "bike shed",
+          "dir": "west"
+        },
+        {
+          "src": "west of office",
+          "dst": "front of the office",
+          "dir": "east"
+        },
+        {
+          "src": "corner of the carpark",
+          "dst": "the main carpark",
+          "dir": "northwest"
+        },
+        {
+          "src": "the delivery bay gateway",
+          "dst": "delivery bay",
+          "dir": "west"
+        },
+        {
+          "src": "the delivery bay gateway",
+          "dst": "the main carpark",
+          "dir": "east"
+        },
+        {
+          "src": "car",
+          "dst": "corner of the carpark",
+          "dir": "out"
+        },
+        {
+          "src": "damp corner",
+          "dst": "storage shed door",
+          "dir": "south"
+        },
+        {
+          "src": "damp corner",
+          "dst": "east of office",
+          "dir": "west"
+        },
+        {
+          "src": "some bushes",
+          "dst": "maintanence stairwell (top)",
+          "dir": "south"
+        },
+        {
+          "src": "some bushes",
+          "dst": "east of office",
+          "dir": "north"
+        },
+        {
+          "src": "storage shed door",
+          "dst": "storage shed",
+          "dir": "east"
+        },
+        {
+          "src": "storage shed door",
+          "dst": "abandoned well",
+          "dir": "south"
+        },
+        {
+          "src": "storage shed door",
+          "dst": "damp corner",
+          "dir": "north"
+        },
+        {
+          "src": "storage shed",
+          "dst": "storage shed door",
+          "dir": "west"
+        },
+        {
+          "src": "abandoned well",
+          "dst": "bottom of the well",
+          "dir": "down"
+        },
+        {
+          "src": "abandoned well",
+          "dst": "storage shed door",
+          "dir": "north"
+        },
+        {
+          "src": "bottom of the well",
+          "dst": "abandoned well",
+          "dir": "up"
+        },
+        {
+          "src": "maintanence stairwell (top)",
+          "dst": "maintanence stairwell (bottom)",
+          "dir": "down"
+        },
+        {
+          "src": "maintanence stairwell (top)",
+          "dst": "some bushes",
+          "dir": "north"
+        },
+        {
+          "src": "maintanence stairwell (bottom)",
+          "dst": "generator room",
+          "dir": "northeast"
+        },
+        {
+          "src": "maintanence stairwell (bottom)",
+          "dst": "maintanence stairwell (top)",
+          "dir": "up"
+        },
+        {
+          "src": "generator room",
+          "dst": "maintanence stairwell (bottom)",
+          "dir": "southwest"
+        },
+        {
+          "src": "bike shed",
+          "dst": "west of office",
+          "dir": "east"
+        },
+        {
+          "src": "delivery bay",
+          "dst": "storeroom",
+          "dir": "north"
+        },
+        {
+          "src": "delivery bay",
+          "dst": "the delivery bay gateway",
+          "dir": "east"
+        },
+        {
+          "src": "storeroom",
+          "dst": "long corridor, west end",
+          "dir": "north"
+        },
+        {
+          "src": "storeroom",
+          "dst": "delivery bay",
+          "dir": "south"
+        },
+        {
+          "src": "long corridor, west end",
+          "dst": "north-south corridoor",
+          "dir": "north"
+        },
+        {
+          "src": "long corridor, west end",
+          "dst": "storeroom",
+          "dir": "south"
+        },
+        {
+          "src": "north-south corridoor",
+          "dst": "vault door",
+          "dir": "north"
+        },
+        {
+          "src": "north-south corridoor",
+          "dst": "long corridor, west end",
+          "dir": "south"
+        },
+        {
+          "src": "vault door",
+          "dst": "north-south corridoor",
+          "dir": "south"
+        }
+      ]
+    },
+    "llm_built": {
+      "edges": [
+        {
+          "src": "the main carpark",
+          "dst": "corner of the carpark",
+          "dir": "southeast",
+          "kind": "correct"
+        },
+        {
+          "src": "the main carpark",
+          "dst": "front of the office",
+          "dir": "north",
+          "kind": "correct"
+        },
+        {
+          "src": "corner of the carpark",
+          "dst": "the main carpark",
+          "dir": "northwest",
+          "kind": "correct"
+        },
+        {
+          "src": "front of the office",
+          "dst": "east of office",
+          "dir": "east",
+          "kind": "correct"
+        },
+        {
+          "src": "front of the office",
+          "dst": "main entrance",
+          "dir": "north",
+          "kind": "correct"
+        },
+        {
+          "src": "front of the office",
+          "dst": "west of office",
+          "dir": "west",
+          "kind": "correct"
+        },
+        {
+          "src": "front of the office",
+          "dst": "the delivery bay gateway",
+          "dir": "west",
+          "kind": "wrong_dst"
+        },
+        {
+          "src": "east of office",
+          "dst": "front of the office",
+          "dir": "west",
+          "kind": "correct"
+        },
+        {
+          "src": "east of office",
+          "dst": "damp corner",
+          "dir": "east",
+          "kind": "correct"
+        },
+        {
+          "src": "east of office",
+          "dst": "some bushes",
+          "dir": "south",
+          "kind": "correct"
+        },
+        {
+          "src": "damp corner",
+          "dst": "east of office",
+          "dir": "west",
+          "kind": "correct"
+        },
+        {
+          "src": "damp corner",
+          "dst": "storage shed door",
+          "dir": "south",
+          "kind": "correct"
+        },
+        {
+          "src": "storage shed door",
+          "dst": "damp corner",
+          "dir": "north",
+          "kind": "correct"
+        },
+        {
+          "src": "storage shed door",
+          "dst": "storage shed",
+          "dir": "east",
+          "kind": "correct"
+        },
+        {
+          "src": "storage shed door",
+          "dst": "abandoned well",
+          "dir": "south",
+          "kind": "correct"
+        },
+        {
+          "src": "storage shed",
+          "dst": "storage shed door",
+          "dir": "west",
+          "kind": "correct"
+        },
+        {
+          "src": "abandoned well",
+          "dst": "storage shed door",
+          "dir": "north",
+          "kind": "correct"
+        },
+        {
+          "src": "abandoned well",
+          "dst": "bottom of the well",
+          "dir": "down",
+          "kind": "correct"
+        },
+        {
+          "src": "bottom of the well",
+          "dst": "abandoned well",
+          "dir": "up",
+          "kind": "correct"
+        },
+        {
+          "src": "some bushes",
+          "dst": "east of office",
+          "dir": "north",
+          "kind": "correct"
+        },
+        {
+          "src": "some bushes",
+          "dst": "maintanence stairwell (top)",
+          "dir": "south",
+          "kind": "correct"
+        },
+        {
+          "src": "maintanence stairwell (top)",
+          "dst": "some bushes",
+          "dir": "north",
+          "kind": "correct"
+        },
+        {
+          "src": "maintanence stairwell (top)",
+          "dst": "maintanence stairwell (bottom)",
+          "dir": "down",
+          "kind": "correct"
+        },
+        {
+          "src": "maintanence stairwell (bottom)",
+          "dst": "maintanence stairwell (top)",
+          "dir": "up",
+          "kind": "correct"
+        },
+        {
+          "src": "maintanence stairwell (bottom)",
+          "dst": "generator room",
+          "dir": "northeast",
+          "kind": "correct"
+        },
+        {
+          "src": "generator room",
+          "dst": "maintanence stairwell (bottom)",
+          "dir": "southwest",
+          "kind": "correct"
+        },
+        {
+          "src": "main entrance",
+          "dst": "front of the office",
+          "dir": "south",
+          "kind": "correct"
+        },
+        {
+          "src": "west of office",
+          "dst": "front of the office",
+          "dir": "east",
+          "kind": "correct"
+        },
+        {
+          "src": "west of office",
+          "dst": "bike shed",
+          "dir": "west",
+          "kind": "correct"
+        },
+        {
+          "src": "bike shed",
+          "dst": "west of office",
+          "dir": "east",
+          "kind": "correct"
+        },
+        {
+          "src": "the delivery bay gateway",
+          "dst": "delivery bay",
+          "dir": "west",
+          "kind": "correct"
+        },
+        {
+          "src": "delivery bay",
+          "dst": "storeroom",
+          "dir": "north",
+          "kind": "correct"
+        },
+        {
+          "src": "storeroom",
+          "dst": "west end",
+          "dir": "north",
+          "kind": "hallucinated_dst"
+        },
+        {
+          "src": "west end",
+          "dst": "north-south corridoor",
+          "dir": "north",
+          "kind": "hallucinated_src"
+        },
+        {
+          "src": "north-south corridoor",
+          "dst": "vault door",
+          "dir": "north",
+          "kind": "correct"
+        }
+      ],
+      "n_correct": 32,
+      "n_wrong_direction": 0,
+      "n_wrong_dst": 1,
+      "n_spurious": 0,
+      "n_hallucinated_dst": 1,
+      "n_hallucinated_src": 1,
+      "conflicts": [
+        {
+          "type": "direction",
+          "severity": "high",
+          "description": "node 'front of the office' has multiple outgoing edges labelled 'west'",
+          "edges": [
+            [
+              "front of the office",
+              "west of office"
+            ],
+            [
+              "front of the office",
+              "the delivery bay gateway"
+            ]
+          ]
+        },
+        {
+          "type": "topology",
+          "severity": "high",
+          "description": "position (-1, 0, 0) occupied by multiple rooms ['corner of the carpark', 'maintanence stairwell (top)']",
+          "edges": []
+        },
+        {
+          "type": "topology",
+          "severity": "high",
+          "description": "position (-3, 2, 0) occupied by multiple rooms ['the delivery bay gateway', 'west of office']",
+          "edges": []
+        },
+        {
+          "type": "topology",
+          "severity": "high",
+          "description": "position (-4, 2, 0) occupied by multiple rooms ['bike shed', 'delivery bay']",
+          "edges": []
+        }
+      ]
+    },
+    "repaired": {
+      "edges": [
+        {
+          "src": "the main carpark",
+          "dst": "corner of the carpark",
+          "dir": "southeast"
+        },
+        {
+          "src": "the main carpark",
+          "dst": "front of the office",
+          "dir": "north"
+        },
+        {
+          "src": "corner of the carpark",
+          "dst": "the main carpark",
+          "dir": "northwest"
+        },
+        {
+          "src": "front of the office",
+          "dst": "east of office",
+          "dir": "east"
+        },
+        {
+          "src": "front of the office",
+          "dst": "west of office",
+          "dir": "west"
+        },
+        {
+          "src": "front of the office",
+          "dst": "the delivery bay gateway",
+          "dir": "northeast"
+        },
+        {
+          "src": "east of office",
+          "dst": "front of the office",
+          "dir": "west"
+        },
+        {
+          "src": "east of office",
+          "dst": "damp corner",
+          "dir": "east"
+        },
+        {
+          "src": "damp corner",
+          "dst": "east of office",
+          "dir": "west"
+        },
+        {
+          "src": "damp corner",
+          "dst": "storage shed door",
+          "dir": "south"
+        },
+        {
+          "src": "storage shed door",
+          "dst": "damp corner",
+          "dir": "north"
+        },
+        {
+          "src": "storage shed door",
+          "dst": "storage shed",
+          "dir": "east"
+        },
+        {
+          "src": "storage shed door",
+          "dst": "abandoned well",
+          "dir": "south"
+        },
+        {
+          "src": "storage shed",
+          "dst": "storage shed door",
+          "dir": "west"
+        },
+        {
+          "src": "abandoned well",
+          "dst": "storage shed door",
+          "dir": "north"
+        },
+        {
+          "src": "abandoned well",
+          "dst": "bottom of the well",
+          "dir": "down"
+        },
+        {
+          "src": "bottom of the well",
+          "dst": "abandoned well",
+          "dir": "up"
+        },
+        {
+          "src": "some bushes",
+          "dst": "east of office",
+          "dir": "north"
+        },
+        {
+          "src": "some bushes",
+          "dst": "maintanence stairwell (top)",
+          "dir": "south"
+        },
+        {
+          "src": "maintanence stairwell (top)",
+          "dst": "some bushes",
+          "dir": "north"
+        },
+        {
+          "src": "maintanence stairwell (top)",
+          "dst": "maintanence stairwell (bottom)",
+          "dir": "down"
+        },
+        {
+          "src": "maintanence stairwell (bottom)",
+          "dst": "maintanence stairwell (top)",
+          "dir": "up"
+        },
+        {
+          "src": "maintanence stairwell (bottom)",
+          "dst": "generator room",
+          "dir": "northeast"
+        },
+        {
+          "src": "generator room",
+          "dst": "maintanence stairwell (bottom)",
+          "dir": "southwest"
+        },
+        {
+          "src": "main entrance",
+          "dst": "front of the office",
+          "dir": "south"
+        },
+        {
+          "src": "west of office",
+          "dst": "front of the office",
+          "dir": "east"
+        },
+        {
+          "src": "west of office",
+          "dst": "bike shed",
+          "dir": "west"
+        },
+        {
+          "src": "bike shed",
+          "dst": "west of office",
+          "dir": "east"
+        },
+        {
+          "src": "the delivery bay gateway",
+          "dst": "delivery bay",
+          "dir": "west"
+        },
+        {
+          "src": "delivery bay",
+          "dst": "storeroom",
+          "dir": "north"
+        },
+        {
+          "src": "storeroom",
+          "dst": "west end",
+          "dir": "north"
+        },
+        {
+          "src": "west end",
+          "dst": "north-south corridoor",
+          "dir": "north"
+        },
+        {
+          "src": "north-south corridoor",
+          "dst": "vault door",
+          "dir": "north"
+        }
+      ],
+      "actions": [
+        {
+          "kind": "modify_edge",
+          "target": [
+            "front of the office",
+            "the delivery bay gateway"
+          ],
+          "new_dir": "northeast",
+          "reason": "rotate to free direction northeast"
+        },
+        {
+          "kind": "remove_edge",
+          "target": [
+            "east of office",
+            "some bushes"
+          ],
+          "new_dir": null,
+          "reason": "remove fallback"
+        },
+        {
+          "kind": "remove_edge",
+          "target": [
+            "front of the office",
+            "main entrance"
+          ],
+          "new_dir": null,
+          "reason": "remove fallback"
+        }
+      ],
+      "n_conflicts_before": 4,
+      "n_conflicts_after": 0
+    }
+  }
+}

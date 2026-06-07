@@ -1,0 +1,591 @@
+===========
+==>STEP NUM: 0
+==>ACT: west
+==>OBSERVATION: Beside the Big Top
+You're standing next to the big top, which is gently flapping in the warm breeze.
+
+A cheap plastic clown mask, having been carelessly dropped here, is lying face-up on the ground.
+
+About waist-high, a barred passage for wild animals extends several yards out from the big top.
+===========
+==>STEP NUM: 1
+==>ACT: south
+==>OBSERVATION: Back Yard
+You're standing in front of the turnstile entrance to a fenced-in area, which is south. To the west stands a droopy tent, and the field continues north and east.
+
+A tall and lanky clown in baggy pants trudges out of the tent and toward the turnstile. Comrade Thumb follows behind.
+
+Adjacent to the turnstile to your south is a vertical cage.
+===========
+==>STEP NUM: 2
+==>ACT: west
+==>OBSERVATION: Inside Prop Tent
+This dimly lighted tent houses a ragtag collection of outrageous props and wacky devices, including a midget automobile that's garaged in here.
+
+Lying here in a heap is a gorilla suit.
+
+President William Howard Taft is here.
+
+You can hear muffled voices coming from outside and see two ominous shadows cast against the side wall of the tent.
+===========
+==>STEP NUM: 3
+==>ACT: east
+==>OBSERVATION: Back Yard
+
+Adjacent to the turnstile to your south is a vertical cage.
+===========
+==>STEP NUM: 4
+==>ACT: east
+==>OBSERVATION: Near White Wagon
+You are standing on a gentle upslope of the grassy field, next to a rather imposing trailer whose door is closed to the east. In dark panorama, the field continues north and west -- and south, where a large banner has been erected.
+
+Part of a narrow pole is sticking out from under the wagon.
+===========
+==>STEP NUM: 5
+==>ACT: north
+==>OBSERVATION: Connection
+===========
+==>STEP NUM: 6
+==>ACT: north
+==>OBSERVATION: In the Wings
+The big top can be entered to the north and exited to the south. 
+
+To the northeast, the grandstand has been retracted slightly, revealing a passage.
+
+A roustabout who is wearing a pair of headphones and carrying a large net over his shoulder passes you and exits the big top.
+===========
+==>STEP NUM: 7
+==>ACT: north
+==>OBSERVATION: Performance Ring
+This is the arena's oval-shaped performance ring which appears deathly quiet without its circus atmosphere. Also missing is its safety net. A rope ladder dangles to within a foot of the ground.
+
+Just west lies the entrance to a large, round cage that completely encircles the second of the two rings. To the south the big top's vaulted wing leads out into the open air. The arena's rickety grandstands rise steeply north and east.
+===========
+==>STEP NUM: 8
+==>ACT: south
+==>OBSERVATION: In the Wings
+===========
+==>STEP NUM: 9
+==>ACT: west
+==>OBSERVATION: Beside the Big Top
+
+About waist-high, a barred passage for wild animals extends several yards out from the big top.
+===========
+==>STEP NUM: 10
+==>ACT: south
+==>OBSERVATION: Back Yard
+
+Adjacent to the turnstile to your south is a vertical cage.
+===========
+==>STEP NUM: 11
+==>ACT: west
+==>OBSERVATION: Camp, West
+You're in the west end of the performers' camp. It is unevenly lighted by a number of glaring spotlights which ring the camp, creating a stage-like patchwork of light and dark.
+
+At the northern border of the camp there is a pleated canvas wall, on either side of which runs the fence that was meant to keep you out. To the south, you see the long side of a dilapidated trailer, which sits off-kilter.
+===========
+==>STEP NUM: 12
+==>ACT: east
+==>OBSERVATION: Back Yard
+
+Adjacent to the turnstile to your south is a vertical cage.
+
+From inside his cage, Harry calls out, "You're still around kicking sawdust, huh? Let me give a tip: Be careful, there's no telling what, or who, could be lurking around the lot here at night."
+===========
+==>STEP NUM: 13
+==>ACT: north
+==>OBSERVATION: Beside the Big Top
+
+About waist-high, a barred passage for wild animals extends several yards out from the big top.
+===========
+==>STEP NUM: 14
+==>ACT: east
+==>OBSERVATION: Connection
+===========
+==>STEP NUM: 15
+==>ACT: north
+==>OBSERVATION: In the Wings
+===========
+==>STEP NUM: 16
+==>ACT: northeast
+==>OBSERVATION: Under the Bleachers
+You're standing between the underside of the grandstand and the side wall of the big top. Not unexpectedly, the ground here is strewn with garbage. The only exit is southwest.
+===========
+==>STEP NUM: 17
+==>ACT: southwest
+==>OBSERVATION: In the Wings
+===========
+==>STEP NUM: 18
+==>ACT: south
+==>OBSERVATION: Menagerie
+This scrawny patch of dirt offers a square cage on its west side; an open tent giving off a dank, earthy smell on its east side; and a well-worn path along the tent to the southeast. A soiled, sagging banner beckons north.
+
+The slow-moving sound of massive chains from inside the tent is heard.
+===========
+==>STEP NUM: 19
+==>ACT: southeast
+==>OBSERVATION: Menagerie Nook
+You are standing outside of the elephant tent. Along its side wall to the north sits a cage with straw poking out of it. The menagerie is northwest of here.
+
+Facing you on the east side there is a big old plywood sideshow front, faded beyond recognition. It serves as the barrier wall of an enclosed structure behind the elephant tent.
+===========
+==>STEP NUM: 20
+==>ACT: south
+==>OBSERVATION: Menagerie Nook
+===========
+==>STEP NUM: 21
+==>ACT: northwest
+==>OBSERVATION: Menagerie
+===========
+==>STEP NUM: 22
+==>ACT: north
+==>OBSERVATION: Midway Entrance
+===========
+==>STEP NUM: 23
+==>ACT: west
+==>OBSERVATION: Beside the Big Top
+
+About waist-high, a barred passage for wild animals extends several yards out from the big top.
+===========
+==>STEP NUM: 24
+==>ACT: south
+==>OBSERVATION: Back Yard
+
+Adjacent to the turnstile to your south is a vertical cage.
+===========
+==>STEP NUM: 25
+==>ACT: west
+==>OBSERVATION: Inside Prop Tent
+
+Lying here in a heap is a gorilla suit.
+
+President William Howard Taft is here.
+
+There's a piece of wood here.
+===========
+==>STEP NUM: 26
+==>ACT: east
+==>OBSERVATION: Camp, East
+===========
+==>STEP NUM: 27
+==>ACT: east
+==>OBSERVATION: Near White Wagon
+===========
+==>STEP NUM: 28
+==>ACT: north
+==>OBSERVATION: Connection
+===========
+==>STEP NUM: 29
+==>ACT: west
+==>OBSERVATION: Midway Entrance
+===========
+==>STEP NUM: 30
+==>ACT: north
+==>OBSERVATION: In the Wings
+===========
+==>STEP NUM: 31
+==>ACT: north
+==>OBSERVATION: Performance Ring
+===========
+==>STEP NUM: 32
+==>ACT: east
+==>OBSERVATION: Performance Ring
+===========
+==>STEP NUM: 33
+==>ACT: south
+==>OBSERVATION: In the Wings
+===========
+==>STEP NUM: 34
+==>ACT: south
+==>OBSERVATION: Near White Wagon
+===========
+==>STEP NUM: 35
+==>ACT: west
+==>OBSERVATION: Back Yard
+
+Adjacent to the turnstile to your south is a vertical cage.
+===========
+==>STEP NUM: 36
+==>ACT: north
+==>OBSERVATION: Beside the Big Top
+
+About waist-high, a barred passage for wild animals extends several yards out from the big top. The barred passage is being patrolled by two large and bewildered cats.
+===========
+==>STEP NUM: 37
+==>ACT: east
+==>OBSERVATION: Connection
+===========
+==>STEP NUM: 38
+==>ACT: south
+==>OBSERVATION: Connection
+This area of matted-down crabgrass lies between the vaulted big top entrance to the north and the enticements of the midway to the east, where a sagging banner hangs crookedly above a turnstile. There is a drinking fountain near the side wall of the tent. 
+
+Stretching away from a small concession stand is a long line of suckers.
+===========
+==>STEP NUM: 39
+==>ACT: north
+==>OBSERVATION: In the Wings
+
+One lone hawker stands waiting in the wings, taking his break.
+===========
+==>STEP NUM: 40
+==>ACT: west
+==>OBSERVATION: Midway Entrance
+===========
+==>STEP NUM: 41
+==>ACT: west
+==>OBSERVATION: Midway Entrance
+
+Drifting out from the radio is a jumble of static.
+===========
+==>STEP NUM: 42
+==>ACT: south
+==>OBSERVATION: Menagerie
+
+Drifting out from the radio is a jumble of static.
+===========
+==>STEP NUM: 43
+==>ACT: southeast
+==>OBSERVATION: Menagerie Nook
+
+Drifting out from the radio is a jumble of static.
+===========
+==>STEP NUM: 44
+==>ACT: south
+==>OBSERVATION: Menagerie Nook
+
+Your ticket lies here.
+
+You can see a fiberglass pole, a scrap of newsprint, a skeleton key, a bucket, a rawhide bullwhip and a stool here.
+
+Drifting out from the radio is a jumble of static.
+===========
+==>STEP NUM: 45
+==>ACT: northwest
+==>OBSERVATION: Menagerie
+===========
+==>STEP NUM: 46
+==>ACT: east
+==>OBSERVATION: Menagerie
+===========
+==>STEP NUM: 47
+==>ACT: southeast
+==>OBSERVATION: Menagerie Nook
+
+You can see a bucket and a stool here.
+===========
+==>STEP NUM: 48
+==>ACT: northwest
+==>OBSERVATION: Menagerie
+===========
+==>STEP NUM: 49
+==>ACT: north
+==>OBSERVATION: Midway Entrance
+
+Over next to the big top, you can see the rumpled form of the detective lying in the sawdust.
+===========
+==>STEP NUM: 50
+==>ACT: west
+==>OBSERVATION: Beside the Big Top
+
+About waist-high, a barred passage for wild animals extends several yards out from the big top. The barred passage is being patrolled by two large and bewildered cats.
+===========
+==>STEP NUM: 51
+==>ACT: south
+==>OBSERVATION: Back Yard
+
+Adjacent to the turnstile to your south is a vertical cage.
+===========
+==>STEP NUM: 52
+==>ACT: west
+==>OBSERVATION: Inside Prop Tent
+
+Lying here in a heap is a gorilla suit.
+
+President William Howard Taft is here.
+
+There's a piece of wood here.
+===========
+==>STEP NUM: 53
+==>ACT: east
+==>OBSERVATION: Back Yard
+
+Adjacent to the turnstile to your south is a vertical cage.
+===========
+==>STEP NUM: 54
+==>ACT: west
+==>OBSERVATION: Inside Prop Tent
+
+Lying here in a heap is a gorilla suit.
+
+You can hear the faint scurryings of a rodent somewhere in the tent.
+
+President William Howard Taft is here.
+
+There's a mousetrap here.
+
+On the mousetrap you see a cheese morsel.
+===========
+==>STEP NUM: 55
+==>ACT: east
+==>OBSERVATION: Back Yard
+
+Adjacent to the turnstile to your south is a vertical cage.
+===========
+==>STEP NUM: 56
+==>ACT: west
+==>OBSERVATION: Inside Prop Tent
+
+Lying here in a heap is a gorilla suit.
+
+Over in the corner, a field mouse gnaws timidly at the mousetrap.
+
+President William Howard Taft is here.
+===========
+==>STEP NUM: 57
+==>ACT: east
+==>OBSERVATION: Back Yard
+
+Adjacent to the turnstile to your south is a vertical cage.
+===========
+==>STEP NUM: 58
+==>ACT: north
+==>OBSERVATION: Beside the Big Top
+
+About waist-high, a barred passage for wild animals extends several yards out from the big top. The barred passage is being patrolled by two large and bewildered cats.
+===========
+==>STEP NUM: 59
+==>ACT: east
+==>OBSERVATION: Connection
+===========
+==>STEP NUM: 60
+==>ACT: south
+==>OBSERVATION: Menagerie
+===========
+==>STEP NUM: 61
+==>ACT: west
+==>OBSERVATION: Back Yard
+
+Adjacent to the turnstile to your south is a vertical cage.
+===========
+==>STEP NUM: 62
+==>ACT: east
+==>OBSERVATION: Near White Wagon
+===========
+==>STEP NUM: 63
+==>ACT: northeast
+==>OBSERVATION: Menagerie
+This scrawny patch of dirt offers a square cage on its west side; an open tent giving off a dank, earthy smell on its east side; and a well-worn path along the tent to the southeast. A soiled, sagging banner beckons north.
+
+There is an elephant-sized hole in the fence to the southwest.
+===========
+==>STEP NUM: 64
+==>ACT: southeast
+==>OBSERVATION: Menagerie Nook
+
+There's a stool here.
+===========
+==>STEP NUM: 65
+==>ACT: west
+==>OBSERVATION: Menagerie Nook
+
+There's a stool here.
+
+The spring-loaded secret panel slides shut.
+===========
+==>STEP NUM: 66
+==>ACT: northwest
+==>OBSERVATION: Menagerie
+===========
+==>STEP NUM: 67
+==>ACT: north
+==>OBSERVATION: Midway Entrance
+
+Over next to the big top, you can see the rumpled form of the detective lying in the sawdust.
+===========
+==>STEP NUM: 68
+==>ACT: south
+==>OBSERVATION: Near White Wagon
+===========
+==>STEP NUM: 69
+==>ACT: northeast
+==>OBSERVATION: Menagerie
+===========
+==>STEP NUM: 70
+==>ACT: southeast
+==>OBSERVATION: Menagerie Nook
+
+There's a stool here.
+===========
+==>STEP NUM: 71
+==>ACT: west
+==>OBSERVATION: Menagerie Nook
+
+There's a stool here.
+
+You see the silhouette of a man on top of the cage. He throws something bulky onto the tent, then climbs up after it.
+
+The spring-loaded secret panel slides shut.
+===========
+==>STEP NUM: 72
+==>ACT: northwest
+==>OBSERVATION: Menagerie
+===========
+==>STEP NUM: 73
+==>ACT: north
+==>OBSERVATION: Midway Entrance
+
+Over next to the big top, you can see the rumpled form of the detective lying in the sawdust.
+===========
+==>STEP NUM: 74
+==>ACT: south
+==>OBSERVATION: Near White Wagon
+===========
+==>STEP NUM: 75
+==>ACT: northeast
+==>OBSERVATION: Menagerie
+===========
+==>STEP NUM: 76
+==>ACT: north
+==>OBSERVATION: Midway Entrance
+
+Over next to the big top, you can see the rumpled form of the detective lying in the sawdust.
+===========
+==>STEP NUM: 77
+==>ACT: west
+==>OBSERVATION: Midway Entrance
+
+Over next to the big top, you can see the rumpled form of the detective lying in the sawdust.
+
+There's a bucket here.
+===========
+==>STEP NUM: 78
+==>ACT: west
+==>OBSERVATION: Beside the Big Top
+
+About waist-high, a barred passage for wild animals extends several yards out from the big top. The barred passage is being patrolled by two large and bewildered cats.
+===========
+==>STEP NUM: 79
+==>ACT: south
+==>OBSERVATION: Back Yard
+
+Adjacent to the turnstile to your south is a vertical cage.
+===========
+==>STEP NUM: 80
+==>ACT: west
+==>OBSERVATION: Inside Prop Tent
+
+Lying here in a heap is a gorilla suit.
+
+President William Howard Taft is here.
+
+There's a mousetrap here.
+
+On the mousetrap you see a cheese morsel.
+===========
+==>STEP NUM: 81
+==>ACT: east
+==>OBSERVATION: Camp, East
+
+Chuckles is standing, out of costume, in front of the aluminum trailer. As you approach, he begins polishing away at it.
+===========
+==>STEP NUM: 82
+==>ACT: west
+==>OBSERVATION: Camp, East
+===========
+==>STEP NUM: 83
+==>ACT: west
+==>OBSERVATION: Camp, West
+===========
+==>STEP NUM: 84
+==>ACT: north
+==>OBSERVATION: Camp, West
+===========
+==>STEP NUM: 85
+==>ACT: east
+==>OBSERVATION: Camp, East
+===========
+==>STEP NUM: 86
+==>ACT: west
+==>OBSERVATION: Camp, East
+===========
+==>STEP NUM: 87
+==>ACT: east
+==>OBSERVATION: Near White Wagon
+
+As you approach the white wagon, Mr. Munrab steps down from inside his office and, as his eyes fall upon the figure of you carrying the only bit of preciousness in his life, it's as if he were jolted by an elephant prod. For an instant, his confused mind appears to be sending him strong fight-or-flight messages, for suddenly he dashes off through the hole in the fence.
+===========
+==>STEP NUM: 88
+==>ACT: northeast
+==>OBSERVATION: Menagerie
+
+Mr. Munrab, standing here desperate and alone in the middle of the menagerie, is calling out in every direction for the detective.
+
+The sotted sleuth comes staggering in from the midway, and Mr. Munrab, pointing confidently at you, delivers the order, "There is the perpetrator. Shoot him." As the detective stumbles toward you, your ears are pierced by Chelsea screaming at the top of her lungs, and then by the screech of bending metal. Suddenly, you're blindsided by a wall of bristly animal fur which knocks you to the ground. You get up dazed, and see Mr. Munrab chasing a giant ape to the north while the detective slinks away through the hole in the fence.
+===========
+==>STEP NUM: 89
+==>ACT: north
+==>OBSERVATION: Midway Entrance
+
+There's a bucket here.
+===========
+==>STEP NUM: 90
+==>ACT: north
+==>OBSERVATION: In the Wings
+The big top can be entered to the north and exited to the south. 
+
+To the northeast, the grandstand has been moved back to its original position.
+===========
+==>STEP NUM: 91
+==>ACT: north
+==>OBSERVATION: Performance Ring
+This is the arena's oval-shaped performance ring. The rope ladder above your head has been tangled around the platform from which it hangs.
+
+Just west lies the entrance to a large, round cage that completely encircles the second of the two rings. To the south the big top's vaulted wing leads out into the open air. The arena's rickety grandstands rise steeply north and east.
+
+Craning your neck upward, you see Mahler standing on the platform above the rope ladder. He is holding the limp form of a small girl under one arm.
+
+Mr. Munrab, pacing pitifully back and forth across the ring, is a complete wreck.
+
+A roustabout stands nearby.
+===========
+==>STEP NUM: 92
+==>ACT: east
+==>OBSERVATION: Performance Ring
+
+The safety net is being held by the motley circle of Mr. Munrab, the roustabout, and Comrade Thumb.
+
+You can see a spreadsheet, a transistor radio, a fiberglass pole, a scrap of newsprint, a ribbon, a ransom note, a trade card, a veil, a dress-suit combination, a shawl-jacket combo and a crowbar here.
+
+Munrab & Company, their faces anxiously upturned, are pulling the safety net  every which way, kicking sawdust from one end of the ring to the other.
+===========
+==>STEP NUM: 93
+==>ACT: south
+==>OBSERVATION: In the Wings
+===========
+==>STEP NUM: 94
+==>ACT: south
+==>OBSERVATION: Near White Wagon
+===========
+==>STEP NUM: 95
+==>ACT: west
+==>OBSERVATION: Near White Wagon
+===========
+==>STEP NUM: 96
+==>ACT: north
+==>OBSERVATION: Connection
+===========
+==>STEP NUM: 97
+==>ACT: north
+==>OBSERVATION: In the Wings
+===========
+==>STEP NUM: 98
+==>ACT: north
+==>OBSERVATION: Performance Ring
+
+The safety net is being held by the motley circle of Mr. Munrab, the roustabout, Andrew Jenny, Chuckles, Rimshaw the Incomparable, Billy Monday, Gottfried Wilhelm von Katzenjammer and Comrade Thumb.
+
+You can see a lion stand, a spreadsheet, a scrap of newsprint, a ribbon, a ransom note, a trade card, a veil, a dress-suit combination, a shawl-jacket combo and a crowbar here.
+
+Munrab & Company, their faces anxiously upturned, are pulling the safety net  every which way, kicking sawdust from one end of the ring to the other.
+===========

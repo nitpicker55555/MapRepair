@@ -1,0 +1,152 @@
+[
+  {
+    "src_node": "pitch black 1",
+    "dst_node": "barren area",
+    "action": "west",
+    "seen_in_forward": 1
+  },
+  {
+    "src_node": "barren area",
+    "dst_node": "cliff",
+    "action": "west",
+    "seen_in_forward": 2
+  },
+  {
+    "src_node": "cliff",
+    "dst_node": "barren area",
+    "action": "east",
+    "seen_in_forward": 3
+  },
+  {
+    "src_node": "barren area",
+    "dst_node": "junction",
+    "action": "east",
+    "seen_in_forward": 4
+  },
+  {
+    "src_node": "junction",
+    "dst_node": "damp passage",
+    "action": "east",
+    "seen_in_forward": 5
+  },
+  {
+    "src_node": "damp passage",
+    "dst_node": "engravings room",
+    "action": "northeast",
+    "seen_in_forward": 6
+  },
+  {
+    "src_node": "engravings room",
+    "dst_node": "dead end",
+    "action": "southeast",
+    "seen_in_forward": 7
+  },
+  {
+    "src_node": "dead end",
+    "dst_node": "damp passage",
+    "action": "west",
+    "seen_in_forward": 8
+  },
+  {
+    "src_node": "damp passage",
+    "dst_node": "junction",
+    "action": "west",
+    "seen_in_forward": 10
+  },
+  {
+    "src_node": "junction",
+    "dst_node": "creepy crawl",
+    "action": "south",
+    "seen_in_forward": 11
+  },
+  {
+    "src_node": "creepy crawl",
+    "dst_node": "foggy room",
+    "action": "south",
+    "seen_in_forward": 12
+  },
+  {
+    "src_node": "foggy room",
+    "dst_node": "lake shore",
+    "action": "south",
+    "seen_in_forward": 13
+  },
+  {
+    "src_node": "lake shore",
+    "dst_node": "underwater",
+    "action": "down",
+    "seen_in_forward": 14
+  },
+  {
+    "src_node": "underwater",
+    "dst_node": "western shore",
+    "action": "west",
+    "seen_in_forward": 15
+  },
+  {
+    "src_node": "western shore",
+    "dst_node": "scenic vista",
+    "action": "south",
+    "seen_in_forward": 16
+  },
+  {
+    "src_node": "scenic vista",
+    "dst_node": "western shore",
+    "action": "north",
+    "seen_in_forward": 17
+  },
+  {
+    "src_node": "western shore",
+    "dst_node": "southern shore",
+    "action": "south",
+    "seen_in_forward": 18
+  },
+  {
+    "src_node": "southern shore",
+    "dst_node": "pitch black 1",
+    "action": "south",
+    "seen_in_forward": 19
+  },
+  {
+    "src_node": "pitch black 1",
+    "dst_node": "pitch black 2",
+    "action": "south",
+    "seen_in_forward": 20
+  },
+  {
+    "src_node": "pitch black 2",
+    "dst_node": "key room",
+    "action": "east",
+    "seen_in_forward": 21
+  },
+  {
+    "src_node": "key room",
+    "dst_node": "aqueduct",
+    "action": "down",
+    "seen_in_forward": 22
+  },
+  {
+    "src_node": "aqueduct",
+    "dst_node": "high arch",
+    "action": "north",
+    "seen_in_forward": 23
+  },
+  {
+    "src_node": "high arch",
+    "dst_node": "water slide",
+    "action": "north",
+    "seen_in_forward": 24
+  },
+  {
+    "src_node": "water slide",
+    "dst_node": "damp passage",
+    "action": "north",
+    "seen_in_forward": 25
+  },
+  {
+    "src_node": "damp passage",
+    "dst_node": "cliff ledge",
+    "action": "down",
+    "seen_in_forward": 26
+  }
+]
