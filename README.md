@@ -76,24 +76,65 @@ The implementation is split into the same five modules as the paper:
 
 ## Experimental Results
 
-### Main Results (GPT-4o as Model)
+### Per-component ablation (gpt-4.1, synthetic graphs, n=20 seeds per cell)
 
-| Method | Avg. Loops | Repair Rate (%) | Accuracy (%) |
-|--------|------------|-----------------|--------------|
-| **Edge-Impact Ranking Only** | **6.39** | **75.21** | 44.69 |
-| Version Control Only | 7.44 | 63.03 | 54.00 |
-| **Version Control+Edge-Impact Ranking** | 8.20 | 68.91 | **54.88** |
-| Baseline(GPT-4o) | 9.52 | 21.85 | 5.77 |
+Conflict-free (CF) repair rate (%) on random graphs of size 60 with directly
+injected topology or direction errors. **Base.** = unscaffolded LLM, **EI** =
+Edge-Impact Ranking, **VC** = Version Control, **VC+EI** = combined.
 
-### Performance Across Different Models
+| Conflict | Errors | Base. | EI | VC | VC+EI |
+|----------|-------:|------:|---:|---:|------:|
+| Topology  | 4 | 50.0 | **95.0** | 50.0 | 50.0 |
+| Topology  | 8 | 30.0 | **60.0** | 25.0 | 40.0 |
+| Direction | 4 | 70.0 | **75.0** | 55.0 | 55.0 |
+| Direction | 8 | **70.0** | 50.0 | 60.0 | 25.0 |
 
-| Model | Our Method ||| Baseline |||
-|-------|---------|-------------|---------|---------|-------------|---------|
-|       | **Loops** | **Repair (%)** | **Acc. (%)** | **Loops** | **Repair (%)** | **Acc. (%)** |
-| GPT-4o | 8.20 | 68.91 | 54.88 | 9.52 | 21.85 | 5.77 |
-| GPT-4.1 | 8.28 | 64.71 | 56.49 | 8.98 | 23.05 | 7.32 |
-| GPT-4o-mini | 9.08 | 58.40 | 56.12 | 9.52 | 15.55 | 5.60 |
-| Claude-Haiku | 6.98 | 44.31 | 61.76 | 9.33 | 17.15 | 6.67 |
+Reproduce: `python -m experiments.exp29_complementary_roles --seeds 20`
+
+### Cross-vendor generalization (VC+EI vs. baseline LLM)
+
+Conflict-free (CF) repair rate (%) on (i) synthetic graphs with direction-conflict
+noise (n=20 per cell) and (ii) TextWorld procedurally-generated text-adventure
+games with a mango-like noise mixture (n=30 per cell). Bold entries denote
+cells where VC+EI outperforms the baseline LLM.
+
+| Model | Synthetic Base | Synthetic Ours | TextWorld Base | TextWorld Ours |
+|-------|---------------:|---------------:|---------------:|---------------:|
+| GPT-5.5           | 25.0 | **75.0** | 20.0 | 20.0          |
+| GPT-5-mini        | 20.0 | **35.0** | 16.7 | 16.7          |
+| o4-mini           | 30.0 | 20.0     | 20.0 | **26.7**      |
+| Claude-Sonnet 4.6 | 30.0 | **40.0** | 20.0 | **33.3**      |
+| Claude-Haiku 4.5  | 10.0 | **30.0** | 16.7 | **33.3**      |
+| Gemini 2.5-Flash  | 25.0 | 10.0     | 20.0 | **26.7**      |
+| Gemini 3.5-Flash  | 20.0 | **50.0** | 20.0 | **33.3**      |
+
+Reproduce: `python -m experiments.exp25_cross_vendor` and `python -m experiments.exp26_textworld_mango_like`
+
+### Real-text deployment: *Dream of the Red Chamber* (Chapters 16–17)
+
+End-to-end LLM-MapRepair vs. direct LLM-based incremental mapping, evaluated
+against a human-authored ground-truth map (35 unique locations, 34 spatial
+relations) for two chapters of the Chinese classical novel:
+
+| Metric | Direct LLM mapping | LLM-MapRepair | Δ |
+|--------|-------------------:|--------------:|--:|
+| Node recall  | 85.7% | **94.3%** | +8.6 pp |
+| Edge recall  | 32.4% | **88.2%** | +55.8 pp |
+
+### Algorithmic validation without LLM (TC1–TC6)
+
+Pure algorithm-level evaluation of LCA candidate filtering and edge-impact
+scoring on six hand-crafted scenarios:
+
+| Metric | Value |
+|--------|------:|
+| Average candidate-edge reduction via LCA | **22.7%** (10.9 → 8.4 edges) |
+| Spearman ρ between Edge-Impact score and true cascade size | **1.000** |
+| Speedup of priority inspection vs. random | **2.30×** (56.5% fewer edges examined) |
+
+These numbers reproduce bit-exactly from the `lca_algorithm_validation/`
+directory of the companion repository
+https://github.com/nitpicker55555/spatial_memory.
 
 ## Usage
 
