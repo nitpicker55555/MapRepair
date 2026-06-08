@@ -1,0 +1,222 @@
+[
+  {
+    "game": "cutthroat",
+    "max_iter": 5,
+    "n_conflicts_before": 35,
+    "n_conflicts_after": 58,
+    "repaired": -23,
+    "correct_dir_edges_delta": 0,
+    "n_actions": 2,
+    "iterations": 5,
+    "elapsed_sec": 50.07657504081726
+  },
+  {
+    "game": "zork1",
+    "max_iter": 10,
+    "n_conflicts_before": 17,
+    "n_conflicts_after": 0,
+    "repaired": 17,
+    "correct_dir_edges_delta": -1,
+    "n_actions": 4,
+    "iterations": 4,
+    "elapsed_sec": 51.50869297981262
+  },
+  {
+    "game": "zork1",
+    "max_iter": 5,
+    "n_conflicts_before": 17,
+    "n_conflicts_after": 0,
+    "repaired": 17,
+    "correct_dir_edges_delta": -1,
+    "n_actions": 4,
+    "iterations": 5,
+    "elapsed_sec": 61.921257972717285
+  },
+  {
+    "game": "zork1",
+    "max_iter": 20,
+    "n_conflicts_before": 17,
+    "n_conflicts_after": 0,
+    "repaired": 17,
+    "correct_dir_edges_delta": 0,
+    "n_actions": 3,
+    "iterations": 3,
+    "elapsed_sec": 24.79021120071411
+  },
+  {
+    "game": "cutthroat",
+    "max_iter": 10,
+    "n_conflicts_before": 35,
+    "n_conflicts_after": 57,
+    "repaired": -22,
+    "correct_dir_edges_delta": -3,
+    "n_actions": 10,
+    "iterations": 10,
+    "elapsed_sec": 193.8248062133789
+  },
+  {
+    "game": "murdac",
+    "max_iter": 10,
+    "n_conflicts_before": 29,
+    "n_conflicts_after": 60,
+    "repaired": -31,
+    "correct_dir_edges_delta": -3,
+    "n_actions": 10,
+    "iterations": 10,
+    "elapsed_sec": 119.5759048461914
+  },
+  {
+    "game": "zork1",
+    "max_iter": 40,
+    "n_conflicts_before": 17,
+    "n_conflicts_after": 15,
+    "repaired": 2,
+    "correct_dir_edges_delta": 0,
+    "n_actions": 3,
+    "iterations": 9,
+    "elapsed_sec": 206.14769220352173
+  },
+  {
+    "game": "murdac",
+    "max_iter": 5,
+    "n_conflicts_before": 29,
+    "n_conflicts_after": 32,
+    "repaired": -3,
+    "correct_dir_edges_delta": -3,
+    "n_actions": 5,
+    "iterations": 5,
+    "elapsed_sec": 196.80470490455627
+  },
+  {
+    "game": "cutthroat",
+    "max_iter": 20,
+    "n_conflicts_before": 35,
+    "n_conflicts_after": 30,
+    "repaired": 5,
+    "correct_dir_edges_delta": -3,
+    "n_actions": 15,
+    "iterations": 20,
+    "elapsed_sec": 300.2848529815674
+  },
+  {
+    "game": "wishbringer",
+    "max_iter": 5,
+    "n_conflicts_before": 5,
+    "n_conflicts_after": 28,
+    "repaired": -23,
+    "correct_dir_edges_delta": -3,
+    "n_actions": 5,
+    "iterations": 5,
+    "elapsed_sec": 63.267327070236206
+  },
+  {
+    "game": "murdac",
+    "max_iter": 40,
+    "n_conflicts_before": 29,
+    "n_conflicts_after": 52,
+    "repaired": -23,
+    "correct_dir_edges_delta": -3,
+    "n_actions": 5,
+    "iterations": 14,
+    "elapsed_sec": 154.07052493095398
+  },
+  {
+    "game": "wishbringer",
+    "max_iter": 20,
+    "n_conflicts_before": 5,
+    "n_conflicts_after": 18,
+    "repaired": -13,
+    "correct_dir_edges_delta": -3,
+    "n_actions": 4,
+    "iterations": 10,
+    "elapsed_sec": 83.50061202049255
+  },
+  {
+    "game": "wishbringer",
+    "max_iter": 10,
+    "n_conflicts_before": 5,
+    "n_conflicts_after": 3,
+    "repaired": 2,
+    "correct_dir_edges_delta": -4,
+    "n_actions": 6,
+    "iterations": 10,
+    "elapsed_sec": 125.45640516281128
+  },
+  {
+    "game": "adventureland",
+    "max_iter": 5,
+    "n_conflicts_before": 22,
+    "n_conflicts_after": 23,
+    "repaired": -1,
+    "correct_dir_edges_delta": -3,
+    "n_actions": 5,
+    "iterations": 5,
+    "elapsed_sec": 71.66542100906372
+  },
+  {
+    "game": "murdac",
+    "max_iter": 20,
+    "n_conflicts_before": 29,
+    "n_conflicts_after": 4,
+    "repaired": 25,
+    "correct_dir_edges_delta": -3,
+    "n_actions": 13,
+    "iterations": 20,
+    "elapsed_sec": 234.08103895187378
+  },
+  {
+    "game": "adventureland",
+    "max_iter": 20,
+    "n_conflicts_before": 22,
+    "n_conflicts_after": 1,
+    "repaired": 21,
+    "correct_dir_edges_delta": -3,
+    "n_actions": 5,
+    "iterations": 8,
+    "elapsed_sec": 79.02162098884583
+  },
+  {
+    "game": "adventureland",
+    "max_iter": 40,
+    "n_conflicts_before": 22,
+    "n_conflicts_after": 1,
+    "repaired": 21,
+    "correct_dir_edges_delta": -3,
+    "n_actions": 5,
+    "iterations": 8,
+    "elapsed_sec": 80.32771396636963
+  },
+  {
+    "game": "adventureland",
+    "max_iter": 10,
+    "n_conflicts_before": 22,
+    "n_conflicts_after": 23,
+    "repaired": -1,
+    "correct_dir_edges_delta": -4,
+    "n_actions": 10,
+    "iterations": 10,
+    "elapsed_sec": 136.8823642730713
+  },
+  {
+    "game": "cutthroat",
+    "max_iter": 40,
+    "n_conflicts_before": 35,
+    "n_conflicts_after": 43,
+    "repaired": -8,
+    "correct_dir_edges_delta": -5,
+    "n_actions": 25,
+    "iterations": 40,
+    "elapsed_sec": 602.4259960651398
+  },
+  {
+    "game": "wishbringer",
+    "max_iter": 40,
+    "n_conflicts_before": 5,
+    "n_conflicts_after": 16,
+    "repaired": -11,
+    "correct_dir_edges_delta": -5,
+    "n_actions": 8,
+    "iterations": 17,
+    "elapsed_sec": 295.9638650417328
+  }
+]
