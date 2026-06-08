@@ -30,12 +30,12 @@ This dual approach allows for both temporal analysis (when errors were introduce
 
 https://nitpicker55555.github.io/text_maze.github.io/
 
-## Refined mango dataset without structural conflicts
+## Refined MANGO dataset without structural conflicts
 https://huggingface.co/datasets/boboIloveyou/spatial_refined_mango/tree/main
 
 ## File Descriptions
 
-The implementation is split into the same five modules as the paper:
+The root-level files are a minimal reference implementation, organized as the same five modules as in the paper:
 
 ### Core Pipeline
 
@@ -74,13 +74,21 @@ The implementation is split into the same five modules as the paper:
 - **`batch_run.py`** — CLI that runs the full pipeline on one or many games and writes per-game JSON reports plus an aggregate summary. Supports `--all` and `--workers N`.
 - **`test_pipeline.py`** — End-to-end smoke test that replays the paper's Case Study B (long-range conflict, 9-node toy environment) without invoking any LLM and verifies the EIS ranking matches the paper.
 
-## Experimental Results
+## Paper Data Sources
 
-### Per-component ablation (gpt-4.1, synthetic graphs, n=20 seeds per cell)
+Every quantitative claim in the paper is produced by a script under `experiments/` and saved as a raw JSON under `results/`. This repo is self-contained for all paper data except (i) the *Dream of the Red Chamber* deployment (Table 4) and (ii) the hand-crafted TC1–TC6 scenarios (Section 4.4 / Appendix B); both live in the companion repo https://github.com/nitpicker55555/spatial_memory.
 
-Conflict-free (CF) repair rate (%) on random graphs of size 60 with directly
-injected topology or direction errors. **Base.** = unscaffolded LLM, **EI** =
-Edge-Impact Ranking, **VC** = Version Control, **VC+EI** = combined.
+Setup once:
+
+```bash
+pip install -e .        # or: pip install -r requirements.txt
+cp .env.example .env    # add OPENAI_API_KEY / proxy keys
+export PYTHONPATH=src
+```
+
+### Paper Table 1 — Per-component synthetic ablation
+
+> gpt-4.1 as repair LLM. Random graphs of size 60 with directly injected topology or direction errors at densities 4 and 8. Each cell aggregates n=20 independent seeds; 95% Wilson confidence intervals. **Base.** = unscaffolded LLM, **EI** = Edge-Impact Ranking, **VC** = Version Control, **VC+EI** = combined.
 
 | Conflict | Errors | Base. | EI | VC | VC+EI |
 |----------|-------:|------:|---:|---:|------:|
@@ -89,14 +97,17 @@ Edge-Impact Ranking, **VC** = Version Control, **VC+EI** = combined.
 | Direction | 4 | 70.0 | **75.0** | 55.0 | 55.0 |
 | Direction | 8 | **70.0** | 50.0 | 60.0 | 25.0 |
 
-Reproduce: `python -m experiments.exp29_complementary_roles --seeds 20`
+| Script | Raw output |
+|---|---|
+| `experiments/exp29_complementary_roles.py` | `results/exp29/raw.json` — 320 runs (4 cells × 4 modes × 20 seeds) |
 
-### Cross-vendor generalization (VC+EI vs. baseline LLM)
+```bash
+python -m experiments.exp29_complementary_roles --seeds 20
+```
 
-Conflict-free (CF) repair rate (%) on (i) synthetic graphs with direction-conflict
-noise (n=20 per cell) and (ii) TextWorld procedurally-generated text-adventure
-games with a mango-like noise mixture (n=30 per cell). Bold entries denote
-cells where VC+EI outperforms the baseline LLM.
+### Paper Table 2 — Cross-vendor generalization
+
+> Seven LLMs from OpenAI, Anthropic, and Google. (i) Synthetic graphs with direction-conflict noise (1–3 conflicts per graph, n=20 seeds per cell). (ii) TextWorld procedurally-generated text-adventure games with mango-like noise mixture (room-name collapses, duplicate-direction edges, hallucinated rooms; n=30 seeds per cell). Bold entries denote cells where VC+EI outperforms the baseline LLM.
 
 | Model | Synthetic Base | Synthetic Ours | TextWorld Base | TextWorld Ours |
 |-------|---------------:|---------------:|---------------:|---------------:|
@@ -108,58 +119,160 @@ cells where VC+EI outperforms the baseline LLM.
 | Gemini 2.5-Flash  | 25.0 | 10.0     | 20.0 | **26.7**      |
 | Gemini 3.5-Flash  | 20.0 | **50.0** | 20.0 | **33.3**      |
 
-Reproduce: `python -m experiments.exp25_cross_vendor` and `python -m experiments.exp26_textworld_mango_like`
+| Script | Raw output |
+|---|---|
+| `experiments/exp25_frontier_2026.py` | `results/exp25/raw.json` + `results/exp25_extra/raw.json` (synthetic, n=20 per cell) |
+| `experiments/exp26_frontier_textworld.py`, `experiments/exp26b_claude_textworld.py` | `results/exp26/raw.json` + `results/exp26b/raw.json` + `results/exp26c/raw.json` + `results/exp26_extra/raw.json` (TextWorld, n=30 per cell) |
 
-### Real-text deployment: *Dream of the Red Chamber* (Chapters 16–17)
+```bash
+python -m experiments.exp25_frontier_2026
+python -m experiments.exp26_frontier_textworld
+```
 
-End-to-end LLM-MapRepair vs. direct LLM-based incremental mapping, evaluated
-against a human-authored ground-truth map (35 unique locations, 34 spatial
-relations) for two chapters of the Chinese classical novel:
+### Paper Table 3 — Real IF maps from MANGO walkthroughs
 
-| Metric | Direct LLM mapping | LLM-MapRepair | Δ |
-|--------|-------------------:|--------------:|--:|
-| Node recall  | 85.7% | **94.3%** | +8.6 pp |
-| Edge recall  | 32.4% | **88.2%** | +55.8 pp |
+> Repair on all 42 cleaned-MANGO games whose gpt-4.1-built input graphs contain ≥1 residual conflict (534 conflicts in aggregate). Three vendors × three modes plus two non-LLM references. Counts above 534 indicate that the repair mode introduced additional conflicts; lower is better.
 
-### Algorithmic validation without LLM (TC1–TC6)
+Headline cells (residual conflicts after repair):
 
-Pure algorithm-level evaluation of LCA candidate filtering and edge-impact
-scoring on six hand-crafted scenarios:
+- **GPT-5.5 EI**: 609 → 396 (Δ = −213, 35% relative improvement)
+- **Claude-Haiku 4.5 VC+EI**: 874 → 625 (Δ = −249, 28% relative improvement)
+- **Gemini 3.5-Flash EI**: 841 → 572 (Δ = −269, 32% relative improvement)
+- **heuristic_remove**: 98 (strongest absolute reducer)
+- **heuristic_modify**: 438
+
+The Table 3 data pipeline (each stage's output feeds the next):
+
+```
+data_fixed/<game>/<game>.walkthrough         ← MANGO raw walkthrough
+        ↓ experiments/exp11c_gt_aligned_clean.py
+results/exp11c/clean_walkthroughs/           ← 53 GT-aligned clean walkthroughs
+        ↓ experiments/exp14_remap_v3_fixed.py  (gpt-4.1 LLM mapping)
+results/exp14/gpt-4.1/<game>_edges.json      ← 53 LLM-built input graphs (42 of them have ≥1 conflict, aggregating to 534)
+        ↓ experiments/exp30c_full_mango_sweep.py  (EI / VC+EI / heuristic repair)
+results/exp30c/raw.json                      ← 362 per-(game, mode, model) repair runs that produce Table 3
+```
+
+```bash
+python -m experiments.exp11c_gt_aligned_clean
+python -m experiments.exp14_remap_v3_fixed
+python -m experiments.exp30c_full_mango_sweep
+```
+
+### Paper Table A3 — Structure preservation across repair modes
+
+> Aggregate change in ground-truth-direction-correct edges across the same 42 cleaned-MANGO games. All values are non-positive; values closer to zero (less negative) indicate better preservation.
+
+| Repair LLM | Base. | EI | VC+EI |
+|---|---:|---:|---:|
+| GPT-5.5            | −33 | −86 | −89 |
+| Claude-Haiku 4.5   | −32 | −67 | −31 |
+| Gemini 3.5-Flash   | −32 | −69 | −51 |
+
+Non-LLM references (model-independent):
+
+| Reference | Edge loss |
+|---|---:|
+| `heuristic_modify` | −97 (largest GT edge loss in the table) |
+| `heuristic_remove` | −56 |
+
+| Script | Raw output |
+|---|---|
+| `experiments/exp30c_full_mango_sweep.py` | `results/exp30c/raw.json` — the `correct_dir_edges_delta` field of each row |
+
+(Table A3 shares its raw source with Table 3; the two tables are different aggregations of the same 362-run experiment.)
+
+### Hyperparameters — max_iter sensitivity sweep
+
+> 5 representative cleaned-MANGO games × GPT-5.5 + Edge-Impact × max_iter ∈ {5, 10, 20, 40}.
+
+Aggregate net resolution rate (repaired minus newly-introduced, normalized by input conflicts; positive = net repair):
+
+| max_iter | 5 | 10 | **20** | 40 |
+|---|---:|---:|---:|---:|
+| Net resolution | −30.6% | −32.4% | **+50.9%** | −17.6% |
+
+| Script | Raw output |
+|---|---|
+| `experiments/exp31_iter_sensitivity.py` | `results/exp31_iter_sensitivity/raw.json` — 20 runs (5 games × 4 max_iter values) |
+
+```bash
+python -m experiments.exp31_iter_sensitivity
+```
+
+### Paper Table 4 — *Dream of the Red Chamber* (DRC) deployment
+
+> End-to-end LLM-MapRepair on natural text. Chapters 16–17 against a human-authored ground-truth map (35 unique locations, 34 spatial relation pairs evaluated as undirected pairs). Both methods use gpt-4.1.
+
+| Method | Predicted #N | Predicted #E | Node recall | Edge recall |
+|---|---:|---:|---:|---:|
+| Baseline LLM        | 47  | 49  | 85.7% | 32.4% |
+| **LLM-MapRepair**   | 143 | 144 | **94.3%** | **88.2%** |
+| Δ                   | +96 | +95 | +8.6 pp | +55.8 pp |
+
+The DRC pipeline data files live in the companion repository https://github.com/nitpicker55555/spatial_memory:
+
+| File | What it represents |
+|---|---|
+| `honglou_ground_truth_fixed.json` | 35-node / 34-edge human-authored ground truth |
+| `honglou_llm_incremental.json`    | Baseline LLM output: 47 nodes / 49 edges (85.7% / 32.4% recall) |
+| `honglou_llm_rule_fixed.json`     | LLM-MapRepair output: 143 nodes / 144 edges (94.3% / 88.2% recall) |
+
+### Section 4.4 / Appendix B — Algorithmic Validation
+
+**TC1–TC6 hand-crafted scenarios:**
 
 | Metric | Value |
-|--------|------:|
-| Average candidate-edge reduction via LCA | **22.7%** (10.9 → 8.4 edges) |
-| Spearman ρ between Edge-Impact score and true cascade size | **1.000** |
-| Speedup of priority inspection vs. random | **2.30×** (56.5% fewer edges examined) |
+|---|---:|
+| Average LCA candidate-edge reduction across 6 TCs | **24.6%** |
+| Per-TC reduction (TC1 / TC2 / TC3 / TC4-T / TC4-D / TC5) | 11.1% / 14.3% / 22.2% / 25.0% / 75.0% / 0.0% |
+| TC6 cascade-prediction Spearman ρ (5-edge sanity check) | **1.000** |
+| TC6 priority-inspection speedup vs random | **2.3×** (10 vs 23 edges) |
+| TC6 inspection reduction | 56.5% fewer edges examined |
+| TC6 80%-impact acceleration | 1.82× (17 vs 31 edges) |
 
-These numbers reproduce bit-exactly from the `lca_algorithm_validation/`
-directory of the companion repository
-https://github.com/nitpicker55555/spatial_memory.
+These numbers reproduce bit-exactly from the companion repository https://github.com/nitpicker55555/spatial_memory, under `lca_algorithm_validation/`:
+
+| Source script | Raw output |
+|---|---|
+| `test_lca_error_localization.py`        | `lca_test_results.json` |
+| `test_secondary_conflict_acceleration.py` | `secondary_conflict_test_results.json` |
+
+**1,160-graph programmatically-generated scale-up:**
+
+| Metric | Value |
+|---|---:|
+| Mean LCA candidate-edge reduction | **47.80%** (direction 54.64% / topology 32.27% / naming 56.72%) |
+| True-error retention in LCA candidate set | **81.12%** (100% on direction+topology, 42.4% on naming) |
+
+| Script | Raw output |
+|---|---|
+| `experiments/exp01_localization.py` | `results/exp01/raw.json` — 1,160 entries (~390 per conflict type) |
+
+```bash
+python -m experiments.exp01_localization
+```
+
+### Appendix A — Refined MANGO dataset
+
+> 53 environments, 1,673 → 1,513 edges (160 removed) via the 6-step refinement pipeline.
+
+| Item | Path |
+|---|---|
+| Original MANGO | external (Ding et al. 2024) |
+| Refined dataset | `data_fixed/` — also mirrored to https://huggingface.co/datasets/boboIloveyou/spatial_refined_mango |
+| 6-step pipeline description | Paper Appendix A |
 
 ## Usage
 
-```python
-from map_slam_system import MapSLAMSystem
-
-# Initialize system
-slam = MapSLAMSystem(data_dir="/path/to/refined_mango", model="gpt-4o")
-
-# Process a game end-to-end
-results = slam.process_game("zork1", max_steps=100)
-
-# Save per-game JSON artifacts (graph, conflicts, version history,
-# EIS-ranked candidate edges, and a text report)
-slam.save_results("./output")
-```
-
-### Batch experiments
+### Batch experiments (reference implementation)
 
 ```bash
 # Single game
-python batch_run.py --games zork1 --data-dir /path/to/refined_mango
+python batch_run.py --games zork1 --data-dir /path/to/data_fixed
 
 # All 53 games in parallel
-python batch_run.py --all --workers 4 --data-dir /path/to/refined_mango
+python batch_run.py --all --workers 4 --data-dir /path/to/data_fixed
 
 # Different LLM backbone, capped at 50 steps each
 python batch_run.py --all --model gpt-4o-mini --max-steps 50
@@ -171,63 +284,7 @@ python batch_run.py --all --model gpt-4o-mini --max-steps 50
 python test_pipeline.py
 ```
 
-`test_pipeline.py` replays the paper's Case Study B in plain Python: it
-introduces a directional error at step 5, watches the topological conflict
-fire 15 steps later when Lab and Meeting Room land on the same coordinate,
-runs LCA on the Reasoning History Tree, and prints the EIS ranking that
-puts the true error at the top.
-
-## Extended research framework
-
-The root-level files above are the minimal reference implementation used to
-illustrate the paper's algorithms. The same algorithms have been re-packaged
-as a richer Python library and reproducibility suite living under:
-
-```
-src/maprepair/      # extended framework: graph, conflict, localizer,
-                    # scoring, version control, synth, agents/, llm_client*
-experiments/        # exp01–exp29: scripts that produce every number in the paper
-results/            # raw per-run JSON + summary.md for each experiment
-data_fixed/         # the cleaned MANGO benchmark (53 environments)
-tests/, viz/        # unit tests and visualization helpers
-```
-
-Setup:
-
-```bash
-pip install -e .            # or pip install -r requirements.txt
-cp .env.example .env        # add OPENAI_API_KEY / proxy keys
-export PYTHONPATH=src
-```
-
-### Key experiment scripts
-
-| Script | What it produces |
-|---|---|
-| `experiments/exp01_localization.py` | LCA candidate-reduction at scale (n=1160 synthetic graphs) |
-| `experiments/exp02_scoring.py` | Edge-impact ranking validation |
-| `experiments/exp19_llm_full_pipeline.py` | 4-mode LLM ablation across synthetic families (2720 runs) |
-| `experiments/exp25_*` / `exp26_*` | Cross-vendor (7 LLMs from OpenAI/Anthropic/Google) on synthetic + TextWorld |
-| `experiments/exp27_table1_rerun.py` | MANGO 4-mode Table 1 rerun on current model snapshots |
-| `experiments/exp29_complementary_roles.py` | Per-component ablation at high error density |
-
-Run examples:
-
-```bash
-# Per-component ablation reported in the paper's Table 1
-python -m experiments.exp29_complementary_roles --seeds 20
-
-# Cross-vendor generalization on synthetic graphs (paper Table 2, left)
-python -m experiments.exp25_cross_vendor
-
-# Cross-vendor generalization on TextWorld (paper Table 2, right)
-python -m experiments.exp26_textworld_mango_like
-```
-
-The algorithmic-validation suite for Section 4.4 / Appendix B (TC1–TC6)
-lives separately at https://github.com/nitpicker55555/spatial_memory in
-the directory `lca_algorithm_validation/`; the same numbers reproduce
-bit-exactly there.
+`test_pipeline.py` replays the paper's Case Study B in plain Python: it introduces a directional error at step 5, watches the topological conflict fire 15 steps later when Lab and Meeting Room land on the same coordinate, runs LCA on the Reasoning History Tree, and prints the EIS ranking that puts the true error at the top.
 
 ## Citation
 ```
@@ -240,5 +297,4 @@ bit-exactly there.
       primaryClass={cs.AI},
       url={https://arxiv.org/abs/2510.04195}, 
 }
-
 ```
